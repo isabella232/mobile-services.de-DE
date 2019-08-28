@@ -1,0 +1,97 @@
+---
+description: Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-Geräten gesendet wird.
+seo-description: Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-Geräten gesendet wird.
+seo-title: iOS-Geräteversionen
+solution: Marketing Cloud, Analytics
+title: iOS-Geräteversionen
+topic: Entwickler und Implementierung
+uuid: 8 b 8 a 9 bc 3-0737-4 de 2-9792-0 b 112 aa 4 cf 65
+translation-type: tm+mt
+source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+
+---
+
+
+# iOS device versions {#ios-device-versions}
+
+Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-Geräten gesendet wird.
+
+>[!IMPORTANT]
+>
+>Diese Liste basiert auf internen Tests und Online-Informationen und kann Ungenaue oder unvollständige Informationen enthalten.
+
+Weitere Informationen zu iOS-Geräten finden Sie auf Websites wie [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
+
+| **iPhone** | **Version** |
+|---|---|
+| Original | iPhone 1.1 |
+| 3G | iPhone 1.2 |
+| 3GS | iPhone 2.1 |
+| 4 (GSM) (im Lieferumfang von Firmware 4.0 enthalten) | iPhone 3.1 |
+| 4 (GSM) (im Lieferumfang von Firmware 6.0 enthalten) | iPhone 3.2 |
+| 4 (CDMA) | iPhone 3.3 |
+| 4S | iPhone 4.1 |
+| 5 (GSM) | iPhone 5.1 |
+| 5 (CDMA) | iPhone 5.2 |
+| 5C (GSM) | iPhone 5.3 |
+| 5C (Global) | iPhone 5.4 |
+| 5S (GSM) | iPhone 6.1 |
+| 5S (Global) | iPhone 6.2 |
+| 6 Plus | iPhone 7.1 |
+| 6 | iPhone 7.2 |
+| 6s Plus | iPhone 8,2 |
+| SE (USA) | iPhone 8,4 |
+| 7 (CDMA) | iPhone 9,1 |
+| 7 Plus (CDMA) | iPhone 9,2 |
+| 7 (GSM) | iPhone 9,3 |
+| 7 Plus (GSM) | iPhone 9,4 |
+
+| **iPod Touch** | **Version** |
+|---|---|
+| 1. Generation | iPod 1.1 |
+| 2. Generation | iPod 2.1 |
+| 3. Generation | iPod 3.1 |
+| 4. Generation | iPod 4.1 |
+| 5. Generation | iPod 5.1 |
+| 6. Generation | iPod 7,1 |
+
+| **iPad** | **Version** |
+|---|---|
+| Original | iPad 1.1 |
+| iPad 2 | iPad 2.1 |
+| iPad 2 (GSM) | iPad 2.2 |
+| iPad 2 (CDMA) | iPad 2.3 |
+| iPad 2 (neu, 16 GB) | iPad 2.4 |
+| iPad Mini (WLAN) | iPad 2.5 |
+| iPad Mini (GSM) | iPad 2.6 |
+| iPad Mini, Global-Version (entspricht GSM iPad Mini, doch enthält zusätzlich einen Mobilfunk: CDMA EV-DO Rev. A und Rev. B (3.5G)) | iPad 2.7 |
+| iPad 3 (WLAN) | iPad 3.1 |
+| iPad 3 (CDMA) | iPad 3.2 |
+| iPad 3 (GSM) | iPad 3.3 |
+| iPad 4 (WLAN) | iPad 3.4 |
+| iPad 4 (GSM) | iPad 3.5 |
+| iPad 4, Global-Version (entspricht iPad GSM 4. Generation, enthält jedoch zusätzlich einen Mobilfunk: CDMA EV-DO Rev. A und Rev. B (3.5G)) | iPad 3.6 |
+| iPad Air (WLAN) | iPad 4.1 |
+| iPad Air (LTE) | iPad 4.2 |
+| iPad Air (CDMA) | iPad 4.3 |
+| iPad Mini 2 (WLAN) | iPad 4.4 |
+| iPad Mini 2 (LTE) | iPad 4.5 |
+| iPad Mini 2 (China) | iPad 4.6 |
+| iPad Mini 3 (Wi-Fi) | iPad 4.7 |
+| iPad Mini 3 (CDMA) | iPad 4.8 |
+| iPad Mini 3 (GSM) | iPad 4.9 |
+| iPad Mini 4 (Wi-Fi) | iPad 5,1 |
+| iPad Mini 4 (LTE) | iPad 5,2 |
+| iPad Air 2 (Wi-Fi) | iPad 5.3 |
+| iPad Air 2 (LTE) | iPad 5.4 |
+| iPad Pro, 9,7“ (Wi-Fi) | iPad 6,3 |
+| iPad Pro, 9,7“ (LTE) | iPad 6,4 |
+| iPad Pro, 12,9“ (Wi-Fi) | iPad 6,7 |
+| iPad Pro, 12,9“ (LTE) | iPad 6,8 |
+| iPad 5, 9,7“ (Wi-Fi) | iPad 6,11 |
+| iPad Pro 5, 9,7“ (LTE) | iPad 6,12 |
+| iPad Pro 2, 12,9“ (Wi-Fi) | iPad 7,1 |
+| iPad Pro 2, 12,9“ (LTE) | iPad 7,2 |
+| iPad Pro, 10,5“ (Wi-Fi) | iPad 7,3 |
+| iPad Pro, 10,5“ (LTE) | iPad 7,4 |
+
