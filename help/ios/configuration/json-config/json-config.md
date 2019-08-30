@@ -145,6 +145,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    Jedes POI-Array beinhaltet den POI-Namen, den Längen- und Breitengrad sowie den Radius (in Metern) des POI-Bereichs. Für den POI-Namen kann eine beliebige Zeichenfolge gewählt werden. Wenn ein `trackLocation`-Aufruf gesendet wird, wird eine Kontextdatenvariable aufgefüllt und mit dem `trackLocation`-Aufruf gesendet, sofern sich die aktuellen Koordinaten an einem definierten POI befinden.
 
    * Mindestens SDK-Version 4.0
+   
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]

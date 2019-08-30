@@ -202,6 +202,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
    Sendet eine Anfrage zur Erfassung personenbezogener Daten.
 
    * Hier finden Sie die Syntax für diese Methode:
+   
    ```javascript
    ADB.collectPII(piiData,success, fail);
    ```
