@@ -59,7 +59,7 @@ Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderli
    Im Folgenden finden Sie die Anforderungen für die Aktivierung des Push-Clickthrough-Reportings:
 
    * In your implementation of `FireBaseMessageService`, the Bundle object that contains the message data, which is passed into the `onMessageReceived` method with the RemoteMessage object, must be added to the Intent that is used to open the target activity on a click-through. Dies kann mithilfe der `putExtras` Methode erfolgen. For more information, see [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
-   
+
    ```java
    Intent intent = new Intent(this, MainActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
