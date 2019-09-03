@@ -8,7 +8,7 @@ title: Akquise-Links manuell erstellen
 topic: Metriken
 uuid: d 7709203-f 793-4982-adaa -9 c 3 c 914 aca 2 b
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
 
@@ -44,7 +44,7 @@ Wo folgende Bedingungen erfüllt wurden:
 
 * `{mobile-services-app-hash}` stimmt mit der Anwendungskennung in der Konfigurationsdatei `acquisition:appid ` überein.
 
-   You can locate `{mobile-services-app-has}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
+   You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
 
    ![](assets/tracking-id.png)
 
