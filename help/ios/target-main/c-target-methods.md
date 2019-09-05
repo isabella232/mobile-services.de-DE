@@ -7,7 +7,7 @@ title: Zielmethoden für ios
 topic: Entwickler und Implementierung
 uuid: 692 bcda 1-02 ba -4902-bd 65-15888 adf 1952
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 ---
 
@@ -20,7 +20,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 >[!TIP]
 >
->Lebenszyklusmetriken werden als Parameter jeder mbox-Load gesendet. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md).
+>Lebenszyklusmetriken werden als Parameter jeder mbox-Load gesendet. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md). Wenn Sie Target-Anforderungen innerhalb der `didFinishLaunching` Delegate-Methode senden, fügen Sie einen `[ADBMobile trackAction:data:]` oder `[ADBMobile trackState:data:]` einen Aufruf vor dem Target-Implementierungscode hinzu. Auf diese Weise enthalten die Target-Anforderungen die vollständigen Lebenszyklusdaten.
 
 ## Klassenverweis: Adbtargetlocationrequest
 
