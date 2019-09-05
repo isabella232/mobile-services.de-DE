@@ -8,7 +8,7 @@ title: Methoden des Adobe Experience Platform Identity Service
 topic: Entwickler und Implementierung
 uuid: c 5107 a 7 e -273 b -4 f 71-8738-4 c 603479 b 24 c
 translation-type: tm+mt
-source-git-commit: a54a969bb6abedfeb0fc20276d260664b68c1d66
+source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 ---
 
@@ -25,14 +25,14 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
    Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Für diese Methode müssen Sie Mobile-SDK 4.12 (oder höher) verwenden. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
 
-   >[! Wichtig]
+   >[!IMPORTANT]
    >
    >Diese Methode kann einen blockierten Netzwerkaufruf verursachen. Rufen Sie diese Methode nicht in zeitkritischen Threads auf.
 
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      URL java.lang.String  
+      public static String appendToURL(final String URL) 
       ```
 
       Eine erforderliche URL-Zeichenfolge, an die die Besucherinformationen angehängt werden.
