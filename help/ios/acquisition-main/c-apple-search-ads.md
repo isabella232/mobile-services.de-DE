@@ -5,9 +5,9 @@ seo-title: Apple-Suchanzeigen
 solution: Marketing Cloud, Analytics
 title: Apple-Suchanzeigen
 topic: Entwickler und Implementierung
-uuid: 790080 e 8-067 e -4 bfd-a 169-0027 db 4 fdff 3
+uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: 9c6923d14d1a5f30e5873299def61b0734e52429
+source-git-commit: 215ad01507a541096e6951a2138c47af50bc1b87
 
 ---
 
@@ -27,13 +27,13 @@ Vorteile durch die Verwendung von Apple-Werbeanzeigen:
 
 >[!TIP]
 >
->Zur Implementierung von Apple Ads benötigen Sie ios SDK 4.13.2 oder höher.
+>Zur Implementierung von Apple Ads müssen Sie über das iOS SDK Version 4.13.2 oder höher verfügen.
 
 So aktivieren Sie Ihre App für die Suchanzeigenzuordnung:
 
 1. Implementieren Sie das Adobe-SDK, Version 4.13.2 oder höher.
 
-   Weitere Informationen finden Sie unter [Core-Implementierung und -lebenszyklus](/help/ios/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
 
 1. Fügen Sie das iAd-Framework zu Ihrer Xcode-Projektdatei für Ihre App hinzu.
 
@@ -45,9 +45,9 @@ So aktivieren Sie Ihre App für die Suchanzeigenzuordnung:
 
    Zusätzlich werden die folgenden Werte aus dem „`iad`“-Wörterbuch zu unseren typischen Akquisitionskontext-Datenfeldern zugeordnet:
 
-   * " `iad-campaign-id`" --&gt; " `a.referrer.campaign.trackingcode`"
-   * " `iad-campaign-name`" --&gt;" `a.referrer.campaign.name``"
-   * " `iad-adgroup-id`" --&gt; " `a.referrer.campaign.content`"
-   * " `iad-keyword`" --&gt; " `a.referrer.campaign.term`"
+   * "`iad-campaign-id`" --&gt; "`a.referrer.campaign.trackingcode`"
+   * "`iad-campaign-name`" --&gt; "`a.referrer.campaign.name`"
+   * "`iad-adgroup-id`" --&gt; "`a.referrer.campaign.content`"
+   * "`iad-keyword`" --&gt; "`a.referrer.campaign.term`"
    Durch diese Zuordnung werden die Werte in unserer Standardberichterstellung zur Verfügung gestellt.
 
