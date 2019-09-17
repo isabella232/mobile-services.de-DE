@@ -2,12 +2,12 @@
 description: iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
 keywords: Xamarin
 seo-description: iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
-seo-title: Ios-Methoden
+seo-title: iOS-Methoden
 solution: Marketing Cloud, Entwickler
-title: Ios-Methoden
-uuid: d 6 a 056 db -80 c 1-44 d 0-970 f-c 961 ad 01 b 0 bc
+title: iOS-Methoden
+uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
 
 ---
 
@@ -34,7 +34,7 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
       ADBMobile.CollectLifecycleData();
       ```
 
-* **Debuglogging**
+* **DebugLogging**
 
    Gibt die aktuelle Vorgabe für die Debug-Protokollierung zurück. Der Standardwert lautet `false`.
 
@@ -57,13 +57,15 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    * Hier finden Sie die Syntax für diese Methode:
 
       ```objective-c
-      public static void SetDebugLogging(bool enabled); 
-      
+      public static void SetDebugLogging(bool enabled);
+      ```
+
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
       ADBMobile.SetDebugLogging(true);
-      
+      ```
+
 * **LifetimeValue**
 
    Gibt den Lebenszeitwert für den aktuellen Benutzer zurück.
@@ -71,13 +73,13 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    * Hier finden Sie die Syntax für diese Methode:
 
       ```objective-c
-      public static double LifetimeValue(); 
+      public static double LifetimeValue();
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
-      var lifetimeValue = ADBMobile.LifetimeValue(); 
+      var lifetimeValue = ADBMobile.LifetimeValue();
       ```
 
 * **PrivacyStatus**
@@ -85,7 +87,7 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
    * `ADBMobilePrivacyStatus.OptIn` - Treffer werden sofort gesendet.
    * `ADBMobilePrivacyStatus.OptOut` - werden Treffer verworfen.
-   * ADBMobilePrivacyStatus.Unknown: Wenn die Offline-Verfolgung aktiviert ist, werden die Zugriffe gespeichert, bis der Datenschutzstatus zu „opt-in“ (Zugriffe werden dann gesendet) oder „opt-out“ (Zugriffe werden dann verworfen) geändert wird. Wenn die Offline-Verfolgung deaktiviert ist, werden die Treffer verworfen, bis sich der Datenschutzstatus ändert.
+   * ADBMobilePrivacyStatus.Unknown: Wenn die Offline-Verfolgung aktiviert ist, werden die Zugriffe gespeichert, bis der Datenschutzstatus zu „opt-in“ (Zugriffe werden dann gesendet) oder „opt-out“ (Zugriffe werden dann verworfen) geändert wird. Wenn die Offline-Verfolgung deaktiviert ist, werden Treffer verworfen, bis sich der Datenschutzstatus ändert und aktiviert wird.
    The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Hier finden Sie die Syntax für diese Methode:
@@ -97,11 +99,11 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
-       var privacyStatus = ADBMobile.PrivacyStatus(); 
+      var privacyStatus = ADBMobile.PrivacyStatus();
       ```
 
 
-* **Setprivacystatus**
+* **SetPrivacyStatus**
 
    Legt den Datenschutzstatus für den aktuellen Benutzer auf „status“ fest. Die folgenden Werte sind zulässig:
    * `ADBMobilePrivacyStatus.OptIn` - Treffer werden sofort gesendet.
@@ -174,12 +176,12 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
 
    >[!TIP]
    >
-   >Diese Methode soll für Apps verwendet werden, die sich für Benachrichtigungen während des Hintergrunds registrieren und nur aus Ihrem Code aufrufen sollen, der ausgeführt wird, wenn die App im Hintergrund ausgeführt wird.
+   >Diese Methode soll für Apps verwendet werden, die sich für Benachrichtigungen im Hintergrund registrieren und nur aus dem Code heraus aufgerufen werden sollten, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
       ```objective-c
-       public static void KeepLifecycleSessionAlive();
+      public static void KeepLifecycleSessionAlive();
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
@@ -203,15 +205,15 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
-       var trackingId = ADBMobile.TrackingIdentifier();
+      var trackingId = ADBMobile.TrackingIdentifier();
       ```
 
 * **TrackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Die Statusangaben entsprechen den verfügbaren Ansichten in der App, z. B. „Titelbild“, „Level 1“ oder „Pause“. Diese Zustände ähneln Seiten einer Website und `TrackState` Aufrufe erhöhen die Seitenansichten. Wenn der Status leer ist, wird er als "App Name App Version (build)" in Berichten angezeigt. Wenn dieser Wert in einem Bericht auftritt, müssen Sie den Status in jedem `TrackState`-Aufruf festlegen.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Die Statusangaben entsprechen den verfügbaren Ansichten in der App, z. B. „Titelbild“, „Level 1“ oder „Pause“. Diese Status ähneln den Seiten auf einer Website und `TrackState` Aufrufe inkrementieren Seitenansichten. Ist der Status leer, wird in Berichten als "App-Name-App-Version (Build)"angezeigt. Wenn dieser Wert in einem Bericht auftritt, müssen Sie den Status in jedem `TrackState`-Aufruf festlegen.
 
    [!TIP]
-   >Dies ist der einzige Verfolgungsaufruf, der Seitenansichten inkrementiert.
+   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
    >
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -251,7 +253,7 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    Verfolgt eine Aktion, die im Hintergrund abläuft. Hiermit wird das Auslösen von Lebenszyklusereignissen in bestimmten Situationen unterbunden.
 
    >[!TIP]
-   Diese Methode sollte nur in Code aufgerufen werden, der ausgeführt wird, während sich Ihre App im Hintergrund befindet.
+   Diese Methode sollte nur in Code aufgerufen werden, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -321,7 +323,7 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
 
    * Hier finden Sie die Syntax für diese Methode:
 
-      public nbsp; static void tracklifetimevalueincrease (double amount, nsdictionary cdata);
+      public nbsp;static void TrackLifetimeValueIncrease(double amount, NSDictionary data);
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -383,8 +385,9 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
       ```objective-c
       ADBMobile.TrackTimedActionEnd  ("level2", (double  arg1,  double  arg2,  NSMutableDictionary  arg3)  =>  { 
       return  Convert.ToSByte(true); 
-      }); 
-      
+      });
+      ```
+
 * **TrackingTimedActionExists**
 
    Gibt zurück, ob eine zeitgesteuerte Aktion ausgeführt wird (oder nicht).
@@ -483,8 +486,8 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
-       NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
-       ADBMobile.VisitorSyncIdentifiers(ids); 
+      NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
+      ADBMobile.VisitorSyncIdentifiers(ids); 
       ```
 
 ## Target-Methoden {#section_C1E4121CAF9D43538511D857A1F549A7}
@@ -502,11 +505,11 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
-       NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
-       ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
-       ADBMobile.TargetLoadRequest(req,    (context)  =>  { 
-       Console.WriteLine  (context); 
-       });
+      NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
+      ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
+      ADBMobile.TargetLoadRequest(req,    (context)  =>  { 
+      Console.WriteLine  (context); 
+      });
       ```
 
 * **TargetCreateRequest**
@@ -534,7 +537,8 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
 
       ```objective-c
       public static ADBTargetLocationRequest ADBTargetLocationRequest TargetCreateRequest (string name, string defaultContent, NSDictionary parameters);
-      
+      ```
+
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -774,7 +778,7 @@ Weitere Informationen finden Sie unter [Videoanalysen](/help/ios/getting-started
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
-       ADBMobile.MediaStop (settings.Name, 3);
+      ADBMobile.MediaStop (settings.Name, 3);
       ```
 
 * **MediaClick**
