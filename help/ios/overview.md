@@ -5,9 +5,9 @@ seo-title: iOS-SDK 4.x für Experience Cloud-Lösungen
 solution: Marketing Cloud, Analytics
 title: iOS-SDK 4.x für Experience Cloud-Lösungen
 topic: Entwickler und Implementierung
-uuid: 8 b 374 cee -1432-460 b-aac 2-70623 dd 80 a 04
+uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 1070450065776fdb7d13e9b21ce62ceeee55b80e
 
 ---
 
@@ -18,7 +18,11 @@ Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native App
 
 >[!IMPORTANT]
 >
->Die Adobe Analytics Mobile Marketing Add-on SKU ist erforderlich, um Mobile Services-Zugriff auf Akquise, Deep-Linking, Geolocation und mobile Messaging-Funktionen zu ermöglichen. Weitere Informationen erhalten Sie von Ihrem Adobe-Kundenbetreuer.
+>Die Adobe Analytics Mobile Marketing Add-on-SKU ist erforderlich, um Mobile Services den Zugriff auf Funktionen für mobile Akquise, Deep-Linking, Geolocation und mobiles Messaging zu ermöglichen. Weitere Informationen erhalten Sie von Ihrem Adobe-CSM.
+
+>[!IMPORTANT]
+>
+>Das Adobe Experience Platform Mobile SDK unterstützt jetzt [iOS 13 und Xcode 11][https://developer.apple.com/ios/]. Um eine nahtlose Kompatibilität sicherzustellen, verwenden Sie die [neuesten Versionen der Experience Platform Mobile SDK-Erweiterung](https://app.gitbook.com/@aep-sdks/s/docs/resources/frequently-asked-questions/current-sdk-versions).
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -41,13 +45,13 @@ Berücksichtigen Sie Folgendes:
 
 * In Version 4.2 dieses SDK und höher werden nun alle Treffer mithilfe von „HTTP POST“ gesendet.
 
-   Dies wirkt sich nicht auf die erfassten oder gemeldeten Daten aus. Sie müssen jedoch einen Paket-Analyzer verwenden, der die Überprüfung von POST-Daten unterstützt, um Treffer anzuzeigen.
+   Dies hat keine Auswirkungen auf die erfassten oder berichteten Daten. Sie müssen jedoch einen Paketanalysator verwenden, der die Überprüfung von POST-Daten unterstützt, um Treffer anzuzeigen.
 
 * If you are upgrading from a previous version (2.x or 3.x), see the [4.x Migration Guide](/help/ios/getting-started/migration-v3.md).
 
 ## Adobe Mobile-Benutzerdokumentation {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services bietet eine neue Benutzeroberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile-Dienst eine nahtlose Integration der App-Analyse- und Targeting-Funktionen aus den Adobe Analytics-, Adobe Audience Manager- und Adobe Target-Lösungen sowie dem Adobe Experience Platform Identity Service.
+Adobe Mobile Services bietet eine neue Benutzeroberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile-Dienst eine nahtlose Integration von App-Analyse- und Targeting-Funktionen aus den Adobe Analytics-, Adobe Audience Manager- und Adobe Target-Lösungen sowie dem Identitätsdienst für Adobe Experience Platform.
 
 Lesen Sie [Adobe Mobile Services](/help/using/home.md), um weitere Informationen zur Mobile Services-Benutzeroberfläche zu erhalten und um die Benutzerdokumentation zu lesen.
 
