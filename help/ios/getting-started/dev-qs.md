@@ -5,9 +5,9 @@ seo-title: Grundlegende Implementierung und Lebenszyklus
 solution: Marketing Cloud, Analytics
 title: Grundlegende Implementierung und Lebenszyklus
 topic: Entwickler und Implementierung
-uuid: 96 d 06325-e 424-4770-8659-4 b 5431318 ee 3
+uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
+source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
 
 ---
 
@@ -24,7 +24,7 @@ Diese Informationen helfen Ihnen beim Implementieren der iOS-Bibliothek und beim
 
 **Voraussetzung**
 
-Bevor Sie das SDK herunterladen, führen Sie die Schritte unter *Erstellen einer Report Suite* in der [Core-Implementierung und im Lebenszyklus](/help/ios/getting-started/requirements.md) durch, um eine Entwicklungs-Report Suite einzurichten und eine vorab ausgefüllte Version der Konfigurationsdatei herunterzuladen.
+Bevor Sie das SDK herunterladen, führen Sie die Schritte unter Report Suite ** erstellen in [Kernimplementierung und Lebenszyklus](/help/ios/getting-started/requirements.md) aus, um eine Entwicklungs-Report Suite einzurichten und eine vorab ausgefüllte Version der Konfigurationsdatei herunterzuladen.
 
 So laden Sie das SDK herunter:
 
@@ -32,7 +32,7 @@ So laden Sie das SDK herunter:
 
    * `ADBMobile.h`: Hierbei handelt es sich um die Objective-C-Header-Datei, die für iOS AppMeasurement verwendet wird.
    * `ADBMobileConfig.json`: die SDK-Konfigurationsdatei, die für Ihre App angepasst ist.
-   * `AdobeMobileLibrary.a`, eine Bitcode-fähige Fat Binary, die die Bibliotheksbuilds für ios-Geräte (armv 7, armv 7 s, arm 64) und Simulatoren (i 386, x 86_ 64) enthält.
+   * `AdobeMobileLibrary.a`, eine Bitcode-fähige Fat-Binärdatei, die die Bibliothek-Builds für iOS-Geräte (armv7, armv7s, arm64) und Simulatoren (i386, x86_64) enthält.
 
       Diese Fat Binary sollte verknüpft werden, wenn das Ziel für eine iOS-App vorgesehen ist.
 
@@ -75,6 +75,7 @@ So laden Sie das SDK herunter:
    1. Wählen Sie auf der Registerkarte **[!UICONTROL Allgemein]** Ihre Ziele aus und verknüpfen Sie die erforderlichen Frameworks und Bibliotheken in den Abschnitten **[!UICONTROL Verknüpfte Frameworks]und** Bibliotheken **.**
    * **iOS-App-Ziele**
       * `SystemConfiguration.framework`
+      * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
    * **iOS-Erweiterungsziel**
@@ -105,7 +106,7 @@ So laden Sie das SDK herunter:
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-Fügen Sie einen `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` Aufruf in `application:didFinishLaunchingWithOptions`hinzu:
+Fügen Sie einen `collectLifecycleData`/- `collectLifecycleDataWithAdditionalData` Aufruf hinzu `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -114,7 +115,7 @@ Fügen Sie einen `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData
 }
 ```
 
-### Zusätzliche Daten mit Lebenszyklusaufrufen einbeziehen
+### Zusätzliche Daten mit Lebenszyklusaufrufen einschließen
 
 Verwenden Sie `collectLifecycleDataWithAdditionalData`, um zusätzliche Daten mit Lebenszyklusmetrikdaten einzubeziehen:
 
