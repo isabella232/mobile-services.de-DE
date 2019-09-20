@@ -5,22 +5,33 @@ seo-title: Versionshinweise
 solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Entwickler und Implementierung
-uuid: e 1613 dc 5-02 a 4-43 a 7-997 a -29 b 4 de 98 b 4 d 1
+uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: 80a60276f9926177c8958b8e87e9393a83e7e6a9
+source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 ---
 
 
 # Versionshinweise {#release-notes}
 
-Im Folgenden finden Sie die Versionshinweise, bekannte Probleme und Hotfix-Informationen für ios sdks 4. x für Experience Cloud-Lösungen:
+Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für iOS SDKs 4.x für Experience Cloud-Lösungen:
+
+**20. September 2019: Version 4.18.8**
+
+* In App-Nachrichten:
+
+   * Auf Geräten mit iOS 10 oder höher wird das `UserNotifications` Framework jetzt verwendet, um lokale Benachrichtigungen für Apps zu planen, die mit dem `UserNotifications.framework`.
+   * Vollbildmeldungen verwenden jetzt WKWebViews von `WebKit.framework`, die in Ihrem Xcode-Projekt verknüpft werden müssen.
+   * Es wurde ein Fehler behoben, durch den die Push-Clickthrough-Nutzlast nicht als Eigenschaften für In-App-Nachrichten verwendet werden konnte.
+   * Es wurde ein Absturzproblem behoben.
+
+* Allgemein - Es wurde ein Fehler behoben, durch den SDK-Daten bei jedem Analytics-Aufruf mit der paarweise watchOS-App synchronisiert wurden.
 
 **2. August 2019: Version 4.18.7**
 
-* Es wurde eine Änderung zurückgesetzt, die in Version 4.18.6 eingeführt wurde und in einigen Umgebungen einen Absturz auf Geräten verursachte, die eine ältere ios-Version als 11.0 verwendeten.
+* Es wurde eine Änderung rückgängig gemacht, die in Version 4.18.6 eingeführt wurde und in einigen Umgebungen einen Absturz auf Geräten verursachte, auf denen eine iOS-Version älter als 11.0 ausgeführt wurde.
 
-* Adobe Target: `requestLocationParameters` Die Eigenschaft wurde hinzugefügt `ADBTargetRequestObject`, in der die impressionid mit Target-Anforderungen gesendet werden kann.
+* Adobe Target: Die `requestLocationParameters` Eigenschaft wurde in hinzugefügt, `ADBTargetRequestObject`die das Senden der impressionId mit Target-Anforderungen ermöglicht.
 
 **18. Juli 2019: Version 4.18.6**
 
@@ -36,9 +47,9 @@ Im Folgenden finden Sie die Versionshinweise, bekannte Probleme und Hotfix-Infor
 
 **24. Mai 2019: Version 4.18.4**
 
-* Besucher-ID-Service - Der Rückkehrtimeout für die
+* Besucher-ID-Dienst - Erhöhte Rückkehrzeit für die Variable
    `visitorGetUrlVariablesAsync` API auf 30 Sekunden.
 
-* Besucher-ID-Service - Der `setPushIdentifier` API-Aufruf sendet jetzt bei jedem Aufruf einen Synchronisierungsaufruf an den Besucher-ID-Dienst.
+* Besucher-ID-Dienst: Der `setPushIdentifier` API-Aufruf sendet jetzt bei jedem Aufruf einen Synchronisierungsaufruf an den Besucher-ID-Dienst.
 
 Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
