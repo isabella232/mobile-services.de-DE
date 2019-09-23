@@ -2,12 +2,12 @@
 description: Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native Apple iPhone- und iPad-Anwendungen messen, zielgruppenorientierte Inhalte in Ihren Apps bereitstellen und Zielgruppendaten über Audience Manager nutzen und erfassen.
 seo-description: Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native Apple iPhone- und iPad-Anwendungen messen, zielgruppenorientierte Inhalte in Ihren Apps bereitstellen und Zielgruppendaten über Audience Manager nutzen und erfassen.
 seo-title: iOS-SDK 4.x für Experience Cloud-Lösungen
-solution: Marketing Cloud,Analytics
+solution: Marketing Cloud, Analytics
 title: iOS-SDK 4.x für Experience Cloud-Lösungen
 topic: Entwickler und Implementierung
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: 0f6eec995626f4c93f56d59b682083bd0428d9e1
+source-git-commit: a16fe85f44d2ce852e806b2cc41fb5d40952ad6d
 
 ---
 
@@ -18,11 +18,11 @@ Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native App
 
 >[!IMPORTANT]
 >
->The Adobe Analytics Mobile Marketing Add-on SKU is required to enable Mobile Services access to mobile acquisition, deep linking, geolocation, and mobile messaging capabilities. Weitere Informationen erhalten Sie von Ihrem Adobe-CSM.
+>Die Adobe Analytics Mobile Marketing Add-on-SKU ist erforderlich, um Mobile Services den Zugriff auf Funktionen für mobile Akquise, Deep-Linking, Geolocation und mobiles Messaging zu ermöglichen. Weitere Informationen erhalten Sie von Ihrem Adobe-CSM.
 
 >[!IMPORTANT]
 >
->The iOS SDK 4.x for Experience Cloud Solutions is now supports [iOS 13 and Xcode 11][https://developer.apple.com/ios/]. To ensure seamless compatibility, use the latest versions of the 4.x iOS SDKs. For more information about the latest version, see the [release notes](/help/ios/rel-notes.md).
+>Das iOS-SDK 4.x für Experience Cloud-Lösungen unterstützt jetzt [iOS 13 und Xcode 11](https://developer.apple.com/ios/). Um eine nahtlose Kompatibilität sicherzustellen, verwenden Sie die neuesten Versionen der 4.x iOS SDKs. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](/help/ios/rel-notes.md).
 
 ## Neue Adobe Experience Cloud SDK-Version
 
