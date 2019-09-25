@@ -6,7 +6,7 @@ seo-title: Erste Schritte
 solution: Marketing Cloud, Analytics
 title: Erste Schritte
 topic: Metriken
-uuid: a 7 ae 7 c 5 a-dab 8-4603-b 4 cd-af 73 a 2 f 09 f 71
+uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -41,7 +41,7 @@ Mit Adobe Mobile Services können Sie die App-Interaktion in folgenden Bereichen
 
 Im Bereich *Akquise* nutzen Sie bezahlte oder eigene Medien bzw. Earned Media, um die Benutzerakquise für App-Downloads in den führenden Appstores zu optimieren. Mithilfe von Adobe Mobile Services können Sie die Akquise neuer App-Benutzer beschleunigen.
 
-Adobe Mobile Services bietet Workflows für die Benutzerakquise, einschließlich Akquise-Tracking und Deep-Linking, mit denen Sie die Effektivität Ihrer Kanäle bei der Benutzerakquise messen können. Mit Marketinglinks, die verfolgen, welche Benutzer aus welchem Kanal stammen, können Sie erkennen, welche Akquisekanäle am effektivsten für profitable und engagierte Benutzer sind.
+Adobe Mobile Services bietet Workflows für die Benutzerakquise, einschließlich Akquise-Tracking und Deep-Linking, mit denen Sie die Effektivität Ihrer Kanäle bei der Benutzerakquise messen können. Mit Marketing-Links, die verfolgen, welche Benutzer von welchem Kanal stammen, können Sie erkennen, welche Akquisekanäle am effektivsten zu gewinnbringenden und engagierten Benutzern führen.
 
 Darüber hinaus können Sie Benutzer mit Deep-Linking direkt zu dem App-Inhalt führen, den Sie ihnen präsentieren möchten, und sie zur Installation Ihrer App bewegen.
 
@@ -121,7 +121,7 @@ Adobe Target für Apps nutzt jetzt umfassend die in Adobe Analytics verfügbare 
 
 Weitere Informationen zum Standort finden Sie unter folgenden Themen:
 
-* [Speicherort im Benutzerhandbuch für Mobile Services](/help/using/location/c-location-overview.md)
+* [Speicherort im Mobile Services-Benutzerhandbuch](/help/using/location/c-location-overview.md)
 * [Standort im Android-SDK-Handbuch](/help/android/location/location.md)
 * [Standort im iOS-SDK-Handbuch](/help/ios/location/location.md)
 
