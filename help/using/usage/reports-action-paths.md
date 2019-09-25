@@ -6,7 +6,7 @@ seo-title: Bericht „Action Paths“
 solution: Marketing Cloud, Analytics
 title: Bericht „Action Paths“
 topic: Berichte, Metriken
-uuid: a 21 e 5 d 9 e-fd 77-4178-9 d 64-87181 b 7 f 988 b
+uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -21,7 +21,7 @@ Bei den Berichten **[!UICONTROL Ansichtspfade]** und **Aktionspfade]handelt es s
 
 >[!TIP]
 >
->Sie können die Navigation und Aktionen in einem Bericht mithilfe eines Trichterberichts kombinieren. For more information, see [Funnel](/help/using/usage/reports-funnel.md).
+>Sie können einen Trichterbericht verwenden, um Navigation und Aktionen in einem Bericht zu kombinieren. For more information, see [Funnel](/help/using/usage/reports-funnel.md).
 
 ![](assets/action_paths.png)
 
@@ -56,11 +56,11 @@ Benutzer, die ein Foto ausgewählt haben, haben folgende Pfade abgeschlossen, **
 * Ziehen eines Elements
 * Größenänderung eines Elements
 
-![action path focus](assets/action_paths_focus.png)
+![Action Path focus](assets/action_paths_focus.png)
 
 Sie können mehrere Knoten fokussieren oder erweitern, um eine detaillierte Darstellung der Pfade zu erhalten, denen Benutzer in Ihrer App folgen. Beispiel:
 
-![action path multi](assets/action_paths_mult.png)
+![Aktionspfad multi](assets/action_paths_mult.png)
 
 Für diesen Bericht können folgende Optionen konfiguriert werden:
 
@@ -74,7 +74,7 @@ Für diesen Bericht können folgende Optionen konfiguriert werden:
 
 * **[!UICONTROL Filter]**
 
-   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter [fixierbaren Filter hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Download]**
 
