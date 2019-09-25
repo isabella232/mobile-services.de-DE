@@ -1,24 +1,24 @@
 ---
 description: Die Android-SDK-Version 4.5 enthält eine neue Erweiterung von Android, die Ihnen das Erfassen der Nutzungsdaten von Ihrer Android Wearable App ermöglicht.
 seo-description: Die Android-SDK-Version 4.5 enthält eine neue Erweiterung von Android, die Ihnen das Erfassen der Nutzungsdaten von Ihrer Android Wearable App ermöglicht.
-seo-title: Wearables - Übersicht
+seo-title: Übersicht über die Variablen
 solution: Marketing Cloud, Analytics
-title: Wearables - Übersicht
+title: Übersicht über die Variablen
 topic: Entwickler und Implementierung
-uuid: f 9 a 5 d 692-0 ef 6-4 cdf -831 e-e 50 be 291 f 083
+uuid: f9a5d692-0ef6-4cdf-831e-e50be291f083
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Wearables - Übersicht {#wearables}
+# Übersicht über die Variablen {#wearables}
 
 Anhand der Informationen in diesem Abschnitt erfahren Sie, wie Sie mit der Android-Erweiterung Daten aus Ihrer Android Wearable-App erfassen können.
 
 >[!TIP]
 >
->Sie müssen mindestens die Android SDK Version 4.5 installiert haben.
+>Sie müssen mindestens die Android SDK-Version 4.5 installiert haben.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
