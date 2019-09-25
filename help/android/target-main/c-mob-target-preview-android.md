@@ -3,7 +3,7 @@ description: Mit der Target-Vorschau können Sie einfach Ende-zu-Ende-Qualitäts
 seo-description: Mit der Target-Vorschau können Sie einfach Ende-zu-Ende-Qualitätssicherung für Target-Aktivitäten betreiben und diese Aktivitäten auf Ihrem Gerät ansehen.
 seo-title: Target-Vorschau auf Android
 title: Target-Vorschau auf Android
-uuid: f 3 c 82 d 64-009 c -4929-a 5 e 6-3677 b 2977889
+uuid: f3c82d64-009c-4929-a5e6-3677b2977889
 translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
@@ -18,7 +18,7 @@ Weitere Informationen über die Einrichtung und Verwendung der Target-Vorschau f
 
 >[!IMPORTANT]
 >
->Um die Target-Vorschau zu verwenden, benötigen Sie SDK 4.14.0 oder höher.
+>Zur Verwendung der Target-Vorschau benötigen Sie SDK-Version 4.14.0 oder höher.
 
 * **setPreviewRestartDeeplink**
 
