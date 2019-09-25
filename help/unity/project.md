@@ -2,10 +2,10 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: Projekt erstellen
+seo-title: Building your project
 solution: Marketing Cloud, Entwickler
 title: Projekt erstellen
-uuid: 5550 a 394-6 f 3 f -4 b 87-b 840-89621 d 8 a 0 c 1 e
+uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -24,7 +24,8 @@ Beim Aufbauen für iOS wird ein Xcode-Projekt erstellt. Standardmäßig befinden
 
 1. In the **[!UICONTROL Build Phases]** tab of your project, add a link to the following libraries:
 
-   * `SystemConfiguration.framework`(Diese Bibliothek kann bereits verknüpft werden.)
+   * `SystemConfiguration.framework`
+(Diese Bibliothek ist möglicherweise bereits verknüpft.)
 
    * `libsqlite3.0.dylib`
 
@@ -56,7 +57,7 @@ android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 <receiver android:name="com.adobe.mobile.MessageNotificationHandler" /> 
 ```
 
-Wenn Sie Akquise verwenden, fügen Sie den folgenden Empfänger hinzu:
+If you are using acquisition, add the following receiver:
 
 ```java
 <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true"> 
