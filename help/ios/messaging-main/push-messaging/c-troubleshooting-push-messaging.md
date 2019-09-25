@@ -6,7 +6,7 @@ seo-title: Fehlerbehebung für Push-Nachrichten
 solution: Marketing Cloud, Analytics
 title: Fehlerbehebung für Push-Nachrichten
 topic: Metriken
-uuid: 87 d 7 dcb 6-82 a 8-46 e 3-a 6 ed -7 f 895 a 22 f 2 af
+uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
