@@ -3,7 +3,7 @@ description: Die Vorabruffunktion von Adobe Target verwendet Android Mobile SDKs
 seo-description: Die Vorabruffunktion von Adobe Target verwendet Android Mobile SDKs, um so wenig wie möglich Angebotsinhalt abzurufen, indem die Serverantworten im Cache abgelegt werden.
 seo-title: Vorabruf für Android-Angebotsinhalte
 title: Vorabruf für Android-Angebotsinhalte
-uuid: 063451 b 8-e 191-4 d 58-8 ed 8-1723 e 310 ad 1 a
+uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ Die Vorabruffunktion von Adobe Target verwendet Android Mobile-SDKs, um so wenig
 
 >[!IMPORTANT]
 >
->Prefetch-Funktionen in mobilen sdks für Android werden für die Aktivitätstypen Automatisches Targeting, Automatisierte Zuordnung und automatisierte Personalisierung in Adobe Target nicht unterstützt.
+>Prefetch functionality in the Mobile SDKs for Android is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
 
 Dieser Vorgang reduziert die Ladezeit, vermeidet mehrfache Netzwerk-Aufrufe und ermöglicht es Adobe Target, eine Benachrichtigung darüber zu erhalten, welche mbox vom Benutzer der mobilen App besucht wurde. Der gesamte Inhalt wird abgerufen und während des Aufrufs für den Vorabruf im Cache abgelegt, und dieser Inhalt wird bei allen zukünftigen Aufrufen abgerufen, die im Cache abgelegte Inhalte für den spezifizierten mbox-Namen enthalten.
 
@@ -56,7 +56,7 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
       final TargetCallback<Boolean> callback)
       ```
 
-   * Hier sind die Parameter für diese Methode:
+   * Here are the parameters for this method:
 
       * **targetPrefetchArray**
 
@@ -76,7 +76,7 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
 
    >[!IMPORTANT]
    >
-   >Wenn der Inhalt für die angeforderten Standorte bereits zwischengespeichert ist, wird er sofort im angegebenen Rückruf zurückgegeben. Andernfalls sendet das SDK eine Netzwerkanfrage an die Target-Server, um den Inhalt abzurufen.
+   >Wenn der Inhalt für die angeforderten Orte bereits zwischengespeichert ist, wird er sofort im bereitgestellten Rückruf zurückgegeben. Andernfalls sendet das SDK eine Netzwerkanfrage an die Target-Server, um den Inhalt abzurufen.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -84,7 +84,7 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
       public static void loadRequests( final List<TargetRequestObject> requestArray,  final Map<String, Object> profileParameters)
       ```
 
-   * Hier sind die Parameter für diese Methode:
+   * Here are the parameters for this method:
 
       * **requestArray**
 
@@ -140,7 +140,7 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
 
 Dies sind die öffentlichen Klassen, die den Vorabruf in Android unterstützen:
 
-### Klassenverweis: Targetprefetchobject
+### Klassenreferenz: TargetPrefetchObject
 
 Umfasst mbox-Namen sowie die Parameter, die für den mbox-Vorabruf verwendet werden.
 
@@ -152,7 +152,7 @@ Umfasst mbox-Namen sowie die Parameter, die für den mbox-Vorabruf verwendet wer
 * `mboxParameters`
 
    Sammlung von Schlüssel-Wert-Paaren, die als `mboxParameters` für diese Anfrage von `TargetPrefetchObject` angehängt werden.
-   * **Typ**: Map`<String, Object>`
+   * **Type**: Map`<String, Object>`
 
 * **`orderParameters`**
 
@@ -166,7 +166,7 @@ Umfasst mbox-Namen sowie die Parameter, die für den mbox-Vorabruf verwendet wer
    * **Typ**: Map `<String, Object>`
 
 
-### Klassenverweis: Targetrequestobject
+### Class reference: TargetRequestObject
 
 Diese Klasse kapselt den mbox-Namen, den Standardinhalt, die mbox-Parameter und den Rückruf ein, die für die Target-Standortanfragen verwendet werden.
 
@@ -204,7 +204,7 @@ Diese Klasse kapselt den mbox-Namen, den Standardinhalt, die mbox-Parameter und 
 
    Funktionszeiger, der aufgerufen wird, wenn Inhalt für das angegebene `TargetRequestObject` verfügbar ist.
 
-   * **Typ**: Target. targetcallback`<String>`
+   * **Typ**: Target.TargetCallback`<String>`
 
 
 ## Code sample {#section_BF7F49763D254371B4656E17953D520C}
