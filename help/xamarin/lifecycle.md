@@ -2,10 +2,10 @@
 description: Informationen, die Ihnen dabei helfen, Lebenszyklusmetriken für Android zu implementieren. Lebenszyklusmetriken werden für iOS automatisch gesammelt.
 keywords: Xamarin
 seo-description: Informationen, die Ihnen dabei helfen, Lebenszyklusmetriken für Android zu implementieren. Lebenszyklusmetriken werden für iOS automatisch gesammelt.
-seo-title: Lebenszyklus implementieren
+seo-title: Implement lifecycle
 solution: Marketing Cloud, Entwickler
 title: Lebenszyklus implementieren
-uuid: 6 dccc 12 e -8 b 77-4231-9 c 74-d 47 bc 0 ac 93 ba
+uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,11 +24,11 @@ For the metrics and dimensions that can be measured automatically by the mobile 
 
 ## iOS
 
-In ios werden Lebenszyklusmetriken automatisch erfasst.
+Unter iOS werden Lebenszyklusmetriken automatisch erfasst.
 
 ## Android
 
-Legen Sie in Ihrer Hauptaktivität den Anwendungskontext für das Android-SDK fest.
+In your main activity, set the application context for the Android SDK.
 
 ```java
 protected override void OnCreate (Bundle bundle) 
