@@ -2,10 +2,10 @@
 description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
 seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
 seo-title: ADBMobile-JSON-Konfiguration
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: ADBMobile-JSON-Konfiguration
 topic: Entwickler und Implementierung
-uuid: 1 decf 605-7 bc 3-4 e 73-ad 52-1 ecd 5821599 e
+uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -14,7 +14,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 # ADBMobile JSON config file {#adbmobile-json-config}
 
-Diese Informationen helfen Ihnen, die Variablen in der Konfigurationsdatei adbmobile. json zu verstehen.
+Anhand dieser Informationen können Sie die Variablen in der Konfigurationsdatei ADBMobile.json verstehen.
 
 ## `ADBMobileConfig.json` config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
@@ -24,17 +24,17 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 >
 >In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
 
-Hier finden Sie eine Liste der Variablen in der JSON-Datei und die SDK-Mindestversion, die Sie für jede Variable benötigen:
+Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erforderliche SDK-Mindestversion für jede Variable:
 
 * **Akquise**
    * Mindestens SDK-Version 4.1
    * Aktiviert die Mobile App-Akquise.
       * `server`: der Akquise-Server, der beim ersten Start auf einen Akquise-Referrer überprüft wird.
       * `appid`: die generierte ID, die diese App auf dem Akquise-Server eindeutig identifiziert.
-   Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. Weitere Informationen finden Sie unter *referrertimeout* in dieser Variablenliste.
+   Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. Weitere Informationen finden Sie unter *referrerTimeout* in dieser Variablenliste.
 
 * **analyticsForwardingEnabled**
-   * Die SDK-Mindestversion ist 4.8.0.
+   * SDK-Version mindestens 4.8.0.
    * Der Standardwert lautet `false`.
 
       Die Eigenschaft im Objekt `audienceManager`. Wenn Audience Manager konfiguriert ist und `analyticsForwardingEnabled` auf `true` festgelegt ist, wird sämtlicher Analytics-Datenverkehr auch an Audience Manager weitergeleitet.
@@ -53,7 +53,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die SDK-Mindestve
 
          >[!IMPORTANT]
          >
-         >Informationen zu Treffertreffern zurückdatierter Sitzungen werden in einem Server-Aufruf für Sitzungsinformationen gesendet und zusätzliche Server-Aufrufe können angewendet werden.
+         >Rückdatierte Treffer-Informationen werden in einem Sitzungsinfo-Server-Aufruf gesendet und es können zusätzliche Server-Aufrufe auftreten.
 
 * **batchLimit**
    * Mindestens SDK-Version 4.1
@@ -64,7 +64,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die SDK-Mindestve
       Beachten Sie die folgenden Informationen:
 
       * Der Standardwert lautet `0`. Das bedeutet, dass die Stapelverarbeitung nicht aktiviert ist.
-      * Erforderlich `offlineEnabled = true`.
+      * Requires .`offlineEnabled = true`
 
 * **charset**
    * Mindestens SDK-Version 4.0
@@ -78,7 +78,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die SDK-Mindestve
 
       >[!IMPORTANT]
       >
-      >Diese Variable ist von Target erforderlich.
+      >Diese Variable wird von Target benötigt.
 
 * **coopUnsafe**
    * Mindestens SDK-Version 4.16.1
@@ -154,7 +154,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die SDK-Mindestve
       …/yourfile.json”`,
       ```
 
-      Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. Informationen zum Herunterladen einer aktualisierten Konfigurationsdatei finden Sie unter [Bevor Sie beginnen](/help/android/getting-started/requirements.md).
+      Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. Informationen zum Herunterladen einer aktualisierten Konfigurationsdatei finden Sie unter [Vor dem Start](/help/android/getting-started/requirements.md).
 
 * **postback**
    * Mindestens SDK-Version 4.6
@@ -185,7 +185,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die SDK-Mindestve
 
       >[!IMPORTANT]
       >
-      >Diese Variable ist für Akquise erforderlich. Wenn die Variable auf `0` festgelegt oder nicht enthalten ist, wartet das SDK nicht auf Akquise-Daten und Akquise-Metriken werden nicht verfolgt.
+      >Diese Variable ist für die Akquise erforderlich. Wenn die Variable auf `0` festgelegt oder nicht enthalten ist, wartet das SDK nicht auf Akquise-Daten und Akquise-Metriken werden nicht verfolgt.
 
 * **remotes**
    * Mindestens SDK-Version 4.2
@@ -236,7 +236,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die SDK-Mindestve
    * Bestimmt, wie lange Target auf eine Antwort wartet.
 
 
-## `ADBMobileConfig.json` Beispieldatei {#section_4655EF79744649E5A5AE19E3224C472C}
+## Sample `ADBMobileConfig.json` file {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 
