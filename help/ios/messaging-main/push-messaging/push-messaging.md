@@ -1,11 +1,11 @@
 ---
 description: Adobe Mobile und das Adobe Mobile-SDK ermöglichen es Ihnen, Push-Nachrichten an Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App nach dem Klicken auf eine Push-Nachricht geöffnet haben.
 seo-description: Adobe Mobile und das Adobe Mobile-SDK ermöglichen es Ihnen, Push-Nachrichten an Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App nach dem Klicken auf eine Push-Nachricht geöffnet haben.
-seo-title: Push-Nachrichten
+seo-title: Push messaging
 solution: Marketing Cloud, Analytics
 title: Push-Nachrichten
 topic: Entwickler und Implementierung
-uuid: 2 e 2 d 8175-d 7 d 0-4 b 6 b-a 14 e-d 419 da 1 f 615
+uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -18,27 +18,27 @@ Adobe Mobile und das Adobe Mobile-SDK ermöglichen es Ihnen, Push-Nachrichten 
 
 >[!IMPORTANT]
 >
->Die Informationen in diesem Thema sind ein Vorschlag für eine mögliche Implementierung. Es wird dringend empfohlen, dass Sie die iOS-Dokumentation von Apple lesen, um die beste Implementierung für Ihre Anwendung zu bestimmen. Ihre Implementierung sollte von den Frameworks bestimmt werden, die Sie verwenden, sowie von den ios-Versionen, die Ihre App verwendet.
+>Die Informationen in diesem Thema sind ein Vorschlag für eine mögliche Implementierung. Es wird dringend empfohlen, dass Sie die iOS-Dokumentation von Apple lesen, um die beste Implementierung für Ihre Anwendung zu bestimmen. Ihre Implementierung sollte von den verwendeten Frameworks und den iOS-Versionen, die Ihre App als Ziel verwenden soll, bestimmt werden.
 
 Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderlich**.
 
 >[!IMPORTANT]
 >
->Legen Sie die Experience Cloud ID nicht manuell in Ihrer App fest. Dies verursacht die Erstellung eines neuen Unique User, der aufgrund seines „opt-in“-Status keine Push-Nachrichten empfängt. Beispiel: Ein Benutzer, der dem Empfang von Push-Nachrichten zugestimmt hat (opt-in), meldet sich bei Ihrer App an. Nach dem Anmelden wird, sofern Sie die ID manuell in Ihrer App festgelegt haben, ein neuer Unique User erstellt, der dem Empfang von Push-Nachrichten nicht zugestimmt hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
+>Legen Sie die Experience Cloud-ID nicht manuell in Ihrer App fest. Dies verursacht die Erstellung eines neuen Unique User, der aufgrund seines „opt-in“-Status keine Push-Nachrichten empfängt. Beispiel: Ein Benutzer, der dem Empfang von Push-Nachrichten zugestimmt hat (opt-in), meldet sich bei Ihrer App an. Nach dem Anmelden wird, sofern Sie die ID manuell in Ihrer App festgelegt haben, ein neuer Unique User erstellt, der dem Empfang von Push-Nachrichten nicht zugestimmt hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
 
-## Voraussetzungen {#section_06655ABE973743DC965897B229A2118D}
+## Voraussetzungen   {#section_06655ABE973743DC965897B229A2118D}
 
-* Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie Lebenszyklusmetriken.
+* Fügen Sie die Bibliothek zum Projekt hinzu und implementieren Sie Lebenszyklusmetriken.
 
    For more information, see [Lifecycle metrics](/help/ios/metrics.md).
 
 
 * Das SDK muss für den ID-Dienst aktiviert sein.
-Weitere Informationen finden [Sie unter SDK-ID-Dienst](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)-Optionen konfigurieren.
+Weitere Informationen finden Sie unter SDK-ID-Dienstoptionen [konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
 >[!IMPORTANT]
 >
->Das Verschieben Ihrer App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
+>Das Verschieben der App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
 
 ## Enabling push messaging {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
 
@@ -58,9 +58,9 @@ Weitere Informationen finden [Sie unter SDK-ID-Dienst](/help/using/c-manage-app-
    #import "ADBMobile.h"
    ```
 
-1. Um die Einstellungen zu ermitteln, für die Ihre App Berechtigungen beantragen muss, lesen Sie die Option ["Unterstützung für Remote-Benachrichtigungen konfigurieren](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1)«.
+1. Informationen zu den Einstellungen, für die Ihre App eine Berechtigung anfordern muss, finden Sie unter [Konfigurieren der Unterstützung](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1)für Remote-Benachrichtigungen.
 
-   Hier finden Sie ein Beispiel für eine mögliche Implementierung, die eine Berechtigung zur Verwendung von Warnungen, Badges, Sounds und Remote-Benachrichtigungen anfordert:
+   Im Folgenden finden Sie ein Beispiel für eine mögliche Implementierung, bei der die Berechtigung zur Verwendung der Benachrichtigungen, Badges, Sounds und Remote-Benachrichtigungen angefordert wird:
 
    ```objective-c
    // iOS 10 and newer 
@@ -104,7 +104,7 @@ Weitere Informationen finden [Sie unter SDK-ID-Dienst](/help/using/c-manage-app-
    }
    ```
 
-1. Um die richtige Implementierung für Ihre Umgebung zu bestimmen, gehen Sie zu [usernotifications](https://developer.apple.com/documentation/usernotifications).
+1. Um die richtige Implementierung für Ihre Umgebung zu ermitteln, gehen Sie zu [UserNotifications](https://developer.apple.com/documentation/usernotifications).
 
    Dieser Schritt hilft Ihnen beim Aktivieren der Push-Berichterstellung, indem das `userInfo`-Wörterbuch an das SDK übergeben wird, wenn der Benutzer die Anwendung durch das Klicken auf eine Push-Nachricht öffnet.
 
