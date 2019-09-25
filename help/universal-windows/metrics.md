@@ -1,12 +1,12 @@
 ---
 description: Listet die Metriken und Dimensionen auf, die automatisch durch die Mobilbibliothek gemessen werden können.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Listet die Metriken und Dimensionen auf, die automatisch durch die Mobilbibliothek gemessen werden können.
 seo-title: Lebenszyklusmetriken
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Lebenszyklusmetriken
 topic: Entwickler und Implementierung
-uuid: f 958 c 3 ef -1 d 79-4 b 30-8966-ef 74 bd 48 a 5 d 6
+uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,14 +17,14 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Listet die Metriken und Dimensionen auf, die automatisch durch die Mobilbibliothek gemessen werden können.
 
-Weitere Informationen finden Sie unter [Fehlerbehebung für Lebenszyklusdaten](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Weitere Informationen finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Wenn Lebenszyklusmetriken konfiguriert sind, werden sie in Kontextdatenparametern an Analytics, bei jedem mbox-Aufruf in Parametern an Target sowie als Signale an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management ein anderes Präfix für jede Metrik verwendet.
 
-Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsaufruf gesendet werden, automatisch in der Metrik oder Dimension erfasst und darüber berichtet. Ausnahmen werden im Inhalt vermerkt.
+Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufruf gesendet werden, automatisch mit der Metrik oder Dimension erfasst und in Berichten verwendet. Ausnahmen werden im Inhalt vermerkt.
 
 ## Metriken
 
@@ -59,7 +59,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsauf
 
    >[!IMPORTANT]
    >
-   >Diese Metrik wird nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
+   >This metric is not automatically stored in an Analytics metric. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
 
    * Analytics Context Data/Target parameter: `a.MonthlyEngUserEvent`
    * Audience Manager signal: `c_a_MonthlyEngUserEvent`
@@ -90,7 +90,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsauf
 
 * **Installationsdatum**
 
-   Datum des ersten Starts nach der Installation. Das Datumsformat `MM/DD/YYYY`ist.
+   Datum des ersten Starts nach der Installation. Das Datumsformat ist `MM/DD/YYYY`festgelegt.
 
    * Analytics Context Data/Target parameter: `a.InstallDate`
    * Audience Manager signal: `c_a_InstallDate`
@@ -194,7 +194,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsauf
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Die folgenden Metriken und Dimensionen werden in den Variablen für mobile Lösungen von der folgenden Methode erfasst:
+Die folgenden Metriken und Dimensionen werden mit der folgenden Methode in Variablen mobiler Lösungen erfasst:
 
 ### Metriken
 
@@ -228,7 +228,7 @@ Die folgenden Metriken und Dimensionen werden in den Variablen für mobile Lösu
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Zielgruppen-Manager:
+   * Eigenschaften von Audience Manager:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -238,11 +238,11 @@ Die folgenden Metriken und Dimensionen werden in den Variablen für mobile Lösu
 
    Populated by `trackLocation` methods.
 
-   * Analytics-Kontextdaten/Target-Parameter:
+   * Analytics Context Data/Target parameter(s):
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Zielgruppen-Manager:
+   * Eigenschaften von Audience Manager:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -252,11 +252,11 @@ Die folgenden Metriken und Dimensionen werden in den Variablen für mobile Lösu
 
    Populated by `trackLocation` methods.
 
-   * Analytics-Kontextdaten/Target-Parameter:
+   * Analytics Context Data/Target parameter(s):
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Zielgruppen-Manager:
+   * Eigenschaften von Audience Manager:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -267,18 +267,18 @@ Die folgenden Metriken und Dimensionen werden in den Variablen für mobile Lösu
    Wird durch `trackLocation`-Methoden aufgefüllt, wenn sich das Gerät in einem definierten POI befindet.
 
    * Analytics Context Data/Target parameter: `a.loc.poi`
-   * Zielgruppen-Manager: `c_a_loc_poi`
+   * Audience Manager-Eigenschaft: `c_a_loc_poi`
 
 * **Entfernung zum Zentrum des Zielpunkts**
 
    Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem POI befindet.
 
    * Analytics Context Data/Target parameter: `a.loc.dist`
-   * Zielgruppen-Manager: `c_a_loc_dist`
+   * Audience Manager-Eigenschaft: `c_a_loc_dist`
 
 * **Lebenszeitwert (Konversionsvariable)**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics Context Data/Target parameter: `a.ltv.amount`
-   * Zielgruppen-Manager: `c_a_ltv_amount`
+   * Audience Manager trait: `c_a_ltv_amount`
