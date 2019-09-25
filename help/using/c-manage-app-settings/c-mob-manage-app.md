@@ -3,10 +3,10 @@ description: Sie können die Daten, die Sie von der App erhalten, verfolgen und 
 keywords: mobile
 seo-description: Sie können die Daten, die Sie von der App erhalten, verfolgen und verwalten, indem Sie verschiedene Variablen und Metriken konfigurieren.
 seo-title: Verwalten Ihrer App
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Verwalten Ihrer App
 topic: Metriken
-uuid: 0 cc 356 c 3-8457-40 a 7-8 c 97-7 cbc 68 a 5 dc 0 c
+uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -21,12 +21,12 @@ Sie können die Daten, die Sie von der App erhalten, verfolgen und verwalten, in
 
 * **Standardvariablen und Metriken**
 
-   Jede App enthält Variablen und Metriken zur Verfolgung von Warenkorb und Kaufaktivitäten. Some purchase information cannot be handled with processing rules, so the SDK exposes the special `"&&products"` context data. Sie können beispielsweise Variablen zum Hinzufügen bzw. Entfernen von Produkten zum bzw. aus dem Warenkorb, zu abgeschlossenen Kaufvorgängen, Bestellungen usw. festlegen. Die Kontextdaten müssen den Daten in Adobe Analytics zugeordnet werden. Wenn diese Variable mittels einer einfachen Zuordnung aus Kontextdaten aufgefüllt wird, ist dies der Schlüssel für die Zuordnung. Lassen Sie es leer, wenn die Variable durch komplexere Regeln in den Analytics Admin Tools gefüllt wird.
+   Jede App enthält Variablen und Metriken zur Verfolgung von Warenkorb und Kaufaktivitäten. Some purchase information cannot be handled with processing rules, so the SDK exposes the special `"&&products"` context data. Sie können beispielsweise Variablen zum Hinzufügen bzw. Entfernen von Produkten zum bzw. aus dem Warenkorb, zu abgeschlossenen Kaufvorgängen, Bestellungen usw. festlegen. Die Kontextdaten müssen den Daten in Adobe Analytics zugeordnet werden. Wenn diese Variable mittels einer einfachen Zuordnung aus Kontextdaten aufgefüllt wird, ist dies der Schlüssel für die Zuordnung. Lassen Sie sie leer, wenn die Variable in Analytics Admin Tools durch komplexere Regeln aufgefüllt wird.
 
    Weitere Informationen zu diesen Variablen und Metriken finden Sie unter folgenden Themen:
 
    * [Produktvariablen in Android](/help/android/analytics-main/products/products.md)
-   * [Produktvariablen in ios](/help/ios/analytics-main/products/products.md)
+   * [Produktvariablen in iOS](/help/ios/analytics-main/products/products.md)
 
 * **Benutzerdefinierte Variablen**
 
@@ -69,42 +69,42 @@ Die folgenden Zuordnungen werden in Analytics als in Mobile Services erstellt an
 
    * **[!UICONTROL Sitzung]**
 
-      Der evar-Wert bleibt für die Länge des Analytics-Besuchs bestehen.
+      Der eVar-Wert bleibt für die Dauer des Analytics-Besuchs erhalten.
 
    * **[!UICONTROL Tracking-Anruf]**
 
-      Der evar-Wert bleibt nur für den Verfolgungsaufruf oder Treffer bestehen, in dem er enthalten war.
+      Der eVar-Wert bleibt nur für den Verfolgungsaufruf oder den Treffer, in den er einbezogen wurde, erhalten.
 
    * **[!UICONTROL Unbeschränkte Gültigkeit]**
 
-      Der evar-Wert bleibt für alle nachfolgenden Verfolgungsaufrufe bestehen.
+      Der eVar-Wert bleibt bei allen nachfolgenden Verfolgungsaufrufen erhalten.
    * **[!UICONTROL Advanced]**
 
-      Adobe Analytics verfügt über eine erweiterte Benutzeroberfläche für die Einstellung der Persistenz von eVars. Wenn ein Persistenzwert für die evar festgelegt ist, die in Mobile Services nicht unterstützt wird, wird dieser Wert in der Mobile Services-Benutzeroberfläche angezeigt.
+      Adobe Analytics verfügt über eine erweiterte Benutzeroberfläche für die Einstellung der Persistenz von eVars. If a persistence value is set for the eVar that is not supported in Mobile Services, this value is displayed in the Mobile Services UI.
 
       To manage eVars, click **[!UICONTROL Adobe Analytics Report Suite Manager]** &gt; **[!UICONTROL Conversion Variables UI]**.
 
    * **[!UICONTROL Listenunterstützung]**
 
-      Ermöglicht die Übergabe mehrerer Werte, die mit der Eigenschaft verknüpft werden sollen, in einem Verfolgungsaufruf. Das Trennzeichen muss ein Zeichen sein und darf keine Null oder kein Leerzeichen sein.
+      Ermöglicht die Übergabe mehrerer Werte, die mit der Eigenschaft in einem Verfolgungsaufruf verknüpft werden. Das Trennzeichen muss ein Zeichen sein und darf weder eine Null noch ein Leerzeichen sein.
 
    * **[!UICONTROL Trennzeichen]**
 
-      Das Trennzeichen muss ein Zeichen sein und darf keine Null oder kein Leerzeichen sein.
+      Das Trennzeichen muss ein Zeichen sein und darf weder eine Null noch ein Leerzeichen sein.
 
 ### Zusätzliche Analytics-Variablen
 
 Über die Dropdownliste am Ende jedes Variablenabschnitts können Sie weitere Variablen aktivieren.
 
-![eine Variable hinzufügen](assets/add_variable.png)
+![Variable hinzufügen](assets/add_variable.png)
 
 Wählen Sie eine bisher ungenutzte Variablennummer aus und geben Sie einen Namen ein. Optional können Sie die Kontextdatenvariable, die Sie speichern möchten, sowie weitere Informationen eingeben.
 
 * **Benutzerdefinierte Metriken**
 
-   Metriken (oder Ereignisse) beantworten die Fragen *?* oder *wie viele?*. Ereignisse können bei jeder Aktion des Benutzers gesteigert werden oder numerische Werte, wie z. B. einen Preis, enthalten. Benutzerdefinierte Metriken beinhalten Ereignisse, z. B. wenn eine App erstellt, die PDF- oder CSV-Datei heruntergeladen oder exportiert, eine Kampagne gespeichert, das SDK heruntergeladen, ein Bericht ausgeführt, ein Appstore-Link hinzugefügt oder eine In-App-Nachricht aktiviert wird.
+   *Metriken (oder Ereignisse) beantworten die Fragen* wie viel? oder *wie viele?*. Ereignisse können bei jeder Aktion des Benutzers gesteigert werden oder numerische Werte, wie z. B. einen Preis, enthalten. Benutzerdefinierte Metriken beinhalten Ereignisse, z. B. wenn eine App erstellt, die PDF- oder CSV-Datei heruntergeladen oder exportiert, eine Kampagne gespeichert, das SDK heruntergeladen, ein Bericht ausgeführt, ein Appstore-Link hinzugefügt oder eine In-App-Nachricht aktiviert wird.
 
-   Wählen Sie eines der folgenden benutzerdefinierten Metriktypen:
+   Wählen Sie einen der folgenden benutzerspezifischen Metriktypen aus:
 
    * **[!UICONTROL Ganzzahl]**
    * **[!UICONTROL Dezimalzahl]**
@@ -112,11 +112,11 @@ Wählen Sie eine bisher ungenutzte Variablennummer aus und geben Sie einen Namen
 
 ## Zielpunkte verwalten {#section_990EF15E4E3B42CC807FCD9BEC8DB4C6}
 
-Mit Zielpunkten können Sie geografische Standorte definieren, die Sie für Korrelationszwecke, Targeting mit In-App-Nachrichten usw. verwenden können. Wenn ein Treffer innerhalb eines Zielpunkts gesendet wird, wird der Zielpunkt an den Treffer angehängt. Weitere Informationen zu Zielpunkten finden Sie unter [Zielpunkte verwalten](/help/using/location/t-manage-points.md).
+Points of interest allow you to define geographical locations that you can use for correlation purposes, target with in-app messages, and so on. Wenn ein Treffer innerhalb eines Zielpunkts gesendet wird, wird der Zielpunkt an den Treffer angehängt. Weitere Informationen zu Zielpunkten finden Sie unter [Zielpunkte verwalten](/help/using/location/t-manage-points.md).
 
 ## Link-Ziele verwalten {#section_F722A387E22A430187B063D358A87711}
 
-Sie können Link-Ziele erstellen, bearbeiten, archivieren, dearchivieren und löschen. Diese Ziele können dann inline aufgerufen werden, wenn Marketing-Links, Push-Benachrichtigungen oder In-App-Nachrichten erstellt werden. Weitere Informationen zu Link-Zielen finden Sie unter [Link-Ziele verwalten](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md).
+Sie können Link-Ziele erstellen, bearbeiten, archivieren, dearchivieren und löschen. These destinations can then be called inline when building Marketing Links, push notifications, or in-app messages. Weitere Informationen zu Link-Zielen finden Sie unter Link-Ziele [verwalten](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md).
 
 ## Postbacks verwalten {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
