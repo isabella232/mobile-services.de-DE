@@ -5,7 +5,7 @@ seo-title: Swift-Integration
 solution: Marketing Cloud, Analytics
 title: Swift-Integration
 topic: Entwickler und Implementierung
-uuid: 5 fb 77 b 57-cbf 9-4 bcf -8 b 41-65 a 933 bf 9336
+uuid: 5fb77b57-cbf9-4bcf-8b41-65a933bf9336
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -16,7 +16,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 Das iOS Adobe Mobile-SDK kann mithilfe der Funktion „Mix and Match“ (Kombinieren und abgleichen) in der iOS-Entwicklerbibliothek nahtlos in ein Swift-Projekt integriert werden.
 
-Weitere Informationen finden Sie unter [Sprachinteroperabilität](https://developer.apple.com/documentation/swift#2984801.html).
+For more information, see [Language Interoperability](https://developer.apple.com/documentation/swift#2984801.html).
 
 Beispielsweise können Sie durch Verwendung der Methode „bridging header“ entsprechend der Beschreibung in der Dokumentation die iOS-SDK-Header-Datei in Adobe Mobile importieren:
 
