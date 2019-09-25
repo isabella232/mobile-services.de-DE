@@ -5,7 +5,7 @@ seo-title: Konfigurationsmethoden
 solution: Marketing Cloud, Analytics
 title: Konfigurationsmethoden
 topic: Entwickler und Implementierung
-uuid: 623 c 7 b 07-fbb 3-4 d 39-a 5 c 4-e 64 faec 4 ca 29
+uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -16,14 +16,14 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 Hier finden Sie eine Liste der Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Adobe Experience Platform Identity Service.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter Analytics, Target, Audience Manager und den Identitätsdienst für Adobe Experience Platform.
 
 * **setAppExtensionType**
 
    Konfiguriert die Adobe Mobile-SDK-Einstellung, um zu bestimmen, welcher Erweiterungstyp aktuell ausgeführt wird.
 
    Die folgenden Werte sind zulässig:
-   * `ADBMobileAppExtensionTypeRegular` - die Erweiterung wird mit einer App gebündelt.
+   * `ADBMobileAppExtensionTypeRegular` - die Erweiterung ist mit einer App, die sie enthält, gebündelt.
    * `ADBMobileAppExtensionTypeStandAlone` - extension is not bundled with a containing app.
    >[!TIP]
    >
@@ -124,7 +124,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >Wenn Ihre App-Upgrades von Experience Cloud 3. x auf das 4. x-SDK aktualisiert werden, wird die vorherige oder automatisch erzeugte Besucher-ID abgerufen und als benutzerdefinierte Benutzer-ID gespeichert. Weitere Informationen finden Sie unten in der Zeile `userIdentifier`. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID `nil` und die Tracking-ID wird verwendet.
+   >Wenn Ihre App von Experience Cloud 3.x auf das SDK 4.x aktualisiert, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. Weitere Informationen finden Sie unten in der Zeile `userIdentifier`. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID `nil` und die Tracking-ID wird verwendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -144,7 +144,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >Wenn Ihre App-Upgrades vom Experience Cloud 3. x auf 4. x-SDK aktualisiert werden, wird die vorherige oder automatisch erzeugte Besucher-ID abgerufen und als benutzerdefinierte Benutzer-ID gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten.
+   >Wenn Ihre App vom Experience Cloud-SDK 3.x auf das SDK 4.x aktualisiert, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten.
 
    Bei neuen Installationen der SDK-Version 4.x lautet die Benutzer-ID `nil`, bis sie festgelegt wird.
 
@@ -214,7 +214,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >Diese Methode soll für Apps verwendet werden, die sich bei Benachrichtigungen während des Hintergrunds registrieren und nur aus dem Code heraus aufgerufen werden sollen, der während der App ausgeführt wird.
+   >Diese Methode ist für Apps vorgesehen, die sich für Benachrichtigungen im Hintergrund registrieren und nur aus dem Code aufgerufen werden sollten, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -252,7 +252,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    Ermöglicht Ihnen die Weitergabe zusätzlicher Daten beim Erfassen von Lebenszyklusmetriken.
 
-   Diese Methode muss vom Einstiegspunkt Ihrer App aufgerufen werden. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
+   This method must be called from the entry point of your app. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
 
    >[!IMPORTANT]
    >
