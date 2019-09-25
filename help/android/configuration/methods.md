@@ -1,12 +1,12 @@
 ---
 description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Konfigurationsmethoden
 solution: Marketing Cloud, Analytics
 title: Konfigurationsmethoden
 topic: Entwickler und Implementierung
-uuid: 663 aeb 6 c -1 b 97-4 a 3 a -8 c 0 e-dd 4 c 2 ec 28 c 01
+uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -38,7 +38,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 * **registerAdobeDataCallback**
 
-   * Registriert ein Objekt, das die `AdobeDataCallback`-Schnittstelle implementiert. The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. Weitere Informationen darüber, welche Ereignisse diesen Rückruf auslösen, finden Sie unter *mobiledataeventenum* unten in diesem Thema.
+   * Registriert ein Objekt, das die `AdobeDataCallback`-Schnittstelle implementiert. The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. Weitere Informationen darüber, welche Ereignisse diesen Rückruf auslösen, finden Sie unter *MobileDataEventEnum* unten in diesem Thema.
 
       >[!TIP]
       >
@@ -74,7 +74,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
       public static String getVersion();
       ```
 
-   * Hier finden Sie ein Codebeispiel für diese Methode:
+   * Hier ein Codebeispiel für diese Methode:
 
       ```java
       String libraryVersion = Config.getVersion(); 
@@ -86,8 +86,8 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
       Dies sind die Werte zum Datenschutzstatus:
 
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`, wo die Treffer sofort gesendet werden.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, wo die Elemente verworfen werden.
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`, wobei die Treffer sofort gesendet werden.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, where the its are discarded.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) ändert.
 
          Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
@@ -97,7 +97,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
       public static MobilePrivacyStatus getPrivacyStatus(); 
       ```
 
-   * Hier finden Sie ein Codebeispiel für diese Methode:
+   * Hier ein Codebeispiel für diese Methode:
 
       ```java
       MobilePrivacyStatus privacyStatus Config.getPrivacyStatus();
@@ -109,8 +109,8 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
    * Legt für den aktuellen Benutzer den Datenschutzstatus `status` fest.
 
       Sie können den Datenschutzstatus auf einen der folgenden Werte festlegen:
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`, wo die Treffer sofort gesendet werden. Diese Treffer werden sofort gesendet.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, wo die Elemente verworfen werden. Diese Treffer werden verworfen.
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`, where the hits are sent immediately. Diese Treffer werden sofort gesendet.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, where the its are discarded. Diese Treffer werden verworfen.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) ändert.
 Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
    * Hier finden Sie die Syntax für diese Methode:
@@ -119,7 +119,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
       public static void setPrivacyStatus(MobilePrivacyStatus status); 
       ```
 
-   * Hier finden Sie ein Codebeispiel für diese Methode:
+   * Hier ein Codebeispiel für diese Methode:
 
       ```java
       Config.setPrivacyStatus(MobilePrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN); 
@@ -136,7 +136,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
       public static BigDecimal getLifetimeValue();
       ```
 
-   * Hier finden Sie ein Codebeispiel für diese Methode:
+   * Hier ein Codebeispiel für diese Methode:
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -148,7 +148,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
 
       >[!TIP]
       >
-      >Wenn Ihre App-Upgrades von Experience Cloud 3. x auf das 4. x-SDK aktualisiert werden, wird die vorherige oder automatisch erzeugte Besucher-ID abgerufen und als benutzerdefinierte Benutzer-ID gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Bei Neuinstallationen mit SDK 4.x ist die Benutzer-ID `null`.
+      >Wenn Ihre App von Experience Cloud 3.x auf das SDK 4.x aktualisiert, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Bei Neuinstallationen mit SDK 4.x ist die Benutzer-ID `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -156,7 +156,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
       public static String&amp getUserIdentifier();
       ```
 
-   * Hier finden Sie das Codebeispiel für diese Methode:
+   * Hier das Codebeispiel für diese Methode:
 
       ```java
       String userId = Config.getUserIdentifier();
