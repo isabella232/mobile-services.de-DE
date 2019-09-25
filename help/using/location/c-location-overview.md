@@ -6,7 +6,7 @@ seo-title: Übersicht (Standort)
 solution: Marketing Cloud, Analytics
 title: Übersicht (Standort)
 topic: Berichte, Metriken
-uuid: a 701 abc 3-001 b -4015-843 f -5 fb 2 c 6 c 80 d 17
+uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -19,7 +19,7 @@ The **[!UICONTROL Location Overview]** report lets you see the different countri
 
 Dieser Bericht bietet Ihnen eine Sunburst-Grafik vorhandener Daten, die Sie nutzen können, um Zielgruppensegmente (Besuchergruppen) für das Targeting zu ermitteln. Das Erstellen und Verwalten von Zielgruppen verläuft ähnlich wie das Erstellen und Verwenden von Segmenten. Zielgruppen können Sie jedoch für die Verwendung in der Experience Cloud zur Verfügung stellen.
 
-Hier finden Sie einige weitere Informationen zu diesem Bericht:
+Im Folgenden finden Sie weitere Informationen zu diesem Bericht:
 
 ## Navigation and usage {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
 
@@ -27,7 +27,7 @@ Diese Grafik enthält beispielsweise neben dem Basisbericht auch Aufschlüsselun
 
 >[!TIP]
 >
->Zusätzlich zu diesen Informationen können Sie ein Produkt in der Produktansicht anzeigen, in dem beschrieben wird, wie Sie mit dem Sunburst-Diagramm interagieren. Um das Tutorial zu starten, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Ort]** und dann auf das Symbol **i[!UICONTROL .]**
+>In addition to this information, you can view an in-product tutorial that describes how to interact with the sunburst chart. Um das Tutorial zu starten, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Ort]** und dann auf das Symbol **i[!UICONTROL .]**
 
 ![](assets/location.png)
 
@@ -59,7 +59,7 @@ Sie können Aufschlüsselungen und sekundäre Metriken hinzufügen, die dann die
 
 >[!TIP]
 >
->Je mehr Ringe Sie zur Sunburst hinzufügen, desto länger dauert die Verarbeitung.
+>Je mehr Ringe Sie zum Sonnenbrand hinzufügen, desto länger dauert die Verarbeitung.
 
 Um Aufschlüsselungen und sekundäre Metriken hinzuzufügen, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Ort]** und dann auf **Benutzerspezifisch]. Hierdurch wird die rechte Leiste geöffnet.[!UICONTROL **
 
