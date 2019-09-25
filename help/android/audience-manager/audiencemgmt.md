@@ -1,12 +1,12 @@
 ---
 description: Sie können über Zielgruppen-Management Signale senden und Besuchersegmente erhalten.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Sie können über Zielgruppen-Management Signale senden und Besuchersegmente erhalten.
 seo-title: Audience Manager-Konfiguration
 solution: Marketing Cloud, Analytics
-title: Audience Manager-Konfiguration
+title: Audience Manager configuration
 topic: Entwickler und Implementierung
-uuid: f 68 d 5 b 2 e-fa 2 c -4 db 6-98 ad-d 1855 a 2 c 45 ac
+uuid: f68d5b2e-fa2c-4db6-98ad-d1855a2c45ac
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -32,4 +32,4 @@ public void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-Wenn Sie diesen Methodenaufruf bei Implementierung von Analytics oder Target hinzugefügt haben, müssen Sie ihn nicht erneut hinzufügen.
+If you added this method call when you implemented Analytics or Target, you do not need to add it again.
