@@ -3,9 +3,9 @@ description: Mit diesem Plugin senden Sie Adobe Analytics-Aufrufe aus Ihren Unit
 keywords: Unity
 seo-description: Mit diesem Plugin senden Sie Adobe Analytics-Aufrufe aus Ihren Unity-Anwendungen heraus.
 seo-title: Unity Plug-in für die iOS- und Android 4.x-SDKs
-solution: Marketing Cloud, Entwickler
+solution: Marketing Cloud,Developer
 title: Unity Plug-in für die iOS- und Android 4.x-SDKs
-uuid: 83289 a 73-982 d -4472-a 8 c 8-00 b 562 dc 80 f 5
+uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
 source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
