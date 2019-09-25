@@ -3,9 +3,9 @@ description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsre
 seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt im Server-Aufruf festzulegen.
 seo-title: Produktvariable
 solution: Marketing Cloud, Analytics
-title: Produktvariable
+title: Products variable
 topic: Entwickler und Implementierung
-uuid: 607983 d 6-48 ac -4274-bfc 8-b 1 ca 4 e 5 dad 1 b
+uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -46,7 +46,7 @@ The *`products`* is set directly on the image request, and the other variables a
 
 ![](assets/products-procrules.png)
 
-Sie müssen die *`products`* Variable nicht mithilfe von Verarbeitungsregeln zuordnen, da sie direkt in der Bildanforderung durch das SDK festgelegt ist.
+Sie müssen die *`products`* Variable nicht mithilfe von Verarbeitungsregeln zuordnen, da sie direkt auf der Bildanforderung des SDK eingestellt wird.
 
 ## Products variable with merchandising eVars and product-specific events {#section_685D53AD3D064F9A8E225F995A9BA545}
 
@@ -73,5 +73,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Wenn Sie ein produktspezifisches Ereignis mithilfe der *`&&products`* Variablen auslösen, müssen Sie auch das Ereignis in der *`&&events`* Variablen festlegen. Andernfalls wird das Ereignis während der Verarbeitung herausgefiltert.
+>Wenn Sie ein produktspezifisches Ereignis mithilfe der *`&&products`* Variablen auslösen, müssen Sie dieses Ereignis auch in der *`&&events`* Variablen einstellen, da das Ereignis andernfalls während der Verarbeitung herausgefiltert wird.
 
