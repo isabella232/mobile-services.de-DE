@@ -1,12 +1,12 @@
 ---
 description: Sie können iOS PhoneGap-Plug-in-Methoden verwenden, um eine Reihe verschiedener Aufgaben auszuführen.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Sie können iOS PhoneGap-Plug-in-Methoden verwenden, um eine Reihe verschiedener Aufgaben auszuführen.
-seo-title: Phonegap-Plug-in-Methoden
+seo-title: PhoneGap-Plug-in-Methoden
 solution: Marketing Cloud, Analytics
-title: Phonegap-Plug-in-Methoden
+title: PhoneGap-Plug-in-Methoden
 topic: Entwickler und Implementierung
-uuid: bc 3 db 9 ce -81 b 7-45 ec -88 aa -6020 c 1 db 5 d 9 c
+uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -33,7 +33,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    * `ADB.optedIn`: Diese Treffer werden sofort gesendet.
    * `ADB.optedOut`: Diese Treffer werden verworfen.
-   * `ADB.optUnknown`: **Wenn Ihre Report Suite** zeitstempelfähig ist, werden Treffer gespeichert, bis sich der Datenschutzstatus an die Teilnahme (Treffer werden gesendet) oder das Opt-Out ändert (Treffer werden verworfen). Wenn für Ihre Report Suite **keine** Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
+   * `ADB.optUnknown`: If your report suite is timestamp-enabled, hits are saved until the privacy status changes to opt-in (hits are sent) or opt-out (hits are discarded). **** Wenn für Ihre Report Suite **keine** Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
       Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
@@ -51,7 +51,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    * `ADB.optedIn`: Diese Treffer werden sofort gesendet.
    * `ADB.optedOut`: Diese Treffer werden verworfen.
-   * `ADB.optUnknown`: **Wenn Ihre Report Suite** zeitstempelfähig ist, werden Treffer gespeichert, bis sich der Datenschutzstatus an die Teilnahme (Treffer werden gesendet) oder das Opt-Out ändert (Treffer werden verworfen). Wenn für Ihre Report Suite **keine** Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
+   * `ADB.optUnknown`: Wenn Ihre Report Suite zeitstempelfähig **ist** , werden die Treffer gespeichert, bis der Datenschutzstatus in "opt-in"(Treffer werden gesendet) oder "opt-out"(Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite **keine** Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -97,7 +97,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >Wenn Ihre App-Upgrades vom Experience Cloud 3. x auf 4. x-SDK aktualisiert werden, wird die vorherige Besucher-ID (benutzerdefiniert oder automatisch generiert) abgerufen und als benutzerdefinierte Benutzer-ID gespeichert. Weitere Informationen finden Sie unten unter `getUserIdentifier`. Diese ID bewahrt Besucherdaten bei SDK-Upgrades auf.
+   >Wenn Ihre App vom Experience Cloud-SDK 3.x auf das SDK 4.x aktualisiert, wird die vorherige (benutzerdefinierte oder automatisch generierte) Besucher-ID abgerufen und als benutzerdefinierte Benutzer-ID gespeichert. Weitere Informationen finden Sie unten unter `getUserIdentifier`. Diese ID bewahrt Besucherdaten bei SDK-Upgrades auf.
 
    Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID `null` und die Tracking-ID wird verwendet.
 
@@ -187,7 +187,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!WARNING]
    >
-   >Gehen Sie beim manuellen Leeren der Warteschlange vorsichtig vor, da sie nicht rückgängig gemacht werden kann.
+   >Seien Sie vorsichtig, wenn Sie die Warteschlange manuell löschen, da sie nicht rückgängig gemacht werden kann.
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -202,7 +202,6 @@ In `html` files where you want to use tracking, add the following to the `<head>
    Sendet eine Anfrage zur Erfassung personenbezogener Daten.
 
    * Hier finden Sie die Syntax für diese Methode:
-
    ```javascript
    ADB.collectPII(piiData,success, fail);
    ```
@@ -222,7 +221,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >Wenn der Lebenszyklusaufruf ein Startereignis ist, werden die Adobe Link-Daten angehängt. Andernfalls wird ein zusätzlicher Aufruf gesendet.
+   >Wenn der Lebenszyklusaufruf ein Startereignis ist, werden die Adobe-Link-Daten angehängt, andernfalls wird ein zusätzlicher Aufruf gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -248,7 +247,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackState(string stateName[,JSON cData]);
       ```
 
-   * Hier finden Sie Codebeispiele für diese Methode:
+   * Hier sind Codebeispiele für diese Methode:
 
       ```js
         ADB.trackState("login&amp;nbsp;page"); 
@@ -268,7 +267,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackAction(string action[,JSON cData]); 
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```js
         ADB.trackAction("login");
@@ -555,7 +554,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.targetThirdPartyID(success, fail);
       ```
 
-   * Hier finden Sie Codebeispiele für diese Methode:
+   * Im Folgenden finden Sie ein Codebeispiel für diese Methode:
 
       ```java
        ADB.targetThirdPartyID(function (value) { alert(value); },function (value) { alert('fail')__;});
@@ -573,7 +572,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.acquisitionCampaignStartForApp(appId, data, success, fail); 
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Here are the code samples for this method:
 
       ```java
       ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
@@ -647,7 +646,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.audienceSetDpidAndDpuuid(dpid, dpuuid, success, fail); 
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```java
       ADB.audienceSetDpidAndDpuuid(‘dpid’, ‘dpuuid’, function() {…}, function(){…};
@@ -667,7 +666,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.audienceSignalWithData(success, fail, data);
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```java
        ADB.audienceSignalWithData(function() {}, function() {} {‘key1’: ’value1’ ‘key2’: ‘value2’}); 
@@ -679,7 +678,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
 
 * **audienceReset**
 
-   Die UUID des Audience Manager bereinigt das aktuelle Besucherprofil.
+   UUID von Audience Manager und Bereinigen des aktuellen Besucherprofils.
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -715,7 +714,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.visitorSyncIdentifiers(identifiers, success, fail); 
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Here are the code samples for this method:
 
       ```java
       ADB.visitorSyncIdentifiers({‘key_id_1’:’value_id_1’}, function() {…}, function() {…}));
