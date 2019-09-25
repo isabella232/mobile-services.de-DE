@@ -1,12 +1,12 @@
 ---
 description: Android-Widgets können über dieselben Methoden wie Apps verfolgt werden. Widgets haben denselben Anwendungskontext wie die App. Daher werden die Hit-Reihenfolge und die Besucheridentifizierung beibehalten.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Android-Widgets können über dieselben Methoden wie Apps verfolgt werden. Widgets haben denselben Anwendungskontext wie die App. Daher werden die Hit-Reihenfolge und die Besucheridentifizierung beibehalten.
 seo-title: Android-Widgets
 solution: Marketing Cloud, Analytics
 title: Android-Widgets
 topic: Entwickler und Implementierung
-uuid: 1 a 3718 ff -967 b -4 c 8 e-ae 0 b-ba 15 bddbda 0 a
+uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
