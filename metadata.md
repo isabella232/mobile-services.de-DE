@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
 product: mobile-services
-solution-title: Training und Support
+solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/de/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: Erste Schritte
