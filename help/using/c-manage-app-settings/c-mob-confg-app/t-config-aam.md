@@ -2,11 +2,11 @@
 description: Sie können die SDK-Audience Manager-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 keywords: mobile
 seo-description: Sie können die SDK-Audience Manager-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
-seo-title: Audience Manager-Optionen konfigurieren
+seo-title: Konfigurieren von Audience Manager-Optionen
 solution: Marketing Cloud, Analytics
-title: Audience Manager-Optionen konfigurieren
+title: Konfigurieren von Audience Manager-Optionen
 topic: Metriken
-uuid: 471270 ca-cee 5-401 e-aac 1-e 48146 ee 8399
+uuid: 471270ca-cee5-401e-aac1-e48146ee8399
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -17,7 +17,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 Sie können die SDK-Audience Manager-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 
-1. Geben Sie beim Hinzufügen einer neuen App oder Bearbeiten einer bestehenden App Informationen in das **[!UICONTROL Subdomänenfeld]** unter **[!UICONTROL SDK-Optionen ein]**.
+1. While adding a new app or editing an existing app, type information in the **[!UICONTROL Subdomain]** field under **[!UICONTROL SDK Options]**.
 
 1. Type the subdomain of the Audience Manager server that your app uses, for example, `client.demdex.net`.
 
