@@ -1,12 +1,12 @@
 ---
 description: Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messung nativer Android-Anwendungen, die Bereitstellung gezielter Inhalte in Ihrer App und die Erfassung und Nutzung von Zielgruppendaten über Zielgruppen-Management.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messung nativer Android-Anwendungen, die Bereitstellung gezielter Inhalte in Ihrer App und die Erfassung und Nutzung von Zielgruppendaten über Zielgruppen-Management.
 seo-title: Android-SDK 4.x für Experience Cloud-Lösungen
 solution: Marketing Cloud, Analytics
 title: Android-SDK 4.x für Experience Cloud-Lösungen
 topic: Entwickler und Implementierung
-uuid: 56 f 1 ff 41-0365-41 dd-bdde -245 c 823 dff 7
+uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -19,7 +19,7 @@ Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messu
 
 >[!IMPORTANT]
 >
->Die Adobe Analytics Mobile Marketing Add-on SKU ist erforderlich, um Mobile Services-Zugriff auf Akquise, Deep-Linking, Geolocation und mobile Messaging-Funktionen zu ermöglichen. Weitere Informationen erhalten Sie von Ihrem Adobe-Kundenbetreuer.
+>The Adobe Analytics Mobile Marketing Add-on SKU is required to enable Mobile Services access to mobile acquisition, deep linking, geolocation, and mobile messaging capabilities. Weitere Informationen erhalten Sie von Ihrem Adobe-CSM.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -38,7 +38,7 @@ Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für 
 
 >[!IMPORTANT]
 >
->Obwohl Sie Funktionen in der Benutzeroberfläche konfigurieren können, funktionieren diese Funktionen erst, wenn Sie die generierte Konfigurationsdatei herunterladen und diese Datei dem SDK hinzufügen. Informationen zum Herunterladen und Konfigurieren der sdks finden Sie unter [Core-Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
+>Obwohl Sie Funktionen in der Benutzeroberfläche konfigurieren können, funktionieren diese Funktionen erst, wenn Sie die generierte Konfigurationsdatei herunterladen und diese Datei zum SDK hinzufügen. Informationen zum Herunterladen und Konfigurieren der SDKs finden Sie unter [Core-Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
 
 Die SDKs unterstützen die folgenden Android-Versionen:
 
@@ -49,7 +49,7 @@ Berücksichtigen Sie Folgendes:
 
 * Ab Version 4.2 werden Treffer mithilfe der HTTP-POST-Methode gesendet.
 
-   Dies wirkt sich nicht auf die erfassten oder gemeldeten Daten aus. Sie müssen jedoch einen Paket-Analyzer verwenden, der die Überprüfung von POST-Daten unterstützt, um Treffer anzuzeigen.
+   Dies hat keine Auswirkungen auf die erfassten oder berichteten Daten. Sie müssen jedoch einen Paketanalysator verwenden, der die Überprüfung von POST-Daten unterstützt, um Treffer anzuzeigen.
 
 * If you are upgrading from a previous version, see the [4.x Migration Guide](/help/android/getting-started/migration-v3.md).
 
