@@ -5,7 +5,7 @@ seo-title: Zeitgesteuerte Aktionen
 solution: Marketing Cloud, Analytics
 title: Zeitgesteuerte Aktionen
 topic: Entwickler und Implementierung
-uuid: 5 a 48 a 580-b 942-4 e 49-9 f 1 b -078 fea 7 fccdb
+uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 translation-type: tm+mt
 source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
@@ -31,7 +31,7 @@ Ein optionaler Rückruf ermöglicht die Durchführung zusätzlicher Aktionen nac
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK und Config File to your intellij IDEA oder Eclipse Project* in [Core Implementation and lifeycle](/help/android/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und Lebensdauer](/help/android/getting-started/dev-qs.md)hinzufügen.
 1. Importieren Sie die Bibliothek:
 
    ```java
