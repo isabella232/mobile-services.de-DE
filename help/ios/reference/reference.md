@@ -5,7 +5,7 @@ seo-title: iOS-SDK-Referenz
 solution: Marketing Cloud, Analytics
 title: iOS-SDK-Referenz
 topic: Entwickler und Implementierung
-uuid: 4 e 80 b 0 ce-d 36 e -440 e -96 ff-de 5 df 8804 e 3 e
+uuid: 4e80b0ce-d36e-440e-96ff-de5df6804e3e
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # iOS SDK reference {#ios-sdk-reference}
 
-Die Informationen in diesem Abschnitt unterstützen Sie bei der Verwendung des ios SDK für Experience Cloud-Lösungen.
+The information in this section helps you use the iOS SDK for Experience Cloud Solutions.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
