@@ -3,7 +3,7 @@ description: Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDKs, um
 seo-description: Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDKs, um so Angebotsinhalte so selten wie möglich abzurufen, indem die Serverantworten im Cache abgelegt werden.
 seo-title: Vorabruf-Angebotsinhalte in iOS
 title: Vorabruf-Angebotsinhalte in iOS
-uuid: fef 58042-65 e 2-4579-b 8 f 1-d 21554 d 2 af 57
+uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDKs, um so Angebotsi
 
 >[!IMPORTANT]
 >
->Prefetch-Funktionen in mobilen sdks für ios werden für die Aktivitätstypen Automatisches Targeting, Automatisierte Zuordnung und automatisierte Personalisierung in Adobe Target nicht unterstützt.
+>Die Funktion "Prefetch"in den Mobile SDKs für iOS wird für die Aktivitätstypen "Automatisches Targeting", "Automatisierte Zuordnung"und "Automatisierte Personalisierung"in Adobe Target nicht unterstützt.
 
 Dieser Vorgang reduziert die Ladezeit, vermeidet mehrfache Netzwerk-Aufrufe und ermöglicht es Adobe Target, eine Benachrichtigung darüber zu erhalten, welche mbox vom Benutzer der mobilen App besucht wurde. Der gesamte Inhalt wird abgerufen und während des Aufrufs für den Vorabruf im Cache abgelegt, und dieser Inhalt wird bei allen zukünftigen Aufrufen abgerufen, die im Cache abgelegte Inhalte für den spezifizierten mbox-Namen enthalten.
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## Prefetch-Methoden {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## Vorab-Methoden {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 Hier finden Sie die Verfahren, die Sie für den Vorabruf unter iOS nutzen können:
 
@@ -55,7 +55,7 @@ Hier finden Sie die Verfahren, die Sie für den Vorabruf unter iOS nutzen könne
                             callback:(nullable void(^)(BOOL success))callback;
       ```
 
-   * Hier sind die Parameter für diese Methode:
+   * Die Parameter für diese Methode lauten:
 
       * **`targetPrefetchArray`**
 
@@ -75,7 +75,7 @@ Hier finden Sie die Verfahren, die Sie für den Vorabruf unter iOS nutzen könne
 
    >[!IMPORTANT]
    >
-   >Wenn der Inhalt für die angeforderten Standorte bereits zwischengespeichert ist, wird er sofort im angegebenen Rückruf zurückgegeben. Andernfalls sendet das SDK eine Netzwerkanfrage an die Target-Server, um den Inhalt abzurufen.
+   >If the content for the requested locations is already cached, it will be returned immediately in the provided callback. Andernfalls sendet das SDK eine Netzwerkanfrage an die Target-Server, um den Inhalt abzurufen.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -84,7 +84,7 @@ Hier finden Sie die Verfahren, die Sie für den Vorabruf unter iOS nutzen könne
                withProfileParameters:(nullableNSDictionary*)profileParameters;
       ```
 
-   * Hier sind die Parameter für diese Methode:
+   * Die Parameter für diese Methode lauten:
 
       * **`requests`**
 
@@ -136,13 +136,13 @@ Hier finden Sie die Verfahren, die Sie für den Vorabruf unter iOS nutzen könne
 
 Dies sind die öffentlichen Klassen, die den Vorabruf in iOS unterstützen:
 
-### Klassenverweis: Targetprefetchobject
+### Klassenreferenz: TargetPreFetchObject
 
 Umfasst mbox-Namen sowie die Parameter, die für den mbox-Vorabruf verwendet werden.
 
 * **`name`**
 
-   Name der gewünschten Position/mbox.
+   Name für den Ort/die Mbox, den Sie abrufen möchten.
 
    * **Typ**: NSString*
 
@@ -164,7 +164,7 @@ Umfasst mbox-Namen sowie die Parameter, die für den mbox-Vorabruf verwendet wer
 
    * **Typ**: NSDictionary*
 
-### Klassenverweis: Targetrequestobject
+### Klassenreferenz: TargetRequestObject
 
 Diese Klasse kapselt den mbox-Namen, den Standardinhalt, die mbox-Parameter und den Rückruf ein, die für die Target-Standortanfragen verwendet werden.
 
