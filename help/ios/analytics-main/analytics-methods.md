@@ -1,11 +1,11 @@
 ---
 description: Hier finden Sie eine Liste der Adobe Analytics-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-description: Hier finden Sie eine Liste der Adobe Analytics-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
-seo-title: Analytics-Methoden
-solution: Marketing Cloud, Analytics
-title: Analytics-Methoden
+seo-title: Analytics methods
+solution: Marketing Cloud,Analytics
+title: Analysemethoden
 topic: Entwickler und Implementierung
-uuid: d 49 fe 6 de-cb 32-4 b 96-9891-c 567310 e 59 a 6
+uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Hier finden Sie eine Liste der Adobe Analytics-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Adobe Experience Platform Identity Service. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter Analytics, Target, Audience Manager und den Identitätsdienst für Adobe Experience Platform. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
 
 Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Suite verwendet.
 
@@ -26,7 +26,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, der Seitenansichten inkrementiert.
+   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -44,7 +44,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackAction:&#x200B;data:**
 
-   Verfolgt eine Aktion in der App. Aktionen, die Sie messen möchten, wie z. `logons`B `banner taps`., `feed subscriptions`und andere Metriken, treten in Ihrer App auf.
+   Verfolgt eine Aktion in der App. Actions that you want to measure, such as , , , and other metrics, occur in your app.`logons``banner taps``feed subscriptions`
 
    >[!TIP]
    >
@@ -86,7 +86,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
    >[!TIP]
    >
-   >Diese Methode sollte nur in Code aufgerufen werden, der ausgeführt wird, während sich Ihre App im Hintergrund befindet.
+   >Diese Methode sollte nur in Code aufgerufen werden, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -263,7 +263,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackingSendQueuedHits**
 
-   Erfordert SDK 4.1. Unabhängig davon, wie viele Treffer derzeit in die Warteschlange gestellt werden, erzwingt die Bibliothek alle Treffer in der Offline-Warteschlange.
+   Erfordert SDK 4.1. Unabhängig davon, wie viele Treffer derzeit in der Warteschlange stehen, zwingt die Bibliothek, alle Treffer in der Offline-Warteschlange zu senden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -321,7 +321,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
    >[!IMPORTANT]
    >
-   >Diese Methode erhöht keine Seitenansichten.
+   >Bei dieser Methode werden die Seitenansichten nicht inkrementiert.
 
    * Hier finden Sie die Syntax für diese Methode:
 
