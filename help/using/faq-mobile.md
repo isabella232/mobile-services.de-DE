@@ -3,10 +3,10 @@ description: Antworten auf häufig gestellte Fragen zu Adobe Mobile Services sow
 keywords: mobile
 seo-description: Antworten auf häufig gestellte Fragen zu Adobe Mobile Services sowie allgemeine Funktionsbeschreibungen.
 seo-title: Häufig gestellte Fragen
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Häufig gestellte Fragen
 topic: Metriken
-uuid: 62 a 9241 c -2 ada -483 a-a 594-b 023916 cb 0 b 6
+uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,7 +15,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Häufig gestellte Fragen {#frequently-asked-questions}
 
-Die folgende Tabelle enthält eine Liste häufig gestellter Fragen für Adobe Mobile Services:
+Die folgende Tabelle enthält eine Liste häufig gestellter Fragen zu Adobe Mobile Services:
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
@@ -29,24 +29,24 @@ Unsere aktuelle SDK-Version lautet 4.11. Weitere Informationen finden Sie in den
 
 ### Wo kann ich die SDKs herunterladen?
 
-Die sdks für einzelne Mobilplattformen können unter dem Abschnitt App-Einstellungen [verwalten heruntergeladen](/help/using/c-manage-app-settings/c-manage-app-settings.md) werden.
+Die SDKs für einzelne Mobilplattformen können unter "App-Einstellungen [verwalten"heruntergeladen werden](/help/using/c-manage-app-settings/c-manage-app-settings.md) .
 
 ### Wie konfiguriere ich die SDKs?
 
-Nachdem Sie eine neue App-Report Suite erstellt haben, navigieren Sie zum Verwalten der App-Einstellungen und konfigurieren Sie alle erforderlichen Optionen auf der Seite mit den App-Informationen. Laden Sie nach dem Speichern Ihrer Konfiguration die benötigten SDKs unten auf der Seite „App-Einstellungen verwalten“ herunter. The SDK will come pre-configured with the options you have saved and can be found in the `ADBMobileConfig.json` file in the SDK package. If you change any SDK settings on the Manage App Settings page, make sure you re-download the SDK files or update your `ADBMobileConfig.json` file with the necessary changes.
+Nachdem Sie eine neue App-Report Suite erstellt haben, navigieren Sie zu "App-Einstellungen verwalten"und konfigurieren Sie alle erforderlichen Optionen auf der Seite mit den App-Informationen. Laden Sie nach dem Speichern Ihrer Konfiguration die benötigten SDKs unten auf der Seite „App-Einstellungen verwalten“ herunter. The SDK will come pre-configured with the options you have saved and can be found in the `ADBMobileConfig.json` file in the SDK package. If you change any SDK settings on the Manage App Settings page, make sure you re-download the SDK files or update your `ADBMobileConfig.json` file with the necessary changes.
 
 ### Unterstützen die Adobe Mobile SDKs IPv6 für iOS?
 
-Die Adobe Mobile SDKs verwenden die standardmäßigen iOS- und Android-Netzwerkstapel. Für ios verwendet das SDK nsurlsession (ios Versionen 7 +) und nsurlconnection (ios Version 7 und höher), die vollständig ipv 6 entsprechen. Entwickler, die einen eigenen Netzwerkstapel erstellt oder verwendet haben, möchten möglicherweise prüfen, ob es andere Abkürzungen gibt. Hier finden Sie einige weitere Informationen von Apple:
+Die Adobe Mobile SDKs verwenden die standardmäßigen iOS- und Android-Netzwerkstapel. For iOS, the SDK uses NSURLSession (iOS versions 7+) and NSURLConnection (iOS versions 7 and later) which are fully compliant with IPv6. Developers who have built or use their own networking stack might want to review if there are other mitigating considerations. Im Folgenden finden Sie weitere Informationen von Apple:
 
-*Wenn Sie eine clientseitige App verwenden, die auf hoher Ebene Netzwerk-apis wie nsurlsession und die cfnetwork-Frameworks enthält und Sie eine Verbindung nach Name herstellen, sollten Sie nichts ändern, damit Ihre App mit ipv 6-Adressen funktioniert.* Weitere Informationen finden Sie unter [Unterstützende ipv 6 DNS 64/NAT 64 Networks](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
+*Wenn Sie eine clientseitige App mit High-Level-Netzwerk-APIs wie NSURLSession und den CFNetwork-Frameworks erstellen und eine Verbindung nach Namen herstellen, müssen Sie nichts ändern, damit Ihre App mit IPv6-Adressen funktioniert.* Weitere Informationen finden Sie unter [Unterstützende IPv6 DNS64/NAT64-Netzwerke](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
 
 ## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
 
 ### Was sind Lebenszyklusmetriken?
 
-Lebenszyklusmetriken sind im Lieferumfang enthaltene Metriken, die automatisch erfasst werden, wenn das SDK zum ersten Mal in Ihrer App implementiert wird. Weitere Informationen finden Sie unter [Lebenszyklusmetriken (Android)](/help/android/metrics.md) und [Lebenszyklusmetriken (ios)](/help/ios/metrics.md).
+Lebenszyklusmetriken sind im Lieferumfang enthaltene Metriken, die automatisch erfasst werden, wenn das SDK zum ersten Mal in Ihrer App implementiert wird. Weitere Informationen finden Sie unter [Lebenszyklusmetriken (Android)](/help/android/metrics.md) und [Lebenszyklusmetriken (iOS)](/help/ios/metrics.md).
 
 ### Wie kann ich Fehler in Verarbeitungsregeln beheben?
 
@@ -54,7 +54,7 @@ Weitere Informationen finden Sie unter [Tipps und Tricks zu Verarbeitungsregeln]
 
 ### Kann ich meine Analysedaten an mehrere Report Suites senden?
 
-Ja. Die SDKs bieten die Möglichkeit, Daten an mehrere Adobe Analytics Report Suites zu senden. Um mithilfe einer Bildanfrage Daten in mehreren Report Suites zu erfassen, geben Sie im Feld **[!UICONTROL rsids]** unter dem Abschnitt **analytics[!UICONTROL der Datei „“ mehrere Report Suite-IDs ein, getrennt durch Kommas und ohne Leerzeichen.]**`ADBMobileConfig.json` Weitere Informationen finden Sie unter [adbmobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
+Ja. Die SDKs bieten die Möglichkeit, Daten an mehrere Adobe Analytics Report Suites zu senden. Um mithilfe einer Bildanfrage Daten in mehreren Report Suites zu erfassen, geben Sie im Feld **[!UICONTROL rsids]** unter dem Abschnitt **analytics[!UICONTROL der Datei „“ mehrere Report Suite-IDs ein, getrennt durch Kommas und ohne Leerzeichen.]**`ADBMobileConfig.json` Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
 
 ### Wie unterscheiden sich Handybesuche von Starts?
 
@@ -68,7 +68,7 @@ Für Push-Benachrichtigungen gilt ein Grenzwert von 140 Zeichen. Es gibt keine B
 
 ### Werden für Push-Benachrichtigungen benutzerdefinierte Nutzlasten unterstützt?
 
-Ja, wir unterstützen eine benutzerdefinierte Push-Nutzlast, die in JSON kodiert werden kann. Android- und iOS-Nutzlasten sind auf 4 KB bzw. 2 KB beschränkt. Diese Nutzlasten werden über eine Push- oder eine lokale Benachrichtigung an die App gesendet. Weitere Informationen finden [Sie unter Erlebnis: Push-Nachricht](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
+Ja, wir unterstützen eine benutzerdefinierte Push-Nutzlast, die in JSON kodiert werden kann. Android- und iOS-Nutzlasten sind auf 4 KB bzw. 2 KB beschränkt. Diese Nutzlasten werden über eine Push- oder eine lokale Benachrichtigung an die App gesendet. Weitere Informationen finden Sie unter [Erlebnis: Push-Nachricht](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
 ### Gibt es Größenbeschränkungen für In-App-Nachrichten?
 
@@ -84,13 +84,13 @@ Marketingexperten können beliebige Analytics-Daten oder -Ereignisse nutzen, die
 
 Push-Nachrichten werden unter Verwendung von bereits bestehenden Adobe Analytics-Segmenten oder von benutzerdefinierten Segmenten gesendet, die über bereits erfasste historische Analytics-Daten erstellt wurden. Weitere Informationen finden Sie unter [Erlebnis: Push-Nachricht](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
-### Warum erhalte ich einen Fehler mit dem In-App-, Push- oder Marketing-Link-Namen, den ich eingegeben habe?
+### Warum erhalte ich eine Fehlermeldung mit dem von mir eingegebenen In-App-, Push- oder Marketing-Link-Namen?
 
-Sie können nicht ein und denselben Namen für In-App-Nachrichten, Push-Nachrichten oder Marketinglinks in verschiedenen Apps verwenden, die dieselbe übergeordnete Report Suite oder VRS verwenden. Um dieses Problem zu beheben, geben Sie einen anderen Namen für Ihre In-App-Nachricht, Push-Nachricht oder Marketing-Link ein.
+Sie können nicht ein und denselben Namen für In-App-Nachrichten, Push-Nachrichten oder Marketinglinks in verschiedenen Apps verwenden, die dieselbe übergeordnete Report Suite oder VRS verwenden. To resolve this issue, enter another name for your in-app message, push message, or Marketing Link.
 
-## Ort {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
+## Position {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
 
-### Gibt es eine Beschränkung für die Anzahl von Interesse (pois)?
+### Gibt es eine Grenze für die Anzahl der Interessensgebiete (POI), die ich haben kann?
 
 Es gelten keine bestimmten Beschränkungen. Für optimale Performance und aufgrund des begrenzten Arbeitsspeichers der Benutzergeräte empfiehlt es sich jedoch, maximal 5.000 Zielpunkte zu erstellen bzw. hochzuladen.
 
@@ -102,4 +102,4 @@ Ja. Adobe Mobile Services unterstützen Sie dabei, Marketingtricks zu erstellen,
 
 ### Wie kann ich Links einrichten, um neue App-Benutzer zu erfassen und zu verfolgen?
 
-Sie können Marketing-Links erstellen, die Benutzer zum Herunterladen von Anwendungen aus dem Apple App Store und Google Play weiterleiten. Mit diesen Links können Sie den Downloads Ihre Erfolgsereignisse zuordnen. Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
+Sie können Marketing-Links erstellen, über die Benutzer Anwendungen aus dem Apple App Store und aus Google Play herunterladen können. Mit diesen Links können Sie den Downloads Ihre Erfolgsereignisse zuordnen. Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
