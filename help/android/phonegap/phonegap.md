@@ -1,19 +1,19 @@
 ---
 description: Mit diesem Plug-in können Sie Android-AppMeasurement-Aufrufe von Ihrem PhoneGap-Projekt ausführen.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Mit diesem Plug-in können Sie Android-AppMeasurement-Aufrufe von Ihrem PhoneGap-Projekt ausführen.
-seo-title: Phonegap-Plug-in-Übersicht
+seo-title: Überblick über das PhoneGap-Plug-in
 solution: Marketing Cloud, Analytics
-title: Phonegap-Plug-in-Übersicht
+title: Überblick über das PhoneGap-Plug-in
 topic: Entwickler und Implementierung
-uuid: c 5 c 32357-d 8 df -458 a-b 0 e 8-e 0 c 56040241 d
+uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Phonegap-Plug-in-Übersicht {#phonegap-plug-in}
+# Überblick über das PhoneGap-Plug-in {#phonegap-plug-in}
 
 Mit diesem Plug-in können Sie Android-AppMeasurement-Aufrufe von Ihrem PhoneGap-Projekt ausführen. To create a PhoneGap project, see [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html).
 
@@ -45,7 +45,7 @@ cordova plugin add adobe-mobile-services
 
    Um die Datei zu verschieben, klicken Sie auf **[!UICONTROL OK]**.
 
-1. Ziehen Sie die `ADB_Helper.js` Datei in den Ordner, der die `index.html` Datei enthält.
+1. Ziehen Sie die `ADB_Helper.js` Datei in den Ordner, der die `index.html` Datei enthält
 
    Um die Datei zu verschieben, klicken Sie auf **[!UICONTROL OK]**.
 
@@ -63,7 +63,7 @@ cordova plugin add adobe-mobile-services
    <param name="android-package" value="com.example.phonegaptest.ADBMobile_PhoneGap" />
    ```
 
-## Appmeasurement-Bibliothek einschließen
+## Include the AppMeasurement library
 
 1. To download the AppMeasurement library, see [Get the SDK](/help/android/getting-started/dev-qs.md).
 1. Ziehen Sie die `adobeMobileLibrary.jar` Datei in Ihren `src` Ordner.
@@ -77,7 +77,7 @@ cordova plugin add adobe-mobile-services
 
    Um die Datei zu verschieben, klicken Sie auf **[!UICONTROL OK]**.
 
-## App-Berechtigungen hinzufügen
+## Add app permissions
 
 Die AppMeasurement-Bibliothek erfordert folgende Berechtigungen, um Daten zu senden und Offline-Verfolgungsaufrufe aufzuzeichnen:
 
