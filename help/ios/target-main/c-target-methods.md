@@ -1,28 +1,28 @@
 ---
 description: Hier finden Sie die Liste der Adobe Target-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-description: Hier finden Sie die Liste der Adobe Target-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
-seo-title: Ios-Zielmethoden für Adobe Mobile Services
+seo-title: iOS Target Methods for Adobe Mobile Services
 solution: Marketing Cloud, Analytics
-title: Zielmethoden für ios
+title: Target Methods for iOS
 topic: Entwickler und Implementierung
-uuid: 692 bcda 1-02 ba -4902-bd 65-15888 adf 1952
+uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 translation-type: tm+mt
 source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 ---
 
 
-# Target-Methoden für ios {#target-methods}
+# Target methods for iOS {#target-methods}
 
 Hier finden Sie die Liste der Adobe Target-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Adobe Experience Platform Identity Service. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Zum Beispiel weisen -Methoden das Präfix `target`target auf.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter Analytics, Target, Audience Manager und den Identitätsdienst für Adobe Experience Platform. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Zum Beispiel weisen -Methoden das Präfix `target`target auf.
 
 >[!TIP]
 >
->Lebenszyklusmetriken werden als Parameter jeder mbox-Load gesendet. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md). Wenn Sie Target-Anforderungen innerhalb der `didFinishLaunching` Delegate-Methode senden, fügen Sie einen `[ADBMobile trackAction:data:]` oder `[ADBMobile trackState:data:]` einen Aufruf vor dem Target-Implementierungscode hinzu. Auf diese Weise enthalten die Target-Anforderungen die vollständigen Lebenszyklusdaten.
+>Lebenszyklusmetriken werden als Parameter jeder mbox-Load gesendet. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md). Wenn Sie Target-Anforderungen innerhalb der `didFinishLaunching` Delegate-Methode senden, fügen Sie vor dem Target-Implementierungscode einen `[ADBMobile trackAction:data:]` oder `[ADBMobile trackState:data:]` -Aufruf hinzu. This way, the Target requests will contain the complete lifecycle data.
 
-## Klassenverweis: Adbtargetlocationrequest
+## Class reference : ADBTargetLocationRequest
 
 ### Eigenschaften
 
@@ -32,11 +32,11 @@ NSString *defaultContent;
 NSMutableDictionary *parameters;
 ```
 
-### Zeichenfolgen-Konstanten
+### Zeichenfolgenkonstanten
 
 >[!TIP]
 >
->Die folgenden Konstanten dienen zur Benutzerfreundlichkeit, wenn Sie Schlüssel für benutzerdefinierte Parameter festlegen.
+>The following constants are for ease of use when you set keys for custom parameters.
 
 ```iOS
 NSString *const ADBTargetParameterOrderId; 
@@ -99,7 +99,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    * Gibt Folgendes zurück: N/A
 
-   * Hier sind die Parameter für diese Methode:
+   * Here are the parameters for this method:
 
       * **`name`**
 
@@ -152,7 +152,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Weitere Informationen zur zugrunde liegenden Target-API finden Sie unter [Adobe Target-Entwickler](https://docs.adobe.com/dev/products/target/reference/delivery.html).
+      For more information about the underlying Target API, see Adobe Target Developers.[](https://docs.adobe.com/dev/products/target/reference/delivery.html)
 
 
 
