@@ -6,7 +6,7 @@ seo-title: Fehlerbehebung für Push-Nachrichten
 solution: Marketing Cloud, Analytics
 title: Fehlerbehebung für Push-Nachrichten
 topic: Metriken
-uuid: c 7 be 4 ab 7-0 cfe -4296-84 a 8-01412 f 4 fd 93 f
+uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -21,7 +21,7 @@ Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werd
 
 Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftreten:
 
-* **Warten auf Analytics-Treffer**
+* **Warten auf Treffer in Analytics**
 
    Jede Report Suite verfügt über eine Einstellung, die festlegt, wann eingehende Analytics-Treffer verarbeitet werden sollen. Standardmäßig geschieht dies einmal pro Stunde.
 
@@ -33,11 +33,11 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 
    >[!TIP]
    >
-   >Diese Anzahl ist die Anzahl erfolgreicher Übertragungen an die Push-Dienste. Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird.
+   >Diese Anzahl ist die Anzahl der erfolgreichen Sends an die Push-Dienste. Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird.
 
-   Weitere Informationen zur Zuverlässigkeit des Dienstes finden Sie unter:
+   Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie unter:
 
-   * [Servicequalität](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
+   * [Quality of Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
    * [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
 ## Warum ist mein Android-GCM-API-Schlüssel ungültig?
@@ -82,7 +82,7 @@ Ihr APNS-Zertifikat kann aus folgenden Gründen ungültig sein:
 
 ## Beheben von Push-Nachrichtenfehlern
 
-**Ein Beispiel**
+**An example**
 
 Im folgenden Beispiel wird veranschaulicht, wie Sie bei Verwendung einer VRS einen Push-Fehler beheben.
 
@@ -94,7 +94,7 @@ Der folgende Kunde verfügt über zwei iOS-Apps:
    * VRSID Definition Segment: `a.appid contains “PhotoShop_iOS_app_SF”`
 * App-Name: PhotoShop_app_iOS
    * Übergeordnete RSID: AllAdobe PhotoShop_apps
-   * RSID: Photoshop_ ios_ app_ LA
+   * RSID: FotoShop_iOS_app_LA
    * VRSID Definition Segment: `a.os contains “iOS”`
 
 In this example, if a Photoshop employee sends a push to the *PhotoShop_iOS_app_SF* app, all *PhotoShop_iOS_app_SF app* users receive the push message as expected. But, if the employee sends a message to the *PhotoShop_iOS_app_LA* app, because its VRSID Definition Segment is incorrect (`iOS` instead of `a.os contains "PhotoShop_iOS_app_LA"`), the message is sent to **all** iOS users in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blacklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. If the segment had been defined as `a.os contains “PhotoShop_iOS_app_LA”`, the push message would have been sent to only *PhotoShop_iOS_app_LA* users.
@@ -103,4 +103,4 @@ If passed with the *PhotoShop_IOS_app_LA* push certificate, the push identifiers
 
 >[!CAUTION]
 >
->After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. Wenn nicht **alle** Apps über ein gültiges Zertifikat verfügen, werden Ihre Zielgruppensegmente möglicherweise auf unbestimmte Zeit auf die Blacklist gesetzt, sodass Sie betroffenen Benutzern künftig keine Push-Nachrichten mehr senden können. Weitere Informationen zu Zielgruppensegmenten finden [Sie unter Zielgruppe: Definieren und Konfigurieren von Zielgruppenoptionen für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. Wenn nicht **alle** Apps über ein gültiges Zertifikat verfügen, werden Ihre Zielgruppensegmente möglicherweise auf unbestimmte Zeit auf die Blacklist gesetzt, sodass Sie betroffenen Benutzern künftig keine Push-Nachrichten mehr senden können. Weitere Informationen zu Zielgruppensegmenten finden Sie unter [Zielgruppe: Zielgruppenoptionen für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)definieren und konfigurieren.
