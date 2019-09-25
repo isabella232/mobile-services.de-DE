@@ -2,24 +2,24 @@
 description: Der Bericht „Ansichtspfade“ basiert auf Pfadanalysen und enthält ein Pfaddiagramm, das die Pfade darstellt, auf denen sich Benutzer von einem App-Status zu einem anderen bewegt haben.
 keywords: mobile
 seo-description: Der Bericht „Ansichtspfade“ basiert auf Pfadanalysen und enthält ein Pfaddiagramm, das die Pfade darstellt, auf denen sich Benutzer von einem App-Status zu einem anderen bewegt haben.
-seo-title: Bericht "Pfade anzeigen «
+seo-title: View Paths report
 solution: Marketing Cloud, Analytics
-title: Bericht "Pfade anzeigen «
+title: View Paths report
 topic: Berichte, Metriken
-uuid: bc 73 edce -0 cc 0-4349-9 a 48-e 0 a 40 cbe 1 b 67
+uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Bericht "Pfade anzeigen « {#view-paths}
+# View Paths report {#view-paths}
 
 Der Bericht **[!UICONTROL Ansichtspfade]basiert auf Pfadanalysen und enthält ein Pfaddiagramm, das die Pfade darstellt, auf denen sich Benutzer von einem App-Status zu einem anderen bewegt haben.**
 
 >[!TIP]
 >
->The **[!UICONTROL View Paths]** and **[!UICONTROL View Action]** reports are similar because both are pathing reports. Im Bericht **[!UICONTROL Ansichtspfade]wird angezeigt, wie Benutzer in der App von einem Bildschirm zum nächsten navigieren.** Der Bericht **[!UICONTROL Aktionspfade]zeigt die Abfolge von Aktionen und Ereignissen, wie z. B. Klicks, Auswahlen, Größenänderungen usw., die der Benutzer in Ihrer App durchführt.** Sie können die Navigation und Aktionen in einem Bericht mithilfe eines Trichterberichts kombinieren. For more information, see [Funnel](/help/using/usage/reports-funnel.md).
+>The **[!UICONTROL View Paths]** and **[!UICONTROL View Action]** reports are similar because both are pathing reports. Im Bericht **[!UICONTROL Ansichtspfade]wird angezeigt, wie Benutzer in der App von einem Bildschirm zum nächsten navigieren.** Der Bericht **[!UICONTROL Aktionspfade]zeigt die Abfolge von Aktionen und Ereignissen, wie z. B. Klicks, Auswahlen, Größenänderungen usw., die der Benutzer in Ihrer App durchführt.** You can use a funnel report to combine navigation and actions in one report. For more information, see [Funnel](/help/using/usage/reports-funnel.md).
 
 ![Ansichtspfade](assets/view_paths.png)
 
@@ -43,18 +43,16 @@ Click ![focus icon](assets/icon_focus.png) to isolate the node and to show the p
 * Aufnahmen
 * Kamera
 
-![Anzeigepfadfokus](assets/view_paths_focus.png)
+![view path focus](assets/view_paths_focus.png)
 
 Sie können mehrere Knoten fokussieren oder erweitern, um eine detaillierte Darstellung der Pfade zu erhalten, denen Benutzer in Ihrer App folgen. Beispiel:
 
-![Ansichtspfad mehrere](assets/view_paths_mult.png)
+![view path multi](assets/view_paths_mult.png)
 
 Für diesen Bericht können folgende Optionen konfiguriert werden:
 
-* **[!UICONTROL Zeitraum Klicken Sie]** auf das **[!UICONTROL Kalendersymbol]** , um einen benutzerdefinierten Zeitraum auszuwählen oder einen vorgegebenen Zeitraum aus der Dropdownliste auszuwählen.
-* **[!UICONTROL Passen Sie]**Ihre Berichte individuell an,
-indem Sie die Optionen **[!UICONTROL "Anzeigen nach"]** ändern, Metriken und Filter hinzufügen sowie zusätzliche Reihen (Metriken) und mehr hinzufügen. For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
-* **[!UICONTROL Filtern]**
-Sie den Filter Filter **** , um einen Filter zu erstellen, der verschiedene Berichte umfasst, um zu sehen, wie ein Segment in allen Mobilberichten funktioniert. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter [Fixierbaren Filter hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
-* **[!UICONTROL Klicken Sie auf]****[!UICONTROL PDF]** oder **[!UICONTROL CSV]** herunterladen,
-um Dokumente herunterzuladen oder zu öffnen und für Benutzer freizugeben, die keinen Zugriff auf Mobile Services haben oder die Datei in Präsentationen verwenden.
+* **[!UICONTROL Zeitraum]** Klicken Sie auf das Symbol **[!UICONTROL Kalender]** , um einen benutzerspezifischen Zeitraum auszuwählen oder einen voreingestellten Zeitraum aus der Dropdownliste auszuwählen.
+* **[!UICONTROL Passen Sie]** Sie Ihre Berichte an, indem Sie die Optionen **[!UICONTROL Anzeigen nach]** ändern, Metriken und Filter hinzufügen, zusätzliche Reihen (Metriken) hinzufügen und vieles mehr. For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+* **[!UICONTROL Filter]** Klicken Sie auf **[!UICONTROL Filter]** , um einen Filter zu erstellen, der verschiedene Berichte umfasst, um zu sehen, wie ein Segment in allen Mobilberichten funktioniert. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. For more information, see Add Sticky Filter.[](/help/using/usage/reports-customize/t-sticky-filter.md)
+* **[!UICONTROL Download
+Click PDF or CSV to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.]**********
