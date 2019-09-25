@@ -5,7 +5,7 @@ seo-title: Target-Methoden
 solution: Marketing Cloud, Analytics
 title: Target-Methoden
 topic: Entwickler und Implementierung
-uuid: 2 ad 5953 b -7850-446 a -8053-b 3715 b 86329 b
+uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ Liste der Target-Methoden, die von der Universellen Windows-Plattform-Bibliothek
 
 Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target und Audience Manager.
 
-[Lebenszyklusmetriken](/help/universal-windows/metrics.md) werden als Parameter an jede mbox-Last gesendet.
+[Lifecycle metrics are sent as parameters to each mbox load.](/help/universal-windows/metrics.md)
 
 >[!TIP]
 >
@@ -36,7 +36,7 @@ property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Obj
 
 ## Zeichenfolgenkonstanten
 
-Anhand dieser Informationen können Sie Schlüssel für benutzerdefinierte Parameter festlegen.
+This information helps you set keys for custom parameters.
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -68,7 +68,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 }
 ```
 
-* **Loadrequest (winjs: Loadrequest)**
+* **LoadRequest (winJS: loadRequest)**
 
    Sendet `request` an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des in einem Block-`callback` generierten Angebots zurück.
 
@@ -87,7 +87,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
        });
       ```
 
-* **Createrequest (winjs: Createrequest)**
+* **CreateRequest (winJS: createRequest)**
 
    Erstellt ein `TargetLocationRequest`-Objekt mit den angegebenen Parametern.
 
@@ -104,7 +104,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var heroBannerRequest = ADB.Target.createRequest("heroBanner","default.png", null); 
       ```
 
-* **Createorderconfirmrequest (winjs: Createorderconfirmrequest)**
+* **CreateOrder&#x200B;ConfirmRequest (winJS: createOrder&#x200B;ConfirmRequest)**
 
    Erstellt ein `TargetLocationRequest`-Objekt mit den angegebenen Parametern.
 
@@ -121,7 +121,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var orderConfirm = ADB.Target.createOrderConfirmRequest("orderConfirm","order","47.88","3722",null);
       ```
 
-* **Clearcookies (winjs: Clearcookies)**
+* **ClearCookies (winJS: clearCookies)**
 
    Löscht Target-Cookies für die Anwendung auf dem aktuellen Gerät.
 
@@ -137,7 +137,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ADBMobile.Target.clearCookies();
       ```
 
-* **Getpcid (winjs: Getpcid)**
+* **GetPcId (winJS: getPcId)**
 
    Gibt das PC-ID-Cookie des aktuellen Geräts zurück.
 
@@ -153,7 +153,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       autopcId = ADBMobile.Target.getPcId();
       ```
 
-* **Getsessionid (winjs: Getsessionid)**
+* **GetSessionId (winJS: getSessionId)**
 
    Gibt das Sitzungs-ID-Cookie des aktuellen Geräts zurück.
 
