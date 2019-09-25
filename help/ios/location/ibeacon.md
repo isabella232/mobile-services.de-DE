@@ -5,7 +5,7 @@ seo-title: iBeacon-Verfolgung
 solution: Marketing Cloud, Analytics
 title: iBeacon-Verfolgung
 topic: Entwickler und Implementierung
-uuid: 390883 db -027 e -4 d 12-8 a 16-86 d 514579 db 1
+uuid: 390883db-027e-4d12-8a16-86d514579db1
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,7 +18,7 @@ Mit der iBeacon-Verfolgung können Sie Mikrostandorte mithilfe von iBeacon und B
 
 Die folgenden Beacon-Daten werden an Analytics und Target gesendet, wenn `trackBeacon` aufgerufen wird:
 
-* `a.beacon.uuid` - Proximityuuid des Beacon
+* `a.beacon.uuid` - ProximityUUID of the beacon
 * `a.beacon.major`: Hauptnummer des Beacons, beispielsweise eine Speichernummer
 * `a.beacon.minor`: Nebennummer des Beacons, beispielsweise eine eindeutige Nummer in einem Speicher
 * `a.beacon.prox`: Die folgenden Werte geben an, wie nah sich der Benutzer am Beacon befindet:
@@ -28,11 +28,11 @@ Die folgenden Beacon-Daten werden an Analytics und Target gesendet, wenn `trackB
    * `2` ist nahe
    * `3` ist entfernt
 
-## Verfolgen von ibeacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Track iBeacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden *Sie unter SDK und Config File to your Project* in [Core Implementation and Lifecycle](/help/ios/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. Importieren Sie die Bibliothek:
 
    ```objective-c
@@ -59,7 +59,7 @@ Zusätzlich zum zeitlich festgelegten Aktionsnamen können Sie bei jedem Verfolg
 [ADBMobile trackBeacon:beacon data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Kontextdatenwerte müssen benutzerdefinierte Variablen zugeordnet werden:
+Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ![](assets/map-variable-context-ltv.png)
 
