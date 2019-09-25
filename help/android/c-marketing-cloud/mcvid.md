@@ -1,11 +1,11 @@
 ---
-description: Der Adobe Experience Platform Identity Service bietet eine universelle Besucher-ID für die Experience Cloud-Lösungen. Der ID-Service wird von Analytics für Target, Video-Heartbeats und künftige Experience Cloud-Integrationen benötigt.
-seo-description: Der Adobe Experience Platform Identity Service bietet eine universelle Besucher-ID für die Experience Cloud-Lösungen. Der ID-Service wird von Analytics für Target, Video-Heartbeats und künftige Experience Cloud-Integrationen benötigt.
-seo-title: Experience Cloud ID-Konfiguration
-solution: Marketing Cloud, Analytics
-title: Experience Cloud ID-Konfiguration
+description: Der Identitätsdienst für Adobe Experience Platform stellt eine universelle Besucher-ID für alle Experience Cloud-Lösungen bereit. Der ID-Service wird von Analytics für Target, Video-Heartbeats und künftige Experience Cloud-Integrationen benötigt.
+seo-description: Der Identitätsdienst für Adobe Experience Platform stellt eine universelle Besucher-ID für alle Experience Cloud-Lösungen bereit. Der ID-Service wird von Analytics für Target, Video-Heartbeats und künftige Experience Cloud-Integrationen benötigt.
+seo-title: Experience Cloud ID configuration
+solution: Marketing Cloud,Analytics
+title: Experience Cloud ID configuration
 topic: Entwickler und Implementierung
-uuid: 8 ebdf 2 bf-c 581-448 f -9542-f 99 a 19784 fe 7
+uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,21 +14,21 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Experience Cloud ID configuration {#experience-cloud-id-configuration}
 
-Der Adobe Experience Platform Identity Service bietet eine universelle Besucher-ID für die Experience Cloud-Lösungen. Der ID-Service wird von Analytics für Target, Video-Heartbeats und künftige Experience Cloud-Integrationen benötigt.
+The Adobe Experience Platform Identity Service provides a universal visitor ID across Experience Cloud solutions. Der ID-Service wird von Analytics für Target, Video-Heartbeats und künftige Experience Cloud-Integrationen benötigt.
 
 >[!TIP]
 >
->Sie müssen diese ID nur ausfüllen, wenn Sie den Adobe Experience Platform Identity Service verwenden. For more information, see [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+>You do not need to populate this ID unless you are using the Adobe Experience Platform Identity Service. For more information, see [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
 
 >[!IMPORTANT]
 >
->Für diese Funktion ist SDK Version 4.3 oder höher erforderlich.
+>This functionality requires SDK version 4.3 or later.
 
 So aktivieren Sie die Experience Cloud ID:
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK und Config File to your intellij IDEA oder Eclipse Project* in [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
 1. Importieren Sie die Bibliothek:
 
@@ -36,7 +36,7 @@ So aktivieren Sie die Experience Cloud ID:
    import com.adobe.mobile.*;
    ```
 
-1. Überprüfen Sie, ob die `ADBMobileConfig.json` Datei Folgendes `marketingCloudorg`enthält:
+1. Vergewissern Sie sich, dass die `ADBMobileConfig.json` Datei die `marketingCloudorg`:
 
    ```js
    "marketingCloud" : { 
@@ -52,7 +52,7 @@ So aktivieren Sie die Experience Cloud ID:
 
    >[!IMPORTANT]
    >
-   >Sie müssen Folgendes einschließen `@AdobeOrg`.
+   >Sie müssen einschließen `@AdobeOrg`.
 
    If these IDs are not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. Weitere Informationen finden Sie unter [Bevor Sie beginnen](/help/android/getting-started/requirements.md).
 
