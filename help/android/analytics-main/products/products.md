@@ -1,12 +1,12 @@
 ---
 description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie im Kontextdatenparameter eine spezielle Syntax verwenden, um „products“ direkt im Server-Aufruf festzulegen.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie im Kontextdatenparameter eine spezielle Syntax verwenden, um „products“ direkt im Server-Aufruf festzulegen.
 seo-title: Variable „products“
 solution: Marketing Cloud, Analytics
 title: Variable „products“
 topic: Entwickler und Implementierung
-uuid: f 4484022-cb 8 b -4 dea -9209-5 a 110 ba 607 df
+uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -46,4 +46,4 @@ The *products* variable is set on the image request, and the other variables are
 
 ![](assets/map-products.png)
 
-Sie müssen die Variable *products* -Variable mit Verarbeitungsregeln, da diese Variable direkt in der Bildanforderung durch das SDK festgelegt ist.
+Sie müssen die Variable *products* variable by using processing rules because this variable is set directly on the image request by the SDK.
