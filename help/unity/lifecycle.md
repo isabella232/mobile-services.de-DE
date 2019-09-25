@@ -5,7 +5,7 @@ seo-description: 'null'
 seo-title: Lebenszyklus implementieren
 solution: Marketing Cloud, Entwickler
 title: Lebenszyklus implementieren
-uuid: 7 ff 2 c 194-569 c -42 a 6-922 d-dccd 2 aa 9 eb 8 d
+uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -14,11 +14,11 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 # Lebenszyklus implementieren{#implement-lifecycle}
 
-Weitere Informationen zu Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können, finden Sie unter [Lebenszyklusmetriken in Android](/help/android/metrics.md) oder [Lebenszyklus in ios](/help/ios/metrics.md).
+Weitere Informationen zu den Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können, finden Sie unter [Lebenszyklusmetriken in Android](/help/android/metrics.md) oder [Lebenszyklus in iOS](/help/ios/metrics.md).
 
 ## iOS
 
-Lebenszyklusmetriken werden automatisch in ios erfasst.
+Lebenszyklusmetriken werden in iOS automatisch erfasst.
 
 ## Android
 
