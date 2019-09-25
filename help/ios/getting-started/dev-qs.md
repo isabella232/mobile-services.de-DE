@@ -24,7 +24,7 @@ Diese Informationen helfen Ihnen beim Implementieren der iOS-Bibliothek und beim
 
 **Voraussetzung**
 
-Bevor Sie das SDK herunterladen, führen Sie die Schritte unter Report Suite ** erstellen in [Kernimplementierung und Lebenszyklus](/help/ios/getting-started/requirements.md) aus, um eine Entwicklungs-Report Suite einzurichten und eine vorab ausgefüllte Version der Konfigurationsdatei herunterzuladen.
+Before you download the SDK, complete the steps in Create a Report Suite in Core implementation and lifecycle to set up a development report suite and download a pre-populated version of the configuration file.**[](/help/ios/getting-started/requirements.md)
 
 So laden Sie das SDK herunter:
 
@@ -106,7 +106,7 @@ So laden Sie das SDK herunter:
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-Fügen Sie einen `collectLifecycleData`/- `collectLifecycleDataWithAdditionalData` Aufruf hinzu `application:didFinishLaunchingWithOptions`:
+Add a /  call in :`collectLifecycleData``collectLifecycleDataWithAdditionalData``application:didFinishLaunchingWithOptions`
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
