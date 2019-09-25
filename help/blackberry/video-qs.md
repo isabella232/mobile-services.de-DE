@@ -1,9 +1,9 @@
 ---
-description: Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht der Aufgaben des Entwicklers sowie Codebeispiele.
-seo-description: Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht der Aufgaben des Entwicklers sowie Codebeispiele.
+description: Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Aufgaben der Entwickler sowie Codebeispiele.
+seo-description: Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Aufgaben der Entwickler sowie Codebeispiele.
 seo-title: Video-Analytics
 title: Video-Analytics
-uuid: 0 d 2731 f 3-77 a 9-4 db 1-9 a 8 c -1 e 56 c 212 ecb 4
+uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
 translation-type: tm+mt
 source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
@@ -12,19 +12,19 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 # Video Analytics  {#video-analytics}
 
-Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht der Aufgaben des Entwicklers sowie Codebeispiele.
+Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Aufgaben der Entwickler sowie Codebeispiele.
 
-Weitere Informationen zur Videomessung finden Sie im [Handbuch Messen von Audio und Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) . Die folgende Tabelle enthält die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten in der Spalte „Kontextdatenvariable“ zu einer Analytics-Variablen so zuzuordnen, wie dies in der Spalte „Variablentyp“ beschrieben wird.
+Weitere Informationen zur Videomessung finden Sie im Handbuch [Messen von Audio und Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .  Die folgende Tabelle enthält die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten in der Spalte „Kontextdatenvariable“ zu einer Analytics-Variablen so zuzuordnen, wie dies in der Spalte „Variablentyp“ beschrieben wird.
 
-## Player-Ereignisse Analytics-Variablen zuordnen
+## Map player events to Analytics variables
 
 * **a.media.name**
 
    (Erforderlich) Erfasst den Namen des Videos, wie in der Implementierung angegeben, wenn ein Besucher das Video auf irgendeine Weise ansieht. Sie können Classification für diese Variable hinzufügen.
 
-   **(Optional)** Die Custom Insight-Variable stellt Videopfadinformationen bereit.
+   **(Optional)** Die Variable Custom Insight enthält Informationen zu Videopfaden.
 
-   * Variablenname: Evar
+   * Variablenname: eVar
       * Standardgültigkeit: Besuch
       * Benutzerspezifischer Insight-Bericht (s.prop, wird zur Videopfadsetzung verwendet)
 
@@ -39,18 +39,18 @@ Weitere Informationen zur Videomessung finden Sie im [Handbuch Messen von Audio 
 
    (**Erforderlich**) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen.
 
-   For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. Bei der Standardmethode zur Videodatenerfassung werden Daten beim Videostart (play), Segmentbeginn und Videoende (stop) erfasst.
+   For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. The default video data collection method collects data at the video start (play), segment begin, and video end (stop) points.
 
    Analytics zeichnet die erste Segmentansicht am Anfang des Segments auf, wenn der Besucher die Wiedergabe startet. Nachfolgende Segmentansichten werden aufgezeichnet, wenn das jeweilige Segment anfängt.
 
-   * Variablentyp: Evar
+   * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
 
 * **a.contentType**
 
    Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Von der Videomessung gesendete Hits erhalten den Content-Typ „video“. Diese Variable muss nicht exklusiv für die Videoverfolgung reserviert sein. Wenn Sie einrichten, dass andere Inhalte den Content-Typ mit dieser Variable melden, können Sie die Verteilung der Besucher über die verschiedenen Content-Typen hinweg analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
 
-   * Variablentyp: Evar
+   * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
 
 * **a.media.timePlayed**
