@@ -2,10 +2,10 @@
 description: Ab iOS 10 können Sie durch Apple eine als eigenständige Erweiterung bezeichnete Erweiterung erstellen, die ohne eine übergeordnete App verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da keine übergeordnete App vorhanden ist, für die Daten freigegeben werden müssen.
 seo-description: Ab iOS 10 können Sie durch Apple eine als eigenständige Erweiterung bezeichnete Erweiterung erstellen, die ohne eine übergeordnete App verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da keine übergeordnete App vorhanden ist, für die Daten freigegeben werden müssen.
 seo-title: Implementierung einer eigenständigen Erweiterung
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Implementierung einer eigenständigen Erweiterung
 topic: Entwickler und Implementierung
-uuid: 9 b 47 f 082-b 78 f -4611-968 d -014 c 32 ede 6 bc
+uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -18,7 +18,7 @@ Ab iOS 10 können Sie durch Apple eine als eigenständige Erweiterung bezeichne
 
 >[!IMPORTANT]
 >
->Für die Verwendung eigenständiger Erweiterungen muss Mobile SDK Version 4.13.0 oder höher verwendet werden.
+>To use stand-alone extensions, you must have Mobile SDK version 4.13.0 or later.
 
 ## Konfigurieren Ihrer eigenständigen Erweiterung für die Verwendung mit dem SDK {#section_B7A84603BB9D4B48BB46BE8D3B9E3CF0}
 
