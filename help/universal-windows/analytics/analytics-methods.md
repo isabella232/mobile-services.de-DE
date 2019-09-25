@@ -1,11 +1,11 @@
 ---
 description: Informationen, die Ihnen helfen, das universelle Windows-Plattform-SDK zusammen mit Adobe Analytics zu verwenden.
 seo-description: Informationen, die Ihnen helfen, das universelle Windows-Plattform-SDK zusammen mit Adobe Analytics zu verwenden.
-seo-title: Analytics-Methoden
+seo-title: Analysemethoden
 solution: Marketing Cloud, Analytics
-title: Analytics-Methoden
+title: Analysemethoden
 topic: Entwickler und Implementierung
-uuid: cc 299 bb 5-ec 61-49 bf -869 a-f 3 c 3 bc 83359 f
+uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -24,14 +24,14 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 >
 >When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
-* **Trackstate (winjs: Trackstate)**
+* **TrackState (winJS: trackState)**
 
    Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die in Ihrer App verfügbaren Ansichten wie „Startseiten-Dashboard“, „App-Einstellungen“, „Warenkorb“ usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten.
 Wenn `state` leer ist, wird es in Berichten als „app name app version (build)“ angezeigt. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, der Seitenansichten inkrementiert.
+   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -46,7 +46,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       ADB.Analytics.trackState("loginScreen", null);
       ```
 
-* **Trackaction (winjs: Trackaction)**
+* **TrackAction (winJS: trackAction)**
 
    Verfolgt eine Aktion in der App. Bei Aktionen handelt es sich um die Dinge, die in Ihrer App vor sich gehen, die Sie messen möchten, beispielsweise „Anmeldungen“, „Banner-Tippvorgänge“, „Feed-Abonnements“ und andere Metriken.
 
@@ -63,7 +63,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       ADB.Analytics.trackAction("ButtonClick",null); 
       ```
 
-* **Gettrackingidentifierasync (winjs: Gettrackingidentifierasync)**
+* **GetTrackingIdentifierAsync (winJS: getTrackingIdentifierAsync)**
 
    Gibt die automatisch erzeugte Besucher-ID für Analytics zurück. Diese appspezifische, eindeutige Besucherkennung wird beim ersten Starten erzeugt, gespeichert und dann fortlaufend weiterverwendet. Die ID bleibt bei der Aktualisierung der App erhalten und wird beim Deinstallieren entfernt.
 
@@ -82,7 +82,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       });
       ```
 
-* **Tracklocation (winjs: Tracklocation)**
+* **TrackLocation (winJS: trackLocation)**
 
    Sendet die aktuellen XY-Koordinaten. Ermittelt außerdem anhand der in der Datei `ADBMobileConfig.json` definierten Zielpunkte (POI), ob der als Parameter angegebene Standort in einem vorhandenen Zielpunkt liegt. Falls die aktuellen Koordinaten auf einen definierten POI passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
 
@@ -99,7 +99,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       ADB.Analytics.trackLocation(47.60621,-122.33207,null);
       ```
 
-* **Tracklifetimevalueincrease (winjs: Tracklifetimevalueincrease)**
+* **TrackLifetime &#x200B; ValueIncrease (winJS: trackLifetime &#x200B; ValueIncrease)**
 
    Erhöht den Lebenszeitwert des Benutzers um `amount`.
 
@@ -116,7 +116,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       ADB.Analytics.trackLifetimeValueIncrease(10,null);
       ```
 
-* **Tracktimedactionstart (winjs: Tracktimedactionstart)**
+* **TrackTimed &#x200B; ActionStart (winJS: trackTimed &#x200B; ActionStart)**
 
    Startet eine zeitgesteuerte Aktion mit dem Namen `action`. Wenn Sie diese Methode für eine bereits gestartete Methode aufrufen, wird die vorherige zeitgesteuerte Aktion überschrieben.
 
@@ -137,7 +137,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       ADB.Analytics.trackTimedActionStart("cartToCheckout",null); 
       ```
 
-* **Tracktimedactionupdate (winjs: Tracktimedactionupdate)**
+* **TrackTimed &#x200B; ActionUpdate (winJS: trackTimed &#x200B; ActionUpdate)**
 
    Übergibt `contextData`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. The `data` passed in is appended to the existing data for the given action, and overwrites the data if the same key is already defined for `action`.
 
@@ -160,9 +160,9 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       ADB.Analytics.trackTimedActionUpdate("cartToCheckout",contextData);
       ```
 
-* **Tracktimedactionexistsasync (winjs: Tracktimedactionexistsasync)**
+* **TrackTimedActionExistsAsync (winJS: trackTimedActionExistsAsync)**
 
-   Gibt "true" zurück, wenn die angegebene zeitgesteuerte Aktion vorhanden ist, und false, wenn sie nicht vorhanden ist.
+   Gibt true zurück, wenn die angegebene zeitgesteuerte Aktion vorhanden ist, und false, wenn sie nicht vorhanden ist.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -178,7 +178,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       });
       ```
 
-* **Tracktimedactionend (winjs: Tracktimedactionend)**
+* **TrackTimed &#x200B; ActionEnd (winJS: trackTimed &#x200B; ActionEnd)**
 
    Beendet eine zeitgesteuerte Aktion.
 
@@ -195,7 +195,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       ADB.Analytics.trackTimedActionEnd("cartToCheckout"); 
       ```
 
-* **Cleartrackingqueue (winjs: Cleartrackingqueue)**
+* **ClearTrackingQueue (winJS: clearTrackingQueue)**
 
    Löscht alle gespeicherten Treffer aus der Tracking-Warteschlange in Analytics.
 
@@ -211,7 +211,7 @@ Wenn `state` leer ist, wird es in Berichten als „app name app version (build)�
       ADBMobile.Analytics.clearTrackingQueue();
       ```
 
-* **Getqueuesizeasync (winjs: Getqueuesizeasync)**
+* **GetQueueSizeAsync (winJS: getQueueSizeAsync)**
 
    Gibt die Anzahl der Treffer zurück, die zurzeit in der Analytics-Warteschlange gespeichert sind.
 
