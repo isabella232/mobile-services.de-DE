@@ -3,7 +3,7 @@ description: Nachdem Sie die Bibliothek Ihrem Projekt hinzugefügt haben, könne
 seo-description: Nachdem Sie die Bibliothek Ihrem Projekt hinzugefügt haben, können Sie beliebige Analysemethodenaufrufe überall in Ihrer Anwendung nutzen (importieren Sie unbedingt ADBMobile.h in Ihre Klasse).
 seo-title: Analytics
 title: Analytics
-uuid: de 018 eda-b 37 d -4 afe -83 a 0-8011381 d 7 aff
+uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -50,7 +50,7 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 ## Events, props, and eVars {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-Wenn Sie sich die [adbmobile-Klassen- und Methodenreferenz](/help/blackberry/methods.md)angesehen haben, stellen Sie sicher, wo Sie Ereignisse, evars, Props, Höhen und Listen festlegen. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer Anwendung zuweisen. Stattdessen nutzt das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
+Wenn Sie sich die [ADBMobile-Klassen- und Methodenreferenz](/help/blackberry/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignisse, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer Anwendung zuweisen. Stattdessen nutzt das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
 
 Verarbeitungsregeln bieten mehrere Vorteile:
 
@@ -68,7 +68,7 @@ Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten
 
 [Verarbeitungsregeln](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Autorisierung zur Verwendung von Verarbeitungsregeln](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Genehmigung zur Verwendung von Verarbeitungsregeln erhalten](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
 Es ist empfehlenswert, die Kontextdatenvariablen mithilfe von „Namespaces“ zu gruppieren, um eine logische Ordnung beizubehalten. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
 
@@ -106,7 +106,7 @@ Kontextvariablen, die Inkrementereignisse definieren, können das Ereignis als S
 
 >[!TIP]
 >
->Adobe behält sich den Namespace `a.`vor. Neben dieser kleinen Einschränkung müssen Kontextvariablen nur eindeutig für Ihre Unternehmensanmeldung sein, um Konflikte zu vermeiden.
+>Adobe behält den Namespace `a.`. Neben dieser kleinen Einschränkung müssen Kontextvariablen nur eindeutig für Ihre Unternehmensanmeldung sein, um Konflikte zu vermeiden.
 
 ## Enable offline tracking {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
 
@@ -114,6 +114,6 @@ To store hits when the device is offline, you can optionally enable offline trac
 
 Achten Sie sehr genau auf die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben werden, bevor Sie die Offline-Verfolgung aktivieren.
 
-## Analytics-Methoden
+## Analytics methods
 
-Eine Liste der für blackberry verfügbaren Analytics-Methoden finden Sie unter *Analytics-Methoden* in der [Adobe Mobile Klassen- und Methodenreferenz](/help/blackberry/methods.md).
+Eine Liste der für BlackBerry verfügbaren Analytics-Methoden finden Sie unter *Analytics-Methoden* in der [Adobe Mobile-Klassen- und Methodenreferenz](/help/blackberry/methods.md).
