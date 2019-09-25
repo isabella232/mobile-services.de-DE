@@ -1,12 +1,12 @@
 ---
-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst und sendet das SDK die Akquise-Daten automatisch an Adobe Mobile-Dienste.
-keywords: android; library; mobile; sdk
-seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst und sendet das SDK die Akquise-Daten automatisch an Adobe Mobile-Dienste.
+description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst und sendet das SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
+keywords: android;library;mobile;sdk
+seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. When a user downloads and runs an app from the App store after clicking on the generated link, the SDK automatically collects and sends the acquisition data to Adobe Mobile services.
 seo-title: Mobile App – Akquise
 solution: Marketing Cloud, Analytics
 title: Mobile App – Akquise
 topic: Entwickler und Implementierung
-uuid: 4 d 32 eae 9-e 856-4 e 40-8 a 29-2 b 5 bccd 106 e 0
+uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,7 +15,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Mobile app acquisition {#mobile-app-acquisition}
 
-In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst und sendet das SDK die Akquise-Daten automatisch an Adobe Mobile-Dienste.
+In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst und sendet das SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -52,7 +52,7 @@ So erfassen Sie Akquise-Daten aus einer standardmäßigen Google Play Acquisitio
 
       Weitere Informationen finden Sie unter [Konfigurationsmethoden](/help/android/configuration/methods.md).
 
-   * Der `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` oder der `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` Ereignistyp wird verwendet.
+   * Es wird der Ereignistyp `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` oder der `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` Ereignistyp verwendet.
 
    * Benutzerdefinierte Schlüssel, die Teil der Akquise-Daten aus Google Play waren, erhalten den Namensraum „`a.acquisition.custom.`“.
 
@@ -62,21 +62,21 @@ Wenn Sie Akquise-Links verwenden, die in Adobe Mobile Services generiert wurden,
 
    When the SDK receives the acquisition data from Adobe Mobile Services (on first launch), that data will be stored and also available in the `AdobeDataCallback` instance registered earlier with the SDK, as mentioned in [Configuration Methods](/help/android/configuration/methods.md).
 
-1. Der `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL``MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` Ereignistyp wird verwendet.
+1. Der Ereignistyp `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` oder der `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` Ereignistyp wird verwendet.
 
-1. Die benutzerdefinierten Datenschlüssel werden mit "`a.acquisition.custom.`
+1. The custom data keys are prefixed with "`a.acquisition.custom.`"
 
 >[!TIP]
 >
->Wenn Sie Daten an mehrere Report Suites senden, verwenden Sie die Akquise-Daten aus der App, die mit der ersten Report Suite in Ihrer Liste der Report Suite-IDs verknüpft ist.
+>Wenn Sie Daten an mehrere Report Suites senden, verwenden Sie die Akquise-Daten der App, die mit der ersten Report Suite in Ihrer Liste der Report Suite-IDs verknüpft ist.
 
 Die Updates in diesem Abschnitt ermöglichen es dem SDK, Akquise-Daten von einem Akquise-Link zu senden.
 
 ## Tracking mobile acquisition {#section_CEA30C652AC8470784B8054E299B80FA}
 
-1. Fügen Sie die Bibliothek [zum Projekt hinzu und implementieren Sie Lebenszyklus.
+1. Fügen Sie die Bibliothek [zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK und Config File to your intellij IDEA oder Eclipse Project* in [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und im Lebenszyklus](/help/android/getting-started/dev-qs.md)hinzufügen.
 
 1. Importieren Sie die Bibliothek:
 
@@ -125,7 +125,7 @@ Die Updates in diesem Abschnitt ermöglichen es dem SDK, Akquise-Daten von einem
 
    >[!IMPORTANT]
    >
-   >Wenn Sie Daten an mehrere Report Suites senden, verwenden Sie die Akquise-Einstellungen (Akquise-Server und Appid) aus der App, die der ersten Report Suite in Ihrer Liste der Report Suite-IDs zugeordnet ist.
+   >Wenn Sie Daten an mehrere Report Suites senden, verwenden Sie Akquise-Einstellungen (Akquise-Server und AppID) aus der App, die der ersten Report Suite in Ihrer Liste der Report Suite-IDs zugewiesen ist.
 
    The `acquisition` settings are generated by Adobe Mobile services and should not be changed. For more information about how to download a customized `ADBMobileConfig.json` file with the `acquisition` settings pre-configured, see [Before You Start](/help/android/getting-started/requirements.md).
 
@@ -133,4 +133,4 @@ Wenn diese Einstellungen aktiviert sind, werden nach dem ersten Start der App au
 
 >[!CAUTION]
 >
->`referrerTimeout` muss auf einen Wert größer als 0 gesetzt werden, um die App-Akquise zu aktivieren.
+>`referrerTimeout`  muss auf einen höheren Wert als 0 festgelegt werden, um die App-Akquise zu aktivieren.
