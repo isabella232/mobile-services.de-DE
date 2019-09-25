@@ -1,20 +1,20 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Verwendung von Nachrichten in Ihren Android-Apps.
 seo-description: Diese Informationen helfen Ihnen bei der Verwendung von Nachrichten in Ihren Android-Apps.
-seo-title: Messaging-Übersicht
+seo-title: Messaging overview
 solution: Marketing Cloud, Analytics
-title: Messaging-Übersicht
+title: Messaging overview
 topic: Entwickler und Implementierung
-uuid: c 6475 ab 4-015 d -46 b 0-af 28-5 d 0 df 3 f 4459 e
+uuid: c6475ab4-015d-46b0-af28-5d0df3f4459e
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Messaging-Übersicht {#messaging}
+# Nachrichtenübersicht {#messaging}
 
-Die Informationen in diesem Abschnitt helfen Ihnen, Nachrichten in Ihren Android-Apps zu verwenden.
+Die Informationen in diesem Abschnitt unterstützen Sie bei der Verwendung von Messaging in Ihren Android-Apps.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
