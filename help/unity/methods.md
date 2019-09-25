@@ -2,10 +2,10 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: Adbmobile. cs-Methoden
+seo-title: ADBMobile.cs-Methoden
 solution: Marketing Cloud, Entwickler
-title: Adbmobile. cs-Methoden
-uuid: af 504934-febd -45 d 9-81 e 2-2 a 310 f 4 c 65 dc
+title: ADBMobile.cs methods
+uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -139,7 +139,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Diese Methode soll für Apps verwendet werden, die sich für Benachrichtigungen während des Hintergrunds registrieren, und sollte nur aus Ihrem Code aufgerufen werden, der ausgeführt wird, wenn die App im Hintergrund ausgeführt wird.
+   >Diese Methode soll für Apps verwendet werden, die sich für Benachrichtigungen im Hintergrund registrieren und nur aus dem Code heraus aufgerufen werden sollten, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -171,7 +171,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **SetContext (nur Android)**
 
-   Gibt dem SDK gegenüber an, dass der Anwendungskontext aus der aktuellen Aktivität von unityplayer festgelegt werden soll.
+   Indicates to the SDK that it should set its application context from the UnityPlayer's current activity.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -201,12 +201,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADBMobile.SetDebugLogging(true); 
       ```
 
-* **Setprivacystatus**
+* **SetPrivacyStatus**
 
    Legt den Datenschutzstatus für den aktuellen Benutzer auf „status“ fest. Die folgenden Werte sind zulässig:
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden sofort gesendet.
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Hits are discarded.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
@@ -215,7 +215,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       public static void SetPrivacyStatus(ADBPrivacyStatusstatus); 
       ```
 
-   * Hier finden Sie das Codebeispiel für diese Syntax:
+   * Here is the code sample for this syntax:
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -237,7 +237,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADBMobile.SetUserIdentifier("myCustomUserId"); 
       ```
 
-## Analytics-Methoden
+## Analysemethoden
 
 * **GetTrackingIdentifier**
 
@@ -263,7 +263,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, der Seitenansichten inkrementiert.
+   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -305,7 +305,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Diese Methode sollte nur in Code aufgerufen werden, der ausgeführt wird, während sich Ihre App im Hintergrund befindet.
+   >Diese Methode sollte nur in Code aufgerufen werden, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
