@@ -5,7 +5,7 @@ seo-title: In-App-Nachrichten
 solution: Marketing Cloud, Analytics
 title: In-App-Nachrichten
 topic: Entwickler und Implementierung
-uuid: 351 ee 3 d 2-80 b 9-4 f 2 d -9696-21 f 274 d 89 f 5 a
+uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -41,7 +41,7 @@ Sie können in Adobe Mobile Services Nachrichten erstellen und Regeln festlegen,
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK und Config File to your intellij IDEA oder Eclipse Project* in [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und im Lebenszyklus](/help/android/getting-started/dev-qs.md)hinzufügen.
 
 1. Update the `AndroidManifest.xml` file to declare the full screen activity and enable the Message Notification Handler:
 
@@ -86,7 +86,7 @@ Sie können in Adobe Mobile Services Nachrichten erstellen und Regeln festlegen,
 
    >[!IMPORTANT]
    >
-   >`messages``remotes` oder ist erforderlich.
+   >`messages` oder `remotes` ist erforderlich.
 
    Damit In-App-Nachrichten beim Start dynamisch aktualisiert werden können, muss das Objekt `remotes` vorhanden und ordnungsgemäß konfiguriert sein:
 
@@ -122,15 +122,15 @@ Mithilfe der mobilen SDKs für Android lassen sich folgende Metriken Ihrer In-Ap
 * Für In-App-Vollbild- und -Warnnachrichten:
 
    * **Impressionen:** Benutzer löst eine In-App-Nachricht aus.
-   * **Durchklickraten: wenn der Benutzer****klickt.**
-   * **Abbricht**: wenn der Benutzer **[!UICONTROL auf Abbrechen klickt]**.
+   * **Durchklickraten**: wenn der Benutzer die **[!UICONTROL Durchklickrate]** drückt.
+   * **Abbrüche**: wenn der Benutzer auf **[!UICONTROL Abbrechen]** klickt.
 
 * Für benutzerdefinierte Vollbild-In-App-Nachrichten muss der HTML-Inhalt der Nachricht den richtigen Code enthalten, um die SDK-Verfolgung über die Nutzung folgender Schaltflächen informieren zu können:
 
-   * **Clickthrough-Beispielverfolgung** (Umleitung):
+   * **Clickthrough** -(Umleitungs-)Beispielverfolgung:
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **Beispielverfolgung abbrechen** (schließen):
+   * **Cancel** (close) example tracking:
 
       `adbinapp://cancel`
 
@@ -140,7 +140,7 @@ Beim Erstellen einer Vollbildnachricht können Sie optional ein Fallback-Bild an
 
 >[!IMPORTANT]
 >
->Der Name des Ausweichbilds wird beim Konfigurieren der Nachricht in Adobe Mobile-Diensten angegeben und Sie müssen sicherstellen, dass die angegebene Ressource verfügbar ist.
+>Der Name des Ersatzbild-Assets wird angegeben, wenn Sie die Nachricht in Adobe Mobile Services konfigurieren und sicherstellen, dass die angegebene Ressource verfügbar ist.
 
 ## Configuring notification icons {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
@@ -156,7 +156,7 @@ Folgende Methoden ermöglichen es Ihnen, kleine und große Symbole zu konfigurie
       public static void setSmallIconResourceId(final int resourceId); 
       ```
 
-   * Hier finden Sie das Codebeispiel für diese Methode:
+   * Das folgende Codebeispiel für diese Methode:
 
       ```java
       Config.setSmallIconResourceId(R.drawable.appIcon);
@@ -164,7 +164,7 @@ Folgende Methoden ermöglichen es Ihnen, kleine und große Symbole zu konfigurie
 
 * **Config.setLargeIconResourceId(int resourceId)**
 
-   Legt das große Symbol fest, das für die vom SDK erstellten Benachrichtigungen verwendet wird. Dieses Symbol ist das primäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungszentrum sieht.
+   Legt das große Symbol fest, das für die vom SDK erstellten Benachrichtigungen verwendet wird. This icon is the primary image that is displayed when the user sees the complete notification in the notification center.
 
    * Hier finden Sie die Syntax für diese Methode:
 
