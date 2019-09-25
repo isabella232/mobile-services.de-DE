@@ -6,7 +6,7 @@ seo-title: App Store
 solution: Marketing Cloud, Analytics
 title: App Store
 topic: Metriken
-uuid: a 194364 d-faaf -4995-befd-cf 48 f 9 c 1 f 11 b
+uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -19,7 +19,7 @@ The `appFigures` data connector integration combines the power of the appFigures
 
 >[!TIP]
 >
->In der Mobile Services-Benutzeroberfläche werden nach Konfiguration der Integration das **[!UICONTROL App Store]** -Menüelement und die dazugehörigen Berichte im linken Navigationsbereich angezeigt.
+>In der Mobile Services-Benutzeroberfläche werden nach dem Konfigurieren der Integration das Menüelement **[!UICONTROL App Store]** und die zugehörigen Berichte im linken Navigationsbereich angezeigt.
 
 Der [appFigures-Datenkonnektor für Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/connectors/appfigures/) enthält folgende Informationen:
 <!--REKHA: no idea where this guide lives-->
