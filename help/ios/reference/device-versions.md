@@ -2,10 +2,10 @@
 description: Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-Geräten gesendet wird.
 seo-description: Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-Geräten gesendet wird.
 seo-title: iOS-Geräteversionen
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: iOS-Geräteversionen
 topic: Entwickler und Implementierung
-uuid: 8 b 8 a 9 bc 3-0737-4 de 2-9792-0 b 112 aa 4 cf 65
+uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -18,7 +18,7 @@ Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-G
 
 >[!IMPORTANT]
 >
->Diese Liste basiert auf internen Tests und Online-Informationen und kann Ungenaue oder unvollständige Informationen enthalten.
+>Diese Liste basiert auf internen Tests und Online-Informationen und kann Ungenauigkeiten oder unvollständige Informationen enthalten.
 
 Weitere Informationen zu iOS-Geräten finden Sie auf Websites wie [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
 
