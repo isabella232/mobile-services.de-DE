@@ -6,7 +6,7 @@ seo-title: Technologiebericht
 solution: Marketing Cloud, Analytics
 title: Technologiebericht
 topic: Berichte, Metriken
-uuid: 4 b 7322 c 4-8920-43 cd-bb 72-5 a 5 bd 515 ae 84
+uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -25,7 +25,7 @@ Die Grafik enthält beispielsweise den Basisbericht und Aufschlüsselungen und z
 
 >[!TIP]
 >
->Zusätzlich zu diesen Informationen können Sie ein Produkt in der Produktansicht anzeigen, in dem beschrieben wird, wie Sie mit dem Sunburst-Diagramm interagieren. To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
+>In addition to this information, you can view an in-product tutorial that describes how to interact with the sunburst chart. To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
 
 ![](assets/report_technology.png)
 
@@ -51,7 +51,7 @@ In folgender Tabelle werden die Standardberichte beschrieben und es wird angegeb
 
 >[!TIP]
 >
->Im **[!UICONTROL Betreiberbericht]** werden Wi-Fi-Benutzer als `none`.
+>Im Bericht **[!UICONTROL Anbieter]** werden Wi-Fi-Benutzer als `none`.
 
 
 ## Aufschlüsselungen und Metriken hinzufügen {#section_15833511E82648869E7B1EFC24EF7B82}
@@ -60,7 +60,7 @@ Sie können Aufschlüsselungen und sekundäre Metriken hinzufügen, die dann die
 
 >[!IMPORTANT]
 >
->Je mehr Ringe Sie zur Sunburst hinzufügen, desto länger dauert die Verarbeitung.
+>Je mehr Ringe Sie zum Sonnenbrand hinzufügen, desto länger dauert die Verarbeitung.
 
 Um Aufschlüsselungen und sekundäre Metriken hinzuzufügen, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Technologie]** und dann auf **[!UICONTROL Benutzerspezifisch]**.
 
