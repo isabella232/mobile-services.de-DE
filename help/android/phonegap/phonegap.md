@@ -4,11 +4,11 @@ keywords: android;library;mobile;sdk
 seo-description: Mit diesem Plug-in können Sie Android-AppMeasurement-Aufrufe von Ihrem PhoneGap-Projekt ausführen.
 seo-title: Überblick über das PhoneGap-Plug-in
 solution: Marketing Cloud, Analytics
-title: Überblick über das PhoneGap-Plug-in
+title: PhoneGap plug-in overview
 topic: Entwickler und Implementierung
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
@@ -17,15 +17,13 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Mit diesem Plug-in können Sie Android-AppMeasurement-Aufrufe von Ihrem PhoneGap-Projekt ausführen. To create a PhoneGap project, see [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html).
 
-## Neue Adobe Experience Cloud SDK-Version
+## New Adobe Experience Platform Mobile SDK Release
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
->[!IMPORTANT]
->
->Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
 
-* Gehen Sie zu [Launch](https://launch.adobe.com/), um zu beginnen.
+* To get started, go to Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
 
 
@@ -41,11 +39,11 @@ cordova plugin add adobe-mobile-services
 
 ## Plug-in einschließen
 
-1. Ziehen Sie die `ADBMobile_PhoneGap.java` Datei in Ihren `src` Ordner.
+1. Drag the  file to your  folder.`ADBMobile_PhoneGap.java``src`
 
    Um die Datei zu verschieben, klicken Sie auf **[!UICONTROL OK]**.
 
-1. Ziehen Sie die `ADB_Helper.js` Datei in den Ordner, der die `index.html` Datei enthält
+1. Drag the  file into the folder that contains the  file`ADB_Helper.js``index.html`
 
    Um die Datei zu verschieben, klicken Sie auf **[!UICONTROL OK]**.
 
@@ -63,10 +61,10 @@ cordova plugin add adobe-mobile-services
    <param name="android-package" value="com.example.phonegaptest.ADBMobile_PhoneGap" />
    ```
 
-## Include the AppMeasurement library
+## AppMeasurement-Bibliothek einschließen
 
 1. To download the AppMeasurement library, see [Get the SDK](/help/android/getting-started/dev-qs.md).
-1. Ziehen Sie die `adobeMobileLibrary.jar` Datei in Ihren `src` Ordner.
+1. Drag the the  file to your  folder.`adobeMobileLibrary.jar``src`
 
    Um die Datei zu verschieben, klicken Sie auf **[!UICONTROL OK]**.
 
@@ -77,7 +75,7 @@ cordova plugin add adobe-mobile-services
 
    Um die Datei zu verschieben, klicken Sie auf **[!UICONTROL OK]**.
 
-## Add app permissions
+## App-Berechtigungen hinzufügen
 
 Die AppMeasurement-Bibliothek erfordert folgende Berechtigungen, um Daten zu senden und Offline-Verfolgungsaufrufe aufzuzeichnen:
 
