@@ -2,18 +2,18 @@
 description: Der Treuebericht (ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele Unique Users die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.
 keywords: mobile
 seo-description: Der Treuebericht (ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele Unique Users die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.
-seo-title: Treuebericht
+seo-title: Bericht zur Treue
 solution: Marketing Cloud, Analytics
-title: Treuebericht
+title: Retention report
 topic: Berichte, Metriken
-uuid: e 7639 e 7 f-c 9 ed -4 b 19-9 ac 5-b 36774 ea 9 dd 6
+uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Treuebericht {#retention}
+# Bericht zur Treue {#retention}
 
 Der **[!UICONTROL Treuebericht](ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele Unique Users die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.**
 
