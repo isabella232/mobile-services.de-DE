@@ -1,12 +1,12 @@
 ---
 description: Diese Informationen helfen Ihnen beim Senden von Signalen und Empfangen von Besuchersegmenten über Audience Manager.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Diese Informationen helfen Ihnen beim Senden von Signalen und Empfangen von Besuchersegmenten über Audience Manager.
 seo-title: Überblick über Audience Manager
 solution: Marketing Cloud, Analytics
 title: Überblick über Audience Manager
 topic: Entwickler und Implementierung
-uuid: cfa 4106 d -13 c 1-45 ba-bee 6-6 f 992 aaf 9919
+uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -15,7 +15,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Überblick über Audience Manager {#audience-manager}
 
-Die Informationen in diesem Abschnitt helfen Ihnen beim Senden von Signalen und beim Abrufen von Besuchersegmenten aus Audience Manager.
+Die Informationen in diesem Abschnitt helfen Ihnen, Signale zu senden und Besuchersegmente aus Audience Manager abzurufen.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
