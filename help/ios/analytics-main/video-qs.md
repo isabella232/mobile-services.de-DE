@@ -2,10 +2,10 @@
 description: Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der Meilenstein-Videomessung.
 seo-description: Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der Meilenstein-Videomessung.
 seo-title: Video-Analytics
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Video-Analytics
 topic: Entwickler und Implementierung
-uuid: d 75 fa 415-78 f 6-4 f 50-a 563-76949 f 040138
+uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,13 +18,13 @@ Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der M
 
 >[!TIP]
 >
->Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen finden Sie unter [Messen von Audio und Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen finden Sie unter [Audio- und Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
 Der allgemeine Prozess zur Videomessung ist für sämtliche Plattformen sehr ähnlich. Dieser Inhalt bietet eine grundlegende Übersicht über die Aufgaben für Entwickler sowie einige Codebeispiele.
 
 ## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
-In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten einer Analytics-Variable zuzuordnen.
+In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten einer Analytics-Variablen zuzuordnen.
 
 * **a.media.name**
 
@@ -32,7 +32,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (Optional) Die Variable „Custom Insight“ bietet Informationen für die Videopfadgebung.
 
-   * Variablentyp: Evar
+   * Variablentyp: eVar
    * Standardgültigkeit: Besuch
    * Benutzerspezifischer Insight-Bericht (s.prop, wird zur Videopfadsetzung verwendet)
 
@@ -40,7 +40,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (Optional) Bietet Informationen zur Videopfadsetzung. Die Pfadsetzung muss für diese Variable von der Kundenunterstützung aktiviert werden.
 
-   * Variablentyp: Custom Insight (s. prop)
+   * Variablentyp: Custom Insight (s.prop)
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop)
 
 * **a.media.segment**
@@ -54,7 +54,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
    * Videoende (Stopp)
    Analytics zeichnet die erste Segmentansicht am Anfang des Segments auf, wenn der Besucher die Wiedergabe startet. Nachfolgende Segmentansichten werden aufgezeichnet, wenn das jeweilige Segment anfängt.
 
-   * Variablentyp: Evar
+   * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
 
 
@@ -62,7 +62,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Den von der Videomessung gesendeten Treffern wird der Content-Typ `video` zugewiesen. Diese Variable muss nicht exklusiv für die Videoverfolgung reserviert sein. Wenn Sie einrichten, dass andere Inhalte den Content-Typ mit dieser Variablen melden, können Sie die Verteilung der Besucher inhaltstypübergreifend analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
 
-   * Variablentyp: Evar
+   * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
 
 * **a.media.timePlayed**
