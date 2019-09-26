@@ -5,7 +5,7 @@ seo-title: Vorbereitung
 solution: Marketing Cloud, Analytics
 title: Vorbereitung
 topic: Entwickler und Implementierung
-uuid: 0 ca 9 e 937-8 d 40-4570-9 dbf -9 aecc 6 econds 6
+uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -31,7 +31,7 @@ App-Entwickler können jetzt die von Ihnen erstellten Report Suites anzeigen.
 
 >[!IMPORTANT]
 >
->Um eine neue Report Suite zu erstellen und die sdks herunterzuladen, müssen Sie ein Analytics-Administrator sein.
+>Um eine neue Report Suite zu erstellen und die SDKs herunterzuladen, müssen Sie Analytics-Administrator sein.
 
 ### App-Entwickler
 
@@ -50,13 +50,13 @@ Sie können sich auf eine der folgenden Arten bei der UI von Adobe Mobile Servic
 
 ### Experience Cloud
 
-Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden. Dies setzt voraus, dass Ihr Unternehmen in der Experience Cloud präsent ist und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen finden Sie unter [Verwalten von Experience Cloud-Benutzern und -produkten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden. Dies setzt voraus, dass Ihr Unternehmen in der Experience Cloud präsent ist und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
->Wenn Sie nicht sicher sind, ob Ihr Unternehmen in der Experience Cloud bereitgestellt wurde, verwenden Sie Ihr vorhandenes Adobe Analytics-Konto.
+>Wenn Sie sich nicht sicher sind, ob Ihr Unternehmen in der Experience Cloud bereitgestellt wurde, verwenden Sie Ihr bestehendes Adobe Analytics-Konto.
 
-### Adobe Analytics 
+### Adobe Analytics
 
 Klicken Sie auf **[!UICONTROL Mit Analytics-Konto anmelden]** und geben Sie Ihren Analytics-Unternehmensnamen, Ihren Benutzernamen und Ihr Kennwort ein.
 
@@ -95,7 +95,7 @@ Um das mobile SDK herunterzuladen,
 
 >[!TIP]
 >
->Eine Konfigurationsdatei für Ihre App wird automatisch im SDK-Download enthalten. Daher müssen Sie diese Datei nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
+>Eine Konfigurationsdatei für Ihre App wird automatisch in den SDK-Download eingeschlossen. Daher müssen Sie diese Datei nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
 
 Wenn Sie Android Studio verwenden, können Sie der Datei `build.gradle` in Ihrer App auch Folgendes hinzufügen:
 
@@ -103,7 +103,7 @@ Wenn Sie Android Studio verwenden, können Sie der Datei `build.gradle` in Ihrer
 compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 ```
 
-Berücksichtigen Sie folgende Informationen:
+Beachten Sie die folgenden Informationen:
 
 * Ersetzen Sie die Versionsnummer im Codebeispiel durch die entsprechende Version der Android-SDKs.
 * Laden Sie die Konfigurationsdatei herunter und fügen Sie sie in Ihr Projekt ein.
