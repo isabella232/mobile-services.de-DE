@@ -1,8 +1,8 @@
 ---
 title: Schnellstart für Entwickler
-seo-title: Blackberry Developer Quick Start for Adobe Mobile Services
-description: Im blackberry Developer Quick Start Guide erfahren Sie, wie Sie die blackberry-Bibliothek für Adobe Mobile Services implementieren.
-seo-description: Im blackberry Developer Quick Start Guide erfahren Sie, wie Sie die blackberry-Bibliothek für Adobe Mobile Services implementieren.
+seo-title: BlackBerry Developer - Kurzanleitung für Adobe Mobile Services
+description: Die Kurzanleitung zum BlackBerry-Entwickler hilft Ihnen, den Vorgang zur Implementierung der BlackBerry-Bibliothek für Adobe Mobile Services zu verstehen.
+seo-description: Die Kurzanleitung zum BlackBerry-Entwickler hilft Ihnen, den Vorgang zur Implementierung der BlackBerry-Bibliothek für Adobe Mobile Services zu verstehen.
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -55,18 +55,18 @@ Nachdem Sie das heruntergeladene SDK entpackt haben, überprüfen Sie, ob die fo
 1. Stellen Sie sicher, dass die Einstellung „**[!UICONTROL (Alle Konfigurationen)]**“ ausgewählt ist, und klicken Sie dann im Bereich „**[!UICONTROL Assets]“ des Fensters auf „** Dateien hinzufügen **“.**
    >[!TIP]
    >
-   >In der QNX Momentics IDE gibt es einen Fehler, der manchmal verhindert, dass diese Schaltflächen sichtbar sind. Wenn die Schaltflächen nicht angezeigt werden, ändern Sie die Größe der Fenster, bis sie angezeigt werden.
+   >Es gibt einen Fehler in der QNX Momentics IDE, der manchmal verhindert, dass diese Schaltflächen sichtbar sind. Wenn die Schaltflächen nicht angezeigt werden, ändern Sie die Größe der Fenster, bis sie angezeigt werden.
 
-1. Klicken **[!UICONTROL Sie auf Arbeitsbereich]**.
+1. Klicken Sie auf **[!UICONTROL Arbeitsbereich]**.
 1. Find the `ADBMobileConfig.json` file in your project and click **[!UICONTROL OK]**.
 
 Your application can import the classes/interfaces from the `adobeMobileLibrary.jar` library by using `#include <ADBMobile.hpp>`.
 
-## App-Berechtigungen hinzufügen
+## Add app permissions
 
 In `bar-descriptor.xml` in the project directory, add the line `<permission>access_internet</permission>`, or in the QNX Momentics IDE, select the **[!UICONTROL Internet]** box on the permissions section of the **[!UICONTROL Application]** tab.
 
-## `ADBMobileConfig.json` Konfigurationsdatei aktualisieren
+## Update the `ADBMobileConfig.json` config file
 
 Die Datei „`ADBMobileConfig.json`“ enthält globale SDK-Einstellungen. Sie müssen zunächst einige Werte aktualisieren, um loslegen zu können.
 
