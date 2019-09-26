@@ -1,34 +1,30 @@
 ---
 description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst und sendet das SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
 keywords: android;library;mobile;sdk
-seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. When a user downloads and runs an app from the App store after clicking on the generated link, the SDK automatically collects and sends the acquisition data to Adobe Mobile services.
+seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst und sendet das SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
 seo-title: Mobile App – Akquise
 solution: Marketing Cloud, Analytics
 title: Mobile App – Akquise
 topic: Entwickler und Implementierung
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
 # Mobile app acquisition {#mobile-app-acquisition}
 
-In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst und sendet das SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
+In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. When a user downloads and runs an app from the App store after clicking on the generated link, the SDK automatically collects and sends the acquisition data to Adobe Mobile services.
 
-## Neue Adobe Experience Cloud SDK-Version
+## Neue Version des Adobe Experience Platform Mobile SDK
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
 
-* Gehen Sie zu [Launch](https://launch.adobe.com/), um zu beginnen.
+* Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as Acquisition links. Weitere Informationen finden Sie unter [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). For more information about using Acquisition and Marketing Links with the Experience Cloud SDKs, see [Acquisition and Marketing Links](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
 
 >[!IMPORTANT]
 >
@@ -74,7 +70,7 @@ Die Updates in diesem Abschnitt ermöglichen es dem SDK, Akquise-Daten von einem
 
 ## Tracking mobile acquisition {#section_CEA30C652AC8470784B8054E299B80FA}
 
-1. Fügen Sie die Bibliothek [zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
+1. Add the library [to your project and implement lifecycle.
 
    Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und im Lebenszyklus](/help/android/getting-started/dev-qs.md)hinzufügen.
 
