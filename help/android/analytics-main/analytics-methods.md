@@ -1,12 +1,12 @@
 ---
 description: Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Analytics-Methoden
 solution: Marketing Cloud, Analytics
 title: Analytics-Methoden
 topic: Entwickler und Implementierung
-uuid: ac 7 c 640 e -9 dcc -4724-b 561-019 cc 025 d 5 a 7
+uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,7 +17,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen], einschließlich Analytics], Target], Audience Manager] und Adobe Experience Platform Identity Service]. Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `analytics` bei Experience Cloud ID-Methoden.
+The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics], Target], Audience Manager], and the Adobe Experience Platform Identity Service]. Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `analytics` bei Experience Cloud ID-Methoden.
 
 Jede der folgenden Methoden wird verwendet, um Daten an Ihre Adobe Analytics Report Suite zu senden:
 
@@ -29,7 +29,7 @@ Jede der folgenden Methoden wird verwendet, um Daten an Ihre Adobe Analytics Rep
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, der Seitenansichten inkrementiert.
+   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -43,8 +43,8 @@ Jede der folgenden Methoden wird verwendet, um Daten an Ihre Adobe Analytics Rep
       Analytics.trackState("loginScreen",null);
       ```
 
-* **Trackaction**
-verfolgt eine Aktion in Ihrer App.
+* **trackAction
+Tracks an action in your app.**
 
    Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, that occur in your app.
 
@@ -60,8 +60,7 @@ verfolgt eine Aktion in Ihrer App.
       Analytics.trackAction("heroBannerTouched",null);
       ```
 
-* **Gettrackingidentifier**
-Gibt die automatisch generierte Besucherkennung für Analytics zurück.
+* **getTrackingIdentifier** Gibt die automatisch generierte Besucher-ID für Analytics zurück.
 
    Diese appspezifische, Unique Visitor-ID wird beim ersten Start generiert, gespeichert und dann fortlaufend weiterverwendet. Die ID wird auch bei App-Upgrades beibehalten und nur entfernt, wenn die App deinstalliert wird.
 
@@ -79,7 +78,7 @@ Gibt die automatisch generierte Besucherkennung für Analytics zurück.
 
 * **trackLocation**
 
-   Sendet die aktuelle Breite, den Längengrad und den Speicherort in einem definierten Zielpunkt. Weitere Informationen finden Sie unter [Geografische Position und Zielpunkte](/help/android/location/geo-poi.md).
+   Sends the current latitude, longitude, and location in a defined point of interest. Weitere Informationen finden Sie unter [Geografischer Standort und Zielpunkte](/help/android/location/geo-poi.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -120,7 +119,6 @@ Gibt die automatisch generierte Besucherkennung für Analytics zurück.
    >Dieser Aufruf sendet keinen Treffer.
 
    * Hier finden Sie die Syntax für diese Methode:
-
    ```java
    publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
    ```
@@ -146,7 +144,7 @@ Gibt die automatisch generierte Besucherkennung für Analytics zurück.
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * Hier finden Sie ein Codebeispiel für diese Methode:
+   * Here is a code sample for this method:
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
