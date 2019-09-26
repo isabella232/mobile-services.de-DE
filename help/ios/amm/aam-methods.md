@@ -5,7 +5,7 @@ seo-title: Audience Manager-Methoden
 solution: Marketing Cloud, Analytics
 title: Audience Manager-Methoden
 topic: Entwickler und Implementierung
-uuid: 97658 bd 6-4 c 4 f -4875-abe 9-36 dad 4 ec 8 bae
+uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Hier finden Sie eine Liste der Audience Manager-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Adobe Experience Platform Identity Service. Die Methoden haben ein der Lösung entsprechendes Präfix und die Manager-Methoden enthalten das Präfix „`audience`audience“.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter Analytics, Target, Audience Manager und den Identitätsdienst für Adobe Experience Platform. Die Methoden haben ein der Lösung entsprechendes Präfix und die Manager-Methoden enthalten das Präfix „`audience`audience“.
 
 Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal, das Lebenszyklusmetriken enthält, mit `application:didFinishLaunchingWithOptions:` : gesendet.
 
@@ -30,7 +30,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal, das
       + (NSDictionary *) audienceVisitorProfile;
       ```
 
-   * Hier finden Sie das Codebeispiel für dieses Menü:
+   * Here is the code sample for this menu:
 
       ```objective-c
       NSDictionary *profile = [ADBMobile audienceVisitorProfile]; 
@@ -77,7 +77,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal, das
 
       >[!IMPORTANT]
       >
-      >Vor Version 4.13. x wurde DPUUID nicht automatisch kodiert. Ab Version 4.13.x entschlüsselt das SDK zunächst den übermittelten Wert und verschlüsselt ihn dann neu. Mithilfe dieses Verfahrens wird sichergestellt, dass das SDK die Rückkompatibilität nicht beeinträchtigt.
+      >Vor Version 4.13.x wurde DPUUID nicht automatisch kodiert. Ab Version 4.13.x entschlüsselt das SDK zunächst den übermittelten Wert und verschlüsselt ihn dann neu. Mithilfe dieses Verfahrens wird sichergestellt, dass das SDK die Rückkompatibilität nicht beeinträchtigt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
