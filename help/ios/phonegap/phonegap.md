@@ -6,7 +6,7 @@ seo-title: PhoneGap-Plug-in
 solution: Marketing Cloud, Analytics
 title: PhoneGap-Plug-in
 topic: Entwickler und Implementierung
-uuid: f 88 bcf 10-1 f 9 e -4 c 97-b 348-40 db 797 c 9923
+uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -42,7 +42,7 @@ To create a PhoneGap project, see [PhoneGap](https://helpx.adobe.com/experience-
 
 ## Manuelles Installieren des Plug-ins {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
-### Appmeasurement-Bibliothek einschließen
+### AppMeasurement-Bibliothek einschließen
 
 So schließen Sie AppMeasurement ein:
 
@@ -71,7 +71,7 @@ Für die AppMeasurement-Bibliothek ist Folgendes erforderlich:
    1. Wählen Sie **[!UICONTROL Elemente in den Zielgruppenordner kopieren (falls erforderlich)]**.
    1. Wählen Sie **[!UICONTROL Gruppen für hinzugefügte Ordner erstellen]**.
    1. Wählen Sie die Ziele aus, an denen Sie den AppMeasurement-Code verwenden möchten, und klicken Sie auf **[!UICONTROL Fertigstellen]**.
-   ![](assets/xcode-settings.png){width = "672"}
+   ![](assets/xcode-settings.png){width="672"}
 
 1. Erweitern Sie auf der Registerkarte **[!UICONTROL Build-Phasen]** des Ziels Ihres Projekts den Abschnitt **Binärdatei mit Bibliotheken verknüpfen]und fügen Sie die folgenden Bibliotheken hinzu:[!UICONTROL **
 
