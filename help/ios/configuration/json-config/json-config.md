@@ -1,11 +1,11 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
 seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
-seo-title: Adbmobile JSON-Konfiguration
+seo-title: ADBMobile JSON-Konfiguration
 solution: Marketing Cloud, Analytics
-title: Adbmobile JSON-Konfiguration
+title: ADBMobile JSON-Konfiguration
 topic: Entwickler und Implementierung
-uuid: d 9708 d 59-e 30 a -4 f 6 c-ab 1 b-d 9499855 d 0 c 2
+uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -57,7 +57,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    * Mindestens SDK-Version 4.6
    >[!IMPORTANT]
    >
-   >Informationen zu Treffertreffern zurückdatierter Sitzungen werden in einem Server-Aufruf für Sitzungsinformationen gesendet und zusätzliche Server-Aufrufe können angewendet werden.
+   >Backdated session hit information is sent in a session info server call, and additional server calls might apply.
 
 
 * **batchLimit**
@@ -65,7 +65,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    Grenzwert für die Anzahl der Treffer, die in aufeinanderfolgenden Aufrufen gesendet werden sollen. Wenn beispielsweise `batchLimit` auf 10 festgelegt ist, wird jeder Treffer vor dem 10. Treffer in der Warteschlange gespeichert. Beim 10. Treffer werden alle 10 Treffer nacheinander gesendet.
 
    * Default value is `0`, which means that batching is not enabled.
-   * Erforderlich `offlineEnabled = true`.
+   * Requires .`offlineEnabled = true`
    * Mindestens SDK-Version 4.1
 
 * **charset**
@@ -80,7 +80,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    >[!IMPORTANT]
    >
-   >Diese Variable ist von Target erforderlich.
+   >Diese Variable wird von Target benötigt.
 
    * Mindestens SDK-Version 4.0
 
@@ -125,7 +125,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Ist diese Option aktiviert, werden Treffer in die Warteschlange aufgenommen, während das Gerät offline ist, und erst gesendet, wenn es wieder online ist. Für Ihre Report Suite müssen Zeitstempel aktiviert sein, um die Offline-Verfolgung zu nutzen. Der Standardwert lautet `false`.
 
-   Hier sind einige wichtige Informationen:
+   Hier einige wichtige Informationen:
 
    * Wenn Zeitstempel für Ihre Report Suite aktiviert sind, `offlineEnabled`muss Ihre Konfigurationseigenschaft ** wahr sein.
    * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
@@ -136,7 +136,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **org**
 
-   Gibt die Experience Cloud-Organisations-ID für den Adobe Experience Platform Identity Service an.
+   Specifies the Experience Cloud org ID for the Adobe Experience Platform Identity Service.
 
    * Mindestens SDK-Version 4.3
 
@@ -145,7 +145,6 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    Jedes POI-Array beinhaltet den POI-Namen, den Längen- und Breitengrad sowie den Radius (in Metern) des POI-Bereichs. Für den POI-Namen kann eine beliebige Zeichenfolge gewählt werden. Wenn ein `trackLocation`-Aufruf gesendet wird, wird eine Kontextdatenvariable aufgefüllt und mit dem `trackLocation`-Aufruf gesendet, sofern sich die aktuellen Koordinaten an einem definierten POI befinden.
 
    * Mindestens SDK-Version 4.0
-
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]
@@ -161,7 +160,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. Informationen zum Herunterladen einer aktualisierten Konfigurationsdatei finden Sie unter [Bevor Sie beginnen](/help/ios/getting-started/requirements.md).
+   Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. To download an updated configuration file, see Before you start.[](/help/ios/getting-started/requirements.md)
 
 * **postback**
 
@@ -197,7 +196,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    >[!IMPORTANT]
    >
-   >Diese Variable ist für Akquise erforderlich. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >Diese Variable ist für die Akquise erforderlich. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
 
    * Mindestens SDK-Version 4.1
 
@@ -268,7 +267,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    * Mindestens SDK-Version 4.0
 
 
-## `ADBMobileConfig.json` Beispieldatei {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Sample `ADBMobileConfig.json` file {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 
