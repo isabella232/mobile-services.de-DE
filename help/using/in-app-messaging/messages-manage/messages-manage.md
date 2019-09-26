@@ -3,10 +3,10 @@ description: Zeigen Sie eine Liste Ihrer In-App- und Push-Nachrichten mit Inform
 keywords: mobile
 seo-description: Zeigen Sie eine Liste Ihrer In-App- und Push-Nachrichten mit Informationen zum Zeitpunkt der letzten Aktualisierung sowie zum Status (live oder deaktiviert) jeder Nachricht an.
 seo-title: Nachrichten verwalten
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Nachrichten verwalten
 topic: Metriken
-uuid: 4 d 934 ede -0 c 88-4 dd 5-ba 37-9 caf 727 cc 717
+uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -15,11 +15,11 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 # Nachrichten verwalten{#manage-messages}
 
-Zeigen Sie eine Liste Ihrer In-App- und Push-Nachrichten mit Details dazu an, wann die einzelnen Nachrichten zuletzt aktualisiert wurden und ob die Nachrichten live oder deaktiviert wurden.
+Zeigen Sie eine Liste Ihrer In-App- und Push-Nachrichten mit Details zum Zeitpunkt der letzten Aktualisierung der Nachrichten und zu der Frage an, ob die Nachrichten live sind oder deaktiviert wurden.
 
 Sie können Nachrichten duplizieren, aktivieren/deaktivieren sowie archivieren/ihre Archivierung aufheben. Beispielsweise können Sie einen Bericht anzeigen, in dem die Anzahl der Benutzer angegeben wird, die die Nachricht angesehen haben, sowie die Anzahl der Benutzer, die die Nachricht durchgeklickt haben.
 
-Um Nachrichten zu verwalten, klicken Sie auf ***your_ app_ name*** &gt; **[!UICONTROL Messaging]** &gt; **[!UICONTROL Nachrichten verwalten]**.
+Um Nachrichten zu verwalten, klicken Sie auf ***your_app_name*** &gt; **[!UICONTROL Messaging]** &gt; Nachrichten **[!UICONTROL verwalten]**.
 
 ![](assets/manage_messages.png)
 
@@ -27,9 +27,9 @@ Im Folgenden finden Sie zusätzliche Informationen zu den Aktionen, die Sie mit 
 
 * **Nachrichten suchen und filtern**
 
-   Verwenden Sie das Suchfeld oben in der Liste, um nach Nachrichten zu suchen und diese zu filtern. In der Liste werden Nachrichten angezeigt, die mit Ihren Eingaben im Suchfeld übereinstimmen. Die Suche arbeitet über alle Tabellenspalten hinweg. Sie können beispielsweise `Draft` eingeben, um nur Nachrichten mit dem entsprechenden Status anzuzeigen. Sie können auch den Namen eines Benutzers eingeben, damit nur Nachrichten angezeigt werden, die von diesem Benutzer aktualisiert wurden.
+   Verwenden Sie das Suchfeld oben in der Liste, um Nachrichten zu suchen und zu filtern. In der Liste werden Nachrichten angezeigt, die mit Ihren Eingaben im Suchfeld übereinstimmen. Die Suche arbeitet über alle Tabellenspalten hinweg. Sie können beispielsweise `Draft` eingeben, um nur Nachrichten mit dem entsprechenden Status anzuzeigen. Sie können auch den Namen eines Benutzers eingeben, damit nur Nachrichten angezeigt werden, die von diesem Benutzer aktualisiert wurden.
 
-   Zusätzlich zum Suchfeld können Sie auch auf eine Spaltenüberschrift klicken, um die Liste in auf- oder absteigender Reihenfolge nach der Spalte zu sortieren.
+   In addition to the search box, you can also click any column header to sort the list in ascending or descending order by the contents of that column.
 
    Wenn Sie z. B. die Spalte **[!UICONTROL Nachrichtentyp]in aufsteigender Reihenfolge sortieren, werden Ihre gesamten In-App-Nachrichten vor Ihren Push-Nachrichten angezeigt.** Wenn Sie die Spalte **[!UICONTROL Zuletzt aktualisiert]in absteigender Reihenfolge sortieren, zeigt die Liste zuerst Ihre zuletzt aktualisierten Nachrichten an.**
 
@@ -51,7 +51,7 @@ Im Folgenden finden Sie zusätzliche Informationen zu den Aktionen, die Sie mit 
 
 * **Nachrichten archivieren**
 
-   So archivieren Sie Nachrichten und können Ihre Nachrichtenliste bereinigen:
+   To archive messages and clean up your message list:
 
    >[!TIP]
    >
