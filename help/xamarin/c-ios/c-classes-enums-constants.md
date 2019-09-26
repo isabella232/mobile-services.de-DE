@@ -1,9 +1,9 @@
 ---
 description: Liste der Klassen und Aufzählungen, die in Xamarin-Anwendungen verwendet werden können
 seo-description: Liste der Klassen und Aufzählungen, die in Xamarin-Anwendungen verwendet werden können
-seo-title: Klassen und Enums
-title: Klassen und Enums
-uuid: 410 d 27 ee-ce 2 b -4183-971 e -39 a 7031 d 1 bd 5
+seo-title: Klassen und Erweiterungen
+title: Klassen und Erweiterungen
+uuid: 410d27ee-ce2b-4183-971e-39a7031d1bd5
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
