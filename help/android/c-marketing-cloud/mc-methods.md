@@ -1,23 +1,23 @@
 ---
 description: Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
-seo-title: Methoden des Adobe Experience Platform Identity Service
-solution: Marketing Cloud, Analytics
-title: Methoden des Adobe Experience Platform Identity Service
+seo-title: Adobe Experience Platform Identity Service-Methoden
+solution: Marketing Cloud,Analytics
+title: Adobe Experience Platform Identity Service-Methoden
 topic: Entwickler und Implementierung
-uuid: c 5107 a 7 e -273 b -4 f 71-8738-4 c 603479 b 24 c
+uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
 source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 ---
 
 
-# Methoden des Adobe Experience Platform Identity Service{#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service-Methoden{#experience-cloud-id-service-methods}
 
 Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen], einschließlich Analytics, Target, Audience Manager und Adobe Experience Platform Identity Service.
+The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
 
 Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `visitor`. For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
 
@@ -27,7 +27,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
    >[!IMPORTANT]
    >
-   >Diese Methode kann einen blockierten Netzwerkaufruf verursachen. Rufen Sie diese Methode nicht in zeitkritischen Threads auf.
+   >This method can cause a blocking network call. Rufen Sie diese Methode nicht in zeitkritischen Threads auf.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -86,7 +86,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       Visitor.syncIdentifiers(identifiers);
       ```
 
-* **Syncidentifier**
+* **syncIdentifier**
 
    Synchronisiert den bereitgestellten ID-Typ und -Wert mit dem Besucher-ID-Dienst.
 
@@ -147,9 +147,9 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       List<VisitorID> myVisitorIDs = Visitor.getIdentifiers(); 
       ```
 
-* **Geturlvariablesasync**
+* **getUrlVariablesAsync**
 
-   Diese Methode wird in Version 4.16.0 eingeführt und gibt eine korrekt formatierte Zeichenfolge zurück, die URL-Variablen des Besucher-ID-Service enthält. Weitere Informationen zur Verwendung dieser Methode finden Sie unter Methoden des [Adobe Experience Platform Identity Service](/help/android/reference/hybrid-app.md).
+   Diese in Version 4.16.0 eingeführte Methode gibt eine entsprechend geformte Zeichenfolge zurück, die URL-Variablen des Besucher-ID-Service enthält. Weitere Informationen zur Verwendung dieser Methode finden Sie unter [Adobe Experience Platform Identity Service-Methoden](/help/android/reference/hybrid-app.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
