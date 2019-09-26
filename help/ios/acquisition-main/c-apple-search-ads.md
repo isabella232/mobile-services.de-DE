@@ -20,7 +20,7 @@ Das Adobe-SDK nutzt die Zuordnungs-APIs der Suchanzeigen-App von Apple, damit En
 
 Vorteile durch die Verwendung von Apple-Werbeanzeigen:
 
-* Einfaches Messen der Effektivität Ihrer Suchanzeigen-App-Downloadkampagnen durch das Hinzufügen von ein paar Codezeilen zu Ihrer App.
+* Messen Sie ganz einfach die Effektivität Ihrer Suchanzeigen-App-Downloadkampagnen, indem Sie der App einige Codezeilen hinzufügen.
 * Entwickler können auf das Datum bzw. die Uhrzeit des Downloads sowie auf das gebotene Keyword zugreifen, das die Konversion verursacht hat.
 
 ## Implementieren von Apple-Werbeanzeigen {#section_F1094676793540CFA1DBB540174EEB6A}
@@ -43,7 +43,7 @@ So aktivieren Sie Ihre App für die Suchanzeigenzuordnung:
 
    If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
 
-   In addition, the following values will be mapped from the `"iad"` dictionary to our typical acquisition context data fields:
+   Zusätzlich werden die folgenden Werte aus dem `"iad"`-Wörterbuch unseren typischen Akquisekontext-Datenfeldern zugeordnet:
 
    * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
    * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
