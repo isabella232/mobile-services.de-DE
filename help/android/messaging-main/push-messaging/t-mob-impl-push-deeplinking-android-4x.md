@@ -3,7 +3,7 @@ description: Nachdem Sie die Deep-Link-URL in der Adobe Mobile Services-Benutzer
 seo-description: Nachdem Sie die Deep-Link-URL in der Adobe Mobile Services-Benutzeroberfläche konfiguriert haben, befindet sich diese URL in der Push-Payload mit dem Schlüssel „adb_deeplink“.
 seo-title: Push-Nachrichten mit Deep-Links implementieren
 title: Push-Nachrichten mit Deep-Links implementieren
-uuid: e 24 f 9248-8 d 48-4 e 77-84 af -3 a 05 b 72 e 2 a 09
+uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
 translation-type: tm+mt
 source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
@@ -14,11 +14,11 @@ source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 Nachdem Sie die Deep-Link-URL in der Adobe Mobile Services-Benutzeroberfläche konfiguriert haben, befindet sich diese URL in der Push-Payload mit dem Schlüssel „adb_deeplink“.
 
-Sie können die URL abrufen, indem Sie `remoteMessage.getData().get("adb_deeplink")` im `FirebaseMessagingService`.
+Sie können die URL abrufen, indem Sie `remoteMessage.getData().get("adb_deeplink")` in der `FirebaseMessagingService`.
 
 >[!TIP]
 >
->Je nachdem, ob die Payload eine Deep-Linking-URL aufweist, können Sie unterschiedliche Absichten definieren.
+>Je nachdem, ob die Nutzlast über eine Deep-Linking-URL verfügt, können Sie unterschiedliche Absichten definieren.
 
 1. Führen Sie eine der folgenden Aufgaben aus:
 
