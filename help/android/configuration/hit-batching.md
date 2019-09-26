@@ -1,12 +1,12 @@
 ---
 description: Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, die gesendeten Treffer so lange zu speichern, bis die Anzahl der Treffer in der Warteschlange das konfigurierte Limit überschritten hat.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, die gesendeten Treffer so lange zu speichern, bis die Anzahl der Treffer in der Warteschlange das konfigurierte Limit überschritten hat.
 seo-title: Stapelverarbeitung von Treffern
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Stapelverarbeitung von Treffern
 topic: Entwickler und Implementierung
-uuid: ada 35 be 3-242 b -4 b 2 b-a 828-9 bf 998 dd 58 b 5
+uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -19,7 +19,7 @@ Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, die gesendeten T
 
 >[!IMPORTANT]
 >
->Um Trefferstapel zu verwenden, **müssen** Sie Offline-Verfolgung aktivieren und SDK-Version 4.1 oder höher verwenden.
+>Zur Verwendung der Trefferstapelung **müssen** Sie die Offline-Verfolgung aktivieren und SDK Version 4.1 oder höher verwenden
 
 To enable hit batching, update your `ADBMobileConfig.json` file and specify a value for `batchLimit`:
 
