@@ -3,7 +3,7 @@ description: 'Auf der Seite „App-Einstellungen verwalten“ können Sie folgen
 seo-description: 'Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen vornehmen '
 seo-title: Konfigurieren Ihrer App
 title: Konfigurieren Ihrer App
-uuid: c 088 e 12 d -73 b 6-40 c 4-b 8 cc-ec 3 bb 3 d 3 aa 4 a
+uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -59,7 +59,7 @@ Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen
 
    >[!IMPORTANT]
    >
-   >Bevor Sie die sdks und Werkzeuge herunterladen, müssen Sie die SDK Analytics-Optionen konfigurieren. Weitere Informationen [finden Sie unter SDK-Analytics-Optionen](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)konfigurieren.
+   >Bevor Sie SDKs und Tools herunterladen, müssen Sie die SDK-Analytics-Optionen konfigurieren. Weitere Informationen finden Sie unter SDK-Analytics-Optionen [konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    Wenn Sie ein Upgrade auf Version 4.x der SDKs durchführen möchten oder derzeit an einer neuen App arbeiten, können Sie unten auf der Seite „App-Einstellungen verwalten“ die neuesten SDKs und Entwicklertools herunterladen.
 
