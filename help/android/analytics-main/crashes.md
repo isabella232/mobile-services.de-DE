@@ -2,10 +2,10 @@
 description: Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werden und wie Sie am besten mit fälschlich gemeldeten Abstürzen umgehen.
 seo-description: Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werden und wie Sie am besten mit fälschlich gemeldeten Abstürzen umgehen.
 seo-title: App-Abstürze verfolgen
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: App-Abstürze verfolgen
 topic: Entwickler und Implementierung
-uuid: 3 ab 98 c 14-ccdf -4060-ad 88-ec 07 c 1 c 6 bf 7 7
+uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,7 +18,7 @@ Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werd
 
 >[!TIP]
 >
->App-Abstürze werden als Teil der Lebenszyklusmetriken verfolgt. Bevor Sie Abstürze verfolgen können, fügen Sie die Bibliothek Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus. Weitere Informationen finden Sie unter *SDK und Config File to your intellij IDEA oder Eclipse Project* in [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+>App crashes are tracked as part of lifecycle metrics. Before you can track crashes, add the library to your project and implement lifecycle. For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
 Wenn die Lebenszyklusmetriken implementiert sind, wird `Config.collectLifecycleData` in der Methode `OnResume` jeder Aktivität aufgerufen. In the `onPause` method, a call is made to `Config.pauseCollectingLifeCycleData`.
 
@@ -38,7 +38,7 @@ Weitere Informationen zum Lebenszyklus von Android-Aktivitäten finden Sie unter
 
    >[!TIP]
    >
-   >Sie können diesen Absturz vermeiden, indem Sie die App beenden, bevor Sie erneut aus der IDE starten.
+   >Sie können diesen Absturz vermeiden, indem Sie die App im Hintergrund starten, bevor Sie sie erneut von der IDE starten.
 
 1. If the last foreground Activity of your app is backgrounded and does not call `Config.pauseCollectingLifecycleData();` in `onPause`, and your app is manually closed or killed by the OS, the next launch results in a crash.
 
@@ -48,9 +48,9 @@ Fragmente verfügen über App-Lebenszyklusereignisse, die Aktivitäten ähnlich 
 
 >[!IMPORTANT]
 >
->Sie müssen sich auf die Lebenszyklusereignisse verlassen, mit denen die entsprechenden Aktivitäten Ihren Code ausführen können. Dies erfolgt über die übergeordnete Ansicht des Fragments.
+>Sie müssen sich auf die Lebenszyklusereignisse verlassen, mit denen die zugehörigen Aktivitäten Ihren Code ausführen können. Dies erfolgt über die übergeordnete Ansicht des Fragments.
 
-## (Optional) Implementieren Sie Lebenszyklusrückrufe für Aktivitäten.
+## (Optional) Implementieren von Lebenszyklusrückrufen für Aktivitäten
 
 Seit API-Version 14 erlaubt Android globale Lebenszyklus-Rückrufe für Aktivitäten. For more information, see [Application](https://developer.android.com/reference/android/app/Application).
 
