@@ -5,7 +5,7 @@ seo-title: Verarbeitungsregeln und Kontextdaten
 solution: Marketing Cloud, Analytics
 title: Verarbeitungsregeln und Kontextdaten
 topic: Entwickler und Implementierung
-uuid: 51338 ccd-fa 52-4 d 9 c -97 c 4-947 a 4100465 d
+uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -19,9 +19,9 @@ Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten
 Weitere Informationen finden Sie unter folgenden Themen:
 
 * [Training zu Verarbeitungsregeln](https://tv.adobe.com/embed/1181/16506/) beim Summit 2013
-* Autorisierung zur Verwendung von Verarbeitungsregeln
+* Genehmigung zur Verwendung von Verarbeitungsregeln erhalten
 
-   Weitere Informationen zu Verarbeitungsregeln finden Sie unter [Verarbeitungsregeln.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+   Weitere Informationen zu Verarbeitungsregeln finden Sie unter Übersicht über [Verarbeitungsregeln](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 
@@ -63,5 +63,5 @@ Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 
 >[!TIP]
 >
->Adobe behält sich den Namespace `a.`vor. Abgesehen von dieser Einschränkung, die dazu dient, Konflikte zu vermeiden, besteht die einzige Anforderung darin, dass die Kontextdatenvariablen in Ihrem Anmeldeunternehmen eindeutig sein müssen.
+>Adobe behält sich den Namespace " `a.`"vor. Abgesehen von dieser Einschränkung, die dazu dient, Konflikte zu vermeiden, besteht die einzige Anforderung darin, dass die Kontextdatenvariablen in Ihrem Anmeldeunternehmen eindeutig sein müssen.
 
