@@ -1,9 +1,9 @@
 ---
 description: Klassen und Methoden, die von der BlackBerry-Bibliothek bereitgestellt werden.
 seo-description: Klassen und Methoden, die von der BlackBerry-Bibliothek bereitgestellt werden.
-seo-title: Adobe Mobile-Klassen- und -methodenreferenz
-title: Adobe Mobile-Klassen- und -methodenreferenz
-uuid: 1 e 42 d 759-be 43-4 bb 3-ac 1 a-c 7 d 64133 d 61 c
+seo-title: Adobe Mobile class and method reference
+title: Adobe Mobile-Klasse und -Methodenreferenz
+uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -14,7 +14,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 Klassen und Methoden, die von der BlackBerry-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit Adobe Analytics und Methoden befinden sich auf der Grundlage der Lösung in separaten Klassen.
+The SDK currently has support for Adobe Analytics, and methods are in separate classes based on the solution.
 
 ## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -153,7 +153,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, der Seitenansichten inkrementiert.
+   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -207,7 +207,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    (Erforderlich) Eine oder mehrere Report Suites zum Empfangen von Analytics-Daten. Verschiedene Report Suite-IDs müssen durch Kommas getrennt und ohne Leerzeichen zwischen den einzelnen Suites angegeben werden.
 
-   Hier finden Sie das Codebeispiel für diese Variable:
+   Here are the code sample for this variable:
 
    ```js
    "rsids" : "rsid"
@@ -235,7 +235,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled`muss die Konfigurationseigenschaft ** „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich bitte an [Enterprise-Support](https://helpx.adobe.com/contact/enterprise-support.ec.html).
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled`muss die Konfigurationseigenschaft ** „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich bitte an Enterprise Support.[](https://helpx.adobe.com/contact/enterprise-support.ec.html)
 
    Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
 
@@ -249,7 +249,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **batchLimit**
 
-   Maximale Anzahl der in der Warteschlange gespeicherten Treffer. Der Standardwert ist 0 (kein Limit).
+   Maximale Anzahl der in der Warteschlange gespeicherten Treffer. Der Standardwert ist 0 (Keine Begrenzung).
 
 * **privacyDefault**
 
