@@ -2,10 +2,10 @@
 description: Diese Informationen helfen Ihnen beim Verwenden von App Transport Security (ATS), einem neuen Satz an Sicherheitsanforderungen für iOS 9.
 seo-description: Diese Informationen helfen Ihnen beim Verwenden von App Transport Security (ATS), einem neuen Satz an Sicherheitsanforderungen für iOS 9.
 seo-title: App Transport Security
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: App Transport Security
 topic: Entwickler und Implementierung
-uuid: e 9 ee 13 cf -9802-492 e -8 b 11-95 f 028 e 34 e 61
+uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -16,13 +16,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 Diese Informationen helfen Ihnen beim Verwenden von App Transport Security (ATS), einem neuen Satz an Sicherheitsanforderungen für iOS 9.
 
-Ab iOS 9 führte Apple „App Transport Security“ ein, einen Satz von Anforderungen, die den Best Practices für sichere Verbindungen entsprechen. Weitere Informationen finden Sie unter *nsapptransportsecurity* in der [Information Eigenschaftsliste Schlüsselreferenz](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/).
+Ab iOS 9 führte Apple „App Transport Security“ ein, einen Satz von Anforderungen, die den Best Practices für sichere Verbindungen entsprechen. Weitere Informationen finden Sie unter *NSAppTransportSecurity* in der [Information Property List Key Reference](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/).
 
-Damit Version 4.7 oder neuere Versionen des Adobe Mobile-SDK problemlos mit ATS zusammenarbeiten können, müssen Sie die SSL-Aktivierungsoption auf der Seite App-Verwaltungseinstellungen verwenden. Weitere Informationen finden Sie unter [App-Einstellungen verwalten](/help/using/c-manage-app-settings/c-manage-app-settings.md) oder [adbmobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
+Damit Version 4.7 oder neuere Versionen des Adobe Mobile-SDK problemlos mit ATS zusammenarbeiten können, müssen Sie die SSL-Aktivierungsoption auf der Seite App-Verwaltungseinstellungen verwenden. For more information, see Manage App Settings or ADBMobile JSON Config.[](/help/using/c-manage-app-settings/c-manage-app-settings.md)[](/help/ios/configuration/json-config/json-config.md)
 
 In Adobe Mobile Services, by selecting the **[!UICONTROL Use HTTPS]** option in the Manage App Settings page, all hits from Analytics, Audience Manager, Target, and Adobe Experience Platform Identity Services are sent via HTTPS.
 
-Alternativ können Sie die folgenden Server als Whitelist-Dienst verwenden:
+As an alternative, you can whitelist service the following servers:
 
 | Produkt | Anleitung |
 |--- |--- |
@@ -31,9 +31,9 @@ Alternativ können Sie die folgenden Server als Whitelist-Dienst verwenden:
 | Target | Sie können Ihren Target-Endpunkt Ihrer Info.plist-Datei als Ausnahmedomäne für ATS hinzufügen.  Wenn Sie Ihren Target-Endpunkt finden möchten, suchen Sie `clientCodeproperty` im Zielobjekt Ihrer `ADBMobileConfig.json`-Datei. Your endpoint will be `https://{clientCode}.tt.omtrdc.net`.  For example, if your `clientCodeproperty` is `“myCompany”`, your endpoint will be `https://myCompany.tt.omtrdc.net`. |
 | Adobe Experience Platform Identity Service | Sie können den Experience Cloud-Server in Ihrer `Info.plist`-Datei als Ausnahmedomäne für ATS hinzufügen. This domain is `dpm.demdex.net`. |
 | Mobile Services: Akquise | Nehmen Sie den Akquiseserver in der Datei `Info.plist` als Ausnahmedomäne in die Whitelist auf. This domain is `c00.adobe.com`. |
-| Mobile Services: In-App-Nachrichten | Wenn Sie In-App-Nachrichten verwenden, müssen Sie möglicherweise Einträge in der Ausnahmendomäne für ATS für jede URL hinzufügen, die Sie verwenden und die kein HTTPS aufweist. Diese Liste umfasst gehostete Bilder und alle URLs, die in Ihren benutzerdefinierten Vollbildnachrichten-HTML-Code eingebettet sind.  Weitere Informationen zum Einrichten von Ausnahmedomänen in einer `info.plist` Datei finden Sie in *der Zeile "nsexceptiondomains* " in *Tabelle 2: App Transport Security-Hauptschlüssel* Weitere Informationen *finden Sie in den Schlüsselwörtern "Tabelle 3 Ausnahmen" in* der [Information Eigenschaftenliste Schlüsselreferenz](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/). |
+| Mobile Services: In-App-Nachrichten | Wenn Sie In-App-Nachrichten verwenden, müssen Sie möglicherweise Einträge in der Ausnahmendomäne für ATS für jede URL hinzufügen, die Sie verwenden und die kein HTTPS aufweist. Diese Liste umfasst gehostete Bilder und alle URLs, die in Ihren benutzerdefinierten Vollbildnachrichten-HTML-Code eingebettet sind.  For more detail on setting up exceptions domain in an  file, see the NSExceptionDomains row in Table 2: App Transport Security dictionary primary keys. `info.plist`**** Also see Table 3  Exception domains dictionary keys in Information Property List Key Reference.**[](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/) |
 
 >[!TIP]
 >
->Diese Überlegungen wirken sich auf Verbindungen aus, die vom Adobe Mobile SDK hergestellt werden und wirken sich nicht auf die Webansicht oder andere Verbindungen aus, die von Ihrer App vorgenommen werden.
+>Diese Überlegungen wirken sich auf die Verbindungen aus, die vom Adobe Mobile SDK hergestellt werden, und wirken sich nicht auf die Webansicht oder andere Verbindungen aus, die von Ihrer App hergestellt werden.
 
