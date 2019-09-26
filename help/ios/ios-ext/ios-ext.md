@@ -2,12 +2,12 @@
 description: Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihren Apple Watch-Apps (WatchOS 1), Today Widgets, Fotobearbeitungs-Widgets und anderen iOS-Erweiterungs-Apps erfassen.
 seo-description: Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihren Apple Watch-Apps (WatchOS 1), Today Widgets, Fotobearbeitungs-Widgets und anderen iOS-Erweiterungs-Apps erfassen.
 seo-title: Implementierung der iOS-Erweiterung
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Implementierung der iOS-Erweiterung
 topic: Entwickler und Implementierung
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
@@ -16,18 +16,14 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihren Apple Watch-Apps (WatchOS 1), Today Widgets, Fotobearbeitungs-Widgets und anderen iOS-Erweiterungs-Apps erfassen.
 
-## Neue Adobe Experience Cloud SDK-Version
+## New Adobe Experience Platform Mobile SDK Release
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
 
-* Gehen Sie zu Launch, um zu beginnen.
+* To get started, go to Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. Weitere Informationen finden Sie unter [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services).
 
 ## Recommendations for using the iOS SDK instead of your wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
@@ -45,7 +41,7 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 
 >[!IMPORTANT]
 >
->Ensure that you have a project with at least the following targets:
+>Vergewissern Sie sich, dass Sie über ein Projekt mit mindestens den folgenden Zielen verfügen:
 >
 >* ein Ziel, das in der App enthalten sein soll.
 >* ein Ziel für die Erweiterung.
@@ -55,7 +51,7 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 
 Wenn Sie in einer WatchKit-App arbeiten, sollten Sie über ein drittes Ziel verfügen. For more information on developing for Apple Watch, see [Developing for Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
 
-## Konfigurieren der zugehörigen App {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
+## Configure the containing app {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus:
 
