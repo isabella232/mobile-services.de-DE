@@ -3,7 +3,7 @@ description: Diese Informationen helfen Ihnen beim Abrufen von lokal gespeichert
 seo-description: Diese Informationen helfen Ihnen beim Abrufen von lokal gespeicherten Experience Cloud SDK-Identitäten aus Ihrer iOS-Anwendung sowie bei Anfragen auf Datenzugriff nach DSGVO.
 seo-title: Abrufen von gespeicherten Kennungen
 title: Abrufen von gespeicherten Kennungen
-uuid: 4 fb 2 c 166-6700-4 f 8 b-b 60 b -137 b 199 e 0509
+uuid: 4fb2c166-6700-4f8b-b60b-137b199e0509
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -18,7 +18,7 @@ Weitere Informationen über die DSGVO finden Sie in unserem Artikel über die [D
 
 >[!IMPORTANT]
 >
->Die `getAllIdentifiersAsync` Methode ruft Identitäten ab, die in den Experience Cloud sdks gespeichert werden. Diese Methode muss **vor** dem Opt-out des Benutzers aufgerufen werden.
+>The `getAllIdentifiersAsync` method retrieves identities that are stored in the Experience Cloud SDKs. Diese Methode muss **vor** dem Opt-out des Benutzers aufgerufen werden.
 
 Experience Cloud SDK-Identitäten (falls anwendbar) werden lokal gespeichert und in einer JSON-Zeichenfolge zurückgegeben, die Folgendes enthalten kann:
 
