@@ -1,12 +1,12 @@
 ---
-description: Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit einem Marketing-Link auf einem Android-Gerät.
-keywords: android; library; mobile; sdk
-seo-description: Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit einem Marketing-Link auf einem Android-Gerät.
+description: Die folgenden Anweisungen helfen Ihnen, eine Akquisekampagne mit einem Marketing-Link auf einem Android-Gerät zu starten.
+keywords: android;library;mobile;sdk
+seo-description: Die folgenden Anweisungen helfen Ihnen, eine Akquisekampagne mit einem Marketing-Link auf einem Android-Gerät zu starten.
 seo-title: Testen der Marketinglink-Akquise
 solution: Marketing Cloud, Analytics
 title: Testen der Marketinglink-Akquise
 topic: Entwickler und Implementierung
-uuid: d 933 dcc -8 fc 3-4 f 60-987 f -7 a 54559 aacf 5
+uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,13 +15,13 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit einem Marketing-Link auf einem Android-Gerät.
+Die folgenden Anweisungen helfen Ihnen, eine Akquisekampagne mit einem Marketing-Link auf einem Android-Gerät zu starten.
 
 Wenn sich Ihre mobile App noch nicht in Google Play befindet, können Sie beim Erstellen des Marketing-Links eine beliebige mobile App als Ziel auswählen. Dies wirkt sich nur auf die App aus, an die Sie vom Akquise-Server umgeleitet werden, wenn Sie auf den Akquise-Link klicken und nicht auf die Möglichkeit, den Akquise-Link zu testen. Abfragezeichenfolgen-Parameter, die im Rahmen eines Kampagnen-Broadcasts an die App übergeben werden, wenn diese installiert wird, werden an den Google Play Store übergeben. Hin&amp;Zurück-Akquisetests für mobile Apps erfordern die Simulation eines solchen Broadcasts.
 
 The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
 
-1. Führen Sie die erforderlichen Schritte in [der Akquise der mobilen App aus](/help/android/acquisition-main/acquisition.md) und stellen `INSTALL_REFERRER`Sie sicher, dass Sie den Empfänger der Übertragung ordnungsgemäß implementiert haben.
+1. Führen Sie die erforderlichen Aufgaben bei der Akquise[ von ](/help/android/acquisition-main/acquisition.md)Mobile-Apps aus und stellen Sie sicher, dass Sie den Broadcast-Empfänger ordnungsgemäß implementiert haben `INSTALL_REFERRER`.
 1. In the Adobe Mobile Services] UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
@@ -38,7 +38,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
 1. Copy the unique ID after `utm_content%3D`.
 
-   Im vorherigen Beispiel lautet `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`die ID.
+   Im vorherigen Beispiel lautet die ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
    Wenn Sie die eindeutige ID nicht auf dem Gerät abrufen können, führen Sie auf dem Desktop folgenden `CURL`-Befehl aus, um die eindeutige URL aus der Antwortzeichenfolge abzurufen.
 
@@ -69,7 +69,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | Der Server sollte dem `c00.adobe.com`*`appid`*`appid` Akquise-Link entsprechen und sollte gleich sein. |
+   | Akquise | The server should be `c00.adobe.com`, and      *`appid`*  should equal the `appid` in your acquisition link. |
    | analytics | Legen Sie zu Testzwecken genügend Zeit für das Referrer-Timeout fest (mindestens 60 Sekunden), um den Broadcast manuell zu senden. Sie können die ursprüngliche Timeout-Einstellung nach dem Test wiederherstellen. |
 
 1. Verbinden Sie das Gerät mit einem Computer, deinstallieren Sie die App und installieren Sie sie anschließend erneut.
@@ -114,10 +114,10 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
    | Analytics - Unable to decode response(`<string>`). | Die Antwort ist falsch formatiert. |
    | Analytics - Unable to parse response (`a JSON Response`). | Die JSON-Zeichenfolge ist falsch formatiert. |
    | Analytics - Unable to parse acquisition service response (no `contextData` parameter in response). | In der Antwort ist kein `contextData`-Parameter enthalten. |
-   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` nicht in contextdata enthalten ist. |
+   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` nicht in contextData enthalten ist. |
    | Analytics - Acquisition referrer timed out. | Die Antwort konnte nicht in der durch `referrerTimeout` festgelegten Zeit abgerufen werden. Erhöhen Sie den Wert und versuchen Sie es erneut.  Sie sollten auch sicherstellen, dass Sie den Akquise-Link geöffnet haben, bevor Sie die App installieren. |
 
-Berücksichtigen Sie folgende Informationen:
+Beachten Sie die folgenden Informationen:
 
 * Von der App gesendete Treffer können über HTTP-Überwachungstools überwacht werden, um die Akquise-Attribution zu überprüfen.
 * Weitere Informationen zu `INSTALL_REFERRER`-Broadcasts finden Sie unter [Testen der Google Play-Kampagnenmessung](https://developers.google.com/analytics/solutions/testing-play-campaigns) im Google Developers-Handbuch.
@@ -138,4 +138,4 @@ Beispiel:
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 
-Die Marketing-Links werden auf dem Server mit einer Gültigkeitsdauer von zehn Minuten zwischengespeichert. Wenn Sie Änderungen an Markierungslinks vornehmen, warten Sie etwa 10 Minuten, bis die Änderungen wirksam werden, bevor Sie die Verknüpfungen erneut verwenden.
+Die Marketing-Links werden mit einer Ablaufzeit von zehn Minuten auf dem Server zwischengespeichert. Wenn Sie Änderungen an Markierungslinks vornehmen, warten Sie etwa 10 Minuten, bis die Änderungen wirksam werden, bevor Sie die Verknüpfungen erneut verwenden.
