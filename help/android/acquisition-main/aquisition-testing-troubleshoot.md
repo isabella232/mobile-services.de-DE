@@ -1,27 +1,27 @@
 ---
-description: Die folgenden Informationen helfen Ihnen bei der Fehlerbehebung bei Problemen mit der Akquise-Prüfung.
-keywords: android; Akquise; wird getestet
-seo-description: Die folgenden Informationen helfen Ihnen bei der Fehlerbehebung bei Problemen mit der Akquise-Prüfung.
-seo-title: Fehlerbehebung für Akquise-Tests
+description: The following information helps you troubleshoot Acquisition testing issues.
+keywords: android;Acquisition;testing
+seo-description: The following information helps you troubleshoot Acquisition testing issues.
+seo-title: Troubleshooting Acquisition testing
 solution: Marketing Cloud, Analytics
-title: Fehlerbehebung für Akquise-Tests
+title: Troubleshooting Acquisition testing
 translation-type: tm+mt
 source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
 
 ---
 
 
-# Fehlerbehebung für Akquise-Tests {#aquistion-testing-troubleshooting}
+# Fehlerbehebung beim Testen der Akquise {#aquistion-testing-troubleshooting}
 
-Im Folgenden finden Sie einige Probleme, die Sie beim Testen der Akquise und bei einigen möglichen Lösungen auftreten können:
+Im Folgenden finden Sie einige Probleme, mit denen Sie beim Testen der Akquise konfrontiert sein könnten, sowie einige mögliche Lösungen:
 
-* Falls nicht anders angegeben, sollte die Datei "adbmobileconfig. json" im Assets-Ordner untergebracht werden.
+* If not otherwise specified, the ADBMobileConfig.json file should be placed in the assets folder.
 
-* Bei dem Namen muss die Groß-/Kleinschreibung beachtet werden. Geben Sie daher keinen Namen in Kleinbuchstaben ein.
+* The name is case sensitive, so do not provide a name in lower-case letters.
 
-   Sie müssen sicherstellen, dass `Config.setContext(this.getApplicationContext())` der Aufruf aus der Hauptaktivität erfolgt. Weitere Informationen finden Sie unter [Konfigurationsmethoden](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html).
+   Sie müssen sicherstellen, dass von der Hauptaktivität aufgerufen `Config.setContext(this.getApplicationContext())` wird. Weitere Informationen finden Sie unter [Konfigurationsmethoden](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html).
 
-* In der bereitgestellten AndroidManifest.xml fehlen einige Benutzerberechtigungen, die zum Senden von Daten und zur Aufzeichnung von Offline-Verfolgungsaufrufen erforderlich sind:
+* In der angegebenen Datei AndroidManifest.xml fehlen einige Benutzerberechtigungen. Diese sind erforderlich, um Daten zu senden und Offline-Verfolgungsaufrufe aufzuzeichnen:
 
    ```html
    <manifest..>
@@ -31,11 +31,11 @@ Im Folgenden finden Sie einige Probleme, die Sie beim Testen der Akquise und bei
    </manifest>
    ```
 
-* Wenn der Referrer-Timeout in Ihrer Konfiguration auf `referrerTimeout: 5`festgelegt ist, bedeutet dies, dass Sie die Installation in einem fünfzweiten Zeitrahmen senden müssen, nachdem die Anwendung installiert und zum ersten Mal gestartet wurde, um die an den Treffer-Treffer angehängten Referrer-Informationen anzuzeigen.
+* Wenn in Ihrer Konfiguration das Timeout der verweisenden Stelle auf `referrerTimeout: 5`festgelegt ist, müssen Sie die Installationsabsicht in einem Zeitraum von 5 Sekunden nach der Installation und dem ersten Start der Anwendung senden, um die an den Installationshit angehängten Referrer-Informationen anzuzeigen.
 
-   Erhöhen Sie für manuelle Tests die `referrerTimeout` Werte von 10 bis 15 Sekunden, damit die verweisenden Stellen ausreichend Zeit erhalten, bevor der Installationstreffer verarbeitet wird.
+   Erhöhen Sie für manuelle Tests den Wert `referrerTimeout` auf 10-15 Sekunden, damit ausreichend Zeit zum Senden der Referrer-Informationen zur Verfügung steht, bevor der Installationshit verarbeitet wird.
 
-* Es ist wichtig, alle Schritte unter ["Testen von Marketing Link-Akquisen](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) " auszuführen und sicherzustellen, dass Shell und anschließend `adb` die folgenden ausgeführt werden:
+* Es ist wichtig, dass Sie alle Schritte in der [Testing Marketing Link-Akquise](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) in der Reihenfolge ausführen und sicherstellen, dass Sie `adb` Shell und dann Folgendes ausführen:
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n 
@@ -45,4 +45,4 @@ Im Folgenden finden Sie einige Probleme, die Sie beim Testen der Akquise und bei
 
 >[!IMPORTANT]
 >
->Sie müssen diese beiden Befehle unabhängig ausführen, um die Referrer-Intention korrekt zu verarbeiten. Andernfalls `adb` werden die Referrer-Informationen doppelt gesperrt und die vom Empfänger empfangenen Daten sind unvollständig.
+>Sie müssen diese beiden Befehle unabhängig ausführen, um die Absicht der verweisenden Stelle korrekt zu verarbeiten.  Andernfalls werden die Referrer-Informationen `adb` doppelt ignoriert, und die vom Rundfunkempfänger empfangenen Daten sind unvollständig.
