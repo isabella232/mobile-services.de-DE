@@ -2,7 +2,7 @@
 description: Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native Apple iPhone- und iPad-Anwendungen messen, zielgruppenorientierte Inhalte in Ihren Apps bereitstellen und Zielgruppendaten über Audience Manager nutzen und erfassen.
 seo-description: Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native Apple iPhone- und iPad-Anwendungen messen, zielgruppenorientierte Inhalte in Ihren Apps bereitstellen und Zielgruppendaten über Audience Manager nutzen und erfassen.
 seo-title: iOS-SDK 4.x für Experience Cloud-Lösungen
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: iOS-SDK 4.x für Experience Cloud-Lösungen
 topic: Entwickler und Implementierung
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
@@ -18,7 +18,7 @@ Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native App
 
 >[!IMPORTANT]
 >
->Die Adobe Analytics Mobile Marketing Add-on-SKU ist erforderlich, um Mobile Services den Zugriff auf Funktionen für mobile Akquise, Deep-Linking, Geolocation und mobiles Messaging zu ermöglichen. Weitere Informationen erhalten Sie von Ihrem Adobe-CSM.
+>Die Adobe Analytics Mobile Marketing Add-on-SKU ist erforderlich, um Mobile Services den Zugriff auf Funktionen für mobile Akquise, Deep-Linking, Geolocation und mobiles Messaging zu ermöglichen. For more information, contact your Adobe CSM.
 
 >[!IMPORTANT]
 >
