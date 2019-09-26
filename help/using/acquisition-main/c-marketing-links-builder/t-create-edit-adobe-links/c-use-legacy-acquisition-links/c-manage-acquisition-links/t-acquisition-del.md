@@ -2,11 +2,11 @@
 description: Sie können einen oder mehrere Akquise-Links löschen, wenn diese nicht mehr benötigt werden.
 keywords: mobile
 seo-description: Sie können einen oder mehrere Akquise-Links löschen, wenn diese nicht mehr benötigt werden.
-seo-title: Akquise-Links löschen
+seo-title: Delete Acquisition links
 solution: Marketing Cloud, Analytics
 title: Akquise-Links löschen
 topic: Metriken
-uuid: e 7362348-ca 24-4 f 1 c-b 37 f-eca 6 d 2 b 0 da 6 d
+uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -15,7 +15,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 # Delete Acquisition links{#delete-acquisition-links}
 
-Wenn Sie Akquise-Links nicht mehr benötigen, können Sie sie löschen.
+Wenn Sie keine Akquise-Links mehr benötigen, können Sie diese löschen.
 
 1. Klicken Sie auf **Akquise** &gt; **[!UICONTROL Akquise-Links verwalten]**.
 1. Führen Sie eine der folgenden Aufgaben aus:
