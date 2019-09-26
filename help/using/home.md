@@ -1,10 +1,10 @@
 ---
 description: Technische Dokumente für Adobe Mobile Services
-seo-description: In diesem Handbuch werden technische Dokumentation und die Selbstbedienung für Adobe Mobile Services vorgestellt. Dadurch werden mobile Marketingfunktionen für Mobilanwendungen aus der gesamten Adobe Experience Cloud zusammengeführt, sodass Sie die Benutzerinteraktionen mit mobilen Anwendungen verstehen und verbessern können.
+seo-description: This guide outlines technical documentation and self help for Adobe Mobile Services, which brings together mobile marketing capabilities for mobile applications from across the Adobe Experience Cloud, allowing you to understand and improve user engagement with mobile applications.
 seo-title: 'Adobe Mobile Services '
 solution: Marketing Cloud, Analytics, Experience Cloud
 title: 'Adobe Mobile Services '
-uuid: e 86 a 77 c 9-4 ff 1-403 f-a 5 a 1-4 afbdc 4 e 6 f 68
+uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
 source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
@@ -13,11 +13,11 @@ source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
 # Adobe Mobile Services {#adobe-mobile-services}
 
-In diesem Handbuch werden technische Dokumentation und die Selbstbedienung für Adobe Mobile Services vorgestellt. Dadurch werden mobile Marketingfunktionen für Mobilanwendungen aus der gesamten Adobe Experience Cloud zusammengeführt, sodass Sie die Benutzerinteraktionen mit mobilen Anwendungen verstehen und verbessern können.
+In diesem Handbuch werden die technische Dokumentation und die Hilfe zur Selbsthilfe für Adobe Mobile Services vorgestellt, die mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud zusammenfasst, sodass Sie die Benutzerinteraktion mit mobilen Anwendungen verstehen und verbessern können.
 
 >[!IMPORTANT]
 >
->Die Adobe Analytics Mobile Marketing Add-on SKU ist erforderlich, um Mobile Services-Zugriff auf Akquise, Deep-Linking, Geolocation und mobile Messaging-Funktionen zu ermöglichen. Weitere Informationen erhalten Sie von Ihrem Adobe-Kundenbetreuer.
+>Die Adobe Analytics Mobile Marketing Add-on-SKU ist erforderlich, um Mobile Services den Zugriff auf Funktionen für mobile Akquise, Deep-Linking, Geolocation und mobiles Messaging zu ermöglichen. Weitere Informationen erhalten Sie von Ihrem Adobe-CSM.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -34,13 +34,13 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 >[!IMPORTANT]
 >
->Obwohl Sie Funktionen in der Benutzeroberfläche konfigurieren können, funktionieren diese Funktionen erst, wenn Sie die generierte Konfigurationsdatei herunterladen und diese Datei dem SDK hinzufügen. For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.
+>Obwohl Sie Funktionen in der Benutzeroberfläche konfigurieren können, funktionieren diese Funktionen erst, wenn Sie die generierte Konfigurationsdatei herunterladen und diese Datei zum SDK hinzufügen. For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.
 
 Die neuesten Versionshinweise finden Sie unter [Experience Cloud-Versionshinweise](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
 
 ## Häufige Themen {#section_AFFBC9EDDE5B4E4493A7C2896121A773}
 
-Im Folgenden finden Sie einige beliebte Themen in diesem Handbuch:
+Hier einige beliebte Themen in diesem Handbuch:
 
 * [Erste Schritte](/help/using/gs/gs.md)
 * [Anmelden](/help/using/gs/gs-signin.md)
@@ -48,7 +48,7 @@ Im Folgenden finden Sie einige beliebte Themen in diesem Handbuch:
 * [Mobile Metriken](/help/using/gs/metrics/metrics.md)
 * [Messaging](/help/using/in-app-messaging/in-app-messaging.md)
 * [Akquise](/help/using/acquisition-main/acquisition-main.md)
-* [Ort](/help/using/location/c-location-overview.md)
+* [Position](/help/using/location/c-location-overview.md)
 * [Häufig gestellte Fragen – Mobile Services](/help/using/faq-mobile.md)
 
 ## Entwickler
@@ -60,7 +60,7 @@ Im Folgenden finden Sie einige Links zur Unterstützung von Entwicklern:
 
 ## Community-Ressourcen
 
-Nachfolgend finden Sie einige zusätzliche Ressourcen:
+Im Folgenden finden Sie einige zusätzliche Ressourcen:
 
 * [Experience Cloud-Forum](https://forums.adobe.com/community/experience-cloud)
 * [Adobe Experience Cloud-Community](https://helpx.adobe.com/marketing-cloud.html?promoid=KAWSE)
