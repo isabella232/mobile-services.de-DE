@@ -1,18 +1,18 @@
 ---
 description: Informationen, die Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile JSON“ helfen.
 seo-description: Informationen, die Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile JSON“ helfen.
-seo-title: Adbmobileconfig. json-Konfiguration
-solution: Marketing Cloud, Analytics
-title: Adbmobileconfig. json-Konfiguration
+seo-title: ADBMobileConfig.json config
+solution: Marketing Cloud,Analytics
+title: ADBMobileConfig.json config
 topic: Entwickler und Implementierung
-uuid: cbcb 54 a 3-4 b 8 f -4651-8 ce 9-2731 ac 988545
+uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# config-Datei für adbmobileconfig. json {#adbmobileconfig-json-config}
+# ADBMobileConfig.json config file {#adbmobileconfig-json-config}
 
 Informationen, die Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile JSON“ helfen.
 
@@ -52,7 +52,7 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. if your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be `false`.
 
-   Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie nicht sicher sind, ob der Zeitstempel für eine Report Suite aktiviert ist, wenden Sie sich an den Kundendienst. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. If you are unsure whether a report suite is timestamp enabled, contact Customer Care. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    Der Standardwert lautet `false`.
 
@@ -66,17 +66,17 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    Sendet die Treffer als Stapel.
 
-   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Erfordert `offlineEnabled=true`und der Standardwert ist `0` (Kein Stapel).
+   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Requires , and the default value is  (No batching).`offlineEnabled=true``0`
 
 * **privacyDefault**
 
-   Die Optionen sind:
+   The options are:
 
    * `optedin` - Treffer werden sofort gesendet.
    * `optedout` - werden Treffer verworfen.
    * `optunknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
-      Dadurch wird nur der Standardwert festgelegt. Wenn dieser Wert im Code eingestellt oder geändert wird, dann wird der vom Code eingestellte Wert lokal gespeichert und ab diesem Zeitpunkt verwendet, bis er geändert wird oder die Anwendung deinstalliert und dann wieder neu installiert wird.
+      Hiermit wird nur der Standardwert festgelegt. Wenn dieser Wert im Code eingestellt oder geändert wird, dann wird der vom Code eingestellte Wert lokal gespeichert und ab diesem Zeitpunkt verwendet, bis er geändert wird oder die Anwendung deinstalliert und dann wieder neu installiert wird.
 
       Der Standardwert lautet `optedin`.
 
@@ -84,7 +84,7 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    Jedes POI-Array beinhaltet den POI-Namen, den Längen- und Breitengrad sowie den Radius (in Metern) des POI-Bereichs. Für den POI-Namen kann eine beliebige Zeichenfolge gewählt werden. Wenn beim Senden eines `trackLocation`-Aufrufs die aktuellen Koordinaten zu einem definierten POI passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
 
-   * Hier finden Sie das Codebeispiel für diese Variable:
+   * Here is the code sample for this variable:
 
       ```js
        "poi" [ 
