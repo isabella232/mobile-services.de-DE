@@ -6,7 +6,7 @@ seo-title: SDK-Analytics-Optionen konfigurieren
 solution: Marketing Cloud, Analytics
 title: SDK-Analytics-Optionen konfigurieren
 topic: Metriken
-uuid: fd 3 a 21 d 2-6560-4 e 96-92 fe-b 99 caac 5 e 834
+uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -25,7 +25,7 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL Sitzungstreffer zurückdatieren]**
 
-   Aktivieren oder deaktivieren Sie die Möglichkeit, dass das Adobe SDK Treffer mit Sitzungsinformationen zurückdatiert. Treffer mit Sitzungsinformationen enthalten derzeit Informationen zu Abstürzen und zur Sitzungsdauer. Wenn diese Einstellung aktiviert wird, datiert das Adobe-SDK Treffer mit Sitzungsinformationen auf 1 Sekunde nach dem letzten Treffer der vorherigen Sitzung zurück. Das bedeutet, dass die Daten zu Abstürzen und zur Sitzung mit dem korrekten Datum, an dem sie stattgefunden haben, korrelieren. Bei jedem Neustart der App wird ein Treffer zurückdatiert. Wenn diese Einstellung deaktiviert wird, hängt das Adobe-SDK die Sitzungsinformationen dem aktuellen Lebenszyklus an.
+   Aktivieren oder deaktivieren Sie die Möglichkeit, dass das Adobe-SDK Treffer mit Sitzungsinformationen zurückdatiert. Treffer mit Sitzungsinformationen enthalten derzeit Informationen zu Abstürzen und zur Sitzungsdauer. Wenn diese Einstellung aktiviert wird, datiert das Adobe-SDK Treffer mit Sitzungsinformationen auf 1 Sekunde nach dem letzten Treffer der vorherigen Sitzung zurück. Das bedeutet, dass die Daten zu Abstürzen und zur Sitzung mit dem korrekten Datum, an dem sie stattgefunden haben, korrelieren. Bei jedem Neustart der App wird ein Treffer zurückdatiert. Wenn diese Einstellung deaktiviert wird, hängt das Adobe-SDK die Sitzungsinformationen dem aktuellen Lebenszyklus an.
 
 * **[!UICONTROL Datenschutz]**
 
