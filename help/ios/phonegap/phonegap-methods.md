@@ -6,7 +6,7 @@ seo-title: PhoneGap-Plug-in-Methoden
 solution: Marketing Cloud, Analytics
 title: PhoneGap-Plug-in-Methoden
 topic: Entwickler und Implementierung
-uuid: bd 830 fe 5-804 a -4 d 0 a-bbb 6-99 a 6 d 8 da 6 a 03
+uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -30,7 +30,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
    Gibt den Datenschutzstatus für den aktuellen Benutzer zurück. Folgende Status stehen zur Verfügung:
 
    * `ADB.optedIn`: Treffer werden umgehend gesendet.
-   * `ADB.optedOut`, wo Treffer verworfen werden.
+   * `ADB.optedOut`, where hits are discarded.
    * `ADB.optUnknown`Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. **** Wenn für Ihre Report Suite **keine** Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.\
       Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
@@ -44,7 +44,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    Legt für den aktuellen Benutzer den Datenschutzstatus `status` fest. Sie können einen der folgenden Status festlegen:
    * `ADB.optedIn`: Treffer werden umgehend gesendet.
-   * `ADB.optedOut`, wo Treffer verworfen werden.
+   * `ADB.optedOut`, where hits are discarded.
    * `ADB.optUnknown`****: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „optedin“ (Treffer werden gesendet) oder „optedout“ (Treffer werden verworfen) ändert. 
 
       Wenn für Ihre Report Suite **keine** Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
@@ -234,7 +234,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >Wenn der Lebenszyklusaufruf ein Startereignis ist, werden die Adobe Link-Daten angehängt. Andernfalls wird ein zusätzlicher Aufruf gesendet.
+   >Wenn der Lebenszyklusaufruf ein Startereignis ist, werden die Adobe-Link-Daten angehängt, andernfalls wird ein zusätzlicher Aufruf gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -282,7 +282,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten. Cdata ist ein JSON-Objekt mit Schlüsselwertpaaren, die in den Kontextdaten gesendet werden.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten. cData ist ein JSON-Objekt mit Schlüssel/Wert-Paaren, die in Kontextdaten gesendet werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -290,7 +290,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackState(stringstateName[,JSONcData]); 
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```javascript
       ADB.trackState("loginpage");
@@ -310,7 +310,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackAction(stringaction[,JSONcData]);
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```javascript
       ADB.trackAction("login");
@@ -330,7 +330,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackActionFromBackground(stringaction[,JSONcData]); 
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```javascript
       ADB.trackActionFromBackground("login");
@@ -342,7 +342,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackLocation**
 
-   Sendet die aktuellen x- und y-Koordinaten. Also uses the points of interest that were defined in the `ADBMobileConfig.json` file to determine if the location provided as a parameter is within any of your POIs. Falls die aktuellen Koordinaten auf einen definierten POI passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
+   Sendet die aktuellen X- und Y-Koordinaten. Also uses the points of interest that were defined in the `ADBMobileConfig.json` file to determine if the location provided as a parameter is within any of your POIs. Falls die aktuellen Koordinaten auf einen definierten POI passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -566,7 +566,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.targetSetThirdPartyID(thirdPartyID,success,fail); 
       ```
 
-   * Hier finden Sie das Codebeispiel für diese Gruppe:
+   * Das folgende Codebeispiel für diese Gruppe:
 
       ```java
       ADB.targetSetThirdPartyID('test-third-party-id',function(value){alert('success');},function(value){alert('fail');}); 
@@ -609,7 +609,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 ## Advertising identifier {#section_194607D101B047A19C51B19E176E1500}
 
-In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdentifier:]` in the `application:didFinishLaunchingWithOptions:` delegate method. Weitere Informationen finden Sie unter [Konfigurationsmethoden](/help/ios/configuration/sdk-methods.md).
+In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdentifier:]` in the `application:didFinishLaunchingWithOptions:` delegate method. For more information, see Configuration Methods.[](/help/ios/configuration/sdk-methods.md)
 
 ## Audience Manager methods {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
@@ -671,7 +671,7 @@ In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdenti
       ADB.audienceSetDpidAndDpuuid(dpid,dpuuid,success,fail);
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```java
       ADB.audienceSetDpidAndDpuuid(‘dpid’,‘dpuuid’,function(){…},function(){…});
@@ -691,7 +691,7 @@ In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdenti
       ADB.audienceSignalWithData(success,fail,data);
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```java
       ADB.audienceSignalWithData(function(){},function(){},{‘key1’:’value1’,‘key2’:‘value2’});
@@ -739,7 +739,7 @@ In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdenti
       ADB.visitorSyncIdentifiers(identifiers,success,fail);
       ```
 
-   * Hier finden Sie die Codebeispiele für diese Methode:
+   * Hier sind die Codebeispiele für diese Methode:
 
       ```java
       ADB.visitorSyncIdentifiers({‘key_id_1’:’value_id_1’},function(){…},function(){…})) 
