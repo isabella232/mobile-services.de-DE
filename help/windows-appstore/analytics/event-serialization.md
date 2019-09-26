@@ -5,7 +5,7 @@ seo-title: Ereignis-Serialisierung
 solution: Marketing Cloud, Analytics
 title: Ereignis-Serialisierung
 topic: Entwickler und Implementierung
-uuid: a 5966 d 05-e 218-446 f -9 f 19-8664 a 84 b 74 cd
+uuid: a5966d05-e218-446f-9f19-8664a84b74cd
 translation-type: tm+mt
 source-git-commit: 4faf66df50c8b65198fd139bb15927fc2c2849bc
 
@@ -14,7 +14,7 @@ source-git-commit: 4faf66df50c8b65198fd139bb15927fc2c2849bc
 
 # Ereignis-Serialisierung{#event-serialization}
 
-Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im mobilen SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignisse direkt im Serveraufruf festzulegen.
+Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. In the mobile SDK, you must use a special syntax in the context data parameter to set serialized events directly on the server call.
 
 ```js
 cdata["&&events"] = "event1:12341234";
