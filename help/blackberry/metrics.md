@@ -1,12 +1,12 @@
 ---
 description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
 seo-title: Lebenszyklusmetriken
 solution: Marketing Cloud, Analytics
 title: Lebenszyklusmetriken
 topic: Entwickler und Implementierung
-uuid: 5 a 371 f 11-6521-410 f-a 01 f-fc 3 b 285 b 050 f
+uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 translation-type: tm+mt
 source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
@@ -23,7 +23,7 @@ Weitere Informationen finden Sie in unserer Wissensdatenbank unter [Problembeheb
 
 Wenn Lebenszyklusmetriken konfiguriert sind, werden sie in Kontextdatenparametern an Analytics, bei jedem mbox-Aufruf in Parametern an Target sowie als Signale an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management ein anderes Präfix für jede Metrik verwendet.
 
-Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsaufruf gesendet werden, automatisch in der Metrik oder Dimension erfasst und darüber berichtet.
+Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufruf gesendet werden, automatisch mit der Metrik oder Dimension erfasst und in Berichten verwendet.
 
 ### Metriken
 
@@ -47,7 +47,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsauf
 
    >[!IMPORTANT]
    >
-   >Diese Metrik wird nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
+   >This metric is not automatically stored in an Analytics metric. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
 
    * Analytics context data/Target parameter: `a.DailyEngUserEvent`
    * Audience Manager signal: `c_a_DailyEngUserEvent`
@@ -88,7 +88,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsauf
 
 * **Installationsdatum**
 
-   Datum des ersten Starts nach der Installation. Das Datumsformat `MM/DD/YYYY`ist.
+   Datum des ersten Starts nach der Installation. Das Datumsformat ist `MM/DD/YYYY`festgelegt.
 
    * Analytics context data/Target parameter: `a.InstallDate`
    * Audience Manager signal: `c_a_InstallDate`
@@ -194,17 +194,17 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsauf
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in Variablen für mobile Lösungen erfasst.
+Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit der aufgeführten Methode erfasst.
 
 * **Standort (bis 10 km)**
 
    Populated by `trackLocation` methods.
 
-   * Analytics-Kontextdaten/Target-Parameter:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Zielgruppen-Management:
+   * Audience Management trait:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -218,7 +218,7 @@ Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in V
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Zielgruppen-Management:
+   * Audience Management trait:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -232,7 +232,7 @@ Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in V
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Zielgruppen-Management:
+   * Eigenschaft Zielgruppen-Management:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -245,7 +245,7 @@ Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in V
    * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.poi`
-   * Zielgruppen-Management:
+   * Eigenschaft Zielgruppen-Management:
 
       * `c_a_loc_poi`
 
@@ -257,6 +257,6 @@ Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in V
    * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.dist`
-   * Zielgruppen-Management:
+   * Eigenschaft Zielgruppen-Management:
 
       * `c_a_loc_dist`
