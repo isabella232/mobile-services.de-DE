@@ -4,7 +4,7 @@ seo-description: Mit Postbacks können Sie vom SDK erfasste Daten an einen Dritt
 seo-title: Postbacks
 solution: Marketing Cloud, Analytics
 title: Übersicht über Postbacks
-uuid: 25 e 2 a 5 fb -1203-40 dd -96 cd-b 23 e 0 f 23376 d
+uuid: 25e2a5fb-1203-40dd-96cd-b23e0f23376d
 translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
@@ -33,7 +33,7 @@ Diese Liste enthält Folgendes:
 |--- |--- |
 | `{%sdkver%}` | Gibt die SDK-Version zurück. |
 | `{%cachebust%}` | Löst eine zufällige Zahl zwischen 1 und 100.000.000 auf. |
-| `{%adid%}` | Gibt IDFA zurück. Dieses Token funktioniert nur, wenn Sie es verwendet `setAdvertisingIdentifier`haben. |
-| `{%pushid%}` | Gibt das Push-ID-Token zurück. Dieses Token funktioniert nur, wenn Sie es verwendet `setPushIdentifier`haben. |
+| `{%adid%}` | Gibt IDFA zurück. Dieses Token funktioniert nur, wenn Sie es verwendet haben `setAdvertisingIdentifier`. |
+| `{%pushid%}` | Gibt das Push-ID-Token zurück. Dieses Token funktioniert nur, wenn Sie es verwendet haben `setPushIdentifier`. |
 | `{%timestampu%}` | Gibt den aktuellen Zeitstempel in Epochenzeit zurück. |
 | `{%timestampz%}` | Gibt den aktuellen Zeitstempel im JavaScript-Format (ISO 8601) zurück. |
