@@ -6,7 +6,7 @@ seo-title: SDK-Akquise-Optionen konfigurieren
 solution: Marketing Cloud, Analytics
 title: SDK-Akquise-Optionen konfigurieren
 topic: Metriken
-uuid: 50 ce 51 ad -39 bf -4 ac 7-bd 94-757443 d 11 ca 7
+uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
 source-git-commit: 74b3597ce849aa114e6638e89741da3f6e1bee19
 
@@ -27,7 +27,7 @@ Sie können die SDK-Akquise-Optionen beim Erstellen einer neuen App oder Bearbei
 
       Geben Sie einen Wert für das Referrer-Timeout an.
 
-      Der Standardwert ist 5 Sekunden, und dieser Wert gibt die Anzahl Sekunden an, die auf Akquise-Informationen gewartet werden soll, bevor der erste Start-Treffer gesendet wird.
+      Der Standardwert ist 5 Sekunden und dieser Wert gibt die Anzahl der Sekunden an, die auf Akquise-Informationen gewartet werden muss, bevor der Treffer "Erster Start"gesendet wird.
 
    * **[!UICONTROL Mehr Infos]**
 
