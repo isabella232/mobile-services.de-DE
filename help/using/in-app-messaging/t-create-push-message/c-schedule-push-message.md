@@ -2,28 +2,28 @@
 description: In der Benutzeroberfläche von Adobe Mobile Services können Sie festlegen, ob die Push-Nachricht sofort, später oder regelmäßig gesendet werden soll. Hierbei können Sie zwischen täglicher, wöchentlicher und monatlicher Wiederholung wählen.
 keywords: mobile
 seo-description: In der Benutzeroberfläche von Adobe Mobile Services können Sie festlegen, ob die Push-Nachricht sofort, später oder regelmäßig gesendet werden soll. Hierbei können Sie zwischen täglicher, wöchentlicher und monatlicher Wiederholung wählen.
-seo-title: Push-Nachricht planen
+seo-title: Schedule  Push Message
 solution: Marketing Cloud, Analytics
 title: Push-Nachricht planen
 topic: Metriken
-uuid: 6810 e 27 a -016 f -4286-8 fe 2-9972 d 85 fa 326
+uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Zeitplan: Push-Nachrichten{#schedule-push-message}
+# Plan: Push-Nachrichten{#schedule-push-message}
 
 In der Benutzeroberfläche von Adobe Mobile Services können Sie festlegen, ob die Push-Nachricht sofort, später oder regelmäßig gesendet werden soll. Hierbei können Sie zwischen täglicher, wöchentlicher und monatlicher Wiederholung wählen.
 
 >[!TIP]
 >
->Benutzer können die Planungseinstellungen für einen Push-Nachrichtenauftrag jederzeit ändern. Wenn keine passenden Daten für eine wiederkehrende geplante Nachricht – also eine Nachricht, die beispielsweise alle 31 Tage, immer am 31. Februar oder am jeweils fünften Dienstag des aktuellen Monats gesendet wird – vorhanden sind, wird keine Nachricht gesendet.
+>Users can modify the scheduling settings for a push message job at any time. Wenn keine passenden Daten für eine wiederkehrende geplante Nachricht – also eine Nachricht, die beispielsweise alle 31 Tage, immer am 31. Februar oder am jeweils fünften Dienstag des aktuellen Monats gesendet wird – vorhanden sind, wird keine Nachricht gesendet.
 
-Berücksichtigen Sie folgende Informationen:
+Beachten Sie die folgenden Informationen:
 
-* Das richtige Datum und Uhrzeitformat ist `hh:mm` und `mm/dd/yyyy`.
+* Das richtige Datum- und Uhrzeitformat lautet `hh:mm` und `mm/dd/yyyy`.
 
 * Sie können eine geplante Nachricht auf folgende Weise bearbeiten:
 
@@ -38,7 +38,7 @@ Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende 
 
 * Die Optionen, die in der Dropdownliste **[!UICONTROL Wiederholen]angezeigt werden, hängen vom eingegebenen bzw. ausgewählten Datum ab.**
 
-   Wenn Sie beispielsweise eingegeben `Saturday, October 7`haben, werden die folgenden Optionen angezeigt:
+   Wenn Sie beispielsweise `Saturday, October 7`eine Eingabe eingegeben haben, werden die folgenden Optionen angezeigt:
 
    * **[!UICONTROL Nie]**
    * **[!UICONTROL Jeden Tag]**
@@ -59,7 +59,7 @@ Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende 
 
 ## Schedule a recurring push message {#section_675BD754E5A04423A1751193698A978F}
 
-1. Wählen Sie auf der Seite "Zeitplan" für eine neue Push-Nachricht **[!UICONTROL " Geplant]** «oder **[!UICONTROL "Jetzt"]**.
+1. Wählen Sie auf der Seite Planen einer neuen Push-Nachricht die Option **[!UICONTROL Eingeplant]** oder **[!UICONTROL Jetzt]**.
 
    For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
@@ -77,7 +77,7 @@ Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende 
    * **`<Day x>`des Monats**
 
       Die angezeigten Optionen hängen von dem ausgewählten bzw. eingegebenen Starttag ab.
-   * **`<nth day>`jedes Monats**
+   * **`<nth day>`von jedem Monat**
 
       Der angezeigte Wert hängt vom ausgewählten bzw. eingegebenen Startdatum ab.
 
@@ -88,7 +88,7 @@ Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende 
 
       Mit dieser Option speichern Sie die Nachricht im Entwurfsformat. Sie können diese Option wählen, um eine noch nicht fertige Nachricht zu speichern oder um die Nachricht zu speichern, sodass sie von einer anderen Person bearbeitet und genehmigt werden kann, bevor sie aktiviert wird.
 
-      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. Wenn Sie ein Datum und eine Uhrzeit zum Senden der Nachricht ausgewählt haben, wird die Nachricht gemäß diesem Zeitplan gesendet.
+      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. Wenn Sie ein Datum und eine Uhrzeit für die Übermittlung der Nachricht ausgewählt haben, wird die Nachricht gemäß diesem Zeitplan gesendet.
 
    * **[!UICONTROL Speichern und planen]**
 
