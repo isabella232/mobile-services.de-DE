@@ -2,18 +2,18 @@
 description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 keywords: mobile
 seo-description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
-seo-title: Fehlerbehebung in-App-Nachrichten
+seo-title: Fehlerbehebung bei In-App-Nachrichten
 solution: Marketing Cloud, Analytics
-title: Fehlerbehebung in-App-Nachrichten
+title: Fehlerbehebung bei In-App-Nachrichten
 topic: Metriken
-uuid: 39 c 3 a 21 d -92 c 2-4004-b 00 f -99 b 6 f 91 d 3696
+uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
 translation-type: tm+mt
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# Fehlerbehebung in-App-Nachrichten{#troubleshooting-in-app-messaging}
+# Fehlerbehebung bei In-App-Nachrichten{#troubleshooting-in-app-messaging}
 
 Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 
@@ -35,11 +35,11 @@ Stellen Sie sicher, dass der Broadcast-Empfänger für lokale Benachrichtigungen
 
 Um sicherzustellen, dass die Nachricht „live“ ist, überprüfen Sie auf der Seite In-App-Nachrichten verwalten in der Spalte **Status** die Liste der Nachrichten.
 
-## Sehen Sie sich einmal ** an, *zeigen Sie einmal an*, *zeigen Sie Offline* -Einstellungen auf der Registerkarte "Zielgruppe" an.
+## Sehen Sie sich einmal *die* Anzeige an, *zeigen Sie immer* an, *zeigen Sie die Offline* -Einstellungen auf der Registerkarte Zielgruppe an.
 
 Stellen Sie sicher, dass diese Einstellungen wie erforderlich festgelegt sind. Überprüfen Sie auf der Registerkarte **[!UICONTROL Zielgruppe]** die **Auslöser]-Optionen, mit deren Hilfe Sie festlegen können, wie oft die Nachricht angezeigt wird.[!UICONTROL **
 
-## Wenn ein Startereignis als Auslöser verwendet wird…
+## Bei Verwendung eines Launch-Ereignisses als Auslöser...
 
 Ereignis wird nur bei einer neuen Sitzung ausgelöst. Weitere Informationen dazu, wann eine Sitzung beginnt, finden Sie in der Spalte `lifecycleTimeout` unter [JSON-Konfiguration](/help/android/configuration/json-config/json-config.md).
 
