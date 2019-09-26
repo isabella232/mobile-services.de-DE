@@ -2,10 +2,10 @@
 description: Ein Beispiel der Variablen „products“ mit Merchandising-eVars und produktspezifischen Ereignissen.
 seo-description: Ein Beispiel der Variablen „products“ mit Merchandising-eVars und produktspezifischen Ereignissen.
 seo-title: Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen
 topic: Entwickler und Implementierung
-uuid: 94 e 882 e 4-b 19 d -4 c 48-9 dfb -331465490347
+uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 translation-type: tm+mt
 source-git-commit: b630c5cf09be7fbe31018cbf50564001eb6e2a5a
 
@@ -37,5 +37,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Wenn Sie ein produktspezifisches Ereignis mithilfe der *`&&products`* Variablen auslösen, müssen Sie auch das Ereignis in der *`&&events`* Variablen festlegen. Andernfalls wird das Ereignis während der Verarbeitung herausgefiltert.
+>Wenn Sie ein produktspezifisches Ereignis mithilfe der *`&&products`* Variablen auslösen, müssen Sie dieses Ereignis auch in der *`&&events`* Variablen einstellen, da das Ereignis andernfalls während der Verarbeitung herausgefiltert wird.
 
