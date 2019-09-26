@@ -5,7 +5,7 @@ seo-title: Festlegen des Auswahlstatus eines Benutzers
 solution: Marketing Cloud, Analytics
 title: Festlegen des Auswahlstatus eines Benutzers
 topic: Entwickler und Implementierung
-uuid: 44 a 09 a 25-93 c 6-4 e 1 a-b 69 e -710018 e 8 b 6 c 3
+uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -22,7 +22,7 @@ Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlöschung nach DSGVO
 
 Durch Verwendung der folgenden Einstellungen können Sie steuern, ob Aktivitäten von Analytics, Target und Audience Manager auf einem Gerät zulässig sind:
 
-* `privacyDefault` in adbmobile [JSON Config](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` in [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
    Diese Einstellung steuert die anfängliche Einstellung, die beibehalten wird, bis sie im Code geändert wird.
 
@@ -32,7 +32,7 @@ Durch Verwendung der folgenden Einstellungen können Sie steuern, ob Aktivitäte
 
    Weitere Informationen zu den Methoden finden Sie unter [Konfigurationsmethoden](/help/ios/configuration/json-config/json-config.md).
 
-Im Folgenden finden Sie Informationen zu den einzelnen Datenschutzstatus:
+Hier finden Sie Informationen zu den einzelnen Datenschutzstatus:
 
 * **Opt-in**
 
