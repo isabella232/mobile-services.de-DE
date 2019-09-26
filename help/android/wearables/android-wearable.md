@@ -1,11 +1,11 @@
 ---
 description: Die Android-SDK-Version 4.5 enthält eine neue Erweiterung von Android, die Ihnen das Erfassen der Nutzungsdaten von Ihrer Android Wearable App ermöglicht.
 seo-description: Die Android-SDK-Version 4.5 enthält eine neue Erweiterung von Android, die Ihnen das Erfassen der Nutzungsdaten von Ihrer Android Wearable App ermöglicht.
-seo-title: Android Wearables - Erste Schritte
-solution: Marketing Cloud, Analytics
-title: Android Wearables - Erste Schritte
+seo-title: Android Wearables  Getting Started
+solution: Marketing Cloud,Analytics
+title: Erste Schritte mit Android Wearables
 topic: Entwickler und Implementierung
-uuid: bfe 5 d 41 e-b 17 c -4634-80 ac -7 a 38671 ecb 81
+uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ Die Android-SDK-Version 4.5 enthält eine neue Erweiterung von Android, die Ihn
 
 ## Configuring the SDK for a handheld app (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-Weitere Informationen zum Importieren des SDK in Ihr Projekt finden Sie unter [Core-Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
+Weitere Informationen zum Importieren des SDK in Ihr Projekt finden Sie unter [Kernimplementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
 
 1. Fügen Sie die Datei `ADBMobileConfig.json` in den Ordner assets des Projekts ein.
 1. Fügen Sie die Datei `adobeMobileLibrary-*.jar` zum Ordner „libs“ hinzu oder stellen Sie sicher, dass im Projekt ein Verweis auf die Datei enthalten ist.
@@ -88,7 +88,7 @@ Weitere Informationen zum Importieren des SDK in Ihr Projekt finden Sie unter [C
    }
    ```
 
-1. Zur `WearListenerService``AndroidManifest.xml` Datei hinzufügen:
+1. Fügen Sie `WearListenerService` der `AndroidManifest.xml` Datei hinzu:
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -175,7 +175,7 @@ Weitere Informationen zum Importieren des SDK in Ihr Projekt finden Sie unter [C
    }
    ```
 
-1. Zur `WearListenerService``AndroidManifest.xml` Datei hinzufügen:
+1. Fügen Sie `WearListenerService` der `AndroidManifest.xml` Datei hinzu:
 
    ```java
    If you are using Google Play Services  < 8.2 
