@@ -6,7 +6,7 @@ seo-title: Link-Ziele erstellen und verwalten
 solution: Marketing Cloud, Analytics
 title: Link-Ziele erstellen und verwalten
 topic: Metriken
-uuid: 43930 e 3 a -6 a 11-40 c 6-8 a 61-6732 a 673 dac 7
+uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -23,7 +23,7 @@ So zeigen Sie die Seite Link-Ziele verwalten an:
 1. Klicken Sie auf den Namen der App, damit die zugehörige Seite App-Informationen angezeigt wird.
 1. Klicken Sie oben rechts auf **[!UICONTROL Link-Ziele verwalten]**.
 
-Auf der Seite Link-Ziele werden Ihre Link-Ziele angezeigt und Optionen zum Erstellen, Archivieren, Archivieren, Bearbeiten und Löschen von Link-Zielen bereitgestellt.
+Auf der Seite "Link-Ziele"werden Ihre Link-Ziele und Optionen zum Erstellen, Archivieren, Rückgängigmachen der Archivierung, Bearbeiten und Löschen von Link-Zielen angezeigt.
 
 Beispiel:
 
