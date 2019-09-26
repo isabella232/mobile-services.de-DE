@@ -3,10 +3,10 @@ description: Mithilfe dieser Informationen können Sie die integrierten Berichte
 keywords: mobile
 seo-description: Mithilfe dieser Informationen können Sie die integrierten Berichte durch Hinzufügen zusätzlicher Filter (Segmente) anpassen.
 seo-title: Filter zu Berichten hinzufügen
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Filter zu Berichten hinzufügen
 topic: Berichte, Metriken
-uuid: 19 c 395 cc -2 e 07-4588-825 b-f 2 f 8 b 10 a 87 c 1
+uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -19,7 +19,7 @@ Mithilfe dieser Informationen können Sie die integrierten Berichte durch Hinzuf
 
 >[!IMPORTANT]
 >
->Mobile App-Metriken sind auch in Marketing Reports &amp; Analysen, Ad-hoc-Analysen, Data Warehouse und anderen Benutzeroberflächenschnittstellen verfügbar. Wenn eine Aufschlüsselung oder ein Berichtstyp in Adobe Mobile nicht zur Verfügung steht, kann er mithilfe einer anderen Berichtsschnittstelle generiert werden.
+>Mobile app metrics are also available in marketing reports &amp; analytics, ad hoc analysis, data warehouse, and other Analytics reporting interfaces. Wenn eine Aufschlüsselung oder ein Berichtstyp in Adobe Mobile nicht zur Verfügung steht, kann er mithilfe einer anderen Berichtsschnittstelle generiert werden.
 
 Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzungen]an, die Anweisungen gelten jedoch für alle Berichte.**
 
@@ -54,7 +54,7 @@ Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzunge
 
    ![](assets/customize5.png)
 
-   Sie können diesen Bericht mehr anpassen. Von ios 8.3 können Sie die Metrik "Erste Starts" mit einem Filter für den Betriebssystemversionsfilter ios 8.3 hinzufügen, um zu sehen, wie viele ios 8.3-Kunden ihre Apps aktualisiert und einen ersten Start durchgeführt haben.
+   You can customize this report more. Ab iOS 8.3 können Sie die Metrik "Erste Starts"mit einem Filter für die Betriebssystemversion iOS 8.3 hinzufügen, um zu sehen, wie viele iOS 8.3-Kunden ihre Apps aktualisiert und einen ersten Start durchgeführt haben.
 1. Under **[!UICONTROL First Launches]**, click **[!UICONTROL Add Filter]**, click **[!UICONTROL Add Rule]**, select **[!UICONTROL Operating Systems]** from the drop-down list, and select **[!UICONTROL iOS]**.
 1. Click **[!UICONTROL And]**, select **[!UICONTROL Operating System Versions]** from the drop-down list, and select **[!UICONTROL iOS 8.3]**.
 
@@ -68,4 +68,4 @@ Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzunge
 
    ![](assets/customize7.png)
 
-   Probieren Sie die verschiedenen Optionen im Berichtsanpassungsmenü ruhig einmal aus. Ihre Favoriten können Sie mit einem Lesezeichen versehen. Berichts-urls in Adobe Mobile sind funktionsfähig und können per E-Mail oder zu Ihren Favoriten hinzugefügt werden.
+   Probieren Sie die verschiedenen Optionen im Berichtsanpassungsmenü ruhig einmal aus. Ihre Favoriten können Sie mit einem Lesezeichen versehen. Report URLs in Adobe Mobile are functional and can be emailed or added to your favorites.
