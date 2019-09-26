@@ -3,7 +3,7 @@ description: Sie können Grafikdateien an Ihre Apple-Benachrichtigungen anhänge
 seo-description: Sie können Grafikdateien an Ihre Apple-Benachrichtigungen anhängen. Das Hinzufügen visueller Komponenten kann die Interaktion Ihrer Benutzer mit Push-Benachrichtigungen erheblich erhöhen.
 seo-title: Empfangen von Rich-Push-Benachrichtigungen
 title: Multimediale Push-Benachrichtigungen empfangen
-uuid: 0 dbda 409-cf 49-4 eb 8-90 ee-baf 27911 dc 07
+uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -35,7 +35,7 @@ So empfangen Sie Rich-Push-Benachrichtigungen in Ihrer iOS-App:
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      In dieser Methode können Sie die Medien-URL über `userInfo` den `attachment-url` Schlüssel abrufen. Nachdem Sie die Datei in einen lokalen Ordner heruntergeladen haben, fügen Sie den lokalen Pfad zu `bestAttemptContent.attachments`.
+      Bei dieser Methode können Sie die Medien-URL `userInfo` mithilfe des `attachment-url` Schlüssels abrufen. Nachdem Sie die Datei in ein lokales Verzeichnis heruntergeladen haben, fügen Sie den lokalen Pfad zu `bestAttemptContent.attachments`hinzu.
 
       Hier finden Sie einen Beispielcode in dieser Methode:
 
