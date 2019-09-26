@@ -5,7 +5,7 @@ seo-title: Akquise
 solution: Marketing Cloud, Analytics
 title: Akquise
 topic: Entwickler und Implementierung
-uuid: e 22 d 2785-58 f 1-4841-9163-912 c 5 e 0 f 5 d 61
+uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -14,7 +14,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Akquise {#acquisition}
 
-Die Informationen in diesem Abschnitt helfen Ihnen, Akquise-Tracking-Links in Ihren ios-Apps zu verwenden.
+Die Informationen in diesem Abschnitt helfen Ihnen, Akquise-Tracking-Links in Ihren iOS-Apps zu verwenden.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
