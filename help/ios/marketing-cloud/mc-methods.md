@@ -1,32 +1,32 @@
 ---
-description: Im Folgenden finden Sie die Methoden für den Identitätsdienst von Adobe Experience Platform, die von der ios-Bibliothek bereitgestellt werden.
-seo-description: Im Folgenden finden Sie die Methoden für den Identitätsdienst von Adobe Experience Platform, die von der ios-Bibliothek bereitgestellt werden.
-seo-title: Methoden des Adobe Experience Platform Identity Service
-solution: Marketing Cloud, Analytics
-title: Methoden des Adobe Experience Platform Identity Service
+description: Im Folgenden finden Sie die Identitätsdienstmethoden für Adobe Experience Platform, die von der iOS-Bibliothek bereitgestellt werden.
+seo-description: Im Folgenden finden Sie die Identitätsdienstmethoden für Adobe Experience Platform, die von der iOS-Bibliothek bereitgestellt werden.
+seo-title: Adobe Experience Platform Identity Service-Methoden
+solution: Marketing Cloud,Analytics
+title: Adobe Experience Platform Identity Service methods
 topic: Entwickler und Implementierung
-uuid: cdd 307 bc -8 b 7 d -47 a 8-b 77 e -00902 b 9 e 2968
+uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 translation-type: tm+mt
 source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
 
 ---
 
 
-# Methoden des Adobe Experience Platform Identity Service {#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service-Methoden {#experience-cloud-id-service-methods}
 
-Im Folgenden finden Sie die Methoden für den Identitätsdienst von Adobe Experience Platform, die von der ios-Bibliothek bereitgestellt werden.
+Im Folgenden finden Sie die Identitätsdienstmethoden für Adobe Experience Platform, die von der iOS-Bibliothek bereitgestellt werden.
 
 Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und des Experience Cloud-Besucher-ID-Service.
 
 Methods are prefixed according to the solution, and Experience Cloud ID methods are prefixed with `visitor`. Weitere Informationen finden Sie im Thema über das [Aktivieren der Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(nullable NSURL`*`) visitorappendtourl: (nullable NSURL`*`) url;**
+* **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
 
-   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Für die Verwendung dieser Methode muss Mobile SDK Version 4.12 oder höher verwendet werden. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
+   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Um diese Methode verwenden zu können, müssen Sie über Mobile SDK Version 4.12 oder höher verfügen. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
 
    >[!IMPORTANT]
    >
-   >Diese Methode kann einen blockierten Netzwerkaufruf verursachen. Rufen Sie diese Methode nicht in zeitkritischen Threads auf.
+   >Diese Methode kann einen blockierenden Netzwerkaufruf auslösen. Rufen Sie diese Methode nicht in zeitkritischen Threads auf.
 
    * Input: `URL<NSURL>`
 A required URL string that the visitor information will be appended to.
@@ -136,9 +136,9 @@ Zeichenfolge mit angehängten Besucherinformationen.
       NSArray *myVisitorIDs = [ADBMobile visitorGetIDs];
       ```
 
-* **Visitorgeturlvariablesasync**
+* **visitorgetUrlVariablesAsync**
 
-   Diese Methode wird in Version 4.16.0 eingeführt und gibt eine korrekt formatierte Zeichenfolge zurück, die URL-Variablen des Besucher-ID-Service enthält. Weitere Informationen zur Verwendung dieser Methode finden Sie unter Methoden des [Adobe Experience Platform Identity Service](/help/ios/reference/hybrid-app.md).
+   Diese in Version 4.16.0 eingeführte Methode gibt eine entsprechend geformte Zeichenfolge zurück, die URL-Variablen des Besucher-ID-Service enthält. For more information about how this method is used, see Adobe Experience Platform Identity Service methods.[](/help/ios/reference/hybrid-app.md)
 
    * Hier finden Sie die Syntax für diese Methode:
 
