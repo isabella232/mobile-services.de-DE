@@ -5,7 +5,7 @@ seo-title: App-Aktionen verfolgen
 solution: Marketing Cloud, Analytics
 title: App-Aktionen verfolgen
 topic: Entwickler und Implementierung
-uuid: 62017 be 1-5395-4 d 16-bde 3-4 c 40 a 2 c 012 d 4
+uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ Aktionen werden nicht automatisch verfolgt. Möchten Sie ein Ereignis verfolgen,
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden *Sie unter SDK und Config File to your Project* in [Core Implementation and Lifecycle](/help/ios/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. Importieren Sie die Bibliothek.
 
    ```objective-c
@@ -62,7 +62,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackAction:@"myapp.SocialShare" data:contextData];
 ```
 
-Kontextdatenwerte müssen benutzerdefinierte Variablen zugeordnet werden:
+Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ![](assets/map-variable-context-action.png)
 
