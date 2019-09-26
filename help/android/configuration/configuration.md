@@ -2,19 +2,19 @@
 description: 'Die folgenden Informationen helfen Ihnen bei der Konfiguration des Android-SDK, einschließlich JSON-Konfiguration, Stapelverarbeitung von Treffern und SDK-Methoden '
 seo-description: 'Die folgenden Informationen helfen Ihnen bei der Konfiguration des Android-SDK, einschließlich JSON-Konfiguration, Stapelverarbeitung von Treffern und SDK-Methoden '
 seo-title: Konfigurationsübersicht
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Konfigurationsübersicht
 topic: Entwickler und Implementierung
-uuid: 207 d 6 eae -7 fc 5-449 d-b 92 b-c 2 d 83 e 8 e 82 b 4
+uuid: 207d6eae-7fc5-449d-b92b-c2d83e8e82b4
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Konfigurationsübersicht {#configuration}
+# Configuration overview {#configuration}
 
-Die Informationen in diesem Abschnitt helfen Ihnen bei der Konfiguration des Android-SDK, einschließlich der JSON-Konfiguration und der Trefferstapel und erfahren mehr über die SDK-Methoden.
+Die Informationen in diesem Abschnitt unterstützen Sie bei der Konfiguration des Android-SDK, einschließlich der JSON-Konfiguration und Trefferstapelung, und erfahren Sie mehr über die SDK-Methoden.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
