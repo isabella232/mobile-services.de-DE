@@ -1,11 +1,11 @@
 ---
 description: Dieses Referenzmaterial hilft Ihnen bei der Verwendung des Android-SDK für Experience Cloud-Lösungen.
 seo-description: Dieses Referenzmaterial hilft Ihnen bei der Verwendung des Android-SDK für Experience Cloud-Lösungen.
-seo-title: Android SDK-Referenzübersicht
+seo-title: Android SDK-Referenz - Übersicht
 solution: Marketing Cloud, Analytics
-title: Android SDK-Referenzübersicht
+title: Android SDK-Referenz - Übersicht
 topic: Entwickler und Implementierung
-uuid: ce 8 f 6 dcb -0 e 2 b -47 eb -99 f 2-fbdb 97079161
+uuid: ce8f6dcb-0e2b-47eb-99f2-fbdb97079161
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Android SDK reference overview {#android-sdk-reference}
 
-Die Informationen in diesem Abschnitt unterstützen Sie bei der Verwendung des Android SDK für Experience Cloud-Lösungen.
+Die Informationen in diesem Abschnitt unterstützen Sie bei der Verwendung des Android-SDK für Experience Cloud-Lösungen.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
