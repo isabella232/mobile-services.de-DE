@@ -5,7 +5,7 @@ seo-title: Implementierung der iOS-Erweiterung
 solution: Marketing Cloud, Analytics
 title: Implementierung der iOS-Erweiterung
 topic: Entwickler und Implementierung
-uuid: 8 afc 03 fe -403 e -4643-ada 1-30 e 403 off 238
+uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -33,7 +33,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 >[!IMPORTANT]
 >
->Wir empfehlen dringend, das ios-SDK anstelle des Wrapper zu verwenden.
+>Es wird dringend empfohlen, das iOS-SDK anstelle des Wrapper zu verwenden.
 
 Apple bietet einen Satz APIs, über die die Watch-Anwendung mit der übergeordneten Anwendung kommuniziert, indem Anfragen an die übergeordnete Anwendung gesendet und Antworten empfangen werden. Es ist zwar möglich, Verfolgungsdaten als Wörterbuch von der Watch-Anwendung an die übergeordnete Anwendung zu senden und die übergeordnete Anwendung anschließend über eine beliebige Verfolgungsmethode zum Senden der Daten aufzufordern, jedoch gibt es bei dieser Methode Einschränkungen.
 
@@ -45,7 +45,7 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie ein Projekt mit mindestens folgenden Zielen haben:
+>Ensure that you have a project with at least the following targets:
 >
 >* ein Ziel, das in der App enthalten sein soll.
 >* ein Ziel für die Erweiterung.
@@ -55,7 +55,7 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 
 Wenn Sie in einer WatchKit-App arbeiten, sollten Sie über ein drittes Ziel verfügen. For more information on developing for Apple Watch, see [Developing for Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
 
-## Die enthaltende App konfigurieren {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
+## Konfigurieren der zugehörigen App {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus:
 
@@ -78,7 +78,7 @@ Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus:
 
 1. Bestätigen Sie, dass Ihre App ohne unerwartete Fehler erstellt wird.
 
-## Erweiterung konfigurieren {#section_28C994B7892340AC8D1F07AF26FF3946}
+## -Erweiterung konfigurieren{#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of the extension's target.
 1. Erweitern Sie auf der Registerkarte **[!UICONTROL Build-Phasen]** des Ziels Ihrer Erweiterung den Abschnitt **Binärdatei mit Bibliotheken verknüpfen]und fügen Sie die folgenden Bibliotheken hinzu:[!UICONTROL **
