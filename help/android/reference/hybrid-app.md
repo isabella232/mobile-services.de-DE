@@ -1,11 +1,11 @@
 ---
 description: Wenn Ihre App mobile Webinhalte öffnet, stellen Sie sicher, dass Besucher zwischen App und mobilem Web nicht unterschiedlich identifiziert werden.
 seo-description: Wenn Ihre App mobile Webinhalte öffnet, stellen Sie sicher, dass Besucher zwischen App und mobilem Web nicht unterschiedlich identifiziert werden.
-seo-title: Besucherverfolgung zwischen einer App und einem mobilen Web
-solution: Marketing Cloud, Analytics
-title: Besucherverfolgung zwischen einer App und einem mobilen Web
+seo-title: Visitor Tracking between an app and mobile web
+solution: Marketing Cloud,Analytics
+title: Visitor Tracking between an app and mobile web
 topic: Entwickler und Implementierung
-uuid: 073572 e 4-4 c 55-4 b 27-b 4 a 7-e 3349 ccde 7 bf
+uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ Das Android-SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird
 
 >[!TIP]
 >
->App-Besucher-IDs bleiben über Upgrades erhalten.
+>App-Besucher-IDs werden durch Aktualisierungen beibehalten.
 
 ## Besucher-IDs im mobilen Web
 
@@ -34,7 +34,7 @@ So verwenden Sie dieselbe Besucher-ID in der App und im mobilen Web:
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK und Config File to your intellij IDEA oder Eclipse Project* in [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und im Lebenszyklus](/help/android/getting-started/dev-qs.md)hinzufügen.
 
 1. Um Besucherinformationen an die URL anzuhängen, die zum Öffnen der Webansicht verwendet wird, rufen Sie `visitorAppendToURL` auf:
 
