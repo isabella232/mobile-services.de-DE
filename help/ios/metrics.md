@@ -2,10 +2,10 @@
 description: Die folgende Tabelle enthält die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
 seo-description: Die folgende Tabelle enthält die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
 seo-title: Lebenszyklusmetriken
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Lebenszyklusmetriken
 topic: Entwickler und Implementierung
-uuid: b 795 e 383-d 59 b -4 a 3 c -9 e 14-ffe 8 fb 58412 c
+uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -14,7 +14,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 # Lifecycle metrics {#lifecycle-metrics}
 
-Im Folgenden finden Sie die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch durch die mobile Bibliothek gemessen werden können.
+Hier sind die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -38,7 +38,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 >[!TIP]
 >
->Ausnahmen werden in der Beschreibung angegeben.
+>Ausnahmen sind in der Beschreibung enthalten.
 
 ### Metriken
 
@@ -93,13 +93,13 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 >[!IMPORTANT]
 >
-> Die Metriken *Täglich beteiligte Benutzer* und *monatliche beteiligte Benutzer* werden nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerspezifisches Ereignis zur Erfassung dieser Metriken festlegt.
+> Die Metriken " *Täglich eingebundene Benutzer* "und " *Monatlich beteiligte Benutzer* "werden nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerspezifisches Ereignis zur Erfassung dieser Metriken einstellt.
 
 ### Dimensionen
 
 * **Installationsdatum**
 
-   Datum des ersten Starts nach der Installation.  Das Datumsformat `MM/DD/YYYY`ist.
+   Datum des ersten Starts nach der Installation.  The date format is .`MM/DD/YYYY`
 
    * Analytics-Kontextdaten/Target: `a.InstallDate`
    * Zielgruppen-Management: `c_a_InstallDate`
@@ -189,12 +189,12 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
    * Zielgruppen-Management: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >Die *Tage seit der letzten Aktualisierung*, *Starts seit der letzten Aktualisierung* und die Abmessungen *des Betreibernamens* werden nicht automatisch in einer Analytics-Variablen gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um die Werte zur Berichterstellung in eine Analytics-Variable zu kopieren.
+   >The Days since last upgrade, Launches since last upgrade, and the Carrier Name dimensions are not automatically stored in an Analytics variable. ****** Sie müssen eine Verarbeitungsregel erstellen, um die Werte zur Berichterstellung in eine Analytics-Variable zu kopieren.
 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in Variablen für mobile Lösungen erfasst.
+Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit der aufgeführten Methode erfasst.
 
 ### Metriken
 
@@ -226,11 +226,11 @@ Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in V
 
    Populated by `trackLocation` methods.
 
-   * Analytics-Kontextdaten-/Target-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Zielgruppen-Management:
+   * Eigenschaft Zielgruppen-Management:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -240,11 +240,11 @@ Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in V
 
    Erfasst durch trackLocation-Methoden.
 
-   * Analytics-Kontextdaten-/Target-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Zielgruppen-Management:
+   * Eigenschaft Zielgruppen-Management:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -254,11 +254,11 @@ Die folgenden Metriken und Dimensionen werden von der aufgelisteten Methode in V
 
    Populated by `trackLocation` methods.
 
-   * Analytics-Kontextdaten-/Target-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Zielgruppen-Management:
+   * Eigenschaft Zielgruppen-Management:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
