@@ -3,7 +3,7 @@ description: Sie können Adobe Target in Ihren TVML-/TVJS-Apps nutzen, indem Sie
 seo-description: Sie können Adobe Target in Ihren TVML-/TVJS-Apps nutzen, indem Sie direkte Ersetzungen in Ihren .xml-Dateien vornehmen. Bestimmen Sie Bereiche Ihrer Seite, die durch Target-Inhalt ersetzt werden sollen, indem Sie das benutzerdefinierte ADBTarget-XML-Element verwenden.
 seo-title: Adobe Target für TVML/TVJS
 title: Adobe Target für TVML/TVJS
-uuid: afd 5 a 583-5266-43 f 2-8 cb 0-0 ace 89 c 53 a 57
+uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -16,7 +16,7 @@ Sie können Adobe Target in Ihren TVML-/TVJS-Apps nutzen, indem Sie direkte Erse
 
 >[!IMPORTANT]
 >
->Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. Weitere Informationen finden Sie unter [Apple TV-Implementierung mit tvos](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
+>Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. Weitere Informationen finden Sie unter Implementierung von [Apple TV mit tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
 
 ## Erste Schritte {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
@@ -30,11 +30,11 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
 
 >[!TIP]
 >
->Sie sollten planen, was Sie entsprechend ersetzen möchten.
+>Sie sollten das, was Sie ersetzen möchten, entsprechend planen.
 
 Ihr Anwendungsfall sollte so einfach sein wie das Ersetzen eines Zeichenfolgenwerts in einer Bezeichnung oder so komplex wie das Ersetzen einer gesamten Seite.
 
-## Adbtarget-Element konfigurieren {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
+## ADBTarget-Element konfigurieren {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
 Im Element `ADBTarget` müssen Sie den Mbox-Namen in der Eigenschaft `mbox` angeben. You can optionally add custom properties to your request in the `customParameterName="customParameterValue"` format.
 
@@ -43,55 +43,55 @@ Im Element `ADBTarget` müssen Sie den Mbox-Namen in der Eigenschaft `mbox` ange
    Name Ihrer Mbox-Position.
 
    * Eigenschaftstyp: Zeichenfolge
-   * Diese Eigenschaft ist erforderlich.
+   * This property is required.
 
 * **`id`**
 
    Die Bestell-ID.
 
    * Eigenschaftstyp: Zeichenfolge
-   * Diese Eigenschaft **ist nicht** erforderlich.
+   * Diese Eigenschaft ist **nicht** erforderlich.
 
 * **`total`**
 
-   Die Gesamtsumme der Bestellung.
+   Die Bestellsumme.
 
    * Eigenschaftstyp: Zeichenfolge
-   * Diese Eigenschaft **ist nicht** erforderlich.
+   * This property is not required.****
 
 * **`purchasedProductIds`**
 
    Eine kommagetrennte Liste der erworbenen Produkt-IDs für diese Bestellung.
 
-   * Hier finden Sie das Codebeispiel für diese Eigenschaft:
+   * Das folgende Codebeispiel für diese Eigenschaft:
 
 
       ```objective-c
       purchasedProductIds="product1,product2,product3" 
       ```
 
-   * Eigenschaftstyp: Zeichenfolge
-   * Diese Eigenschaft **ist nicht** erforderlich.
+   * Property type: String
+   * Diese Eigenschaft ist **nicht** erforderlich.
 
 * **`mboxParameters`**
 
-   Eine Liste von Schlüssel-Wert-Paaren für `mboxParameters`. Jeder Eintrag in dieser Zeichenfolge wird durch ein Semikolon getrennt und Schlüsselwerte werden durch einen Doppelpunkt getrennt.
+   Eine Liste von Schlüssel-Wert-Paaren für `mboxParameters`. Jeder Eintrag in dieser Zeichenfolge wird durch ein Semikolon getrennt und die Schlüsselwerte werden durch einen Doppelpunkt voneinander getrennt.
 
-   * Hier finden Sie das Codebeispiel für diese Eigenschaft:
+   * Das folgende Codebeispiel für diese Eigenschaft:
 
       ```objective-c
       mboxParameters="mboxparameterKey:mboxParameterValue;mboxParameterKey1:mboxParameterValue1;mboxParameterKey2:mboxParameterValue2"
       ```
 
    * Eigenschaftstyp: Zeichenfolge
-   * Diese Eigenschaft **ist nicht** erforderlich.
+   * Diese Eigenschaft ist **nicht** erforderlich.
 
 * **`customParameterName`**
 
-   Der Wert dieser Eigenschaft `customParameterValue`ist.
+   Der Wert dieser Eigenschaft lautet `customParameterValue`.
 
    * Eigenschaftstyp: Zeichenfolge
-   * Diese Eigenschaft **ist nicht** erforderlich.
+   * Diese Eigenschaft ist **nicht** erforderlich.
 
 
 ## Beispiele {#section_6D6D6E8C7FE147168FC30D83CBC06985}
