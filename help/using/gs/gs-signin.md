@@ -1,12 +1,12 @@
 ---
 description: Sie können sich über einen Webbrowser bei Adobe Mobile Services anmelden.
-keywords: mobile; change password; anmelden; abmelden; login; abmelden; anmelden; sign
+keywords: Mobil;Passwort ändern;Anmelden;Abmelden;Anmelden;Anmelden;Anmelden;Anmelden
 seo-description: Sie können sich über einen Webbrowser bei Adobe Mobile Services anmelden.
 seo-title: Anmeldung
 solution: Marketing Cloud, Analytics
 title: Anmeldung
 topic: Metriken
-uuid: d 6 ea 0 ca 1-3511-4133-9 d 41-21 ea 2 d 2 f 7 b 3 a
+uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
 translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
@@ -47,7 +47,7 @@ So melden Sie sich mit Ihrer Enterprise ID bei der Adobe Mobile Services-Benutz
 
    >[!IMPORTANT]
    >
-   >If you click **[!UICONTROL Facebook]** or **[!UICONTROL Google]** to sign in, your Facebook and Google account email address must match the Adobe ID or Enterprise ID account email address that has access to Adobe Analytics. Wenn Ihre Facebook- oder Google-E-Email-Anmeldeinformationen nicht mit der E-Email-Adresse von Adobe oder Enterprise ID übereinstimmen, wenden Sie sich an Ihren Administrator.
+   >If you click **[!UICONTROL Facebook]** or **[!UICONTROL Google]** to sign in, your Facebook and Google account email address must match the Adobe ID or Enterprise ID account email address that has access to Adobe Analytics. Wenn Ihre E-Mail-Anmeldeinformationen für Facebook oder Google nicht mit Ihrer E-Mail-Adresse des Adobe- oder Enterprise-ID-Benutzers übereinstimmen, wenden Sie sich an Ihren Administrator.
 
 ### Analytics ID
 
