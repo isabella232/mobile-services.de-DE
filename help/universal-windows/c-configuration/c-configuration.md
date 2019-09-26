@@ -5,7 +5,7 @@ seo-title: Konfiguration
 solution: Marketing Cloud, Analytics
 title: Konfiguration
 topic: Entwickler und Implementierung
-uuid: f 49667 b 9-b 87 b -42 bd-b 7 a 6-4 c 6154 d 1 b 137
+uuid: f49667b9-b87b-42bd-b7a6-4c6154d1b137
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
