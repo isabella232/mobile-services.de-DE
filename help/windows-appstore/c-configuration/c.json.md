@@ -1,18 +1,18 @@
 ---
 description: Informationen, die Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile JSON“ helfen.
 seo-description: Informationen, die Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile JSON“ helfen.
-seo-title: config-Datei für adbmobileconfig. json
-solution: Marketing Cloud, Analytics
-title: config-Datei für adbmobileconfig. json
+seo-title: ADBMobileConfig.json config file
+solution: Marketing Cloud,Analytics
+title: ADBMobileConfig.json config file
 topic: Entwickler und Implementierung
-uuid: a 45 b 91 cc -982 e -4 d 6 c-a 4 e 4-d 2 e 4 b 4 fa 7556
+uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 translation-type: tm+mt
 source-git-commit: 1dbdb998228bd3b0ae41e774b6e9aa111d8dbe1c
 
 ---
 
 
-# `ADBMobileConfig.json` config-Datei {#adbmobileconfig-json-config}
+# `ADBMobileConfig.json` config file {#adbmobileconfig-json-config}
 
 Information to help you use the `ADBMobile.json` config file.
 
@@ -22,7 +22,7 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    (Für Analytics erforderlich) Eine oder mehrere Report Suites für den Erhalt von Analytics-Daten. Verschiedene Report Suite-IDs müssen durch Kommas getrennt und ohne Leerzeichen zwischen den einzelnen Suites angegeben werden.
 
-   * Hier finden Sie die Codebeispiele für diese Variable:
+   * Here are the code samples for this variable:
 
       ```js
       "rsids" : "rsid"
@@ -60,11 +60,11 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **batchLimit**
 
-   Sendet die Treffer als Stapel. Wenn der Wert 50 festgelegt wird, werden Treffer in der Warteschlange gespeichert, bis eine Anzahl von 50 erreicht ist, die dann zusammen gesendet werden. Erforderlich `offlineEnabled=true`. Der Standardwert ist `0` (Kein Stapel).
+   Sendet die Treffer als Stapel. Wenn der Wert 50 festgelegt wird, werden Treffer in der Warteschlange gespeichert, bis eine Anzahl von 50 erreicht ist, die dann zusammen gesendet werden. Requires . `offlineEnabled=true` The default value is  (No batching).`0`
 
 * **privacyDefault**
 
-   * `optedin` - Treffer werden sofort gesendet.
+   * `optedin` - hits are sent immediately.
    * `optedout` - werden Treffer verworfen.
    * `optunknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
@@ -72,13 +72,13 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
       >[!TIP]
       >
-      >Dadurch wird nur der Standardwert festgelegt. Wenn dieser Wert im Code eingestellt oder geändert wird, dann wird der vom Code eingestellte Wert lokal gespeichert und ab diesem Zeitpunkt verwendet, bis er geändert wird oder die Anwendung deinstalliert und dann wieder neu installiert wird.
+      >Hiermit wird nur der Standardwert festgelegt. Wenn dieser Wert im Code eingestellt oder geändert wird, dann wird der vom Code eingestellte Wert lokal gespeichert und ab diesem Zeitpunkt verwendet, bis er geändert wird oder die Anwendung deinstalliert und dann wieder neu installiert wird.
 
 * **poi**
 
    Jedes POI-Array beinhaltet den POI-Namen, den Längen- und Breitengrad sowie den Radius (in Metern) des POI-Bereichs. Für den POI-Namen kann eine beliebige Zeichenfolge gewählt werden. Wenn beim Senden eines `trackLocation`-Aufrufs die aktuellen Koordinaten zu einem definierten POI passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
 
-   * Hier finden Sie das Codebeispiel für diese Variable:
+   * Das folgende Codebeispiel für diese Variable:
 
       ```js
       "poi": [
