@@ -6,7 +6,7 @@ seo-title: Trichterbericht
 solution: Marketing Cloud, Analytics
 title: Trichterbericht
 topic: Berichte, Metriken
-uuid: 268 b 4 ab 9-2 e 29-4423-9 f 79-ad 93 f 5231 ede
+uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -23,7 +23,7 @@ Wenn Sie den **[!UICONTROL Trichterbericht]öffnen, müssen Sie einen benutzerde
 
 >[!TIP]
 >
->Speichern Sie zum Speichern Ihres benutzerdefinierten Trichters die URL, nachdem Sie die Einstellungen konfiguriert haben, und führen Sie den Bericht aus. Sie können die URL weitergeben oder in einem Dokument speichern.
+>Um Ihren benutzerdefinierten Trichter zu speichern, speichern Sie die URL, nachdem Sie die Einstellungen konfiguriert haben, und führen Sie den Bericht aus. Sie können die URL weitergeben oder in einem Dokument speichern.
 
 Im Folgenden finden Sie ein Beispiel dieses Berichts:
 
@@ -53,7 +53,7 @@ Für diesen Bericht können folgende Optionen konfiguriert werden:
    Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
 * **[!UICONTROL Filter]**
 
-   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter [Fixierbaren Filter hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter Fixierbaren Filter [hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
 * **[!UICONTROL Download]**
 
    Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
