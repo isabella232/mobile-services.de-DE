@@ -3,10 +3,10 @@ description: Sie können Benutzer abhängig davon, ob sie eine App installiert (
 keywords: mobile
 seo-description: Sie können Benutzer abhängig davon, ob sie eine App installiert (App-Deep-Link) oder nicht installiert haben (Website oder Appstore), zu einem Ziel weiterleiten.
 seo-title: Interstitials
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Interstitials
 topic: Metriken
-uuid: 7 dce 8 ab 2-2 a 5 d -4384-ac 1 e-e 31 dfaa 33654
+uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -17,11 +17,11 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 Sie können Benutzer abhängig davon, ob sie eine App installiert (App-Deep-Link) oder nicht installiert haben (Website oder Appstore), zu einem Ziel weiterleiten. Die Auswahl der Weiterleitung sollte am besten den Benutzern überlassen werden. Hierzu können Marketingexperten eine Zwischenraumseite konfigurieren, die Benutzern die verfügbaren Ziele anzeigen.
 
-So konfigurieren Sie einen Zwischenraum, während Sie Erstellen eines Marketing-Links:
+So konfigurieren Sie einen Zwischenraum, während Sie creating a Marketing Link:
 
 1. Click **[!UICONTROL Edit Deep Link Interstitial]**.
 
-   ![Deep-Link-Zwischenräume](assets/interstitial2.png)
+   ![Zwischenräume für Deep-Links](assets/interstitial2.png)
 
 1. Geben Sie Informationen in folgende Felder ein:
 
@@ -29,7 +29,7 @@ So konfigurieren Sie einen Zwischenraum, während Sie Erstellen eines Marketing-
 
       Wählen Sie eine HTML-Seite aus, die als Kundenzwischenraum dienen soll.
 
-      Mithilfe von benutzerspezifischen Interstitials können Marketingexperten Zwischenraum-Landingpages mit benutzerdefiniertem HTML/CSS/JS anpassen, wodurch Sie Ihre Seiten markieren können.
+      Durch die Verwendung benutzerdefinierter Zwischenräume können Marketingfachleute Zwischenraum-Einstiegsseiten mit benutzerdefiniertem HTML/CSS/JS anpassen, sodass Sie Ihre Seiten markieren können.
 
       Im Folgenden finden Sie die Anforderungen der HTML-Seite:
 
@@ -41,7 +41,7 @@ So konfigurieren Sie einen Zwischenraum, während Sie Erstellen eines Marketing-
 
          >[!TIP]
          >
-         >Wenn Sie benutzerdefinierte HTML hochladen, werden die anderen vier Optionen in dieser Tabelle nur verwendet, wenn Sie die hochgeladene Datei entfernen.
+         >Wenn Sie benutzerdefiniertes HTML hochladen, werden die anderen vier Optionen in dieser Tabelle nur verwendet, wenn Sie die hochgeladene Datei entfernen.
    * **[!UICONTROL Bild-URL]**
 
       Geben Sie die URL zu einem Bild-Asset ein.
