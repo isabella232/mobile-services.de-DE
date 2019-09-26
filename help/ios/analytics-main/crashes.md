@@ -5,7 +5,7 @@ seo-title: App-Abstürze verfolgen
 solution: Marketing Cloud, Analytics
 title: App-Abstürze verfolgen
 topic: Entwickler und Implementierung
-uuid: 4 f 81988 b -198 a -4 ba 9-ad 53-78 af 90 e 43856
+uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werd
 
 >[!IMPORTANT]
 >
->Sie sollten auf die ios SDK Version 4.8.6 aktualisieren, die wichtige Änderungen enthält, die verhindern, dass falsche Abstürze gemeldet werden.
+>Sie sollten auf die iOS SDK-Version 4.8.6 aktualisieren, die wichtige Änderungen enthält, die verhindern, dass Falsch-Abstürze gemeldet werden.
 
 ## Wann meldet Adobe einen Absturz?
 
@@ -44,7 +44,7 @@ Die folgenden Szenarien sind dafür bekannt, dass in ihnen fälschlicherweise ei
 
    >[!TIP]
    >
-   >Sie können in diesem Szenario einen Absturz vermeiden, indem Sie die App hintergrundig machen, bevor Sie die App erneut aus Xcode starten.
+   >Sie können einen Absturz in diesem Szenario vermeiden, indem Sie die App im Hintergrund starten, bevor Sie die App erneut von Xcode starten.
 
 * If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
 
@@ -66,5 +66,5 @@ Mithilfe der folgenden Vorgehensweisen kann verhindert werden, dass falsche Abst
 * Stellen Sie sicher, dass Sie Ihre Entwicklung für produktionsfremde Report Suites durchführen, was verhindern sollte, dass der falsche Absturz Nr. 1 auftritt.
 * Löschen oder ändern Sie keine Werte, die das Adobe Mobile-SDK in `NSUserDefaults` setzt.
 
-   Wenn diese Werte außerhalb des SDK modifiziert werden, sind die gemeldeten Daten ungültig.
+   Wenn diese Werte außerhalb des SDK geändert werden, sind die gemeldeten Daten ungültig.
 
