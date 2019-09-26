@@ -5,7 +5,7 @@ seo-title: In-App-Nachrichten
 solution: Marketing Cloud, Analytics
 title: In-App-Nachrichten
 topic: Entwickler und Implementierung
-uuid: 21 fa 6 a 94-bb 7 f -4 c 78-843 b-a 50 f 1974 db 22
+uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -25,13 +25,13 @@ Hinweise:
 
    >[!TIP]
    >
-   >Sie können diese Schritte ausführen, selbst wenn keine Nachrichten definiert sind. Nachdem Sie Nachrichten definiert haben, werden sie dynamisch für Ihre App bereitgestellt und ohne App Store-Aktualisierung angezeigt.
+   >Sie können diese Schritte auch dann ausführen, wenn keine Meldungen definiert sind. Nachdem Sie Nachrichten definiert haben, werden sie dynamisch an Ihre App gesendet und ohne App Store-Aktualisierung angezeigt.
 
 ## Enabling in-app messages {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden *Sie unter SDK und Config File to your Project* in [Core Implementation and Lifecycle](/help/ios/getting-started/requirements.md).
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/requirements.md)
 
 1. Importieren Sie die Bibliothek:
 
@@ -67,9 +67,9 @@ Hinweise:
 
    >[!TIP]
    >
-   >`messages``remotes` oder ist erforderlich.
+   >`messages` oder `remotes` ist erforderlich.
 
-   If these objects are not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. Weitere Informationen finden Sie unter [Core-Implementierung und Lebenszyklus](/help/ios/getting-started/requirements.md).
+   If these objects are not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. For more information, see Core Implementation and Lifecycle.[](/help/ios/getting-started/requirements.md)
 
 ## Tracking in-app messages {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
@@ -78,13 +78,13 @@ Mobile Services SDKs für iOS lassen sich folgende Metriken Ihrer In-App-Nachric
 * Für In-App-Vollbild- und -Warnnachrichten:
 
    * **[!UICONTROL Impressionen]**: wenn der Benutzer eine In-App-Nachricht auslöst.
-   * **[!UICONTROL Durchklickraten: wenn der Benutzer die]** Clickthrough **[!UICONTROL -Schaltfläche drückt.]**
-   * **[!UICONTROL Abbricht]**: wenn der Benutzer die **[!UICONTROL Schaltfläche "Abbrechen"]** drückt.
+   * **[!UICONTROL Click throughs]**: when the user pushes the **[!UICONTROL Click-through]** button.
+   * **[!UICONTROL Abbrüche]**: wenn der Benutzer die Schaltfläche **[!UICONTROL Abbrechen]** drückt.
 
 * Für benutzerdefinierte Vollbild-In-App-Nachrichten muss der HTML-Inhalt der Nachricht den richtigen Code enthalten, um die SDK-Verfolgung über die Nutzung folgender Schaltflächen informieren zu können:
 
-   * **[!UICONTROL Clickthrough-Beispielverfolgung]** (Umleitung): `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **[!UICONTROL Beispielverfolgung abbrechen]** (schließen): `adbinapp://cancel`
+   * **[!UICONTROL Click-through (redirect) example tracking:]**`adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL Cancel]** (close) example tracking: `adbinapp://cancel`
 
 * Für lokale (Remote-)Nachrichten:
 
