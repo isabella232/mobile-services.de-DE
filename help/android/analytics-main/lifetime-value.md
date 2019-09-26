@@ -2,10 +2,10 @@
 description: Der Lebenszeitwert ermöglicht es, Android-Anwender anhand dieses Werts zu messen und anzusprechen. Der Wert kann verwendet werden, um über die gesamte Besucherlebenszeit hinweg Einkäufe, Werbeaufrufe, Videowiedergaben, geteilte Social-Media-Inhalte, Foto-Uploads usw. zu speichern.
 seo-description: Der Lebenszeitwert ermöglicht es, Android-Anwender anhand dieses Werts zu messen und anzusprechen. Der Wert kann verwendet werden, um über die gesamte Besucherlebenszeit hinweg Einkäufe, Werbeaufrufe, Videowiedergaben, geteilte Social-Media-Inhalte, Foto-Uploads usw. zu speichern.
 seo-title: Besucherlebenszeitwert
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Besucherlebenszeitwert
 topic: Entwickler und Implementierung
-uuid: ba 0308 de -282 e -46 f 9-a 14 c -19 fb 6 d 5 c 363 e
+uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -20,9 +20,9 @@ Sobald Sie einen Wert mit `trackLifetimeValueIncrease` senden, wird der Wert zum
 
 ## Track the visitor lifetime value {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
-1. Fügen Sie [Bibliothek Ihrem Projekt hinzu und implementieren Sie Lebenszyklus.
+1. Fügen Sie dem Projekt die [Bibliothek] hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK und Config File to your intellij IDEA oder Eclipse Project* in [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und im Lebenszyklus](/help/android/getting-started/dev-qs.md)hinzufügen.
 1. Importieren Sie die Bibliothek:
 
    ```java
