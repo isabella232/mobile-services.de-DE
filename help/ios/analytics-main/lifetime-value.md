@@ -1,11 +1,11 @@
 ---
 description: Mit dem Lebenszeitwert können Sie für jeden Benutzer einen Lebenszeitwert messen und vorgeben.
 seo-description: Mit dem Lebenszeitwert können Sie für jeden Benutzer einen Lebenszeitwert messen und vorgeben.
-seo-title: Besucherlebenszeitwert
-solution: Marketing Cloud, Analytics
-title: Besucherlebenszeitwert
+seo-title: Visitor lifetime value
+solution: Marketing Cloud,Analytics
+title: Visitor lifetime value
 topic: Entwickler und Implementierung
-uuid: d 830 d 18 b -4313-43 bb -8 d 75-3789869 d 0 f 1 d
+uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ Sobald Sie einen Wert mit `trackLifetimeValueIncrease` senden, wird der Wert zum
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden *Sie unter SDK und Config File to your Project* in [Core Implementation and Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrem Projekt* in [Kernimplementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md)hinzufügen.
 1. Importieren Sie die Bibliothek:
 
    ```objective-c
@@ -45,7 +45,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLifetimeValueIncrease:increaseAmount data:contextData];
 ```
 
-Kontextdatenwerte müssen benutzerdefinierte Variablen zugeordnet werden:
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-ltv.png)
 
