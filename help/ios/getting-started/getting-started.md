@@ -1,18 +1,18 @@
 ---
 description: 'Die folgenden Informationen bieten erste Schritte mit dem iOS-SDK für Experience Cloud-Lösungen '
 seo-description: 'Die folgenden Informationen bieten erste Schritte mit dem iOS-SDK für Experience Cloud-Lösungen '
-seo-title: Erste Schritte - Überblick
+seo-title: Getting started overview
 solution: Marketing Cloud, Analytics
-title: Erste Schritte - Überblick
+title: Getting started overview
 topic: Entwickler und Implementierung
-uuid: a 2 b 9 baad-b 959-4 b 9 a -893 d -99 c 0 f 4072 e 8 d
+uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Erste Schritte - Überblick {#getting-started}
+# Überblick über die ersten Schritte {#getting-started}
 
 Die folgenden Informationen bieten erste Schritte mit dem iOS-SDK für Experience Cloud-Lösungen.
 
