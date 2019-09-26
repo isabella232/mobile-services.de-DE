@@ -1,27 +1,27 @@
 ---
-description: Sie können Marketing-Links erstellen, um neue mobile App-Benutzer spontan zu akquirieren, indem Sie die URL-Parameter manuell konfigurieren.
+description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
 keywords: mobile
-seo-description: Sie können Marketing-Links erstellen, um neue mobile App-Benutzer spontan zu akquirieren, indem Sie die URL-Parameter manuell konfigurieren.
+seo-description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
 seo-title: Akquise-Links manuell erstellen
-solution: Marketing Cloud, Analytics
-title: Akquise-Links manuell erstellen
+solution: Marketing Cloud,Analytics
+title: Manually create Acquisition links
 topic: Metriken
-uuid: d 7709203-f 793-4982-adaa -9 c 3 c 914 aca 2 b
+uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 translation-type: tm+mt
 source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
 
 
-# Akquise-Links manuell erstellen {#create-acquisition-link-manually}
+# Manually create Acquisition links {#create-acquisition-link-manually}
 
-Sie können Marketing-Links erstellen, um neue mobile App-Benutzer spontan zu akquirieren, indem Sie die URL-Parameter manuell konfigurieren.
+Sie können Marketing-Links erstellen, um sofort neue Benutzer von mobilen Apps zu akquirieren, indem Sie die URL-Parameter manuell konfigurieren.
 
 >[!IMPORTANT]
 >
->Für diese Funktion ist SDK Version 4.6 oder höher erforderlich. Weitere Informationen finden Sie unter [Voraussetzungen für die Akquise](/help/using/acquisition-main/c-acquisition-prerequisites.md).
+>This feature requires SDK version 4.6 or later. For more information, see Acquisition prerequisites.[](/help/using/acquisition-main/c-acquisition-prerequisites.md)
 
-Das folgende Diagramm illustriert die Komponenten eines manuell erstellten Tracking-Links und zeigt die verschiedenen URL-Parameter an, die Sie beim manuellen Erstellen von Akquise-Links korrekt konfigurieren müssen.
+Das folgende Diagramm zeigt die Komponenten eines manuell erstellten Verfolgungslinks und die verschiedenen URL-Parameter, die Sie beim manuellen Erstellen von Akquise-Links ordnungsgemäß konfigurieren müssen.
 
 ![](assets/acquisition_url.png)
 
@@ -33,7 +33,7 @@ Wenn Sie Links manuell erstellen, verwenden Sie das folgende URL-Format:
 
 >[!TIP]
 >
->Die verwendete Android-SDK hat keine Auswirkungen auf diesen Prozess.
+>The version of Android SDK you are using has no impact on this process.
 
 Stellen Sie bei iOS sicher, dass Sie das richtige Protokoll verwenden:
 
@@ -42,13 +42,13 @@ Stellen Sie bei iOS sicher, dass Sie das richtige Protokoll verwenden:
 
 Wo folgende Bedingungen erfüllt wurden:
 
-* `{mobile-services-app-hash}` stimmt mit der Anwendungskennung in der Konfigurationsdatei `acquisition:appid ` überein.
+* `{mobile-services-app-hash}` stimmt mit der Anwendungskennung in der `acquisition:appid ` Konfigurationsdatei überein.
 
    You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
 
    ![](assets/tracking-id.png)
 
-* `{parameters}` ist eine Liste mit speziell benannten Standard-URL-Abfrageparametern.
+* `{parameters}` is a list of standard specifically named URL query parameters.
 
 Im Folgenden finden Sie eine Liste der Parameter:
 
@@ -56,7 +56,7 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    App-Kennung für Google Play Store.
 
-   * Beispielwert: `com.adobe.beardcons`
+   * Sample value: `com.adobe.beardcons`
 
 * **`a_g_lo`**
 
@@ -68,7 +68,7 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    App-Kennung für iTunes.
 
-   * Beispielwert: `835196493`
+   * Sample value: `835196493`
 
 * **`a_i_lo`**
 
@@ -86,7 +86,7 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    Benutzerdefinierte ID-Überschreibung (allgemein IDFA für iOS und ADID für Android).
 
-   * Beispielwert: `Any String < 255 characters (UTF-8 encoded)`
+   * Sample value: `Any String < 255 characters (UTF-8 encoded)`
 
 * **`ctx*`**
 
@@ -100,7 +100,7 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    Dieser Parameter ist für das Reporting erforderlich, wenn Sie die Performance verschiedener Akquise-Links vergleichen möchten.
 
-   * Beispielwert: Summit-Konferenz 2015
+   * Beispielwert: Gipfelkonferenz 2015
 
 * **`ctxa.referrer.campaign.trackingcode`**
 
@@ -114,28 +114,28 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    Die Quelle.
 
-   * Beispielwert: Werbenetzwerk
+   * Beispielwert: Anzeigennetzwerk
 
 * **`ctxa.referrer.campaign.medium`**
 
    Mittel
 
-   * Beispielwert: E-Mail
+   * Beispielwert: Email
 
 * **`ctxa.referrer.campaign.content`**
 
    Inhalt
 
-   * Beispielwert: Bild # 325689
+   * Beispielwert: Bild Nr. 325689
 
 * **`ctxa.referrer.campaign.term`**
 
    Begriff
 
-   * Beispielwert: hiking + scrits
+   * Beispielwert: Wandern+Stiefel
 
 
-Wenn Sie Akquise-Links manuell erstellen, beachten Sie die folgenden Informationen:
+Beachten Sie beim manuellen Erstellen von Akquise-Links die folgenden Informationen:
 
 * Alle Parameter, die mit den in der oben stehenden Tabelle aufgeführten Parametern nicht übereinstimmen, werden als Teil der Appstore-Umleitung übergeben.
 * Alle Parameter sind technisch optional, obwohl der Link nicht funktionsfähig ist, wenn mindestens eine Store-ID angegeben ist.
