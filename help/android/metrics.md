@@ -8,31 +8,29 @@ title: Lebenszyklusmetriken
 topic: Entwickler und Implementierung
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
 # Lifecycle metrics{#lifecycle-metrics}
 
-This section provides information about the metrics and dimensions that can be measured automatically by the mobile library, after lifecycle is implemented, and a link to troubleshoot Lifecycle data. Weitere Informationen zur Fehlerbehebung finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Dieser Abschnitt enthält Informationen zu den Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können, sowie einen Link zur Fehlerbehebung bei Lebenszyklusdaten. Weitere Informationen zur Fehlerbehebung finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
-## Neue Adobe Experience Cloud SDK-Version
+## Neue Version des Adobe Experience Platform Mobile SDK
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
->[!IMPORTANT]
->
->Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
 
-* Gehen Sie zu [Launch](https://launch.adobe.com/), um zu beginnen.
+* Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Wenn Lebenszyklusmetriken konfiguriert sind, werden sie in Kontextdatenparametern an Analytics, bei jedem mbox-Aufruf in Parametern an Target sowie als Signale an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management ein anderes Präfix für jede Metrik verwendet.
 
-For Analytics, the context data that is sent with each lifecycle tracking call is automatically captured in and reported on by using the metric or dimension, and the exceptions are noted.
+Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufruf gesendet werden, automatisch mit der Metrik oder Dimension erfasst und in Berichten behandelt, und die Ausnahmen werden vermerkt.
 
 ### Metriken
 
@@ -56,7 +54,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    >[!IMPORTANT]
    >
-   >This metric is not automatically stored in an Analytics metric. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
+   >Diese Metrik wird nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.DailyEngUserEvent`
    * Audience Manager-Signal: `c_a_DailyEngUserEvent`
@@ -264,7 +262,7 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
 
    Erfasst durch trackLocation-Methoden.
 
-   * Analytics Context Data/Target Parameters:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -293,14 +291,14 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
    Erfasst durch trackLifetimeValue-Methoden.
 
    * Analytics Context Data/Target Parameters: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Eigenschaften von Audience Manager: `c_a_ltv_amount`
 
 * **Rückverfolgungscode**
 
    Wird von Mobile App – Akquise erfasst und automatisch von Adobe Mobile Services generiert.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.trackingcode`
-   * Audience Manager Trait: `c_a_referrer_campaign_trackingcode`
+   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_trackingcode`
 
 * ** Kampagne
 
@@ -314,14 +312,14 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
    Der Name der ID des Inhalts, in dem der Link angezeigt wurde. Erfasst durch App-Akquise.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.content`
-   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_content`
+   * Audience Manager Trait: `c_a_referrer_campaign_content`
 
 * **Kampagnenmedium**
 
    Marketingmedium, beispielsweise ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.medium`
-   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_medium`
+   * Audience Manager Trait: `c_a_referrer_campaign_medium`
 
 * **Kampagnenquelle**
 
