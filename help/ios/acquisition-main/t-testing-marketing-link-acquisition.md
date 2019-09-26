@@ -1,12 +1,12 @@
 ---
-description: Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit einem Marketing-Link, der auf einem Fingerabdruck des Geräts basiert.
-keywords: android; library; mobile; sdk
-seo-description: Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit einem Marketing-Link, der auf einem Fingerabdruck des Geräts basiert.
-seo-title: Testen von Marketing Link-Akquisen
+description: Die folgenden Anweisungen helfen Ihnen, eine Akquisekampagne mit einem Marketing-Link zu starten, der auf einem Fingerabdruck des Geräts basiert.
+keywords: android;library;mobile;sdk
+seo-description: The following instructions help you roundtrip an acquisition campaign with a Marketing Link that is based on a device fingerprint.
+seo-title: Testing Marketing Link acquisition
 solution: Marketing Cloud, Analytics
-title: Testen von Marketing Link-Akquisen
+title: Testing Marketing Link acquisition
 topic: Entwickler und Implementierung
-uuid: 69503 e 01-182 d -44 c 6-b 0 fb-e 1 c 012 ffa 3 bd
+uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,9 +15,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit einem Marketing-Link, der auf einem Fingerabdruck des Geräts basiert.
+The following instructions help you roundtrip an acquisition campaign with a Marketing Link that is based on a device fingerprint.
 
-1. Führen Sie die erforderlichen Schritte in der [Mobile App-Akquise aus](/help/ios/acquisition-main/acquisition.md).
+1. Bearbeiten Sie die Aufgaben mit den Voraussetzungen unter [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md).
 1. In the Adobe Mobile Services UI, click **[!UICONTROL Marketing Links Builder]** and generate an acquisition Marketing Link URL that sets the App Store as the destination for iOS devices.
 
    Beispiel:
@@ -42,7 +42,7 @@ Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | The server should be  `c00.adobe.com`. `appid` sollte mit dem *`appid`* in Ihrem Akquise-Link übereinstimmen. |
+   | Akquise | The server should be  `c00.adobe.com`. `appid` should equal the  *`appid`* in your acquisition link. |
    | analytics | `referrerTimeout` sollte einen Wert größer als 0 aufweisen. |
 
 1. (Bedingt) Wenn die SSL-Einstellung in der Konfigurationsdatei Ihrer App `false` lautet, sollten Sie Ihren Akquiselink so aktualisieren, dass er das HTTP-Protokoll anstelle von HTTPS verwendet.
@@ -77,7 +77,7 @@ Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` ist nicht enthalten `contextData`.
+      `a.referrer.campaign.name` nicht in `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -85,22 +85,22 @@ Die folgenden Anweisungen helfen Ihnen beim Roundtrip einer Akquise-Kampagne mit
 
 Beachten Sie die folgenden Informationen:
 
-* Der Akquiseserver bietet eine Zuordnungsübereinstimmung, die auf der IP-Adresse und den „user-agent“-Informationen basiert, die beim Klicken auf den Link (Schritt 6) und beim Start der App (Schritt 7) aufgezeichnet werden.
+* Der Akquiseserver bietet eine Zuordnungsübereinstimmung, die auf der IP-Adresse und den „user-agent“-Informationen basiert, die beim Klicken auf den Link (Schritt 6) und beim Start der App (Schritt 7) aufgezeichnet werden. 
 
    Sie sollten sich im selben Netzwerk befinden, wenn Sie auf die URL klicken und wenn Sie die App öffnen.
 
-* Durch die Verwendung von HTTP-Überwachungstools können über die App gesendete Treffer überwacht werden, um die Verifizierung der Akquisezuordnung bereitzustellen.
+* Durch die Verwendung von HTTP-Überwachungstools können über die App gesendete Treffer überwacht werden, um die Verifizierung der Akquisezuordnung bereitzustellen. 
 
-   You should see one `/v3/<appid>/start` request and one `/v3/<appid>/end` request that are sent to the acquisition server.
+   Es sollten eine `/v3/<appid>/start`-Anforderung und eine `/v3/<appid>/end`-Anforderung angezeigt werden, die an den Akquiseserver gesendet wurden.
 
 * Variationen in „user-agent“ führen möglicherweise dazu, dass die Zuordnung fehlschlägt.
 
-   Stellen Sie sicher `https://c00.adobe.com/v3/<appid>/start` , dass und `https://c00.adobe.com/v3/<appid>/end` dieselben Benutzeragenten-Werte vorhanden sind.
+   Vergewissern Sie sich, dass `https://c00.adobe.com/v3/<appid>/start` und `https://c00.adobe.com/v3/<appid>/end` über dieselben Benutzeragentenwerte verfügen.
 
 * Der Akquiselink und der Treffer aus dem SDK sollten dasselbe HTTP-/HTTPS-Protokoll verwenden.
 
-   Wenn der Link und der Treffer verschiedene Protokolle verwenden, z. B. wenn der Link HTTP verwendet und das SDK HTTPS verwendet, kann sich die IP-Adresse für jede Anforderung auf einigen Netzbetreibern unterscheiden. Dies könnte zu Fehlern bei der Zuordnung führen.
+   Wenn der Link und der Treffer verschiedene Protokolle verwenden, bei denen der Link beispielsweise HTTP verwendet und das SDK HTTPS verwendet, kann sich die IP-Adresse bei den einzelnen Anbietern für jede Anforderung unterscheiden. Dies könnte zu Fehlern bei der Zuordnung führen.
 
-* Die Marketing-Links werden auf dem Server mit einer Gültigkeitsdauer von zehn Minuten zwischengespeichert.
+* Die Marketing-Links werden mit einer Ablaufzeit von zehn Minuten auf dem Server zwischengespeichert.
 
-   Wenn Sie Änderungen an Marketing-Links vornehmen, sollten Sie ungefähr 10 Minuten warten, bevor Sie die Links verwenden.
+   When you make changes to Marketing Links, you should wait about 10 minutes before using the links.
