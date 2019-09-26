@@ -6,7 +6,7 @@ seo-title: Berichtstypen
 solution: Marketing Cloud, Analytics
 title: Berichtstypen
 topic: Berichte, Metriken
-uuid: 8747 b 11 e -31 b 1-47 bc-ad 55-db 5 ab 4 ef 7078
+uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -21,11 +21,11 @@ Bevor Sie Berichte anpassen, sollten Sie den Unterschied zwischen einer Metrik u
 
 * Metrik
 
-   Eine Metrik dient zum Messen Ihrer Daten. Metriken sind Werte, die gezählt und addiert werden können. So können Sie erkennen, wie oft bestimmte Aktionen in Ihrer App erfolgen. Zu den gebräuchlichsten Metriken gehören die Anzahl von Installations-, Start- und Anmeldevorgängen sowie der Umsatz und der Lebenszeitwert. So wird zum Beispiel bei jedem Start Ihrer App der Wert  für _ launches_ value wird um 1 erhöht.
+   Eine Metrik dient zum Messen Ihrer Daten. Metriken sind Werte, die gezählt und addiert werden können. So können Sie erkennen, wie oft bestimmte Aktionen in Ihrer App erfolgen. Zu den gebräuchlichsten Metriken gehören die Anzahl von Installations-, Start- und Anmeldevorgängen sowie der Umsatz und der Lebenszeitwert. So wird zum Beispiel bei jedem Start Ihrer App der Wert  für _launches_value wird um 1 erhöht.
 
 * Dimension
 
-   Eine Dimension dient zum Beschreiben Ihrer Daten. Dimensionen werden mithilfe einer Zeichenfolge oder einer Zahl dargestellt, die wie eine Zeichenfolge funktioniert (z. B. eine Postleitzahl, die zum Organisieren und Segmentieren Ihrer Daten verwendet wird). Zu den gebräuchlichsten Dimensionen zählen beispielsweise die Betriebssystemversion, der Kampagnenname, der Produktname und der Mobilnetzbetreiber. Jede Dimension verfügt über eine Anzahl spezifischer Werte, die mit dieser Dimension verknüpft sind. For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
+   Eine Dimension dient zum Beschreiben Ihrer Daten. Dimensionen werden durch eine Zeichenfolge dargestellt, oder durch eine Zahl, die wie eine Zeichenfolge funktioniert (z. B. eine Postleitzahl), und die zum Organisieren und Segmentieren Ihrer Daten verwendet wird. Zu den gebräuchlichsten Dimensionen zählen beispielsweise die Betriebssystemversion, der Kampagnenname, der Produktname und der Mobilnetzbetreiber. Jede Dimension verfügt über eine Anzahl spezifischer Werte, die mit dieser Dimension verknüpft sind. For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
 
 Im Folgenden finden Sie die Berichtstypen, die Sie in der Mobile-Benutzeroberfläche erstellen können:
 
