@@ -6,7 +6,7 @@ seo-title: Reihen (Metriken) zu Berichten hinzufügen
 solution: Marketing Cloud, Analytics
 title: Reihen (Metriken) zu Berichten hinzufügen
 topic: Berichte, Metriken
-uuid: 84 fdfb 1 f -70 e 6-4 c 02-9 b 3 b -526 e 9 c 924 f 74
+uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -19,7 +19,7 @@ Mithilfe dieser Informationen können Sie die integrierten Berichte durch Hinzuf
 
 >[!IMPORTANT]
 >
->Mobile App-Metriken sind auch in Marketing Reports &amp; Analysen, Ad-hoc-Analysen, Data Warehouse und anderen Benutzeroberflächenschnittstellen verfügbar. Wenn eine Aufschlüsselung oder ein Berichtstyp in Adobe Mobile nicht zur Verfügung steht, kann er mithilfe einer anderen Berichtsschnittstelle generiert werden.
+>Mobile app metrics are also available in marketing reports and analytics, ad hoc analysis, data warehouse, and other Analytics reporting interfaces. Wenn eine Aufschlüsselung oder ein Berichtstyp in Adobe Mobile nicht zur Verfügung steht, kann er mithilfe einer anderen Berichtsschnittstelle generiert werden.
 
 In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** report, but the instructions can apply to any report.
 
@@ -43,11 +43,11 @@ In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** rep
 
       ![Schritt Ergebnis](assets/add_series.png)
 
-   * Um eine neue App in einer anderen Report Suite hinzuzufügen, damit Sie Daten über Apps hinweg vergleichen können, klicken Sie in der neu erstellten Reihe auf den App-Namen und wählen Sie die gewünschte App aus.
+   * Wenn Sie eine neue App in eine andere Report Suite einfügen möchten, damit Sie Daten über Apps hinweg vergleichen können, klicken Sie in der neu erstellten Reihe auf den App-Namen und wählen Sie die gewünschte App aus.
 
       ![](assets/add_series_app.png)
 
 1. (Bedingt) Fügen Sie der neuen Reihe Filter hinzu.
 
-   Weitere Informationen finden Sie unter [Filter zu Berichten hinzufügen](/help/using/usage/reports-customize/t-reports-customize.md).
+   Weitere Informationen finden Sie unter Filter zu Berichten [hinzufügen](/help/using/usage/reports-customize/t-reports-customize.md).
 1. Click **[!UICONTROL Update]** and **[!UICONTROL Run]**.
