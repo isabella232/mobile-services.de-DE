@@ -2,10 +2,10 @@
 description: Zustände sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Sobald ein neuer Zustand in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Verfolgungszustandsaufruf gesendet werden. In iOS wird ein Zustand in der Regel in der viewDidLoad-Methode jeder Ansicht verfolgt.
 seo-description: Zustände sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Sobald ein neuer Zustand in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Verfolgungszustandsaufruf gesendet werden. In iOS wird ein Zustand in der Regel in der viewDidLoad-Methode jeder Ansicht verfolgt.
 seo-title: App-Zustände verfolgen
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: App-Zustände verfolgen
 topic: Entwickler und Implementierung
-uuid: 12 cca 4 eb -1 f 15-4 cec-a 58 f -76 b 69 causf 99 d
+uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,7 +24,7 @@ Zustände sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. So
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden *Sie unter SDK und Config File to your Project* in [Core Implementation and Lifecycle](/help/ios/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. Importieren Sie die Bibliothek.
 
    ```objective-c
@@ -50,7 +50,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Home Screen" data:contextData];
 ```
 
-Kontextdatenwerte müssen benutzerdefinierte Variablen zugeordnet werden:
+Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ![](assets/map-variable-context-state.png)
 
@@ -61,5 +61,5 @@ Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Au
 |  |  |
 |--- |--- |
 | Adobe Mobile Services  | Der Bericht **[!UICONTROL Status anzeigen]:** Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. A sample path is  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Settings]**  &gt; **[!UICONTROL Feed]**. |
-| Adobe Analytics  | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **Seiten**, **[!UICONTROL Seitenansichten]** oder **Pfad[!UICONTROL .]** |
+| Adobe Analytics | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **Seiten**, **[!UICONTROL Seitenansichten]** oder **Pfad[!UICONTROL .]** |
 | Ad-hoc-Analysen | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden, z. B. in der Dimension **Seite**, der Metrik **[!UICONTROL Seitenansichten]** und dem Bericht **Pfad[!UICONTROL .]** |
