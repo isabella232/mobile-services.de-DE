@@ -6,7 +6,7 @@ seo-title: Messaging
 solution: Marketing Cloud, Analytics
 title: Messaging
 topic: Metriken
-uuid: e 32 d 3 e 35-2 d 09-4 ddf -8919-75 dc 895 abcb 3
+uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -15,7 +15,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 # Messaging {#messaging}
 
-Sie können In-App- und Push-Nachrichten erstellen, verwalten und Berichte erstellen.
+Sie können In-App- und Push-Nachrichten erstellen, verwalten und Berichte dazu erstellen.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -41,12 +41,12 @@ Folgende Nachrichtentypen werden unterstützt:
 * Native Warnhinweise
 * Lokale Benachrichtigungen
 
-Um zu verstehen, wie In-App-Nachrichten funktionieren, finden Sie hier einige weitere Informationen:
+To help you understand how in-app messaging works, here is some additional information:
 
-* In-App-Nachrichten erfordern SDK-Version 4.2 oder höher.
-* Sie müssen angeben, wer über Administratorrechte für die mobile App verfügt.
+* In-app messages require SDK version 4.2 or later.
+* You must specify who has Mobile App Admin rights.
 
-   Diese Rechte ermöglichen den Zugriff auf Akquise-Links und In-App-Nachrichten. Weitere Informationen finden Sie unter [Rollen und Berechtigungen](/help/using/gs/c-mob-roles-and-permissions.md).
+   These rights enable access to acquisition links and in-app messages. For more information, see Roles and permissions.[](/help/using/gs/c-mob-roles-and-permissions.md)
 * Nachdem eine Nachricht genehmigt wurde, wird sie automatisch in der App veröffentlicht.
 * Wenn die Nachrichtenparameter, wie z. B. Eigenschaften, Auslöser und Zeitplan, erfüllt sind, zeigt das SDK dem Benutzer die Nachricht an.
 * Nachrichten können benutzerdefinierte HTML oder ein per Online-URL eingefügtes Bild enthalten.
@@ -59,4 +59,4 @@ Um zu verstehen, wie In-App-Nachrichten funktionieren, finden Sie hier einige we
 
 Push-Nachrichten werden an Benutzer gesendet, die den Erhalt von Benachrichtigungen aktiviert haben. Sie können diese Push-Nachrichten an Benutzer in Analytics-Segmenten oder in benutzerdefinierten Segmenten richten. Sie können Push-Nachrichten verwenden, um den Kontakt zu passiven Benutzern wiederherzustellen oder zeit- und standortspezifische Informationen zu übermitteln, da die Nachrichten außerhalb Ihrer App angezeigt werden.
 
-Bevor Sie Push-Nachrichten konfigurieren können, lesen Sie [Voraussetzungen für die Aktivierung von Push-Nachrichten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). Nachdem Sie diese Schritte durchgeführt haben, müssen Sie die Push-Benachrichtigung in den Einstellungen der App konfigurieren. Weitere Informationen finden Sie unter [Push-Nachrichten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md)konfigurieren.
+Before you can configure push messaging, see Prerequisites to enable push messaging. [](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md) Nachdem Sie diese Schritte durchgeführt haben, müssen Sie die Push-Benachrichtigung in den Einstellungen der App konfigurieren. Weitere Informationen finden Sie unter [Configure push messaging](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
