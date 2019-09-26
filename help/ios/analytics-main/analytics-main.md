@@ -1,20 +1,20 @@
 ---
 description: Diese Informationen helfen Ihnen beim Verwenden des iOS-SDK mit Adobe Analytics.
 seo-description: Diese Informationen helfen Ihnen beim Verwenden des iOS-SDK mit Adobe Analytics.
-seo-title: Analytics-Übersicht
-solution: Marketing Cloud, Analytics
-title: Analytics-Übersicht
+seo-title: Analytics overview
+solution: Marketing Cloud,Analytics
+title: Analytics overview
 topic: Entwickler und Implementierung
-uuid: 8 c 7 fb 76 a-be 0 b -4465-8151-ece 7 bad 11 b 55
+uuid: 8c7fb76a-be0b-4465-8151-ece7bad11b55
 translation-type: tm+mt
 source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
 ---
 
 
-# Analytics-Übersicht {#analytics}
+# Analytics overview {#analytics}
 
-Die Informationen in diesem Abschnitt unterstützen Sie bei der Verwendung des ios SDK mit Adobe Analytics.
+Die Informationen in diesem Abschnitt unterstützen Sie bei der Verwendung des iOS-SDK mit Adobe Analytics.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -39,7 +39,7 @@ In den SDKs werden Identifikatoren verwendet, um Anwender zu verfolgen, und hier
 
 >[!TIP]
 >
->Der richtige Akronym für Experience Cloud Identifier ist ECID. Obwohl die SDKs immer noch MID verwenden, ist dies der alte Name.
+>The correct acronym for Experience Cloud Identifier is ECID. Obwohl die SDKs immer noch MID verwenden, ist dies der alte Name.
 Die AID, die manchmal auch als Tracking Identifier bezeichnet wird, wird vom SDK generiert, wenn die App nicht für die Verwendung eines MID konfiguriert ist. Der Wert bleibt zwischen den Starts und den App-Upgrades in `NSUserDefaults` erhalten. Wenn der Anwender die App von seinem Gerät löscht und dann die App anschließend erneut installiert oder wenn der App-Entwickler `NSUserDefaults` löscht, wird vom SDK eine neue Kennung generiert. Dieser Prozess führt zu einem neuen Anwender im Analytics-Reporting.
 
 Für Anwender in einer App, die Identity Service Support (MID) einführt, werden bestehende AID-Werte mit Analytics-Treffern gesendet, und der Analytics-Treffer enthält eine AID und einen MID. Für neue Anwender in einer App mit Identity Service Support enthalten die Analytics-Anfragen nur eine MID. For more information about identifying visitors, see [Identify visitors](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html).
