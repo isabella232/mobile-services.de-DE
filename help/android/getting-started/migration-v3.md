@@ -1,12 +1,12 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der Android-Bibliothek zu Version 4.x.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der Android-Bibliothek zu Version 4.x.
 seo-title: Migration zur Android 4.x-Bibliothek
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Migration zur Android 4.x-Bibliothek
 topic: Entwickler und Implementierung
-uuid: 906 e 83 bb -2 faf -4 aa 2-ac 9 b -3 fba 6 b 833 c 7 e
+uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -80,7 +80,7 @@ Die folgende Tabelle enthält die Konfigurationsvariablen, die Sie in die Konfig
 
 ### Migration von Version 3.x
 
-Um von Version 3. x auf 4 zu migrieren, verschieben Sie den Wert der Konfigurationsvariablen/-methode in die `ADBMobileConfig.json` Variable.
+Um von Version 3.x auf Version 4 zu migrieren, verschieben Sie den Wert der Konfigurationsvariablen/Methode in die `ADBMobileConfig.json` Variable.
 
 | Konfigurationsvariable oder -methode | Variable in the `ADBMobileConfig.json` file |
 |--- |--- |
@@ -96,14 +96,14 @@ Um von Version 3. x auf 4 zu migrieren, verschieben Sie den Wert der Konfigurati
 
 ### Migration von Version 2.x
 
-Um von Version 2. x zu Version 4 zu migrieren, verschieben Sie den Wert aus der ersten Spalte in die Variable in der zweiten Spalte.
+Um von Version 2.x auf Version 4 zu migrieren, verschieben Sie den Wert aus der ersten Spalte in die Variable in der zweiten Spalte.
 
 | Konfigurationsvariable | Variable in the `ADBMobileConfig.json` file |
 | --- |--- |
 | trackOffline | „offlineEnabled“ |
 | offlineLimit | „batchLimit“ |
 | account | „rsids“ |
-| trackingServer | „server“, entfernen Sie das `"https://"` Präfix. Das Protokollpräfix wird automatisch entsprechend der „ssl“-Einstellung hinzugefügt. |
+| trackingServer | „server“entfernen Sie das `"https://"` Präfix. Das Protokollpräfix wird automatisch entsprechend der „ssl“-Einstellung hinzugefügt. |
 | trackingServerSecure | Entfernen. Definieren Sie für sichere Verbindungen „server“ und aktivieren Sie dann „ssl“. |
 | charSet | „charset“ |
 | currencyCode | „currency“ |
@@ -116,21 +116,21 @@ Um von Version 2. x zu Version 4 zu migrieren, verschieben Sie den Wert aus der 
 | dynamicVariablePrefix | Entfernen: Nicht länger verwendet. |
 | visitorNamespace | Entfernen: Nicht länger verwendet. |
 | usePlugins | Entfernen: Nicht länger verwendet. |
-| useBestPractices  Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernt, ersetzt durch Lebenszyklusmetriken. |
+| useBestPractices  Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernen, ersetzt durch Lebenszyklusmetriken. |
 
 ## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
 Anstelle der auf das Web ausgelegten Aufrufe `track` und `trackLink` verwendet Version 4 des SDK folgende Methoden:
 
-* `trackState`, die in der App verfügbare Ansichten sind, wie z `home dashboard`. `app settings`B. `cart`, usw.
+* `trackState`, wobei es sich um die Ansichten handelt, die in Ihrer App verfügbar sind, z. B. `home dashboard`, `app settings`, `cart`usw.
 
    Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten.
 
-* `trackAction` Aktionen, wie `logons``banner taps``feed subscriptions`, usw., die in Ihrer App stattfinden und die Sie messen möchten.
+* `trackAction` Aktionen wie `logons`, `banner taps`, `feed subscriptions`usw., die in Ihrer App auftreten und die Sie messen möchten.
 
 The `contextData` parameter for both of these methods is a `HashMap<String, Object>`, which contains the name-value pairs that are sent as context data.
 
-## Ereignisse, Props und evars
+## Ereignisse, Props und eVars
 
 In Version 4 ist es nicht mehr möglich, Variablen direkt in Ihrer App zuzuweisen, beispielsweise events, eVars, props, heirs und lists. Das SDK nutzt jetzt Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
 
@@ -144,11 +144,11 @@ Verarbeitungsregeln bieten folgende Vorteile:
 
 Werte, die Sie Variablen direkt zugewiesen haben, müssen zur HashMap `data` hinzugefügt werden. This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should be removed and the values be added to the `data` parameter.
 
-## Appsection/server, geozip, Transaktions-ID, Kampagne und andere Standardvariablen
+## AppSection/server, GeoZip, transaction ID, Campaign, and other standard variables
 
 Daten, die Sie für das Messobjekt festgelegt haben, einschließlich der oben aufgeführten Variablen, müssen zur HashMap `data` hinzugefügt werden. Die einzigen Daten, die mit dem Aufruf `trackState` oder `trackAction` gesendet werden, beinhalten die Nutzlast des Parameters `data`.
 
-### Verfolgungsaufrufe ersetzen
+### Tracking-Aufrufe ersetzen
 
 Ersetzen Sie folgende Methoden durch einen Aufruf von `trackState` oder `trackAction`:
 
