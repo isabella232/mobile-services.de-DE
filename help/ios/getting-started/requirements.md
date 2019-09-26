@@ -2,10 +2,10 @@
 description: Führen Sie diese Schritte aus, um eine Report Suite zum Erfassen von iOS-App-Daten zu konfigurieren.
 seo-description: Führen Sie diese Schritte aus, um eine Report Suite zum Erfassen von iOS-App-Daten zu konfigurieren.
 seo-title: Vorbereitung
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Vorbereitung
 topic: Entwickler und Implementierung
-uuid: 04133 f 68-3618-41 fd -8 a 13-aec 5 b 6 f 04 df 6
+uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -31,7 +31,7 @@ App-Entwickler können jetzt die von Ihnen erstellten Report Suites anzeigen.
 
 >[!IMPORTANT]
 >
->Um eine neue Report Suite zu erstellen und die sdks herunterzuladen, müssen Sie ein Analytics-Administrator sein.
+>Um eine neue Report Suite zu erstellen und die SDKs herunterzuladen, müssen Sie Analytics-Administrator sein.
 
 ### App-Entwickler
 
@@ -52,11 +52,11 @@ Sie können sich auf eine der folgenden Arten bei der von Adobe Mobile Services 
 
    Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden.
 
-   Diese Methode setzt voraus, dass Ihr Unternehmen bereitgestellt wurde und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen zur Bereitstellung finden Sie unter [Verwalten von Experience Cloud-Benutzern und -produkten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html). Weitere Informationen zur Verknüpfung Ihres Kontos finden Sie unter [Organisationen und Kontoverknüpfung](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+   Bei dieser Methode wird davon ausgegangen, dass Ihr Unternehmen bereitgestellt wurde und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen zur Bereitstellung finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html). Weitere Informationen zum Verknüpfen Ihres Kontos finden Sie unter [Organisationen und Kontoverknüpfung](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
 
    >[!TIP]
    >
-   >Wenn Sie nicht sicher sind, ob Ihr Unternehmen in der Experience Cloud bereitgestellt wurde, verwenden Sie Ihr vorhandenes Adobe Analytics-Konto.
+   >If you are unsure whether your company has been provisioned in the Experience Cloud, use your existing Adobe Analytics account.
 
 * **Adobe Analytics**
 
@@ -85,7 +85,7 @@ So erstellen Sie eine Report Suite, um App-Daten zu erfassen und eine App zu def
 
 Um das mobile SDK herunterzuladen,
 
-1. Melden Sie sich bei Mobile Services an und öffnen Sie die App auf eine der folgenden Weisen:
+1. Melden Sie sich bei Mobile Services an und öffnen Sie Ihre App auf eine der folgenden Arten:
 
    * Wählen Sie Ihre App im Dropdown-Menü **[!UICONTROL Alle Apps]aus.**
    * Suchen Sie im rechten Bereich nach Ihrer App und öffnen Sie sie.
@@ -97,5 +97,5 @@ Um das mobile SDK herunterzuladen,
 
 >[!TIP]
 >
->Eine Konfigurationsdatei für Ihre App wird automatisch im SDK-Download enthalten. Daher müssen Sie diese Datei nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
+>Eine Konfigurationsdatei für Ihre App wird automatisch in den SDK-Download eingeschlossen. Daher müssen Sie diese Datei nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
 
