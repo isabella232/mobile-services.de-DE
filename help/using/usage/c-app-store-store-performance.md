@@ -3,10 +3,10 @@ description: Der Bericht „App Store-Übersicht“ zeigt eine Momentaufnahme Ih
 keywords: mobile
 seo-description: Der Bericht „App Store-Übersicht“ zeigt eine Momentaufnahme Ihrer App Store-Metriken, einschließlich der Anzahl der Downloads, der In-App-Käufe, der durchschnittlichen App Store-Bewertung, des Downloadumsatzes, des In-App-Umsatzes, der Downloads nach Ländern, der Downloads nach App Stores und der In-App-Käufe nach Namen.
 seo-title: Bericht „App Store-Übersicht“
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Bericht „App Store-Übersicht“
 topic: Metriken
-uuid: ac 066 f 31-ec 4 b -4 b 67-b 839-870 c 2 cd 1574 e
+uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -29,11 +29,11 @@ Sie können auf die Metriken klicken, um die entsprechende Zeile ein- oder auszu
 
 >[!IMPORTANT]
 >
->App Store-Metriken wie Downloads, Rang, Umsatz, Bewertung usw. erfordern eine Data Connector-Integration mit einem geeigneten Anbieter. `appFigures` bietet derzeit eine Integration, die den Kauf des entsprechenden Produkts bzw. Services von `appFigures`**erfordert, bevor** Sie die Integration aktivieren können. Weitere Informationen zu Data Connector-Integrationen finden Sie bei [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
+>App store metrics, such as downloads, rank, revenue, rating, and so on in Adobe Analytics require a Data Connector integration with an appropriate vendor. `appFigures` bietet derzeit eine Integration, die den Kauf des entsprechenden Produkts bzw. Services von `appFigures`**erfordert, bevor** Sie die Integration aktivieren können. Weitere Informationen zu Data Connector-Integrationen finden Sie bei [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
 
 >[!TIP]
 >
->Zusätzlich zum Ändern des Datumsbereichs des Berichts, indem Sie auf das Kalendersymbol oben rechts klicken, können Sie einige der Drilldown-Berichte anpassen, Filter und Reihen (Metriken) hinzufügen, fixierbare Filter hinzufügen und den Bericht im PDF- oder CSV-Format herunterladen. For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+>Sie können den Datumsbereich des Berichts ändern, indem Sie oben rechts auf das Kalendersymbol klicken. Außerdem können Sie einige der Drilldown-Berichte anpassen, Filter und Reihen (Metriken) hinzufügen, fixierbare Filter hinzufügen und den Bericht im PDF- oder CSV-Format herunterladen. For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
 
 ## App Store-Durchschnittsbewertung {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
