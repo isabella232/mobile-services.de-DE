@@ -3,7 +3,7 @@ description: Verwenden Sie das Android SDK zum Implementieren der Nachverfolgung
 seo-description: Verwenden Sie das Android SDK zum Implementieren der Nachverfolgung von verzögerten Deep-Links von Drittanbietern.
 seo-title: Verfolgen verzögerter Drittanbieter-Deep-Links
 title: Verfolgen verzögerter Drittanbieter-Deep-Links
-uuid: 4 c 798 e 47-7988-4 a 06-a 191-6 c 4 d 05 f 6 ee 61
+uuid: 4c798e47-7988-4a06-a191-6c4d05f6ee61
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -20,25 +20,25 @@ Das Adobe Mobile SDK unterstützt derzeit ein Deep Linking, bei dem erwartet wir
 
 ## Facebook deep linking {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-Ersteller von Werbeanzeigen können eine Werbeanzeige auf Facebook als Deep-Link erstellen. Wenn Anwender auf diese Werbeanzeige klicken, werden sie direkt zu der Information weitergeleitet, an der sie in der App interessiert waren. Der Deep-Link ist **keine** Fingerprinting-URL. Während der Werbekonfiguration ist jedoch eine Option verfügbar, um eine Drittanbieter-Deep-Link-URL bereitzustellen. Von einem App-Entwickler, der die Adobe Mobile-SDKs und Services verwendet, wird erwartet, dass er die für Adobe Mobile Services konfigurierte Fingerprinter-URL in dieses Feld eingibt. Wenn alles ordnungsgemäß eingerichtet ist, übergibt das Facebook-SDK diese URL an die Anwendung, wenn die App installiert oder gestartet wird.
+Ersteller von Werbeanzeigen können eine Werbeanzeige auf Facebook als Deep-Link erstellen. Wenn Anwender auf diese Werbeanzeige klicken, werden sie direkt zu der Information weitergeleitet, an der sie in der App interessiert waren. Der Deep-Link ist **keine** Fingerprinting-URL. Während der Werbekonfiguration ist jedoch eine Option zur Bereitstellung einer Drittanbieter-Deep-Link-URL verfügbar. Von einem App-Entwickler, der die Adobe Mobile-SDKs und Services verwendet, wird erwartet, dass er die für Adobe Mobile Services konfigurierte Fingerprinter-URL in dieses Feld eingibt. Wenn alles ordnungsgemäß eingerichtet ist, übergibt das Facebook-SDK diese URL an die Anwendung, wenn die App installiert oder gestartet wird.
 
-## Einrichten der SDKs {#section_834CD3109175432B8173ECB6EA7DE315}
+## Einrichten der SDKs   {#section_834CD3109175432B8173ECB6EA7DE315}
 
 Als Vorbereitung der Hinzufügung der Deep Linking-Unterstützung von Facebook im Adobe Mobile SDK führt der App-Entwickler die folgenden Aufgaben aus:
 
-* Erste Schritte mit dem Android SDK
+* Get started with the Android SDK
 
    For more information, see [Getting Started Android SDK](https://developers.facebook.com/docs/android/getting-started) .
 
-* Deep-Linking einrichten
+* Set up deep linking
 
-   Weitere Informationen finden Sie unter [Deep-Linking-Einrichtung](https://developers.facebook.com/docs/app-ads/deep-linking#os).
+   For more information, see Deep Linking Set up.[](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
 If the application is set up correctly, the `trackAdobeDeepLink()` API should enable collecting the deep link information from the Facebook acquisition campaign and send it to Adobe Mobile Service. Wenn der Installationstreffer nicht beim ersten Start an Adobe Mobile Service gesendet wurde, werden diese Informationen dem Lifecycle-Treffer hinzugefügt. Andernfalls wird sie als Adobe-Deep-Link-Treffer gesendet.
 
 >[!TIP]
 >
->Ensure that the deep link URL has a key called `a.deeplink.id`. Wenn die URL den Deep Link ID-Parameter nicht enthält, werden die URL-Parameter nicht an die Kontextdaten angehängt.
+>Ensure that the deep link URL has a key called `a.deeplink.id`. Wenn die URL den Deep-Link ID-Parameter nicht enthält, werden die URL-Parameter nicht an die Kontextdaten angehängt.
 
 Wenn der Link einer Akquise zugeordnet werden kann, speichert das Adobe Mobile SDK die Akquisedaten von der Facebook-Deep-Link-Adresse, über die `trackAdobeDeepLink()`  () aufgerufen wurde. Diese Daten stehen dem Adobe Mobile SDK bei zukünftigen Starts zur Verfügung. Falls ein Rückruf registriert wurde, wird auch der Adobe-Rückruf verwendet, um die Daten zurück an den Client zu senden.
 
@@ -53,7 +53,7 @@ Wenn der Link einer Akquise zugeordnet werden kann, speichert das Adobe Mobile S
    Um die Facebook-Gradle-Abhängigkeit in der App hinzuzufügen, führen Sie die Schritte unter [Erste Schritte mit dem Android-SDK](https://developers.facebook.com/docs/android/getting-started) aus.
 
 1. Um das Facebook-SDK zu initialisieren, befolgen Sie die Anweisungen im Abschnitt *Einrichtung von Android Studio*.
-1. Call `trackAdobeDeepLink()` from the main activity.
+1. Rufen Sie `trackAdobeDeepLink()` über die Hauptaktivität auf.
 
    ```java
    @Override 
