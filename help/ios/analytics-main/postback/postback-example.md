@@ -5,7 +5,7 @@ seo-title: Postback-Beispiel
 solution: Marketing Cloud, Analytics
 title: Postback-Beispiel
 topic: Entwickler und Implementierung
-uuid: 809 c 5646-7 a 80-40 df -984 b -0 af 89 d 854259
+uuid: 809c5646-7a80-40df-984b-0af89d854259
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -18,7 +18,7 @@ Definition und Quellcodebeispiele für die Funktion „Postbacks“.
 
 >[!CAUTION]
 >
->Dieses Beispiel wird nur zu Informationszwecken bereitgestellt. Die Datei `ADBMobileConfig.json` sollte in der Adobe Mobile-Benutzeroberfläche konfiguriert und nicht manuell verändert werden. Eine manuelle Änderung der Konfigurationsdatei kann zu Problemen führen, wenn Sie die Konfiguration von Remote-Nachrichten aktiviert haben.
+>Dieses Beispiel dient nur zu Informationszwecken. Die Datei `ADBMobileConfig.json` sollte in der Adobe Mobile-Benutzeroberfläche konfiguriert und nicht manuell verändert werden. Eine manuelle Änderung der Konfigurationsdatei kann zu Problemen führen, wenn Sie die Konfiguration von Remote-Nachrichten aktiviert haben.
 
 ## ADBMobileConfig.json definition {#section_0F6EC001AB6D488E815F50C7F5DA022E}
 
@@ -58,6 +58,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Because its state is `“MainMenu”`, this tracking call triggers the above postback message. Die URL ersetzt alle Vorlagenvariablen durch Werte aus dem Treffer. Wenn die vorherige Sitzung des Benutzers 132 Sekunden lang war und sich dieser Benutzer unter ios SDK 4.6.0 befindet, ist hier ein Beispiel für die resultierende URL:
+Because its state is `“MainMenu”`, this tracking call triggers the above postback message. The URL replaces all template variables with values from the hit. Assuming that the user’s previous session was 132 seconds long, and that user is on iOS SDK version 4.6.0, here is an example of the resulting URL:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`
