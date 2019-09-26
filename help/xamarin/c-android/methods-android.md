@@ -2,10 +2,10 @@
 description: Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
 keywords: Xamarin
 seo-description: Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
-seo-title: Android-Methoden
-solution: Marketing Cloud, Entwickler
-title: Android-Methoden
-uuid: 860 af 1 c 4-f 57 e -4 bcb -8308-4 e 316 da 9 a 27 b
+seo-title: Android methods
+solution: Marketing Cloud,Developer
+title: Android methods
+uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,9 +18,9 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 ## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
-* **Debuglogging**
+* **DebugLogging**
 
-   Gibt die aktuelle Voreinstellung für die Debug-Protokollierung zurück und die Standardeinstellung lautet false.
+   Returns the current debug logging preference, and the default is false.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -75,7 +75,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **UserIdentifier**
 
-   Wenn eine benutzerdefinierte Kennung festgelegt wurde, wird dieser Bezeichner zurückgegeben. Wenn keine benutzerdefinierte Kennung festgelegt ist, wird null zurückgegeben. Der Standardwert lautet `null`.
+   If a custom identifier has been set, returns this identifier. Wenn keine benutzerdefinierte ID festgelegt ist, gibt null zurück. Der Standardwert lautet `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -176,7 +176,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   (4.2 oder höher) Legt das große Symbol fest, das für vom SDK erstellte Benachrichtigungen verwendet wird. Dieses Symbol ist das primäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungszentrum sieht.
+   (4.2 oder höher) Legt das große Symbol fest, das für vom SDK erstellte Benachrichtigungen verwendet wird. Dieses Symbol ist das primäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungscenter sieht.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -192,7 +192,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   (4.2 oder höher) Legt das kleine Symbol fest, das für vom SDK erstellte Benachrichtigungen verwendet wird. Dieses Symbol wird in der Statusleiste angezeigt und ist das sekundäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungszentrum sieht.
+   (4.2 oder höher) Legt das kleine Symbol fest, das für vom SDK erstellte Benachrichtigungen verwendet wird. Dieses Symbol wird in der Statusleiste angezeigt und ist das sekundäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungscenter sieht.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -210,7 +210,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **TrackingIdentifier**
 
-   Gibt die automatisch erzeugte ID für Analytics zurück. Dies ist eine App-spezifische eindeutige ID, die beim ersten Start generiert wird und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID wird zwischen den Aktualisierungen der App beibehalten und bei der Deinstallation entfernt.
+   Gibt die automatisch erzeugte ID für Analytics zurück. Hierbei handelt es sich um eine App-spezifische eindeutige ID, die beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID bleibt zwischen App-Aktualisierungen erhalten und wird bei der Deinstallation entfernt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -230,7 +230,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, der Seitenansichten inkrementiert.
+   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -354,7 +354,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * Hier finden Sie Codebeispiele für diese Methode:
+   * Im Folgenden finden Sie ein Codebeispiel für diese Methode:
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -424,7 +424,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **SendQueuedHits**
 
-   Zwingt die Bibliothek, alle Treffer in der Offline-Warteschlange zu senden, unabhängig davon, wie viele Hits derzeit in der Warteschlange stehen.
+   Erzwingt, dass die Bibliothek alle Treffer in der Offline-Warteschlange sendet, unabhängig davon, wie viele Treffer sich derzeit in der Warteschlange befinden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -456,7 +456,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **QueueSize**
 
-   Ruft die Anzahl der Treffer ab, die sich aktuell in der Offline-Warteschlange befinden.
+   Ruft die Anzahl der Treffer ab, die sich derzeit in der Offline-Warteschlange befinden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -633,7 +633,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **AudienceSetDpidAndDpuuid**
 
-   Legt das `dpid` und `dpuuid`. If `dpid` and `dpuuid` are set, they are sent with each signal.
+   Legt die `dpid` und `dpuuid`fest. If `dpid` and `dpuuid` are set, they are sent with each signal.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -691,7 +691,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Weitere Informationen zu Video Analytics finden Sie unter [Video Analytics](/help/android/analytics-main/video-qs.md).
+Weitere Informationen zu Video Analytics finden Sie unter [Videoanalyse](/help/android/analytics-main/video-qs.md).
 
 * **MediaSettings**
 
