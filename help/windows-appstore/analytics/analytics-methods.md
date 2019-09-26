@@ -1,11 +1,11 @@
 ---
 description: Hier finden Sie Informationen zur Verwendung des Windows 8.1 Universal App Store-SDK mit Adobe Analytics.
 seo-description: Hier finden Sie Informationen zur Verwendung des Windows 8.1 Universal App Store-SDK mit Adobe Analytics.
-seo-title: Analytics-Methoden
+seo-title: Analysemethoden
 solution: Marketing Cloud, Analytics
-title: Analytics-Methoden
+title: Analysemethoden
 topic: Entwickler und Implementierung
-uuid: 79 db 105 c -216 c -4061-97 f 3-a 55954995 e 67
+uuid: 79db105c-216c-4061-97f3-a55954995e67
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -16,7 +16,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Hier finden Sie Informationen zur Verwendung des Windows 8.1 Universal App Store-SDK mit Adobe Analytics.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen], einschließlich Analytics], Target] und Audience Manager]. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Analysemethoden ist „Analytics“ als Präfix vorangestellt.
+The SDK currently has support for multiple Adobe Experience Cloud Solutions], including Analytics], Target], and Audience Manager]. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Analysemethoden ist „Analytics“ als Präfix vorangestellt.
 
 Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Suite verwendet.
 
@@ -24,13 +24,13 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 >
 >When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
-* **Trackstate (winjs: Trackstate)**
+* **TrackState (winJS: trackState)**
 
    Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die in Ihrer App verfügbaren Ansichten wie „Startseiten-Dashboard“, „App-Einstellungen“, „Warenkorb“ usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn `state` leer ist, wird es in Berichten als „app name app version (build)“ angezeigt. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, der Seitenansichten inkrementiert.
+   >This is the only tracking call that increments page views.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -45,7 +45,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       ADB.Analytics.trackState("loginScreen", null);
       ```
 
-* **Trackaction (winjs: Trackaction)**
+* **TrackAction (winJS: trackAction)**
 
    Verfolgt eine Aktion in der App. Bei Aktionen handelt es sich um die Dinge, die in Ihrer App vor sich gehen, die Sie messen möchten, beispielsweise „Anmeldungen“, „Banner-Tippvorgänge“, „Feed-Abonnements“ und andere Metriken.
 
@@ -62,7 +62,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       ADB.Analytics.trackAction("Button Click", null); 
       ```
 
-* **Gettrackingidentifierasync (winjs: Gettrackingidentifierasync)**
+* **GetTrackingIdentifierAsync (winJS: getTrackingIdentifierAsync)**
 
    Gibt die automatisch erzeugte Besucherkennung für Analytics zurück. Diese appspezifische, eindeutige Besucherkennung wird beim ersten Starten erzeugt, gespeichert und dann fortlaufend weiterverwendet. Die ID bleibt bei der Aktualisierung der App erhalten und wird beim Deinstallieren entfernt.
 
@@ -81,7 +81,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       });
       ```
 
-* **Tracklocation (winjs: Tracklocation)**
+* **TrackLocation (winJS: trackLocation)**
 
    Sendet die aktuellen XY-Koordinaten. Ermittelt außerdem anhand der in der Datei `ADBMobileConfig.json` definierten Zielpunkte (POI), ob der als Parameter angegebene Standort in einem vorhandenen Zielpunkt liegt. Falls die aktuellen Koordinaten auf einen definierten POI passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
 
@@ -98,7 +98,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       ADB.Analytics.trackLocation(47.60621, -122.33207, null);
       ```
 
-* **Tracklifetimevalueincrease (winjs: Tracklifetimevalueincrease)**
+* **TrackLifetime&#x200B;ValueIncrease (winJS: trackLifetime&#x200B;ValueIncrease)**
 
    Erhöht den Lebenszeitwert des Benutzers um `amount`.
 
@@ -115,7 +115,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       ADB.Analytics.trackLifetimeValueIncrease(10, null); 
       ```
 
-* **Tracktimedactionstart (winjs: Tracktimedactionstart)**
+* **TrackTimed&#x200B;ActionStart (winJS: trackTimed&#x200B;ActionStart)**
 
    Startet eine zeitgesteuerte Aktion mit dem Namen `action`. Wenn Sie diese Methode für eine bereits gestartete Methode aufrufen, wird die vorherige zeitgesteuerte Aktion überschrieben.
 
@@ -136,7 +136,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       ADB.Analytics.trackTimedActionStart("cartToCheckout", null); 
       ```
 
-* **Tracktimedactionupdate (winjs: Tracktimedactionupdate)**
+* **TrackTimed &#x200B; ActionUpdate (winJS: trackTimed &#x200B; ActionUpdate)**
 
    Übergibt `contextData`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. The `data` passed is appended to the existing data for the given action, and overwrites the data if the same key is already defined for `action`.
 
@@ -159,7 +159,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       ADB.Analytics.trackTimedActionUpdate("cartToCheckout", contextData); 
       ```
 
-* **Tracktimedactionexistsasync (winjs: Tracktimedactionexistsasync)**
+* **TrackTimedActionExistsAsync (winJS: trackTimedActionExistsAsync)**
 
    Gibt „true“ zurück, wenn die angegebene zeitgesteuerte Aktion vorhanden ist, und andernfalls „false“.
 
@@ -177,7 +177,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       });
       ```
 
-* **Tracktimedactionend (winjs: Tracktimedactionend)**
+* **TrackTimed &#x200B; ActionEnd (winJS: trackTimed &#x200B; ActionEnd)**
 
    Beendet eine zeitgesteuerte Aktion.
 
@@ -194,23 +194,23 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
       ADB.Analytics.trackTimedActionEnd("cartToCheckout"); 
       ```
 
-* **Cleartrackingqueue (winjs: Cleartrackingqueue)**
+* **ClearTrackingQueue (winJS: clearTrackingQueue)**
 
    Löscht alle gespeicherten Treffer aus der Tracking-Warteschlange in Analytics.
 
-   * Hier finden Sie die Syntax für diese Nachricht:
+   * Here is the syntax for this message:
 
       ```csharp
       static void ClearTrackingQueue();
       ```
 
-   * Im Folgenden finden Sie das Codebeispiel:
+   * Here is the code sample:
 
       ```js
       ADBMobile.Analytics.clearTrackingQueue();
       ```
 
-* **Getqueuesizeasync (winjs: Getqueuesizeasync)**
+* **GetQueueSizeAsync (winJS: getQueueSizeAsync)**
 
    Gibt die Anzahl der Treffer zurück, die zurzeit in der Analytics-Warteschlange gespeichert sind.
 
