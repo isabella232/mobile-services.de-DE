@@ -3,10 +3,10 @@ description: Sie können Zeitplanoptionen für In-App-Nachrichten konfigurieren,
 keywords: mobile
 seo-description: Sie können Zeitplanoptionen für In-App-Nachrichten konfigurieren, einschließlich Optionen für Dauer, Wochentage und Tageszeit.
 seo-title: In-App-Nachricht planen
-solution: Marketing Cloud, Analytics
-title: In-App-Nachricht planen
+solution: Marketing Cloud,Analytics
+title: Schedule  In-App Message
 topic: Metriken
-uuid: d 10 e 691 b -105 a -4165-a 49 d-d 046 ce 250 acd
+uuid: d10e691b-105a-4165-a49d-d046ce250acd
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
