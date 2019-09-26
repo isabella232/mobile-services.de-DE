@@ -2,22 +2,22 @@
 description: Der Bericht „Benutzer und Sitzungen“ zeigt für den ausgewählten Zeitraum Metriken für Unique Visitors an.
 keywords: mobile
 seo-description: Der Bericht „Benutzer und Sitzungen“ zeigt für den ausgewählten Zeitraum Metriken für Unique Visitors an.
-seo-title: Bericht "Benutzer und Sitzungen «
-solution: Marketing Cloud, Analytics
-title: Bericht "Benutzer und Sitzungen «
+seo-title: Users and Sessions report
+solution: Marketing Cloud,Analytics
+title: Users and Sessions report
 topic: Berichte, Metriken
-uuid: 6 d 70 d 7 f 6-de 81-4307-a 4 f 3-14 f 18 fc 3 c 3 c 3
+uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Bericht "Benutzer und Sitzungen «{#users-and-sessions}
+# Benutzer- und Sitzungsbericht{#users-and-sessions}
 
 Der Bericht „Benutzer und Sitzungen“ zeigt für den ausgewählten Zeitraum Metriken für Unique Visitors an.
 
-![Bericht "Benutzer und Sitzungen «](assets/users_sessions.png)
+![Users and Sessions report](assets/users_sessions.png)
 
 Für diesen Bericht können folgende Optionen konfiguriert werden:
 
@@ -31,7 +31,7 @@ Für diesen Bericht können folgende Optionen konfiguriert werden:
 
 * **[!UICONTROL Filter]**
 
-   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter [fixierbaren Filter hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter [Hinzufügen eines fixierbaren Filters](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Download]**
 
