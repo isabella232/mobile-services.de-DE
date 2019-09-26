@@ -7,27 +7,23 @@ title: Lebenszyklusmetriken
 topic: Entwickler und Implementierung
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
 
 ---
 
 
 # Lifecycle metrics {#lifecycle-metrics}
 
-Hier sind die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
+Here are the metrics and dimensions that can be automatically measured by the mobile library after lifecycle is implemented.
 
-## Neue Adobe Experience Cloud SDK-Version
+## New Adobe Experience Platform Mobile SDK Release
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
 
-* Gehen Sie zu Launch, um zu beginnen.
+* To get started, go to [Experience Platform Launch](https://launch.adobe.com/).
 * Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. Weitere Informationen finden Sie unter [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services).
 
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -93,13 +89,13 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 >[!IMPORTANT]
 >
-> Die Metriken " *Täglich eingebundene Benutzer* "und " *Monatlich beteiligte Benutzer* "werden nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerspezifisches Ereignis zur Erfassung dieser Metriken einstellt.
+> Die Metriken " *Täglich eingebundene Benutzer* "und " *Monatlich beteiligte Benutzer* "werden nicht automatisch in einer Analytics-Metrik gespeichert. You must create a processing rule that sets a custom event to capture these metrics.
 
-### Dimensionen
+#### Dimensionen
 
 * **Installationsdatum**
 
-   Datum des ersten Starts nach der Installation.  The date format is .`MM/DD/YYYY`
+   Datum des ersten Starts nach der Installation.  Das Datumsformat ist `MM/DD/YYYY`festgelegt.
 
    * Analytics-Kontextdaten/Target: `a.InstallDate`
    * Zielgruppen-Management: `c_a_InstallDate`
@@ -189,7 +185,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
    * Zielgruppen-Management: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >The Days since last upgrade, Launches since last upgrade, and the Carrier Name dimensions are not automatically stored in an Analytics variable. ****** Sie müssen eine Verarbeitungsregel erstellen, um die Werte zur Berichterstellung in eine Analytics-Variable zu kopieren.
+   >Die *Tage seit der letzten Aktualisierung*, die *Starts seit der letzten Aktualisierung* und die Dimensionen *Betreibername* werden nicht automatisch in einer Analytics-Variablen gespeichert. You must create a processing rule to copy the values to an Analytics variable for reporting.
 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
