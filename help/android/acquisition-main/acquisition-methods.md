@@ -1,12 +1,12 @@
 ---
 description: 'Die folgenden Akquise-Methoden werden von der Android-Bibliothek bereitgestellt '
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: 'Die folgenden Akquise-Methoden werden von der Android-Bibliothek bereitgestellt '
 seo-title: Akquisemethoden
 solution: Marketing Cloud, Analytics
 title: Akquisemethoden
 topic: Entwickler und Implementierung
-uuid: 22 ec 432 f-e 7 ae -4 e 89-be 7-26206 bbeacf 8
+uuid: 22ec432f-e7ae-4e89-be07-26206bbeacf8
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
