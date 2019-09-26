@@ -3,10 +3,10 @@ description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-
 keywords: mobile
 seo-description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 seo-title: Fehlerbehebung von In-App-Nachrichten
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Fehlerbehebung von In-App-Nachrichten
 topic: Metriken
-uuid: 58533 aa 3-2 eb 2-4597-8525-77 e 4 e 5975 e 56
+uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 translation-type: tm+mt
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
@@ -35,13 +35,13 @@ Stellen Sie sicher, dass der Broadcast-Empfänger für lokale Benachrichtigungen
 
 Prüfen Sie in der Listenansicht der Seite „In-App-Nachrichten verwalten“ in der Spalte „Status“, ob die Benachrichtigung „live“ ist.
 
-## Sehen Sie sich einmal ** an, *zeigen Sie einmal an*, *zeigen Sie Offline* -Einstellungen auf der Registerkarte "Zielgruppe" an.
+## Sehen Sie sich einmal *die* Anzeige an, *zeigen Sie immer* an, *zeigen Sie die Offline* -Einstellungen auf der Registerkarte Zielgruppe an.
 
 Stellen Sie sicher, dass diese Einstellungen wie erforderlich festgelegt sind. Überprüfen Sie auf der Registerkarte **[!UICONTROL Zielgruppe]** die **Auslöser]-Optionen, mit deren Hilfe Sie festlegen können, wie oft die Nachricht angezeigt wird.[!UICONTROL **
 
 ## Bei Verwendung eines Ereignisstarts als Auslöser...
 
-Ereignis wird nur bei einer neuen Sitzung ausgelöst. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. Weitere Informationen finden Sie unter [adbmobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
+Ereignis wird nur bei einer neuen Sitzung ausgelöst. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
 
 ## Ich habe meine Nachricht remote aktualisiert; in der Anwendung wird jedoch nach wie vor die alte Nachricht angezeigt.
 
