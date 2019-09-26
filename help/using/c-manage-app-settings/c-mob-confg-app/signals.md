@@ -3,7 +3,7 @@ description: Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an eine
 seo-description: Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an einen Drittanbieterserver senden. Mit denselben Auslösern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie Mobile Services so konfigurieren, dass benutzerdefinierte Daten an ein Drittanbieterziel gesendet werden.
 seo-title: Postbacks konfigurieren
 title: Postbacks konfigurieren
-uuid: a 026575 c -057 b -4868-b 6 c 8-9514 cbc 32 b 4 d
+uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -32,15 +32,15 @@ Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an einen Drittanbiet
 
    * **[!UICONTROL URL]**
 
-      Geben Sie eine gültige Endpunkt-URL an (mit entsprechenden Abfrageparametern bei GET-Anforderungen). Sie erhalten diese URL von der Partei, an die Sie die Daten senden (Werbeserver oder Ihr eigener Endpunkt). Beispiel `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      Specify a valid endpoint URL (with appropriate query parameters as needed for GET requests). Sie erhalten diese URL von der Partei, an die Sie die Daten senden (Werbeserver oder Ihr eigener Endpunkt). Beispiel `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL Kontextvariable]**
 
-      Markieren Sie Teile der URL und wählen Sie die gewünschte Kontextvariable aus der Dropdown-Liste aus. Sie können auch Kontextvariablen in die URL einfügen und die URL ersetzt alle Vorlagenvariablen durch Werte aus dem Treffer.
+      Markieren Sie Teile der URL und wählen Sie die gewünschte Kontextvariable aus der Dropdown-Liste aus. Sie können auch Kontextvariablen in die URL einfügen. Die URL ersetzt alle Vorlagenvariablen durch Werte aus dem Treffer.
 
    * **[!UICONTROL Post-Körper hinzufügen]**
 
-      Geben Sie weiteren Textinhalt für den Post an, beispielsweise bei einer Post-Anfrage. Wenn Sie Text für den Post-Körper angeben, geben Sie den Inhaltstyp für den Post-Körper an. Beispiel: `application/json`.
+      Geben Sie weiteren Textinhalt für den Post an, beispielsweise bei einer Post-Anfrage. Wenn Sie Text für den Haupttext des Beitrags angeben, geben Sie den Inhaltstyp für den Beitragstext an. Beispiel: `application/json`.
 
    * **[!UICONTROL Zeitüberschreitung (in Sekunden)]**
 
