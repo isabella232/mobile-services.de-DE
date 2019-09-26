@@ -3,7 +3,7 @@ description: Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nac
 seo-description: Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festlegen, die gesendet wird, wenn ein Anwender die App von der Push-Nachricht aus öffnet.
 seo-title: In-App-Nachricht auslösen, wenn die App von einer Push-Nachricht aus geöffnet wird
 title: In-App-Nachricht auslösen, wenn die App von einer Push-Nachricht aus geöffnet wird
-uuid: e 1 c 8 e 29 d -1 c 2 b -47 b 2-8 ab 2-6 b 6 e 15 df 86 f 6
+uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
 translation-type: tm+mt
 source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
@@ -28,7 +28,7 @@ Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festle
 
    >[!TIP]
    >
-   >Die Push-Nachrichten-ID ist die ID, die Sie in Schritt 1 finden.
+   >The push message ID is the ID that you located in step 1.
 
    Dieser Auslöser muss manuell hinzugefügt werden, da er in der Dropdown-Liste **[!UICONTROL Auslöser]nicht verfügbar ist.**
 
