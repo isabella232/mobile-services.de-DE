@@ -5,7 +5,7 @@ seo-title: Ereignis-Serialisierung
 solution: Marketing Cloud, Analytics
 title: Ereignis-Serialisierung
 topic: Entwickler und Implementierung
-uuid: 19 a 27 df 4-0998-403 d -800 c -26 ff 61149208
+uuid: 19a27df4-0998-403d-800c-26ff61149208
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
