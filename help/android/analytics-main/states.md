@@ -5,7 +5,7 @@ seo-title: App-Zustände verfolgen
 solution: Marketing Cloud, Analytics
 title: App-Zustände verfolgen
 topic: Entwickler und Implementierung
-uuid: 69 c 99 d 05-5816-4 c 86-97 c 5-d 218 dc 26 c 129
+uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ Jedes Mal, wenn ein neuer Status in der Anwendung angezeigt wird (z. B. wenn ei
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK und Config File to your intellij IDEA oder Eclipse Project* in [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und im Lebenszyklus](/help/android/getting-started/dev-qs.md)hinzufügen.
 
 1. Importieren Sie die Bibliothek:
 
@@ -43,7 +43,7 @@ Jedes Mal, wenn ein neuer Status in der Anwendung angezeigt wird (z. B. wenn ei
    }
    ```
 
-The `"State Name"` is reported in the `View State` variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In anderen Analytics-Schnittstellen `View State` wird berichtet und `Page Name``state views` erscheint als `page views`.
+The `"State Name"` is reported in the `View State` variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In anderen Analytics-Schnittstellen `View State` wird als `Page Name`und `state views` als `page views`.
 
 ## Send additional data {#section_CFDB4F944496401786A145C209AB387C}
 
@@ -73,7 +73,7 @@ Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Hi
 |  |  |
 |--- |--- |
 | Adobe Mobile Services  | Der Bericht **[!UICONTROL Status anzeigen]:** Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. A sample path is  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Settings]**  &gt; **[!UICONTROL Feed]**. |
-| Adobe Analytics  | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **Seiten**, **[!UICONTROL Seitenansichten]** oder **Pfad[!UICONTROL .]** |
+| Adobe Analytics | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **Seiten**, **[!UICONTROL Seitenansichten]** oder **Pfad[!UICONTROL .]** |
 | Ad-hoc-Analysen | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden, z. B. in der Dimension **Seite**, der Metrik **[!UICONTROL Seitenansichten]** und dem Bericht **Pfad[!UICONTROL .]** |
 
 
