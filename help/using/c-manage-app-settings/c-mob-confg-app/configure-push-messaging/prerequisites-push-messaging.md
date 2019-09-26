@@ -3,10 +3,10 @@ description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachric
 keywords: mobile
 seo-description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachrichten in Apps konfigurieren.
 seo-title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
 topic: Metriken
-uuid: 194 e 6 e 07-b 794-4152-a 838-a 4125 c 3292 d 4
+uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 translation-type: tm+mt
 source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
@@ -15,17 +15,17 @@ source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
 # Prerequisites to enable push messaging {#prerequisites-to-enable-push-messaging}
 
-Sie müssen diese Aufgaben ausführen, bevor Sie die Push-Benachrichtigung in Ihren Anwendungen konfigurieren.
+You must complete these tasks before configuring push messaging in your applications.
 
-## Aktivieren der Experience Cloud für Ihr Unternehmen
+## Enable the Experience Cloud for your company
 
 Ihr Adobe Analytics-Unternehmen muss Experience Cloud-fähig sein. Sie können den Status Ihres Adobe-Kundenbetreuers überprüfen.
 
-## Installieren und Konfigurieren des mobilen SDK
+## Mobile SDK installieren und konfigurieren
 
 * **Mobiles SDK installieren**
 
-   Um Push-Nachrichten zu konfigurieren, müssen Sie mindestens Version 4.6 des mobilen SDK herunterladen und installieren. For more information, see [Download the SDKs](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
+   Um Push-Nachrichten zu konfigurieren, müssen Sie mindestens Version 4.6 oder höher des Mobile SDK herunterladen und installieren. For more information, see [Download the SDKs](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
 
 * **Push-Dienste konfigurieren**
 
@@ -33,13 +33,13 @@ Ihr Adobe Analytics-Unternehmen muss Experience Cloud-fähig sein. Sie können d
 Weitere Informationen finden Sie unter folgenden Themen:
 
    * [Push-Nachrichten in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-   * [Push-Nachrichten in ios](/help/ios/messaging-main/push-messaging/push-messaging.md)
+   * [Push-Nachrichten in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
 
 ## Beim Mobile-Core-Service mit Ihrer Adobe ID anmelden
 
 >[!IMPORTANT]
 >
->Um die Funktion für Push-Dienste zu verwenden, müssen sich die Benutzer beim Mobile-Core-Service anmelden, indem sie ihre Adobe ID verwenden und ihr Analytics-Konto muss mit ihren Adobe IDs verknüpft sein. Die Funktion für Push-Dienste ist nicht verfügbar, wenn sich die Benutzer über ihre bestehenden Adobe Analytics-Konten anmelden.
+>Um die Funktion für Push-Dienste zu verwenden, müssen sich Benutzer beim Mobile-Core-Service mit ihrer Adobe ID anmelden und ihr Analytics-Konto muss mit ihren Adobe-IDs verknüpft sein. Die Funktion für Push-Dienste ist nicht verfügbar, wenn sich die Benutzer über ihre bestehenden Adobe Analytics-Konten anmelden.
 
 Wenn Benutzer nicht über Adobe IDs verfügen, führen Sie folgende Schritte durch:
 
@@ -51,7 +51,7 @@ Wenn Benutzer nicht über Adobe IDs verfügen, führen Sie folgende Schritte du
 
 1. (**Users**) Log in to Mobile using their Adobe ID.
 
-## Benutzerkonten in der Experience Cloud verknüpfen
+## Link users' accounts in the Experience Cloud
 
 Jeder Benutzer muss das Analytics-Konto innerhalb der Experience Cloud-Organisation verknüpfen.
 
@@ -69,7 +69,7 @@ Weitere Informationen finden Sie unter [Fehlerbehebung bei der Kontoverknüpfung
 
 ## Push-Dienste und den SDK-ID-Dienst in der Mobile-Benutzeroberfläche konfigurieren
 
-Bevor Sie den ID-Dienst für Ihre App aktivieren, ist der Abschnitt **[!UICONTROL Push-Dienste]deaktiviert.** Nachdem Sie den ID-Dienst aktiviert haben, ist der Abschnitt "Push-Dienste" aktiviert. Weitere Informationen zum Aktivieren von Push-Diensten finden Sie unter [SDK-ID-Dienst-Optionen](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)konfigurieren.
+Bevor Sie den ID-Dienst für Ihre App aktivieren, ist der Abschnitt **[!UICONTROL Push-Dienste]deaktiviert.** Nach der Aktivierung des ID-Diensts ist jedoch der Abschnitt "Push-Dienste"aktiviert. Weitere Informationen zum Aktivieren von Push-Diensten finden Sie unter SDK-ID-Dienstoptionen [konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
 >[!IMPORTANT]: Sie müssen auf **[!UICONTROL Speichern]** klicken, um Ihre Änderungen zu speichern und die Push-Dienste zu aktualisieren.
 >
@@ -91,4 +91,4 @@ Bevor Sie den ID-Dienst für Ihre App aktivieren, ist der Abschnitt **[!UICONTRO
 
    Geben Sie die Push-Token des Geräts ein, an die Sie die Nachricht senden möchten. Sie können die Nachricht an mehrere Geräte senden, indem Sie Token in einer durch Kommata getrennten Liste angeben.
 
-   ![Push-Testmeldung](assets/push_test_list.png)
+   ![Push-Testnachricht](assets/push_test_list.png)
