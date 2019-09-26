@@ -5,7 +5,7 @@ seo-title: Target
 solution: Marketing Cloud, Analytics
 title: Target
 topic: Entwickler und Implementierung
-uuid: c 2 b 134 bb -1 c 29-4617-bd 9 e-fa 3940483361
+uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Target{#target}
 
-Die Informationen in diesem Abschnitt helfen Ihnen bei der Bereitstellung zielgerichteter Inhalte in ios-Anwendungen.
+Die Informationen in diesem Abschnitt unterstützen Sie bei der Bereitstellung zielgerichteter Inhalte in iOS-Anwendungen.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
