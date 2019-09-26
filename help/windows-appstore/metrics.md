@@ -1,12 +1,12 @@
 ---
 description: Listet die Metriken und Dimensionen auf, die automatisch durch die Mobilbibliothek gemessen werden können.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Listet die Metriken und Dimensionen auf, die automatisch durch die Mobilbibliothek gemessen werden können.
 seo-title: Lebenszyklusmetriken
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Lebenszyklusmetriken
 topic: Entwickler und Implementierung
-uuid: c 483271 f-f 620-46 f 4-aad 8-d 5 f 02 d 763 f 7 d
+uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,13 +17,13 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Listet die Metriken und Dimensionen auf, die automatisch durch die Mobilbibliothek gemessen werden können.
 
-Weitere Informationen finden Sie unter [Fehlerbehebung für Lebenszyklusdaten](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Weitere Informationen finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Wenn Lebenszyklusmetriken konfiguriert sind, werden sie in Kontextdatenparametern an Analytics, bei jedem Mbox-Aufruf in Parametern an Target sowie als Signale an Audience Manager gesendet. Analytics und Target verwenden dasselbe Format, und Audience Manager verwendet ein anderes Präfix für jede Metrik.
+Wenn Lebenszyklusmetriken konfiguriert sind, werden sie in Kontextdatenparametern an Analytics, bei jedem Mbox-Aufruf in Parametern an Target sowie als Signale an Audience Manager gesendet. Analytics and Target use the same format, and Audience Manager uses a different prefix for each metric.
 
-Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsaufruf gesendet werden, automatisch in der unten aufgeführten Metrik oder Dimension erfasst und angezeigt. Ausnahmen werden vermerkt.
+Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufruf gesendet werden, automatisch mit der unten aufgeführten Metrik oder Dimension erfasst und in Berichten erfasst. Ausnahmen werden vermerkt.
 
 ### Metriken
 
@@ -88,7 +88,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsauf
 
 * **Installationsdatum**
 
-   Datum des ersten Starts nach der Installation. Das Datumsformat `MM/DD/YYYY`ist.
+   Datum des ersten Starts nach der Installation. Das Datumsformat ist `MM/DD/YYYY`festgelegt.
 
    * Analytics context data/Target: `a.InstallDate`
    * Audience Manager: `c_a_InstallDate`
@@ -192,7 +192,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsauf
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Die folgenden Metriken und Dimensionen werden von den in der Beschreibung aufgeführten Methoden in Variablen für mobile Lösungen erfasst.
+Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit den in der Beschreibung aufgeführten Methoden erfasst.
 
 ### Metriken
 
@@ -201,21 +201,21 @@ Die folgenden Metriken und Dimensionen werden von den in der Beschreibung aufgef
    Populated by `trackTimedAction` methods.
 
    * Analytics context data/Target parameter: `a.action.time.total`
-   * Zielgruppen-Manager: `c_a_action_time_total`
+   * Audience Manager-Eigenschaft: `c_a_action_time_total`
 
 * **Aktionsdauer in Anwendung**
 
    Populated by `trackTimedAction` methods.
 
    * Analytics context data/Target parameter: `a.action.time.inapp`
-   * Zielgruppen-Manager: `c_a_action_time_inapp`
+   * Audience Manager-Eigenschaft: `c_a_action_time_inapp`
 
 * **Lebenszeitwert (event)**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics context data/Target parameter: `a.ltv.amount`
-   * Zielgruppen-Manager: `c_a_ltv_amount`
+   * Audience Manager trait: `c_a_ltv_amount`
 
 ## Dimensionen
 
@@ -223,11 +223,11 @@ Die folgenden Metriken und Dimensionen werden von den in der Beschreibung aufgef
 
    Populated by `trackLocation` methods.
 
-   * Analytics-Kontextdaten/Target-Parameter:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Zielgruppen-Manager:
+   * Audience Manager trait:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -237,11 +237,11 @@ Die folgenden Metriken und Dimensionen werden von den in der Beschreibung aufgef
 
    Populated by `trackLocation` methods.
 
-   * Analytics-Kontextdaten/Target-Parameter:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Zielgruppen-Manager:
+   * Audience Manager-Eigenschaft:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -251,11 +251,11 @@ Die folgenden Metriken und Dimensionen werden von den in der Beschreibung aufgef
 
    Populated by `trackLocation` methods.
 
-   * Analytics-Kontextdaten/Target-Parameter:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Zielgruppen-Manager:
+   * Audience Manager-Eigenschaft:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -266,18 +266,18 @@ Die folgenden Metriken und Dimensionen werden von den in der Beschreibung aufgef
    Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem POI befindet.
 
    * Analytics context data/Target parameter: `a.loc.poi`
-   * Zielgruppen-Manager: `c_a_loc_poi`
+   * Audience Manager-Eigenschaft: `c_a_loc_poi`
 
 * **Entfernung zum Zentrum des Zielpunkts**
 
    Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem POI befindet.
 
    * Analytics context data/Target parameter: `a.loc.dist`
-   * Zielgruppen-Manager: `c_a_loc_dist`
+   * Audience Manager-Eigenschaft: `c_a_loc_dist`
 
 * **Lebenszeitwert (Konversionsvariable)**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics context data/Target parameter: `a.ltv.amount`
-   * Zielgruppen-Manager: `c_a_ltv_amount`
+   * Audience Manager-Eigenschaft: `c_a_ltv_amount`
