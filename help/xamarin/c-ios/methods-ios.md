@@ -2,7 +2,7 @@
 description: iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
 keywords: Xamarin
 seo-description: iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
-seo-title: iOS-Methoden
+seo-title: iOS methods
 solution: Marketing Cloud, Entwickler
 title: iOS-Methoden
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
@@ -213,7 +213,7 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
    Verfolgt einen App-Status mit optionalen Kontextdaten. Die Statusangaben entsprechen den verfügbaren Ansichten in der App, z. B. „Titelbild“, „Level 1“ oder „Pause“. Diese Status ähneln den Seiten auf einer Website und `TrackState` Aufrufe inkrementieren Seitenansichten. Ist der Status leer, wird in Berichten als "App-Name-App-Version (Build)"angezeigt. Wenn dieser Wert in einem Bericht auftritt, müssen Sie den Status in jedem `TrackState`-Aufruf festlegen.
 
    [!TIP]
-   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
+   >This is the only tracking call that increments page views.
    >
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -531,7 +531,7 @@ iOS-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SD
 
 * **TargetCreateOrderConfirmRequest**
 
-   Erstellt eine `ADBTargetLocationRequest`.
+   Creates an .`ADBTargetLocationRequest`
 
    * Hier finden Sie die Syntax für diese Methode:
 
