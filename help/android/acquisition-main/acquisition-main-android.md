@@ -1,20 +1,20 @@
 ---
 description: Diese Informationen helfen Ihnen dabei, Links zur Akquiseverfolgung in Ihren iOS-Apps zu verwenden.
 seo-description: Diese Informationen helfen Ihnen dabei, Links zur Akquiseverfolgung in Ihren iOS-Apps zu verwenden.
-seo-title: Akquise-Übersicht
-solution: Marketing Cloud, Analytics
-title: Akquise-Übersicht
+seo-title: Überblick über die Akquise
+solution: Marketing Cloud,Analytics
+title: Überblick über die Akquise
 topic: Entwickler und Implementierung
-uuid: e 22 d 2785-58 f 1-4841-9163-912 c 5 e 0 f 5 d 61
+uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Akquise-Übersicht {#acquisition}
+# Überblick über die Akquise {#acquisition}
 
-Diese Informationen helfen Ihnen bei der Verwendung von Akquise-Tracking-Links in Ihren Android-Apps.
+This information helps you use acquisition tracking links in your in your Android apps.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
