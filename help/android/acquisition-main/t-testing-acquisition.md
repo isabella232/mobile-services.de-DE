@@ -1,12 +1,12 @@
 ---
 description: Die folgenden Informationen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für einen Legacy-Akquise-Kampagnenlink auf einem Android-Gerät durchzuführen.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Die folgenden Informationen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für einen Legacy-Akquise-Kampagnenlink auf einem Android-Gerät durchzuführen.
 seo-title: Testen der Legacy-Akquise
 solution: Marketing Cloud, Analytics
 title: Testen der Legacy-Akquise
 topic: Entwickler und Implementierung
-uuid: bb 7 ace 96-68 eb -4 f 43-b 3 cf-af 80730 b 9 cee
+uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
