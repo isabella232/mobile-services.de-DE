@@ -3,7 +3,7 @@ description: In Adobe Analytics können Sie Rollen auf der Startseite der Admin 
 seo-description: In Adobe Analytics können Sie Rollen auf der Startseite der Admin Tools verwalten.
 seo-title: Rollen und Berechtigungen
 title: Rollen und Berechtigungen
-uuid: ad 350 f 8 d-ef 51-4519-98 aa -3025 bc 0 f 5588
+uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 translation-type: tm+mt
 source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
 
@@ -24,13 +24,13 @@ Analytics-Admins verwalten Benutzergruppen und weisen Berechtigungen zu. Hierzu 
 
 >[!TIP]
 >
->Ein vorhandener Analytics-Administrator kann jedem beliebigen Benutzer die Analytics Admin-Rolle zuweisen.
+>Ein vorhandener Analytics-Administrator kann jedem Benutzer die Analytics-Administratorrolle zuweisen.
 
 Weitere Informationen zu dieser Rolle finden Sie unter folgenden Themen:
 
-* [Übersicht über die Benutzerverwaltung](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
+* [User management overview](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
 
-* [Änderungen der Berechtigungen für Benutzer und Gruppe](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Änderungen an den Berechtigungen für Benutzer und Gruppen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
 
 ### Mobile App Admin
 
@@ -48,7 +48,7 @@ Im Folgenden finden Sie einige zusätzliche Informationen zu Zugriffsoptionen in
 
 Alle Mobile Services-Apps sind mit Report Suites verbunden. Wenn Benutzer nicht auf eine Report Suite zugreifen können, können sie auch nicht auf die mit der Report Suite verbundene App zugreifen.
 
-### Funktionen von Mobile Services und Analytics
+### Mobile Services and Analytics features
 
 Wenn Ihr Unternehmen für den Zugriff auf eine Funktion in der Benutzeroberfläche, wie z. B Push-Nachrichten, nicht über einen Analytics-Vertrag verfügt, kann kein Benutzer in Ihrem Unternehmen auf diese Funktion zugreifen – unabhängig von der Berechtigungsebene.
 
@@ -58,13 +58,13 @@ Im Folgenden finden Sie die Rollen in der Mobile Services-Benutzeroberfläche, e
 
 ### Analytics-Admin
 
-* Administratorrechte für alle Benutzer und mobile Anwendungen
+* Administratorberechtigungen für alle Benutzer und mobilen Apps
 * App mit neuer Report Suite erstellen
 * App aus Mobile Services löschen
 
    >[!IMPORTANT]
    >
-   >Obwohl die App in der Mobile Services-Benutzeroberfläche gelöscht wurde, existiert die Report Suite weiterhin in Analytics.
+   >Obwohl die App in der Mobile Services-Benutzeroberfläche gelöscht wurde, ist die Report Suite in Analytics weiterhin vorhanden.
 
 * App-Einstellungen verwalten
 
@@ -94,7 +94,7 @@ Im Folgenden finden Sie die Rollen in der Mobile Services-Benutzeroberfläche, e
 
 Weitere Informationen zu Gruppen und Benutzern finden Sie unter folgenden Themen:
 
-* [Benutzergruppeneinstellungen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
+* [User group settings](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
 * [Einen Benutzer zu einer Gruppe hinzufügen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Mobile Services-Benutzer
@@ -106,7 +106,7 @@ Diese Rolle verfügt über Leseberechtigungen und kann in der Mobile Services-Be
 
    >[!IMPORTANT]
    >
-   >Benutzer können nur die Report Suites sehen, für die sie in Adobe Analytics Zugriff haben.
+   >Benutzer können nur die Report Suites anzeigen, auf die sie in Adobe Analytics zugreifen können.
 
 * App-Einstellungen anzeigen
 
