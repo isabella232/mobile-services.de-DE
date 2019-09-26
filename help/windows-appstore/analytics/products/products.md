@@ -1,11 +1,11 @@
 ---
 description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt im Server-Aufruf festzulegen.
 seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt im Server-Aufruf festzulegen.
-seo-title: Produktvariable
+seo-title: Products variable
 solution: Marketing Cloud, Analytics
 title: Produktvariable
 topic: Entwickler und Implementierung
-uuid: 2057 a 564-06 ae -4171-bbe 7-0 baffa 71608 b
+uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -46,4 +46,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-Sie müssen die *`products`* Variable nicht mithilfe von Verarbeitungsregeln zuordnen, da sie direkt in der Bildanforderung durch das SDK festgelegt ist.
+You do not need to map the  variable using processing rules since it is set directly on the image request by the SDK.*`products`*
