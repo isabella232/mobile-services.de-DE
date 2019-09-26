@@ -2,7 +2,7 @@
 description: Versionshinweise und bekannte Probleme für iOS-SDKs 4.x für Experience Cloud-Lösungen.
 seo-description: Versionshinweise und bekannte Probleme für iOS-SDKs 4.x für Experience Cloud-Lösungen.
 seo-title: Versionshinweise
-solution: Marketing Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Entwickler und Implementierung
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
