@@ -2,11 +2,11 @@
 description: Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren, einschließlich Datumsbereichsoptionen, Analytics-Segmenten und benutzerdefinierter Segmente.
 keywords: mobile
 seo-description: Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren, einschließlich Datumsbereichsoptionen, Analytics-Segmenten und benutzerdefinierter Segmente.
-seo-title: Zielgruppe definieren und konfigurieren Zielgruppensegmente für Push-Nachrichten
+seo-title: Zielgruppe Definieren und Konfigurieren von Zielgruppensegmenten für Push-Nachrichten
 solution: Marketing Cloud, Analytics
-title: Zielgruppe definieren und konfigurieren Zielgruppensegmente für Push-Nachrichten
+title: Zielgruppe Definieren und Konfigurieren von Zielgruppensegmenten für Push-Nachrichten
 topic: Metriken
-uuid: efd 410 e 7-3 b 6 c -4 cf 4-a 26 f-b 11688 adc 491
+uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 translation-type: tm+mt
 source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 
@@ -19,9 +19,9 @@ Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurier
 
 ## Define audience segments {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-Wenn ein Zielgruppensegment für Push-Messaging erstellt wird, beinhaltet das Segment möglicherweise Benutzer aus einer oder mehreren Apps, da auch Report Suites bzw. Virtual Report Suites Daten aus einer oder mehreren Apps enthalten können. Weitere Informationen zu Virtual Report Suites finden Sie unter [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
+Wenn ein Zielgruppensegment für Push-Messaging erstellt wird, beinhaltet das Segment möglicherweise Benutzer aus einer oder mehreren Apps, da auch Report Suites bzw. Virtual Report Suites Daten aus einer oder mehreren Apps enthalten können. Weitere Informationen zu Virtual Report Suites finden Sie unter [Virtual report suites](/help/using/manage-apps/c-mob-vrs.md).
 
-In Adobe Mobile Services können Marketingexperten Nachrichten an nur eine App pro Plattform pushen. Wenn sie versuchen, die Nachrichten an Segmente zu pushen, die Benutzer aus mehreren Apps enthalten, werden sie per Warnmeldung darüber benachrichtigt, dass das Fortsetzen des Vorgangs schwerwiegende Push-Fehler sowie ein mögliches Blacklisting der Benutzer verursachen kann. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+In Adobe Mobile Services können Marketingexperten Nachrichten an nur eine App pro Plattform pushen. Wenn sie versuchen, die Nachrichten an Segmente zu pushen, die Benutzer aus mehreren Apps enthalten, werden sie per Warnmeldung darüber benachrichtigt, dass das Fortsetzen des Vorgangs schwerwiegende Push-Fehler sowie ein mögliches Blacklisting der Benutzer verursachen kann. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter [Troubleshooting push messaging](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 Informationen zur Verwendung von Audience Manager-Daten in Ihrer Segmentdefinition finden Sie unter [Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
@@ -29,9 +29,9 @@ Informationen zur Verwendung von Audience Manager-Daten in Ihrer Segmentdefiniti
 >
 >If app users are blacklisted, marketers can **never** send push messages to those affected users again.
 
-Wenn Sie ein Zielgruppensegment auswählen, das Benutzer über mehrere Apps enthält, wird möglicherweise die folgende Warnung angezeigt:
+Wenn Sie ein Zielgruppensegment auswählen, das Benutzer aus mehreren Apps enthält, wird möglicherweise die folgende Warnung angezeigt:
 
-![mehrere App-Name](assets/multiple_appname.png)
+![Mehrfachname](assets/multiple_appname.png)
 
 The app name is based on the pared down version of the appId, which is automatically sent to Adobe Analytics by the Mobile Services SDK in the `<app name> <version number> (<bundle id>)` format.
 
@@ -43,16 +43,16 @@ Bis zu sechs Zahlengruppen für die Version und fünf Zahlengruppen für die Bun
 
 Beispiel:
 
-* `Bea[rd]cons 1.0 (123)` erscheint als `Bea[rd]cons`
-* `Bea[rd]cons 1.2 (1.2)` erscheint als `Bea[rd]cons`
-* `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` erscheint als `Bea[rd]cons .7`
-* `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` erscheint als `Bea[rd]cons (.6)`
+* `Bea[rd]cons 1.0 (123)` wird angezeigt als `Bea[rd]cons`
+* `Bea[rd]cons 1.2 (1.2)` will appear as `Bea[rd]cons`
+* `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` wird angezeigt als `Bea[rd]cons .7`
+* `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` will appear as `Bea[rd]cons (.6)`
 
 Um mit dem Senden von Push-Nachrichten an die aufgeführten Apps fortzufahren, aktivieren Sie das Kontrollkästchen **Ja, ich möchte fortfahren** und klicken Sie auf **[!UICONTROL Senden]**.
 
 ## Best Practices
 
-Im Folgenden finden Sie einige bewährte Verfahren zum Speichern:
+Im Folgenden finden Sie einige Best Practices, die Sie sich merken sollten:
 
 * Um unnötige Verwirrung zu vermeiden, definieren Sie **keine** Mobile App Virtual Report Suites, die Daten aus mehreren Apps enthalten.
 * Verwenden Sie **jedes Mal**, wenn Sie eine Push-Nachricht senden möchten, eine eindeutige App-ID als Teil eines Zielgruppensegments.
@@ -68,7 +68,7 @@ Im Folgenden finden Sie einige Beispiele zur richtigen Definition von Segmenten:
 
 ## Configure audience segments {#section_A92C60885A30421B8150820EC1CCBF13}
 
-1. Rufen Sie die Seite Zielgruppe für eine neue Push-Nachricht auf.
+1. Rufen Sie die Seite Zielgruppe auf, um eine neue Push-Nachricht zu erhalten.
 
    For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
@@ -84,13 +84,13 @@ Im Folgenden finden Sie einige Beispiele zur richtigen Definition von Segmenten:
 
       Das bedeutet, dass das SDK für die Push-Teilnehmer-eVar den Wert `True` gesendet hat.
 
-   * Auch wenn das Gerät über ein gültiges Gerätetoken verfügt, es sei denn, Adobe Analytics hat das ausgewählte Flag festgelegt, wird die Nachricht nicht an das Gerät gesendet.
+   * Even though the device has a valid device token, unless Adobe Analytics has set the opted-in flag, the message is not pushed to the device.
 
    * Weitere Informationen zur Fehlerbehebung bei Push-Nachrichten finden Sie unter folgenden Themen:
 
-      * [Push-Nachrichten in ios](https://docs.adobe.com/content/help/en/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [Push messaging in iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
 
-      * [Push-Nachrichten in Android](https://docs.adobe.com/content/help/en/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
+      * [Push messaging in Android](https://docs.adobe.com/content/help/en/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
 
 1. Geben Sie Informationen in folgende Felder ein:
 
