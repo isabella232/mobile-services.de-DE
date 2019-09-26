@@ -5,7 +5,7 @@ seo-title: Variable „products“ mit Merchandising-eVars und produktspezifisch
 solution: Marketing Cloud, Analytics
 title: Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen
 topic: Entwickler und Implementierung
-uuid: f 913211 e -97 ad -4237-bfe 4-7 01295 caf
+uuid: f913211e-97ad-4237-bfe4-7ded01295caf
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -36,5 +36,5 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 >[!TIP]
 >
->Wenn Sie ein produktspezifisches Ereignis mithilfe der *`&&products`* Variablen auslösen, müssen Sie auch das Ereignis in der *`&&events`* Variablen festlegen. Wenn Sie dieses Ereignis nicht festlegen, wird es während der Verarbeitung herausgefiltert.
+>Wenn Sie ein produktspezifisches Ereignis mithilfe der *`&&products`* Variablen auslösen, müssen Sie dieses Ereignis auch in der *`&&events`* Variablen einstellen. Wenn Sie dieses Ereignis nicht festlegen, wird es während der Verarbeitung herausgefiltert.
 
