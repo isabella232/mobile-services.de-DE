@@ -1,12 +1,12 @@
 ---
-description: Der Bericht „Social Sharing“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht ist nur für Digital Publishing Suites (DPS) verfügbar.
+description: Der Bericht „Social Sharing“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht steht nur Kunden von Digital Publishing Suites (DPS) zur Verfügung.
 keywords: mobile
-seo-description: Der Bericht „Social Sharing“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht ist nur für Digital Publishing Suites (DPS) verfügbar.
+seo-description: Der Bericht „Social Sharing“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. This report is available to Digital Publishing Suites (DPS) customers only.
 seo-title: Social Sharing
 solution: Marketing Cloud, Analytics
 title: Social Sharing
 topic: Metriken
-uuid: 900 e 58 aa-c 1 d 3-4590-af 44-df 75775214 a 4
+uuid: 900e58aa-c1d3-4590-af44-df67575214a4
 translation-type: tm+mt
 source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
 
