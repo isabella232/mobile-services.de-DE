@@ -5,7 +5,7 @@ seo-title: App-IDs
 solution: Marketing Cloud, Analytics
 title: App-IDs
 topic: Entwickler und Implementierung
-uuid: 24 ebc 716-23 c 7-4 ee 8-8256-b 534210367 e 0
+uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
 translation-type: tm+mt
 source-git-commit: 0e22d5e080b680ff6b23462f1bc12f27d99e6d42
 
