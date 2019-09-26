@@ -5,7 +5,7 @@ seo-title: Analytics
 solution: Marketing Cloud, Analytics
 title: Analytics
 topic: Entwickler und Implementierung
-uuid: fa 0 ef 6 c 4-c 04 d -4695-9 eb 4-ada 4 e 9920 e 6 c
+uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,11 +14,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Analytics {#analytics}
 
-Nachdem Sie die Bibliothek zum Projekt hinzugefügt haben, können Sie beliebige Analytics-Methodenaufrufe an beliebigen Stellen in Ihrer App vornehmen.
+Nachdem Sie die Bibliothek zum Projekt hinzugefügt haben, können Sie beliebige Analytics-Methodenaufrufe an beliebigen Stellen in Ihrer App durchführen.
 
 >[!TIP]
 >
->Stellen Sie sicher, dass Sie in `ADBMobile.h` Ihre Klasse importiert werden.
+>Stellen Sie sicher, dass Sie `ADBMobile.h` in Ihre Klasse importieren.
 
 ## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
@@ -48,7 +48,7 @@ Regelmäßig werden neue Versionen der Mobilanwendungs-Berichterstellung veröff
 Um Lebenszyklusmetriken in Ihrer Anwendung zu erfassen, fügen Sie Aufrufe bei Aktivierung der Anwendung hinzu, wie in den folgenden Beispielen gezeigt.
 
 
-### Winjs in default. js
+### WinJS in default.js
 
 
 ```js
@@ -64,7 +64,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### C # in App. xaml. cs
+### C# in App.xaml.cs
 
 ```js
 public App() 
@@ -93,7 +93,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 }
 ```
 
-### C/CX in App. xaml. cpp
+### C/CX in App.xaml.cpp
 
 ```js
 App::App() 
@@ -128,7 +128,7 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 ## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-Wenn Sie sich die [adbmobile-Klassen- und Methodenreferenz](/help/windows-appstore/c-configuration/methods.md)angesehen haben, stellen Sie sicher, wo Sie Ereignisse, evars, Props, Höhen und Listen festlegen. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer Anwendung zuweisen. Stattdessen nutzt das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
+Wenn Sie sich die [ADBMobile-Klassen- und Methodenreferenz](/help/windows-appstore/c-configuration/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignisse, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer Anwendung zuweisen. Stattdessen nutzt das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
 
 Verarbeitungsregeln bieten mehrere Vorteile:
 
@@ -147,7 +147,7 @@ Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten
 
 [Übersicht über Verarbeitungsregeln](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Autorisierung zur Verwendung von Verarbeitungsregeln](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Genehmigung zur Verwendung von Verarbeitungsregeln erhalten](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
 Es ist empfehlenswert, die Kontextdatenvariablen mithilfe von „Namespaces“ zu gruppieren, um eine logische Ordnung beizubehalten. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
 
@@ -185,15 +185,15 @@ Kontextdatenvariablen, die Inkrementierungsereignisse definieren, können den We
 
 >[!NOTE]
 >
->Adobe behält sich den Namespace `a.`vor. Neben dieser kleinen Einschränkung müssen Kontextvariablen nur eindeutig für Ihre Unternehmensanmeldung sein, um Konflikte zu vermeiden.
+>Adobe behält den Namespace `a.`. Neben dieser kleinen Einschränkung müssen Kontextvariablen nur eindeutig für Ihre Unternehmensanmeldung sein, um Konflikte zu vermeiden.
 
 ## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Sie müssen eine spezielle Syntax verwenden, um *`products`* im mobilen SDK festzulegen. Siehe [Produktvariable](/help/windows-appstore/analytics/products/products.md).
+Um *`products`* das mobile SDK festzulegen, müssen Sie eine spezielle Syntax verwenden. Siehe [Produktvariable](/help/windows-appstore/analytics/products/products.md).
 
 ## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). Bevor Sie Offline-Verfolgung aktivieren, achten Sie auf die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben werden.
+To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). Bevor Sie die Offline-Verfolgung aktivieren, beachten Sie die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben sind.
 
 ## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
 
