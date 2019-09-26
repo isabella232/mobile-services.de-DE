@@ -3,7 +3,7 @@ description: Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um mit dem Eins
 seo-description: Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um mit dem Einsatz der Experience Cloud-Gerätekooperation zu beginnen.
 seo-title: Experience Cloud-Gerätekooperation
 title: Experience Cloud-Gerätekooperation
-uuid: 7 bb 8 a 19 c -4 b 80-4911-879 d-f 9941 baa 3 b 62
+uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,15 +24,15 @@ Ab SDK-Version 4.16.1 können Teilnehmer an der Gerätekooperation die Daten ihr
 
 1. Adobe Mobile-SDK implementieren.
 
-   Weitere Informationen finden Sie unter [Core-Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
+   For more information, see Core Implementation and Lifecycle.[](/help/android/getting-started/dev-qs.md)
 1. Aktivieren Sie Ihre Experience Cloud ID.
 
    For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
 1. Geben Sie authentifizierte IDs, beispielsweise CRM-IDs oder E-Mails mit Hash, mithilfe einer der Synchronisierungsmethoden weiter.
 
-   Weitere Informationen finden Sie unter [Adobe Experience Platform Identity Service Methods](/help/android/c-marketing-cloud/mc-methods.md).
+   For more information, see Adobe Experience Platform Identity Service Methods.[](/help/android/c-marketing-cloud/mc-methods.md)
 
-## `coopUnsafe` Flag
+## `coopUnsafe` flag
 
 Hier sind einige zusätzliche Informationen über die `coopUnsafe`-Markierung:
 
