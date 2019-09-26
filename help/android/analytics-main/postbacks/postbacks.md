@@ -1,12 +1,12 @@
 ---
 description: Mit Postbacks können Sie vom SDK erfasste Daten an einen Drittanbieterserver senden. Mit denselben Auslösern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie das SDK so konfigurieren, dass es benutzerdefinierte Daten an ein Drittanbieterziel sendet.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Mit Postbacks können Sie vom SDK erfasste Daten an einen Drittanbieterserver senden. Mit denselben Auslösern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie das SDK so konfigurieren, dass es benutzerdefinierte Daten an ein Drittanbieterziel sendet.
 seo-title: Postbacks
 solution: Marketing Cloud, Analytics
 title: Übersicht über Postbacks
 topic: Entwickler und Implementierung
-uuid: 8 bfd 4374-2767-421 d -891 d-e 1 e 9 a 99 b 977
+uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
 translation-type: tm+mt
 source-git-commit: f26dcd5cf9b19de49c9d034c854d9738c7843fb2
 
@@ -19,7 +19,7 @@ Mit Postbacks können Sie vom SDK erfasste Daten an einen Drittanbieterserver se
 
 >[!IMPORTANT]
 >
->Für diese Funktion ist SDK Version 4.6.0 oder höher erforderlich.
+>This functionality requires SDK version 4.6.0 or later.
 
 Postback-Nachrichten werden in die Warteschlange versetzt und folgen allen vorhandenen Online-/Offline-Regeln, die die Analytics-Datenerfassung regeln. Wenn eine Nachricht übereinstimmt (wie die gezeigten Nachrichten), brechen Postback-Nachrichten die übrigen Nachrichten nicht ab. Dies ermöglicht mehrere Postbacks beim selben Analytics-Treffer. Eine Definition finden Sie in der Zeile *Postbacks* unter [ADBMobile-JSON-Konfiguration](/help/android/configuration/json-config/json-config.md).
 
