@@ -4,16 +4,16 @@ keywords: mobile
 seo-description: Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 seo-title: Fehlerbehebung bei Push-Nachrichten
 solution: Marketing Cloud, Analytics
-title: Fehlerbehebung bei Push-Nachrichten
+title: Troubleshoot Push Messaging
 topic: Metriken
-uuid: 9 c 4 a 9371-6691-4 a 2 c-a 6 c 1-b 9 f 901 a 41599
+uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 translation-type: tm+mt
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# Fehlerbehebung bei Push-Nachrichten {#troubleshooting-push-messaging}
+# Troubleshoot push messaging {#troubleshooting-push-messaging}
 
 Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 
@@ -36,7 +36,7 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
    Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie in der entsprechenden Dokumentation:
 
    * **APNS**: [Servicequalität](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**: [Lebensdauer einer Nachricht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   * **FCM: Lifetime of a Message**[](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Warum werden meine Push-Nachrichten abgeschnitten oder erweitern sich nicht?
 
