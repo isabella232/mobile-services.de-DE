@@ -6,7 +6,7 @@ seo-title: Landkarte
 solution: Marketing Cloud, Analytics
 title: Landkarte
 topic: Metriken
-uuid: 3 c 271738-eb 8 d -4 c 26-baaf -54 b 247 bfc 4 da
+uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -15,11 +15,11 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 # Landkarte {#map}
 
-Sie können eine interaktive Map anzeigen, die Ihren POI und andere Datenmarkierungen anzeigt.
+Sie können eine interaktive Karte anzeigen, auf der Ihr POI und andere Datenmarkierungen angezeigt werden.
 
 ![](assets/map.png)
 
-Beachten Sie hier einige wichtige Informationen:
+Im Folgenden finden Sie einige wichtige Informationen:
 
 * Sie können die Größe der Karte erhöhen oder verringern.
 
@@ -34,8 +34,7 @@ Click ![layers](assets/map_layers.png) to select the following options:
 
    Zum Anzeigen einer einfachen Karte.
 
-* **[!UICONTROL Satellite]**
-Zeigt die Map im Satellitenmodus an.
+* **[!UICONTROL Satellite]** Karte im Satellitenmodus anzeigen.
 
 * **[!UICONTROL Datenmarkierungen]**
 
@@ -61,7 +60,7 @@ Für diesen Bericht können folgende Optionen konfiguriert werden:
 
 * **[!UICONTROL Filter]**
 
-   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter [fixierbaren Filter hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Download]**
 
