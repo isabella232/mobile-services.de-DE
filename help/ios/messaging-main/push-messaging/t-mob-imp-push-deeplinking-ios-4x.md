@@ -3,7 +3,7 @@ description: Nachdem Sie die Deep-Link-URL in der Adobe Mobile Services-Benutzer
 seo-description: Nachdem Sie die Deep-Link-URL in der Adobe Mobile Services-Benutzeroberfläche konfiguriert haben, befindet sich diese URL in der Push-Payload mit dem Schlüssel „adb_deeplink“.
 seo-title: Push-Nachrichten mit Deep-Links implementieren
 title: Push-Nachrichten mit Deep-Links implementieren
-uuid: ee 9590 fc -8 bd 3-4111-9221-9011 d 9 edbd 84
+uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
