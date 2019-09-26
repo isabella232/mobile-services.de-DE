@@ -5,7 +5,7 @@ seo-title: Video-Analytics
 solution: Marketing Cloud, Analytics
 title: Video-Analytics
 topic: Entwickler und Implementierung
-uuid: f 45 dac 3 b-cd 2 e -4 fba-a 3 b 2-c 243640 ecfa 4
+uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 translation-type: tm+mt
 source-git-commit: 1c0b7dadc28f772e903baa8605016e70f05081d7
 
@@ -18,7 +18,7 @@ Informationen, die Ihnen bei Video-Analytics helfen.
 
 Video measurement is described in detail in the [Measuring video and audio in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide. Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Schnellstart-Abschnitt bietet eine grundlegende Übersicht über die Aufgaben für Entwickler sowie einige Codebeispiele.
 
-In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten einer Analytics-Variable zuzuordnen.
+In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Use processing rules to map the context data to an Analytics variable.
 
 * **a.media.name**
 
@@ -26,7 +26,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (**Optional**) Die Variable „Benutzerspezifischer Insight-Bericht “ bietet Informationen für die Videopfadgebung.
 
-   * Variablentyp: Evar
+   * Variable type: eVar
    * Standardgültigkeit: Besuch
    * Benutzerspezifischer Insight-Bericht (s.prop, wird zur Videopfadsetzung verwendet)
 
@@ -35,7 +35,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
    (**Optional**) Bietet Informationen zur Videopfadsetzung. Die Pfadgebung für diese Variable muss von ClientCare aktiviert werden.
 
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop).
-   * Variablentyp: Custom Insight (s. prop)
+   * Variablentyp: Custom Insight (s.prop)
 
 * **a.media.segment**
 
@@ -45,7 +45,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    Bei der Standardmethode zur Videodatenerfassung werden Daten an den folgenden Punkten erfasst: Videostart (play), Segmentbeginn und Videoende (stop). Analytics zeichnet die erste Segmentansicht am Anfang des Segments auf, wenn der Besucher die Wiedergabe startet. Nachfolgende Segmentansichten werden aufgezeichnet, wenn das jeweilige Segment anfängt.
 
-   * Variablentyp: Evar
+   * Variable type: eVar
    * Standardgültigkeit: Seitenansicht
 
 * **a.contentType**
@@ -54,7 +54,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
 
-   * Variablentyp: Evar
+   * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
 
 * **a.media.timePlayed**
@@ -68,21 +68,21 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    Gibt an, dass ein Besucher einen Teil eines Videos betrachtet hat. Es werden aber keine Informationen zu der Länge oder dem Ausschnitt eines vom Besucher angesehenen Videos bereitgestellt.
 
-   * Variablentyp: Ereignis
+   * Variable type: Event
    * Typ: Zähler
 
 * **a.media.segmentView**
 
    Gibt an, dass ein Besucher einen Teil eines Videosegments betrachtet hat. Es werden aber keine Informationen zu der Länge oder dem Ausschnitt eines vom Besucher angesehenen Videos bereitgestellt.
 
-   * Variablentyp: Ereignis
+   * Variable type: Event
    * Typ: Zähler
 
 * **a .media.complete**
 
    Gibt an, dass ein Besucher ein Video vollständig angesehen hat. Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen. Bei der Implementierung können Sie festlegen, wie viele Sekunden vor dem Ende des Videos eine Ansicht als vollständig betrachtet werden soll. Bei Live-Videos und anderen Streams ohne definiertes Ende können Sie einen eigenen Punkt angeben, an dem Beendigungen gemessen werden sollen (z. B. nach einer bestimmten Wiedergabedauer).
 
-   * Variablentyp: Ereignis
+   * Variable type: Event
    * Typ: Zähler
 
 ## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
@@ -124,7 +124,7 @@ property bool isMediaAd;
 
 ### Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-* **Settingswith (winjs: Settingswith)**
+* **SettingsWith (winJS: settingsWith)**
 
    Gibt ein `MediaSettings`-Objekt mit den angegebenen Parametern zurück.
 
@@ -140,7 +140,7 @@ property bool isMediaAd;
       var  mySettings  =  ADB.Media.settingsWith("name", 10,  "playerName", "playerId"); 
       ```
 
-* **Adsettingswith (winjs: Adsettingswith)**
+* **AdSettingsWith (winJS: adSettingsWith)**
 
    Gibt ein `MediaSettings`-Objekt zur Verfolgung einer Videoanzeige zurück.
 
@@ -156,7 +156,7 @@ property bool isMediaAd;
       var  myAdSettings = ADB.Media.adSettingsWith("name", 10,  "playerName", "parentName", "parentPod", 5, "myCPM");
       ```
 
-* **Open (winjs: open)**
+* **Open (winJS: open)**
 
    Tracks a media open using the settings defined in `settings`.
 
@@ -172,7 +172,7 @@ property bool isMediaAd;
       ADB.Media.open(mySettings);
       ```
 
-* **Schließen (winjs: close)**
+* **Close (winJS: close)**
 
    Tracks a media close for the media item named *`name`*.
 
@@ -188,7 +188,7 @@ property bool isMediaAd;
       ADB.Media.close("mediaName"); 
       ```
 
-* **Play (winjs: play)**
+* **Play (winJS: play)**
 
    Verfolgt die Wiedergabe des in *`name`* genannten Mediums mit dem in *offset* (in Sekunden) angegebenen Versatz.
 
@@ -204,7 +204,7 @@ property bool isMediaAd;
       ADB.Media.play("mediaName",  0);
       ```
 
-* **Abgeschlossen (winjs: complete)**
+* **Complete (winJS: complete)**
 
    Kennzeichnet das Medienelement am angegebenen *offset* (in Sekunden) als abgeschlossen.
 
@@ -220,7 +220,7 @@ property bool isMediaAd;
       ADB.Media.complete("mediaName", 8);
       ```
 
-* **Stopp (winjs: stop)**
+* **Stopp (winJS: stop)**
 
    Benachrichtigt das Medienmodul darüber, dass das Video mit dem Versatz *Offset* beendet oder angehalten wurde.
 
@@ -236,7 +236,7 @@ property bool isMediaAd;
       ADB.Media.stop("mediaName",  4);
       ```
 
-* **Klicken Sie (winjs: Klicken)**
+* **Klicken (winJS: click)**
 
    Benachrichtigt das Medienmodul darüber, dass das Medienelement angeklickt wurde.
 
@@ -252,7 +252,7 @@ property bool isMediaAd;
       ADB.Media.click("mediaName",  3); 
       ```
 
-* **Track (winjs: track)**
+* **Track (winJS: track)**
 
    Sendet einen Verfolgungsaktionsaufruf (keine Seitenansicht) für den aktuellen Medienstatus.
 
