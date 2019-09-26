@@ -1,12 +1,12 @@
 ---
-description: Der Bericht „Bannermetriken“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht steht nur für Digital Publishing Suite (DPS)-Kunden zur Verfügung.
+description: Der Bericht „Bannermetriken“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht steht nur Kunden der Digital Publishing Suite (DPS) zur Verfügung.
 keywords: mobile
-seo-description: Der Bericht „Bannermetriken“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht steht nur für Digital Publishing Suite (DPS)-Kunden zur Verfügung.
+seo-description: Der Bericht „Bannermetriken“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. This report is only available to Digital Publishing Suite (DPS) customers.
 seo-title: Bannermetriken
 solution: Marketing Cloud, Analytics
 title: Bannermetriken
 topic: Metriken
-uuid: 50638 c 55-f 10 d -43 d 7-8 d 12-e 48908572766
+uuid: 50638c55-f10d-43d7-8d12-e48908572766
 translation-type: tm+mt
 source-git-commit: 7f53ece867144236f170533d8474dada4c29ad39
 
@@ -15,7 +15,7 @@ source-git-commit: 7f53ece867144236f170533d8474dada4c29ad39
 
 # Bannermetriken {#banner-metrics}
 
-Der Bericht „**[!UICONTROL Bannermetriken]“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten.** Dieser Bericht steht nur für Digital Publishing Suite (DPS)-Kunden zur Verfügung.
+Der Bericht „**[!UICONTROL Bannermetriken]“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten.** This report is only available to Digital Publishing Suite (DPS) customers.
 
 ![](assets/dps_banner_name.png)
 
@@ -23,7 +23,7 @@ Standardmäßig enthält dieser Bericht folgende Metriken:
 
 * **[!UICONTROL Banner Name:]** Name des Banners.
 * **[!UICONTROL Leser:]** Anzahl der App-Benutzer.
-* **[!UICONTROL Instanzen des Bannernamens]**, d. h. wie oft das Banner durch Klicks und Impressionen referenziert wurde.
+* **[!UICONTROL Banner Name Instances, which is the number of times the banner was referenced through clicks and impressions.]**
 * **[!UICONTROL BannerClick:]** Häufigkeit, mit der Benutzer auf das Banner geklickt haben.
 * **[!UICONTROL BannerImpressionen:]** Häufigkeit, mit der das Banner auf einer Browserseite angezeigt wurde (oder sichtbar war).
 
