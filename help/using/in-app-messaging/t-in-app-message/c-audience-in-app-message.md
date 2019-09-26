@@ -2,11 +2,11 @@
 description: Sie können Zielgruppenoptionen für In-App-Nachrichten konfigurieren, einschließlich der Anzeige-, Auslöse- und Eigenschaftsoptionen.
 keywords: mobile
 seo-description: Sie können Zielgruppenoptionen für In-App-Nachrichten konfigurieren, einschließlich der Anzeige-, Auslöse- und Eigenschaftsoptionen.
-seo-title: Zielgruppe In-App-Nachricht
+seo-title: Audience  In-App Message
 solution: Marketing Cloud, Analytics
-title: Zielgruppe In-App-Nachricht
+title: Audience  In-App Message
 topic: Metriken
-uuid: 6 c 815 d 4 c -7626-4 cf 4-9158-3 f 059 c 79317 a
+uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -41,10 +41,9 @@ Sie können Zielgruppenoptionen für In-App-Nachrichten konfigurieren, einschlie
 
       >[!IMPORTANT]
       >
-      >Wenn Sie mehrere Auslöser auswählen, müssen alle Auslöser für die Anzeige im selben Treffer auftreten.
+      >Wenn Sie mehrere Auslöser auswählen, müssen alle Auslöser bei demselben Treffer auftreten, damit die Nachricht angezeigt wird.
 
-   * **[!UICONTROL Eigenschaften]**
-Sie können festlegen, wer die In-App-Nachricht beim Auslösen und Filtern (Segment) für Treffer anzeigen sollte, die bestimmte Daten enthalten. Sie können z. B. eine Regel definieren, bei der Zielpunkte den Begriff „Berlin“ enthalten sollen. Mit diesem Filter wird die Nachricht nur Kunden angezeigt, die sich zur Auslösezeit an einem Ihrer Zielpunkte befinden, die den Begriff „Berlin“ im Namen enthalten.
+   * **[!UICONTROL Eigenschaften]**: Sie können festlegen, wer die In-App-Nachricht sehen soll, wenn sie ausgelöst wird, und die Zielgruppe auf Treffer mit bestimmten Daten filtern (segmentieren). Sie können z. B. eine Regel definieren, bei der Zielpunkte den Begriff „Berlin“ enthalten sollen. Mit diesem Filter wird die Nachricht nur Kunden angezeigt, die sich zur Auslösezeit an einem Ihrer Zielpunkte befinden, die den Begriff „Berlin“ im Namen enthalten.
 
 
 
@@ -64,9 +63,9 @@ Nachdem Sie die Zuordnung validiert haben, wählen Sie den passenden Matcher ode
 
 ### Selecting metrics and variables {#example_AB126F03BD1C4094B791E230B3DB1189}
 
-![Auslöseroptionen](assets/custom_trigger_matcher_options.png)
+![trigger options](assets/custom_trigger_matcher_options.png)
 
-Anhand der folgenden Szenarios können Sie bestimmen, ob eine Metrik oder eine Variable als Auslöser ausgewählt werden soll:
+Die folgenden Szenarien helfen Ihnen bei der Auswahl einer Metrik oder einer Variablen als Auslöser:
 
 ### Metriken
 
