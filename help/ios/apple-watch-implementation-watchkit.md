@@ -5,7 +5,7 @@ seo-title: Apple Watch-Implementierungen mit WatchOS 2
 solution: Marketing Cloud, Analytics
 title: Apple Watch-Implementierungen mit WatchOS 2
 topic: Entwickler und Implementierung
-uuid: 9498467 e-db 5 e -411 e-a 00 e-d 19841 f 485 de
+uuid: 9498467e-db5e-411e-a00e-d19841f485de
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,17 +14,17 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Apple Watch implementation with WatchOS 2{#apple-watch-implementation-with-watchos}
 
-Ab watchos 2 können Ihre watchkit-Erweiterungen auf einer Apple Watch ausgeführt werden. Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
+Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
 
 >[!TIP]
 >
->Wird ab `AdobeMobileLibrary` Version 4.6.0 `WatchConnectivity` unterstützt.
+>Ab `AdobeMobileLibrary` Version 4.6.0 wird `WatchConnectivity` unterstützt.
 
 ## Erste Schritte {#section_70BC28BB69414F169196953D3D264BC1}
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie ein Projekt mit mindestens folgenden Zielen haben:
+>Vergewissern Sie sich, dass Sie über ein Projekt mit mindestens den folgenden Zielen verfügen:
 >
 >* die übergeordnete App.
 >* die WatchKit-App.
@@ -35,7 +35,7 @@ Ab watchos 2 können Ihre watchkit-Erweiterungen auf einer Apple Watch ausgefüh
 
 Weitere Informationen zum Entwickeln von WatchKit-Apps finden Sie im Artikel zur [Watch-App-Architektur](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1).
 
-## Die enthaltende App konfigurieren {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
+## Konfigurieren der zugehörigen App {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
 Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus:
 
@@ -90,7 +90,7 @@ Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus:
    } 
    ```
 
-## Konfigurieren der watchkit-Erweiterung {#section_5ADE31741E514330A381F2E3CFD4A814}
+## WatchKit-Erweiterung konfigurieren {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of your WatchKit extension’s target.
 1. Blenden Sie auf der Registerkarte **[!UICONTROL Build-Phasen]** des Ziels Ihrer WatchKit-Erweiterung den Abschnitt **Binärdatei mit Bibliotheken verknüpfen]ein und fügen Sie die folgenden Bibliotheken hinzu:[!UICONTROL **
