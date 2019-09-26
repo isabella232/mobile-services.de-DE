@@ -5,7 +5,7 @@ seo-title: Besucherverfolgung zwischen einer App und dem mobilen Internet
 solution: Marketing Cloud, Analytics
 title: Besucherverfolgung zwischen einer App und dem mobilen Internet
 topic: Entwickler und Implementierung
-uuid: 2 d 951 de 6-3954-4379-a 4 ff -99 b 695 b 9869
+uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 translation-type: tm+mt
 source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
@@ -22,19 +22,19 @@ Das iOS-SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird. Di
 
 >[!TIP]
 >
->App-Besucher-IDs bleiben über Upgrades erhalten.
+>App-Besucher-IDs werden durch Aktualisierungen beibehalten.
 
 ## Besucher-IDs im mobilen Web
 
 Typische Implementierungen des mobilen Webs nutzen dieselben standardmäßigen Analytics-Dateien `s_code.js` oder `AppMeasurement.js`, die auch bei Desktop-Sites verwendet werden. Die JavaScript-Bibliotheken besitzen ihre eigenen Methoden zum Generieren von Unique Visitor-IDs, wodurch eine unterschiedliche Besucher-ID generiert werden muss, wenn Sie mobile Webinhalte über Ihre App öffnen.
 
-So verwenden Sie dieselbe Besucher-ID in der App und im mobilen Web und übermitteln die App-Besucher-ID an das mobile Web in der URL:
+So verwenden Sie dieselbe Besucher-ID in der App und im mobilen Web und geben die App-Besucher-ID in der URL an das mobile Web weiter:
 
 ## Implement visitor tracking between an app and mobile web {#section_EDC91D6C67AD43999227707C2769C65D}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden *Sie unter SDK und Config File to your Project* in [Core Implementation and Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrem Projekt* in [Kernimplementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md)hinzufügen.
 1. Um Besucherinformationen an die URL anzuhängen, die zum Öffnen der Webansicht verwendet wird, rufen Sie `visitorAppendToURL` auf:
 
    ```objective-c
@@ -60,7 +60,7 @@ Der ID-Dienstcode auf der Zieldomäne extrahiert die MID aus der URL, statt bei 
 
 Überprüfen Sie für Treffer aus dem mobilen Webinhalt, ob der Parameter `mid` bei jedem Treffer vorhanden ist und ob dieser Wert mit dem Parameter `mid` übereinstimmt, der durch den App-Code gesendet wird.
 
-## Fehlerbehebung bei der Besucherverfolgung {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
+## Troubleshoot visitor tracking {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
 
 ### I do not see `[ADBMobile visitorAppendToURL:]`.
 
