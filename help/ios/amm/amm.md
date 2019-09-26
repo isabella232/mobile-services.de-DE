@@ -7,7 +7,7 @@ title: Audience Manager
 topic: Entwickler und Implementierung
 uuid: a1f86814-6b1e-4fe1-9400-f443b92405f1
 translation-type: tm+mt
-source-git-commit: 6ea2d461fb6a79a2a23da0e33873736910a10fbd
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
@@ -16,4 +16,12 @@ source-git-commit: 6ea2d461fb6a79a2a23da0e33873736910a10fbd
 
 Diese Informationen helfen Ihnen beim Senden von Signalen und Empfangen von Besuchersegmenten über Audience Manager.
 
-* [Audience Manager-Methoden](/help/ios/amm/aam-methods.md)
+## New Adobe Experience Platform Mobile SDK Release
+
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
+
+* To get started, go to Adobe Experience Platform Launch.
+* Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
+
