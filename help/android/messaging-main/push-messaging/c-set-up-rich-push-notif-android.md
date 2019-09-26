@@ -3,7 +3,7 @@ description: Sie können Grafikdateien an Ihre Android-Benachrichtigungen anhän
 seo-description: Sie können Grafikdateien an Ihre Android-Benachrichtigungen anhängen. Die visuelle Komponente kann das Benutzerinteresse an Push-Benachrichtigungen deutlich erhöhen.
 seo-title: Multimediale Push-Benachrichtigungen empfangen
 title: Multimediale Push-Benachrichtigungen empfangen
-uuid: 4 a 0340 a 6-666 b -49 b 6-907 a -9 afc 966 dfdba
+uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
 translation-type: tm+mt
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
 
@@ -30,7 +30,7 @@ Wenn die App im Vordergrund ausgeführt wird, wird die Push-Nachricht von der Ap
 
 >[!IMPORTANT]
 >
->Die Klasse, die die `onMessageReceived()` Implementierung enthält, verarbeitet die empfangenen Daten.
+>The class that contains the  implementation handles the data that is received.`onMessageReceived()`
 
 If the push message contains a Media URL, the URL will be available in the `RemoteMessage` parameter that is passed to the `onMessageReceived()` function. Verwenden Sie den Schlüssel `attachment-url`, wie im folgenden Codebeispiel veranschaulicht:
 
