@@ -6,7 +6,7 @@ seo-title: App aus einem Appstore hinzufügen
 solution: Marketing Cloud, Analytics
 title: App aus einem Appstore hinzufügen
 topic: Metriken
-uuid: 94 c 8 a 924-5156-4742-8 b 5 b -88 d 9 ea 13 bdp
+uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -21,9 +21,9 @@ Sie können eine App aus dem Apple App Store oder aus Google Play hinzufügen.
 
    * Melden Sie sich bei AMS an (Adobe Mobile Services) und klicken Sie auf **[!UICONTROL Neu erstellen]**.
 
-      Weitere Informationen zur Anmeldung bei der Mobile Services-Benutzeroberfläche finden Sie unter [Anmelden](/help/using/gs/gs-signin.md).
+      For more information about signing in to the Mobile Services UI, see Sign in.[](/help/using/gs/gs-signin.md)
 
-   * Klicken Sie zum Hinzufügen von Apps im linken Navigationsmenü auf Apps **[!UICONTROL verwalten]** und dann **[!UICONTROL auf Hinzufügen]**.
+   * To add apps, in the left navigation menu, click Manage Apps and click Add.********
 
 1. Click **[!UICONTROL Add App Store App]**.
 1. Führen Sie die folgenden Aufgaben durch:
@@ -31,9 +31,9 @@ Sie können eine App aus dem Apple App Store oder aus Google Play hinzufügen.
    * Wählen Sie einen Appstore aus:
       * **[!UICONTROL Apple App Store]**
       * **[!UICONTROL Google Play]**
-   * Suchen Sie nach dem App Store-Namen und wählen Sie die App aus.
+   * Search by app store name and select the app.
 
-      Sie können eine Vorschau der Informationen über die ausgewählte App anzeigen, wodurch Sie feststellen können, ob Sie die richtige App ausgewählt haben.
+      Sie können Informationen zur ausgewählten App in der Vorschau anzeigen, um festzustellen, ob Sie die richtige App ausgewählt haben.
 
    * Geben Sie die App-ID ein.
 
