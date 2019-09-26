@@ -6,7 +6,7 @@ seo-title: Neue App hinzufügen
 solution: Marketing Cloud, Analytics
 title: Neue App hinzufügen
 topic: Metriken
-uuid: 706 b 5 e 4 d -1318-4 a 9 e -8 c 69-ffabf 51 fa 02 c
+uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -26,7 +26,7 @@ Bevor Sie Ihre App konfigurieren können, müssen Sie sie in der Adobe Mobile Se
    * Klicken Sie auf **[!UICONTROL Neu erstellen], um die App zu erstellen.**
    * Um weitere Apps hinzuzufügen, klicken Sie im linken Navigationsmenü auf Apps verwalten und dann auf **[!UICONTROL Hinzufügen]**.
 
-      Weitere Informationen zur Anmeldung finden Sie unter [Anmelden](/help/using/gs/gs-signin.md).
+      For more information about signing in, see Sign in.[](/help/using/gs/gs-signin.md)
 
       >[!TIP]
       >
@@ -42,11 +42,11 @@ Bevor Sie Ihre App konfigurieren können, müssen Sie sie in der Adobe Mobile Se
 
    * **[!UICONTROL Report Suite-ID]**
 
-      Diese ID identifiziert die Report Suite in Adobe Analytics eindeutig. Ihr Unternehmenspräfix wird automatisch am Anfang der ID hinzugefügt.
+      This ID uniquely identifies the report suite in Adobe Analytics. Ihr Unternehmenspräfix wird automatisch am Anfang der ID hinzugefügt.
 
-   * **[!UICONTROL Einstellungen kopieren von]**
+   * **[!UICONTROL Einstellungen kopieren aus]**
 
-      Die Variablen, Ereignisse, Verarbeitungsregeln und andere Einstellungen werden in der neuen Report Suite genau so wie in dieser Report Suite eingerichtet. Eine in Mobile Services erstellte Report Suite ist nur dann für die Offline-Verwendung aktiviert (bzw. mit einem Zeitstempel versehen), wenn für die Report Suite, von der die **Einstellungen kopiert wurden**, die „Vorlage für mobile App“ verwendet wurde.
+      The variables, events, processing rules, and other settings are set up in the new report suite exactly like they are in this report suite. Eine in Mobile Services erstellte Report Suite ist nur dann für die Offline-Verwendung aktiviert (bzw. mit einem Zeitstempel versehen), wenn für die Report Suite, von der die **Einstellungen kopiert wurden**, die „Vorlage für mobile App“ verwendet wurde.
 
    * **[!UICONTROL Zeitzone]**
 
@@ -54,10 +54,10 @@ Bevor Sie Ihre App konfigurieren können, müssen Sie sie in der Adobe Mobile Se
 
    * **[!UICONTROL Währung]**
 
-      Der Umsatz wird als dieser Währungstyp verfolgt und gemeldet.
+      Revenue is tracked and reported as this type of currency.
    >[!TIP]
    >
-   >Informationen zur Verwendung einer Virtual Report Suite (VRS) finden Sie unter [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
+   >Informationen zum Verwenden einer Virtual Report Suite (VRS) finden Sie unter [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
 
    * **[!UICONTROL Symbol]**
 
@@ -65,7 +65,7 @@ Bevor Sie Ihre App konfigurieren können, müssen Sie sie in der Adobe Mobile Se
 
    * **[!UICONTROL Name]**
 
-      (**Optional**) Type a descriptive name for the app. Mit diesem Namen können Sie schnell eine App suchen und ein aussagekräftiger Name kann Ihnen dabei helfen, den Zweck und die Einstellungen der App schnell zu verstehen.
+      (**Optional**) Type a descriptive name for the app. Dieser Name hilft Ihnen beim schnellen Auffinden einer App. Ein aussagekräftiger Name hilft Ihnen, schnell den Zweck und die Einstellungen der App zu verstehen.
 
    * **[!UICONTROL Typ]**
 
@@ -77,7 +77,7 @@ Bevor Sie Ihre App konfigurieren können, müssen Sie sie in der Adobe Mobile Se
 
          You can leave the **[!UICONTROL Standard}** option selected for most apps.
 
-      * **[!UICONTROL Veröffentlichung]**
+      * **[!UICONTROL Publication]**
 
          Wählen Sie diese Option aus, wenn Ihre App mithilfe der Adobe Digital Publishing Suite erstellt wurde.
 
