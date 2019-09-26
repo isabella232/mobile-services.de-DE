@@ -1,21 +1,21 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Verwendung des Android-SDK mit Adobe Analytics.
-keywords: android; library; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Diese Informationen helfen Ihnen bei der Verwendung des Android-SDK mit Adobe Analytics.
-seo-title: Analytics-Übersicht
+seo-title: Analytics overview
 solution: Marketing Cloud, Analytics
-title: Analytics-Übersicht
+title: Überblick über Analytics
 topic: Entwickler und Implementierung
-uuid: cc 9 fa 1 d 9-bc 48-4 d 03-854 a-f 7 b 263580 a 91
+uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Analytics-Übersicht {#analytics}
+# Überblick über Analytics {#analytics}
 
-Die Informationen in diesem Abschnitt unterstützen Sie bei der Verwendung des Android SDK mit Adobe Analytics.
+Die Informationen in diesem Abschnitt unterstützen Sie bei der Verwendung des Android-SDK mit Adobe Analytics.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -38,7 +38,7 @@ In den SDKs werden Identifikatoren verwendet, um Anwender zu verfolgen, und hier
 
 >[!TIP]
 >
->Der richtige Akronym für Experience Cloud Identifier ist ECID. Obwohl die SDKs immer noch MID verwenden, ist dies der alte Name.
+>Die korrekte Abkürzung für Experience Cloud Identifier lautet ECID. Obwohl die SDKs immer noch MID verwenden, ist dies der alte Name.
 
 Die AID, die manchmal auch als Tracking Identifier bezeichnet wird, wird vom SDK generiert, wenn die App nicht für die Verwendung eines MID konfiguriert ist. Der Wert bleibt zwischen den Starts und den App-Upgrades in `SharedPreferences` erhalten. Wenn der Anwender die App von seinem Gerät löscht und anschließend die App erneut installiert oder wenn der App-Entwickler SharedPreferences löscht, wird vom SDK eine neue Kennung generiert. Dieser Prozess führt zu einem neuen Anwender im Analytics-Reporting.
 
