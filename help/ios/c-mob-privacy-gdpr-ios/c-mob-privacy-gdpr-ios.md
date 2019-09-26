@@ -3,7 +3,7 @@ description: Mobile SDKs für die Experience Cloud verfügen über mit die Date
 seo-description: Mobile SDKs für die Experience Cloud verfügen über mit die Datenschutz-Grundverordnung (DSGVO) konforme APIs für Datenverantwortliche, die es Benutzern ermöglichen, lokal gespeicherte Identitäten abzurufen und Auswahlstatuskennzeichnungen für die Datenerfassung und -übertragung festzulegen.
 seo-title: Privatsphäre und Datenschutz-Grundverordnung
 title: Privatsphäre und Datenschutz-Grundverordnung
-uuid: 69 bb 82 de -1993-440 c-a 1 b 0-8 d 37919 b 48 b 6
+uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -40,13 +40,13 @@ Für die Adobe Mobile SDK-Abschnitte Ihrer Mobil-Apps können Sie folgende Einst
 
 * Nutzen Sie zum Abrufen von Daten aus SDKs und für die Übermittlung der Daten an Ihre Server die Methode `getAllIdentifiersAsync`.
 
-   Weitere Informationen finden Sie unter [Abrufen gespeicherter Ids](/help/ios/c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md).
+   For more information, see Retrieving Stored Identifiers.[](/help/ios/c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)
 
 * Möchten Sie die Statusauswahl festlegen und im Rahmen der DSGVO gestellte Löschanfragen verarbeiten, legen Sie folgenden Status fest:
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   Weitere Informationen finden Sie unter [Einstellen des Ausschlussstatus des Benutzers](/help/ios/c-mob-privacy-gdpr-ios/privacy.md).
+   For more information, see Setting the User's Opt Status.[](/help/ios/c-mob-privacy-gdpr-ios/privacy.md)
 
 ## Weitere Informationen {#section_7C7124C50D85469C8C8714533FB1A37D}
 
