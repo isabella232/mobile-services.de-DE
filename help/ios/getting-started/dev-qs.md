@@ -7,7 +7,7 @@ title: Grundlegende Implementierung und Lebenszyklus
 topic: Entwickler und Implementierung
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
+source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
 
 ---
 
@@ -24,7 +24,7 @@ Diese Informationen helfen Ihnen beim Implementieren der iOS-Bibliothek und beim
 
 **Voraussetzung**
 
-Before you download the SDK, complete the steps in Create a Report Suite in Core implementation and lifecycle to set up a development report suite and download a pre-populated version of the configuration file.**[](/help/ios/getting-started/requirements.md)
+Bevor Sie das SDK herunterladen, führen Sie die Schritte unter Report Suite ** erstellen in [Kernimplementierung und Lebenszyklus](/help/ios/getting-started/requirements.md) aus, um eine Entwicklungs-Report Suite einzurichten und eine vorab ausgefüllte Version der Konfigurationsdatei herunterzuladen.
 
 So laden Sie das SDK herunter:
 
@@ -78,6 +78,7 @@ So laden Sie das SDK herunter:
       * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
+      * `CoreLocation.framework` (optional, aber für Geo-Tracking-Funktionen erforderlich)
    * **iOS-Erweiterungsziel**
 
       * `SystemConfiguration.framework`
@@ -106,7 +107,7 @@ So laden Sie das SDK herunter:
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-Add a /  call in :`collectLifecycleData``collectLifecycleDataWithAdditionalData``application:didFinishLaunchingWithOptions`
+Fügen Sie einen `collectLifecycleData`/- `collectLifecycleDataWithAdditionalData` Aufruf hinzu `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
