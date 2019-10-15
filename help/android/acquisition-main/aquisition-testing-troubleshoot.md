@@ -1,12 +1,12 @@
 ---
-description: The following information helps you troubleshoot Acquisition testing issues.
-keywords: android;Acquisition;testing
-seo-description: The following information helps you troubleshoot Acquisition testing issues.
-seo-title: Troubleshooting Acquisition testing
-solution: Marketing Cloud, Analytics
-title: Troubleshooting Acquisition testing
+description: Die folgenden Informationen helfen Ihnen bei der Fehlerbehebung von Problemen mit Akquise-Tests.
+keywords: Android;Akquise;Test
+seo-description: Die folgenden Informationen helfen Ihnen bei der Fehlerbehebung von Problemen mit Akquise-Tests.
+seo-title: Fehlerbehebung beim Testen der Akquise
+solution: Marketing Cloud,Analytics
+title: Fehlerbehebung beim Testen der Akquise
 translation-type: tm+mt
-source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -15,9 +15,9 @@ source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
 
 Im Folgenden finden Sie einige Probleme, mit denen Sie beim Testen der Akquise konfrontiert sein könnten, sowie einige mögliche Lösungen:
 
-* If not otherwise specified, the ADBMobileConfig.json file should be placed in the assets folder.
+* Wenn nicht anders angegeben, sollte die Datei ADBMobileConfig.json im Ordner assets abgelegt werden.
 
-* The name is case sensitive, so do not provide a name in lower-case letters.
+* Bei dem Namen wird zwischen Groß- und Kleinschreibung unterschieden. Geben Sie daher keinen Namen in Kleinbuchstaben an.
 
    Sie müssen sicherstellen, dass von der Hauptaktivität aufgerufen `Config.setContext(this.getApplicationContext())` wird. Weitere Informationen finden Sie unter [Konfigurationsmethoden](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html).
 
@@ -31,7 +31,7 @@ Im Folgenden finden Sie einige Probleme, mit denen Sie beim Testen der Akquise k
    </manifest>
    ```
 
-* Wenn in Ihrer Konfiguration das Timeout der verweisenden Stelle auf `referrerTimeout: 5`festgelegt ist, müssen Sie die Installationsabsicht in einem Zeitraum von 5 Sekunden nach der Installation und dem ersten Start der Anwendung senden, um die an den Installationshit angehängten Referrer-Informationen anzuzeigen.
+* Wenn in Ihrer Konfiguration das Timeout der verweisenden Stelle auf `referrerTimeout: 5`festgelegt ist, müssen Sie die Installationsabsicht in einem Zeitraum von 5 Sekunden nach der Installation und dem ersten Start der Anwendung senden, um die Informationen zur verweisenden Stelle am Installationshit anzuzeigen.
 
    Erhöhen Sie für manuelle Tests den Wert `referrerTimeout` auf 10-15 Sekunden, damit ausreichend Zeit zum Senden der Referrer-Informationen zur Verfügung steht, bevor der Installationshit verarbeitet wird.
 
