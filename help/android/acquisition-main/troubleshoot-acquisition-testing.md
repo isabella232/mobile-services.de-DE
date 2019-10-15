@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: Fehlerbehebung bei Akquise-Tests
 topic: Entwickler und Implementierung
 translation-type: tm+mt
-source-git-commit: 97202c672d7349496f83b9ac0c365dd8b3e13eda
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -34,7 +34,7 @@ Dieses Thema enthält Informationen zur Fehlerbehebung bei Problemen, die währe
    </manifest>
    ```
 
-* Wenn der Wert in der Datei ADMobileConfig.json auf 5 gesetzt `referrerTimeout` ist, müssen Sie die Installationsabsicht innerhalb von 5 Sekunden nach der Installation und dem ersten Start der Anwendung senden, um die am Installationshit angehängten Referrer-Informationen anzuzeigen.
+* Wenn der Wert in der Datei ADMobileConfig.json auf 5 gesetzt `referrerTimeout` ist, müssen Sie die Installationsabsicht innerhalb von 5 Sekunden nach der Installation und dem ersten Start der Anwendung senden, um die Informationen zum Referrer an den Installationshit anhängen zu können.
 
    Für manuelle Tests wird empfohlen, den Wert `referrerTimeout` auf 10-15 Sekunden zu erhöhen, damit Sie genügend Zeit haben, die Referrer-Informationen zu senden, bevor der Installationshit verarbeitet wird.
 
