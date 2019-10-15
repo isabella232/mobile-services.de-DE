@@ -3,12 +3,12 @@ description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mo
 keywords: android;library;mobile;sdk
 seo-description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
 seo-title: Lebenszyklusmetriken
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Lebenszyklusmetriken
 topic: Entwickler und Implementierung
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -293,14 +293,14 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
    * Analytics Context Data/Target Parameters: `a.ltv.amount`
    * Eigenschaften von Audience Manager: `c_a_ltv_amount`
 
-* **Rückverfolgungscode**
+* **Trackingcode**
 
    Wird von Mobile App – Akquise erfasst und automatisch von Adobe Mobile Services generiert.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.trackingcode`
    * Eigenschaften von Audience Manager: `c_a_referrer_campaign_trackingcode`
 
-* ** Kampagne
+* **Kampagne**
 
    Name der Kampagne, ebenfalls gespeichert in der Kampagnenvariable. Erfasst durch App-Akquise.
 
@@ -312,25 +312,25 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
    Der Name der ID des Inhalts, in dem der Link angezeigt wurde. Erfasst durch App-Akquise.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.content`
-   * Audience Manager Trait: `c_a_referrer_campaign_content`
+   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_content`
 
 * **Kampagnenmedium**
 
    Marketingmedium, beispielsweise ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.medium`
-   * Audience Manager Trait: `c_a_referrer_campaign_medium`
+   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_medium`
 
 * **Kampagnenquelle**
 
    Ursprünglicher Referrer, wie z. B. Newsletter oder soziales Netzwerk. Erfasst durch App-Akquise.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.source`
-   * Audience Manager Trait: `c_a_referrer_campaign_source`
+   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_source`
 
 * **Kampagnenbegriff**
 
    Bezahlte Keywords oder andere Begriffe, die Sie mit dieser Akquise verfolgen wollen. Erfasst durch App-Akquise.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.term`
-   * Audience Manager Trait: `c_a_referrer_campaign_term`
+   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_term`
