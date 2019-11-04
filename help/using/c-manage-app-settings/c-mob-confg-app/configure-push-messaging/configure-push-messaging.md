@@ -3,21 +3,21 @@ description: Mithilfe dieser Informationen können Sie die Push-Dienst-Optionen 
 keywords: mobile
 seo-description: Mithilfe dieser Informationen können Sie die Push-Dienst-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 seo-title: Push-Benachrichtigung konfigurieren
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Push-Benachrichtigung konfigurieren
 topic: Metriken
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
 
 ---
 
 
-# Configure push messaging{#configure-push-messaging}
+# Push-Benachrichtigung konfigurieren{#configure-push-messaging}
 
-Anhand dieser Informationen können Sie die Optionen für Push-Dienste auf der Seite "App-Einstellungen verwalten"beim Erstellen einer neuen App oder Bearbeiten einer vorhandenen App konfigurieren.
+Mithilfe dieser Informationen können Sie die Push-Dienst-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 
-Bevor Sie Push-Nachrichten konfigurieren, führen Sie die erforderlichen Aufgaben unter [Voraussetzungen aus, um Push-Nachrichten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)zu aktivieren.
+Führen Sie vor dem Konfigurieren von Push-Nachrichten die unter [Voraussetzungen für die Aktivierung der Push-Benachrichtigung](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md) erforderlichen Aufgaben aus.
 
 * **Hinweise zu Report Suites**
 
@@ -25,7 +25,7 @@ Bevor Sie Push-Nachrichten konfigurieren, führen Sie die erforderlichen Aufgabe
 
 >[!IMPORTANT]
 >
->Das Verschieben der App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
+>Das Verschieben Ihrer App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
 
 1. Füllen Sie unter **[!UICONTROL Push-Dienste folgende Felder aus]**:
 
@@ -33,20 +33,20 @@ Bevor Sie Push-Nachrichten konfigurieren, führen Sie die erforderlichen Aufgabe
 
       **[!UICONTROL Privater Schlüssel]**
 
-      Browse to and select your valid private key `.p12`, `.key`, or `.pen`.
+      Suchen Sie nach dem gültigen privaten Schlüssel (`.p12`, `.key` oder `.pen`) und wählen Sie ihn aus.
 
       >[!IMPORTANT]
-      >If the file that you select for the **[!UICONTROL Private Key]** input also contains a certificate, you do not need to specify the certificate.
+      >Wenn die für die Eingabe des **[!UICONTROL privaten Schlüssels]** ausgewählte Datei auch ein Zertifikat enthält, müssen Sie das Zertifikat nicht angeben.
 
    * **[!UICONTROL Zertifikat]**
 
-      Geben Sie ein gültiges Zertifikat an. Diese Option ist erforderlich, wenn die Eingabe des **[!UICONTROL privaten Schlüssels]** **kein** Zertifikat enthält. Weitere Informationen zum Abrufen des SSL-Zertifikats und des privaten Schlüssels finden Sie unter App für die Verwendung von APNS oder FCM [konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
+      Geben Sie ein gültiges Zertifikat an. Diese Option ist erforderlich, wenn die Eingabe des **[!UICONTROL privaten Schlüssels]** **kein** Zertifikat enthält. Weitere Informationen zum Abrufen des SSL-Zertifikats und des privaten Schlüssels finden Sie in [App für die Verwendung von APNS oder FCM konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
    * Google
 
       **[!UICONTROL API-Schlüssel]**
 
-      Geben Sie einen gültigen API-Schlüssel an. Weitere Informationen zum Abrufen des API-Schlüssels finden Sie unter App für die Verwendung von APNS oder FCM [konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
+      Geben Sie einen gültigen API-Schlüssel an. Weitere Informationen zum Abrufen des API-Schlüssels finden Sie in [App für die Verwendung von APNS oder FCM konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
       Weitere Informationen finden Sie in den folgenden Themen:
 
