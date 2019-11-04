@@ -1,16 +1,16 @@
 ---
 cloud: experience-cloud
 product: mobile-services
-solution-title: Learn & Support
+solution-title: Lernen und Support
 solution-hub-url: https://helpx.adobe.com/de/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: Erste Schritte
-getting-started-url: https://docs.adobe.com/content/help/en/mobile-services/using/get-started-ug/gs.html
+getting-started-url: https://docs.adobe.com/content/help/de-DE/mobile-services/using/get-started-ug/gs.html
 tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
+tutorials-url: https://helpx.adobe.com/de/de/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/mobile-services.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
 
 Die Datei metadata.md enthält Metadaten auf Repo-Ebene, die an die TOC.md-Dateien des Benutzerhandbuchs im Repo weitergegeben werden. Wenn Sie den Inhalt von metadata.md für ein Benutzerhandbuch ändern möchten, tun Sie dies in einer beliebigen TOC.md-Datei.
 
-| Metadaten | was es macht |
+| metadata | was es macht |
 |--- |--- |
 | solution-title | Wird in der Artikelkopfzeile als Link verwendet |
 | solution-hub-url | Öffnet die helpx-Hub-Seite |
