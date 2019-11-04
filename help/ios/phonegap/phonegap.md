@@ -3,33 +3,33 @@ description: Mit diesem Plug-in können Sie iOS-AppMeasurement-Aufrufe von Ihrem
 keywords: phonegap
 seo-description: Mit diesem Plug-in können Sie iOS-AppMeasurement-Aufrufe von Ihrem PhoneGap-Projekt ausführen.
 seo-title: PhoneGap-Plug-in
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap-Plug-in
 topic: Entwickler und Implementierung
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 ---
 
 
-# PhoneGap plug-in{#phonegap-plug-in}
+# PhoneGap-Plug-in{#phonegap-plug-in}
 
 Mit diesem Plug-in können Sie iOS-AppMeasurement-Aufrufe von Ihrem PhoneGap-Projekt ausführen.
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
-* Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
+* Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
 
 ## PhoneGap-Projekt erstellen
 
-To create a PhoneGap project, see [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html).
+Informationen zum Erstellen eines PhoneGap-Projekts finden Sie unter [PhoneGap](https://helpx.adobe.com/de/experience-manager/6-4/mobile/using/phonegap.html).
 
 ## Installieren des Plug-ins mit npm: {#section_43229E57C16944C0B51531CB92089189}
 
@@ -45,14 +45,14 @@ To create a PhoneGap project, see [PhoneGap](https://helpx.adobe.com/experience-
 
 So schließen Sie AppMeasurement ein:
 
-1. Drag `ADBMobile_PhoneGap.h` and  `ADBMobile_PhoneGap.m` into the **[!UICONTROL Plugins]** folder in your Xcode project.
+1. Ziehen Sie `ADBMobile_PhoneGap.h` und `ADBMobile_PhoneGap.m` in den Ordner **[!UICONTROL Plug-ins]** in Ihrem Xcode-Projekt.
 1. Nehmen Sie die folgenden Einstellungen vor:
 
    1. Wählen Sie **[!UICONTROL Elemente in den Zielgruppenordner kopieren (falls erforderlich)]**.
    1. Wählen Sie die Ziele aus, an denen der AppMeasurement-Code verwendet werden soll.
 
-1. Drag `ADB_Helper.js` into the `www` folder in your project.
-1. In the `res/xml` folder, open `config.xml` and register an new plugin by adding the following:
+1. Ziehen Sie `ADB_Helper.js` in den Ordner `www` in Ihrem Projekt.
+1. Öffnen Sie im Ordner `res/xml` die Datei `config.xml` und registrieren Sie ein neues Plug-in, indem Sie Folgendes hinzufügen:
 
    ```
    <feature name="ADBMobile_PhoneGap"> 
@@ -65,23 +65,23 @@ So schließen Sie AppMeasurement ein:
 Für die AppMeasurement-Bibliothek ist Folgendes erforderlich:
 
 1. Starten Sie die XCode IDE und öffnen Sie die App.
-1. Ziehen Sie den Ordner **[!UICONTROL Adobe Mobile]in Ihr Xcode-Projekt und nehmen Sie die folgenden Einstellungen vor:**
+1. Ziehen Sie den Ordner **[!UICONTROL Adobe Mobile]** in Ihr Xcode-Projekt und nehmen Sie die folgenden Einstellungen vor:
 
    1. Wählen Sie **[!UICONTROL Elemente in den Zielgruppenordner kopieren (falls erforderlich)]**.
    1. Wählen Sie **[!UICONTROL Gruppen für hinzugefügte Ordner erstellen]**.
    1. Wählen Sie die Ziele aus, an denen Sie den AppMeasurement-Code verwenden möchten, und klicken Sie auf **[!UICONTROL Fertigstellen]**.
-   ![](assets/xcode-settings.png){width="672"}
+   ![](assets/xcode-settings.png){Breite=„672“}
 
-1. Erweitern Sie auf der Registerkarte **[!UICONTROL Build-Phasen]** des Ziels Ihres Projekts den Abschnitt **Binärdatei mit Bibliotheken verknüpfen]und fügen Sie die folgenden Bibliotheken hinzu:[!UICONTROL **
+1. Erweitern Sie auf der Registerkarte **[!UICONTROL Build-Phasen]** des Ziels Ihres Projekts den Abschnitt **[!UICONTROL Binärdatei mit Bibliotheken verknüpfen]** und fügen Sie die folgenden Bibliotheken hinzu:
 
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
 
 1. Bestätigen Sie, dass Ihre App ohne unerwartete Fehler erstellt wird.
 
-## Implement custom tracking {#section_FD102B3CDAA4492FB04E56BF17E28663}
+## Benutzerdefinierte Verfolgung implementieren {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
-In `html` files where you want to use tracking, add the following to the `<head>` tag:
+Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das Tag `<head>` ein:
 
 ```html
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
