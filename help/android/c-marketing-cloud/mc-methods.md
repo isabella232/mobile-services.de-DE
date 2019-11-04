@@ -1,33 +1,33 @@
 ---
 description: Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
-seo-title: Adobe Experience Platform Identity Service-Methoden
-solution: Marketing Cloud,Analytics
-title: Adobe Experience Platform Identity Service-Methoden
+seo-title: Identity-Dienst-Methoden für Adobe Experience Platform
+solution: Experience Cloud,Analytics
+title: Identity-Dienst-Methoden für Adobe Experience Platform
 topic: Entwickler und Implementierung
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 ---
 
 
-# Adobe Experience Platform Identity Service-Methoden{#experience-cloud-id-service-methods}
+# Identity-Dienst-Methoden für Adobe Experience Platform{#experience-cloud-id-service-methods}
 
 Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
+Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Identity-Dienst für Adobe Experience Platform.
 
-Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `visitor`. For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
+Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `visitor` bei Experience Cloud ID-Methoden. Weitere Informationen finden Sie unter [Experience Cloud ID-Konfiguration](/help/android/c-marketing-cloud/mcvid.md).
 
 * **public static String appendToURL(final String URL)**
 
-   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Für diese Methode müssen Sie Mobile-SDK 4.12 (oder höher) verwenden. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
+   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Für diese Methode müssen Sie Mobile-SDK 4.12 (oder höher) verwenden. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://marketing.adobe.com/resources/help/de_DE/mcvid/mcvid-appendvisitorid.html).
 
    >[!IMPORTANT]
    >
-   >This method can cause a blocking network call. Rufen Sie diese Methode nicht in zeitkritischen Threads auf.
+   >Diese Methode kann einen blockierenden Netzwerkaufruf verursachen. Rufen Sie diese Methode nicht in zeitkritischen Threads auf.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -66,7 +66,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
       >[!IMPORTANT]
       >
-      >This method can cause a blocking network call and should **not** be called from a UI thread.
+      >Diese Methode kann zu einem blockierenden Netzwerkaufruf führen und sollte **NICHT** über einen UI-Thread aufgerufen werden.
 
 * **syncIdentifiers**
 
@@ -149,7 +149,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
 * **getUrlVariablesAsync**
 
-   Diese in Version 4.16.0 eingeführte Methode gibt eine entsprechend geformte Zeichenfolge zurück, die URL-Variablen des Besucher-ID-Service enthält. Weitere Informationen zur Verwendung dieser Methode finden Sie unter [Adobe Experience Platform Identity Service-Methoden](/help/android/reference/hybrid-app.md).
+   Diese in Version 4.16.0 eingeführte Methode gibt eine entsprechend geformte Zeichenfolge zurück, die URL-Variablen des Besucher-ID-Dienst enthält. Weitere Informationen zur Verwendung dieser Methode finden Sie unter [Identity-Dienst-Methoden für Adobe Experience Platform](/help/android/reference/hybrid-app.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -170,7 +170,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       });
       ```
 
-## Public methods {#section_8AC744B431A3438C9B45629CA3EA0F51}
+## Öffentliche Methoden {#section_8AC744B431A3438C9B45629CA3EA0F51}
 
 ```java
 public class VisitorID { 
