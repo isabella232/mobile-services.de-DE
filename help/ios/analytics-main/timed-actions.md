@@ -2,17 +2,17 @@
 description: Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Dauer in jeder Sitzung und die sitzungsübergreifende Gesamtzeit, die zum Abschluss einer Aktion benötigt wird. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
 seo-description: Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Dauer in jeder Sitzung und die sitzungsübergreifende Gesamtzeit, die zum Abschluss einer Aktion benötigt wird. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
 seo-title: Zeitgesteuerte Aktionen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Zeitgesteuerte Aktionen
 topic: Entwickler und Implementierung
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Timed actions {#timed-actions}
+# Zeitgesteuerte Aktionen {#timed-actions}
 
 Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Dauer in jeder Sitzung und die sitzungsübergreifende Gesamtzeit, die zum Abschluss einer Aktion benötigt wird. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
 
@@ -27,11 +27,11 @@ Ein optionaler Rückruf ermöglicht die Durchführung zusätzlicher Aktionen nac
 * Hinzufügen von Kontext vor dem Weitergeben der Zeitdauer.
 * Abbrechen von Treffern und der Zeitdauer, die bisher nicht gesendet wurden.
 
-## Tracking timed actions {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
+## Zeitgesteuerte Aktionen verfolgen {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zum Projekt hinzufügen* im Abschnitt [Grundlegende Implementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md).
 1. Importieren Sie die Bibliothek:
 
    ```objective-c
@@ -61,7 +61,7 @@ Ein optionaler Rückruf ermöglicht die Durchführung zusätzlicher Aktionen nac
                             logic:nil];
    ```
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Zusätzliche Daten senden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Zusätzlich zum zeitgesteuerten Aktionsnamen können Sie weitere Kontextdaten mit den Aufrufen zum Starten und Aktualisieren der Aktion senden:
 
@@ -70,7 +70,7 @@ Zusätzlich zum zeitgesteuerten Aktionsnamen können Sie weitere Kontextdaten mi
                              data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
+Die Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ![](assets/map-variable-context-ltv.png)
 
