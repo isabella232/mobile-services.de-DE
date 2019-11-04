@@ -1,28 +1,28 @@
 ---
 description: Mit diesen Informationen können Sie Deep-Links und verzögerte Deep-Links in Ihren mobilen Apps verfolgen, indem Sie das Adobe Mobile iOS-SDK verwenden.
 seo-description: Mit diesen Informationen können Sie Deep-Links und verzögerte Deep-Links in Ihren mobilen Apps verfolgen, indem Sie das Adobe Mobile iOS-SDK verwenden.
-seo-title: Verfolgen von Deep Links
-solution: Marketing Cloud,Analytics
-title: Tracking deep links
+seo-title: Deep-Links verfolgen
+solution: Experience Cloud,Analytics
+title: Deep-Links verfolgen
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Tracking deep links{#tracking-deep-links}
+# Deep-Links verfolgen{#tracking-deep-links}
 
 Mit diesen Informationen können Sie Deep-Links und verzögerte Deep-Links in Ihren mobilen Apps verfolgen, indem Sie das Adobe Mobile iOS-SDK verwenden.
 
 Weitere Informationen dahingehend, wie Marketingexperten Deep-Links in ihren Anwendungen verwenden, finden Sie im Thema zur [Akquise](/help/ios/acquisition-main/acquisition.md) in der Dokumentation zu Mobile Services.
 
-## Verfolgen von Deep Links
+## Deep-Links verfolgen
 
 1. Fügen Sie das SDK zu Ihrem Projekt hinzu und implementieren Sie Lebenszyklusmetriken.
 
-   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrem Projekt* in [Kernimplementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md)hinzufügen.
-1. Registrieren Sie die Anwendung, um Inter-App-Nachrichten zu bearbeiten oder universelle Links zu unterstützen.
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zum Projekt hinzufügen* im Abschnitt [Grundlegende Implementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md).
+1. Registrieren Sie die App für die Verarbeitung von App-übergreifenden Kommunikationen oder zur Unterstützung von universellen Links.
 
    Weitere Informationen finden Sie unter [Inter-App-Kommunikation](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) oder [Unterstützung universeller Links.](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 
@@ -48,9 +48,9 @@ Weitere Informationen dahingehend, wie Marketingexperten Deep-Links in ihren Anw
    }
    ```
 
-The Adobe Mobile SDK can parse key and value pairs of data appended to any deep or Universal Link, provided that the link contains a key with a `a.deeplink.id` label and a corresponding non-null and user generated value. Alle Schlüssel-Wert-Paare von Daten, die an den Link angehängt sind, werden analysiert, an einen Lebenszyklustreffer angehängt und an Adobe Analytics gesendet, sofern der Link das Schlüssel-Wert-Paar `a.deeplink.id` enthält.
+Das Adobe Mobile SDK kann Schlüssel-Wert-Paare von an Deep- oder universelle Links angehängten Daten analysieren, sofern der Link einen Schlüssel mit der Bezeichnung `a.deeplink.id`, einen entsprechenden Wert, der nicht „Null“ entspricht, sowie einen vom Benutzer generierten Wert aufweist. Alle Schlüssel-Wert-Paare von Daten, die an den Link angehängt sind, werden analysiert, an einen Lebenszyklustreffer angehängt und an Adobe Analytics gesendet, sofern der Link das Schlüssel-Wert-Paar `a.deeplink.id` enthält.
 
-Sie können auch einen oder mehrere der folgenden reservierten Schlüssel (mit benutzerdefinierten Werten) an den Deep Link oder Universal Link anhängen:
+Zusätzlich können Sie auswählen, ob Sie einen oder mehrere der folgenden reservierten Schlüssel (mit benutzergenerierten Werten) an Deep- oder universelle Links anhängen möchten:
 
 * `a.launch.campaign.trackingcode`
 * `a.launch.campaign.source`
@@ -60,7 +60,7 @@ Sie können auch einen oder mehrere der folgenden reservierten Schlüssel (mit b
 
 Bei diesen Schlüsseln handelt es sich um vorab zugeordnete Variablen für das Reporting in Adobe Analytics. Weitere Informationen zu Zuordnungs- und Verarbeitungsregeln finden Sie unter [Verarbeitungsregeln und Kontextdaten](/help/ios/getting-started/proc-rules.md).
 
-### Verfolgen von verzögerten Deep Links
+### Verzögerte Deep-Links verfolgen
 
 1. Registrieren Sie Adobe-Daten-Callback.
 
@@ -69,7 +69,7 @@ Bei diesen Schlüsseln handelt es sich um vorab zugeordnete Variablen für das R
    }];
    ```
 
-1. Handle `ADBMobileDataEventDeepLink` innerhalb `AdobeDataCallback`.
+1. `ADBMobileDataEventDeepLink`-Handle innerhalb `AdobeDataCallback`.
 
    ```objective-c
    [ADBMobile registerAdobeDataCallback:^(ADBMobileDataEvent event, NSDictionary * _Nullable adobeData) { 
@@ -79,7 +79,7 @@ Bei diesen Schlüsseln handelt es sich um vorab zugeordnete Variablen für das R
    }];
    ```
 
-## Deep link public information {#section_44600E9AA68D4A53AA0C14BD86CC5284}
+## Öffentliche Deep-Link-Informationen {#section_44600E9AA68D4A53AA0C14BD86CC5284}
 
 ### Methoden
 
