@@ -1,29 +1,29 @@
 ---
 description: Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Android mithilfe der Videomessung.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Android mithilfe der Videomessung.
 seo-title: Video-Analytics
-solution: Marketing Cloud, Analytics
-title: Video-Analytics
+solution: Experience Cloud,Analytics
+title: Video Analytics
 topic: Entwickler und Implementierung
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Video Analytics  {#video-analytics}
+# Video Analytics {#video-analytics}
 
 Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Android mithilfe der Videomessung.
 
 >[!TIP]
 >
->Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen zur Videomessungslösung von Adobe finden Sie unter [Audio- und Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen zur Videomessungslösung von Adobe finden Sie unter [Audio- und Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html).
 
 Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier finden Sie eine Übersicht der Entwickleraufgaben samt Code-Beispielen. In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verarbeitungsregeln werden verwendet, um die Kontextdaten einer Analytics-Variablen zuzuordnen.
 
-## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
+## Player-Ereignisse Analytics-Variablen zuordnen {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
 * **a.media.name**
    * Variablentyp: eVar
@@ -33,12 +33,12 @@ Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier
    * (**Optional**) Die Variable „Benutzerspezifischer Insight-Bericht “ bietet Informationen für die Videopfadgebung.
 
 * **a.media.name**
-   * Variable type: Custom Insight (s.prop)
+   * Variablentyp: Custom Insight (benutzerspezifischer Insight-Bericht) (s.prop)
    * (**Optional**) Bietet Informationen zur Videopfadsetzung.
 
       >[!IMPORTANT]
       >
-      >Pfade müssen für diese Variable von ExpCare aktiviert werden.
+      >Der Pfad muss für diese Variable von ExpCare aktiviert werden.
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop)
 
 * **a.media.segment**
@@ -57,7 +57,7 @@ Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier
 
 
 * **a.contentType**
-   * Variable type: eVar
+   * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
    * Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird.
 
@@ -69,7 +69,7 @@ Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier
    * Gibt in Sekunden an, wie lange ein Video seit dem letzten Datenerfassungsprozess (Bildanfrage) wiedergegeben wurde.
 
 * **a.media.view**
-   * Variable type: Event
+   * Variablentyp: Ereignis
    * Typ: Zähler
    * Gibt an, dass ein Besucher einen Teil eines Videos betrachtet hat.
 
@@ -90,7 +90,7 @@ Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier
       Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen. Bei der Implementierung können Sie festlegen, ab wie vielen Sekunden vor Ende des Videos die Ansicht als vollständig betrachtet werden soll. Bei Live-Videoinhalten und anderen Streams, die nicht über ein definiertes Ende verfügen, können Sie einen benutzerdefinierten Zeitpunkt festlegen, um abgeschlossene Ansichten zu messen (z. B. nach einer bestimmten Wiedergabedauer).
 
 
-## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
+## Medieneinstellungen konfigurieren {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Konfigurieren Sie ein `MediaSettings`-Objekt mit den Einstellungen, die Sie zur Videoverfolgung verwenden möchten:
 
@@ -98,9 +98,9 @@ Konfigurieren Sie ein `MediaSettings`-Objekt mit den Einstellungen, die Sie zur 
 MediaSettings mySettings = Media.settingsWith("name", 10, "playerName", "playerId");
 ```
 
-## Track player events {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Player-Ereignisse verfolgen {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-To measure video playback, the `mediaPlay`, `mediaStop`, and `mediaClose` methods need to be called at the appropriate times. Wenn beispielsweise der Player angehalten wird, muss `mediaStop` aufgerufen werden. `mediaPlay` wird aufgerufen, wenn die Wiedergabe gestartet oder fortgesetzt wird.
+Zum Messen der Videowiedergabe müssen die Methoden `mediaPlay`, `mediaStop` und `mediaClose` zu den entsprechenden Zeiten aufgerufen werden. Wenn beispielsweise der Player angehalten wird, muss `mediaStop` aufgerufen werden. `mediaPlay` wird aufgerufen, wenn die Wiedergabe gestartet oder fortgesetzt wird.
 
 ## Klassen {#section_16838332727348F990305C0C6B0D795C}
 
@@ -149,9 +149,9 @@ public boolean ad;
 public boolean eventFirstTime;
 ```
 
-## Media Measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Medienmessungsklasse und Methodenreferenz {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-Im Folgenden finden Sie die Methoden der MediaMeasurement-Klasse:
+Im Folgenden finden Sie die Methoden der Medienmessungsklasse:
 
 * **settingsWith**
 
@@ -248,7 +248,7 @@ Im Folgenden finden Sie die Methoden der MediaMeasurement-Klasse:
       public static void stop(String name, double offset); 
       ```
 
-   * Hier das Codebeispiel oder diese Methode:
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
       Media.stop("name", 0);
