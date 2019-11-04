@@ -1,19 +1,19 @@
 ---
 description: Hier finden Sie ein Beispiel der Variablen „products“ mit Merchandising eVars und produktspezifischen Ereignissen.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Hier finden Sie ein Beispiel der Variablen „products“ mit Merchandising eVars und produktspezifischen Ereignissen.
 seo-title: Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen
 topic: Entwickler und Implementierung
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Products variable with merchandising eVars and product-specific events {#products-variable-with-merchandising-evars-and-product-specific-events}
+# Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen {#products-variable-with-merchandising-evars-and-product-specific-events}
 
 Hier finden Sie ein Beispiel der Variablen „products“ mit Merchandising eVars und produktspezifischen Ereignissen.
 
@@ -37,5 +37,5 @@ Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Wenn Sie ein produktspezifisches Ereignis mithilfe der *`&&products`* Variablen auslösen, müssen Sie dieses Ereignis auch in der *`&&events`* Variablen einstellen. Wenn Sie dieses Ereignis nicht festlegen, wird es während der Verarbeitung herausgefiltert.
+>Wenn Sie ein produktspezifisches Ereignis mithilfe der Variable *`&&products`* auslösen, müssen Sie dieses Ereignis auch in der Variable *`&&events`* festlegen. Wenn Sie dieses Ereignis nicht festlegen, wird es während der Verarbeitung herausgefiltert.
 
