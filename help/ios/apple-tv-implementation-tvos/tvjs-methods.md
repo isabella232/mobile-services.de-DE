@@ -2,11 +2,11 @@
 description: Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereitgestellt werden.
 seo-description: Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereitgestellt werden.
 seo-title: TVJS-Methoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: TVJS-Methoden
 topic: Entwickler und Implementierung
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereitgestellt werden.
 
-## Configuration methods {#section_5F82FD2F6A0546B3B4E80DF832E11634}
+## Konfigurationsmethoden {#section_5F82FD2F6A0546B3B4E80DF832E11634}
 
 * **version**
 
@@ -42,11 +42,11 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Optionen:
 
-   * `ADBMobilePrivacyStatusOptIn`: Treffer werden sofort gesendet.
-   * `ADBMobilePrivacyStatusOptOut`: Hits are discarded.
+   * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
+   * `ADBMobilePrivacyStatusOptOut`: Treffer werden verworfen.
    * `ADBMobilePrivacyStatusUnknown`: Wenn die Offline-Verfolgung aktiviert ist, werden die Zugriffe gespeichert, bis der Datenschutzstatus zu „opt-in“ (Zugriffe werden dann gesendet) oder „opt-out“ (Zugriffe werden dann verworfen) geändert wird.
 
-      Ist die Offline-Verfolgung nicht aktiviert, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. THe default value is set in the `ADBMobileConfig.json` file.
+      Ist die Offline-Verfolgung nicht aktiviert, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -66,9 +66,9 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Legt den Datenschutzstatus für den aktuellen Benutzer auf einen der folgenden Werte fest:
 
-   * `ADBMobilePrivacyStatusOptIn`: Treffer werden sofort gesendet.
+   * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
    * `ADBMobilePrivacyStatusOptOut`: Treffer werden verworfen.
-   * `ADBMobilePrivacyStatusUnknown`: If offline tracking is enabled, hits are saved until the privacy status changes to opt-in (hits are sent), or opt-out (hits are discarded).
+   * `ADBMobilePrivacyStatusUnknown`: Wenn die Offline-Verfolgung aktiviert ist, werden die Zugriffe gespeichert, bis der Datenschutzstatus zu „opt-in“ (Zugriffe werden dann gesendet) oder „opt-out“ (Zugriffe werden dann verworfen) geändert wird.
    Ist die Offline-Verfolgung nicht aktiviert, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
@@ -108,7 +108,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    >[!IMPORTANT]
    >
-   >Wenn Ihre App vom Experience Cloud-SDK 3.x auf das SDK 4.x aktualisiert, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID nil, bis die Festlegung erfolgt.
+   >Wenn für Ihre App ein Upgrade vom Experience Cloud-SDK 3.x auf 4.x vorgenommen wird, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als die benutzerdefinierte Benutzer-ID gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID nil, bis die Festlegung erfolgt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -144,16 +144,16 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    * Parameter:  `userID`
 
-      * Typ: String
+      * Typ: Zeichenfolge
       * Neue ID für diesen Benutzer.
 
 * **setAdvertisingIdentifier**
 
-   Sets the IDFA in the SDK, and if it has been set in the SDK, the IDFA is sent in lifecycle. Auf den IDFA kann auch in Signalen (Postbacks) zugegriffen werden.
+   Legt den IDFA im SDK fest. Wurde er im SDK festgelegt, wird der IDFA im Lebenszyklus gesendet. Auf den IDFA kann auch in Signalen (Postbacks) zugegriffen werden.
 
    >[!IMPORTANT]
    >
-   >Retrieve the IDFA from Apple APIs only if you are using an ad service. Wenn Sie den IDFA abrufen und ihn nicht richtig verwenden, wird Ihre App ggf. abgelehnt.
+   >Rufen Sie den IDFA nur dann aus den Apple-APIs ab, wenn Sie einen Dienst für Werbeanzeigen verwenden. Wenn Sie den IDFA abrufen und ihn nicht richtig verwenden, wird Ihre App ggf. abgelehnt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -194,7 +194,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       * Der Wert gibt an, ob das Adobe-SDK Protokollierungen an der Debug-Konsole vornehmen sollte.
 
 
-## Analytics methods {#section_F3DB9BE225F84F86BE5F8D15164C0379}
+## Analytics-Methoden {#section_F3DB9BE225F84F86BE5F8D15164C0379}
 
 * **trackStateData**
 
@@ -204,7 +204,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
+   >Dies ist der einzige Verfolgungsaufruf, bei dem die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -240,7 +240,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Gibt Folgendes zurück: N/A
       * Parameter: `actionName`
-         * Typ: String
+         * Typ: Zeichenfolge
          * Name der zu verfolgenden Aktion.
       * Parameter: `contextData`
          * Typ: Objekt
@@ -257,7 +257,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Sendet die aktuellen Koordinaten (Längen- und Breitengrad).
 
-   Also uses points of interest (POI) that are defined in the `ADBMobileConfig.json` file to determine whether the location that you entered as a parameter is in any of your POIs. Falls die aktuellen Koordinaten auf einen definierten Zielpunkt passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
+   Verwendet darüber hinaus in der Datei `ADBMobileConfig.json` definierte Zielpunkte (Points of Interest, POI) zum Bestimmen, ob sich der Standort, den Sie als einen Parameter eingegeben haben, innerhalb Ihres Zielpunkts befindet. Falls die aktuellen Koordinaten auf einen definierten Zielpunkt passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -321,7 +321,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Gibt Folgendes zurück: N/A
       * Parameter: `name`
-         * Typ: String
+         * Typ: Zeichenfolge
          * Name der zu startenden zeitgesteuerten Aktion.
       * Parameter: `contextData`
          * Typ: Objekt
@@ -351,7 +351,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Gibt Folgendes zurück: N/A
       * Parameter: `name`
-         * Typ: String
+         * Typ: Zeichenfolge
          * Name der zu aktualisierenden zeitgesteuerten Aktion.
       * Parameter: `contextData`
          * Typ: Objekt
@@ -368,7 +368,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Beendet eine zeitgesteuerte Aktion.
 
-   Wenn Sie eine Callback-Funktion bereitstellen, können Sie auf die endgültigen Zeitwerte zugreifen. Wenn kein Callback angegeben ist oder der Callback „true“ zurückgibt, sendet das Adobe-SDK automatisch einen Treffer. Wenn beim Rückruf ein Fehler zurückgegeben wird, wird der zeitgesteuerte Aktionstreffer unterdrückt.
+   Wenn Sie eine Callback-Funktion bereitstellen, können Sie auf die endgültigen Zeitwerte zugreifen. Wenn kein Callback angegeben ist oder der Callback „true“ zurückgibt, sendet das Adobe-SDK automatisch einen Treffer. Wenn der Callback „false“ zurückgibt, wird der zeitgesteuerte Aktionstreffer unterdrückt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -378,13 +378,13 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Gibt Folgendes zurück: N/A
       * Parameter: `name`
-         * Typ: String
+         * Typ: Zeichenfolge
          * Name der zu beendenden zeitgesteuerten Aktion
       * Parameter: `callback`
          * Typ: `function(inAppDuration, totalDuration, data)`
-         * Callback method that will have `inAppDuration` (number), `totalDuration` (number), and `data` (context data object) in its parameters.
+         * Callback-Methode, deren Parameter `inAppDuration` (Zahl), `totalDuration` (Zahl) und `data` (Kontextdatenobjekt) enthalten.
 
-            You can suppress the final hit from being sent by the SDK by returning `false` in your callback function.
+            Sie können verhindern, dass der endgültige Treffer vom SDK gesendet wird, indem Sie `false` in Ihrer Callback-Funktion zurückgeben.
       * Hier finden Sie ein Code-Beispiel für diese Methode:
 
          ```objective-c
@@ -410,7 +410,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       * Gibt Folgendes zurück: Bool
       * Parameter: `name`
          * Typ: `String`
-         * Name of the timed action for which you need to check existence.
+         * Name der zeitgesteuerten Aktion, deren Existenz Sie überprüfen müssen.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
 
@@ -427,7 +427,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    >[!TIP]
    >
-   >If your app upgrades from the Experience Cloud 3.x to 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID `nil` und die Tracking-ID wird verwendet. Weitere Informationen finden Sie unten in der Zeile userIdentifier.
+   >Wenn für Ihre App ein Upgrade vom Experience Cloud-SDK 3.x auf 4.x vorgenommen wird, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als die benutzerdefinierte Benutzer-ID gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID `nil` und die Tracking-ID wird verwendet. Weitere Informationen finden Sie unten in der Zeile userIdentifier.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -502,7 +502,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       ```
 
 
-## Audience Manager methods {#section_0155C4DF04644EDAAF6159C420A158DE}
+## Audience Manager-Methoden {#section_0155C4DF04644EDAAF6159C420A158DE}
 
 * **audienceVisitorProfile**
 
@@ -525,7 +525,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       ```
 
 
-* **audienceDpid** 
+* **audienceDpid**
 
    Gibt die aktuelle DPID zurück.
 
@@ -625,7 +625,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       ```
 
       * Gibt Folgendes zurück: N/A
-      * Parameter: None
+      * Parameter: Keine
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -633,7 +633,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       ```
 
 
-## ID Service methods {#section_BEB6DA612EA4423FB354B65ECC941335}
+## ID-Dienst-Methoden {#section_BEB6DA612EA4423FB354B65ECC941335}
 
 * **visitorMarketingCloudID**
 
@@ -692,7 +692,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
          * IDs zum Synchronisieren des ID-Services für diesen Benutzer.
       * Parameter: `authState`
          * Typ: ADBMobileVisitorAuthenticationState
-         * Authentication state of the user, and possible values include:
+         * Authentifizierungsstatus des Benutzers und mögliche Werte sind:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -714,7 +714,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       visitorSyncIdentifierWithTypeIdentifierAuthenticationState(idType, identifier, authState)
       ```
 
-      * Rückgabe: Nicht zutreffend
+      * Gibt Folgendes zurück: N/A
       * Parameter: `idType`
          * Typ: `String`
          * Typ der ID, die Sie synchronisieren.
@@ -722,7 +722,8 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
          * Typ: `String`
          * Wert der ID, die Sie synchronisieren.
       * Parameter: `authState`
-         * Typ: ADBMobileVisitorAuthenticationStateAuthentication-Status des Benutzers. Mögliche Werte:
+         * Type ADBMobileVisitorAuthenticationState
+Authentifizierungsstatus des Benutzers. Mögliche Werte:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
