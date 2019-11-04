@@ -1,28 +1,28 @@
 ---
 description: Mit dem Lebenszeitwert können Sie für jeden Benutzer einen Lebenszeitwert messen und vorgeben.
 seo-description: Mit dem Lebenszeitwert können Sie für jeden Benutzer einen Lebenszeitwert messen und vorgeben.
-seo-title: Visitor lifetime value
-solution: Marketing Cloud,Analytics
-title: Visitor lifetime value
+seo-title: Besucherlebenszeitwert
+solution: Experience Cloud,Analytics
+title: Besucherlebenszeitwert
 topic: Entwickler und Implementierung
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Visitor lifetime value {#visitor-lifetime-value}
+# Besucherlebenszeitwert {#visitor-lifetime-value}
 
 Mit dem Lebenszeitwert können Sie für jeden Benutzer einen Lebenszeitwert messen und vorgeben.
 
 Sobald Sie einen Wert mit `trackLifetimeValueIncrease` senden, wird der Wert zum vorhandenen Wert hinzugefügt. Der Lebenszeitwert wird auf dem Gerät gespeichert und kann jederzeit mithilfe von `lifetimeValue` abgerufen werden. Dies kann verwendet werden, um Lebenszeiteinkäufe, Banneranzeigen, abgeschlossene Videos, Informationen zur Freigabe in sozialen Netzwerken, Fotouploads usw. zu speichern.
 
-## Track the visitor lifetime value {#section_390943A49AF841F2941E65D6DF2B3F5A}
+## Besucherlebenszeitwert verfolgen {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrem Projekt* in [Kernimplementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md)hinzufügen.
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zum Projekt hinzufügen* im Abschnitt [Grundlegende Implementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md).
 1. Importieren Sie die Bibliothek:
 
    ```objective-c
@@ -35,7 +35,7 @@ Sobald Sie einen Wert mit `trackLifetimeValueIncrease` senden, wird der Wert zum
    [ADBMobile trackLifetimeValueIncrease:increaseAmount data:nil];
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Zusätzliche Daten senden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Zusätzlich zum Lebenszeitwert können Sie bei jedem Verfolgungsaktionsaufruf zusätzliche Kontextdaten senden:
 
@@ -45,7 +45,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLifetimeValueIncrease:increaseAmount data:contextData];
 ```
 
-Context data values must be mapped to custom variables:
+Die Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ![](assets/map-variable-context-ltv.png)
 
