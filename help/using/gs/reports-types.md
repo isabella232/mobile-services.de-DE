@@ -3,11 +3,11 @@ description: Aufgrund der vielfältigen Möglichkeiten beim Anpassen von Bericht
 keywords: mobile
 seo-description: Aufgrund der vielfältigen Möglichkeiten beim Anpassen von Berichten stellt sich vielleicht die Frage, welcher Typ von Bericht am besten geeignet ist, um die gewünschten Daten zu erhalten.
 seo-title: Berichtstypen
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Berichtstypen
 topic: Berichte, Metriken
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -21,11 +21,11 @@ Bevor Sie Berichte anpassen, sollten Sie den Unterschied zwischen einer Metrik u
 
 * Metrik
 
-   Eine Metrik dient zum Messen Ihrer Daten. Metriken sind Werte, die gezählt und addiert werden können. So können Sie erkennen, wie oft bestimmte Aktionen in Ihrer App erfolgen. Zu den gebräuchlichsten Metriken gehören die Anzahl von Installations-, Start- und Anmeldevorgängen sowie der Umsatz und der Lebenszeitwert. So wird zum Beispiel bei jedem Start Ihrer App der Wert  für _launches_value wird um 1 erhöht.
+   Eine Metrik dient zum Messen Ihrer Daten. Metriken sind Werte, die gezählt und addiert werden können. So können Sie erkennen, wie oft bestimmte Aktionen in Ihrer App erfolgen. Zu den gebräuchlichsten Metriken gehören die Anzahl von Installations-, Start- und Anmeldevorgängen sowie der Umsatz und der Lebenszeitwert. So wird zum Beispiel bei jedem Start Ihrer App der Wert für „_launches_value“ um einen Zähler erhöht.
 
 * Dimension
 
-   Eine Dimension dient zum Beschreiben Ihrer Daten. Dimensionen werden durch eine Zeichenfolge dargestellt, oder durch eine Zahl, die wie eine Zeichenfolge funktioniert (z. B. eine Postleitzahl), und die zum Organisieren und Segmentieren Ihrer Daten verwendet wird. Zu den gebräuchlichsten Dimensionen zählen beispielsweise die Betriebssystemversion, der Kampagnenname, der Produktname und der Mobilnetzbetreiber. Jede Dimension verfügt über eine Anzahl spezifischer Werte, die mit dieser Dimension verknüpft sind. For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
+   Eine Dimension dient zum Beschreiben Ihrer Daten. Dimensionen werden mittels einer Zeichenfolge oder einer Zahl, die wie eine Zeichenfolge funktioniert (z. B. eine Postleitzahl) dargestellt. Sie werden genutzt, um Daten zu strukturieren und zu unterteilen. Zu den gebräuchlichsten Dimensionen zählen beispielsweise die Betriebssystemversion, der Kampagnenname, der Produktname und der Mobilnetzbetreiber. Jede Dimension verfügt über eine Anzahl spezifischer Werte, die mit dieser Dimension verknüpft sind. So verfügt zum Beispiel die Dimension „Betriebssystemversion“ über Werte wie _iOS 7_ und _Android 4.1.2_.
 
 Im Folgenden finden Sie die Berichtstypen, die Sie in der Mobile-Benutzeroberfläche erstellen können:
 
@@ -69,8 +69,8 @@ So starten Sie das Tutorial:
 
 1. Klicken Sie unter App-Einstellungen verwalten auf **[!UICONTROL Nutzung]**.
 
-1. Click **[!UICONTROL Technology]** &gt; **[!UICONTROL Technology Breakdown]**.
-1. In the title bar of the report, click **[!UICONTROL Customize]**, and click the information icon.
+1. Klicken Sie auf **[!UICONTROL Technologie]** &gt; **[!UICONTROL Aufschlüsselung nach Technologie]**.
+1. Klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Benutzerspezifisch]** und anschließend auf das Informationssymbol.
 
 ![](assets/report_technology.png)
 
