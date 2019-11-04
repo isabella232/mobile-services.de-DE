@@ -1,23 +1,23 @@
 ---
 description: Im Folgenden finden Sie eine Liste der Audience Manager-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden finden Sie eine Liste der Audience Manager-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-seo-title: Audience Manager-Methoden
-solution: Marketing Cloud,Analytics
-title: Audience Manager methods
+seo-title: Audience Manager-Methoden
+solution: Experience Cloud,Analytics
+title: Audience Manager-Methoden
 topic: Entwickler und Implementierung
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Audience Manager methods{#audience-manager-methods}
+# Audience Manager-Methoden{#audience-manager-methods}
 
 Im Folgenden finden Sie eine Liste der Audience Manager-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter Analytics, Target, Audience Manager und den Identitätsdienst für Adobe Experience Platform. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `audience manager`.
+Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Identity-Dienst für Adobe Experience Platform. Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `audience manager` bei Experience Cloud ID-Methoden.
 
 Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit Lebenszyklusmetriken mit Ihrem Lebenszyklustreffer gesendet.
 
@@ -73,7 +73,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit 
 
    Setzt die DPID und DPUUID-Werte, die mit jedem Signal gesendet werden.
 
-   Wenn der an diese Methode übergebene DPUUID-Wert Zeichen enthält, die nicht URL-sicher sind, müssen Kunden den Parameter kodieren, bevor er an das SDK übergeben wird.
+   Wenn der an diese Methode übergebene DPUUID-Wert Zeichen enthält, die nicht URL-sicher sind, müssen Kunden den Parameter verschlüsseln, bevor er an das SDK übergeben wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
