@@ -3,17 +3,17 @@ description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-
 keywords: mobile
 seo-description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 seo-title: Fehlerbehebung von In-App-Nachrichten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Fehlerbehebung von In-App-Nachrichten
 topic: Metriken
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 ---
 
 
-# Troubleshooting in-app messaging{#troubleshooting-in-app-messaging}
+# Fehlerbehebung von In-App-Nachrichten{#troubleshooting-in-app-messaging}
 
 Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 
@@ -21,7 +21,7 @@ Wenn Sie alle Anforderungen für In-App-Nachrichten erfüllt haben, die Nachrich
 
 ## Enthält die Anwendung die neue Konfiguration und das neue SDK?
 
-Stellen Sie sicher, dass Sie das SDK, Version 4.2 oder höher verwenden und das SDK ordnungsgemäß konfiguriert ist. Ensure that you have a `Messages` section in your configuration (downloaded JSON file), or have a Messages remote endpoint, so that it can be retrieved from dynamic tag management.
+Stellen Sie sicher, dass Sie das SDK, Version 4.2 oder höher verwenden und das SDK ordnungsgemäß konfiguriert ist. Stellen Sie sicher, dass Ihre Konfiguration (heruntergeladene JSON-Datei) einen Abschnitt `Messages` oder einen Remote-Endpunkt „Nachrichten“ enthält, der vom dynamischen Tag-Management abgerufen werden kann.
 
 ## Meine Vollbildnachricht in Android wird nicht angezeigt. Ich verwende das richtige SDK, die richtige Konfiguration und die Auslösebedingungen sind erfüllt.
 
@@ -29,29 +29,29 @@ Haben Sie die Vollbildaktivität in Ihrer Manifestdatei definiert?
 
 ## Meine lokale Benachrichtigung in Android funktioniert nicht.
 
-Stellen Sie sicher, dass der Broadcast-Empfänger für lokale Benachrichtigungen in Ihrer Manifestdatei deklariert ist. For more information, see step 2 in [Enabling In-App Messages](/help/android/messaging-main/messaging/messaging.md).
+Stellen Sie sicher, dass der Broadcast-Empfänger für lokale Benachrichtigungen in Ihrer Manifestdatei deklariert ist. Weitere Informationen finden Sie in Schritt 2 des Abschnitts [In-App-Nachrichten aktivieren](/help/android/messaging-main/messaging/messaging.md).
 
 ## Ist die Nachricht „live“?
 
 Prüfen Sie in der Listenansicht der Seite „In-App-Nachrichten verwalten“ in der Spalte „Status“, ob die Benachrichtigung „live“ ist.
 
-## Sehen Sie sich einmal *die* Anzeige an, *zeigen Sie immer* an, *zeigen Sie die Offline* -Einstellungen auf der Registerkarte Zielgruppe an.
+## Sehen Sie sich die Einstellungen *einmal anzeigen*, *immer anzeigen*, *offline anzeigen* auf der Registerkarte „Zielgruppe“ an.
 
-Stellen Sie sicher, dass diese Einstellungen wie erforderlich festgelegt sind. Überprüfen Sie auf der Registerkarte **[!UICONTROL Zielgruppe]** die **Auslöser]-Optionen, mit deren Hilfe Sie festlegen können, wie oft die Nachricht angezeigt wird.[!UICONTROL **
+Stellen Sie sicher, dass diese Einstellungen wie erforderlich festgelegt sind. Überprüfen Sie auf der Registerkarte **[!UICONTROL Zielgruppe]** die **[!UICONTROL Auslöser]**-Optionen, mit deren Hilfe Sie festlegen können, wie oft die Nachricht angezeigt wird.
 
 ## Bei Verwendung eines Ereignisstarts als Auslöser...
 
-Ereignis wird nur bei einer neuen Sitzung ausgelöst. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
+Ereignis wird nur bei einer neuen Sitzung ausgelöst. Weitere Informationen dazu, wann eine Sitzung beginnt, finden Sie in der Spalte `lifecycleTimeout` in der JSON-Konfigurationsdatei. Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
 
 ## Ich habe meine Nachricht remote aktualisiert; in der Anwendung wird jedoch nach wie vor die alte Nachricht angezeigt.
 
-Führen Sie eine der folgenden Aufgaben durch:
+Führen Sie eine der folgenden Aufgaben aus:
 
 * Die Aktualisierung des Endpunkts entsprechend Ihrer neuen Definition im dynamischen Tag-Management kann einige Minuten dauern.
 
    Versuchen Sie es nach einiger Zeit erneut.
 
-* Die Konfiguration wird nur bei einem Neustart aktualisiert.
+* Die Konfiguration wird nur bei einem Neustart aktualisiert. 
 Wenn die Anwendung innerhalb des Sitzungs-Timeouts des Lebenszyklus neu gestartet wurde, wurde die neue Konfiguration möglicherweise nicht heruntergeladen.
 
    Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md).
@@ -80,7 +80,7 @@ Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinie
 
 Gehen Sie wie folgt vor, um sicherzustellen, dass In-App-Nachrichten auf einem iPhone X angezeigt werden:
 
-1. Add `viewport-fit=cover` in the meta tag.
+1. Fügen Sie im Meta-Tag den Eintrag `viewport-fit=cover` hinzu.
 
    ```html
    <meta name="viewport" content="viewport-fit=cover">
