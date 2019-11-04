@@ -1,22 +1,22 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
 seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
-seo-title: ADBMobile JSON-Konfiguration
-solution: Marketing Cloud, Analytics
-title: ADBMobile JSON-Konfiguration
+seo-title: ADBMobile JSON-Konfiguration
+solution: Experience Cloud,Analytics
+title: ADBMobile JSON-Konfiguration
 topic: Entwickler und Implementierung
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config {#adbmobile-json-config}
+# ADBMobile JSON-Konfiguration {#adbmobile-json-config}
 
 Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei `ADBMobile.json`.
 
-## ADBMobileConfig.json config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## Referenz zur Konfigurationsdatei „ADBMobileConfig.json“ {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinweg verwenden:
 
@@ -24,7 +24,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 >
 >Unter **iOS** können Sie die Datei `ADBMobileConfig.json` an jedem beliebigen Speicherort ablegen, auf den vom Bundle aus zugegriffen werden kann.
 
-* **Akquise**
+* **acquisition**
 
    Aktiviert die Mobile App-Akquise.
 
@@ -36,7 +36,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **analyticsForwardingEnabled**
 
-   Die Eigenschaft im Objekt `audienceManager`. If `Audience Manager` is configured and `analyticsForwardingEnabled` is set to `true`, all Analytics traffic is also forwarded to Audience Manager. Der Standardwert lautet `false`.
+   Die Eigenschaft im Objekt `audienceManager`. Wenn `Audience Manager` konfiguriert ist und `analyticsForwardingEnabled` auf `true` festgelegt ist, wird der gesamte Analytics-Datenverkehr ebenfalls an Audience Manager weitergeleitet. Der Standardwert lautet `false`.
 
    * Mindestens SDK-Version 4.8.0
 
@@ -57,20 +57,20 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    * Mindestens SDK-Version 4.6
    >[!IMPORTANT]
    >
-   >Backdated session hit information is sent in a session info server call, and additional server calls might apply.
+   >Zurückdatierte Sitzungstrefferinformationen werden in einem Sitzungsinformations-Server-Aufruf gesendet und zusätzliche Server-Aufrufe werden ggf. angewendet.
 
 
 * **batchLimit**
 
    Grenzwert für die Anzahl der Treffer, die in aufeinanderfolgenden Aufrufen gesendet werden sollen. Wenn beispielsweise `batchLimit` auf 10 festgelegt ist, wird jeder Treffer vor dem 10. Treffer in der Warteschlange gespeichert. Beim 10. Treffer werden alle 10 Treffer nacheinander gesendet.
 
-   * Default value is `0`, which means that batching is not enabled.
-   * Requires .`offlineEnabled = true`
+   * Der Standardwert lautet `0`. Das bedeutet, dass die Stapelverarbeitung nicht aktiviert ist.
+   * Erfordert `offlineEnabled = true`.
    * Mindestens SDK-Version 4.1
 
 * **charset**
 
-   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. For more information, see [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://marketing.adobe.com/resources/help/de_DE/sc/implement/charset.html).
 
    * Mindestens SDK-Version 4.0
 
@@ -80,7 +80,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    >[!IMPORTANT]
    >
-   >Diese Variable wird von Target benötigt.
+   >Diese Variable ist für Target erforderlich.
 
    * Mindestens SDK-Version 4.0
 
@@ -90,12 +90,12 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Beachten Sie die folgenden Informationen:
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
+   * Wenn `coopUnsafe` auf `true` festgelegt ist, wird `coop_unsafe=1` immer an Audience Manager und Besucher-ID-Treffer angehängt.
    * Wenn Sie die serverseitige Weiterleitung von Analytics an Audience Manager aktivieren, sehen Sie auch `coop_unsafe=1` in den Analytics-Treffern.
    Zusätzliche Informationen:
 
    * Mindestens SDK-Version 4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
+   * Die boolesche Eigenschaft des Objekts `marketingCloud`, das, wenn auf `true` festgelegt, dazu führt, dass das Gerät aus der Experience Cloud-Gerätekooperation ausgeschlossen wird.
    * Der Standardwert ist `false`.
    * Diese Einstellung wird **nur** für Kunden verwendet, die an der Gerätekooperation teilnehmen.
 
@@ -125,10 +125,10 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Ist diese Option aktiviert, werden Treffer in die Warteschlange aufgenommen, während das Gerät offline ist, und erst gesendet, wenn es wieder online ist. Für Ihre Report Suite müssen Zeitstempel aktiviert sein, um die Offline-Verfolgung zu nutzen. Der Standardwert lautet `false`.
 
-   Hier einige wichtige Informationen:
+   Im Folgenden einige wichtige Hinweise:
 
    * Wenn Zeitstempel für Ihre Report Suite aktiviert sind, `offlineEnabled`muss Ihre Konfigurationseigenschaft ** wahr sein.
-   * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
+   * Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled`muss die Konfigurationseigenschaft ** „false“ lauten.
 
       Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich bitte an Wenden Sie sich an die Kundenunterstützung oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter. Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
 
@@ -136,7 +136,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **org**
 
-   Specifies the Experience Cloud org ID for the Adobe Experience Platform Identity Service.
+   Gibt die Experience Cloud-Organisations-ID für den Identity-Dienst für Adobe Experience Platform an.
 
    * Mindestens SDK-Version 4.3
 
@@ -160,7 +160,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. To download an updated configuration file, see Before you start.[](/help/ios/getting-started/requirements.md)
+   Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. Informationen zum Herunterladen einer aktualisierten Konfigurationsdatei finden Sie unter [Vorbereitung](/help/ios/getting-started/requirements.md).
 
 * **postback**
 
@@ -174,7 +174,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   The `payload` object in the code is an example payload for a message definition that would go in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   Das Objekt `payload` im Code stellt eine Beispiel-Payload für eine Nachrichtendefinition dar, die in der Datei `ADBMobileConfig.json` verwendet werden würde. Weitere Informationen dazu finden Sie unter [Postbacks](/help/ios/analytics-main/postback/postback.md).
 
    * Mindestens SDK-Version 4.6
 
@@ -196,7 +196,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    >[!IMPORTANT]
    >
-   >Diese Variable ist für die Akquise erforderlich. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >Diese Variable ist für Akquise erforderlich. Wenn die Variable auf `0` festgelegt oder nicht enthalten ist, wartet das SDK nicht auf Akquise-Daten und Akquise-Metriken werden nicht verfolgt.
 
    * Mindestens SDK-Version 4.1
 
@@ -232,7 +232,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Der Analytics- oder Zielgruppen-Management-Server, basierend auf dem übergeordneten Knoten.
 
-   This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. Das Präfix basiert auf der Variablen `ssl` und wird automatisch von der Bibliothek verarbeitet.
+   Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `https://` oder `https://`. Das Präfix basiert auf der Variablen `ssl` und wird automatisch von der Bibliothek verarbeitet.
 
    Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
 
@@ -256,7 +256,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   The `payload` object in the code is an sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   Das Objekt `payload` im Code stellt eine Beispiel-Payload für eine Nachrichtendefinition dar, die in die Datei `ADBMobileConfig.json` aufgenommen wird. Weitere Informationen dazu finden Sie unter [Postbacks](/help/ios/analytics-main/postback/postback.md).
 
    * Mindestens SDK-Version 4.0
 
@@ -267,7 +267,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    * Mindestens SDK-Version 4.0
 
 
-## Sample `ADBMobileConfig.json` file {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Beispieldatei `ADBMobileConfig.json` {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 
@@ -380,7 +380,7 @@ Der Nachrichtenknoten wird automatisch von Adobe Mobile Services erstellt und mu
 
       * Warnhinweis, erforderlich
       * Für Schaltfläche „Abbrechen“ verwendeter Text
-   * "url"
+   * „url“
 
       * Warnhinweis, optional
       * URL, die beim Klicken der Schaltfläche „Bestätigen“ aufgerufen wird
