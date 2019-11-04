@@ -3,17 +3,17 @@ description: Mithilfe dieser Informationen können Probleme mit Push-Nachrichten
 keywords: mobile
 seo-description: Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 seo-title: Fehlerbehebung für Push-Nachrichten
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Fehlerbehebung für Push-Nachrichten
 topic: Metriken
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Troubleshooting push messaging{#troubleshooting-push-messaging}
+# Fehlerbehebung für Push-Nachrichten{#troubleshooting-push-messaging}
 
 Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 
@@ -21,7 +21,7 @@ Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werd
 
 Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftreten:
 
-* **Warten auf Treffer in Analytics**
+* **Warten auf einen Analytics-Treffer**
 
    Jede Report Suite verfügt über eine Einstellung, die festlegt, wann eingehende Analytics-Treffer verarbeitet werden sollen. Standardmäßig geschieht dies einmal pro Stunde.
 
@@ -29,16 +29,16 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 
 * **Warten auf den Push-Dienst**
 
-   Der Push-Dienst (APNS oder GCM) sendet die Nachricht möglicherweise nicht direkt. Zwar sind sie ungewöhnlich, jedoch wurden bereits Wartezeiten von 5–10 Minuten festgestellt. Informationen dazu, ob die Push-Nachricht gesendet wurde, finden Sie in der **[!UICONTROL Berichtsansicht]** der Push-Nachricht. Suchen Sie dort in der Tabelle **[!UICONTROL Nachrichtenverlauf]nach der Nachricht und ermitteln Sie die Anzahl** Veröffentlicht **.**
+   Der Push-Dienst (APNS oder GCM) sendet die Nachricht möglicherweise nicht direkt. Zwar sind sie ungewöhnlich, jedoch wurden bereits Wartezeiten von 5–10 Minuten festgestellt. Informationen dazu, ob die Push-Nachricht gesendet wurde, finden Sie in der **[!UICONTROL Berichtsansicht]** der Push-Nachricht. Suchen Sie dort in der Tabelle **[!UICONTROL Nachrichtenverlauf]** nach der Nachricht und ermitteln Sie die Anzahl **[!UICONTROL Veröffentlicht]**.
 
    >[!TIP]
    >
-   >Diese Anzahl ist die Anzahl der erfolgreichen Sends an die Push-Dienste. Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird.
+   >Diese Anzahl entspricht der Anzahl erfolgreicher Sendeversuche an den bzw. die Push-Dienst(e). Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird.
 
    Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie unter:
 
-   * [Quality of Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options#lifetime).
+   * [Servicequalität](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
+   * [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options#lifetime.).
 
 ## Warum ist mein Android-GCM-API-Schlüssel ungültig?
 
@@ -70,7 +70,7 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
    canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
    ```
 
-   You can also check the validity of a registration token by replacing `"ABC"` with the token.
+   Sie können auch die Gültigkeit eines Registrierungstokens überprüfen, indem Sie `"ABC"` durch das entsprechende Token ersetzen.
 
 ## Warum funktioniert mein APNS-Zertifikat nicht?
 
@@ -78,11 +78,11 @@ Ihr APNS-Zertifikat kann aus folgenden Gründen ungültig sein:
 
 * Sie verwenden ein Sandbox-Zertifikat anstelle eines Produktionszertifikats.
 * Sie verwenden ein nicht unterstütztes Produktions-/Sandbox-Zertifikat.
-* You are using `.p8` file instead of a `.p12` file.
+* Sie verwenden eine `.p8`-Datei anstelle einer `.p12`-Datei.
 
 ## Beheben von Push-Nachrichtenfehlern
 
-**An example**
+**Ein Beispiel**
 
 Im folgenden Beispiel wird veranschaulicht, wie Sie bei Verwendung einer VRS einen Push-Fehler beheben.
 
@@ -91,16 +91,16 @@ Der folgende Kunde verfügt über zwei iOS-Apps:
 * App-Name: PhotoShop_app_iOS
    * Übergeordnete RSID: AllAdobe PhotoShop_apps
    * VRSID: PhotoShop_iOS_app_SF
-   * VRSID Definition Segment: `a.appid contains “PhotoShop_iOS_app_SF”`
+   * VRSID-Definitionssegment: `a.appid contains “PhotoShop_iOS_app_SF”`
 * App-Name: PhotoShop_app_iOS
    * Übergeordnete RSID: AllAdobe PhotoShop_apps
-   * RSID: FotoShop_iOS_app_LA
-   * VRSID Definition Segment: `a.os contains “iOS”`
+   * RSID: PhotoShop_iOS_app_LA
+   * VRSID-Definitionssegment: `a.os contains “iOS”`
 
-In this example, if a Photoshop employee sends a push to the *PhotoShop_iOS_app_SF* app, all *PhotoShop_iOS_app_SF app* users receive the push message as expected. But, if the employee sends a message to the *PhotoShop_iOS_app_LA* app, because its VRSID Definition Segment is incorrect (`iOS` instead of `a.os contains "PhotoShop_iOS_app_LA"`), the message is sent to **all** iOS users in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blacklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. If the segment had been defined as `a.os contains “PhotoShop_iOS_app_LA”`, the push message would have been sent to only *PhotoShop_iOS_app_LA* users.
+In diesem Beispiel erhalten wie erwartet alle Benutzer der *PhotoShop_iOS_app_SF-App* diese Push-Nachricht, wenn ein Photoshop-Mitarbeiter eine Push-Nachricht an die *PhotoShop_iOS_app_SF*-App sendet. Wenn der Mitarbeiter jedoch eine Nachricht an die *PhotoShop_iOS_app_LA*-App sendet, wird die Nachricht aufgrund des falschen VRSID-Definitionssegments (`iOS` anstatt `a.os contains "PhotoShop_iOS_app_LA"`) an **alle** iOS-Benutzer unter *AllAdobe PhotoShop_apps* gesendet. Obwohl die Nachricht auch an die Benutzer von *PhotoShop_iOS_app_LA* gesendet wird, sorgt sie dafür, dass die Push-IDs für *PhotoShop_iOS_app_SF*-Benutzer auf die Blacklist gesetzt werden, da die *PhotoShop_iOS_app_SF*-App über ein anderes Zertifikat verfügt. Wenn das Segment als `a.os contains “PhotoShop_iOS_app_LA”` definiert worden wäre, wäre die Nachricht nur an *PhotoShop_iOS_app_LA*-Benutzer gesendet worden.
 
-If passed with the *PhotoShop_IOS_app_LA* push certificate, the push identifiers for the *PhotoShop_iOS_app_SF* come back as `invalid`.
+Wenn die Push-IDs für *PhotoShop_iOS_app_SF* mit dem *PhotoShop_IOS_app_LA*-Push-Zertifikat übergeben werden, werden sie als `invalid` zurückgegeben.
 
 >[!CAUTION]
 >
->After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. Wenn nicht **alle** Apps über ein gültiges Zertifikat verfügen, werden Ihre Zielgruppensegmente möglicherweise auf unbestimmte Zeit auf die Blacklist gesetzt, sodass Sie betroffenen Benutzern künftig keine Push-Nachrichten mehr senden können. Weitere Informationen zu Zielgruppensegmenten finden Sie unter [Zielgruppe: Zielgruppenoptionen für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)definieren und konfigurieren.
+>Wenn Sie eine Push-Nachricht für eine App erstellen, die eine VRS verwendet, und auf **[!UICONTROL Speichern und Senden]** klicken, wird ein Warnhinweis angezeigt, um Sie daran zu erinnern, dass jede aufgeführte App über ein gültiges Zertifikat verfügen **muss**. Wenn nicht **alle** Apps über ein gültiges Zertifikat verfügen, werden Ihre Zielgruppensegmente möglicherweise auf unbestimmte Zeit auf die Blacklist gesetzt, sodass Sie betroffenen Benutzern künftig keine Push-Nachrichten mehr senden können. Weitere Informationen zu Zielgruppensegmenten finden Sie unter [Zielgruppe: Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
