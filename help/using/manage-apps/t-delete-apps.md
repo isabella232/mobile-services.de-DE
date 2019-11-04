@@ -3,26 +3,26 @@ description: Sie können Apps aus Adobe Mobile löschen.
 keywords: mobile
 seo-description: Sie können Apps aus Adobe Mobile löschen.
 seo-title: App löschen
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: App löschen
 topic: Metriken
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Delete an app{#delete-an-app}
+# App löschen{#delete-an-app}
 
-Sie können eine App aus der Mobile Services-Benutzeroberfläche löschen.
+Sie können Apps aus der Benutzeroberfläche von Mobile Services löschen.
 
-1. Click **[!UICONTROL Manage Apps]**.
+1. Klicken Sie auf **[!UICONTROL Apps verwalten]**.
 1. Aktivieren Sie die Kontrollkästchen neben den Apps, die Sie löschen möchten.
 
    >[!IMPORTANT]
    >
-   >Wenn Sie eine App aus Adobe Mobile löschen, wird sie aus der Adobe Mobile-Benutzeroberfläche entfernt, die App wird jedoch nicht aus dem Apple App Store oder Google Play entfernt. Die Report Suite und die Daten sind weiterhin in Adobe Analytics verfügbar, Sie können sie jedoch nicht in Adobe Mobile verwalten.
+   >Durch Löschen einer App aus Adobe Mobile wird die App aus der Adobe Mobile-Benutzeroberfläche entfernt, sie wird jedoch nicht im Apple App Store oder in Google Play gelöscht. Die Report Suite und die Daten sind weiterhin in Adobe Analytics verfügbar, Sie können sie jedoch nicht in Adobe Mobile verwalten.
 
-1. Click **[!UICONTROL Delete Selected]**.
-1. Click **[!UICONTROL Delete]**.
+1. Klicken Sie auf **[!UICONTROL Ausgewählte löschen]**.
+1. Klicken Sie auf **[!UICONTROL Löschen]**.
