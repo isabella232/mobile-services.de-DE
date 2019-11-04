@@ -2,20 +2,20 @@
 description: 'Die folgenden Akquisemethoden werden von der iOS-Bibliothek bereitgestellt '
 seo-description: 'Die folgenden Akquisemethoden werden von der iOS-Bibliothek bereitgestellt '
 seo-title: Akquisemethoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Akquisemethoden
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Acquisition methods {#acquisition-methods}
+# Akquisemethoden {#acquisition-methods}
 
 Die folgenden Akquisemethoden werden von der iOS-Bibliothek bereitgestellt:
 
-The following method is supported:
+Die folgende Methode wird unterstützt:
 
 * **acquisitionCampaignStartForApp:data:**
 
