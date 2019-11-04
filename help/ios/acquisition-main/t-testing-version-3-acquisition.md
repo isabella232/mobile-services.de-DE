@@ -2,27 +2,27 @@
 description: Diese Informationen helfen Ihnen dabei, einen V3-Akquise-Kampagnenlink basierend auf einem Gerätefingerabdruck zu übertragen.
 seo-description: Diese Informationen helfen Ihnen dabei, einen V3-Akquise-Kampagnenlink basierend auf einem Gerätefingerabdruck zu übertragen.
 seo-title: Testen der V3-Akquise
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Testen der V3-Akquise
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Testing V3 acquisition{#testing-v-acquisition}
+# V3-Akquise testen{#testing-v-acquisition}
 
 Diese Informationen helfen Ihnen dabei, einen V3-Akquise-Kampagnenlink basierend auf einem Gerätefingerabdruck zu übertragen.
 
 >[!IMPORTANT]
 >
-> Acquisition V3 bezieht sich auf die Akquiselinks, die Sie mithilfe des Akquise-Builders auf der Adobe Mobile Services-Benutzeroberfläche erstellen. Zum Verwenden dieses Features müssen Sie ein Upgrade von iOS-SDK-Version 4.6.0 oder höher vornehmen.
+>Die V3-Akquise bezieht sich auf die Akquise-Links, die Sie mithilfe des Akquise-Builders auf der Adobe Mobile Services-Benutzeroberfläche erstellen. Zum Verwenden dieses Features müssen Sie ein Upgrade von iOS-SDK-Version 4.6.0 oder höher vornehmen.
 
 Wenn die mobile App noch nicht im App-Store vorhanden ist, wenn Sie den Kampagnenlink erstellen, sollten Sie eine beliebige mobile App als Ziel auswählen. Dies wirkt sich nur auf die App aus, zu der Sie vom Akquiseserver umgeleitet werden, nachdem Sie auf den Akquiselink geklickt haben. Dies wirkt sich jedoch nicht auf die Fähigkeit zum Testen des Links aus.
 
-1. Bearbeiten Sie die Aufgaben mit den Voraussetzungen unter [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md).
-1. Navigieren Sie zu **[!UICONTROL Akquise-Builder]auf der Adobe Mobile Services-Benutzeroberfläche und generieren Sie eine Akquise-Kampagnen-URL.**
+1. Führen Sie die erforderlichen Schritte in [App-Akquise](/help/ios/acquisition-main/acquisition.md) aus.
+1. Gehen Sie zu **[!UICONTROL Akquise-Builder]** auf der Adobe Mobile Services-Benutzeroberfläche und generieren Sie eine Akquise-Kampagnen-URL.
 
    Beispiel:
 
@@ -40,17 +40,17 @@ Wenn die mobile App noch nicht im App-Store vorhanden ist, wenn Sie den Kampagne
    {"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.
    ```
 
-   If you do not see `contextData`, or some of it is missing, ensure that the acquisition URL follows the format that is specified in [Create Acquisition Link Manually](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
+   Wenn die Kontextdaten (`contextData`) nicht angezeigt werden oder Teile fehlen, stellen Sie sicher, dass die Akquise-URL das in [Akquise-Link manuell erstellen](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md) angegebene Format aufweist.
 1. Stellen Sie sicher, dass die folgenden Einstellungen in Ihrer Konfigurationsdatei vorhanden sind:
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | The server should be  `c00.adobe.com`. *`appid`* should equal the *`appid`* in your acquisition link. |
+   | Akquise | Der Server sollte `c00.adobe.com` lauten. *`appid`* sollte der *`appid`* in Ihrem Akquise-Link entsprechen. |
    | analytics | `referrerTimeout` sollte einen Wert größer als 0 aufweisen. |
 
 
 1. (Bedingt) Wenn die Einstellung `ssl` in der Konfigurationsdatei Ihrer App „true“ lautet, sollten Sie Ihren Akquiselink zum Verwenden des HTTPS-Protokolls aktualisieren.
-1. Klicken Sie auf den generierten Link des Mobilgeräts, auf dem Sie die App installieren möchten.
+1. Klicken Sie auf dem Mobilgerät auf den generierten Link, auf dem Sie die App installieren möchten.
 
    Die Server von Adobe (`c00.adobe.com`) speichern den Fingerabdruck und nehmen eine Umleitung zum App-Store vor. Die App muss nicht für Testzwecke heruntergeladen werden.
 1. Starten Sie die Anwendung erstmals auf demselben Mobilgerät, das Sie in Schritt 6 verwendet haben.
@@ -58,7 +58,7 @@ Wenn die mobile App noch nicht im App-Store vorhanden ist, wenn Sie den Kampagne
    Bei Bedarf können Sie die App löschen und erneut installieren.
 1. (Optional) Sie können die Debugging-Protokollierung des SDK aktivieren, um zusätzliche Informationen zu erhalten.
 
-   Wenn alles richtig funktioniert, sollten die folgenden Protokolle angezeigt werden:
+   Wenn alles funktioniert, sollten Sie folgende Protokolle erhalten:
 
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
@@ -80,7 +80,7 @@ Netzwerkfehler.
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` nicht in `contextData`.
+      `a.referrer.campaign.name` ist nicht in `contextData` vorhanden.
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -88,17 +88,17 @@ Netzwerkfehler.
 
       Beachten Sie die folgenden Informationen:
 
-      * Der Akquiseserver bietet eine Zuordnungsübereinstimmung, die auf der IP-Adresse und den „user-agent“-Informationen basiert, die beim Klicken auf den Link (Schritt 6) und beim Start der App (Schritt 7) aufgezeichnet werden. 
+      * Der Akquiseserver bietet eine Zuordnungsübereinstimmung, die auf der IP-Adresse und den „user-agent“-Informationen basiert, die beim Klicken auf den Link (Schritt 6) und beim Start der App (Schritt 7) aufgezeichnet werden.
 
          Sie sollten sich im selben Netzwerk befinden, wenn Sie auf die URL klicken und wenn Sie die App öffnen.
 
       * Durch die Verwendung von HTTP-Überwachungstools können über die App gesendete Treffer überwacht werden, um die Verifizierung der Akquisezuordnung bereitzustellen.
 
-         Es sollten eine Anforderung vom Typ `/v3/<appid>/start` und eine Anforderung vom Typ `/v3/<appid>/end` angezeigt werden, die an den Akquiseserver gesendet wurden. Variationen in „user-agent“ führen möglicherweise dazu, dass die Zuordnung fehlschlägt.
+         Es sollten eine Anfrage vom Typ `/v3/<appid>/start` und eine Anfrage vom Typ `/v3/<appid>/end` angezeigt werden, die an den Akquiseserver gesendet wurden. Variationen in „user-agent“ führen möglicherweise dazu, dass die Zuordnung fehlschlägt.
 
          >[!TIP]
          >
-         >Vergewissern Sie sich, dass `https://c00.adobe.com/v3/<appid>/start` und `https://c00.adobe.com/v3/<appid>/end` über dieselben Benutzeragentenwerte verfügen.
+         >Vergewissern Sie sich, dass `https://c00.adobe.com/v3/<appid>/start` und `https://c00.adobe.com/v3/<appid>/end` über dieselben Werte für „user-agent“ verfügen.
 
       * Der Akquiselink und der Treffer aus dem SDK sollten dasselbe HTTP-/HTTPS-Protokoll verwenden.
 
