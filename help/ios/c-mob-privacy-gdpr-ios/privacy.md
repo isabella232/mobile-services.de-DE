@@ -2,33 +2,33 @@
 description: Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlöschung nach DSGVO.
 seo-description: Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlöschung nach DSGVO.
 seo-title: Festlegen des Auswahlstatus eines Benutzers
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Festlegen des Auswahlstatus eines Benutzers
 topic: Entwickler und Implementierung
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Setting the user's opt status {#setting-the-user-s-opt-status}
+# Auswahlstatus eines Benutzers festlegen {#setting-the-user-s-opt-status}
 
 Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlöschung nach DSGVO.
 
 >[!IMPORTANT]
 >
->Starting with Experience Cloud iOS SDKs 4.15, setting the privacy status to `unknown` holds Audience Manager and Experience Cloud ID hits.
+>Ab den Experience Cloud iOS-SDK Version 4.15 werden durch Festlegen des Datenschutzstatus auf `unknown` Treffer für Audience Manager- und Experience Cloud ID einbehalten.
 
 Durch Verwendung der folgenden Einstellungen können Sie steuern, ob Aktivitäten von Analytics, Target und Audience Manager auf einem Gerät zulässig sind:
 
-* `privacyDefault` in [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` in der [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
 
    Diese Einstellung steuert die anfängliche Einstellung, die beibehalten wird, bis sie im Code geändert wird.
 
 * `setPrivacyStatus` method.
 
-   Nachdem die Datenschutzeinstellung mithilfe dieser Methode geändert wurde, ist die Änderung so lange dauerhaft, bis sie mithilfe dieser Methode erneut geändert wird oder wenn Sie die App deinstallieren und erneut installieren.
+   Nachdem die Datenschutzeinstellung mithilfe dieser Methode geändert wurde, ist die Änderung so lange dauerhaft, bis sie mithilfe dieser Methode erneut geändert wird, oder wenn Sie die App deinstallieren und erneut installieren.
 
    Weitere Informationen zu den Methoden finden Sie unter [Konfigurationsmethoden](/help/ios/configuration/json-config/json-config.md).
 
@@ -39,7 +39,7 @@ Hier finden Sie Informationen zu den einzelnen Datenschutzstatus:
    * Analytics: Treffer werden gesendet.
    * Target: Mbox-Anfragen werden gesendet.
    * Audience Manager: Signale und ID-Synchronisationen werden gesendet.
-   * Value in the JSON config file: `optedin`
+   * Wert in der JSON-Konfigurationsdatei: `optedin`
    * Wert in `setPrivacyStatus`: `ADBMobilePrivacyStatusOptIn`
 
 * **Opt-out**
@@ -47,7 +47,7 @@ Hier finden Sie Informationen zu den einzelnen Datenschutzstatus:
    * Analytics: Treffer werden verworfen.
    * Target: Mbox-Anfragen sind nicht zulässig.
    * Audience Manager: Signale und ID-Synchronisationen sind nicht zulässig.
-   * Value in the JSON config file: `optedout`
+   * Wert in der JSON-Konfigurationsdatei: `optedout`
    * Wert in `setPrivacyStatus`: `ADBMobilePrivacyStatusOptOut`
 
 * **„Unbekannt“**
@@ -58,7 +58,7 @@ Hier finden Sie Informationen zu den einzelnen Datenschutzstatus:
 
    * Target: Mbox-Anfragen werden gesendet.
    * Audience Manager: Signale und ID-Synchronisationen werden gesendet.
-   * Value in the JSON config file: `optunknown`
+   * Wert in der JSON-Konfigurationsdatei: `optunknown`
    * Wert in `setPrivacyStatus`: `ADBMobilePrivacyStatusUnknown`
 
 ## Beispiele {#section_128AC455EE024193B5D4E5A565B53D00}
