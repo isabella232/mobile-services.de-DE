@@ -1,31 +1,31 @@
 ---
 description: Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SDK (verzögerte) Deep-Links in Ihren mobilen Apps zu verfolgen.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SDK (verzögerte) Deep-Links in Ihren mobilen Apps zu verfolgen.
-seo-title: Tracking Deep Links in Adobe Mobile Services
-solution: Marketing Cloud, Analytics
+seo-title: Deep-Links in Adobe Mobile Services verfolgen
+solution: Experience Cloud,Analytics
 title: Verfolgen von Deep-Links
 topic: Entwickler und Implementierung
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Tracking deep links {#tracking-deep-links}
+# Deep-Links verfolgen {#tracking-deep-links}
 
 Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SDK (verzögerte) Deep-Links in Ihren mobilen Apps zu verfolgen.
 
-## Verfolgen von Deep Links
+## Deep-Links verfolgen
 
 1. Fügen Sie das SDK zu Ihrem Projekt hinzu und implementieren Sie Lebenszyklusmetriken.
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core Implementation and Lifecycle.**[](/help/android/getting-started/dev-qs.md)
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zu Ihrem IntelliJ IDEA- oder Eclipse-Projekt hinzufügen* in [Grundlegende Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
 
 1. Registrieren Sie die Anwendung für die Verarbeitung von URLs.
 
-   For more information, see [URLs](https://developer.android.com/training/basics/intents/filters.html).
+   Weitere Informationen dazu finden Sie unter [URLs](https://developer.android.com/training/basics/intents/filters.html).
 1. Übergeben Sie die Aktivität mit dem Deep-Link-Intent per `collectLifecycleData` an das Adobe-SDK.
 
    Im Folgenden finden Sie einen Beispielpfad-Deep-Link:
@@ -42,9 +42,9 @@ Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SD
    }
    ```
 
-The Adobe Mobile] SDK can parse key and value pairs of data that is appended to any Deep or Universal Link as long as the link contains a key with the `a.deeplink.id` label and a corresponding non-null and user-generated value. All key and value pairs of data that are appended to the link will be parsed, attached to a lifecycle hit, and sent to Adobe Analytics] as long as the link contains the `a.deeplink.id` key and value.
+Das Adobe Mobile SDK kann Schlüssel-Wert-Paare von an Deep- oder universelle Links angehängten Daten analysieren, sofern der Link einen Schlüssel mit der Bezeichnung `a.deeplink.id`, einen entsprechenden Wert, der nicht „Null“ entspricht, sowie einen vom Benutzer generierten Wert aufweist. Alle Schlüssel-Wert-Paare von Daten, die an den Link angehängt sind, werden analysiert, an einen Lebenszyklustreffer angehängt und an Adobe Analytics gesendet, sofern der Link das Schlüssel-Wert-Paar `a.deeplink.id` enthält.
 
-Außerdem können Sie einen oder mehrere der folgenden reservierten Schlüssel (mit vom Benutzer generierten Werten) an den Deep- oder Universal Link anhängen:
+Zusätzlich können Sie auswählen, ob Sie einen oder mehrere der folgenden reservierten Schlüssel (mit benutzergenerierten Werten) an Deep- oder universelle Links anhängen möchten:
 
 * `a.launch.campaign.trackingcode`
 * `a.launch.campaign.source`
@@ -52,13 +52,13 @@ Außerdem können Sie einen oder mehrere der folgenden reservierten Schlüssel (
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-Bei diesen Schlüsseln handelt es sich um vorab zugeordnete Variablen für das Reporting in Adobe Analytics. Weitere Informationen zu Zuordnungs- und Verarbeitungsregeln finden Sie unter [Verarbeitungsregeln und Kontextdaten](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Bei diesen Schlüsseln handelt es sich um vorab zugeordnete Variablen für das Reporting in Adobe Analytics. Weitere Informationen zu Zuordnungs- und Verarbeitungsregeln finden Sie unter [Verarbeitungsregeln und Kontextdaten](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-## Verfolgen von verzögerten Deep Links (zur Verwendung mit Marketing-Links)
+## Verzögerte Deep-Links (zur Verwendung mit Marketinglinks) verfolgen
 
 Im Falle eines verzögerten Deep-Links öffnet das Adobe-SDK einen neuen Intent mit dem Deep-Link als Intent-Daten. Dieser Prozess wird als externer Deep-Link unter Verwendung des obigen Codes behandelt.
 
-## Deep link public information {#section_1815396353614DA8A63D8D92112217E7}
+## Öffentliche Deep-Link-Informationen {#section_1815396353614DA8A63D8D92112217E7}
 
 ### Konstanten
 
