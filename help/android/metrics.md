@@ -1,36 +1,36 @@
 ---
 description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
 seo-title: Lebenszyklusmetriken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Lebenszyklusmetriken
 topic: Entwickler und Implementierung
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
-# Lifecycle metrics{#lifecycle-metrics}
+# Lebenszyklusmetriken{#lifecycle-metrics}
 
-Dieser Abschnitt enthält Informationen zu den Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können, sowie einen Link zur Fehlerbehebung bei Lebenszyklusdaten. Weitere Informationen zur Fehlerbehebung finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Dieser Abschnitt enthält Informationen zu den Metriken und Dimensionen, die von der Mobile-Bibliothek nach der Implementierung des Lebenszyklus automatisch gemessen werden können, sowie einen Link zur Fehlerbehebung bei Lebenszyklusdaten. Weitere Informationen zur Fehlerbehebung finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](https://helpx.adobe.com/de/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
-* Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
+* Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Lebenszyklusmetriken und -dimensionen {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Wenn Lebenszyklusmetriken konfiguriert sind, werden sie in Kontextdatenparametern an Analytics, bei jedem mbox-Aufruf in Parametern an Target sowie als Signale an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management ein anderes Präfix für jede Metrik verwendet.
 
-Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufruf gesendet werden, automatisch mit der Metrik oder Dimension erfasst und in Berichten behandelt, und die Ausnahmen werden vermerkt.
+Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Kontextdaten automatisch mithilfe der Metrik oder Dimension erfasst und gemeldet. Ausnahmen werden angegeben.
 
 ### Metriken
 
@@ -107,7 +107,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
 
 * **App-ID**
 
-   Stores the application name and version in the `[AppName] [BundleVersion]` format. Ein Beispiel für dieses Format ist `myapp 1.1`.
+   Speichert den App-Namen und die Version im Format `[AppName] [BundleVersion]`. Ein Beispiel für dieses Format ist `myapp 1.1`.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.AppID`
    * Audience Manager: `c_a_AppID`
@@ -160,7 +160,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
 
    >[!IMPORTANT]
    >
-   >Diese Metrik wird nicht automatisch in einer Analytics-Variablen gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
+   >Diese Metrik wird nicht automatisch in einer Analytics-Variable gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.DaysSinceLastUpgrade`
    * Audience Manager: `c_a_DaysSinceLastUpgrade`
@@ -171,7 +171,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
 
    >[!IMPORTANT]
    >
-   >Diese Metrik wird nicht automatisch in einer Analytics-Variablen gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
+   >Diese Metrik wird nicht automatisch in einer Analytics-Variable gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.LaunchesSinceUpgrade`
    * Audience Manager: `c_a_LaunchesSinceUpgrade`
@@ -189,7 +189,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
 
    >[!IMPORTANT]
    >
-   >Diese Metrik wird nicht automatisch in einer Analytics-Variablen gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
+   >Diese Metrik wird nicht automatisch in einer Analytics-Variable gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.CarrierName`
    * Audience Manager: `c_a_CarrierName`
@@ -201,7 +201,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
    * Analytics-Kontextdaten/Target-Parameter: `a.Resolution`
    * Audience Manager: `c_a_Resolution`
 
-## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
+## Zusätzliche Mobile-Metriken und -Dimensionen {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Beschreibung** in den Variablen der mobilen Lösung erfasst.
 
@@ -209,36 +209,36 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
 
 * **Aktionsdauer insgesamt**
 
-   Populated by `trackTimedAction` methods.
+   Erfasst durch `trackTimedAction`-Methoden.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.action.time.total`
-   * Eigenschaften von Audience Manager: `c_a_action_time_total`
+   * Audience Manager-Eigenschaft: `c_a_action_time_total`
 
 * **Aktionsdauer in Anwendung**
 
-   Populated by `trackTimedAction` methods.
+   Erfasst durch `trackTimedAction`-Methoden.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.action.time.inapp`
-   * Eigenschaften von Audience Manager: `c_a_action_time_inapp`
+   * Audience Manager-Eigenschaft: `c_a_action_time_inapp`
 
 * **Lebenszeitwert (event)**
 
-   Populated by `trackLifetimeValue` methods.
+   Erfasst durch `trackLifetimeValue`-Methoden.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.ltv.amount`
-   * Eigenschaften von Audience Manager: `c_a_ltv_amount`
+   * Audience Manager-Eigenschaft: `c_a_ltv_amount`
 
 ### Dimensionen
 
 * **Standort (bis 10 km)**
 
-   Populated by `trackLocation` methods.
+   Erfasst durch `trackLocation`-Methoden.
 
    * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Eigenschaften von Audience Manager:
+   * Audience Manager-Eigenschaften:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -252,7 +252,7 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Eigenschaften von Audience Manager:
+   * Audience Manager-Eigenschaften:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -266,7 +266,7 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Eigenschaften von Audience Manager:
+   * Audience Manager-Eigenschaften:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -276,61 +276,61 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
 
    Erfasst durch trackLocation-Methoden, wenn sich das Gerät an einem POI befindet.
 
-   * Analytics Context Data/Target Parameters: `a.loc.poi`
-   * Eigenschaften von Audience Manager: `c_a_loc_poi`
+   * Analytics-Kontextdaten/Target-Parameter: `a.loc.poi`
+   * Audience Manager-Eigenschaft: `c_a_loc_poi`
 
 * **Entfernung zum Zentrum des Zielpunkts**
 
    Erfasst durch trackLocation-Methoden, wenn sich das Gerät an einem POI befindet.
 
-   * Analytics Context Data/Target Parameters: `a.loc.dist`
-   * Eigenschaften von Audience Manager: `c_a_loc_dist`
+   * Analytics-Kontextdaten/Target-Parameter: `a.loc.dist`
+   * Audience Manager-Eigenschaft: `c_a_loc_dist`
 
 * **Lebenszeitwert (Konversionsvariable)**
 
    Erfasst durch trackLifetimeValue-Methoden.
 
-   * Analytics Context Data/Target Parameters: `a.ltv.amount`
-   * Eigenschaften von Audience Manager: `c_a_ltv_amount`
+   * Analytics-Kontextdaten/Target-Parameter: `a.ltv.amount`
+   * Audience Manager-Eigenschaft: `c_a_ltv_amount`
 
-* **Trackingcode**
+* **Rückverfolgungscode**
 
    Wird von Mobile App – Akquise erfasst und automatisch von Adobe Mobile Services generiert.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.trackingcode`
-   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_trackingcode`
+   * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.trackingcode`
+   * Audience Manager-Eigenschaft: `c_a_referrer_campaign_trackingcode`
 
 * **Kampagne**
 
    Name der Kampagne, ebenfalls gespeichert in der Kampagnenvariable. Erfasst durch App-Akquise.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.name`
-   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_name`
+   * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.name`
+   * Audience Manager-Eigenschaft: `c_a_referrer_campaign_name`
 
 * **Kampagneninhalt**
 
    Der Name der ID des Inhalts, in dem der Link angezeigt wurde. Erfasst durch App-Akquise.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.content`
-   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_content`
+   * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.content`
+   * Audience Manager-Eigenschaft: `c_a_referrer_campaign_content`
 
 * **Kampagnenmedium**
 
    Marketingmedium, beispielsweise ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.medium`
-   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_medium`
+   * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.medium`
+   * Audience Manager-Eigenschaft: `c_a_referrer_campaign_medium`
 
 * **Kampagnenquelle**
 
    Ursprünglicher Referrer, wie z. B. Newsletter oder soziales Netzwerk. Erfasst durch App-Akquise.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.source`
-   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_source`
+   * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.source`
+   * Audience Manager-Eigenschaft: `c_a_referrer_campaign_source`
 
 * **Kampagnenbegriff**
 
    Bezahlte Keywords oder andere Begriffe, die Sie mit dieser Akquise verfolgen wollen. Erfasst durch App-Akquise.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.term`
-   * Eigenschaften von Audience Manager: `c_a_referrer_campaign_term`
+   * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.term`
+   * Audience Manager-Eigenschaft: `c_a_referrer_campaign_term`
