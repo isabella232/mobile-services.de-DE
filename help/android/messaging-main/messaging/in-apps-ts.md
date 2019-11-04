@@ -3,11 +3,11 @@ description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-
 keywords: mobile
 seo-description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 seo-title: Fehlerbehebung bei In-App-Nachrichten
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Fehlerbehebung bei In-App-Nachrichten
 topic: Metriken
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
@@ -21,7 +21,7 @@ Wenn Sie alle Anforderungen für In-App-Nachrichten erfüllt haben, aber Nachric
 
 ## Enthält die Anwendung die neue Konfiguration und das neue SDK?
 
-Ensure that you have an [In-App Messaging](/help/android/messaging-main/messaging/messaging.md) section in your configuration (downloaded JSON file) or have a Messages remote endpoint, so that it can be retrieved from dynamic tag management.
+Stellen Sie sicher, dass Ihre Konfiguration (heruntergeladene JSON-Datei) einen Abschnitt [In-App-Nachrichten](/help/android/messaging-main/messaging/messaging.md) oder einen Remote-Endpunkt „Nachrichten“ enthält, der vom dynamischen Tag-Management abgerufen werden kann.
 
 ## Meine Vollbildnachricht in Android wird nicht angezeigt. Ich verwende das richtige SDK, die richtige Konfiguration und die Auslösebedingungen sind erfüllt.
 
@@ -29,17 +29,17 @@ Haben Sie die Vollbildaktivität in Ihrer Manifestdatei definiert?
 
 ## Meine lokale Benachrichtigung in Android funktioniert nicht.
 
-Stellen Sie sicher, dass der Broadcast-Empfänger für lokale Benachrichtigungen in Ihrer Manifestdatei deklariert ist. For more information, see step 2 in *Enabling In-App Messaging* in [In-App Messaging](/help/android/messaging-main/messaging/messaging.md).
+Stellen Sie sicher, dass der Broadcast-Empfänger für lokale Benachrichtigungen in Ihrer Manifestdatei deklariert ist. Weitere Informationen finden Sie in Schritt 2 des Abschnitts *In-App-Nachrichten aktivieren* in [In-App-Nachrichten](/help/android/messaging-main/messaging/messaging.md).
 
 ## Ist die Nachricht „live“?
 
-Um sicherzustellen, dass die Nachricht „live“ ist, überprüfen Sie auf der Seite In-App-Nachrichten verwalten in der Spalte **Status** die Liste der Nachrichten.
+Um sicherzustellen, dass die Nachricht „live“ ist, überprüfen Sie auf der Seite In-App-Nachrichten verwalten in der Spalte **[!UICONTROL Status]** die Liste der Nachrichten.
 
-## Sehen Sie sich einmal *die* Anzeige an, *zeigen Sie immer* an, *zeigen Sie die Offline* -Einstellungen auf der Registerkarte Zielgruppe an.
+## Sehen Sie sich die Einstellungen *einmal anzeigen*, *immer anzeigen*, *offline anzeigen* auf der Registerkarte „Zielgruppe“ an.
 
-Stellen Sie sicher, dass diese Einstellungen wie erforderlich festgelegt sind. Überprüfen Sie auf der Registerkarte **[!UICONTROL Zielgruppe]** die **Auslöser]-Optionen, mit deren Hilfe Sie festlegen können, wie oft die Nachricht angezeigt wird.[!UICONTROL **
+Stellen Sie sicher, dass diese Einstellungen wie erforderlich festgelegt sind. Überprüfen Sie auf der Registerkarte **[!UICONTROL Zielgruppe]** die **[!UICONTROL Auslöser]**-Optionen, mit deren Hilfe Sie festlegen können, wie oft die Nachricht angezeigt wird.
 
-## Bei Verwendung eines Launch-Ereignisses als Auslöser...
+## Bei Verwendung eines Ereignisstarts als Auslöser
 
 Ereignis wird nur bei einer neuen Sitzung ausgelöst. Weitere Informationen dazu, wann eine Sitzung beginnt, finden Sie in der Spalte `lifecycleTimeout` unter [JSON-Konfiguration](/help/android/configuration/json-config/json-config.md).
 
