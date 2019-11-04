@@ -3,11 +3,11 @@ description: Nutzungsberichte enthalten die durchschnittliche Sitzungslänge, t�
 keywords: mobile
 seo-description: Nutzungsberichte enthalten die durchschnittliche Sitzungslänge, täglich und monatlich aktive Benutzer, Upgrades sowie andere Informationen, die Ihnen Aufschluss darüber geben, auf welche Weise und wie oft Ihre App genutzt wird. Berichte zur Benutzerbindung zeigen die Benutzerbindung am ersten, siebten und 28. Tag nach dem ersten Start.
 seo-title: Berichte
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Berichte
 topic: Berichte, Metriken
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
