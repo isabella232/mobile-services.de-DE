@@ -2,26 +2,26 @@
 description: Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren.
 seo-description: Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren.
 seo-title: Verarbeitungsregeln und Kontextdaten
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Verarbeitungsregeln und Kontextdaten
 topic: Entwickler und Implementierung
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Processing rules and context data{#processing-rules-and-context-data}
+# Verarbeitungsregeln und Kontextdaten{#processing-rules-and-context-data}
 
 Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren.
 
 Weitere Informationen finden Sie unter folgenden Themen:
 
 * [Training zu Verarbeitungsregeln](https://tv.adobe.com/embed/1181/16506/) beim Summit 2013
-* Genehmigung zur Verwendung von Verarbeitungsregeln erhalten
+* Autorisierung zur Verwendung der Verarbeitungsregeln erhalten
 
-   Weitere Informationen zu Verarbeitungsregeln finden Sie unter Übersicht über [Verarbeitungsregeln](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+   Weitere Informationen zu Verarbeitungsregeln finden Sie unter Übersicht über [Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 
@@ -63,5 +63,5 @@ Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 
 >[!TIP]
 >
->Adobe behält sich den Namespace " `a.`"vor. Abgesehen von dieser Einschränkung, die dazu dient, Konflikte zu vermeiden, besteht die einzige Anforderung darin, dass die Kontextdatenvariablen in Ihrem Anmeldeunternehmen eindeutig sein müssen.
+>Adobe behält sich den Namespace „`a.`“ vor. Abgesehen von dieser Einschränkung, die dazu dient, Konflikte zu vermeiden, besteht die einzige Anforderung darin, dass die Kontextdatenvariablen in Ihrem Anmeldeunternehmen eindeutig sein müssen.
 
