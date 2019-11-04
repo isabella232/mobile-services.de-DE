@@ -2,11 +2,11 @@
 description: Sie können In-App-Nachrichten bereitstellen, die durch beliebige Analytics-Daten oder -Ereignisse ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App bereitgestellt und erfordern keine Code-Änderung.
 seo-description: Sie können In-App-Nachrichten bereitstellen, die durch beliebige Analytics-Daten oder -Ereignisse ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App bereitgestellt und erfordern keine Code-Änderung.
 seo-title: In-App-Nachrichten
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: In-App-Nachrichten
 topic: Entwickler und Implementierung
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -18,18 +18,18 @@ Sie können In-App-Nachrichten bereitstellen, die durch beliebige Analytics-Date
 
 ## Neue Adobe Experience Cloud SDK-Version
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
 >[!IMPORTANT]
 >
->Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über die [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
+>Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Gehen Sie zu [Launch](https://launch.adobe.com/), um zu beginnen.
-* Gehen Sie zu [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK Repositorys enthalten ist.
+* Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
 >[!IMPORTANT]
 >
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-app messaging and push notifications. Weitere Informationen finden Sie unter [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). For more information about using push messaging and in-app messaging with the Experience Cloud SDKs, see [Set up push messaging](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) and [Set up in-app messaging](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Wenn Sie die Mobile SDK für Adobe Experience Platform mit Adobe Launch verwenden, **müssen** Sie außerdem die Adobe Analytics Mobile Services-Erweiterung installieren, um die Funktionen von Adobe Mobile Services wie In-App-Nachrichten und Push-Benachrichtigungen zu verwenden. Weitere Informationen finden Sie unter [Adobe Analytics – Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Informationen zur Verwendung von Push-Nachrichten und In-App-Nachrichten mit den Experience Cloud-SDK finden Sie unter [Push-Nachrichten einrichten](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) und [In-App-Nachrichten einrichten](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 >[!IMPORTANT]
 >
@@ -37,13 +37,13 @@ Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDKs für 
 
 Sie können in Adobe Mobile Services Nachrichten erstellen und Regeln festlegen, die definieren, wann Nachrichten angezeigt werden. Weitere Informationen finden Sie unter [In-App-Nachricht erstellen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Um In-App-Nachrichten anzuzeigen, müssen Updates am SDK vorgenommen werden. Sie können diese Schritte ausführen, auch wenn Sie bisher keine Nachrichten definiert haben. Nachdem Sie Nachrichten definiert haben, werden sie dynamisch an die App bereitgestellt und ohne Update des App Stores angezeigt.
 
-## Enabling in-app messaging {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## In-App-Nachrichten aktivieren {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und im Lebenszyklus](/help/android/getting-started/dev-qs.md)hinzufügen.
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zu Ihrem IntelliJ IDEA- oder Eclipse-Projekt hinzufügen* in [Grundlegende Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
 
-1. Update the `AndroidManifest.xml` file to declare the full screen activity and enable the Message Notification Handler:
+1. Aktualisieren Sie die Datei `AndroidManifest.xml`, um die Vollbildaktivität zu deklarieren und den Nachrichten-Handler zu aktivieren:
 
    ```java
    <activity  
@@ -73,7 +73,7 @@ Sie können in Adobe Mobile Services Nachrichten erstellen und Regeln festlegen,
    import com.adobe.mobile.*;
    ```
 
-1. In each `collectLifecycleData` call, pass `this` to provide a reference to your current activity:
+1. Übergeben Sie jedem `collectLifecycleData`-Aufruf `this`, um eine Referenz für Ihre aktuelle Aktivität bereitzustellen:
 
    ```java
    @Override 
@@ -82,7 +82,7 @@ Sie können in Adobe Mobile Services Nachrichten erstellen und Regeln festlegen,
    }
    ```
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for in-app messaging.
+1. Überprüfen Sie, ob die Datei `ADBMobileConfig.json` die erforderlichen Einstellungen für In-App-Nachrichten enthält.
 
    >[!IMPORTANT]
    >
@@ -113,36 +113,36 @@ Sie können in Adobe Mobile Services Nachrichten erstellen und Regeln festlegen,
    }
    ```
 
-   If this object is not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. Weitere Informationen finden Sie unter [Bevor Sie beginnen](/help/android/getting-started/requirements.md).
+   Wenn dieses Objekt nicht konfiguriert ist, laden Sie die aktualisierte Datei `ADBMobileConfig.json` über Adobe Mobile Services herunter. Weitere Informationen finden Sie unter [Bevor Sie beginnen](/help/android/getting-started/requirements.md).
 
-## Tracking in-app messages {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## In-App-Nachrichten verfolgen {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-Mithilfe der mobilen SDKs für Android lassen sich folgende Metriken Ihrer In-App-Nachrichten verfolgen:
+Mithilfe der mobilen SDK für Android lassen sich folgende Metriken Ihrer In-App-Nachrichten verfolgen:
 
 * Für In-App-Vollbild- und -Warnnachrichten:
 
    * **Impressionen:** Benutzer löst eine In-App-Nachricht aus.
-   * **Durchklickraten**: wenn der Benutzer die **[!UICONTROL Durchklickrate]** drückt.
-   * **Abbrüche**: wenn der Benutzer auf **[!UICONTROL Abbrechen]** klickt.
+   * **Clickthrough**: Benutzer betätigt **[!UICONTROL Clickthrough]**.
+   * **Abbrechen**: Benutzer betätigt **[!UICONTROL Abbrechen]**.
 
 * Für benutzerdefinierte Vollbild-In-App-Nachrichten muss der HTML-Inhalt der Nachricht den richtigen Code enthalten, um die SDK-Verfolgung über die Nutzung folgender Schaltflächen informieren zu können:
 
-   * **Clickthrough** -(Umleitungs-)Beispielverfolgung:
+   * **Clickthrough** (Umleitung) der Beispielverfolgung:
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **Cancel** (close) example tracking:
+   * **Abbrechen** (Schließen) der Beispielverfolgung:
 
       `adbinapp://cancel`
 
-## Local fallback image {#section_DEACC1CE549B4573B556A44A52409941}
+## Lokales Ausweichbild {#section_DEACC1CE549B4573B556A44A52409941}
 
 Beim Erstellen einer Vollbildnachricht können Sie optional ein Fallback-Bild angeben. Wenn die Nachricht das ursprüngliche Bild nicht aus dem Web abrufen kann, versucht das SDK stattdessen, das Bild mit demselben Namen aus dem Ordner „assets“ Ihrer Anwendung zu laden. So können Sie die Nachricht in ihrer ursprünglichen Form anzeigen, selbst wenn der Benutzer offline oder das eigentliche Bild nicht erreichbar ist.
 
 >[!IMPORTANT]
 >
->Der Name des Ersatzbild-Assets wird angegeben, wenn Sie die Nachricht in Adobe Mobile Services konfigurieren und sicherstellen, dass die angegebene Ressource verfügbar ist.
+>Der Assetname des Ausweichbilds wird beim Konfigurieren der Nachricht in Adobe Mobile Services angegeben, und Sie müssen sicherstellen, dass die angegebene Ressource verfügbar ist.
 
-## Configuring notification icons {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
+## Benachrichtigungssymbole konfigurieren {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
 Folgende Methoden ermöglichen es Ihnen, kleine und große Symbole zu konfigurieren. Die kleinen Symbole werden daraufhin in der Benachrichtigungsleiste angezeigt, während die großen im Benachrichtigungsfenster zum Einsatz kommen.
 
@@ -156,7 +156,7 @@ Folgende Methoden ermöglichen es Ihnen, kleine und große Symbole zu konfigurie
       public static void setSmallIconResourceId(final int resourceId); 
       ```
 
-   * Das folgende Codebeispiel für diese Methode:
+   * Hier finden Sie das Code-Beispiel für diese Methode:
 
       ```java
       Config.setSmallIconResourceId(R.drawable.appIcon);
@@ -164,7 +164,7 @@ Folgende Methoden ermöglichen es Ihnen, kleine und große Symbole zu konfigurie
 
 * **Config.setLargeIconResourceId(int resourceId)**
 
-   Legt das große Symbol fest, das für die vom SDK erstellten Benachrichtigungen verwendet wird. This icon is the primary image that is displayed when the user sees the complete notification in the notification center.
+   Legt das große Symbol fest, das für die vom SDK erstellten Benachrichtigungen verwendet wird. Dieses Symbol wird als primäres Bild angezeigt, wenn der Benutzer die vollständige Benachrichtigung in der Mitteilungszentrale öffnet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
