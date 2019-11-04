@@ -3,34 +3,34 @@ description: Sie können Zielpunkte erstellen und verwalten, mit denen Sie geogr
 keywords: mobile
 seo-description: Sie können Zielpunkte erstellen und verwalten, mit denen Sie geografische Standorte definieren können, die Sie für Korrelationszwecke, zum Ansprechen von Zielgruppen mit In-App-Nachrichten und vieles mehr verwenden können. Wenn ein Treffer innerhalb eines Zielpunkts gesendet wird, wird der Zielpunkt an den Treffer angehängt.
 seo-title: Zielpunkte verwalten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Zielpunkte verwalten
 topic: Metriken
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Manage points of interest {#manage-points-of-interest}
+# Zielpunkte verwalten {#manage-points-of-interest}
 
-You can create and manage POIs, which allow you to define geographical locations that you can use for correlation purposes, target with in-app messages, and so on. Wenn ein Treffer in einem POI gesendet wird, wird der POI an den Treffer angehängt.
+Sie können Zielpunkte erstellen und verwalten, mit denen Sie geografische Standorte definieren können, die Sie für Korrelationszwecke, zum Ansprechen von Zielgruppen mit In-App-Nachrichten und vieles mehr verwenden können. Wenn ein Treffer innerhalb eines Zielpunkts gesendet wird, wird der Zielpunkt an den Treffer angehängt.
 
-Bevor Sie Location verwenden können, überprüfen Sie die folgenden Anforderungen:
+Bevor Sie die Standort-Funktion verwenden können, überprüfen Sie die folgenden Anforderungen:
 
 * Sie müssen über Analytics – Mobile Apps oder Analytics Premium verfügen.
-* Sie müssen **[!UICONTROL Standort-Berichte]für die App aktivieren.**
-* If you are using a version of the iOS SDK or Android SDK older than version 4.2, after adding new **[!UICONTROL Points of Interest]**, you must download a new configuration file and give it to your app developers.
+* Sie müssen **[!UICONTROL Standort-Berichte]** für die App aktivieren.
+* Wenn Sie eine Version des iOS-SDK oder Android-SDK verwenden, die älter als Version 4.2 ist, müssen Sie nach dem Hinzufügen neuer **[!UICONTROL Zielpunkte]** eine neue Konfigurationsdatei herunterladen und sie an Ihre App-Entwickler senden.
 
-   If you are using the iOS SDK or Android SDK version 4.2 or later, you do not need to submit an app update to the store to update your **[!UICONTROL Points of Interest]**. Wenn Sie auf der Seite "Zielpunkte verwalten"auf " **[!UICONTROL Speichern]**"klicken, werden die Änderungen in die Liste der **[!UICONTROL Zielpunkte]** gepackt und die Konfigurationsdatei für die Live-App aktualisiert. Saving also updates the list of points in your app on the user devices, as long as the app uses the updated SDK and configuration with a remote POI URL.
+   Wenn Sie Version 4.2 (oder höher) des iOS-SDK oder des Android-SDK verwenden, müssen Sie kein App-Update an den Store senden, um Ihre **[!UICONTROL Zielpunkte]** zu aktualisieren. Wenn Sie auf der Seite „Zielpunkte verwalten“ auf **[!UICONTROL Speichern]** klicken, werden die Änderungen in die Liste der **[!UICONTROL Zielpunkte]** gepackt und die Konfigurationsdatei für die Live-App aktualisiert. Außerdem wird die Punkteliste in Ihrer App auf den Geräten der Benutzer aktualisiert, solange die App das aktualisierte SDK und die Konfiguration mit einer entfernten Zielpunkte-URL verwendet.
 
-On the user's device, for a hit to be assigned to a **[!UICONTROL Points of Interest]**, location must be enabled for the app.
+Damit ein Treffer auf dem Gerät des Benutzers einem **[!UICONTROL Zielpunkt]** zugeordnet werden kann, muss die Standort-Funktion für die App aktiviert sein.
 
-Führen Sie die folgenden Aufgaben aus, um Location zu verwenden:
+Führen Sie die folgenden Aufgaben aus, um die Standort-Funktion zu verwenden:
 
 1. Klicken Sie auf den Namen der App, um die zugehörige Seite App-Einstellungen verwalten aufzurufen.
-1. Click **[!UICONTROL Location]** &gt; **[!UICONTROL Manage Points of Interest]**.
+1. Klicken Sie auf **[!UICONTROL Standort]** &gt; **[!UICONTROL Zielpunkte verwalten]**.
 
    ![Schritt Ergebnis](assets/poi.png)
 
@@ -38,9 +38,9 @@ Führen Sie die folgenden Aufgaben aus, um Location zu verwenden:
 
    * **[!UICONTROL Punkt-Bezeichnung]**
 
-      Geben Sie den Namen des **[!UICONTROL Zielpunkts]ein.**
+      Geben Sie den Namen des **[!UICONTROL Zielpunkts]** ein.
 
-      Dabei kann es sich um den Namen einer Stadt, eines Bundeslands oder einer Region handeln. Sie können auch **[!UICONTROL Zielpunkte]für spezifische Standorte wie Sportstadien oder Geschäfte erstellen.**
+      Dabei kann es sich um den Namen einer Stadt, eines Bundeslandes oder einer Region handeln. Sie können auch **[!UICONTROL Zielpunkte]** für spezifische Standorte wie Sportstadien oder Geschäfte erstellen.
 
    * **[!UICONTROL Breitengrad]**
 
@@ -52,18 +52,18 @@ Führen Sie die folgenden Aufgaben aus, um Location zu verwenden:
 
    * **[!UICONTROL Radius (Meter)]**
 
-      Geben Sie den Radius (in Metern) um den **[!UICONTROL Zielpunkt]ein, der mit eingeschlossen werden soll.** Wenn Sie z. B. einen POI für Denver, Colorado erstellen, können Sie einen Radius angeben, der groß genug ist, um die Stadt Denver und die umliegenden Gebiete einzuschließen, jedoch Colorado Springs ausschließen.
+      Geben Sie den Radius (in Metern) um den **[!UICONTROL Zielpunkt]** ein, der mit eingeschlossen werden soll. Wenn Sie beispielsweise einen Zielpunkt für Denver, Colorado, erstellen, können Sie den Radius so groß definieren, dass die Stadt Denver und Umgebung eingeschlossen sind, Colorado Springs jedoch nicht.
 
    * **[!UICONTROL Landkartensymbol]**
 
-      Wählen Sie ein Symbol aus, das in den Berichten [Übersicht](/help/using/location/c-location-overview.md) und [Zuordnung](/help/using/location/c-map-points.md) angezeigt wird.
+      Wählen Sie ein Symbol aus, das in den Berichten [Übersicht](/help/using/location/c-location-overview.md) und [Landkarte](/help/using/location/c-map-points.md) angezeigt wird.
 
-1. Fügen Sie bei Bedarf weitere POIs hinzu.
+1. Fügen Sie ggf. weitere Zielpunkte hinzu.
 
-   Es wird empfohlen, nicht mehr als 5.000 POIs hinzuzufügen. Wenn Sie mehr als 5.000 Zielpunkte hinzufügen, können Sie die Punkte zwar speichern, Sie erhalten jedoch eine Warnmeldung, dass gemäß den Best Practices weniger als 5.000 Zielpunkte vorhanden sein sollten.
+   Es wird empfohlen, nicht mehr als 5.000 Zielpunkte hinzuzufügen. Wenn Sie mehr als 5.000 Zielpunkte hinzufügen, können Sie die Punkte zwar speichern, Sie erhalten jedoch eine Warnmeldung, dass gemäß den Best Practices weniger als 5.000 Zielpunkte vorhanden sein sollten.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-To delete one or more POIs, select the applicable check boxes, and click **[!UICONTROL Remove Selected]**.
+Um einen oder mehrere Zielpunkte zu löschen, markieren Sie die entsprechenden Kontrollkästchen und klicken Sie dann auf **[!UICONTROL Auswahl entfernen]**.
 
-Click **[!UICONTROL Import]** or **[!UICONTROL Export]** to work with the data by using a `.csv` file instead of using the Adobe Mobile user interface.
+Klicken Sie auf **[!UICONTROL Importieren]** oder **[!UICONTROL Exportieren]**, um unter Verwendung einer `.csv`-Datei mit den Daten zu arbeiten, statt die Adobe Mobile-Benutzeroberfläche zu verwenden.
