@@ -4,13 +4,13 @@ seo-description: Sie können das Adobe-SDK verwenden, um personenbezogene Daten 
 seo-title: Postbacks personenbezogener Daten
 title: Postbacks personenbezogener Daten
 uuid: 08f76a52-75dd-4fc1-b4cc-4f5eef93d0f7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# PII postbacks {#pii-postbacks}
+# PII-Postbacks {#pii-postbacks}
 
 Sie können das Adobe-SDK verwenden, um personenbezogene Daten (Personally Identifiable Information, PII) zu erfassen und diese an Drittanbieter-Endpunkte zu senden.
 
@@ -18,13 +18,13 @@ Wenn Sie das Adobe-SDK zum Erfassen personenbezogener Daten nutzen wollen, sollt
 
 >[!TIP]
 >
->Ein Endpunkt, der HTTPS unterstützt, ist erforderlich, um den PII-Postback-Typ zu verwenden.
+>Zum Verwenden des PII-Postback-Typs ist ein Endpunkt erforderlich, der HTTPS unterstützt.
 
-## Tracking PII postbacks {#section_36B967B888CF467EACCDEF61DFA0B12B}
+## PII-Postbacks verfolgen {#section_36B967B888CF467EACCDEF61DFA0B12B}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrem Projekt* in [Kernimplementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md)hinzufügen.
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zum Projekt hinzufügen* im Abschnitt [Grundlegende Implementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md).
 1. Importieren Sie die Bibliothek:
 
    ```objective-c
