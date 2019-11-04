@@ -2,21 +2,21 @@
 description: Führen Sie diese Schritte aus, um eine Report Suite zum Erfassen von iOS-App-Daten zu konfigurieren.
 seo-description: Führen Sie diese Schritte aus, um eine Report Suite zum Erfassen von iOS-App-Daten zu konfigurieren.
 seo-title: Vorbereitung
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Vorbereitung
 topic: Entwickler und Implementierung
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Before you start {#before-you-start}
+# Vorbereitung {#before-you-start}
 
 Führen Sie diese Schritte aus, um eine Report Suite zum Erfassen von iOS-App-Daten zu konfigurieren.
 
-## Role-specific tasks {#section_8B9EA1FA189F4C6DB7D829F0B5844FBC}
+## Rollenspezifische Aufgaben {#section_8B9EA1FA189F4C6DB7D829F0B5844FBC}
 
 Analytics-Administratoren und App-Entwickler müssen die folgenden Aufgaben ausführen:
 
@@ -31,14 +31,14 @@ App-Entwickler können jetzt die von Ihnen erstellten Report Suites anzeigen.
 
 >[!IMPORTANT]
 >
->Um eine neue Report Suite zu erstellen und die SDKs herunterzuladen, müssen Sie Analytics-Administrator sein.
+>Um eine neue Report Suite zu erstellen und die SDK herunterzuladen, müssen Sie ein Analytics-Administrator sein.
 
 ### App-Entwickler
 
-1. Ensure that your Analytics administrator has completed the steps in the *Analytics Administrators* section above.
+1. Stellen Sie sicher, dass Ihr Analytics-Administrator die Schritte im Abschnitt *Analytics-Administratoren* oben ausgeführt hat.
 
-1. Verify that your Analytics administrator has completed one of the sections in the *Log in to the Adobe Mobile Services UI* below.
-1. After the report suite has been configured, complete steps in the *Download the SDK* section below.
+1. Vergewissern Sie sich, dass Ihr Analytics-Administrator einen der Abschnitte unter *Bei der Adobe Mobile Services-Benutzeroberfläche anmelden* unten ausgeführt hat.
+1. Nachdem die Report Suite konfiguriert wurde, führen Sie die Schritte im Abschnitt *SDK herunterladen* unten aus.
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Rollen und Berechtigungen](/help/using/gs/c-mob-roles-and-permissions.md).
 
@@ -52,11 +52,11 @@ Sie können sich auf eine der folgenden Arten bei der von Adobe Mobile Services 
 
    Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden.
 
-   Bei dieser Methode wird davon ausgegangen, dass Ihr Unternehmen bereitgestellt wurde und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen zur Bereitstellung finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html). Weitere Informationen zum Verknüpfen Ihres Kontos finden Sie unter [Organisationen und Kontoverknüpfung](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+   Dies setzt voraus, dass Ihr Unternehmen bereitgestellt wurde und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen zur Bereitstellung finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/admin-getting-started.html). Weitere Informationen zum Verknüpfen Ihres Kontos finden Sie unter [Organisationen und Kontoverknüpfung](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/organizations.html).
 
    >[!TIP]
    >
-   >If you are unsure whether your company has been provisioned in the Experience Cloud, use your existing Adobe Analytics account.
+   >Wenn Sie sich nicht sicher sind, ob Ihr Unternehmen bereits Teil der Experience Cloud ist, nutzen Sie Ihr bestehendes Adobe Analytics-Konto.
 
 * **Adobe Analytics**
 
@@ -68,18 +68,18 @@ So erstellen Sie eine Report Suite, um App-Daten zu erfassen und eine App zu def
 
 1. Klicken Sie auf **[!UICONTROL Neue App erstellen]**.
 
-   If you do not see this button, click **[!UICONTROL Manage Apps]** &gt; **[!UICONTROL Add]**.
+   Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf **[!UICONTROL Apps verwalten]** &gt; **[!UICONTROL Hinzufügen]**.
 
-1. In the **[!UICONTROL Report Suite]** drop-down, select **[!UICONTROL New Report Suite]**.
+1. Wählen Sie im Dropdown-Menü **[!UICONTROL Report Suite]** die Option **[!UICONTROL Neue Report Suite]** aus.
 
 1. Geben Sie den Namen Ihrer App ein und wählen Sie eine eindeutige Report Suite-ID.
 
    Beispiel einer Report Suite-ID: `mycomobileappdev`. Sie müssen separate Report Suites und Apps für die Entwicklungs- und Produktionsversionen einrichten. Wenn Sie bereit sind, die Produktionsversion einzurichten, wiederholen Sie diese Schritte.
-1. Behalten Sie die Option **[!UICONTROL Vorlage für mobile Anwendung]bei.**
+1. Behalten Sie die Option **[!UICONTROL Vorlage für mobile Anwendung]** bei.
 
    Mit dieser Vorlage können Zeitstempel Offline-Daten erfassen und die Variablen der mobilen Lösung aktivieren, um Lebenszyklusmetriken zu erfassen.
 
-1. Select your **[!UICONTROL Timezone]**, your **[!UICONTROL Currency]**, and click **[!UICONTROL Save]**.
+1. Wählen Sie Ihre **[!UICONTROL Zeitzone]** und Ihre **[!UICONTROL Währung]** aus und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## SDK herunterladen {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
@@ -87,15 +87,15 @@ Um das mobile SDK herunterzuladen,
 
 1. Melden Sie sich bei Mobile Services an und öffnen Sie Ihre App auf eine der folgenden Arten:
 
-   * Wählen Sie Ihre App im Dropdown-Menü **[!UICONTROL Alle Apps]aus.**
+   * Wählen Sie Ihre App im Dropdown-Menü **[!UICONTROL Alle Apps]** aus.
    * Suchen Sie im rechten Bereich nach Ihrer App und öffnen Sie sie.
 
 1. Klicken Sie auf **[!UICONTROL App-Einstellungen verwalten]**.
-1. Scrollen Sie im Abschnitt **[!UICONTROL App-SDK-Downloads]** zum Bereich **App-SDK-Downloads]herunter.[!UICONTROL **
+1. Scrollen Sie im Abschnitt **[!UICONTROL App-SDK-Downloads]** zum Bereich **[!UICONTROL App-SDK-Downloads]** herunter.
 
 1. Laden Sie das SDK und die Beispiel-App für Ihre Plattform herunter.
 
 >[!TIP]
 >
->Eine Konfigurationsdatei für Ihre App wird automatisch in den SDK-Download eingeschlossen. Daher müssen Sie diese Datei nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
+>Der SDK-Download beinhaltet auch eine Konfigurationsdatei. Sie müssen die Datei also nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
 
