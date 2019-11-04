@@ -4,13 +4,13 @@ seo-description: Sie können Grafikdateien an Ihre Apple-Benachrichtigungen anh�
 seo-title: Empfangen von Rich-Push-Benachrichtigungen
 title: Multimediale Push-Benachrichtigungen empfangen
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Receive rich push notifications {#receive-rich-push-notifications}
+# Rich-Push-Benachrichtigungen empfangen {#receive-rich-push-notifications}
 
 Sie können Grafikdateien an Ihre Apple-Benachrichtigungen anhängen. Das Hinzufügen visueller Komponenten kann die Interaktion Ihrer Benutzer mit Push-Benachrichtigungen erheblich erhöhen.
 
@@ -20,7 +20,7 @@ So empfangen Sie Rich-Push-Benachrichtigungen in Ihrer iOS-App:
 1. Überprüfen Sie, ob Sie eine Text-Push-Nachricht an Ihre App senden können.
 1. So fügen Sie eine Benachrichtigungsdiensterweiterung hinzu:
 
-   1. In your Xcode project, select  **[!UICONTROL File]** &gt; **[!UICONTROL New]** &gt; **[!UICONTROL Target]**.
+   1. Wählen Sie in Ihrem Xcode-Projekt **[!UICONTROL Datei]** &gt; **[!UICONTROL Neu]** &gt; **[!UICONTROL Target]** aus.
    1. Wählen Sie **[!UICONTROL Benachrichtigungsdiensterweiterung aus]**.
    1. Überprüfen Sie, ob die Datei `NotificationService.m` vorhanden ist.
 
@@ -35,7 +35,7 @@ So empfangen Sie Rich-Push-Benachrichtigungen in Ihrer iOS-App:
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      Bei dieser Methode können Sie die Medien-URL `userInfo` mithilfe des `attachment-url` Schlüssels abrufen. Nachdem Sie die Datei in ein lokales Verzeichnis heruntergeladen haben, fügen Sie den lokalen Pfad zu `bestAttemptContent.attachments`hinzu.
+      Mithilfe dieser Methode können Sie die Medien-URL von `userInfo` mithilfe des Schlüssels `attachment-url` abrufen. Nachdem Sie die Datei in ein lokales Verzeichnis heruntergeladen haben, fügen Sie den lokalen Pfad zu `bestAttemptContent.attachments` hinzu.
 
       Hier finden Sie einen Beispielcode in dieser Methode:
 
