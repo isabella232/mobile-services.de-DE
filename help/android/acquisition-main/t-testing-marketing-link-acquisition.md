@@ -1,28 +1,28 @@
 ---
-description: Die folgenden Anweisungen helfen Ihnen, eine Akquisekampagne mit einem Marketing-Link auf einem Android-Gerät zu starten.
-keywords: android;library;mobile;sdk
-seo-description: Die folgenden Anweisungen helfen Ihnen, eine Akquisekampagne mit einem Marketing-Link auf einem Android-Gerät zu starten.
-seo-title: Testen der Marketinglink-Akquise
-solution: Marketing Cloud, Analytics
-title: Testen der Marketinglink-Akquise
+description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
+keywords: Android;Bibliothek;Mobile;SDK
+seo-description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
+seo-title: Marketinglink-Akquise testen
+solution: Experience Cloud,Analytics
+title: Marketinglink-Akquise testen
 topic: Entwickler und Implementierung
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
+# Marketinglink-Akquise testen {#testing-marketing-link-acquisition}
 
-Die folgenden Anweisungen helfen Ihnen, eine Akquisekampagne mit einem Marketing-Link auf einem Android-Gerät zu starten.
+Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&amp;Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 
-Wenn sich Ihre mobile App noch nicht in Google Play befindet, können Sie beim Erstellen des Marketing-Links eine beliebige mobile App als Ziel auswählen. Dies wirkt sich nur auf die App aus, an die Sie vom Akquise-Server umgeleitet werden, wenn Sie auf den Akquise-Link klicken und nicht auf die Möglichkeit, den Akquise-Link zu testen. Abfragezeichenfolgen-Parameter, die im Rahmen eines Kampagnen-Broadcasts an die App übergeben werden, wenn diese installiert wird, werden an den Google Play Store übergeben. Hin&amp;Zurück-Akquisetests für mobile Apps erfordern die Simulation eines solchen Broadcasts.
+Wenn die App noch nicht in Google Play vorhanden ist, können Sie beim Erstellen des Marketinglinks eine beliebige App als Ziel auswählen. Dies wirkt sich nur auf die App aus, an die Sie vom Akquise-Server umgeleitet werden, wenn Sie auf den Akquise-Link klicken und nicht auf die Möglichkeit, den Akquise-Link zu testen. Abfragezeichenfolgen-Parameter, die im Rahmen eines Kampagnen-Broadcasts an die App übergeben werden, wenn diese installiert wird, werden an den Google Play Store übergeben. Hin&amp;Zurück-Akquisetests für mobile Apps erfordern die Simulation eines solchen Broadcasts.
 
-The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
+Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den **[!UICONTROL Einstellungen]** gelöscht werden. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
 
-1. Führen Sie die erforderlichen Aufgaben bei der Akquise[ von ](/help/android/acquisition-main/acquisition.md)Mobile-Apps aus und stellen Sie sicher, dass Sie den Broadcast-Empfänger ordnungsgemäß implementiert haben `INSTALL_REFERRER`.
-1. In the Adobe Mobile Services] UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. Führen Sie die erforderlichen Aufgaben in [App-Akquise](/help/android/acquisition-main/acquisition.md) aus und stellen Sie sicher, dass Sie den Broadcast-Empfänger für `INSTALL_REFERRER` ordnungsgemäß implementiert haben.
+1. Klicken Sie in der Adobe Mobile Services-Benutzeroberfläche auf **[!UICONTROL Akquise]** &gt; **[!UICONTROL Marketing Links Builder]** und generieren Sie eine Akquise-Marketinglink-URL, die Google Play als Ziel für Android-Geräte festlegt.
 
    Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -36,7 +36,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    `https://play.google.com/store/apps/details?id=com.adobe.android&referrer=utm_campaign%3Dadb_acq_v3%26utm_source%3Dadb_acq_v3%26utm_content%3D91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
-1. Copy the unique ID after `utm_content%3D`.
+1. Kopieren Sie die eindeutige ID hinter `utm_content%3D`.
 
    Im vorherigen Beispiel lautet die ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
@@ -69,7 +69,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | The server should be `c00.adobe.com`, and      *`appid`*  should equal the `appid` in your acquisition link. |
+   | Akquise | Der Server sollte `c00.adobe.com` sein und *`appid`* sollte der `appid` in Ihrem Akquise-Link entsprechen. |
    | analytics | Legen Sie zu Testzwecken genügend Zeit für das Referrer-Timeout fest (mindestens 60 Sekunden), um den Broadcast manuell zu senden. Sie können die ursprüngliche Timeout-Einstellung nach dem Test wiederherstellen. |
 
 1. Verbinden Sie das Gerät mit einem Computer, deinstallieren Sie die App und installieren Sie sie anschließend erneut.
@@ -114,7 +114,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
    | Analytics - Unable to decode response(`<string>`). | Die Antwort ist falsch formatiert. |
    | Analytics - Unable to parse response (`a JSON Response`). | Die JSON-Zeichenfolge ist falsch formatiert. |
    | Analytics - Unable to parse acquisition service response (no `contextData` parameter in response). | In der Antwort ist kein `contextData`-Parameter enthalten. |
-   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` nicht in contextData enthalten ist. |
+   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` ist nicht in contextData vorhanden. |
    | Analytics - Acquisition referrer timed out. | Die Antwort konnte nicht in der durch `referrerTimeout` festgelegten Zeit abgerufen werden. Erhöhen Sie den Wert und versuchen Sie es erneut.  Sie sollten auch sicherstellen, dass Sie den Akquise-Link geöffnet haben, bevor Sie die App installieren. |
 
 Beachten Sie die folgenden Informationen:
@@ -123,11 +123,11 @@ Beachten Sie die folgenden Informationen:
 * Weitere Informationen zu `INSTALL_REFERRER`-Broadcasts finden Sie unter [Testen der Google Play-Kampagnenmessung](https://developers.google.com/analytics/solutions/testing-play-campaigns) im Google Developers-Handbuch.
 * Sie können das bereitgestellte Java-Tool `acquisitionTest.jar` verwenden, um die eindeutige ID abzurufen und den Installations-Referrer-Broadcast durchzuführen. So erhalten Sie die Informationen aus den Schritten 3 bis 10.
 
-**Java-Tool installieren**
+**Installation des Java-Tools**
 
 So installieren Sie das Java-Tool:
 
-1. Download the [`acquistionTester.zip`](../assets/acquisitionTester.zip) file.
+1. Laden Sie die Datei [`acquistionTester.zip`](../assets/acquisitionTester.zip) herunter.
 1. Entpacken Sie die JAR-Datei.
 
    Sie können die JAR-Datei über die Befehlszeile ausführen.
@@ -138,4 +138,4 @@ Beispiel:
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 
-Die Marketing-Links werden mit einer Ablaufzeit von zehn Minuten auf dem Server zwischengespeichert. Wenn Sie Änderungen an Markierungslinks vornehmen, warten Sie etwa 10 Minuten, bis die Änderungen wirksam werden, bevor Sie die Verknüpfungen erneut verwenden.
+Die Marketinglinks werden serverseitig mit einer zehnminütigen Ablaufzeit zwischengespeichert. Wenn Sie Änderungen an Markierungslinks vornehmen, warten Sie etwa 10 Minuten, bis die Änderungen wirksam werden, bevor Sie die Verknüpfungen erneut verwenden.
