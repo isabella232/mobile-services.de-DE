@@ -4,27 +4,27 @@ seo-description: Diese Informationen helfen Ihnen beim Abrufen von lokal gespeic
 seo-title: Abrufen von gespeicherten Kennungen
 title: Abrufen von gespeicherten Kennungen
 uuid: 4fb2c166-6700-4f8b-b60b-137b199e0509
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Retrieving stored identifiers{#retrieving-stored-identifiers}
+# Gespeicherte IDs abrufen{#retrieving-stored-identifiers}
 
 Diese Informationen helfen Ihnen beim Abrufen von lokal gespeicherten Experience Cloud SDK-Identitäten aus Ihrer iOS-Anwendung sowie bei Anfragen auf Datenzugriff nach DSGVO.
 
-Weitere Informationen über die DSGVO finden Sie in unserem Artikel über die [DSGVO und Ihr Unternehmen](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Weitere Informationen über die DSGVO finden Sie in unserem Artikel über die [DSGVO und Ihr Unternehmen](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
 
 >[!IMPORTANT]
 >
->The `getAllIdentifiersAsync` method retrieves identities that are stored in the Experience Cloud SDKs. Diese Methode muss **vor** dem Opt-out des Benutzers aufgerufen werden.
+>Die `getAllIdentifiersAsync`-Methode ruft IDs ab, die in den Experience Cloud-SDK gespeichert sind. Diese Methode muss **vor** dem Opt-out des Benutzers aufgerufen werden.
 
 Experience Cloud SDK-Identitäten (falls anwendbar) werden lokal gespeichert und in einer JSON-Zeichenfolge zurückgegeben, die Folgendes enthalten kann:
 
 * Unternehmenskontext – IMS-Org-ID
 * Anwender-IDs
-* Experience Cloud ID (MID), vormals Marketing Cloud ID
+* Experience Cloud ID (MID), vormals Experience Cloud ID
 * Integrationscodes (ADID, Push-ID)
 * Datenquellen-IDs (DPID, DPUUID)
 * Analytics-IDs (AVID, AID, VID und verbundene RSIDs)
