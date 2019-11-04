@@ -1,32 +1,32 @@
 ---
 description: Diese Informationen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für einen Version-3-Akquise-Kampagnenlink auf einem Android-Gerät durchzuführen.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Diese Informationen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für einen Version-3-Akquise-Kampagnenlink auf einem Android-Gerät durchzuführen.
 seo-title: Testen der Version-3-Akquise
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Testen der Version-3-Akquise
 topic: Entwickler und Implementierung
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Testing V3 acquisition {#testing-version-acquisition}
+# V3-Akquise testen {#testing-version-acquisition}
 
 Diese Informationen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für einen Version-3-Akquise-Kampagnenlink auf einem Android-Gerät durchzuführen.
 
 >[!IMPORTANT]
 >
->Akquise in V3 bezieht sich auf die Akquise-Links, die Sie mit dem Akquise-Builder in der Benutzeroberfläche von Adobe Mobile Services erstellen. Um diese Funktion zu verwenden, müssen Sie für Experience Cloud-Lösungen 4.6.0 oder höher auf Android SDK 4.x aktualisieren.
+>Die Akquise in Version 3 bezieht sich auf die Akquise-Links, die Sie mithilfe des Akquise-Builders auf der Adobe Mobile Services-Benutzeroberfläche erstellen. Um diese Funktion zu verwenden, müssen Sie für Experience Cloud-Lösungen 4.6.0 oder höher auf Android SDK 4.x aktualisieren.
 
 Wenn die mobile App beim Erstellen des Kampagnenlinks noch nicht in Google Play vorhanden ist, können Sie eine beliebige mobile App als Ziel auswählen. Dies wirkt sich nur auf die App aus, an die Sie vom Akquise-Server umgeleitet werden, wenn Sie auf den Akquise-Link klicken – nicht auf die Möglichkeit, den Link zu testen. Abfragezeichenfolgen-Parameter, die im Rahmen eines Kampagnen-Broadcasts an die App übergeben werden, wenn diese installiert wird, werden an den Google Play Store übergeben. Hin&amp;Zurück-Akquisetests für mobile Apps erfordern die Simulation eines solchen Broadcasts.
 
-The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
+Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den **[!UICONTROL Einstellungen]** gelöscht werden. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
 
-1. Complete the prerequisite tasks in Mobile App Acquisition and ensure that you have correctly implemented the broadcast receiver for .[](/help/android/acquisition-main/acquisition.md)`INSTALL_REFERRER`
-1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. Führen Sie die erforderlichen Aufgaben in [App-Akquise](/help/android/acquisition-main/acquisition.md) aus und stellen Sie sicher, dass Sie den Broadcast-Empfänger für `INSTALL_REFERRER` ordnungsgemäß implementiert haben.
+1. Klicken Sie in der Adobe Mobile Services-Benutzeroberfläche auf **[!UICONTROL Akquise]** &gt; **[!UICONTROL Marketing Links Builder]** und generieren Sie eine Akquise-Marketinglink-URL, die Google Play als Ziel für Android-Geräte festlegt.
 
    Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -34,16 +34,16 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    >[!TIP]
    >
-   >Wenn Sie im Akquise-Link sowohl auf Android- als auch auf iOS-Apps verweisen, verwenden Sie Google Play als Standardspeicher.
+   >Wenn Sie im Akquise-Link sowohl auf die Android- als auch auf die iOS-App verweisen, nutzen Sie Google Play als standardmäßigen Store.
 
 1. Öffnen Sie den generierten Link in einem Desktop-Browser.
 
    Sie sollten auf eine Seite umgeleitet werden, deren URL folgendem Beispiel ähnelt:
    `https://play.google.com/store/apps/details?id=com.adobe.android&referrer=utm_campaign%3Dadb_acq_v3%26utm_source%3Dadb_acq_v3%26utm_content%3D91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
-1. Copy the unique ID after `utm_content%3D`.
+1. Kopieren Sie die eindeutige ID hinter `utm_content%3D`.
 
-   In the previous example, the ID is .`91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
+   Im vorherigen Beispiel lautet die ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
 1. Erstellen Sie einen Akquise-Endlink mithilfe der eindeutigen URL aus Schritt 3. Verwenden Sie hierfür folgendes Format:
 
@@ -63,7 +63,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | The server should be `c00.adobe.com`.   *`appid`*  should equal the `appid`  in your acquisition link. |
+   | Akquise | Der Server sollte `c00.adobe.com` lauten.   *`appid`* sollte der `appid` in Ihrem Akquise-Link entsprechen. |
    | analytics | Legen Sie zu Testzwecken genügend Zeit für das Referrer-Timeout fest (mindestens 60 Sekunden), um den Broadcast manuell zu senden. Sie können die ursprüngliche Timeout-Einstellung nach dem Test wiederherstellen. |
 
 1. Verbinden Sie das Gerät mit einem Computer, deinstallieren Sie die App und installieren Sie sie anschließend erneut.
@@ -75,7 +75,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 1. Führen Sie die folgenden Schritte aus:
    1. Ersetzen Sie `com.adobe.android` durch den Paketnamen Ihrer Anwendung.
    1. Ändern Sie die Empfängerreferenz zum Standort des Kampagnenverfolgungs-Empfängers in Ihrer App
-   1. Replace values that are associated with `utm_content`.
+   1. Ersetzen Sie die Werte für `utm_content`.
    Wenn der Broadcast erfolgreich ist, können Sie eine Antwort ähnlich der folgenden erhalten:
 
    `Broadcasting: Intent 
@@ -97,7 +97,7 @@ Die folgende Tabelle enthält zusätzliche Informationen zu möglichen Fehlern:
 | Analytics - Unable to decode response(*String*). | Die Antwort ist falsch formatiert. |
 | Analytics - Unable to parse response (*a JSON Response*). | Die JSON-Zeichenfolge ist falsch formatiert. |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | In der Antwort ist kein contextData-Parameter enthalten. |
-| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name`  nicht in contextData enthalten ist. |
+| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` ist nicht in contextData vorhanden. |
 | Analytics - Acquisition referrer timed out. | Die Antwort konnte nicht in der durch `referrerTimeout` festgelegten Zeit abgerufen werden. Erhöhen Sie den Wert und versuchen Sie es erneut.  Sie sollten auch sicherstellen, dass Sie den Akquise-Link geöffnet haben, bevor Sie die App installieren. |
 
 Beachten Sie die folgenden Informationen:
@@ -115,7 +115,7 @@ Beachten Sie die folgenden Informationen:
 
 So installieren Sie das Java-Tool:
 
-1. Download the [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip) file.
+1. Laden Sie die Datei [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip) herunter.
 
 1. Entpacken Sie die JAR-Datei.
 
