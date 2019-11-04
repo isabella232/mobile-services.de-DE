@@ -2,21 +2,21 @@
 description: 'Bevor Sie eine Report Suite konfigurieren und Android-Appdaten erfassen, führen Sie zunächst die folgenden erforderlichen Aufgaben aus '
 seo-description: 'Bevor Sie eine Report Suite konfigurieren und Android-Appdaten erfassen, führen Sie zunächst die folgenden erforderlichen Aufgaben aus '
 seo-title: Vorbereitung
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Vorbereitung
 topic: Entwickler und Implementierung
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Before you start {#before-you-start}
+# Vorbereitung {#before-you-start}
 
 Bevor Sie eine Report Suite konfigurieren und Android-Appdaten erfassen, führen Sie zunächst die folgenden erforderlichen Aufgaben aus:
 
-## Role-specific tasks {#section_8B9EA1FA189F4C6DB7D829F0B5844FBC}
+## Rollenspezifische Aufgaben {#section_8B9EA1FA189F4C6DB7D829F0B5844FBC}
 
 Analytics-Administratoren und App-Entwickler müssen die folgenden Aufgaben ausführen:
 
@@ -31,7 +31,7 @@ App-Entwickler können jetzt die von Ihnen erstellten Report Suites anzeigen.
 
 >[!IMPORTANT]
 >
->Um eine neue Report Suite zu erstellen und die SDKs herunterzuladen, müssen Sie Analytics-Administrator sein.
+>Um eine neue Report Suite zu erstellen und die SDK herunterzuladen, müssen Sie ein Analytics-Administrator sein.
 
 ### App-Entwickler
 
@@ -50,11 +50,11 @@ Sie können sich auf eine der folgenden Arten bei der UI von Adobe Mobile Servic
 
 ### Experience Cloud
 
-Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden. Dies setzt voraus, dass Ihr Unternehmen in der Experience Cloud präsent ist und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden. Dies setzt voraus, dass Ihr Unternehmen in der Experience Cloud präsent ist und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
->Wenn Sie sich nicht sicher sind, ob Ihr Unternehmen in der Experience Cloud bereitgestellt wurde, verwenden Sie Ihr bestehendes Adobe Analytics-Konto.
+>Wenn Sie sich nicht sicher sind, ob Ihr Unternehmen bereits Teil der Experience Cloud ist, nutzen Sie Ihr bestehendes Adobe Analytics-Konto.
 
 ### Adobe Analytics
 
@@ -66,15 +66,15 @@ So erstellen Sie eine Report Suite, um App-Daten zu erfassen und eine App zu def
 
 1. Klicken Sie auf **[!UICONTROL Neue App erstellen]**.
 
-   If you do not see this button, click **[!UICONTROL Manage Apps]** &gt; **[!UICONTROL Add]**.
+   Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf **[!UICONTROL Apps verwalten]** &gt; **[!UICONTROL Hinzufügen]**.
 
-1. In the **[!UICONTROL Report Suite]** drop-down, select **[!UICONTROL New Report Suite]**.
+1. Wählen Sie im Dropdown-Menü **[!UICONTROL Report Suite]** die Option **[!UICONTROL Neue Report Suite]** aus.
 
 1. Geben Sie den Namen Ihrer App ein und wählen Sie einen Typ für die Report Suite.
 
    Beispiel einer Report Suite-ID: `mycomobileappdev`. Sie müssen separate Report Suites und Apps für die Entwicklungs- und Produktionsversionen einrichten. Sie können diese Schritte also für die Einrichtung der Produktionsversion einfach wiederholen.
-1. In **[!UICONTROL Report Suite ID]**, verify that your report suite name is displayed.
-1. Überprüfen Sie, ob in **[!UICONTROL Einstellungen kopieren von]** **Mobile App Template[!UICONTROL ausgewählt ist.]**
+1. Überprüfen Sie in **[!UICONTROL Report Suite ID]**, ob der Name der Report Suite angezeigt wird.
+1. Überprüfen Sie, ob in **[!UICONTROL Einstellungen kopieren von]** **[!UICONTROL Mobile App Template]** ausgewählt ist.
 
    Mit dieser Vorlage können Zeitstempel Offline-Daten erfassen und die Variablen der mobilen Lösung aktivieren, um Lebenszyklusmetriken zu erfassen.
 
@@ -86,16 +86,16 @@ Um das mobile SDK herunterzuladen,
 
 1. melden Sie sich bei der Mobile Services UI an und öffnen Sie Ihre App auf eine der folgenden Arten:
 
-   * Wählen Sie Ihre App im Dropdown-Menü **[!UICONTROL Alle Apps]aus.**
+   * Wählen Sie Ihre App im Dropdown-Menü **[!UICONTROL Alle Apps]** aus.
    * Suchen Sie im rechten Bereich nach Ihrer App und öffnen Sie sie.
 
 1. Klicken Sie auf **[!UICONTROL App-Einstellungen verwalten]**.
-1. Scrollen Sie zum Abschnitt **[!UICONTROL App SDK Downloads].**
+1. Scrollen Sie zum Abschnitt **[!UICONTROL App SDK Downloads]**.
 1. Laden Sie das SDK und die Beispiel-App für Ihre Plattform herunter.
 
 >[!TIP]
 >
->Eine Konfigurationsdatei für Ihre App wird automatisch in den SDK-Download eingeschlossen. Daher müssen Sie diese Datei nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
+>Der SDK-Download beinhaltet auch eine Konfigurationsdatei. Sie müssen die Datei also nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
 
 Wenn Sie Android Studio verwenden, können Sie der Datei `build.gradle` in Ihrer App auch Folgendes hinzufügen:
 
@@ -105,5 +105,5 @@ compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 
 Beachten Sie die folgenden Informationen:
 
-* Ersetzen Sie die Versionsnummer im Codebeispiel durch die entsprechende Version der Android-SDKs.
+* Ersetzen Sie die Versionsnummer im Codebeispiel durch die entsprechende Version der Android-SDK.
 * Laden Sie die Konfigurationsdatei herunter und fügen Sie sie in Ihr Projekt ein.
