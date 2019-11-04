@@ -3,57 +3,57 @@ description: Auf der Seite „Link-Ziele“ können Sie vorhandene Ziele bearbei
 keywords: mobile
 seo-description: Auf der Seite „Link-Ziele“ können Sie vorhandene Ziele bearbeiten, archivieren, dearchivieren oder löschen.
 seo-title: Link-Ziele verwalten
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Link-Ziele verwalten
 topic: Metriken
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Manage link destinations{#manage-link-destinations}
+# Link-Ziele verwalten{#manage-link-destinations}
 
 Auf der Seite „Link-Ziele“ können Sie vorhandene Ziele bearbeiten, archivieren, dearchivieren oder löschen.
 
 So zeigen Sie die Seite Link-Ziele verwalten an:
 
-1. In the Mobile Services UI, click **[!UICONTROL Manage Apps]**.
-1. Klicken Sie auf der Seite "App-Informationen"Ihrer App auf Link-Ziele **[!UICONTROL verwalten]**.
+1. Klicken Sie in der Mobile Services-Benutzeroberfläche auf **[!UICONTROL Apps verwalten]**.
+1. Klicken Sie auf der Seite „App-Informationen“ Ihrer App auf **[!UICONTROL Link-Ziele verwalten]**.
 
    ![Link-Ziele](assets/link_destinations_list.png)
 
-1. Hier können Sie folgende Aktionen durchführen: 
+1. (Bedingt) Hier können Sie folgende Aktionen durchführen:
 
-   * **Bearbeiten**
+   * **Vorlage**
 
-      Klicken Sie zum Bearbeiten eines vorhandenen Link-Ziels in der Liste auf den Namen und bearbeiten Sie die relevanten Felder. Weitere Informationen finden Sie unter Erstellen [Sie ein neues Link-Ziel](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
+      Klicken Sie zum Bearbeiten eines vorhandenen Link-Ziels in der Liste auf den Namen und bearbeiten Sie die relevanten Felder. Weitere Informationen finden Sie in [Neues Link-Ziel erstellen](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
 
       >[!IMPORTANT]
       >
-      >Es kann bis zu 15 Minuten dauern, bis diese Änderungen wirksam werden.
+      >Es kann bis zu 15 Minuten dauern, bis diese Änderungen wirksam werden.
 
    * **Archivieren**
 
-      You can archive link destinations that you want to retain, but you want to remove from the **[!UICONTROL Link Destinations]** list.
+      Sie können Link-Ziele archivieren, die Sie beibehalten, aber aus der Liste **[!UICONTROL Link-Ziele]** entfernen möchten.
 
-      To archive link destinations, select one or more check boxes next to the link names and click **[!UICONTROL Archive Selected]**. Da Ihr Link-Ziel archiviert ist und jederzeit dearchiviert werden kann, müssen Sie Ihre Aktion nicht bestätigen.
+      Aktivieren Sie die Kontrollkästchen neben den entsprechenden Link-Namen und klicken Sie auf **[!UICONTROL Ausgewählte archivieren]**, um die Link-Ziele zu archivieren. Da Sie die Archivierung Ihrer Link-Ziele jederzeit aufheben können, müssen Sie diese Aktion nicht bestätigen.
 
    * **Dearchivieren**
 
       Sie können die Archivierung von Link-Zielen aufheben, wenn Sie sie wieder in der Liste Link-Ziele anzeigen möchten.
 
-      So dearchivieren Sie ein Link-Ziel:
+      Archivierung eines Link-Ziels aufheben:
 
-      1. click **[!UICONTROL View Archive]**.
-      1. Aktivieren Sie die Kontrollkästchen neben den Linknamen, deren Archivierung Sie aufheben möchten.
-      1. Klicken Sie auf **[!UICONTROL Archivierung aufheben]**.
-      Die Option **[!UICONTROL Archiv anzeigen]zeigt nur zuvor archivierte Link-Ziele an.**
+      1. Klicken Sie auf **[!UICONTROL Archiv anzeigen]**.
+      1. Aktivieren Sie die Kontrollkästchen neben den Link-Namen, deren Archivierung Sie aufheben möchten.
+      1. Klicken Sie auf **[!UICONTROL Archivierung der Ausgewählten aufheben]**.
+      Die Option **[!UICONTROL Archiv anzeigen]** zeigt nur zuvor archivierte Link-Ziele an.
 
    * **Löschen**
 
-      To delete a link destination, select one or more check boxes next to the links you want to delete, click **[!UICONTROL Delete Selected]**, and click **[!UICONTROL Delete]** to confirm your action.
+      Wenn Sie ein Link-Ziel löschen möchten, aktivieren Sie die Kontrollkästchen neben den Links, die Sie löschen möchten, und klicken Sie auf **[!UICONTROL Ausgewählte löschen]** und anschließend auf **[!UICONTROL Löschen]**, um die Aktion zu bestätigen.
 
       >[!IMPORTANT]
       >
