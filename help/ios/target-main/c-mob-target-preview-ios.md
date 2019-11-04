@@ -4,7 +4,7 @@ seo-description: Mit der Target-Vorschau können Sie einfach Ende-zu-Ende-Qualit
 seo-title: Target-Vorschau auf iOS
 title: Target-Vorschau auf iOS
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
@@ -14,11 +14,11 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 Mit der Target-Vorschau können Sie einfach Ende-zu-Ende-Qualitätssicherung für Target-Aktivitäten betreiben und diese Aktivitäten auf Ihrem Gerät ansehen.
 
-For more information on how to set up and use Target Preview, see [Target Mobile Preview](https://docs.adobe.com/content/help/en/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+Weitere Informationen über die Einrichtung und Verwendung der Target-Vorschau finden Sie unter [Mobile Target-Vorschau](https://docs.adobe.com/content/help/de-DE/target/using/implement-target/mobile-apps/target-mobile-preview.html).
 
 >[!IMPORTANT]
 >
->Zur Verwendung der Target-Vorschau benötigen Sie SDK-Version 4.14.0 oder höher.
+>Um die Target-Vorschau verwenden zu können, benötigen Sie SDK-Version 4.14.0 oder höher.
 
 ## Target-Vorschaumethode
 
