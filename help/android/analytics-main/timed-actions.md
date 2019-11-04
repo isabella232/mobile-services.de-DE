@@ -2,17 +2,17 @@
 description: Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit über alle Sitzungen hinweg, die bis zum Abschluss der Aktion benötigt werden. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
 seo-description: Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit über alle Sitzungen hinweg, die bis zum Abschluss der Aktion benötigt werden. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
 seo-title: Zeitgesteuerte Aktionen
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Zeitgesteuerte Aktionen
 topic: Entwickler und Implementierung
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
 ---
 
 
-# Timed actions {#timed-actions}
+# Zeitgesteuerte Aktionen {#timed-actions}
 
 Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit über alle Sitzungen hinweg, die bis zum Abschluss der Aktion benötigt werden. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
 
@@ -27,11 +27,11 @@ Ein optionaler Rückruf ermöglicht die Durchführung zusätzlicher Aktionen nac
 * Fügen Sie Kontextdaten hinzu, bevor Sie die Dauern übergeben.
 * Abbruch-Treffer und -Dauern werden noch nicht gesendet.
 
-## Track timed actions {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
+## Zeitgesteuerte Aktionen verfolgen {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und Lebensdauer](/help/android/getting-started/dev-qs.md)hinzufügen.
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zu Ihrem IntelliJ IDEA- oder Eclipse-Projekt hinzufügen* in [Grundlegende Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
 1. Importieren Sie die Bibliothek:
 
    ```java
@@ -62,7 +62,7 @@ Ein optionaler Rückruf ermöglicht die Durchführung zusätzlicher Aktionen nac
 
    Zeitgesteuerte Ereignismetriken werden in Variablen für die mobile Lösung gespeichert, um automatisches Reporting zu ermöglichen.
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Zusätzliche Daten senden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Zusätzlich zu dem Namen der zeitgesteuerten Aktion können Sie mit den Aufrufen zum Aktionsstart bzw. zur -änderung auch zusätzliche Kontextdaten senden:
 
