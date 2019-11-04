@@ -4,7 +4,7 @@ seo-description: 'Auf der Seite „App-Einstellungen verwalten“ können Sie fo
 seo-title: Konfigurieren Ihrer App
 title: Konfigurieren Ihrer App
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -28,7 +28,7 @@ Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen
 
       * **Akquise**
 
-         Verfolgen Sie Referrer-URLs für App-Download-Kampagnen. Weitere Informationen finden Sie unter [Akquise](/help/using/acquisition-main/acquisition-main.md).
+         Verfolgen Sie Referrer-URLs für App-Download-Kampagnen. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
       * **Lebenszyklus**
 
@@ -55,12 +55,12 @@ Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen
 
    Mit dieser Option können Sie Berichte aktivieren, mit denen Längen- und Breitengrad verfolgt sowie bestimmte Zielpunkte (POIs) identifiziert werden können. Sie können auch Bluetooth-Beacons (UUID, Major, Minor und Nähe) verfolgen.
 
-* **App-SDKs und Testtools für Entwickler**
+* **App-SDK und Testtools für Entwickler**
 
    >[!IMPORTANT]
    >
-   >Bevor Sie SDKs und Tools herunterladen, müssen Sie die SDK-Analytics-Optionen konfigurieren. Weitere Informationen finden Sie unter SDK-Analytics-Optionen [konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
+   >Konfigurieren Sie die SDK-Analytics-Option, bevor Sie die SDK und Werkzeuge herunterladen. Weitere Informationen finden Sie in [SDK-Analytics-Optionen konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
-   Wenn Sie ein Upgrade auf Version 4.x der SDKs durchführen möchten oder derzeit an einer neuen App arbeiten, können Sie unten auf der Seite „App-Einstellungen verwalten“ die neuesten SDKs und Entwicklertools herunterladen.
+   Wenn Sie ein Upgrade auf Version 4.x der SDK durchführen möchten oder derzeit an einer neuen App arbeiten, können Sie unten auf der Seite „App-Einstellungen verwalten“ die neuesten SDK und Entwicklertools herunterladen.
 
-   Nachdem die Einrichtung abgeschlossen ist, können Sie die Konfigurationsdatei an Ihre Entwickler senden, damit Daten ordnungsgemäß erfasst werden können. Wenn Sie die SDKs und Tools jetzt noch nicht herunterladen möchten, können Sie jederzeit auf App-Einstellungen verwalten und dann auf die entsprechende App klicken, um die Seite App-Informationen anzuzeigen.
+   Nachdem die Einrichtung abgeschlossen ist, können Sie die Konfigurationsdatei an Ihre Entwickler senden, damit Daten ordnungsgemäß erfasst werden können. Wenn Sie die SDK und Tools jetzt noch nicht herunterladen möchten, können Sie jederzeit auf App-Einstellungen verwalten und dann auf die entsprechende App klicken, um die Seite App-Informationen anzuzeigen.
