@@ -1,23 +1,23 @@
 ---
 description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie im Kontextdatenparameter eine spezielle Syntax verwenden, um „products“ direkt im Server-Aufruf festzulegen.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie im Kontextdatenparameter eine spezielle Syntax verwenden, um „products“ direkt im Server-Aufruf festzulegen.
 seo-title: Variable „products“
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Variable „products“
 topic: Entwickler und Implementierung
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 ---
 
 
-# Products variable {#products-variable}
+# Variable „products“ {#products-variable}
 
 Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie im Kontextdatenparameter eine spezielle Syntax verwenden, um „products“ direkt im Server-Aufruf festzulegen.
 
-To set the *products* variable, set a context data key to `"&&products"`, and set the value by using the syntax that is defined for the *products* variable:
+Um die Variable *products* festzulegen, setzen Sie einen Kontextdatenschlüssel auf `"&&products"` und legen Sie mithilfe der für die Variable *products* definierten Syntax den Wert fest:
 
 ```java
 cdata.put("&&products", "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]");
@@ -42,8 +42,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-The *products* variable is set on the image request, and the other variables are set as context data. Sämtliche Kontextdatenvariablen müssen mithilfe von Verarbeitungsregeln zugeordnet werden:
+Die Variable *products* wird in der Bildanfrage festgelegt und die anderen Variablen werden als Kontextdaten festgelegt. Sämtliche Kontextdatenvariablen müssen mithilfe von Verarbeitungsregeln zugeordnet werden:
 
 ![](assets/map-products.png)
 
-Sie müssen die Variable *products* variable by using processing rules because this variable is set directly on the image request by the SDK.
+Sie müssen die Variable *products* nicht mithilfe von Verarbeitungsregeln zuordnen, da diese Variable direkt in der Bildanfrage vom SDK festgelegt wird.
