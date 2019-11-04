@@ -2,19 +2,19 @@
 description: Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren.
 seo-description: Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren.
 seo-title: Verarbeitungsregeln und Kontextdaten
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Verarbeitungsregeln und Kontextdaten
 topic: Entwickler und Implementierung
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Processing rules and context data {#processing-rules-and-context-data}
+# Verarbeitungsregeln und Kontextdaten {#processing-rules-and-context-data}
 
-Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren. For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren. Weitere Informationen finden Sie unter [Regeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 
@@ -54,5 +54,5 @@ Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 
 >[!TIP]
 >
->Adobe behält den Namespace `"a."`. Um Probleme zu vermeiden, müssen Kontextdatenvariablen in Ihrem Anmeldeunternehmen eindeutig sein.
+>Adobe behält sich den Namespace `"a."` vor. Um Probleme zu vermeiden, müssen Kontextdatenvariablen in Ihrem Anmeldeunternehmen eindeutig sein.
 
