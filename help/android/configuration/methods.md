@@ -1,23 +1,23 @@
 ---
 description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Konfigurationsmethoden
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Konfigurationsmethoden
 topic: Entwickler und Implementierung
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Configuration methods{#configuration-methods}
+# Konfigurationsmethoden{#configuration-methods}
 
 Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 
-## Initial configuration {#section_9169243ECC4744A899A8271F92090ECD}
+## Ausgangskonfiguration {#section_9169243ECC4744A899A8271F92090ECD}
 
 Die folgende Methode muss einmal in der Methode `onCreate` Ihrer Hauptaktivität aufgerufen werden:
 
@@ -34,15 +34,15 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
    ````
 
 
-## SDK settings (Config Class) {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## SDK-Einstellungen (Config-Klasse) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **registerAdobeDataCallback**
 
-   * Registriert ein Objekt, das die `AdobeDataCallback`-Schnittstelle implementiert. The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. Weitere Informationen darüber, welche Ereignisse diesen Rückruf auslösen, finden Sie unter *MobileDataEventEnum* unten in diesem Thema.
+   * Registriert ein Objekt, das die `AdobeDataCallback`-Schnittstelle implementiert. Die überschriebene Methode „call“ wird mit einem `Config.MobileDataEvent`-Wert sowie den zugewiesenen Daten in einer `Map<String, Object>` für das auslösende Ereignis aufgerufen. Weitere Informationen darüber, welche Ereignisse diesen Rückruf auslösen, finden Sie unter *MobileDataEventEnum* unten in diesem Thema.
 
       >[!TIP]
       >
-      >Für diese Methode ist Version 4.9.0 oder höher erforderlich.
+      >Für diese Methode ist die Version 4.9.0 oder höher erforderlich.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -74,7 +74,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
       public static String getVersion();
       ```
 
-   * Hier ein Codebeispiel für diese Methode:
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
       String libraryVersion = Config.getVersion(); 
@@ -86,8 +86,8 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
       Dies sind die Werte zum Datenschutzstatus:
 
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`, wobei die Treffer sofort gesendet werden.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, where the its are discarded.
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden sofort gesendet.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) ändert.
 
          Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
@@ -97,7 +97,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
       public static MobilePrivacyStatus getPrivacyStatus(); 
       ```
 
-   * Hier ein Codebeispiel für diese Methode:
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
       MobilePrivacyStatus privacyStatus Config.getPrivacyStatus();
@@ -109,17 +109,16 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
    * Legt für den aktuellen Benutzer den Datenschutzstatus `status` fest.
 
       Sie können den Datenschutzstatus auf einen der folgenden Werte festlegen:
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`, where the hits are sent immediately. Diese Treffer werden sofort gesendet.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, where the its are discarded. Diese Treffer werden verworfen.
-      * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) ändert.
-Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden sofort gesendet. Diese Treffer werden sofort gesendet.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen. Diese Treffer werden verworfen.
+      * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) ändert. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
       public static void setPrivacyStatus(MobilePrivacyStatus status); 
       ```
 
-   * Hier ein Codebeispiel für diese Methode:
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
       Config.setPrivacyStatus(MobilePrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN); 
@@ -136,7 +135,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
       public static BigDecimal getLifetimeValue();
       ```
 
-   * Hier ein Codebeispiel für diese Methode:
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -148,7 +147,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
 
       >[!TIP]
       >
-      >Wenn Ihre App von Experience Cloud 3.x auf das SDK 4.x aktualisiert, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Bei Neuinstallationen mit SDK 4.x ist die Benutzer-ID `null`.
+      >Wenn für Ihre App ein Upgrade vom Experience Cloud-SDK 3.x auf 4.x vorgenommen wird, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als die benutzerdefinierte Benutzer-ID gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Bei Neuinstallationen mit SDK 4.x ist die Benutzer-ID `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -156,7 +155,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
       public static String&amp getUserIdentifier();
       ```
 
-   * Hier das Codebeispiel für diese Methode:
+   * Hier finden Sie das Code-Beispiel für diese Methode:
 
       ```java
       String userId = Config.getUserIdentifier();
@@ -193,7 +192,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
       ```
 
 * **setDebugLogging**
-   * Legt die Debug-Protokollierungseinstellung auf `debugLogging` fest. 
+   * Legt die Debug-Protokollierungseinstellung auf `debugLogging` fest.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
@@ -345,7 +344,7 @@ Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer
 
       >[!IMPORTANT]
       > 
-      >If you want to use the Advertising Identifier in Acquisition or Lifecycle, call it before calling `Config.collectLifecycleData`.
+      >Wenn Sie die Advertising-ID in Akquise oder Lebenszyklus verwenden möchten, müssen Sie sie vor `Config.collectLifecycleData` aufrufen.
 
       * Hier finden Sie die Syntax für diese Methode:
 
