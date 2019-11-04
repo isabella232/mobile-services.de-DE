@@ -1,50 +1,50 @@
 ---
 description: Adobe Mobile und das Adobe Mobile-SDK ermöglichen es Ihnen, Push-Nachrichten an Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App nach dem Klicken auf eine Push-Nachricht geöffnet haben.
 seo-description: Adobe Mobile und das Adobe Mobile-SDK ermöglichen es Ihnen, Push-Nachrichten an Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App nach dem Klicken auf eine Push-Nachricht geöffnet haben.
-seo-title: Push messaging
-solution: Marketing Cloud, Analytics
+seo-title: Push-Nachrichten
+solution: Experience Cloud,Analytics
 title: Push-Nachrichten
 topic: Entwickler und Implementierung
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Push messaging {#push-messaging}
+# Push-Nachrichten {#push-messaging}
 
 Adobe Mobile und das Adobe Mobile-SDK ermöglichen es Ihnen, Push-Nachrichten an Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App nach dem Klicken auf eine Push-Nachricht geöffnet haben.
 
 >[!IMPORTANT]
 >
->Die Informationen in diesem Thema sind ein Vorschlag für eine mögliche Implementierung. Es wird dringend empfohlen, dass Sie die iOS-Dokumentation von Apple lesen, um die beste Implementierung für Ihre Anwendung zu bestimmen. Ihre Implementierung sollte von den verwendeten Frameworks und den iOS-Versionen, die Ihre App als Ziel verwenden soll, bestimmt werden.
+>Die Informationen in diesem Thema sind ein Vorschlag für eine mögliche Implementierung. Es wird dringend empfohlen, dass Sie die iOS-Dokumentation von Apple lesen, um die beste Implementierung für Ihre Anwendung zu bestimmen. Ihre Implementierung sollte anhand der von Ihnen verwendeten Frameworks und der iOS-Versionen bestimmt werden, auf die Ihre App ausgerichtet ist.
 
 Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderlich**.
 
 >[!IMPORTANT]
 >
->Legen Sie die Experience Cloud-ID nicht manuell in Ihrer App fest. Dies verursacht die Erstellung eines neuen Unique User, der aufgrund seines „opt-in“-Status keine Push-Nachrichten empfängt. Beispiel: Ein Benutzer, der dem Empfang von Push-Nachrichten zugestimmt hat (opt-in), meldet sich bei Ihrer App an. Nach dem Anmelden wird, sofern Sie die ID manuell in Ihrer App festgelegt haben, ein neuer Unique User erstellt, der dem Empfang von Push-Nachrichten nicht zugestimmt hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
+>Legen Sie die Experience Cloud ID nicht manuell in Ihrer App fest. Dies verursacht die Erstellung eines neuen Unique User, der aufgrund seines „opt-in“-Status keine Push-Nachrichten empfängt. Beispiel: Ein Benutzer, der dem Empfang von Push-Nachrichten zugestimmt hat (opt-in), meldet sich bei Ihrer App an. Nach dem Anmelden wird, sofern Sie die ID manuell in Ihrer App festgelegt haben, ein neuer Unique User erstellt, der dem Empfang von Push-Nachrichten nicht zugestimmt hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
 
-## Voraussetzungen   {#section_06655ABE973743DC965897B229A2118D}
+## Voraussetzungen {#section_06655ABE973743DC965897B229A2118D}
 
-* Fügen Sie die Bibliothek zum Projekt hinzu und implementieren Sie Lebenszyklusmetriken.
+* Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie die Lebenszyklusmetriken.
 
-   For more information, see [Lifecycle metrics](/help/ios/metrics.md).
+   Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md).
 
 
-* Das SDK muss für den ID-Dienst aktiviert sein.
-Weitere Informationen finden Sie unter SDK-ID-Dienstoptionen [konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
+* Das SDK muss für den ID-Dienst aktiviert sein. 
+Weitere Informationen finden Sie unter [Optionen für SDK-ID-Dienst konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
 >[!IMPORTANT]
 >
->Das Verschieben der App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
+>Das Verschieben Ihrer App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
 
-## Enabling push messaging {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
+## Push-Nachrichten aktivieren {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for push messaging.
+1. Überprüfen Sie, ob die Datei `ADBMobileConfig.json` die erforderlichen Einstellungen für Push-Nachrichten enthält.
 
-   The `"marketingCloud"` object must have its `"org"` property configured for push messaging.
+   Im Objekt `"marketingCloud"` muss die zugehörige Eigenschaft `"org"` für Push-Nachrichten konfiguriert sein.
 
    ```objective-c
    "marketingCloud": { 
@@ -58,9 +58,9 @@ Weitere Informationen finden Sie unter SDK-ID-Dienstoptionen [konfigurieren](/he
    #import "ADBMobile.h"
    ```
 
-1. Informationen zu den Einstellungen, für die Ihre App eine Berechtigung anfordern muss, finden Sie unter [Konfigurieren der Unterstützung](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1)für Remote-Benachrichtigungen.
+1. Lesen Sie [Configuring Remote Notification Support (Support für Remote-Benachrichtigung konfigurieren)](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1), um die Einstellungen zu bestimmen, für die Ihre App eine Berechtigung anfordern muss.
 
-   Im Folgenden finden Sie ein Beispiel für eine mögliche Implementierung, bei der die Berechtigung zur Verwendung der Benachrichtigungen, Badges, Sounds und Remote-Benachrichtigungen angefordert wird:
+   Hier ist ein Beispiel einer möglichen Implementierung, die um Zugriffsberechtigung zum Verwenden von Warnhinweisen, Zeichen, Tönen und Remote-Benachrichtigungen bittet:
 
    ```objective-c
    // iOS 10 and newer 
@@ -94,7 +94,7 @@ Weitere Informationen finden Sie unter SDK-ID-Dienstoptionen [konfigurieren](/he
    }
    ```
 
-1. The push token must be passed to the SDK using the `setPushIdentifier:` method in ADBMobile class.
+1. Das Push-Token muss mithilfe der Methode `setPushIdentifier:` in der ADBMobile-Klasse an das SDK weitergegeben werden.
 
    ```objective-c
    - (void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
@@ -104,7 +104,7 @@ Weitere Informationen finden Sie unter SDK-ID-Dienstoptionen [konfigurieren](/he
    }
    ```
 
-1. Um die richtige Implementierung für Ihre Umgebung zu ermitteln, gehen Sie zu [UserNotifications](https://developer.apple.com/documentation/usernotifications).
+1. Lesen Sie [UserNotifications](https://developer.apple.com/documentation/usernotifications), um die richtige Implementierung für Ihre Umgebung zu ermitteln.
 
    Dieser Schritt hilft Ihnen beim Aktivieren der Push-Berichterstellung, indem das `userInfo`-Wörterbuch an das SDK übergeben wird, wenn der Benutzer die Anwendung durch das Klicken auf eine Push-Nachricht öffnet.
 
@@ -138,7 +138,7 @@ Weitere Informationen finden Sie unter SDK-ID-Dienstoptionen [konfigurieren](/he
    }
    ```
 
-1. To keep your estimated push audience accurate, notify the SDK when a user manually disables push messaging for your app by calling `[ADBMobile setPushIdentifier: nil]` in the `applicationDidBecomeActive:` method in your `AppDelegate`.
+1. Damit Ihre geschätzte Push-Zielgruppe genau erhalten bleibt, benachrichtigen Sie das SDK, wenn ein Benutzer die Push-Nachrichten für Ihre App manuell deaktiviert, indem Sie `[ADBMobile setPushIdentifier: nil]` in der `applicationDidBecomeActive:`-Methode in `AppDelegate` aufrufen.
 
    ```objective-c
    // device running < iOS 7 
