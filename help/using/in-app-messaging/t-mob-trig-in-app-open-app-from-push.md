@@ -4,13 +4,13 @@ seo-description: Sie können die Push-Nachricht-ID als Auslöser für die In-App
 seo-title: In-App-Nachricht auslösen, wenn die App von einer Push-Nachricht aus geöffnet wird
 title: In-App-Nachricht auslösen, wenn die App von einer Push-Nachricht aus geöffnet wird
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
 ---
 
 
-# Trigger an in-app message when the app is opened from a push message{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
+# In-App-Nachricht auslösen, wenn die App von einer Push-Nachricht aus geöffnet wird{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
 
 Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festlegen, die gesendet wird, wenn ein Anwender die App von der Push-Nachricht aus öffnet.
 
@@ -28,9 +28,9 @@ Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festle
 
    >[!TIP]
    >
-   >The push message ID is the ID that you located in step 1.
+   >Bei der Push-Nachricht-ID handelt es sich um die ID, die Sie in Schritt 1 ermittelt haben.
 
-   Dieser Auslöser muss manuell hinzugefügt werden, da er in der Dropdown-Liste **[!UICONTROL Auslöser]nicht verfügbar ist.**
+   Dieser Auslöser muss manuell hinzugefügt werden, da er in der Dropdown-Liste **[!UICONTROL Auslöser]** nicht verfügbar ist.
 
    ![](assets/brandon_task2.png)
 
