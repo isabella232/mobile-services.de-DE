@@ -1,13 +1,13 @@
 ---
 description: Mit Postbacks können Sie vom SDK erfasste Daten an einen Drittanbieterserver senden. Mit denselben Auslösern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie das SDK so konfigurieren, dass es benutzerdefinierte Daten an ein Drittanbieterziel sendet.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Mit Postbacks können Sie vom SDK erfasste Daten an einen Drittanbieterserver senden. Mit denselben Auslösern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie das SDK so konfigurieren, dass es benutzerdefinierte Daten an ein Drittanbieterziel sendet.
 seo-title: Postbacks
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Übersicht über Postbacks
 topic: Entwickler und Implementierung
 uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f26dcd5cf9b19de49c9d034c854d9738c7843fb2
 
 ---
@@ -19,13 +19,13 @@ Mit Postbacks können Sie vom SDK erfasste Daten an einen Drittanbieterserver se
 
 >[!IMPORTANT]
 >
->This functionality requires SDK version 4.6.0 or later.
+>Für diese Funktion ist die SDK-Version 4.6.0 oder höher erforderlich.
 
 Postback-Nachrichten werden in die Warteschlange versetzt und folgen allen vorhandenen Online-/Offline-Regeln, die die Analytics-Datenerfassung regeln. Wenn eine Nachricht übereinstimmt (wie die gezeigten Nachrichten), brechen Postback-Nachrichten die übrigen Nachrichten nicht ab. Dies ermöglicht mehrere Postbacks beim selben Analytics-Treffer. Eine Definition finden Sie in der Zeile *Postbacks* unter [ADBMobile-JSON-Konfiguration](/help/android/configuration/json-config/json-config.md).
 
-## Template expansions {#section_6758AD05A24C4E9E965F5253294C164A}
+## Vorlagenerweiterungen {#section_6758AD05A24C4E9E965F5253294C164A}
 
-Template expansions are available in the `templateurl` and `templatebody` properties. Template items take the form of `{key}`, where `key` is a context data key or traditional data key. The values that are available for template expansion are limited to the [Lifecycle metrics](/help/android/metrics.md), in addition to any custom data that is attached to the hit that triggers the message. Zur Zeit sind keine verlaufs- oder segmentbasierten Daten verfügbar.
+Vorlagenerweiterungen sind in den Eigenschaften `templateurl` und `templatebody` verfügbar. Vorlagenelemente treten in folgender Form auf: `{key}`, wobei es sich bei dem `key` um einen Kontextdaten- oder herkömmlichen Schlüssel handeln kann. Die Werte, die für die Vorlagenerweiterung verfügbar sind, beschränken sich auf die [Lebenszyklusmetriken](/help/android/metrics.md) sowie auf jegliche benutzerdefinierten Daten, die an den Treffer angehängt sind, der die Nachricht ausgelöst hat. Zur Zeit sind keine verlaufs- oder segmentbasierten Daten verfügbar.
 
 Es gibt auch spezifische, reservierte Vorlagen, die das SDK automatisch durch interne, dem SDK bekannte Daten ersetzt.
 
