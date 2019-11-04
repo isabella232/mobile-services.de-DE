@@ -2,11 +2,11 @@
 description: Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werden und wie Sie am besten mit fälschlich gemeldeten Abstürzen umgehen.
 seo-description: Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werden und wie Sie am besten mit fälschlich gemeldeten Abstürzen umgehen.
 seo-title: App-Abstürze verfolgen
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: App-Abstürze verfolgen
 topic: Entwickler und Implementierung
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -18,7 +18,7 @@ Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werd
 
 >[!IMPORTANT]
 >
->Sie sollten auf die iOS SDK-Version 4.8.6 aktualisieren, die wichtige Änderungen enthält, die verhindern, dass Falsch-Abstürze gemeldet werden.
+>Sie sollten ein Upgrade auf iOS-SDK-Version 4.8.6 vornehmen, das kritische Änderungen enthält, die verhindern, dass falsche Abstürze gemeldet werden.
 
 ## Wann meldet Adobe einen Absturz?
 
@@ -44,13 +44,13 @@ Die folgenden Szenarien sind dafür bekannt, dass in ihnen fälschlicherweise ei
 
    >[!TIP]
    >
-   >Sie können einen Absturz in diesem Szenario vermeiden, indem Sie die App im Hintergrund starten, bevor Sie die App erneut von Xcode starten.
+   >Sie können verhindern, dass es in diesem Szenario zu einem Absturz kommt, indem Sie die App in den Hintergrund versetzen, bevor Sie die App erneut über Xcode ausführen.
 
-* If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
+* Wenn sich Ihre App im Hintergrund befindet und Analytics-Treffer über einen Aufruf sendet, der sich von `trackActionFromBackground`, `trackLocation` und `trackBeacon` unterscheidet und die App (manuell oder durch das Betriebssystem) beendet wird, während sie sich im Hintergrund befindet, wird beim nächsten Start ein Absturz angezeigt.
 
    >[!TIP]
    >
-   >Background activity that occurs beyond the `lifecycleTimeout` threshold might also result in an additional false launch.
+   >Hintergrundaktivitäten, die jenseits des `lifecycleTimeout`-Schwellenwerts auftreten, können auch zu einem zusätzlichen falschen Start führen.
 
 * Wenn Ihre App im Zuge eines Hintergrundabrufs, Standortupdates usw. im Hintergrund ausgeführt und durch das Betriebssystem beendet wird, ohne jemals in den Vordergrund versetzt zu werden, führt der nächste Start (im Hinter- oder Vordergrund) zu einem Absturz.
 * Wenn Sie das „pause“-Kennzeichen von Adobe in `NSUserDefaults` programmgesteuert löschen, während sich die App im Hintergrund befindet, führt der nächste Start oder die nächste Fortsetzung zu einem Absturz.
