@@ -2,21 +2,21 @@
 description: Hier finden Sie eine Liste der Audience Manager-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-description: Hier finden Sie eine Liste der Audience Manager-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-title: Audience Manager-Methoden
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
 topic: Entwickler und Implementierung
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Audience Manager methods {#audience-manager-methods}
+# Audience Manager-Methoden {#audience-manager-methods}
 
 Hier finden Sie eine Liste der Audience Manager-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter Analytics, Target, Audience Manager und den Identitätsdienst für Adobe Experience Platform. Die Methoden haben ein der Lösung entsprechendes Präfix und die Manager-Methoden enthalten das Präfix „`audience`audience“.
+Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Identity-Dienst für Adobe Experience Platform. Die Methoden haben ein der Lösung entsprechendes Präfix und die Manager-Methoden enthalten das Präfix „`audience`audience“.
 
 Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal, das Lebenszyklusmetriken enthält, mit `application:didFinishLaunchingWithOptions:` : gesendet.
 
@@ -30,13 +30,13 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal, das
       + (NSDictionary *) audienceVisitorProfile;
       ```
 
-   * Here is the code sample for this menu:
+   * Hier finden Sie ein Code-Beispiel für dieses Menü:
 
       ```objective-c
       NSDictionary *profile = [ADBMobile audienceVisitorProfile]; 
       ```
 
-* **audienceDpid** 
+* **audienceDpid**
 
    Gibt die aktuelle DPID zurück.
 
@@ -77,7 +77,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal, das
 
       >[!IMPORTANT]
       >
-      >Vor Version 4.13.x wurde DPUUID nicht automatisch kodiert. Ab Version 4.13.x entschlüsselt das SDK zunächst den übermittelten Wert und verschlüsselt ihn dann neu. Mithilfe dieses Verfahrens wird sichergestellt, dass das SDK die Rückkompatibilität nicht beeinträchtigt.
+      >Vor Version 4.13.x wurde die DPUUID nicht automatisch verschlüsselt. Ab Version 4.13.x entschlüsselt das SDK zunächst den übermittelten Wert und verschlüsselt ihn dann neu. Mithilfe dieses Verfahrens wird sichergestellt, dass das SDK die Rückkompatibilität nicht beeinträchtigt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
