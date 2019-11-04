@@ -3,17 +3,17 @@ description: Mithilfe dieser Informationen können Probleme mit Push-Nachrichten
 keywords: mobile
 seo-description: Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 seo-title: Fehlerbehebung bei Push-Nachrichten
-solution: Marketing Cloud, Analytics
-title: Troubleshoot Push Messaging
+solution: Experience Cloud,Analytics
+title: Fehlerbehebung bei Push-Nachrichten
 topic: Metriken
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# Troubleshoot push messaging {#troubleshooting-push-messaging}
+# Fehlerbehebung bei Push-Nachrichten {#troubleshooting-push-messaging}
 
 Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 
@@ -27,7 +27,7 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 
 * Warten auf Push-Dienst
 
-   Der Push-Dienst (APNS oder FCM) sendet die Nachricht möglicherweise nicht sofort. Dies kann in Ausnahmefällen 5 bis 10 Minuten in Anspruch nehmen. Auf der Seite Nachrichten können Sie überprüfen, ob die Push-Nachricht an den Push-Dienst gesendet wurde. Klicken Sie hierzu auf den Link **Anzeigen** der entsprechenden Nachricht. Im Bericht wird die Anzahl erfolgreicher Sendevorgänge an den Push-Dienst in der Spalte **[!UICONTROL Veröffentlicht]aufgeführt.**
+   Der Push-Dienst (APNS oder FCM) versendet die Nachricht möglicherweise nicht sofort. Dies kann in Ausnahmefällen 5 bis 10 Minuten in Anspruch nehmen. Auf der Seite Nachrichten können Sie überprüfen, ob die Push-Nachricht an den Push-Dienst gesendet wurde. Klicken Sie hierzu auf den Link **[!UICONTROL Anzeigen]** der entsprechenden Nachricht. Im Bericht wird die Anzahl erfolgreicher Sendevorgänge an den Push-Dienst in der Spalte **[!UICONTROL Veröffentlicht]** aufgeführt.
 
    >[!TIP]
    >
@@ -36,7 +36,7 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
    Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie in der entsprechenden Dokumentation:
 
    * **APNS**: [Servicequalität](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM: Lifetime of a Message**[](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   * **FCM**: [Lebensdauer einer Nachricht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Warum werden meine Push-Nachrichten abgeschnitten oder erweitern sich nicht?
 
