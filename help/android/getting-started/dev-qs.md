@@ -1,19 +1,19 @@
 ---
 description: Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek und Erfassen von Lebenszyklusmetriken, wie z. B. Starts, Upgrades, Sitzungen, erreichte Benutzer usw.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek und Erfassen von Lebenszyklusmetriken, wie z. B. Starts, Upgrades, Sitzungen, erreichte Benutzer usw.
 seo-title: Grundlegende Implementierung und Lebenszyklus
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
 topic: Entwickler und Implementierung
-uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbb2
-translation-type: tm+mt
+uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
+translation-type: ht
 source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
 ---
 
 
-# Core implementation and lifecycle {#core-implementation-and-lifecycle}
+# Grundlegende Implementierung und Lebenszyklus {#core-implementation-and-lifecycle}
 
 Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek und Erfassen von Lebenszyklusmetriken, wie z. B. Starts, Upgrades, Sitzungen, erreichte Benutzer usw.
 
@@ -21,51 +21,51 @@ Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek un
 
 >[!IMPORTANT]
 >
->Zum Herunterladen des SDK müssen Sie Android 2.2 oder höher verwenden.
+>Um das SDK herunterzuladen, müssen Sie Android 2.2 oder höher verwenden.
 
 1. Führen Sie die Schritte in den folgenden Abschnitten aus, um eine Entwicklungsberichtssuite einzurichten und eine vorinstallierte Version der Konfigurationsdatei herunterzuladen:
 
    * [Report Suite erstellen](/help/android/getting-started/requirements.md)
    * [SDK herunterladen](/help/android/getting-started/requirements.md)
 
-1. Laden Sie die `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` Datei herunter und dekomprimieren Sie sie und stellen Sie sicher, dass die folgenden Softwarekomponenten vorhanden sind:
+1. Laden Sie die Datei `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` herunter und dekomprimieren Sie sie. Stellen Sie sicher, dass die folgenden Softwarekomponenten vorhanden sind:
 
-   * `adobeMobileLibrary.jar`, die Bibliothek, die mit Android-Geräten und Simulatoren verwendet wird.
+   * `adobeMobileLibrary.jar`: die Bibliothek, die mit Android-Geräten und Simulatoren verwendet wird.
 
    * `ADBMobileConfig.json`: die SDK-Konfigurationsdatei, die für Ihre App angepasst ist.
    >[!IMPORTANT]
    >
-   >If you download the SDK outside the Adobe Mobile services UI, the `ADBMobileConfig.json` file must be manually configured. If you are new to Analytics and the Mobile SDK, and you want to set up a development report suite and download a pre-populated version of the configuration file, see [Before You Start](/help/android/getting-started/requirements.md).
+   >Wenn Sie das SDK außerhalb der Adobe Mobile Services-Benutzeroberfläche herunterladen, muss die Datei `ADBMobileConfig.json` manuell konfiguriert werden. Wenn Sie mit Analytics und dem Mobile SDK noch nicht vertraut sind und eine Entwicklungsberichtssuite einrichten und eine vorinstallierte Version der Konfigurationsdatei herunterladen möchten, lesen Sie [Vorbereitung](/help/android/getting-started/requirements.md).
 
-## Add the SDK and config file to your IntelliJ IDEA or Eclipse project {#section_B89510FBB4C646AEA73A185B966E54D3}
+## SDK und Konfigurationsdatei zu Ihrem IntelliJ IDEA- oder Eclipse-Projekt hinzufügen {#section_B89510FBB4C646AEA73A185B966E54D3}
 
-**IntelliJ IDEA project**
+**IntelliJ IDEA-Projekt**
 
 So fügen Sie das SDK und die Konfigurationsdatei zu Ihrem Projekt hinzu:
 
-1. Add the `ADBMobileConfig.json` file to the `assets` folder in your project.
+1. Fügen Sie die Datei `ADBMobileConfig.json` in den Ordner `assets` Ihres Projekts ein.
 
 1. Klicken Sie im Bereich „Project Navigation“ (Projektnavigation) mit der rechten Maustaste auf das Projekt.
 1. Wählen Sie **[!UICONTROL Moduleinstellungen öffnen]**.
 1. Wählen Sie unter **[!UICONTROL Projekteinstellungen]** die Option **[!UICONTROL Bibliotheken]**.
-1. Click the **[!UICONTROL +]** icon to add a new library.
+1. Klicken Sie auf **[!UICONTROL +]**, um eine neue Bibliothek hinzuzufügen.
 1. Wählen Sie **[!UICONTROL Java]** und navigieren Sie zur Datei `adobeMobileLibrary.jar`.
 1. Wählen Sie die Module aus, in denen Sie die Mobilbibliothek verwenden möchten.
-1. Klicken Sie auf **[!UICONTROL Anwenden]** und anschließend auf **[!UICONTROL OK], um das Fenster Moduleinstellungen zu schließen.**
+1. Klicken Sie auf **[!UICONTROL Anwenden]** und anschließend auf **[!UICONTROL OK]**, um das Fenster Moduleinstellungen zu schließen.
 
 **Eclipse-Projekt**
 
 So fügen Sie das SDK und die Konfigurationsdatei zu Ihrem Projekt hinzu:
 
-1. Add the `ADBMobileConfig.json` file to the `assets` folder in your project.
-1. In **[!UICONTROL Eclipse IDE]**, right-click the project name.
-1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]**.
-1. Auswählen `adobeMobileLibrary.jar`.
+1. Fügen Sie die Datei `ADBMobileConfig.json` in den Ordner `assets` Ihres Projekts ein.
+1. Klicken Sie in **[!UICONTROL Eclipse IDE]** mit der rechten Maustaste auf den Projektnamen.
+1. Klicken Sie auf **[!UICONTROL Pfad aufbauen]** &gt; **[!UICONTROL Externe Archive hinzufügen]**.
+1. Select `adobeMobileLibrary.jar`.
 1. Klicken Sie auf **[!UICONTROL Öffnen]**.
-1. Right-click the project again and select **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]**.
-1. Stellen Sie sicher, dass auf der Registerkarte **[!UICONTROL Sortieren und exportieren]** **`adobeMobileLibrary.jar`ausgewählt ist.**
+1. Klicken Sie erneut mit der rechten Maustaste auf das Projekt und wählen Sie dann **[!UICONTROL Pfad aufbauen]** &gt; **[!UICONTROL Pfadaufbau konfigurieren]** aus.
+1. Stellen Sie sicher, dass auf der Registerkarte **[!UICONTROL Sortieren und exportieren]** **`adobeMobileLibrary.jar`** ausgewählt ist.
 
-## Add app permissions {#section_2EAF73ABF6424647B219A63B33B02CD5}
+## App-Berechtigungen hinzufügen {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
 Die AppMeasurement-Bibliothek erfordert folgende Berechtigungen, um Daten zu senden und Offline-Verfolgungsaufrufe aufzuzeichnen:
 
@@ -79,9 +79,9 @@ Ergänzen Sie die Datei `AndroidManifest.xml` im Projektverzeichnis der Anwendun
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-## Set the application context {#set-application-context}
+## App-Kontext festlegen {#set-application-context}
 
-Der folgende Code sollte der `onCreate` Methode Ihrer Hauptaktivität hinzugefügt werden:
+Der folgende Code sollte der `onCreate`-Methode Ihrer Hauptaktivität hinzugefügt werden:
 
 ```java
    @Override
@@ -92,9 +92,9 @@ Der folgende Code sollte der `onCreate` Methode Ihrer Hauptaktivität hinzugefü
    }
 ````
 
-## Implement lifecycle metrics {#section_BA686C09021F474AADDE8690BBB910F7}
+## Lebenszyklusmetriken implementieren {#section_BA686C09021F474AADDE8690BBB910F7}
 
-Nachdem Sie den Lebenszyklus aktiviert haben, wird bei jedem Start Ihrer App ein Treffer gesendet, um Starts, Upgrades, Sitzungen, erreichte Benutzer und viele andere Metriken zu messen. Weitere Informationen finden Sie unter  [Lebenszyklusmetriken](/help/android/metrics.md).
+Nachdem Sie den Lebenszyklus aktiviert haben, wird bei jedem Start Ihrer App ein Treffer gesendet, um Starts, Upgrades, Sitzungen, erreichte Benutzer und viele andere Metriken zu messen. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
 **Führen Sie die folgenden Schritte in jeder Aktivität Ihrer Anwendung aus:**
 
@@ -125,9 +125,9 @@ Nachdem Sie den Lebenszyklus aktiviert haben, wird bei jedem Start Ihrer App ein
 
 >[!IMPORTANT]
 >
->Sie müssen diese Aufrufe jeder Aktivität hinzufügen, um eine genaue Absturzberichterstattung sicherzustellen. Weitere Informationen finden Sie unter Abstürze [verfolgen von Apps](/help/android/analytics-main/crashes.md).
+>Sie müssen diese Aufrufe zu jeder Aktivität hinzufügen, um präzise Absturzberichte zu gewährleisten. Weitere Informationen finden Sie unter [App-Abstürze verfolgen](/help/android/analytics-main/crashes.md).
 
-## Include additional data with lifecycle calls
+## Zusätzliche Daten zu Lebenszyklusaufrufen hinzufügen
 
 Um beim Lebenszyklusmetrik-Aufrufen zusätzliche Daten hinzuzufügen, übergeben Sie einen zusätzlichen Parameter mit Kontextdaten an `collectLifecycleData`:
 
@@ -144,7 +144,7 @@ Zusätzliche Kontextdatenwerte, die mit `collectLifecycleData` gesendet werden, 
 
 ![](assets/map-variable-lifecycle.png)
 
-Andere Lebenszyklusmetriken werden automatisch erfasst. Weitere Informationen finden Sie unter  [Lebenszyklusmetriken](/help/android/metrics.md).
+Andere Lebenszyklusmetriken werden automatisch erfasst. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
 ## Nächste Schritte {#section_BF709684E1DD40EA9169BC1D0D4B37C2}
 
