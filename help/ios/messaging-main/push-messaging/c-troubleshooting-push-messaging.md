@@ -3,17 +3,17 @@ description: Mithilfe dieser Informationen können Probleme mit Push-Nachrichten
 keywords: mobile
 seo-description: Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 seo-title: Fehlerbehebung für Push-Nachrichten
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Fehlerbehebung für Push-Nachrichten
 topic: Metriken
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Troubleshooting push messaging {#troubleshooting-push-messaging}
+# Fehlerbehebung für Push-Nachrichten {#troubleshooting-push-messaging}
 
 Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 
