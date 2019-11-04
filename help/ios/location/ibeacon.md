@@ -2,11 +2,11 @@
 description: Mit der iBeacon-Verfolgung können Sie Mikrostandorte mithilfe von iBeacon und Bluetooth Low Energy messen und anvisieren.
 seo-description: Mit der iBeacon-Verfolgung können Sie Mikrostandorte mithilfe von iBeacon und Bluetooth Low Energy messen und anvisieren.
 seo-title: iBeacon-Verfolgung
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: iBeacon-Verfolgung
 topic: Entwickler und Implementierung
 uuid: 390883db-027e-4d12-8a16-86d514579db1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -18,7 +18,7 @@ Mit der iBeacon-Verfolgung können Sie Mikrostandorte mithilfe von iBeacon und B
 
 Die folgenden Beacon-Daten werden an Analytics und Target gesendet, wenn `trackBeacon` aufgerufen wird:
 
-* `a.beacon.uuid` - ProximityUUID of the beacon
+* `a.beacon.uuid`: Näherungs-UUID des Beacons
 * `a.beacon.major`: Hauptnummer des Beacons, beispielsweise eine Speichernummer
 * `a.beacon.minor`: Nebennummer des Beacons, beispielsweise eine eindeutige Nummer in einem Speicher
 * `a.beacon.prox`: Die folgenden Werte geben an, wie nah sich der Benutzer am Beacon befindet:
@@ -28,11 +28,11 @@ Die folgenden Beacon-Daten werden an Analytics und Target gesendet, wenn `trackB
    * `2` ist nahe
    * `3` ist entfernt
 
-## Track iBeacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## iBeacons verfolgen {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zum Projekt hinzufügen* im Abschnitt [Grundlegende Implementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md).
 1. Importieren Sie die Bibliothek:
 
    ```objective-c
@@ -51,7 +51,7 @@ Die folgenden Beacon-Daten werden an Analytics und Target gesendet, wenn `trackB
    [ADBMobile trackingClearCurrentBeacon];
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Zusätzliche Daten senden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Zusätzlich zum zeitlich festgelegten Aktionsnamen können Sie bei jedem Verfolgungsaktionsaufruf zusätzliche Kontextdaten senden:
 
@@ -59,7 +59,7 @@ Zusätzlich zum zeitlich festgelegten Aktionsnamen können Sie bei jedem Verfolg
 [ADBMobile trackBeacon:beacon data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
+Die Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ![](assets/map-variable-context-ltv.png)
 
