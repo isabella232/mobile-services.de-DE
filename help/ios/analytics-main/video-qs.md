@@ -1,28 +1,28 @@
 ---
 description: Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der Meilenstein-Videomessung.
 seo-description: Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der Meilenstein-Videomessung.
-seo-title: Video-Analytics
-solution: Marketing Cloud,Analytics
-title: Video-Analytics
+seo-title: Video Analytics
+solution: Experience Cloud,Analytics
+title: Video Analytics
 topic: Entwickler und Implementierung
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
-# Video Analytics  {#video-analytics}
+# Video Analytics {#video-analytics}
 
 Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der Meilenstein-Videomessung.
 
 >[!TIP]
 >
->Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen finden Sie unter [Audio- und Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen finden Sie unter [Audio- und Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html).
 
 Der allgemeine Prozess zur Videomessung ist für sämtliche Plattformen sehr ähnlich. Dieser Inhalt bietet eine grundlegende Übersicht über die Aufgaben für Entwickler sowie einige Codebeispiele.
 
-## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
+## Player-Ereignisse Analytics-Variablen zuordnen {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
 In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten einer Analytics-Variablen zuzuordnen.
 
@@ -40,12 +40,12 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (Optional) Bietet Informationen zur Videopfadsetzung. Die Pfadsetzung muss für diese Variable von der Kundenunterstützung aktiviert werden.
 
-   * Variablentyp: Custom Insight (s.prop)
+   * Variablentyp: Custom Insight (benutzerspezifischer Insight-Bericht) (s.prop)
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop)
 
 * **a.media.segment**
 
-   (Erforderlich) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` Segments evar.
+   (Erforderlich) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. Beispiel: Wenn ein Besucher das erste Segment in einem Video ansieht, kann SiteCatalyst Folgendes in der Segment-eVar erfassen: `1:M:0-25`.
 
    Die standardmäßige Methode zur Videodatenerfassung sammelt Daten an folgenden Punkten:
 
@@ -93,7 +93,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
    * Variablentyp: Ereignis
    * Typ: Zähler
 
-## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
+## Medieneinstellungen konfigurieren {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Konfigurieren Sie ein `ADBMediaSettings`-Objekt mit den gewünschten Einstellungen zum Verfolgen des Videos:
 
@@ -120,9 +120,9 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 // event handlers described in the next section
 ```
 
-## Track player events {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Player-Ereignisse verfolgen {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-To measure video playback, The `mediaPlay`, `mediaStop`, and `mediaClose` methods need to be called at the appropriate times. Wenn beispielsweise der Player angehalten wird, muss `mediaStop` aufgerufen werden. `mediaPlay` wird aufgerufen, wenn die Wiedergabe gestartet oder fortgesetzt wird.
+Zum Messen der Videowiedergabe müssen die Methoden `mediaPlay`, `mediaStop` und `mediaClose` zu den entsprechenden Zeiten aufgerufen werden. Wenn beispielsweise der Player angehalten wird, muss `mediaStop` aufgerufen werden. `mediaPlay` wird aufgerufen, wenn die Wiedergabe gestartet oder fortgesetzt wird.
 
 Im folgenden Beispiel wird das Konfigurieren von Benachrichtigungen und das Aufrufen der Medienmethoden zum Messen des Videos gezeigt:
 
@@ -220,7 +220,7 @@ NSUInteger segmentNum
 NSUInteger eventType
 ```
 
-## Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Medienmessungsklasse und Methodenreferenz {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **mediaCreateSettings&#x200B;WithName:&#x200B;length:&#x200B;playerName:&#x200B;playerID:**
 
