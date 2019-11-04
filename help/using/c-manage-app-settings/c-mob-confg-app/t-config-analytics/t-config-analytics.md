@@ -3,21 +3,21 @@ description: Sie können die SDK-Analytics-Optionen beim Erstellen einer neuen A
 keywords: mobile
 seo-description: Sie können die SDK-Analytics-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 seo-title: SDK-Analytics-Optionen konfigurieren
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: SDK-Analytics-Optionen konfigurieren
 topic: Metriken
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Configure SDK Analytics options {#configure-sdk-analytics-options}
+# SDK-Analytics-Optionen konfigurieren {#configure-sdk-analytics-options}
 
 Sie können die SDK-Analytics-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 
-Type information in the following fields under **[!UICONTROL SDK Analytics Options]**:
+Geben Sie Informationen in die folgenden Felder unter **[!UICONTROL SDK-Analytics-Optionen]** ein:
 
 * **[!UICONTROL HTTPS verwenden]**
 
@@ -48,6 +48,6 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL Mehr Infos]**
 
-   Klicken Sie auf **[!UICONTROL Mehr Infos], um die Report Suite-ID und den Tracking-Server anzuzeigen, Offline-Tracking zu aktivieren bzw. zu deaktivieren und das verwendete Modell für die Zeichencodierung anzuzeigen (z. B. UTF-8).**
+   Klicken Sie auf **[!UICONTROL Mehr Infos]**, um die Report Suite-ID und den Tracking-Server anzuzeigen, Offline-Tracking zu aktivieren bzw. zu deaktivieren und das verwendete Modell für die Zeichencodierung anzuzeigen (z. B. UTF-8).
 
    Wenn Offline-Tracking aktiviert ist, werden Daten, die vom Gerät im Offline-Zustand generiert werden, mit einem Zeitstempel versehen und später gesendet. Wenn diese Option deaktiviert ist, werden Offline-Daten verworfen.
