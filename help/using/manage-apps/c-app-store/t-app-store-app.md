@@ -3,17 +3,17 @@ description: Sie können eine App aus dem Apple App Store oder aus Google Play h
 keywords: mobile
 seo-description: Sie können eine App aus dem Apple App Store oder aus Google Play hinzufügen.
 seo-title: App aus einem Appstore hinzufügen
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: App aus einem Appstore hinzufügen
 topic: Metriken
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Add an app from an app store {#add-an-app-from-an-app-store}
+# App aus einem Appstore hinzufügen {#add-an-app-from-an-app-store}
 
 Sie können eine App aus dem Apple App Store oder aus Google Play hinzufügen.
 
@@ -21,19 +21,19 @@ Sie können eine App aus dem Apple App Store oder aus Google Play hinzufügen.
 
    * Melden Sie sich bei AMS an (Adobe Mobile Services) und klicken Sie auf **[!UICONTROL Neu erstellen]**.
 
-      For more information about signing in to the Mobile Services UI, see Sign in.[](/help/using/gs/gs-signin.md)
+      Weitere Informationen zum Anmelden bei der Mobile Services-Benutzeroberfläche finden Sie unter [Anmelden](/help/using/gs/gs-signin.md).
 
-   * To add apps, in the left navigation menu, click Manage Apps and click Add.********
+   * Um Apps hinzuzufügen, klicken Sie im linken Navigationsmenü auf **[!UICONTROL Apps verwalten]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
-1. Click **[!UICONTROL Add App Store App]**.
-1. Führen Sie die folgenden Aufgaben durch:
+1. Klicken Sie auf **[!UICONTROL Appstore-App hinzufügen]**.
+1. Führen Sie die folgenden Aufgaben aus:
 
    * Wählen Sie einen Appstore aus:
       * **[!UICONTROL Apple App Store]**
       * **[!UICONTROL Google Play]**
-   * Search by app store name and select the app.
+   * Suchen Sie nach Appstore-Namen und wählen Sie die App aus.
 
-      Sie können Informationen zur ausgewählten App in der Vorschau anzeigen, um festzustellen, ob Sie die richtige App ausgewählt haben.
+      Sie können eine Vorschau der Informationen zur ausgewählten App anzeigen, um zu erkennen, ob Sie die richtige App ausgewählt haben.
 
    * Geben Sie die App-ID ein.
 
