@@ -2,11 +2,11 @@
 description: Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, bei denen Offline-Verfolgung aktiviert ist, Treffer erst dann zu senden, wenn die Anzahl der Treffer in der Warteschlange den konfigurierten Wert erreicht.
 seo-description: Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, bei denen Offline-Verfolgung aktiviert ist, Treffer erst dann zu senden, wenn die Anzahl der Treffer in der Warteschlange den konfigurierten Wert erreicht.
 seo-title: Stapelverarbeitung von Treffern
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Stapelverarbeitung von Treffern
 topic: Entwickler und Implementierung
 uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -18,9 +18,9 @@ Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, bei denen Offlin
 
 >[!IMPORTANT]
 >
->Für die Stapelverarbeitung von Treffern ist SDK Version 4.1 oder höher erforderlich.
+>Die Stapelverarbeitung von Treffern erfordert die SDK-Version 4.1 oder höher.
 
-To enable hit batching, update your `ADBMobileConfig.json` file and specify a value for `batchLimit`:
+Um die Stapelverarbeitung von Treffern zu aktivieren, aktualisieren Sie die Datei `ADBMobileConfig.json` und geben Sie einen Wert für `batchLimit` an:
 
 ```js
 "analytics": {
@@ -39,5 +39,5 @@ Die folgenden Methoden werden mit Treffer-Stapelverarbeitung verwendet:
 
 >[!CAUTION]
 >
->Die Offline-Verfolgung muss aktiviert sein, damit Hit-Batching verwendet werden kann.
+>Die Offline-Verfolgung muss aktiviert sein, um die Stapelverarbeitung von Treffern zu verwenden.
 
