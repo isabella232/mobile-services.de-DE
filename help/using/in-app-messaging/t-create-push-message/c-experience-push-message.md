@@ -2,27 +2,27 @@
 description: Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Optionen für Name, Nachrichtentext und Ziel, konfigurieren. Sie können außerdem erweiterte Optionen konfigurieren, einschließlich Nutzlastoptionen und benutzerdefinierter Optionen für iOS-Geräte.
 keywords: mobile
 seo-description: Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Optionen für Name, Nachrichtentext und Ziel, konfigurieren. Sie können außerdem erweiterte Optionen konfigurieren, einschließlich Nutzlastoptionen und benutzerdefinierter Optionen für iOS-Geräte.
-seo-title: Erlebnis-Push-Nachricht
-solution: Marketing Cloud, Analytics
-title: Erlebnis-Push-Nachricht
+seo-title: Erlebnis Push-Nachrichten
+solution: Experience Cloud,Analytics
+title: Erlebnis Push-Nachrichten
 topic: Metriken
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Experience: push message {#experience-push-message}
+# Erlebnis: Push-Nachrichten {#experience-push-message}
 
 Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Optionen für Name, Nachrichtentext und Ziel, konfigurieren. Sie können außerdem erweiterte Optionen konfigurieren, einschließlich Nutzlastoptionen und benutzerdefinierter Optionen für iOS-Geräte.
 
-1. Klicken Sie auf der Seite Zielgruppe für eine neue Push-Nachricht auf **[!UICONTROL Erlebnis]**.
+1. Klicken Sie auf der Seite „Zielgruppe“ einer neuer Push-Nachricht auf **[!UICONTROL Erlebnis]**.
 
-   ![experience push message screen](assets/experience-push-message.png)
+   ![Erlebnisbildschirm einer Push-Nachrichten](assets/experience-push-message.png)
 
 1. Geben Sie den Namen der Nachricht ein.
-1. Geben Sie in folgende Felder im Abschnitt **[!UICONTROL Meldung]Informationen ein:**
+1. Geben Sie in folgende Felder im Abschnitt **[!UICONTROL Meldung]** Informationen ein:
 
    * **[!UICONTROL Inhalt]**
 
@@ -30,7 +30,7 @@ Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, ei
 
    * **[!UICONTROL Medien-URL]**
 
-      Geben Sie die URL der Mediendatei ein, die Sie für die Push-Nachricht verwenden möchten. Anforderungen für die Verwendung von Rich-Push-Benachrichtigungen finden Sie unter *Anforderungen für Rich-Push-Benachrichtigungen* .
+      Geben Sie die URL der Mediendatei ein, die Sie für die Push-Nachricht verwenden möchten. Anforderungen für die Verwendung von Rich-Push-Benachrichtigungen finden Sie unter *Anforderungen für Rich-Push-Benachrichtigungen* weiter unten.
 
       >[!IMPORTANT]
       >
@@ -41,11 +41,11 @@ Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, ei
 
    * **[!UICONTROL Ziel]**
 
-      Wählen Sie ein bestimmtes Ziel aus, wie z. B. einen Web-, Deep- oder Hybrid-Link, zu dem Benutzer nach dem Clickthrough weitergeleitet werden. For more information, see [Destinations](/help/using/acquisition-main/c-create-destinations.md).
+      Wählen Sie ein bestimmtes Ziel aus, wie z. B. einen Web-, Deep- oder Hybrid-Link, zu dem Benutzer nach dem Clickthrough weitergeleitet werden. Weitere Informationen finden Sie in [Ziele](/help/using/acquisition-main/c-create-destinations.md).
 
       >[!TIP]
       >
-      >When you use the * **[!UICONTROL Web Link]** or **[!UICONTROL Custom Link]** destination types, the destination type is not tracked. Nur **[!UICONTROL Deep-Links]werden verfolgt.**
+      >Wenn Sie den Zieltyp * **[!UICONTROL Web-Link]** oder **[!UICONTROL Benutzerspezifischer Link]** verwenden, wird der Zieltyp nicht verfolgt. Nur **[!UICONTROL Deep-Links]** werden verfolgt.
 
 ## Anforderungen für Rich-Push-Benachrichtigungen
 
@@ -59,8 +59,8 @@ Hier finden Sie die Anforderungen zum Senden von Rich-Push-Benachrichtigungen:
 
       >[!IMPORTANT]
       >
-      >Beachten Sie die folgenden Informationen:
-      >* An frühere Versionen gesendete Rich-Push-Nachrichten werden weiterhin gesendet, es wird jedoch nur der Text angezeigt.
+      >Berücksichtigen Sie folgende Informationen:
+      >* Rich-Push-Nachrichten können zwar an niedrigere Versionen gesendet werden, jedoch wird hier nur der Text angezeigt.
       >* Derzeit werden keine Watches unterstützt.
 
 
@@ -75,16 +75,16 @@ Hier finden Sie die Anforderungen zum Senden von Rich-Push-Benachrichtigungen:
    * Nur HTTPS
 
 * **Größe**
-   * Bilder müssen im Format 2:1 vorliegen, andernfalls werden sie abgeschnitten.
+   * Bilder müssen im 2:1-Format vorliegen, andernfalls werden die Seiten abgeschnitten.
 
 Weitere Informationen zur Konfiguration von Rich-Push-Benachrichtigungen finden Sie unter folgenden Themen:
 
-* [Push-Benachrichtigungen in Android erhalten](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [Rich-Push-Benachrichtigungen unter iOS erhalten](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
+* [Push-Benachrichtigungen in Android empfangen](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
+* [Rich-Push-Benachrichtigungen in iOS empfangen](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
 
-So konfigurieren Sie eine Push-Nachricht auf der Erlebnis-Seite:
+Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
 
-1. (**Optional**) Click the **[!UICONTROL Show Advanced Options]** link to configure additional options:
+1. (**Optional**) Klicken Sie auf den Link **[!UICONTROL Erweiterte Optionen anzeigen]**, um zusätzliche Optionen zu konfigurieren:
 
    * **[!UICONTROL Nutzlast: Daten]**
 
@@ -96,7 +96,7 @@ So konfigurieren Sie eine Push-Nachricht auf der Erlebnis-Seite:
 
    * **[!UICONTROL Apple-Optionen: Sound]**
 
-      Geben Sie den Namen der Sounddatei an, die in Ihrem App-Bundle wiedergegeben werden soll. Es ist kein standardmäßiger Sound festgelegt. Weitere Informationen finden Sie unter [Managing Your App's Notification Support](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html#//apple_ref/doc/uid/TP40008194-CH4-SW10) in der *iOS Developer Library*.
+      Geben Sie den Namen der Sounddatei an, die in Ihrem App-Bundle wiedergegeben werden soll. Es ist kein standardmäßiger Sound für Warnhinweise festgelegt. Weitere Informationen finden Sie unter [Managing Your App's Notification Support](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html#//apple_ref/doc/uid/TP40008194-CH4-SW10) in der *iOS Developer Library*.
 
    * **[!UICONTROL Apple-Optionen: Inhalt verfügbar]**
 
@@ -104,32 +104,32 @@ So konfigurieren Sie eine Push-Nachricht auf der Erlebnis-Seite:
 
 1. (Optional) Zeigen Sie eine Vorschau des Layouts Ihrer Nachricht an, indem Sie auf folgende Symbole klicken:
 
-   * **[!UICONTROL x Summary}**
+   * **[!UICONTROL x Zusammenfassung}**
 
-      Hides the preview pane. Klicken Sie auf ![Vorschau](assets/icon_preview.png) , um das Vorschaufenster erneut anzuzeigen.
+      Blendet das Vorschaufenster aus. Klicken Sie auf ![Vorschau](assets/icon_preview.png), um das Vorschaufenster erneut anzuzeigen.
 
    * **[!UICONTROL Ausrichtung ändern]**
 
-      To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). Bei Watches ändert sich die Vorschau von einem runden Zifferblatt in ein eckiges Zifferblatt.
+      Klicken Sie auf ![Ausrichtung](assets/icon_orientation.png), um die Ausrichtung der Vorschau von Hochformat in Querformat zu ändern. Bei Watches ändert sich die Vorschau von einem runden Zifferblatt in ein eckiges Zifferblatt.
 
-   * **[!UICONTROL Vorschau auf der Armbanduhr eines Benutzers]**
+   * **[!UICONTROL Vorschau auf der Watch eines Benutzers]**
 
-      Um eine Vorschau der Nachricht anzuzeigen, wie sie auf den Uhren eines Benutzers angezeigt wird, klicken Sie auf das Symbol ![zum Überwachen](assets/icon_watch.png).
+      Um eine Vorschau der Nachricht anzuzeigen, wie sie auf den Watches eines Benutzers angezeigt wird, klicken Sie auf ![Watch-Symbol](assets/icon_watch.png).
 
-   * **[!UICONTROL Vorschau auf dem Handy eines Benutzers]**
+   * **[!UICONTROL Vorschau auf dem Mobiltelefon eines Benutzers]**
 
-      Um eine Vorschau der Nachricht so anzuzeigen, wie sie auf dem Handy eines Benutzers angezeigt wird, klicken Sie auf das ![Telefonsymbol](assets/icon_phone.png).
+      Um eine Vorschau der Nachricht anzuzeigen, wie sie auf den Mobiltelefonen eines Benutzers angezeigt wird, klicken Sie auf ![Telefonsymbol](assets/icon_phone.png).
 
    * **[!UICONTROL Vorschau auf dem Tablet eines Benutzers]**
 
-      Um eine Vorschau der Nachricht auf dem Tablet eines Benutzers anzuzeigen, klicken Sie auf das Symbol ![für Tablets](assets/icon_tablet.png).
+      Um eine Vorschau der Nachricht auf dem Tablet eines Benutzers anzuzeigen, klicken Sie auf ![Tablet-Symbol](assets/icon_tablet.png).
    Unten in der Vorschauansicht finden Sie eine Beschreibung der Zielgruppe, die Sie im vorigen Schritt ausgewählt haben.
 
-1. (**Optional**) Click **[!UICONTROL Test]** to push your message to specified devices for testing purposes.
+1. (**Optional**) Klicken Sie auf **[!UICONTROL Test]**, um die Nachricht zu Testzwecken per Push an die angegebenen Geräte zu senden.
 1. Wählen Sie den Dienst aus und geben Sie die Push-Token für mindestens ein Gerät ein, an die Sie die Nachricht pushen möchten.
 
    Wenn Sie die Nachricht an mehr als ein Gerät senden möchten, geben Sie die Token in einer durch Kommas getrennten Liste an.
 
-1. Konfigurieren die Planungsoptionen für die Nachricht.
+1. Konfigurieren Sie die Planungsoptionen für die Nachricht.
 
-   Weitere Informationen finden Sie unter [Plan: Push-Nachricht](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+   Weitere Informationen finden Sie unter [Zeitplan: Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
