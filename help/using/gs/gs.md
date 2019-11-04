@@ -3,11 +3,11 @@ description: Diese Informationen sollen Sie bei der Verwendung von Adobe Mobile 
 keywords: mobile
 seo-description: Diese Informationen sollen Sie bei der Verwendung von Adobe Mobile Services unterstützen.
 seo-title: Erste Schritte
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Erste Schritte
 topic: Metriken
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -41,7 +41,7 @@ Mit Adobe Mobile Services können Sie die App-Interaktion in folgenden Bereichen
 
 Im Bereich *Akquise* nutzen Sie bezahlte oder eigene Medien bzw. Earned Media, um die Benutzerakquise für App-Downloads in den führenden Appstores zu optimieren. Mithilfe von Adobe Mobile Services können Sie die Akquise neuer App-Benutzer beschleunigen.
 
-Adobe Mobile Services bietet Workflows für die Benutzerakquise, einschließlich Akquise-Tracking und Deep-Linking, mit denen Sie die Effektivität Ihrer Kanäle bei der Benutzerakquise messen können. Mit Marketing-Links, die verfolgen, welche Benutzer von welchem Kanal stammen, können Sie erkennen, welche Akquisekanäle am effektivsten zu gewinnbringenden und engagierten Benutzern führen.
+Adobe Mobile Services bietet Workflows für die Benutzerakquise, einschließlich Akquise-Tracking und Deep-Linking, mit denen Sie die Effektivität Ihrer Kanäle bei der Benutzerakquise messen können. Mit Marketinglinks, die verfolgen, welche Benutzer aus welchen Kanälen stammen, können Sie ermitteln, welche Akquisekanäle bei der Gewinnung aktiver und gewinnbringender Benutzer am effektivsten sind.
 
 Darüber hinaus können Sie Benutzer mit Deep-Linking direkt zu dem App-Inhalt führen, den Sie ihnen präsentieren möchten, und sie zur Installation Ihrer App bewegen.
 
@@ -79,10 +79,10 @@ Im Bereich *Interagieren* können Sie mithilfe relevanter Push-Benachrichtigunge
 Der Bereich *Interagieren* bietet folgende wichtigen Funktionen:
 
 * Push-Benachrichtigungen werden durch Analytics-Segmente ausgelöst.
-* In-App-Nachrichten werden durch Echtzeitanalysen, -alarme und neue Angebote/Inhalte ausgelöst.
+* In-App-Nachrichten werden durch Echtzeitanalysen, Warnhinweise und neue Angebote/Inhalte ausgelöst.
 * Ermitteln Sie Aufrufe, Clickthrough-Raten und typisches Benutzerverhalten.
 
-### Adobe Mobile Messaging
+### Adobe Mobile-Messaging
 
 Sie können Push- und In-App-Nachrichten nutzen, um mit Ihren Benutzern zu kommunizieren. Push-Benachrichtigungen werden über das Betriebssystem auf dem Gerät gesendet. In-App-Nachrichten hingegen werden in der App gesendet, während der Benutzer gerade aktiv mit ihr interagiert. In-App-Nachrichten umfassen für gewöhnlich eine Vielzahl zusätzlicher Formate, wie z. B. Popups und Zwischenräume.
 
@@ -99,7 +99,7 @@ Weitere Informationen zum Erstellen von Push-Benachrichtigungen finden Sie unter
 **In-App-Nachrichten** bieten folgende Funktionen:
 
 * Bewegen Sie Benutzer zu einer bestimmten Aktion, während sie sich in einer App-Sitzung befinden.
-* Nutzen Sie zusätzliche Formate (Warnmeldung, Vollbild), da die Nachrichten von der App statt von einem Push-Netzwerk bereitgestellt werden.
+* Nutzen Sie zusätzliche Formate (Warnhinweis, Vollbild), da die Nachrichten von der App statt von einem Push-Netzwerk bereitgestellt werden.
 * In-App-Nachrichten werden durch Echtzeitanalysen ausgelöst.
 * Ermöglicht die übergreifende Bewerbung von Apps und Produkten.
 * Bewegt Benutzer zum Abgeben einer Appstore-Bewertung.
@@ -111,7 +111,7 @@ Weitere Informationen zum Erstellen von In-App-Nachrichten finden Sie unter [In-
 
 Im Bereich *Optimieren* können Sie Konversionen (Abonnements, Käufe, Werbeumsatz usw.) optimieren und die Kundenbindung verbessern. Durch Optimierung des Benutzererlebnisses in Ihrer App können Sie Ihre Inhalte besser anpassen und so ROI und Konversionsrate maximieren.
 
-Weitere Informationen zu Tests und Adobe Target finden Sie unter [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html).
+Weitere Informationen zu Tests und Adobe Target finden Sie unter [Adobe Target](https://docs.adobe.com/content/help/de-DE/target/using/target-home.html).
 
 ### Geotargeting
 
@@ -121,13 +121,13 @@ Adobe Target für Apps nutzt jetzt umfassend die in Adobe Analytics verfügbare 
 
 Weitere Informationen zum Standort finden Sie unter folgenden Themen:
 
-* [Speicherort im Mobile Services-Benutzerhandbuch](/help/using/location/c-location-overview.md)
+* [Standort im Mobile Services-Benutzerhandbuch](/help/using/location/c-location-overview.md)
 * [Standort im Android-SDK-Handbuch](/help/android/location/location.md)
 * [Standort im iOS-SDK-Handbuch](/help/ios/location/location.md)
 
 ## Adobe Mobile SDK {#mobile-services-sdk}
 
-Adobe bietet eine umfassende Lösung für mobiles Marketing, mit der Sie die Benutzerinteraktion in all diesen Bereichen optimieren können. Mit einem einzelnen SDK können Sie auf die Funktionen von Adobe Analytics, Adobe Campaign und Adobe Audience Manager zugreifen. So reduzieren sich die technischen Kosten für die Verwaltung mehrerer SDKs.
+Adobe bietet eine umfassende Lösung für mobiles Marketing, mit der Sie die Benutzerinteraktion in all diesen Bereichen optimieren können. Mit einem einzelnen SDK können Sie auf die Funktionen von Adobe Analytics, Adobe Campaign und Adobe Audience Manager zugreifen. So reduzieren sich die technischen Kosten für die Verwaltung mehrerer SDK.
 
 Das Adobe Mobile SDK bietet folgende Funktionen:
 
@@ -158,4 +158,4 @@ Das Adobe Mobile SDK bietet folgende Funktionen:
    * Minimierung der Geräte-Verarbeitungslast beim Senden von Daten an Adobe-Server und Drittanbietersysteme.
    * Reduzierung der App-Paketgröße in den Appstores durch schlankes Design.
 
-Weitere Informationen zu den Adobe Mobile-SDKs finden Sie unter [Android-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html) und [iOS-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html).
+Weitere Informationen zu den Adobe Mobile-SDK finden Sie unter [Android-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/de-DE/mobile-services/android/overview.html) und [iOS-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/rel-notes.html).
