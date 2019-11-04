@@ -2,11 +2,11 @@
 description: Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im Mobile-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignisse direkt beim Server-Aufruf festzulegen.
 seo-description: Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im Mobile-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignisse direkt beim Server-Aufruf festzulegen.
 seo-title: Ereignis-Serialisierung
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Ereignis-Serialisierung
 topic: Entwickler und Implementierung
 uuid: 19a27df4-0998-403d-800c-26ff61149208
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
