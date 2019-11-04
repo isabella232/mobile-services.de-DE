@@ -3,27 +3,27 @@ description: Mit dem Trichterbericht können Sie feststellen, wo Kunden bei der 
 keywords: mobile
 seo-description: Mit dem Trichterbericht können Sie feststellen, wo Kunden bei der Interaktion mit Ihrer App eine Marketing-Kampagne verlassen haben oder von einem definierten Konversionspfad abgewichen sind. Sie können den Trichterbericht auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.
 seo-title: Trichterbericht
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Trichterbericht
 topic: Berichte, Metriken
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Funnel report{#funnel}
+# Trichterbericht{#funnel}
 
-Mit dem **[!UICONTROL Trichterbericht]können Sie feststellen, wo Kunden bei der Interaktion mit Ihrer App eine Marketing-Kampagne verlassen haben oder von einem definierten Konversionspfad abgewichen sind.** Sie können den **[!UICONTROL Trichterbericht]auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.**
+Mit dem **[!UICONTROL Trichterbericht]** können Sie feststellen, wo Kunden bei der Interaktion mit Ihrer App eine Marketing-Kampagne verlassen haben oder von einem definierten Konversionspfad abgewichen sind. Sie können den **[!UICONTROL Trichterbericht]** auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.
 
 Indem Sie Einblicke in Kundenentscheidungen bei jedem Schritt erhalten, können Sie nachvollziehen, wo die Kunden zurückgehalten werden, welchem Pfad sie für gewöhnlich folgen und wann sie die App verlassen.
 
-Wenn Sie den **[!UICONTROL Trichterbericht]öffnen, müssen Sie einen benutzerdefinierten Trichter erstellen.** For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+Wenn Sie den **[!UICONTROL Trichterbericht]** öffnen, müssen Sie einen benutzerdefinierten Trichter erstellen. Weitere Informationen finden Sie in [Berichte anpassen](/help/using/usage/reports-customize/reports-customize.md).
 
 >[!TIP]
 >
->Um Ihren benutzerdefinierten Trichter zu speichern, speichern Sie die URL, nachdem Sie die Einstellungen konfiguriert haben, und führen Sie den Bericht aus. Sie können die URL weitergeben oder in einem Dokument speichern.
+>Wenn Sie Ihren benutzerdefinierten Trichter speichern möchten, speichern Sie die URL, nachdem Sie seine Einstellungen konfiguriert und den Bericht ausgeführt haben. Sie können die URL weitergeben oder in einem Dokument speichern.
 
 Im Folgenden finden Sie ein Beispiel dieses Berichts:
 
@@ -47,13 +47,13 @@ Für diesen Bericht können folgende Optionen konfiguriert werden:
 
 * **[!UICONTROL Zeitraum]**
 
-   Klicken Sie auf das **[!UICONTROL Kalendersymbol]und wählen Sie einen benutzerdefinierten oder einen vorgegebenen Zeitraum aus der Dropdownliste aus.**
+   Klicken Sie auf das **[!UICONTROL Kalendersymbol]** und wählen Sie einen benutzerdefinierten oder einen vorgegebenen Zeitraum aus der Dropdownliste aus.
 * **[!UICONTROL Anpassen]**
 
-   Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+   Passen Sie Ihre Berichte an, indem Sie beispielsweise die Option **[!UICONTROL Anzeigen nach]** ändern oder Metriken und Filter bzw. zusätzliche Reihen (Metriken) hinzufügen. Weitere Informationen finden Sie in [Berichte anpassen](/help/using/usage/reports-customize/reports-customize.md).
 * **[!UICONTROL Filter]**
 
-   Klicken Sie auf **[!UICONTROL Filter], um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen.** Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter Fixierbaren Filter [hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Klicken Sie auf **[!UICONTROL Filter]**, um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie unter [Fixierbaren Filter hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
 * **[!UICONTROL Download]**
 
-   Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
+   Klicken Sie auf **[!UICONTROL PDF]** oder **[!UICONTROL CSV]**, um Dokumente herunterzuladen bzw. zu öffnen und diese mit Benutzern zu teilen, die keinen Zugriff auf Mobile Services haben, oder in Präsentationen zu verwenden.
