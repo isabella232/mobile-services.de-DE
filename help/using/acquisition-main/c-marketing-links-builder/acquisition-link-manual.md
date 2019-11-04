@@ -1,27 +1,27 @@
 ---
-description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
+description: Sie können Marketinglinks erstellen, um auf die Schnelle neue App-Benutzer zu gewinnen, indem Sie die URL-Parameter manuell konfigurieren.
 keywords: mobile
-seo-description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
+seo-description: Sie können Marketinglinks erstellen, um auf die Schnelle neue App-Benutzer zu gewinnen, indem Sie die URL-Parameter manuell konfigurieren.
 seo-title: Akquise-Links manuell erstellen
-solution: Marketing Cloud,Analytics
-title: Manually create Acquisition links
+solution: Experience Cloud,Analytics
+title: Akquise-Links manuell erstellen
 topic: Metriken
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
 
 
-# Manually create Acquisition links {#create-acquisition-link-manually}
+# Akquise-Links manuell erstellen {#create-acquisition-link-manually}
 
-Sie können Marketing-Links erstellen, um sofort neue Benutzer von mobilen Apps zu akquirieren, indem Sie die URL-Parameter manuell konfigurieren.
+Sie können Marketinglinks erstellen, um auf die Schnelle neue App-Benutzer zu gewinnen, indem Sie die URL-Parameter manuell konfigurieren.
 
 >[!IMPORTANT]
 >
->This feature requires SDK version 4.6 or later. For more information, see Acquisition prerequisites.[](/help/using/acquisition-main/c-acquisition-prerequisites.md)
+>Diese Funktion setzt SDK-Version 4.6 oder höher voraus. Weitere Informationen finden Sie unter [Voraussetzungen für die Akquise](/help/using/acquisition-main/c-acquisition-prerequisites.md).
 
-Das folgende Diagramm zeigt die Komponenten eines manuell erstellten Verfolgungslinks und die verschiedenen URL-Parameter, die Sie beim manuellen Erstellen von Akquise-Links ordnungsgemäß konfigurieren müssen.
+Die folgende Abbildung zeigt die Komponenten eines manuell erstellten Tracking-Links sowie die verschiedenen URL-Parameter, die Sie beim manuellen Erstellen von Akquise-Links korrekt konfigurieren müssen.
 
 ![](assets/acquisition_url.png)
 
@@ -33,22 +33,22 @@ Wenn Sie Links manuell erstellen, verwenden Sie das folgende URL-Format:
 
 >[!TIP]
 >
->The version of Android SDK you are using has no impact on this process.
+>Die Version Ihres Android-SDK hat auf diesen Prozess keinen Einfluss.
 
 Stellen Sie bei iOS sicher, dass Sie das richtige Protokoll verwenden:
 
-* Use **HTTP** if you are using the iOS SDKs before version 4.7.0, or if you are using iOS SDK 4.7.0 or later, and if **[!UICONTROL Use HTTPS]** is **not** selected on the Manage App Settings page.
-* Use **HTTPS** if you are using iOS SDK 4.7.0 or later and **[!UICONTROL Use HTTPS]** **is** selected on the Manage App Settings page.
+* Verwenden Sie **HTTP**, wenn Sie iOS-SDK vor Version 4.7.0 verwenden oder wenn Sie das iOS SDK 4.7.0 oder höher verwenden und auf der Seite „App-Einstellungen verwalten“ die Option **[!UICONTROL HTTPS verwenden]** **nicht** aktiviert ist.
+* Verwenden Sie **HTTPS**, wenn Sie das iOS-SDK 4.7.0 oder höher verwenden und **[!UICONTROL HTTPS verwenden]** auf der Seite „App-Einstellungen verwalten“ aktiviert **ist**.
 
 Wo folgende Bedingungen erfüllt wurden:
 
-* `{mobile-services-app-hash}` stimmt mit der Anwendungskennung in der `acquisition:appid ` Konfigurationsdatei überein.
+* `{mobile-services-app-hash}` entspricht der App-ID in der `acquisition:appid `-Konfigurationsdatei.
 
-   You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
+   Sie finden `{mobile-services-app-hash}` auf der Seite „App-Einstellungen verwalten“ unter den Akquise-SDK-Optionen im Feld „Tracking-ID“.
 
    ![](assets/tracking-id.png)
 
-* `{parameters}` is a list of standard specifically named URL query parameters.
+* `{parameters}` ist eine Liste von speziell benannten Standard-URL-Abfrageparametern.
 
 Im Folgenden finden Sie eine Liste der Parameter:
 
@@ -56,7 +56,7 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    App-Kennung für Google Play Store.
 
-   * Sample value: `com.adobe.beardcons`
+   * Beispielwert: `com.adobe.beardcons`
 
 * **`a_g_lo`**
 
@@ -68,7 +68,7 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    App-Kennung für iTunes.
 
-   * Sample value: `835196493`
+   * Beispielwert: `835196493`
 
 * **`a_i_lo`**
 
@@ -86,11 +86,11 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    Benutzerdefinierte ID-Überschreibung (allgemein IDFA für iOS und ADID für Android).
 
-   * Sample value: `Any String < 255 characters (UTF-8 encoded)`
+   * Beispielwert: `Any String < 255 characters (UTF-8 encoded)`
 
 * **`ctx*`**
 
-   Keys prefixed with `ctx` will be in the context data of the resulting launch hit.
+   Schlüssel mit vorangestelltem `ctx` landen in Kontextdaten des resultierenden Start-Treffers.
 
    * Beispielwert: `ctxmy.custom.key=myValue`
 
@@ -120,13 +120,13 @@ Im Folgenden finden Sie eine Liste der Parameter:
 
    Mittel
 
-   * Beispielwert: Email
+   * Beispielwert: E-Mail
 
 * **`ctxa.referrer.campaign.content`**
 
    Inhalt
 
-   * Beispielwert: Bild Nr. 325689
+   * Beispielwert: Bild-Nr. 325689
 
 * **`ctxa.referrer.campaign.term`**
 
@@ -138,9 +138,9 @@ Im Folgenden finden Sie eine Liste der Parameter:
 Beachten Sie beim manuellen Erstellen von Akquise-Links die folgenden Informationen:
 
 * Alle Parameter, die mit den in der oben stehenden Tabelle aufgeführten Parametern nicht übereinstimmen, werden als Teil der Appstore-Umleitung übergeben.
-* Alle Parameter sind technisch optional, obwohl der Link nicht funktionsfähig ist, wenn mindestens eine Store-ID angegeben ist.
+* Alle Parameter sind technisch optional, wenn jedoch mindestens eine Store-ID angegeben ist, funktioniert der Link nicht.
 
-   An example of a store ID is `a_g_id`/ `a_i_id`.
+   Store-IDs lauten beispielsweise `a_g_id`/ `a_i_id`.
 
 * Wenn der Ziel-Store nicht automatisch bestimmt werden kann und kein Standardwert bereitgestellt wird, wird der Fehler 404 zurückgegeben.
 
