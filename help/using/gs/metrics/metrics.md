@@ -3,17 +3,17 @@ description: Sie können mit Adobe Mobile verschiedene Metriken messen und Metri
 keywords: mobile
 seo-description: Sie können mit Adobe Mobile verschiedene Metriken messen und Metriken erfassen, die Sie für Ihre App verfolgen möchten.
 seo-title: Mobile Metriken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobile Metriken
 topic: Metriken
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Mobile metrics{#mobile-metrics}
+# Mobile Metriken{#mobile-metrics}
 
 Sie können mit Adobe Mobile verschiedene Metriken messen und Metriken erfassen, die Sie für Ihre App verfolgen möchten.
 
@@ -31,11 +31,11 @@ Folgende Metriktypen werden gemessen:
 
 * **Umsatz**
 
-   Sie können den von App Stores erfassten Umsatz und den direkt mit In-App-Kaufereignissen gemessenen Umsatz anzeigen. Other cart metrics are available by [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+   Sie können die in Appstores erfassten Umsätze sowie die Umsätze, die über Kaufereignisse in Apps direkt gemessen werden, anzeigen. Andere Warenkorbmetriken sind über [Berichte anpassen](/help/using/usage/reports-customize/reports-customize.md) verfügbar.
 
 * **App-Ereignisse**
 
-   App-Ereignisse bilden die Leistungsindikatoren (Key Performance Indicators, KPIs), die Sie definieren, um den Erfolg Ihrer App zu messen. Je nach dem Typ Ihrer App können KPIs die verschiedensten Aspekte sein, zum Beispiel  gelesene Artikel, abgeschlossene Level oder der Lebensdauerumsatz.
+   App-Ereignisse bilden die Leistungsindikatoren (Key Performance Indicators, KPIs), die Sie definieren, um den Erfolg Ihrer App zu messen. Je nach dem Typ Ihrer App können KPIs die verschiedensten Aspekte sein, zum Beispiel gelesene Artikel, abgeschlossene Level oder der Lebensdauerumsatz.
 
 * **App-Statuszustände**
 
@@ -43,7 +43,7 @@ Folgende Metriktypen werden gemessen:
 
 * **Standort und Points-of-Interest**
 
-   Bei aktiviertem GeoReporting in Ihrer Analytics-Report Suite stehen Ihnen verschiedene standortbasierte Berichte zur Verfügung. Bei Wi-Fi ist die GeoReporting-Genauigkeit ähnlich wie bei einem Desktop-Webbrowser. Bei einer mobilen Datenverbindung hängt die Genauigkeit vom Anbieter sowie von der Art und Weise ab, mit der Anfragen weitergeleitet werden.
+   Bei aktiviertem GeoReporting in Ihrer Analytics-Report Suite stehen Ihnen verschiedene standortbasierte Berichte zur Verfügung. Bei WLAN ähnelt die Genauigkeit von GeoReporting der eines Desktop-Webbrowsers. Bei einer mobilen Datenverbindung hängt die Genauigkeit vom Anbieter sowie von der Art und Weise ab, mit der Anfragen weitergeleitet werden.
 
    Zur Steigerung der Genauigkeit können Sie auch Standort- und Zielpunkt-Tracking zu Ihrer App hinzufügen. Mit diesen Optionen erhalten Sie exakte Standortangaben mit Breiten- und Längengrad und können mittels Geofencing feststellen, ob sich der Benutzer innerhalb eines bestimmten Radius eines vordefinierten Zielpunkts befindet.
 
