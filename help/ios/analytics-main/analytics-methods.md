@@ -1,32 +1,32 @@
 ---
 description: Hier finden Sie eine Liste der Adobe Analytics-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-description: Hier finden Sie eine Liste der Adobe Analytics-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
-seo-title: Analytics methods
-solution: Marketing Cloud,Analytics
-title: Analysemethoden
+seo-title: Analytics-Methoden
+solution: Experience Cloud,Analytics
+title: Analytics-Methoden
 topic: Entwickler und Implementierung
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Analytics-Methoden {#analytics-methods}
 
 Hier finden Sie eine Liste der Adobe Analytics-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter Analytics, Target, Audience Manager und den Identitätsdienst für Adobe Experience Platform. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Identity-Dienst für Adobe Experience Platform. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Experience Cloud ID-Methoden erhalten beispielsweise das Präfix `track`.
 
 Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Suite verwendet.
 
 * **trackState:&#x200B;data:**
 
-   States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten. If `state` is empty, it displays as *app name app version (build)* in reports. If you see this value in reports, ensure you are setting `state` in each `trackState` call.
+   Die Statusangaben entsprechen den verfügbaren Ansichten in der App, z. B. `home dashboard`, `app settings` und `cart`. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten. Wenn `state` leer ist, wird in Berichten *App-Name App-Version (Build)* angezeigt. Wenn dieser Wert in einem Bericht auftritt, müssen Sie den Status `state` in jedem `trackState`-Aufruf festlegen.
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
+   >Dies ist der einzige Verfolgungsaufruf, bei dem die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -44,11 +44,11 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackAction:&#x200B;data:**
 
-   Verfolgt eine Aktion in der App. Actions that you want to measure, such as , , , and other metrics, occur in your app.`logons``banner taps``feed subscriptions`
+   Verfolgt eine Aktion in der App. Aktionen, die Sie messen möchten, wie z. B. `logons`, `banner taps`, `feed subscriptions` und andere Metriken, die in Ihrer App auftreten.
 
    >[!TIP]
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >Falls Code aktiv ist, während die App im Hintergrund ausgeführt wird (z. B. Datenabruf im Hintergrund), verwenden Sie stattdessen `trackActionFromBackground`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -86,7 +86,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
    >[!TIP]
    >
-   >Diese Methode sollte nur in Code aufgerufen werden, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
+   >Diese Methode sollte nur in Code aufgerufen werden, der aktiv ist, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -196,7 +196,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackTimedActionUpdate:&#x200B;data:**
 
-   Übergibt `data`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. The `data` that is passed in is appended to the existing data for the action, and if the same key is already defined for `action`, overwrites the data.
+   Übergibt `data`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. Die übergebenen Daten (`data`) werden an die vorhandenen Daten für die Aktion angehängt und wenn der Schlüssel bereits für `action` definiert ist, werden die Daten überschrieben.
 
    >[!TIP]
    >
@@ -222,7 +222,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `YES` to send a hit. Passing in `nil` for `block` sends the final hit.
+   >Wenn Sie `block` angeben, müssen Sie `YES` zurückgeben, um einen Treffer zu senden. Wenn Sie `nil` für `block` übergeben, wird der endgültige Treffer gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -263,7 +263,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackingSendQueuedHits**
 
-   Erfordert SDK 4.1. Unabhängig davon, wie viele Treffer derzeit in der Warteschlange stehen, zwingt die Bibliothek, alle Treffer in der Offline-Warteschlange zu senden.
+   Erfordert SDK 4.1. Unabhängig davon, wie viele Treffer sich derzeit in der Warteschlange befinden, wird erzwungen, dass die Bibliothek alle Treffer in der Offline-Warteschlange sendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -299,7 +299,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
    >[!CAUTION]
    >
-   >Gehen Sie beim manuellen Leeren der Warteschlange vorsichtig vor. Dieser Vorgang kann nicht rückgängig gemacht werden.
+   >Gehen Sie beim manuellen Löschen der Warteschlange vorsichtig vor. Dieser Vorgang kann nicht rückgängig gemacht werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
