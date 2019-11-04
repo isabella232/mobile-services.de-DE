@@ -4,17 +4,17 @@ seo-description: Sie können Grafikdateien an Ihre Android-Benachrichtigungen an
 seo-title: Multimediale Push-Benachrichtigungen empfangen
 title: Multimediale Push-Benachrichtigungen empfangen
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
 
 ---
 
 
-# Receive rich push notifications {#receive-rich-push-notifications}
+# Rich-Push-Benachrichtigungen empfangen {#receive-rich-push-notifications}
 
 Sie können Grafikdateien an Ihre Android-Benachrichtigungen anhängen. Die visuelle Komponente kann das Benutzerinteresse an Push-Benachrichtigungen deutlich erhöhen.
 
-## Handle the incoming rich push message (FCM) {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
+## Eingehende Rich-Push-Nachricht verarbeiten (FCM) {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
 Wenn die App im Vordergrund ausgeführt wird, wird die Push-Nachricht von der App verarbeitet, die die Klasse `FirebaseMessagingService` erweitert, und auf folgende Weise in der Manifestdatei deklariert:
 
@@ -30,9 +30,9 @@ Wenn die App im Vordergrund ausgeführt wird, wird die Push-Nachricht von der Ap
 
 >[!IMPORTANT]
 >
->The class that contains the  implementation handles the data that is received.`onMessageReceived()`
+>Die Klasse, die die `onMessageReceived()`-Implementierung enthält, verarbeitet die empfangenen Daten.
 
-If the push message contains a Media URL, the URL will be available in the `RemoteMessage` parameter that is passed to the `onMessageReceived()` function. Verwenden Sie den Schlüssel `attachment-url`, wie im folgenden Codebeispiel veranschaulicht:
+Wenn die Push-Nachricht eine Medien-URL enthält, steht die URL im Parameter `RemoteMessage` zur Verfügung, der an die Funktion `onMessageReceived()` übergeben wird. Verwenden Sie den Schlüssel `attachment-url`, wie im folgenden Codebeispiel veranschaulicht:
 
 ```java
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
@@ -90,9 +90,9 @@ private void sendNotification(RemoteMessage message) {
 
 >[!IMPORTANT]
 >
->When you set `NotificationCompat.BigPictureStyle`, large images might not be displayed. Um sicherzustellen, dass große Bilder immer angezeigt werden, legen Sie den nativen `Notification.BigPictureStyle` fest.
+>Wenn Sie `NotificationCompat.BigPictureStyle` festlegen, werden möglicherweise keine großen Bilder angezeigt. Um sicherzustellen, dass große Bilder immer angezeigt werden, legen Sie den nativen `Notification.BigPictureStyle` fest.
 
-## Sample rich push notification {#section_6819316BEDDE45108413B541CA2BB2DC}
+## Beispiel einer Rich-Push-Benachrichtigung {#section_6819316BEDDE45108413B541CA2BB2DC}
 
 Im Folgenden finden Sie ein Beispiel einer multimedialen Push-Benachrichtigung mit einem Bild:
 
