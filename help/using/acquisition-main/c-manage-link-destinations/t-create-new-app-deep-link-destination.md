@@ -3,11 +3,11 @@ description: Sie können ein neues Link-Ziel erstellen, das Benutzer zu einem We
 keywords: mobile
 seo-description: Sie können ein neues Link-Ziel erstellen, das Benutzer zu einem Web-Link oder zu einem Deep-Link in Ihrer App weiterleitet.
 seo-title: Neues Link-Ziel erstellen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Neues Link-Ziel erstellen
 topic: Metriken
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 Sie können ein neues Link-Ziel erstellen, das Benutzer zu einem Web-Link oder zu einem Deep-Link in Ihrer App weiterleitet.
 
-1. In the Mobile Services UI, click **[!UICONTROL Manage Apps]**.
+1. Klicken Sie in der Mobile Services-Benutzeroberfläche auf **[!UICONTROL Apps verwalten]**.
 1. Klicken Sie auf den Namen der App, damit die zugehörige Seite App-Informationen angezeigt wird.
 1. Klicken Sie auf **[!UICONTROL Link-Ziele verwalten]**.
 1. Klicken Sie auf **[!UICONTROL Neu erstellen]**.
@@ -28,25 +28,25 @@ Sie können ein neues Link-Ziel erstellen, das Benutzer zu einem Web-Link oder z
 
    * **[!UICONTROL Link-Typ]**
 
-      Im Folgenden finden Sie eine Liste der verfügbaren Linktypen:
+      Im Folgenden finden Sie eine Liste der verfügbaren Link-Typen:
 
       * **[!UICONTROL App-Deep-Link]**
 
-         Provide a URI schema deep link (for example, `yourapp://section`). App-Deep-Link-Ziele sind URI-Schema-Deep-Links, die Benutzer zu einem Deep-Link in Ihrer App weiterleiten. Sie können Benutzer beispielsweise direkt zu einer bestimmten Produktseite in der App eines Online-Einzelhändlers weiterleiten.
+         Geben Sie einen URI-Schema-Deep-Link (z. B. `yourapp://section`) ein. App-Deep-Link-Ziele sind URI-Schema-Deep-Links, die Benutzer zu einem Deep-Link in Ihrer App weiterleiten. Sie können Benutzer beispielsweise direkt zu einer bestimmten Produktseite in der App eines Online-Einzelhändlers weiterleiten.
 
       * **[!UICONTROL Web-Link]**
 
-         Type a web HTTP or HTTPS URL, for example,`https://adobe.com`. Web-Link-Ziele leiten Benutzer zu einer URL weiter. Sie können Benutzer beispielsweise direkt zur Produktseite auf der Website eines Online-Einzelhändlers weiterleiten.
+         Geben Sie eine Web-HTTP- oder HTTPS-URL ein (z. B. `https://adobe.com`). Web-Link-Ziele leiten Benutzer zu einer URL weiter. Sie können Benutzer beispielsweise direkt zur Produktseite auf der Website eines Online-Einzelhändlers weiterleiten.
 
       * **[!UICONTROL Hybrid-Link]**
 
-         Type an iOS Universal Link or an Android App Link (for example, `https://yourwebsite.com`). Hybrid-Links unterstützen universelle iOS-Links oder Android-App-Links.
-   * **[!UICONTROL App
-Select the app that is associated with the link you are going to provide.]**
+         Geben Sie einen universellen Link (iOS) oder einen App-Link (Android) ein (z. B. `https://yourwebsite.com`). Hybrid-Links unterstützen universelle iOS-Links oder Android-App-Links.
+   * **[!UICONTROL App]**
+Wählen Sie eine App aus, die mit dem Link, den Sie bereitstellen möchten, verknüpft ist.
 
       >[!TIP]
       >
-      >This information is required only if you selected an App Deep Link or a Hybrid Link in **[!UICONTROL Link Type]**. Wenn die App nicht in der Auswahlliste angezeigt wird, klicken Sie auf **[!UICONTROL Neue App hinzufügen], um auf eine neue App aus einem Appstore zu verweisen.**
+      >Diese Informationen sind nur erforderlich, wenn Sie unter **[!UICONTROL Link-Typ]** einen App-Deep-Link oder einen Hybrid-Link ausgewählt haben. Wenn die App nicht in der Auswahlliste angezeigt wird, klicken Sie auf **[!UICONTROL Neue App hinzufügen]**, um auf eine neue App aus einem Appstore zu verweisen.
 
    * **[!UICONTROL Link-Typ]**
 
