@@ -2,31 +2,31 @@
 description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
 seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
 seo-title: ADBMobile-JSON-Konfiguration
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobile-JSON-Konfiguration
 topic: Entwickler und Implementierung
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config file {#adbmobile-json-config}
+# ADBMobile JSON-Konfigurationsdatei {#adbmobile-json-config}
 
 Anhand dieser Informationen können Sie die Variablen in der Konfigurationsdatei ADBMobile.json verstehen.
 
-## `ADBMobileConfig.json` config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## Referenz zur Konfigurationsdatei `ADBMobileConfig.json` {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinweg verwenden:
 
 >[!TIP]
 >
->In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
+>Unter **Android** muss sich `ADBMobileConfig.json` im Ordner `assets` befinden.
 
-Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erforderliche SDK-Mindestversion für jede Variable:
+Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-Version, die Sie für jede Variable benötigen:
 
-* **Akquise**
+* **acquisition**
    * Mindestens SDK-Version 4.1
    * Aktiviert die Mobile App-Akquise.
       * `server`: der Akquise-Server, der beim ersten Start auf einen Akquise-Referrer überprüft wird.
@@ -34,7 +34,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
    Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. Weitere Informationen finden Sie unter *referrerTimeout* in dieser Variablenliste.
 
 * **analyticsForwardingEnabled**
-   * SDK-Version mindestens 4.8.0.
+   * Mindestens SDK-Version 4.8.0.
    * Der Standardwert lautet `false`.
 
       Die Eigenschaft im Objekt `audienceManager`. Wenn Audience Manager konfiguriert ist und `analyticsForwardingEnabled` auf `true` festgelegt ist, wird sämtlicher Analytics-Datenverkehr auch an Audience Manager weitergeleitet.
@@ -53,7 +53,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
 
          >[!IMPORTANT]
          >
-         >Rückdatierte Treffer-Informationen werden in einem Sitzungsinfo-Server-Aufruf gesendet und es können zusätzliche Server-Aufrufe auftreten.
+         >Zurückdatierte Sitzungstrefferinformationen werden in einem Sitzungsinformations-Server-Aufruf gesendet und zusätzliche Server-Aufrufe werden ggf. angewendet.
 
 * **batchLimit**
    * Mindestens SDK-Version 4.1
@@ -64,7 +64,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
       Beachten Sie die folgenden Informationen:
 
       * Der Standardwert lautet `0`. Das bedeutet, dass die Stapelverarbeitung nicht aktiviert ist.
-      * Requires .`offlineEnabled = true`
+      * Erfordert `offlineEnabled = true`.
 
 * **charset**
    * Mindestens SDK-Version 4.0
@@ -78,19 +78,19 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
 
       >[!IMPORTANT]
       >
-      >Diese Variable wird von Target benötigt.
+      >Diese Variable ist für Target erforderlich.
 
 * **coopUnsafe**
    * Mindestens SDK-Version 4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
+   * Die boolesche Eigenschaft des Objekts `marketingCloud`, das, wenn auf `true` festgelegt, dazu führt, dass das Gerät aus der Experience Cloud-Gerätekooperation ausgeschlossen wird.
    * Der Standardwert ist `false`.
    * Diese Einstellung wird **nur** für Kunden verwendet, die an der Gerätekooperation teilnehmen.
    Bei Mitgliedern mit Gerätekooperation, für die dieser Wert `true` sein muss, müssen Sie sich an das Kooperationsteam wenden, um eine Blacklist-Markierung auf Ihrem Gerätekooperationskonto zu verlangen. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
    Beachten Sie die folgenden Informationen:
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
-   * If you enable Analytics server-side forwarding to Audience Manager, you will also see `coop_unsafe=1` Analytics hits.
+   * Wenn `coopUnsafe` auf `true` festgelegt ist, wird `coop_unsafe=1` immer an Audience Manager und Besucher-ID-Treffer angehängt.
+   * Wenn Sie die serverseitige Weiterleitung von Analytics an Audience Manager aktivieren, sehen Sie auch `coop_unsafe=1` Analytics-Treffer.
 
 
 * **environmentId**
@@ -154,7 +154,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
       …/yourfile.json”`,
       ```
 
-      Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. Informationen zum Herunterladen einer aktualisierten Konfigurationsdatei finden Sie unter [Vor dem Start](/help/android/getting-started/requirements.md).
+      Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. Informationen zum Herunterladen einer aktualisierten Konfigurationsdatei finden Sie unter [Vorbereitung](/help/android/getting-started/requirements.md).
 
 * **postback**
    * Mindestens SDK-Version 4.6
@@ -168,7 +168,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
         "timeout": 0 // optional - number of seconds to wait before timing out.  Default is 2.}
       ```
 
-      The `payload` object in the code is a sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/android/analytics-main/postbacks/postbacks.md).
+      Das Objekt `payload` im Code stellt eine Beispiel-Payload für eine Nachrichtendefinition dar, die in die Datei `ADBMobileConfig.json` aufgenommen wird. Weitere Informationen dazu finden Sie unter [Postbacks](/help/android/analytics-main/postbacks/postbacks.md).
 
 * **privacyDefault**
    * Mindestens SDK-Version 4.0
@@ -176,7 +176,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
       * Für `optedin` werden die Treffer sofort gesendet.
       * Bei `optedout` werden Treffer verworfen.
       * Wenn der Wert `optunknown` lautet und für ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „optedin“ (Treffer werden gesendet) oder „optedout“ (Treffer werden verworfen) ändert.
-      If your report suite is not timestamp-enabled, hits are discarded until the privacy status changes to `optedin`.  Hierdurch wird nur der anfängliche Wert festgelegt. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird.
+      Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu `optedin`geändert wird.  Hierdurch wird nur der anfängliche Wert festgelegt. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird.
 
 
 * **referrerTimeout**
@@ -185,7 +185,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
 
       >[!IMPORTANT]
       >
-      >Diese Variable ist für die Akquise erforderlich. Wenn die Variable auf `0` festgelegt oder nicht enthalten ist, wartet das SDK nicht auf Akquise-Daten und Akquise-Metriken werden nicht verfolgt.
+      >Diese Variable ist für Akquise erforderlich. Wenn die Variable auf `0` festgelegt oder nicht enthalten ist, wartet das SDK nicht auf Akquise-Daten und Akquise-Metriken werden nicht verfolgt.
 
 * **remotes**
    * Mindestens SDK-Version 4.2
@@ -213,7 +213,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
 
 * **server**
    * Mindestens SDK-Version 4.0
-   * Der Analytics- oder Zielgruppen-Management-Server, basierend auf dem übergeordneten Knoten. This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. Das Präfix basiert auf der Variablen `ssl` und wird automatisch von der Bibliothek verarbeitet. Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
+   * Der Analytics- oder Zielgruppen-Management-Server, basierend auf dem übergeordneten Knoten. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `https://` oder `https://`. Das Präfix basiert auf der Variablen `ssl` und wird automatisch von der Bibliothek verarbeitet. Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
 
 * **ssl**
    * Mindestens SDK-Version 4.0
@@ -236,7 +236,7 @@ Im Folgenden finden Sie eine Liste der Variablen in der JSON-Datei und die erfor
    * Bestimmt, wie lange Target auf eine Antwort wartet.
 
 
-## Sample `ADBMobileConfig.json` file {#section_4655EF79744649E5A5AE19E3224C472C}
+## Beispieldatei `ADBMobileConfig.json` {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 
@@ -355,7 +355,7 @@ Der Nachrichtenknoten wird automatisch von Adobe Mobile Services erstellt und mu
    * „cancel“
       * Warnhinweis, erforderlich
       * Für Schaltfläche „Abbrechen“ verwendeter Text
-   * "url"
+   * „url“
       * Warnhinweis, optional
       * URL, die beim Klicken der Schaltfläche „Bestätigen“ aufgerufen wird
    * „wait“
