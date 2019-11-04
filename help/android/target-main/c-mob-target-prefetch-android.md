@@ -1,10 +1,10 @@
 ---
-description: Die Vorabruffunktion von Adobe Target verwendet Android Mobile SDKs, um so wenig wie möglich Angebotsinhalt abzurufen, indem die Serverantworten im Cache abgelegt werden.
-seo-description: Die Vorabruffunktion von Adobe Target verwendet Android Mobile SDKs, um so wenig wie möglich Angebotsinhalt abzurufen, indem die Serverantworten im Cache abgelegt werden.
+description: Die Vorabruffunktion von Adobe Target verwendet Android Mobile-SDK, um so wenig wie möglich Angebotsinhalt abzurufen, indem die Serverantworten im Cache abgelegt werden.
+seo-description: Die Vorabruffunktion von Adobe Target verwendet Android Mobile-SDK, um so wenig wie möglich Angebotsinhalt abzurufen, indem die Serverantworten im Cache abgelegt werden.
 seo-title: Vorabruf für Android-Angebotsinhalte
 title: Vorabruf für Android-Angebotsinhalte
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
 ---
@@ -12,19 +12,19 @@ source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
 # Vorabruf für Android-Angebotsinhalte {#prefetch-offer-content-in-android}
 
-Die Vorabruffunktion von Adobe Target verwendet Android Mobile-SDKs, um so wenig wie möglich Angebotsinhalt abzurufen, indem die Serverantworten im Cache abgelegt werden.
+Die Vorabruffunktion von Adobe Target verwendet Android Mobile-SDK, um so wenig wie möglich Angebotsinhalt abzurufen, indem die Serverantworten im Cache abgelegt werden.
 
 >[!IMPORTANT]
 >
->Prefetch functionality in the Mobile SDKs for Android is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
+>Die Vorabruffunktion in den Mobile SDK für Android wird für die Aktivitätstypen „Auto Target“, „Auto Allocate“ und „Automated Personalization“ in Adobe Target nicht unterstützt.
 
 Dieser Vorgang reduziert die Ladezeit, vermeidet mehrfache Netzwerk-Aufrufe und ermöglicht es Adobe Target, eine Benachrichtigung darüber zu erhalten, welche mbox vom Benutzer der mobilen App besucht wurde. Der gesamte Inhalt wird abgerufen und während des Aufrufs für den Vorabruf im Cache abgelegt, und dieser Inhalt wird bei allen zukünftigen Aufrufen abgerufen, die im Cache abgelegte Inhalte für den spezifizierten mbox-Namen enthalten.
 
-Vorabgerufene Inhalte werden nicht über Starts hinweg behalten. The prefetch content is cached as long as the application lives or until the `clearPrefetchCache()` method is called.
+Vorabgerufene Inhalte werden nicht über Starts hinweg behalten. Der vorabgerufene Inhalt verbleibt im Cache, bis die Lebensdauer der App endet oder die Methode `clearPrefetchCache()` aufgerufen wird.
 
 >[!IMPORTANT]
 >
->Target prefetch APIs have been available since SDK version 4.14.0. For more information about parameter limitations, see [Batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
+>Vorabruf-APIs für Target gibt es bereits seit SDK-Version 4.14.0. Weitere Informationen zu den Parameterbeschränkungen finden Sie unter [Batch-Eingabeparameter](https://developers.adobetarget.com/api/#batch-input-parameters).
 
 In der SDK-Version 4.14 oder später wird, sofern spezifiziert, `environmentId``ADBMobileConfig.json` beim Initiieren eines v2 Batch-MBox-TnT-Anrufs aus der Datei „“ gewonnen. Wenn keine `environmentId` in der Datei angegeben ist, wird kein Umgebungsparameter in den TNT-Batch-MBox-Aufruf gesendet und das Angebot für die Standardumgebung wird geliefert.
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## Pre-fetch methods {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## Vorabrufmethoden {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 Folgende Methoden können Sie in Android für den Vorabruf verwenden:
 
@@ -56,7 +56,7 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
       final TargetCallback<Boolean> callback)
       ```
 
-   * Here are the parameters for this method:
+   * Hier finden Sie die Parameter für diese Methode:
 
       * **targetPrefetchArray**
 
@@ -68,7 +68,7 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
 
       * **callback**
 
-         Wird aufgerufen, wenn der Vorabruf abgeschlossen ist. Returns `true` if the prefetch was successful and `false` if the prefetch was unsuccesful.
+         Wird aufgerufen, wenn der Vorabruf abgeschlossen ist. Gibt den Wert `true` aus, wenn der Vorabruf erfolgreich war, und den Wert `false`, wenn der Vorabruf nicht erfolgreich war.
 
 * **loadRequests**
 
@@ -76,7 +76,7 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
 
    >[!IMPORTANT]
    >
-   >Wenn der Inhalt für die angeforderten Orte bereits zwischengespeichert ist, wird er sofort im bereitgestellten Rückruf zurückgegeben. Andernfalls sendet das SDK eine Netzwerkanfrage an die Target-Server, um den Inhalt abzurufen.
+   >Wenn der Inhalt für die angefragten Speicherorte bereits zwischengespeichert ist, wird er sofort im bereitgestellten Rückruf zurückgegeben. Andernfalls sendet das SDK eine Netzwerkanfrage an die Target-Server, um den Inhalt abzurufen.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -84,7 +84,7 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
       public static void loadRequests( final List<TargetRequestObject> requestArray,  final Map<String, Object> profileParameters)
       ```
 
-   * Here are the parameters for this method:
+   * Hier finden Sie die Parameter für diese Methode:
 
       * **requestArray**
 
@@ -136,34 +136,34 @@ Folgende Methoden können Sie in Android für den Vorabruf verwenden:
       final Map<String, Object> productParams)
       ```
 
-## Public classes {#section_A273E53F069E4327BBC8CE4910B37888}
+## Öffentliche Klassen {#section_A273E53F069E4327BBC8CE4910B37888}
 
 Dies sind die öffentlichen Klassen, die den Vorabruf in Android unterstützen:
 
-### Klassenreferenz: TargetPrefetchObject
+### Class reference: TargetPrefetchObject
 
 Umfasst mbox-Namen sowie die Parameter, die für den mbox-Vorabruf verwendet werden.
 
 * **`name`**
 
    Name des Speicherortes, der vorabgerufen wird.
-   * **Typ**: String
+   * **Typ**: Zeichenfolge
 
 * `mboxParameters`
 
    Sammlung von Schlüssel-Wert-Paaren, die als `mboxParameters` für diese Anfrage von `TargetPrefetchObject` angehängt werden.
-   * **Type**: Map`<String, Object>`
+   * **Typ**: Karte`<String, Object>`
 
 * **`orderParameters`**
 
    Sammlung von Schlüssel-Wert-Paaren, die an die aktuelle mbox unter dem Bestell-Knoten angehängt werden.
-   * **Typ**: Map `<String, Object>`
+   * **Typ**: Karte `<String, Object>`
 
 * **`productParameters`**
 
    Sammlung von Schlüssel-Wert-Paaren, die an die aktuelle mbox unter dem Produkt-Knoten angehängt werden.
 
-   * **Typ**: Map `<String, Object>`
+   * **Typ**: Karte `<String, Object>`
 
 
 ### Class reference: TargetRequestObject
@@ -174,31 +174,31 @@ Diese Klasse kapselt den mbox-Namen, den Standardinhalt, die mbox-Parameter und 
 
    Name des angefragten Standorts.
 
-   * **Typ**: String
+   * **Typ**: Zeichenfolge
 
 * **`mboxParameters`**
 
    Sammlung von Schlüssel-Wert-Paaren, die als `mboxParameters` für dieses `TargetRequestObject` angehängt werden.
 
-   * **Typ: Map`<String, Object>`**
+   * **Typ: Karte`<String, Object>`**
 
 * **`orderParameters`**
 
    Sammlung von Schlüssel-Wert-Paaren, die an die aktuelle mbox unter dem Bestell-Knoten angehängt werden.
 
-   * **Typ**: Map `<String, Object>`
+   * **Typ**: Karte `<String, Object>`
 
 * **`productParameters`**
 
    Sammlung von Schlüssel-Wert-Paaren, die an die aktuelle mbox unter dem Produkt-Knoten angehängt werden.
 
-   * **Typ**: Map `<String, Object>`
+   * **Typ**: Karte `<String, Object>`
 
 * **`defaultContent`**
 
    Zeichenfolgenwert, der im Rückruf zurückgegeben wird, wenn das SDK Inhalte von Target-Servern nicht abrufen kann.
 
-   * **Typ**: String
+   * **Typ**: Zeichenfolge
 
 * **`callback`**
 
@@ -207,9 +207,9 @@ Diese Klasse kapselt den mbox-Namen, den Standardinhalt, die mbox-Parameter und 
    * **Typ**: Target.TargetCallback`<String>`
 
 
-## Code sample {#section_BF7F49763D254371B4656E17953D520C}
+## Codebeispiel {#section_BF7F49763D254371B4656E17953D520C}
 
-Im Folgenden finden Sie ein Beispiel für den Vorabruf von Inhalten mithilfe der Android-SDKs:
+Im Folgenden finden Sie ein Beispiel für den Vorabruf von Inhalten mithilfe der Android-SDK:
 
 ```java
 // When your app launches, prefetch the content for a list of locations. 
