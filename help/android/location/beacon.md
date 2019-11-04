@@ -1,13 +1,13 @@
 ---
 description: Die Beacon-Verfolgung ermöglicht es Ihnen, Mikrostandorte mithilfe von iBeacon und Bluetooth Low Energy zu messen und anzusprechen.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Die Beacon-Verfolgung ermöglicht es Ihnen, Mikrostandorte mithilfe von iBeacon und Bluetooth Low Energy zu messen und anzusprechen.
 seo-title: Beacon-Verfolgung
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Beacon-Verfolgung
 topic: Entwickler und Implementierung
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -19,10 +19,10 @@ Die Beacon-Verfolgung ermöglicht es Ihnen, Mikrostandorte mithilfe von iBeacon 
 
 Die folgenden Beacon-Daten werden an Analytics und Target gesendet, wenn `trackBeacon` aufgerufen wird:
 
-* `a.beacon.uuid` - ProximityUUID of the beacon
+* `a.beacon.uuid` – Näherungs-UUID des Beacons
 * `a.beacon.major` – Major-Wert des Beacons (z. B. Store-Nummer)
 * `a.beacon.minor` – Minor-Wert des Beacons (z. B. die eindeutige Kennung innerhalb eines Stores)
-* `a.beacon.prox`: Die Werte 0–3 geben an, wie nah sich der Benutzer am Beacon befindet.
+* `a.beacon.prox` – Die Werte 0–3 geben an, wie nah sich der Benutzer am Beacon befindet.
 
 Diese Werte haben folgende Bedeutung:
 
@@ -33,11 +33,11 @@ Diese Werte haben folgende Bedeutung:
 
 Diese Beacon-Daten werden in Variablen für mobile Lösungen erfasst.
 
-## Tracking-Beacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Beacons verfolgen {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   Weitere Informationen finden Sie unter *SDK- und Konfigurationsdatei zu Ihrer IntelliJ-IDEA- oder Eclipse-Projekt* in der [Core-Implementierung und im Lebenszyklus](/help/android/getting-started/dev-qs.md)hinzufügen.
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zu Ihrem IntelliJ IDEA- oder Eclipse-Projekt hinzufügen* in [Grundlegende Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
 
 1. Importieren Sie die Bibliothek:
 
@@ -67,7 +67,7 @@ Diese Beacon-Daten werden in Variablen für mobile Lösungen erfasst.
    Analytics.clearBeacon();
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Zusätzliche Daten senden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Zusätzlich zu den Beacon-Daten können Sie mit jedem `trackBeacon`-Aufruf weitere Kontextdaten senden:
 
@@ -77,7 +77,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 ```
 
-Context data values must be mapped to custom variables in the Adobe Mobile services:
+Die Werte der Kontextdaten müssen in Adobe Mobile Services benutzerdefinierten Variablen zugewiesen werden:
 
 ![](assets/map-variable-context-ltv.png)
 
