@@ -2,11 +2,11 @@
 description: Diese Informationen helfen Ihnen beim Verwenden der In-App-Nachrichten in Ihren iOS-Apps.
 seo-description: Diese Informationen helfen Ihnen beim Verwenden der In-App-Nachrichten in Ihren iOS-Apps.
 seo-title: In-App-Nachrichten
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: In-App-Nachrichten
 topic: Entwickler und Implementierung
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -25,13 +25,13 @@ Hinweise:
 
    >[!TIP]
    >
-   >Sie können diese Schritte auch dann ausführen, wenn keine Meldungen definiert sind. Nachdem Sie Nachrichten definiert haben, werden sie dynamisch an Ihre App gesendet und ohne App Store-Aktualisierung angezeigt.
+   >Sie können diese Schritte selbst dann ausführen, wenn Sie keine Nachrichten definiert haben. Nachdem Sie Nachrichten definiert haben, werden sie dynamisch an die App bereitgestellt und ohne Update des Appstores angezeigt.
 
-## Enabling in-app messages {#section_79F984271C3B4366B7B04F864F4FF8C2}
+## In-App-Nachrichten aktivieren {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie den Lebenszyklus.
 
-   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/requirements.md)
+   Weitere Informationen finden Sie unter *SDK und Konfigurationsdatei zum Projekt hinzufügen* im Abschnitt [Grundlegende Implementierung und Lebenszyklus](/help/ios/getting-started/requirements.md).
 
 1. Importieren Sie die Bibliothek:
 
@@ -39,7 +39,7 @@ Hinweise:
    #import "ADBMobile.h"
    ```
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for In-App messaging.
+1. Überprüfen Sie, ob die Datei `ADBMobileConfig.json` die erforderlichen Einstellungen für In-App-Nachrichten enthält.
 1. Damit In-App-Nachrichten beim Start dynamisch aktualisiert werden, muss das Objekt `remotes` vorhanden und entsprechend konfiguriert sein:
 
    ```js
@@ -69,22 +69,22 @@ Hinweise:
    >
    >`messages` oder `remotes` ist erforderlich.
 
-   If these objects are not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. For more information, see Core Implementation and Lifecycle.[](/help/ios/getting-started/requirements.md)
+   Wenn diese Objekte nicht konfiguriert sind, sollten Sie eine aktualisierte Datei `ADBMobileConfig.json` aus Adobe Mobile Services herunterladen. Weitere Informationen finden Sie unter [Grundlegende Implementierung und Lebenszyklus](/help/ios/getting-started/requirements.md).
 
-## Tracking in-app messages {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## In-App-Nachrichten verfolgen {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-Mobile Services SDKs für iOS lassen sich folgende Metriken Ihrer In-App-Nachrichten verfolgen:
+Mobile Services SDK für iOS lassen sich folgende Metriken Ihrer In-App-Nachrichten verfolgen:
 
 * Für In-App-Vollbild- und -Warnnachrichten:
 
-   * **[!UICONTROL Impressionen]**: wenn der Benutzer eine In-App-Nachricht auslöst.
-   * **[!UICONTROL Click throughs]**: when the user pushes the **[!UICONTROL Click-through]** button.
-   * **[!UICONTROL Abbrüche]**: wenn der Benutzer die Schaltfläche **[!UICONTROL Abbrechen]** drückt.
+   * **[!UICONTROL Impressionen]**: Benutzer löst eine In-App-Nachricht aus.
+   * **[!UICONTROL Clickthrough]**: Benutzer betätigt die **[!UICONTROL Clickthrough]**-Schaltfläche.
+   * **[!UICONTROL Abbrüche]**: Benutzer betätigt die **[!UICONTROL Abbrechen]**-Schaltfläche.
 
 * Für benutzerdefinierte Vollbild-In-App-Nachrichten muss der HTML-Inhalt der Nachricht den richtigen Code enthalten, um die SDK-Verfolgung über die Nutzung folgender Schaltflächen informieren zu können:
 
-   * **[!UICONTROL Click-through (redirect) example tracking:]**`adbinapp://confirm/?url=https://www.yoursite.com`
-   * **[!UICONTROL Cancel]** (close) example tracking: `adbinapp://cancel`
+   * **[!UICONTROL Clickthrough]** (Umleitung) der Beispielverfolgung: `adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL Abbrechen]** (Schließen) der Beispielverfolgung: `adbinapp://cancel`
 
 * Für lokale (Remote-)Nachrichten:
 
@@ -105,7 +105,7 @@ Mobile Services SDKs für iOS lassen sich folgende Metriken Ihrer In-App-Nachric
    }
    ```
 
-## Local fallback image {#section_DEACC1CE549B4573B556A44A52409941}
+## Lokales Ausweichbild {#section_DEACC1CE549B4573B556A44A52409941}
 
 Beim Erstellen einer Vollbildnachricht in Adobe Mobile Services können Sie optional ein Ausweichbild angeben. Wenn Ihre Nachricht das gewünschte Bild nicht aus dem Web abrufen kann, versucht das SDK, das Bild mit demselben Namen aus Ihrem Anwendungspaket zu laden. Dadurch können Sie Ihre Nachricht in ihrer ursprünglichen Form anzeigen, selbst wenn der Benutzer offline ist oder der Zugriff auf das vorbestimmte Bild nicht möglich ist.
 
