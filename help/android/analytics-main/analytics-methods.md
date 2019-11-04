@@ -1,35 +1,35 @@
 ---
 description: Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Analytics-Methoden
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Analytics-Methoden
 topic: Entwickler und Implementierung
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Analytics-Methoden {#analytics-methods}
 
 Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics], Target], Audience Manager], and the Adobe Experience Platform Identity Service]. Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `analytics` bei Experience Cloud ID-Methoden.
+Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Identity-Dienst für Adobe Experience Platform. Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `analytics` bei Experience Cloud ID-Methoden.
 
 Jede der folgenden Methoden wird verwendet, um Daten an Ihre Adobe Analytics Report Suite zu senden:
 
 * **trackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Die Statusangaben entsprechen den verfügbaren Ansichten in der App, z. B. `home dashboard`, `app settings` und `cart`. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten.
 
-   If `state` is empty, `app name app version (build)` is displayed in reports. Wenn dieser Wert in einem Bericht auftritt, müssen Sie `state` in jedem `trackState`-Aufruf festlegen.
+   Wenn `state` leer ist, wird in Berichten `app name app version (build)` angezeigt. Wenn dieser Wert in einem Bericht auftritt, müssen Sie `state` in jedem `trackState`-Aufruf festlegen.
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
+   >Dies ist der einzige Verfolgungsaufruf, bei dem die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -43,10 +43,10 @@ Jede der folgenden Methoden wird verwendet, um Daten an Ihre Adobe Analytics Rep
       Analytics.trackState("loginScreen",null);
       ```
 
-* **trackAction
-Tracks an action in your app.**
+* **trackAction**
+Verfolgt eine Aktion in der App.
 
-   Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, that occur in your app.
+   Aktionen, die Sie messen möchten, wie z. B. `logons`, `banner taps`, `feed subscriptions` und andere Metriken, die in Ihrer App auftreten.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -60,7 +60,8 @@ Tracks an action in your app.**
       Analytics.trackAction("heroBannerTouched",null);
       ```
 
-* **getTrackingIdentifier** Gibt die automatisch generierte Besucher-ID für Analytics zurück.
+* **getTrackingIdentifier**
+Gibt die automatisch erzeugte Besucher-ID für Analytics zurück.
 
    Diese appspezifische, Unique Visitor-ID wird beim ersten Start generiert, gespeichert und dann fortlaufend weiterverwendet. Die ID wird auch bei App-Upgrades beibehalten und nur entfernt, wenn die App deinstalliert wird.
 
@@ -78,7 +79,7 @@ Tracks an action in your app.**
 
 * **trackLocation**
 
-   Sends the current latitude, longitude, and location in a defined point of interest. Weitere Informationen finden Sie unter [Geografischer Standort und Zielpunkte](/help/android/location/geo-poi.md).
+   Sendet den aktuellen Längen- und Breitengrad und den Standort in einem definierten Zielpunkt. Weitere Informationen finden Sie unter [Geostandort und Zielpunkte](/help/android/location/geo-poi.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -132,7 +133,7 @@ Tracks an action in your app.**
 
 * **trackTimed&#x200B;ActionUpdate**
 
-   Pass in `contextData` to update the context data that is associated with the `action`. The `data` that is passed in is appended to the existing data for the action, and if the same key is already defined for `action`, overwrites the data.
+   Übergeben Sie diesen Wert in `contextData`, um die Kontextdaten zu aktualisieren, die der `action` zugewiesen sind. Die übergebenen Daten (`data`) werden an die vorhandenen Daten für die Aktion angehängt und wenn der Schlüssel bereits für `action` definiert ist, werden die Daten überschrieben.
 
    >[!TIP]
    >
@@ -144,7 +145,7 @@ Tracks an action in your app.**
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * Here is a code sample for this method:
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
@@ -158,7 +159,7 @@ Tracks an action in your app.**
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `true` to send a hit. Passing `null` for `block` sends the final hit.
+   >Wenn Sie `block` angeben, müssen Sie `true` zurückgeben, um einen Treffer zu senden. Wenn Sie `null` für `block` übergeben, wird der endgültige Treffer gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
