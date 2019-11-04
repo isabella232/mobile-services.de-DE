@@ -2,23 +2,23 @@
 description: Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-Geräten gesendet wird.
 seo-description: Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-Geräten gesendet wird.
 seo-title: iOS-Geräteversionen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: iOS-Geräteversionen
 topic: Entwickler und Implementierung
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# iOS device versions {#ios-device-versions}
+# iOS-Geräteversionen {#ios-device-versions}
 
 Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-Geräten gesendet wird.
 
 >[!IMPORTANT]
 >
->Diese Liste basiert auf internen Tests und Online-Informationen und kann Ungenauigkeiten oder unvollständige Informationen enthalten.
+>Diese Liste basiert auf internen Tests und Onlineinformationen und ist ggf. ungenau oder unvollständig.
 
 Weitere Informationen zu iOS-Geräten finden Sie auf Websites wie [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
 
@@ -84,14 +84,14 @@ Weitere Informationen zu iOS-Geräten finden Sie auf Websites wie [The iPhone Wi
 | iPad Mini 4 (LTE) | iPad 5,2 |
 | iPad Air 2 (Wi-Fi) | iPad 5.3 |
 | iPad Air 2 (LTE) | iPad 5.4 |
-| iPad Pro, 9,7“ (Wi-Fi) | iPad 6,3 |
-| iPad Pro, 9,7“ (LTE) | iPad 6,4 |
-| iPad Pro, 12,9“ (Wi-Fi) | iPad 6,7 |
-| iPad Pro, 12,9“ (LTE) | iPad 6,8 |
-| iPad 5, 9,7“ (Wi-Fi) | iPad 6,11 |
-| iPad Pro 5, 9,7“ (LTE) | iPad 6,12 |
-| iPad Pro 2, 12,9“ (Wi-Fi) | iPad 7,1 |
-| iPad Pro 2, 12,9“ (LTE) | iPad 7,2 |
-| iPad Pro, 10,5“ (Wi-Fi) | iPad 7,3 |
-| iPad Pro, 10,5“ (LTE) | iPad 7,4 |
+| iPad Pro, 9,7" (Wi-Fi) | iPad 6,3 |
+| iPad Pro, 9,7" (LTE) | iPad 6,4 |
+| iPad Pro, 12,9" (Wi-Fi) | iPad 6,7 |
+| iPad Pro, 12,9" (LTE) | iPad 6,8 |
+| iPad 5, 9,7" (Wi-Fi) | iPad 6,11 |
+| iPad Pro 5, 9,7" (LTE) | iPad 6,12 |
+| iPad Pro 2, 12,9" (Wi-Fi) | iPad 7,1 |
+| iPad Pro 2, 12,9" (LTE) | iPad 7,2 |
+| iPad Pro, 10,5" (Wi-Fi) | iPad 7,3 |
+| iPad Pro, 10,5" (LTE) | iPad 7,4 |
 
