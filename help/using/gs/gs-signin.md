@@ -1,13 +1,13 @@
 ---
 description: Sie können sich über einen Webbrowser bei Adobe Mobile Services anmelden.
-keywords: Mobil;Passwort ändern;Anmelden;Abmelden;Anmelden;Anmelden;Anmelden;Anmelden
+keywords: mobil;Passwort ändern;anmelden;abmelden;Anmeldung;Abmeldung
 seo-description: Sie können sich über einen Webbrowser bei Adobe Mobile Services anmelden.
 seo-title: Anmeldung
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Anmeldung
 topic: Metriken
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 ---
@@ -38,7 +38,7 @@ So melden Sie sich mit Ihrer Adobe ID bei der Adobe Mobile Services-Benutzerobe
 
 So melden Sie sich mit Ihrer Enterprise ID bei der Adobe Mobile Services-Benutzeroberfläche an:
 
-1. Geben Sie in einem Browser [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com) ein
+1. Geben Sie in einem Browser [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com) ein.
 1. Klicken Sie auf **[!UICONTROL Mit Adobe ID anmelden]**.
 1. Geben Sie Ihre E-Mail-Adresse ein.
 1. Klicken Sie unter **[!UICONTROL Konto auswählen für]** auf **[!UICONTROL Enterprise ID]**.
@@ -47,7 +47,7 @@ So melden Sie sich mit Ihrer Enterprise ID bei der Adobe Mobile Services-Benutz
 
    >[!IMPORTANT]
    >
-   >If you click **[!UICONTROL Facebook]** or **[!UICONTROL Google]** to sign in, your Facebook and Google account email address must match the Adobe ID or Enterprise ID account email address that has access to Adobe Analytics. Wenn Ihre E-Mail-Anmeldeinformationen für Facebook oder Google nicht mit Ihrer E-Mail-Adresse des Adobe- oder Enterprise-ID-Benutzers übereinstimmen, wenden Sie sich an Ihren Administrator.
+   >Wenn Sie beim Anmelden auf **[!UICONTROL Facebook]** oder **[!UICONTROL Google]** klicken, muss die E-Mail-Adresse Ihres Facebook- bzw. Google-Kontos mit der E-Mail-Adresse des Adobe ID- oder Enterprise ID-Kontos übereinstimmen, das über Zugriff auf Adobe Analytics verfügt. Wenn die Facebook- bzw. Google-E-Mail-Adresse nicht mit der Adobe ID- oder Enterprise ID-E-Mail-Adresse übereinstimmt, wenden Sie sich an Ihren Administrator.
 
 ### Analytics ID
 
@@ -62,14 +62,14 @@ So melden Sie sich mit Ihrer Analytics ID bei der Adobe Mobile Services-Benutze
 
 Sie haben folgende Möglichkeiten, Ihr Passwort zurückzusetzen:
 
-* **Adobe Experience Cloud** , wenn Sie Ihre Adobe ID verwenden:
+* **Adobe Experience Cloud** Wenn Sie Ihre Adobe ID verwenden:
 
-   1. Klicken Sie auf **[!UICONTROL Mit Adobe ID anmelden]und klicken Sie auf den Link** Kennwort vergessen?****.
+   1. Klicken Sie auf **[!UICONTROL Mit Adobe ID anmelden]** und klicken Sie auf den Link **[!UICONTROL Kennwort vergessen?]**.
    1. Geben Sie das E-Mail-Konto an, das mit Ihrer Adobe ID verknüpft ist, und klicken Sie auf **[!UICONTROL Senden]**.
    1. Folgen Sie den Anweisungen in der erhaltenen E-Mail, um Ihr Passwort zurückzusetzen.
 
 * **Adobe Analytics** Wenn Sie Unternehmen, Benutzername und Passwort verwenden:
 
-   1. Klicken Sie auf **Kennwort vergessen?**.
+   1. Klicken Sie auf **[!UICONTROL Kennwort vergessen?]**.
    1. Geben Sie den Unternehmens- sowie den Benutzernamen ein und klicken Sie auf **[!UICONTROL Weiter]**.
    1. Folgen Sie den Anweisungen in der E-Mail, die Sie erhalten.
