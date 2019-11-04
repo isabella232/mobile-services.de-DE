@@ -2,32 +2,32 @@
 description: Hier finden Sie eine Liste der Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-description: Hier finden Sie eine Liste der Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-title: Konfigurationsmethoden
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Konfigurationsmethoden
 topic: Entwickler und Implementierung
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Configuration methods {#configuration-methods}
+# Konfigurationsmethoden {#configuration-methods}
 
 Hier finden Sie eine Liste der Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter Analytics, Target, Audience Manager und den Identitätsdienst für Adobe Experience Platform.
+Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target, Audience Manager und Identity-Dienst für Adobe Experience Platform.
 
 * **setAppExtensionType**
 
    Konfiguriert die Adobe Mobile-SDK-Einstellung, um zu bestimmen, welcher Erweiterungstyp aktuell ausgeführt wird.
 
    Die folgenden Werte sind zulässig:
-   * `ADBMobileAppExtensionTypeRegular` - die Erweiterung ist mit einer App, die sie enthält, gebündelt.
-   * `ADBMobileAppExtensionTypeStandAlone` - extension is not bundled with a containing app.
+   * `ADBMobileAppExtensionTypeRegular`: Erweiterung wird mit einer übergeordneten App gepackt.
+   * `ADBMobileAppExtensionTypeStandAlone`: Erweiterung wird nicht mit einer übergeordneten App gepackt.
    >[!TIP]
    >
-   >This method should **only** be used if your app has an extension or is a stand-alone extension. For more information, see *ADBMobileAppExtensionType* below.
+   >Diese Methode sollte **nur** verwendet werden, wenn Ihre App eine Erweiterung oder eine eigenständige Erweiterung aufweist. Weitere Informationen finden Sie unten unter *ADBMobileAppExtensionType*.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -63,9 +63,9 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, darunter 
 
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück:
 
-   * `ADBMobilePrivacyStatusOptIn` - Treffer werden sofort gesendet.
+   * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
    * `ADBMobilePrivacyStatusOptOut` - werden Treffer verworfen.
-   * `ADBMobilePrivacyStatusUnknown`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
+   * `ADBMobilePrivacyStatusUnknown`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. 
 Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    * Hier finden Sie die Syntax für diese Methode:
@@ -86,7 +86,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    Die folgenden Werte sind zulässig:
 
-   * `ADBMobilePrivacyStatusOptIn` - Treffer werden sofort gesendet.
+   * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
    * `ADBMobilePrivacyStatusOptOut` - werden Treffer verworfen.
    * `ADBMobilePrivacyStatusUnknown`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
@@ -124,7 +124,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >Wenn Ihre App von Experience Cloud 3.x auf das SDK 4.x aktualisiert, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. Weitere Informationen finden Sie unten in der Zeile `userIdentifier`. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID `nil` und die Tracking-ID wird verwendet.
+   >Wenn für Ihre App ein Upgrade vom Experience Cloud-SDK 3.x auf 4.x vorgenommen wird, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als die benutzerdefinierte Benutzer-ID gespeichert. Weitere Informationen finden Sie unten in der Zeile `userIdentifier`. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID `nil` und die Tracking-ID wird verwendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -144,7 +144,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >Wenn Ihre App vom Experience Cloud-SDK 3.x auf das SDK 4.x aktualisiert, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten.
+   >Wenn für Ihre App ein Upgrade vom Experience Cloud-SDK 3.x auf 4.x vorgenommen wird, wird die vorherige benutzerdefinierte oder automatisch generierte Besucher-ID abgerufen und als die benutzerdefinierte Benutzer-ID gespeichert. Dadurch werden Besucherdaten zwischen SDK-Upgrades beibehalten.
 
    Bei neuen Installationen der SDK-Version 4.x lautet die Benutzer-ID `nil`, bis sie festgelegt wird.
 
@@ -194,7 +194,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
 * **setDebugLogging**
 
-   Legt die Debug-Protokollierungseinstellung auf `debug` fest. 
+   Legt die Debug-Protokollierungseinstellung auf `debug` fest.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -214,7 +214,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >Diese Methode ist für Apps vorgesehen, die sich für Benachrichtigungen im Hintergrund registrieren und nur aus dem Code aufgerufen werden sollten, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
+   >Diese Methode ist für Apps vorgesehen, die sich für Benachrichtigungen während der Ausführung im Hintergrund registrieren und die nur aus dem Code heraus aufgerufen werden sollen, der aktiv ist, wenn die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -234,7 +234,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >The preferred location to invoke this method is in `application:didFinishLaunchingWithOptions:`.
+   >Der bevorzugte Speicherort zum Abrufen dieser Methode lautet `application:didFinishLaunchingWithOptions:`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -252,11 +252,11 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    Ermöglicht Ihnen die Weitergabe zusätzlicher Daten beim Erfassen von Lebenszyklusmetriken.
 
-   This method must be called from the entry point of your app. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
+   Diese Methode muss vom Einstiegspunkt Ihrer App aufgerufen werden. Dies umfasst ggf. eine oder beide der Methoden `application:didFinishLaunchingWithOptions:` bzw. `applicationWillEnterForeground:` in Ihrer Klasse „AppDelegate“.
 
    >[!IMPORTANT]
    >
-   >Data that is passed to the SDK via `collectLifecycleDataWithAdditionalData:` will be persisted by the SDK in `NSUserDefaults`. Das SDK entfernt die Werte im Parameter `NSDictionary`, die nicht vom Typ `NSString` oder `NSNumber` sind. To use  `collectLifecycleDataWithAdditionalData:`, you must have SDK **version 4.4** or later.
+   >Daten, die über `collectLifecycleDataWithAdditionalData:` an das SDK weitergeleitet werden, bestehen unter `NSUserDefaults` im SDK fort. Das SDK entfernt die Werte im Parameter `NSDictionary`, die nicht vom Typ `NSString` oder `NSNumber` sind. Um `collectLifecycleDataWithAdditionalData:` zu nutzen, ist SDK-**Version 4.4** oder höher erforderlich.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -272,11 +272,11 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
 * **overrideConfigPath**
 
-   Gibt Ihnen beim Starten der Anwendung die Möglichkeit, eine andere ADBMobile JSON-Konfigurationsdatei zu laden. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
+   Sie können beim Starten der Anwendung eine andere ADBMobile JSON-Konfigurationsdatei laden. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
 
    >[!IMPORTANT]
    >
-   >To use `overrideConfigPath`, you must have SDK version 4.2 or later.
+   >Um `overrideConfigPath` zu nutzen, ist SDK-Version 4.2 oder höher erforderlich.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -297,7 +297,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!IMPORTANT]
    >
-   >This method should only be used in the  `application:didRegisterForRemoteNotificationsWithDeviceToken:` method.
+   >Dieses Verfahren kann nur in der Methode `application:didRegisterForRemoteNotificationsWithDeviceToken:`verwendet werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -319,7 +319,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >Retrieve the IDFA from Apple APIs **only** if you are using an ad service. Wenn Sie den IDFA abrufen und ihn nicht richtig verwenden, wird Ihre App ggf. abgelehnt.
+   >Rufen Sie den IDFA **nur** dann aus den Apple-APIs ab, wenn Sie einen Dienst für Werbeanzeigen verwenden. Wenn Sie den IDFA abrufen und ihn nicht richtig verwenden, wird Ihre App ggf. abgelehnt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
