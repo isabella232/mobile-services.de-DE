@@ -43,6 +43,7 @@ Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderli
 1. Rufen Sie die Registrierungs-ID/das Token mithilfe der Firebase Cloud Messaging-API (FCM) ab.
 
    * Weitere Informationen zur Einrichtung von FCM finden Sie unter [Firebase Cloud Messaging-Client-App unter Android einrichten](https://firebase.google.com/docs/cloud-messaging/android/client).
+
    ```js
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
@@ -58,6 +59,7 @@ Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderli
    Im Folgenden finden Sie die Anforderungen für die Aktivierung des Push-Clickthrough-Reportings:
 
    * In Ihrer `FireBaseMessageService`-Implementierung muss das Bundle-Objekt, das die Nachrichtendaten enthält, die mit dem Objekt „RemoteMessage“ an die Methode `onMessageReceived` übergeben werden, zum Intent hinzugefügt werden, der zum Öffnen der Zielaktivität eines Clickthroughs verwendet wird. Dies kann mithilfe der `putExtras`-Methode erfolgen. Weitere Informationen dazu finden Sie unter [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle)).
+
    ```java
    Intent intent = new Intent(this, MainActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

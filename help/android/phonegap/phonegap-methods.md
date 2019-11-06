@@ -202,6 +202,7 @@ Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das T
    Sendet eine Anfrage zur Erfassung personenbezogener Daten.
 
    * Hier finden Sie die Syntax für diese Methode:
+
    ```javascript
    ADB.collectPII(piiData,success, fail);
    ```

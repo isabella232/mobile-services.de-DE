@@ -120,6 +120,7 @@ Gibt die automatisch erzeugte Besucher-ID für Analytics zurück.
    >Dieser Aufruf sendet keinen Treffer.
 
    * Hier finden Sie die Syntax für diese Methode:
+
    ```java
    publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
    ```
