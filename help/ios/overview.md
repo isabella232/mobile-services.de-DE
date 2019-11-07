@@ -6,8 +6,8 @@ solution: Experience Cloud,Analytics
 title: iOS-SDK 4.x für Experience Cloud-Lösungen
 topic: Entwickler und Implementierung
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: ht
-source-git-commit: 6d92beff55f359d667b399e66bae4cbffa4a1a0a
+translation-type: tm+mt
+source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
 
 ---
 
@@ -28,14 +28,14 @@ Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native App
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
 Berücksichtigen Sie Folgendes:
 
-* iOS 5 oder neuer wird unterstützt
+* iOS 8 oder neuer wird unterstützt
 
    Für iOS 11 oder neuer **müssen** Sie über SDK-Version 4.13.8 oder neuer verfügen.
 
