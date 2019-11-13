@@ -3,11 +3,11 @@ description: Mit diesem Plugin senden Sie Adobe Analytics-Aufrufe aus Ihren Unit
 keywords: Unity
 seo-description: Mit diesem Plugin senden Sie Adobe Analytics-Aufrufe aus Ihren Unity-Anwendungen heraus.
 seo-title: Unity Plug-in für die iOS- und Android 4.x-SDKs
-solution: Marketing Cloud,Developer
+solution: Marketing Cloud, Entwickler
 title: Unity Plug-in für die iOS- und Android 4.x-SDKs
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
-source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
+source-git-commit: df4ff7128357a18c56d840eb5697f9c8813ad751
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 Mit diesem Plugin senden Sie Adobe Analytics-Aufrufe aus Ihren Unity-Anwendungen heraus.
 
-Zuletzt aktualisiert am: **20. Oktober 2016**
+Last Updated: **November 12, 2019**
 
 ## Erste Schritte {#section_246D1F9B32ED47EABC41BDA8D0BD0CC7}
 
@@ -28,16 +28,6 @@ Im Folgenden finden Sie den Inhalt der `ADBMobile.unitypackage` Datei:
 
    * ADBMobile
 
-      * Demo
-
-         * ADBMobileDemo.cs
-         * BooDemo.boo
-         * BooScene.unity
-         * CSharpScene.unity
-         * JavaScriptDemo.js
-         * JavaScriptScene.unity
-         * SecondScene.unity
-         * SecondSceneScript.cs
    * Plug-ins
 
       * ADBMobile.cs
@@ -55,7 +45,6 @@ Im Folgenden finden Sie den Inhalt der `ADBMobile.unitypackage` Datei:
          * ADBMobileWrapper.h
          * ADBMobileWrapper.mm
          * AdobeMobileLibrary.a
-
 
 
 Optionale Ordner: Der Ordner „Demo“ enthält Unity-Szenen und Codebeispiele für die unterstützten Skriptsprachen.
