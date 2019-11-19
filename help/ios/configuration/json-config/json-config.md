@@ -2,12 +2,12 @@
 description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
 seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
 seo-title: ADBMobile JSON-Konfiguration
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: ADBMobile JSON-Konfiguration
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+translation-type: tm+mt
+source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ---
 
@@ -70,7 +70,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **charset**
 
-   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://marketing.adobe.com/resources/help/de_DE/sc/implement/charset.html).
+   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
 
    * Mindestens SDK-Version 4.0
 
@@ -245,7 +245,11 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **ssl**
 
-   Der Standardwert lautet `false`. Aktiviert (`true`) oder deaktiviert (`false`) die Möglichkeit, Messdaten mithilfe von SSL (HTTPS) zu senden.
+   >[!IMPORTANT]
+   >
+   > Ab Version 4.10.0 ist SSL standardmäßig auf true gesetzt, wenn das Flag nicht gesetzt ist.
+
+   Aktiviert (`true`) oder deaktiviert (`false`) die Möglichkeit, Messdaten mithilfe von SSL (HTTPS) zu senden.
 
    Die Definition der „callback“-Nachrichtenvorlage wird im Folgenden gezeigt:
 
