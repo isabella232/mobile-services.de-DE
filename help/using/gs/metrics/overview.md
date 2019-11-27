@@ -3,12 +3,12 @@ description: Sie können die Performancemetriken von Apps anzeigen, die Sie kür
 keywords: mobile
 seo-description: Sie können die Performancemetriken von Apps anzeigen, die Sie kürzlich angezeigt haben. Standardmäßig werden bis zu 12 Apps angezeigt. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren, und beliebige Apps auf der Seite „Überblick“ bearbeiten.
 seo-title: Mobile Metriken anzeigen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Mobile Metriken anzeigen
-topic: Metriken
+topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
@@ -53,7 +53,7 @@ Auf der Seite Überblick haben Sie folgende Möglichkeiten:
 
 * **Key Performance Indicators (KPIs) anzeigen**
 
-   Klicken Sie auf den Namen der App, um Details zu KPIs anzuzeigen. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Um einen Drilldown durchzuführen, klicken Sie auf das Symbol **** &gt; neben **[!UICONTROL Key Performance Indicators]**. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Klicken Sie auf eine Spaltenüberschrift in der Tabelle, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
+   Klicken Sie auf den Namen der App, um Details zu KPIs anzuzeigen. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. To drill down, click the icon next to **[!UICONTROL Key Performance Indicators]**. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Klicken Sie auf eine Spaltenüberschrift in der Tabelle, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
 
 ## Einstellungen einer App ändern {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
