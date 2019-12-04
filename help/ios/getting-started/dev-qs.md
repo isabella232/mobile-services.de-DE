@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
@@ -58,9 +58,9 @@ So laden Sie das SDK herunter:
 1. Ziehen Sie im Projektnavigator den Ordner `AdobeMobileLibrary` und legen Sie ihn unter Ihrem Projekt ab.
 1. Stellen Sie Folgendes sicher:
 
-   * Das Kontrollkästchen **[!UICONTROL Elemente kopieren, sofern erforderlich]ist aktiviert.**
+   * Das Kontrollkästchen **[!UICONTROL Elemente kopieren, sofern erforderlich]** ist aktiviert.
    * **[!UICONTROL Gruppen erstellen]** ist ausgewählt.
-   * Keines der Kontrollkästchen im Abschnitt **[!UICONTROL Zu Zielen hinzufügen]ist ausgewählt.**
+   * Keines der Kontrollkästchen im Abschnitt **[!UICONTROL Zu Zielen hinzufügen]** ist ausgewählt.
    ![](assets/step_3.png)
 
 1. Klicken Sie auf **[!UICONTROL Fertigstellen]**.
@@ -88,7 +88,7 @@ So laden Sie das SDK herunter:
 
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_Watch.a`
-   * **Apple TV-(tvOS-)Ziel**
+   * **Apple TV-(tvOS)-Ziel**
 
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
