@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: Mobile Metriken anzeigen
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 Sie können die Performancemetriken von Apps anzeigen, die Sie kürzlich angezeigt haben. Standardmäßig werden bis zu 12 Apps angezeigt. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren, und beliebige Apps auf der Seite „Überblick“ bearbeiten.
 
-Die für jede App angezeigten Metriken entsprechen den Schlüsselmetriken, die Sie beim Erstellen der App ausgewählt haben. Weitere Informationen finden Sie unter [Neue App hinzufügen](/help/using/manage-apps/t-new-app.md).
+Die für jede App angezeigten Metriken entsprechen den Schlüsselmetriken, die Sie beim Erstellen der App ausgewählt haben. Weitere Informationen finden Sie unter  [Neue App hinzufügen](/help/using/manage-apps/t-new-app.md).
 
 Wenn die App, die Sie aufrufen möchten, nicht angezeigt wird, suchen Sie danach, indem Sie den App-Namen eingeben oder auf die Dropdownliste in **[!UICONTROL Alle Apps]** klicken.
 
@@ -53,13 +53,13 @@ Auf der Seite Überblick haben Sie folgende Möglichkeiten:
 
 * **Key Performance Indicators (KPIs) anzeigen**
 
-   Klicken Sie auf den Namen der App, um Details zu KPIs anzuzeigen. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. To drill down, click the icon next to **[!UICONTROL Key Performance Indicators]**. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Klicken Sie auf eine Spaltenüberschrift in der Tabelle, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
+   Klicken Sie auf den Namen der App, um Details zu KPIs anzuzeigen. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Um einen Drilldown durchzuführen, klicken Sie auf das Symbol neben **[!UICONTROL Key Performance Indicators]**. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Klicken Sie auf eine Spaltenüberschrift in der Tabelle, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
 
 ## Einstellungen einer App ändern {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
 1. Klicken Sie auf das Zahnradsymbol im Bereich einer App, um die Seite App-Informationen zu dieser App anzuzeigen.
 1. Bearbeiten Sie die App-Einstellungen.
 
-   Weitere Informationen zu den einzelnen Einstellungen finden Sie unter [Konfigurieren Ihrer App](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
+   Weitere Informationen zu den einzelnen Einstellungen finden Sie unter  [Konfigurieren Ihrer App](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
