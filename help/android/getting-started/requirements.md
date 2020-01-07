@@ -7,7 +7,7 @@ title: Vorbereitung
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
-source-git-commit: 3249a0f35807b230f8200e81772957fbb255832b
+source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
 
 ---
 
@@ -35,10 +35,9 @@ App-Entwickler können jetzt die von Ihnen erstellten Report Suites anzeigen.
 
 ### App-Entwickler
 
-1. Stellen Sie sicher, dass Ihr Analytics-Administrator die Schritte im Abschnitt *Analytics-Administratoren* unter [Rollenspezifische Aufgaben](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC) ausgeführt hat.
-
+1. Ensure that your Analytics administrator has completed the steps in the *Analytics Administrators* in [Role-Specific Tasks](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC).
 1. Vergewissern Sie sich, dass Ihr Analytics-Administrator einen der Abschnitte unter [Anmelden bei der UI von Adobe Mobile Services](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8) ausgeführt hat.
-1. Nachdem die Report Suite konfiguriert wurde, führen Sie die Schritte unter [SDK herunterladen](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46) aus.
+1. After the report suite has been configured, complete steps in the [Download the SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46).
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Rollen und Berechtigungen](/help/using/gs/c-mob-roles-and-permissions.md).
 
@@ -91,11 +90,15 @@ Sie können Ihre App auch im rechten Bereich auswählen.
 
    >[!IMPORTANT]
    >
-   >Um Ihre App im rechten Bereich anzeigen zu können, müssen Sie zunächst eine App erstellen. Weitere Informationen zum Erstellen einer App finden Sie unter [Hinzufügen einer neuen App](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html).
+   >Um Ihre App im rechten Bereich anzeigen zu können, müssen Sie zunächst eine App erstellen. Weitere Informationen zum Erstellen einer App finden Sie unter Neue App [hinzufügen.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
 
 1. Klicken Sie in Ihrer App im linken Bereich auf App-Einstellungen **[!UICONTROL verwalten]**.
-1. Blättern Sie unten auf der Seite zum Abschnitt **[!UICONTROL App SDK-Downloads]**.
-1. Laden Sie das SDK und die Beispiel-App für Ihre Plattform herunter.
+
+   >[!IMPORTANT]
+   >
+   >Wenn die Option &quot;App-Einstellungen **[!UICONTROL verwalten]**&quot;nicht angezeigt wird, stellen Sie sicher, dass Sie bei Adobe Mobile Services angemeldet sind. Klicken Sie zum Überprüfen auf das Symbol![Lösungswechsel](assets/solution-switcher.png)oben rechts auf der Seite und stellen Sie sicher, dass**[!UICONTROL  Adobe Mobile Services]** oben links angezeigt wird.
+
+1. Laden Sie unten auf der Seite &quot;App-Einstellungen verwalten&quot;im Abschnitt **[!UICONTROL App SDK-Downloads]**das SDK und die Beispielanwendung für Ihre Plattform herunter.
 
 >[!TIP]
 >
