@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Vorbereitung
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
 
 ---
@@ -35,9 +35,9 @@ App-Entwickler können jetzt die von Ihnen erstellten Report Suites anzeigen.
 
 ### App-Entwickler
 
-1. Ensure that your Analytics administrator has completed the steps in the *Analytics Administrators* in [Role-Specific Tasks](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC).
+1. Stellen Sie sicher, dass Ihr Analytics-Administrator die Schritte in *Analytics-Administratoren* unter [Rollenspezifische Aufgaben](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC) ausgeführt hat.
 1. Vergewissern Sie sich, dass Ihr Analytics-Administrator einen der Abschnitte unter [Anmelden bei der UI von Adobe Mobile Services](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8) ausgeführt hat.
-1. After the report suite has been configured, complete steps in the [Download the SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46).
+1. Nachdem die Report Suite konfiguriert wurde, führen Sie die Schritte unter [SDK herunterladen](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46) aus.
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Rollen und Berechtigungen](/help/using/gs/c-mob-roles-and-permissions.md).
 
@@ -49,7 +49,7 @@ Sie können sich auf eine der folgenden Arten bei der UI von Adobe Mobile Servic
 
 ### Experience Cloud
 
-Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden. Dies setzt voraus, dass Ihr Unternehmen in der Experience Cloud präsent ist und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden. Dies setzt voraus, dass Ihr Unternehmen in der Experience Cloud präsent ist und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
@@ -57,48 +57,48 @@ Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing
 
 ### Adobe Analytics
 
-Klicken Sie auf **[!UICONTROL Mit Analytics-Konto anmelden]**und geben Sie Ihren Analytics-Unternehmensnamen, Ihren Benutzernamen und Ihr Kennwort ein.
+Klicken Sie auf **[!UICONTROL Mit Analytics-Konto anmelden]** und geben Sie Ihren Analytics-Unternehmensnamen, Ihren Benutzernamen und Ihr Kennwort ein.
 
 ## Report Suite erstellen {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
 So erstellen Sie eine Report Suite, um App-Daten zu erfassen und eine App zu definieren:
 
-1. Melden Sie sich bei der Mobile Services-Benutzeroberfläche an, indem Sie in einen Browser [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) eingeben.
-1. Click **[!UICONTROL Create an App]**.
+1. Melden Sie sich bei der Mobile Services-Benutzeroberfläche an, indem Sie im Browser [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) eingeben.
+1. Klicken Sie auf **[!UICONTROL App erstellen]**.
 
-   Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf **[!UICONTROL Apps verwalten]** >**[!UICONTROL  Hinzufügen]**.
+   Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf **[!UICONTROL Apps verwalten]** > **[!UICONTROL  Hinzufügen]**.
 
-1. Wählen Sie im Dropdown-Menü **[!UICONTROL Report Suite]**die Option**[!UICONTROL  Neue Report Suite]** aus.
+1. Wählen Sie im Dropdown-Menü **[!UICONTROL Report Suite]** die Option **[!UICONTROL  Neue Report Suite]** aus.
 
 1. Geben Sie den Namen Ihrer App ein und wählen Sie einen Typ für die Report Suite.
 
    Beispiel einer Report Suite-ID: `mycomobileappdev`. Sie müssen separate Report Suites und Apps für die Entwicklungs- und Produktionsversionen einrichten. Sie können diese Schritte also für die Einrichtung der Produktionsversion einfach wiederholen.
 1. Überprüfen Sie in **[!UICONTROL Report Suite ID]**, ob der Name der Report Suite angezeigt wird.
-1. Überprüfen Sie, ob in **[!UICONTROL Einstellungen kopieren von]****[!UICONTROL  Mobile App Template]** ausgewählt ist.
+1. Überprüfen Sie, ob in **[!UICONTROL Einstellungen kopieren von]** **[!UICONTROL  Mobile App Template]** ausgewählt ist.
 
    Mit dieser Vorlage können Zeitstempel Offline-Daten erfassen und die Variablen der mobilen Lösung aktivieren, um Lebenszyklusmetriken zu erfassen.
 
-1. Wählen Sie Zeitzone und Währung aus und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Wählen Sie Ihre Zeitzone und Währung aus und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## SDK herunterladen {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
-Um das mobile SDK herunterzuladen,
+So laden Sie das mobile SDK herunter:
 
-1. Melden Sie sich bei der Mobile Services-Benutzeroberfläche an, indem Sie in einen Browser [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) eingeben.
-1. Klicken Sie im linken Bereich auf die Dropdownliste **[!UICONTROL Alle Apps]**und wählen Sie Ihre App aus.
+1. Melden Sie sich bei der Mobile Services-Benutzeroberfläche an, indem Sie im Browser [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) eingeben.
+1. Klicken Sie im linken Bereich auf die Dropdown-Liste **[!UICONTROL Alle Apps]** und wählen Sie Ihre App aus.
 Sie können Ihre App auch im rechten Bereich auswählen.
 
    >[!IMPORTANT]
    >
-   >Um Ihre App im rechten Bereich anzeigen zu können, müssen Sie zunächst eine App erstellen. Weitere Informationen zum Erstellen einer App finden Sie unter Neue App [hinzufügen.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
+   >Um Ihre App im rechten Bereich anzeigen zu können, müssen Sie zunächst eine App erstellen. Weitere Informationen zum Erstellen einer App finden Sie unter [Hinzufügen einer neuen App.](https://docs.adobe.com/content/help/de-DE/mobile-services/using/manage-apps-ug/t-new-app.html)
 
-1. Klicken Sie in Ihrer App im linken Bereich auf App-Einstellungen **[!UICONTROL verwalten]**.
+1. Klicken Sie in Ihrer App im linken Bereich auf **[!UICONTROL App-Einstellungen verwalten]**.
 
    >[!IMPORTANT]
    >
-   >Wenn die Option &quot;App-Einstellungen **[!UICONTROL verwalten]**&quot;nicht angezeigt wird, stellen Sie sicher, dass Sie bei Adobe Mobile Services angemeldet sind. Klicken Sie zum Überprüfen auf das Symbol![Lösungswechsel](assets/solution-switcher.png)oben rechts auf der Seite und stellen Sie sicher, dass**[!UICONTROL  Adobe Mobile Services]** oben links angezeigt wird.
+   >Wenn die Option **[!UICONTROL App-Einstellungen verwalten]** nicht angezeigt wird, stellen Sie sicher, dass Sie in den Adobe Mobile Services angemeldet sind. Klicken Sie zum Überprüfen auf das Symbol ![Lösungsmenü](assets/solution-switcher.png) oben rechts auf der Seite und stellen Sie sicher, dass **[!UICONTROL  Adobe Mobile Services]** oben links angezeigt wird.
 
-1. Laden Sie unten auf der Seite &quot;App-Einstellungen verwalten&quot;im Abschnitt **[!UICONTROL App SDK-Downloads]**das SDK und die Beispielanwendung für Ihre Plattform herunter.
+1. Laden Sie unten auf der Seite „App-Einstellungen verwalten“ im Abschnitt **[!UICONTROL App-SDK-Downloads]** das SDK und die Beispielanwendung für Ihre Plattform herunter.
 
 >[!TIP]
 >
