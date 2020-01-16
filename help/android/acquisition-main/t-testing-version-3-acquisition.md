@@ -1,14 +1,14 @@
 ---
 description: Diese Informationen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für einen Version-3-Akquise-Kampagnenlink auf einem Android-Gerät durchzuführen.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Diese Informationen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für einen Version-3-Akquise-Kampagnenlink auf einem Android-Gerät durchzuführen.
 seo-title: Testen der Version-3-Akquise
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Testen der Version-3-Akquise
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
 
@@ -23,10 +23,15 @@ Diese Informationen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für einen 
 
 Wenn die mobile App beim Erstellen des Kampagnenlinks noch nicht in Google Play vorhanden ist, können Sie eine beliebige mobile App als Ziel auswählen. Dies wirkt sich nur auf die App aus, an die Sie vom Akquise-Server umgeleitet werden, wenn Sie auf den Akquise-Link klicken – nicht auf die Möglichkeit, den Link zu testen. Abfragezeichenfolgen-Parameter, die im Rahmen eines Kampagnen-Broadcasts an die App übergeben werden, wenn diese installiert wird, werden an den Google Play Store übergeben. Hin&amp;Zurück-Akquisetests für mobile Apps erfordern die Simulation eines solchen Broadcasts.
 
-Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den **[!UICONTROL Einstellungen]** gelöscht werden. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
+>[!IMPORTANT]
+>
+>Wenn Sie die Implementierung mit den Referrer-APIs für die Google Play-Installation durchführen, können Sie die Akquise nicht testen, bevor sich Ihre App im Google Play Store befindet.
+
+Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den **[!UICONTROL Einstellungen]**gelöscht werden. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
 
 1. Führen Sie die erforderlichen Aufgaben in [App-Akquise](/help/android/acquisition-main/acquisition.md) aus und stellen Sie sicher, dass Sie den Broadcast-Empfänger für `INSTALL_REFERRER` ordnungsgemäß implementiert haben.
-1. Klicken Sie in der Adobe Mobile Services-Benutzeroberfläche auf **[!UICONTROL Akquise]** &gt; **[!UICONTROL Marketing Links Builder]** und generieren Sie eine Akquise-Marketinglink-URL, die Google Play als Ziel für Android-Geräte festlegt.
+
+1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]**>**[!UICONTROL  Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -63,7 +68,7 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | Der Server sollte `c00.adobe.com` lauten.   *`appid`* sollte der `appid` in Ihrem Akquise-Link entsprechen. |
+   | Akquise | The server should be `c00.adobe.com`.   *`appid`*should equal the`appid`in your acquisition link. |
    | analytics | Legen Sie zu Testzwecken genügend Zeit für das Referrer-Timeout fest (mindestens 60 Sekunden), um den Broadcast manuell zu senden. Sie können die ursprüngliche Timeout-Einstellung nach dem Test wiederherstellen. |
 
 1. Verbinden Sie das Gerät mit einem Computer, deinstallieren Sie die App und installieren Sie sie anschließend erneut.
@@ -78,8 +83,8 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
    1. Ersetzen Sie die Werte für `utm_content`.
    Wenn der Broadcast erfolgreich ist, können Sie eine Antwort ähnlich der folgenden erhalten:
 
-   `Broadcasting: Intent 
-{ act=com.android.vending.INSTALL_REFERRER cmp=com.adobe.adms.tests/.ReferralReceiver (has extras) } 
+   `Broadcasting: Intent
+{ act=com.android.vending.INSTALL_REFERRER cmp=com.adobe.adms.tests/.ReferralReceiver (has extras) }
 Broadcast completed: result=0`
 
 1. (Optional) Sie können die Debugging-Protokollierung des SDK aktivieren, um zusätzliche Informationen zu erhalten.
