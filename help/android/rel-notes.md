@@ -2,12 +2,12 @@
 description: Versionshinweise und bekannte Probleme bei Android SDK 4.x für Experience Cloud-Lösungen.
 seo-description: Versionshinweise und bekannte Probleme bei Android SDK 4.x für Experience Cloud-Lösungen.
 seo-title: Versionshinweise
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Versionshinweise
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
+translation-type: tm+mt
+source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
 
 ---
 
@@ -15,6 +15,12 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 # Versionshinweise {#release-notes}
 
 Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für Android-SDK 4.x für die Experience Cloud-Lösungen:
+
+**16. Januar 2020: 4,18,0**
+
+* Akquise - Es wurde eine neue API hinzugefügt, `Analytics.processGooglePlayInstallReferrerUrl(final String url)`um verweisende APIs für Google Play-Installation zu unterstützen.
+
+   Weitere Informationen zu den APIs für die Installation der verweisenden Stelle finden Sie unter Verwenden von InstallBroadcast [noch? Wechseln Sie bis zum 1. März 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) zur Play Referrer API.
 
 **20. September 2019: Version 4.17.10**
 
@@ -41,4 +47,4 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 * Besucher-ID-Dienst: Die Timeouts für das Verbinden und Lesen wurden von 2 Sekunden auf 5 Sekunden erhöht.
 
 
-Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/de_DE/whatsnew/).
+Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
