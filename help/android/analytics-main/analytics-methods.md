@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: Analytics-Methoden
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
@@ -237,7 +237,7 @@ Gibt die automatisch erzeugte Besucher-ID für Analytics zurück.
 
 * **processReferrer**
 
-   Verarbeitet Kampagnendaten der verweisenden Stelle aus dem Google Play Store zur späteren Verwendung.
+   Verarbeitet Referrer-Kampagnendaten aus dem Google Play Store für die spätere Verwendung.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -257,11 +257,11 @@ Gibt die automatisch erzeugte Besucher-ID für Analytics zurück.
    >
    > Diese API ist ab SDK Version 4.18.0 verfügbar.
 
-   Ruft Akquise-Daten von der angegebenen Google Play-Installations-Referrer-URL ab.
+   Ruft Akquise-Daten von der angegebenen Google Play-Install-Referrer-URL ab.
 
-   Die über diese API erfassten Daten werden bei Installationstreits an Analytics gesendet und sind im Adobe Data Callback verfügbar.
+   Die von dieser API erfassten Daten werden bei einer an Analytics übermittelten Installation gesendet; sie sind in Adobe Data Callback verfügbar.
 
-   Wenn Referrer-Daten bereits vom SDK erfasst wurden, führt ein Aufruf dieser Methode zu einem No-op.
+   Wenn Referrer-Daten bereits vom SDK erfasst wurden, führt ein Aufruf dieser Methode zu einem „no-op“.
 
    Informationen zum Abrufen der Referrer-URL finden Sie in der Google-Dokumentation: https://developer.android.com/google/play/installreferrer/library.
 
