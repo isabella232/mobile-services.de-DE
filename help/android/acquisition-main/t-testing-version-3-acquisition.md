@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: Testen der Version-3-Akquise
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
@@ -25,13 +25,13 @@ Wenn die mobile App beim Erstellen des Kampagnenlinks noch nicht in Google Play 
 
 >[!IMPORTANT]
 >
->Wenn Sie die Implementierung mit den Referrer-APIs für die Google Play-Installation durchführen, können Sie die Akquise nicht testen, bevor sich Ihre App im Google Play Store befindet.
+>Wenn Sie die Implementierung mit den Install-Referrer-APIs von Google Play durchführen, können Sie die Akquise erst testen, wenn sich Ihre App im Google Play Store befindet.
 
 Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den **[!UICONTROL Einstellungen]**gelöscht werden. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
 
 1. Führen Sie die erforderlichen Aufgaben in [App-Akquise](/help/android/acquisition-main/acquisition.md) aus und stellen Sie sicher, dass Sie den Broadcast-Empfänger für `INSTALL_REFERRER` ordnungsgemäß implementiert haben.
 
-1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]**>**[!UICONTROL  Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. Klicken Sie in der Adobe Mobile Services-Benutzeroberfläche auf **[!UICONTROL Akquise]**>**[!UICONTROL  Marketing Links Builder]** und generieren Sie eine Akquise-Marketinglink-URL, die Google Play als Ziel für Android-Geräte festlegt.
 
    Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -68,7 +68,7 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | The server should be `c00.adobe.com`.   *`appid`*should equal the`appid`in your acquisition link. |
+   | Akquise | Der Server sollte `c00.adobe.com` sein. *`appid`*sollte der`appid`in Ihrem Akquise-Link entsprechen. |
    | analytics | Legen Sie zu Testzwecken genügend Zeit für das Referrer-Timeout fest (mindestens 60 Sekunden), um den Broadcast manuell zu senden. Sie können die ursprüngliche Timeout-Einstellung nach dem Test wiederherstellen. |
 
 1. Verbinden Sie das Gerät mit einem Computer, deinstallieren Sie die App und installieren Sie sie anschließend erneut.
