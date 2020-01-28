@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
 
 ---
@@ -16,11 +16,11 @@ source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
 
 Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für Android-SDK 4.x für die Experience Cloud-Lösungen:
 
-**16. Januar 2020: 4,18,0**
+**16. Januar 2020: 4.18.0**
 
-* Akquise - Es wurde eine neue API hinzugefügt, `Analytics.processGooglePlayInstallReferrerUrl(final String url)`um verweisende APIs für Google Play-Installation zu unterstützen.
+* Akquise: Es wurde die neue API `Analytics.processGooglePlayInstallReferrerUrl(final String url)` zur Unterstützung der Google Play-Install Referrer APIs hinzugefügt.
 
-   Weitere Informationen zu den APIs für die Installation der verweisenden Stelle finden Sie unter Verwenden von InstallBroadcast [noch? Wechseln Sie bis zum 1. März 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) zur Play Referrer API.
+   Weitere Informationen zu den Install Referrer APIs finden Sie unter [Still Using InstallBroadcast? Wechseln Sie bis zum 1. März 2020 zur Play Referrer-API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) .
 
 **20. September 2019: Version 4.17.10**
 
@@ -47,4 +47,4 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 * Besucher-ID-Dienst: Die Timeouts für das Verbinden und Lesen wurden von 2 Sekunden auf 5 Sekunden erhöht.
 
 
-Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
+Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/de_DE/whatsnew/).
