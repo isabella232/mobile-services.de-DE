@@ -2,12 +2,12 @@
 description: Versionshinweise und bekannte Probleme für iOS-SDK 4.x für Experience Cloud-Lösungen.
 seo-description: Versionshinweise und bekannte Probleme für iOS-SDK 4.x für Experience Cloud-Lösungen.
 seo-title: Versionshinweise
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Versionshinweise
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
+translation-type: tm+mt
+source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
 
 ---
 
@@ -15,6 +15,14 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 # Versionshinweise {#release-notes}
 
 Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für iOS SDK 4.x für die Experience Cloud-Lösungen:
+
+**4. Februar 2020: Version 4.19.0**
+
+* Lebenszyklus - Es wurde eine neue API, pauseCollectingLifecycleData, hinzugefügt, um die Daten zur anormalen Sitzungslänge zu verringern, die von einigen alten iOS-Geräten gemeldet wurden.
+
+**8. November 2019: Version 4.18.9**
+
+* In App Messaging - Es wurde ein Fehler behoben, durch den zwischengespeicherte oder gebündelte Bilder nicht in die Vollbildmeldungen geladen werden konnten.
 
 **20. September 2019: Version 4.18.8**
 
@@ -52,4 +60,4 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 
 * Besucher-ID-Dienst: Der `setPushIdentifier`-API-Aufruf sendet jetzt bei jedem Aufruf einen Synchronisierungsaufruf an den Besucher-ID-Dienst.
 
-Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/de_DE/whatsnew/).
+Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
