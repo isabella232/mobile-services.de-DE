@@ -2,12 +2,12 @@
 description: Hier finden Sie eine Liste der Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-description: Hier finden Sie eine Liste der Methoden, die von der iOS-Bibliothek bereitgestellt werden.
 seo-title: Konfigurationsmethoden
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Konfigurationsmethoden
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
 
 ---
 
@@ -269,6 +269,40 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
       ```objective-c
       [ADBMobile collectLifecycleDataWithAdditionalData:@{@"entryType":@"appShortcutIcon"}]; 
       ```
+
+* **pauseCollectingLifecycleData**
+
+   Verwenden Sie diese API, um die Erfassung von Lebenszyklusdaten anzuhalten. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md).
+
+   >[!IMPORTANT]
+   >
+   >In der `applicationDidEnterBackground` Delegate-Methode müssen Sie zuerst die `pauseCollectingLifecycleData` Methode aufrufen.
+   >
+   >Die API wird bereitgestellt, um das Problem auf iPhone 7/7 oder älteren Geräten mit iOS 13 zu beheben, bei denen die Metrik zur Sitzungslänge abnorm wurde. Dies ist auf einige unbekannte Änderungen zurückzuführen, die in iOS 13 vorgenommen wurden, wobei iOS nicht genügend Zeit lässt, um die Hintergrundaufgabe abzuschließen, wenn Sie die App mit einem Hintergrund erstellt haben.
+
+   * Hier finden Sie die Syntax für diese Methode:
+
+      ```objective-c
+      + (void) pauseCollectingLifecycleData;
+      ```
+
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
+
+      ```objective-c
+      - (void)applicationDidEnterBackground:(UIApplication *)application{
+          // manually stop the lifecycle of SDK
+          // important: do NOT call any track state or track action after this line
+          [ADBMobile pauseCollectingLifecycleData];   
+      
+      
+          // the following code is optional, may help to mitigate the issue a bit more. If you have other logic to run here that probably takes more than 10ms, then there is no need to add this line of code.
+          [NSThread sleepForTimeInterval:0.01];
+      
+      
+          // app's code to handle applicationDidEnterBackground
+      }
+      ```
+
 
 * **overrideConfigPath**
 
