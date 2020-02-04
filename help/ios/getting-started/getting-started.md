@@ -7,7 +7,7 @@ title: Übersicht über die ersten Schritte
 topic: Developer and implementation
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 translation-type: tm+mt
-source-git-commit: 71e11b23badfcddaa8c2e61a12197982dfd31f57
+source-git-commit: a424eb9be750e22e7130dae0d1c54a081ac475cd
 
 ---
 
@@ -25,5 +25,6 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
->[!WICHTIG}
+>[!IMPORTANT]
+>
 >Ab dem 1. April 2020 wird die UIWebView-API von Apple nicht mehr unterstützt. Um Probleme zu vermeiden, stellen Sie sicher, dass Sie v4 SDK für iOS Version 4.18.8 oder höher verwenden. Weitere Informationen zur UIWebView-API finden Sie unter [UIWebView](https://developer.apple.com/documentation/uikit/uiwebview).
