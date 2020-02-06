@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Konfigurationsmethoden
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
 
 ---
@@ -64,8 +64,8 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück:
 
    * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
-   * `ADBMobilePrivacyStatusOptOut` - werden Treffer verworfen.
-   * `ADBMobilePrivacyStatusUnknown`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. 
+   * `ADBMobilePrivacyStatusOptOut`: werden Treffer verworfen.
+   * `ADBMobilePrivacyStatusUnknown`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    * Hier finden Sie die Syntax für diese Methode:
@@ -87,7 +87,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
    Die folgenden Werte sind zulässig:
 
    * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
-   * `ADBMobilePrivacyStatusOptOut` - werden Treffer verworfen.
+   * `ADBMobilePrivacyStatusOptOut`: werden Treffer verworfen.
    * `ADBMobilePrivacyStatusUnknown`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
@@ -276,9 +276,9 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!IMPORTANT]
    >
-   >In der `applicationDidEnterBackground` Delegate-Methode müssen Sie zuerst die `pauseCollectingLifecycleData` Methode aufrufen.
+   >Bei der `applicationDidEnterBackground`-Delegierungsmethode müssen Sie zuerst die `pauseCollectingLifecycleData`-Methode aufrufen.
    >
-   >Die API wird bereitgestellt, um das Problem auf iPhone 7/7 oder älteren Geräten mit iOS 13 zu beheben, bei denen die Metrik zur Sitzungslänge abnorm wurde. Dies ist auf einige unbekannte Änderungen zurückzuführen, die in iOS 13 vorgenommen wurden, wobei iOS nicht genügend Zeit lässt, um die Hintergrundaufgabe abzuschließen, wenn Sie die App mit einem Hintergrund erstellt haben.
+   >Die API wird bereitgestellt, um das Problem auf iPhone 7/7s oder älteren Geräten mit iOS 13 zu beheben, bei dem die Metrik zur Sitzungslänge anormal wurde. Dies ist auf einige nicht bekannte Änderungen zurückzuführen, die in iOS 13 vorgenommen wurden, wobei iOS nicht genügend Zeit dafür lässt, die Hintergrundaufgabe abzuschließen, wenn Sie die App mit einem Hintergrund ausführen.
 
    * Hier finden Sie die Syntax für diese Methode:
 
