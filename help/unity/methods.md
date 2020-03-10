@@ -3,11 +3,11 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: ADBMobile.cs-Methoden
-solution: Marketing Cloud, Entwickler
-title: ADBMobile.cs methods
+solution: Marketing Cloud,Developer
+title: ADBMobile.cs-Methoden
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.CollectLifecycleData(); 
+      ADBMobile.CollectLifecycleData();
       ```
 
 * **EnableLocalNotifications (nur iOS)**
@@ -45,7 +45,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.EnableLocalNotifications(); 
+      ADBMobile.EnableLocalNotifications();
       ```
 
 * **GetDebugLogging**
@@ -83,7 +83,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 * **GetPrivacyStatus**
 
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden sofort gesendet.
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden umgehend gesendet.
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert.
 
@@ -114,7 +114,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      var userId = ADBMobile.GetUserIdentifier(); 
+      var userId = ADBMobile.GetUserIdentifier();
       ```
 
 * **GetVersion**
@@ -144,13 +144,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void KeepLifecycleSessionAlive(); 
+      public static void KeepLifecycleSessionAlive();
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.KeepLifecycleSessionAlive(); 
+      ADBMobile.KeepLifecycleSessionAlive();
       ```
 
 * **PauseCollectingLifecycleData (nur Android)**
@@ -166,12 +166,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.PauseCollectingLifecycleData(); 
+      ADBMobile.PauseCollectingLifecycleData();
       ```
 
 * **SetContext (nur Android)**
 
-   Indicates to the SDK that it should set its application context from the UnityPlayer's current activity.
+   Gibt dem SDK gegenüber an, dass der Anwendungskontext aus der aktuellen Aktivität von UnityPlayer festgelegt werden soll.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -182,7 +182,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.SetContext(); 
+      ADBMobile.SetContext();
       ```
 
 * **SetDebugLogging**
@@ -192,30 +192,30 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void SetDebugLogging (bool enabled); 
+      public static void SetDebugLogging (bool enabled);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.SetDebugLogging(true); 
+      ADBMobile.SetDebugLogging(true);
       ```
 
 * **SetPrivacyStatus**
 
    Legt den Datenschutzstatus für den aktuellen Benutzer auf „status“ fest. Die folgenden Werte sind zulässig:
 
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden sofort gesendet.
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Hits are discarded.
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden umgehend gesendet.
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void SetPrivacyStatus(ADBPrivacyStatusstatus); 
+      public static void SetPrivacyStatus(ADBPrivacyStatusstatus);
       ```
 
-   * Here is the code sample for this syntax:
+   * Im Folgenden finden Sie das Codebeispiel für diese Syntax:
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -228,16 +228,16 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void SetUserIdentifier(string userId); 
+      public static void SetUserIdentifier(string userId);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.SetUserIdentifier("myCustomUserId"); 
+      ADBMobile.SetUserIdentifier("myCustomUserId");
       ```
 
-## Analysemethoden
+## Analytics-Methoden
 
 * **GetTrackingIdentifier**
 
@@ -252,7 +252,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      var trackingId = ADBMobile.GetTrackingIdentifier(); 
+      var trackingId = ADBMobile.GetTrackingIdentifier();
       ```
 
 * **TrackState**
@@ -263,7 +263,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
+   >Dies ist der einzige Verfolgungsaufruf, bei dem die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -274,7 +274,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      var contextData = new Dictionary<string, object>); 
+      var contextData = new Dictionary<string, object>);
       contextData.Add ("user", "jim");
       ADBMobile.TrackState("title screen", contextData);
       ```
@@ -285,18 +285,18 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >Falls Code aktiv ist, während die App im Hintergrund ausgeführt wird (z. B. Datenabruf im Hintergrund), verwenden Sie stattdessen `trackActionFromBackground`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void TrackAction(string action, Dictionary<string, object> cdata); 
+      public static void TrackAction(string action, Dictionary<string, object> cdata);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.TrackAction("level gained", null); 
+      ADBMobile.TrackAction("level gained", null);
       ```
 
 * **TrackActionFromBackground (nur iOS)**
@@ -305,12 +305,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Diese Methode sollte nur in Code aufgerufen werden, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
+   >Diese Methode sollte nur in Code aufgerufen werden, der aktiv ist, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void TrackActionFromBackground(string action, Dictionary<string,object> cdata); 
+      public static void TrackActionFromBackground(string action, Dictionary<string,object> cdata);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
@@ -326,13 +326,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void TrackLocation(float latValue, float lonValue, Dictionary<string, object> cdata); 
+      public static void TrackLocation(float latValue, float lonValue, Dictionary<string, object> cdata);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.TrackLocation(28.418649, -81.581324, null); 
+      ADBMobile.TrackLocation(28.418649, -81.581324, null);
       ```
 
 * **TrackBeacon**
@@ -342,7 +342,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void TrackBeacon(int major, int minor, string uuid, ADBBeaconProximity proximity, Dictionary<string, object> cdata); 
+      public static void TrackBeacon(int major, int minor, string uuid, ADBBeaconProximity proximity, Dictionary<string, object> cdata);
       ```
 
 * **TrackingClearCurrentBeacon**
@@ -352,7 +352,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void TrackingClearCurrentBeacon(); 
+      public static void TrackingClearCurrentBeacon();
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
@@ -374,7 +374,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.TrackLifetimeValueIncrease(5, null); 
+      ADBMobile.TrackLifetimeValueIncrease(5, null);
       ```
 
 * **TrackTimedActionStart**
@@ -388,7 +388,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void TrackTimedActionStart(string action, Dictionary<string,object> cdata); 
+      public static void TrackTimedActionStart(string action, Dictionary<string,object> cdata);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
@@ -408,14 +408,14 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void TrackTimedActionUpdate(string action, Dictionary<string, object> cdata); 
+      public static void TrackTimedActionUpdate(string action, Dictionary<string, object> cdata);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      var contextData = new Dictionary<string, object>; 
-      contextData.Add("checkpoint", "1:32"); 
+      var contextData = new Dictionary<string, object>;
+      contextData.Add("checkpoint", "1:32");
          ADBMobile.TrackTimedActionUpdate("level2", contextData);
       ```
 
@@ -426,13 +426,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void TrackTimedActionEnd(string action); 
+      public static void TrackTimedActionEnd(string action);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.TrackTimedActionEnd("level2"); 
+      ADBMobile.TrackTimedActionEnd("level2");
       ```
 
 * **TrackingTimedActionExists**
@@ -442,13 +442,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static bool TrackingTimedActionExists(string action); 
+      public static bool TrackingTimedActionExists(string action);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-       var level2InProgress = ADBMobile.TrackingTimedActionExists("level2"); 
+       var level2InProgress = ADBMobile.TrackingTimedActionExists("level2");
       ```
 
 * **TrackingSendQueuedHits**
@@ -464,7 +464,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.TrackingSendQueuedHits(); 
+      ADBMobile.TrackingSendQueuedHits();
       ```
 
 * **TrackingClearQueue**
@@ -480,7 +480,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      ADBMobile.TrackingClearQueue(); 
+      ADBMobile.TrackingClearQueue();
       ```
 
 * **TrackingGetQueueSize**
@@ -508,7 +508,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static string GetMarketingCloudID(); 
+      public static string GetMarketingCloudID();
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
@@ -524,14 +524,34 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
-      public static void VisitorSyncIdentifiers(Dictionary<string, object> identifiers); 
+      public static void VisitorSyncIdentifiers(Dictionary<string, object> identifiers);
       ```
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
-      var ids = new Dictionary<string, object> (); 
-      ids.Add ("player1", "jimbob"); 
+      var ids = new Dictionary<string, object> ();
+      ids.Add ("player1", "jimbob");
       ADBMobile.VisitorSyncIdentifiers(ids);
       ```
 
+## Akquisemethoden
+
+* **ProcessGooglePlayInstallReferrerUrl** *(nur Android)*
+
+   Geben Sie die Werber-URL, die von einem Aufruf an die Google Play Install Werber API zurückgegeben wird, an diese Methode weiter.
+
+   * Hier finden Sie die Syntax für diese Methode:
+
+      ```java
+      public static void ProcessGooglePlayInstallReferrerUrl(string referrerUrl);
+      ```
+
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
+
+      ```java
+      // in actual implementation, the referrer url should be retrieved
+      // from the Google Play Install Referrer API.
+      var myReferrer = "utm_source=unityTestSource&utm_content=unityTestContent&utm_campaign=unityTestCampaign";
+      ADBMobile.ProcessGooglePlayInstallReferrerUrl(myReferrer);
+      ```
