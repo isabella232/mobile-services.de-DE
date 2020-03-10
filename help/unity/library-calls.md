@@ -2,24 +2,20 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: Making calls to the library
-solution: Marketing Cloud, Entwickler
+seo-title: Aufrufen der Bibliothek
+solution: Marketing Cloud,Developer
 title: Aufrufen der Bibliothek
 uuid: 74c30379-6cdf-4318-9db8-e14fb63aa18a
 translation-type: tm+mt
-source-git-commit: 7cb277652eaeedff7253a4f3c42208ceaf78acb7
+source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
 
 
 # Making calls to the library{#making-calls-to-the-library}
 
-When you want to make calls to the plug-in from your scripts, import the namespace:
+Wenn Sie das Plug-in über Ihre Skripte aufrufen möchten, importieren Sie den Namensraum:
 
 * **C#:** using `com.adobe.mobile;`
 
-* **JavaScript:** import `com.adobe.mobile;`
-
-* **boo:** import `com.adobe.mobile;`
-
-Nachdem Sie den Namespace importiert haben, können Sie über die statischen Methoden der ADBMobile-Klasse direkt Aufrufe an das Plug-In durchführen.
+Nach dem Importieren des Namensraums können Sie über die statischen Methoden der ADBMobile-Klasse direkt an das Plug-in aufrufen.
