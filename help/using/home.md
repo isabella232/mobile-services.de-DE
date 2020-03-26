@@ -6,7 +6,7 @@ solution: Marketing Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
-source-git-commit: 6cb8c0a12c39287209e9f0060ace179ab563cd61
+source-git-commit: 322fdab0ff5eeb54fdbb04502508849e86d05a50
 
 ---
 
@@ -56,7 +56,7 @@ Hier einige beliebte Themen in diesem Handbuch:
 Im Folgenden finden Sie einige Links zur Unterstützung von Entwicklern:
 
 * [Herunterladen von mobilen SDK und Werkzeugen](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
-* [Entwickler](https://marketing.adobe.com/resources/help/en_US/reference/developer.html)
+* [Entwickler](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)
 
 ## Community-Ressourcen
 
@@ -74,16 +74,16 @@ Zusätzlich zum Benutzerhandbuch können Sie die Software Development Kits (SDK)
 
 Native Bibliotheken stehen für die folgenden Plattformen zur Verfügung:
 
-* [Android-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-* [iOS-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
-* [Unity Plug-in for iOS and Android 4.x SDK](https://docs.adobe.com/content/help/en/mobile-services/unity/get-started.html)
-* [Xamarin-Komponenten für Experience Cloud-Lösungen 4.x-SDK](https://docs.adobe.com/content/help/en/mobile-services/xamarin/get-started.html)
-* [Universelles Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/en/mobile-services/universal-windows/overview.html)
-* [Windows 8.1 Universal App Store](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/overview.html)
+* [Android-SDK 4.x für Experience Cloud-Lösungen](/help/android/overview.md)
+* [iOS-SDK 4.x für Experience Cloud-Lösungen](/help/ios/overview.md)
+* [Unity Plug-in for iOS and Android 4.x SDK](/help/unity/get-started.md)
+* [Xamarin-Komponenten für Experience Cloud-Lösungen 4.x-SDK](/help/xamarin/get-started.md)
+* [Universelles Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen](/help/universal-windows/overview.md)
+* [Windows 8.1 Universal App Store](/help/windows-appstore/overview.md)
 
-   * [SDK für Windows Visual Studio-Erweiterungen für Experience Cloud-Lösungen 4.x](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/win-vse-4x.html)
+   * [SDK für Windows Visual Studio-Erweiterungen für Experience Cloud-Lösungen 4.x](/help/windows-appstore/extensions/win-vse-4x.md)
 
-* [BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/en/mobile-services/blackberry/overview.html)
+* [BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen](/help/blackberry/overview.md)
 
 ## Webinar: Erste Schritte mit Adobe Mobile {#section_420EA66F39FE44B9B531ADF5F5465543}
 
