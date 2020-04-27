@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
+translation-type: tm+mt
+source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
 
@@ -16,7 +16,16 @@ source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
 
 Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für iOS SDK 4.x für die Experience Cloud-Lösungen:
 
-**4. Februar 2020: Version 4.19.0**
+**24. März 2020: Version 4.19.2**
+
+* Allgemein - Es wurden einige Lecks im Code der Zielgruppe behoben.
+
+**12. März 2020: Version 4.19.1**
+
+* Allgemein - Es wurde ein möglicher Absturz behoben, der auftrat, wenn Swift-enums in Kontextdaten für Verfolgungsaufrufe aufgenommen wurden.
+* Zielgruppe - Zielgruppe Session-ID wird jetzt als Kontextdatenparameter &quot;a.Zielgruppe.sessionId&quot;im internen Analytics für Zielgruppen-Hit hinzugefügt, der an Adobe Analytics gesendet wird.
+
+**&amp;#x200B;4. Februar 2020: Version 4.19.0**
 
 * Lebenszyklus: Es wurde die neue API pauseCollectingLifecycleData hinzugefügt, um die von einigen alten iOS-Geräten gemeldeten anormalen Sitzungslängen zu verringern.
 
