@@ -1,14 +1,14 @@
 ---
 description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Konfigurationsmethoden
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Konfigurationsmethoden
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -31,8 +31,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
       setContentView(R.layout.main);
       Config.setContext(this.getApplicationContext());
     }
-   ````
-
+   ```
 
 ## SDK-Einstellungen (Config-Klasse) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -84,7 +83,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
    * Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
 
-      Dies sind die Werte zum Datenschutzstatus:
+      Die folgenden Werte für den Datenschutzstatus:
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden sofort gesendet.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
@@ -273,7 +272,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**Version 4.2 oder höher**) Legt das kleine Symbol fest, das für die vom SDK erstellten Benachrichtigungen verwendet wird. Dieses Symbol wird in der Statusleiste angezeigt. Es wird als sekundäres Bild angezeigt, wenn der Benutzer die vollständige Benachrichtigung im Notification Center öffnet.
+   * (**Version 4.2 oder höher**) Legt das kleine Symbol fest, das für Benachrichtigungen verwendet wird, die vom SDK erstellt wurden. Dieses Symbol wird in der Statusleiste angezeigt und ist das sekundäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungscenter sieht.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
@@ -288,7 +287,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**Version 4.2 oder höher**) Legt das große Symbol fest, das für die vom SDK erstellten Benachrichtigungen verwendet wird. Dieses Symbol wird als primäres Bild angezeigt, wenn der Benutzer die vollständige Benachrichtigung im Notification Center öffnet.
+   * (**Version 4.2 oder höher**) Legt das große Symbol fest, das für Benachrichtigungen verwendet wird, die vom SDK erstellt wurden. Dieses Symbol wird als primäres Bild angezeigt, wenn der Benutzer die vollständige Benachrichtigung im Notification Center öffnet.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
@@ -303,7 +302,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**Version 4.2 oder höher**) Ermöglicht Ihnen das Laden einer anderen ADBMobile-JSON-Konfigurationsdatei, wenn die Anwendung startet. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
+   * (**Version 4.2 oder höher**) Ermöglicht das Laden einer anderen ADBMobile-JSON-Konfigurationsdatei, wenn die Anwendung Beginn wird. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
