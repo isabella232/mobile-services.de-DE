@@ -1,14 +1,14 @@
 ---
 description: Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek und Erfassen von Lebenszyklusmetriken, wie z. B. Starts, Upgrades, Sitzungen, erreichte Benutzer usw.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek und Erfassen von Lebenszyklusmetriken, wie z. B. Starts, Upgrades, Sitzungen, erreichte Benutzer usw.
 seo-title: Grundlegende Implementierung und Lebenszyklus
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: ht
-source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
+translation-type: tm+mt
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -23,7 +23,7 @@ Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek un
 >
 >Um das SDK herunterzuladen, müssen Sie Android 2.2 oder höher verwenden.
 
-1. Führen Sie die Schritte in den folgenden Abschnitten aus, um eine Entwicklungsberichtssuite einzurichten und eine vorinstallierte Version der Konfigurationsdatei herunterzuladen:
+1. Führen Sie die Schritte in den folgenden Abschnitten aus, um eine Entwicklungs-Report Suite einzurichten und eine vorausgefüllte Version der Konfigurationsdatei herunterzuladen:
 
    * [Report Suite erstellen](/help/android/getting-started/requirements.md)
    * [SDK herunterladen](/help/android/getting-started/requirements.md)
@@ -48,7 +48,7 @@ So fügen Sie das SDK und die Konfigurationsdatei zu Ihrem Projekt hinzu:
 1. Klicken Sie im Bereich „Project Navigation“ (Projektnavigation) mit der rechten Maustaste auf das Projekt.
 1. Wählen Sie **[!UICONTROL Moduleinstellungen öffnen]**.
 1. Wählen Sie unter **[!UICONTROL Projekteinstellungen]** die Option **[!UICONTROL Bibliotheken]**.
-1. Klicken Sie auf **[!UICONTROL +]**, um eine neue Bibliothek hinzuzufügen.
+1. Click the **[!UICONTROL +]** icon to add a new library.
 1. Wählen Sie **[!UICONTROL Java]** und navigieren Sie zur Datei `adobeMobileLibrary.jar`.
 1. Wählen Sie die Module aus, in denen Sie die Mobilbibliothek verwenden möchten.
 1. Klicken Sie auf **[!UICONTROL Anwenden]** und anschließend auf **[!UICONTROL OK]**, um das Fenster Moduleinstellungen zu schließen.
@@ -59,10 +59,10 @@ So fügen Sie das SDK und die Konfigurationsdatei zu Ihrem Projekt hinzu:
 
 1. Fügen Sie die Datei `ADBMobileConfig.json` in den Ordner `assets` Ihres Projekts ein.
 1. Klicken Sie in **[!UICONTROL Eclipse IDE]** mit der rechten Maustaste auf den Projektnamen.
-1. Klicken Sie auf **[!UICONTROL Pfad aufbauen]** &gt; **[!UICONTROL Externe Archive hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Pfad aufbauen]** > **[!UICONTROL Externe Archive hinzufügen]**.
 1. Select `adobeMobileLibrary.jar`.
 1. Klicken Sie auf **[!UICONTROL Öffnen]**.
-1. Klicken Sie erneut mit der rechten Maustaste auf das Projekt und wählen Sie dann **[!UICONTROL Pfad aufbauen]** &gt; **[!UICONTROL Pfadaufbau konfigurieren]** aus.
+1. Right-click the project again and select **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
 1. Stellen Sie sicher, dass auf der Registerkarte **[!UICONTROL Sortieren und exportieren]** **`adobeMobileLibrary.jar`** ausgewählt ist.
 
 ## App-Berechtigungen hinzufügen {#section_2EAF73ABF6424647B219A63B33B02CD5}
@@ -90,7 +90,7 @@ Der folgende Code sollte der `onCreate`-Methode Ihrer Hauptaktivität hinzugefü
      setContentView(R.layout.main);
      Config.setContext(this.getApplicationContext());
    }
-````
+```
 
 ## Lebenszyklusmetriken implementieren {#section_BA686C09021F474AADDE8690BBB910F7}
 
