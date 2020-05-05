@@ -1,43 +1,43 @@
 ---
-description: Mit dem BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen lassen sich native BlackBerry 10-Anwendungen mithilfe von Adobe Analytics messen.
-seo-description: Mit dem BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen lassen sich native BlackBerry 10-Anwendungen mithilfe von Adobe Analytics messen
+description: Mit BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen können Sie native BlackBerry 10-Anwendungen mit Adobe Analytics messen.
+seo-description: Mit BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen können Sie native BlackBerry 10-Anwendungen mit Adobe Analytics messen
 seo-title: BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen
-title: Mit BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen
+title: BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen
 uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
 translation-type: tm+mt
-source-git-commit: 8f71ee66b364d2c484464e51775c971734381b86
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
-# Mit BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen {#blackberry-sdk-x-for-experience-cloud-solutions}
+# BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen {#blackberry-sdk-x-for-experience-cloud-solutions}
 
-Mit dem BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen lassen sich native BlackBerry 10-Anwendungen mithilfe von Adobe Analytics messen.
+Mit BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen können Sie native BlackBerry 10-Anwendungen mit Adobe Analytics messen.
 
 ## Erste Schritte {#section_DB6175C7BD5C41E3A7D5DB175C5E01C7}
 
-To get started with the BlackBerry SDKs:
+Erste Schritte mit den BlackBerry SDKs:
 
-1. Schließen Sie die Aufgaben in [Developer Quick Start](/help/blackberry/dev-qs.md) ab, um die SDKs zu Ihrem Projekt hinzuzufügen.
-1. Überprüfen Sie die  ADBMobile Class and Method Reference.[](/help/blackberry/methods.md)
-1. Implement [Analytics](/help/blackberry/analytics.md).
+1. Um die SDKs zu Ihrem Projekt hinzuzufügen, führen Sie die Aufgaben im [Developer Quick Beginn](/help/blackberry/dev-qs.md)aus.
+1. Überprüfen Sie die [ADBMobile-Klassen- und Methodenreferenz](/help/blackberry/methods.md).
+1. Implementieren Sie [Analytics](/help/blackberry/analytics.md).
 
 ## Supported versions {#section_45978BF5C62E4986AAB7FFD96402BF2D}
 
 BlackBerry 10 oder höher.
 
-## New features in version 4 {#section_58E60BCFD4AE49B194A49F6AA3D37DAC}
+## Neue Funktionen in Version 4 {#section_58E60BCFD4AE49B194A49F6AA3D37DAC}
 
-Neben deutlichen Leistungsverbesserungen sind in Version 4 die folgenden neuen Funktionen verfügbar:
+Zusätzlich zu den erheblichen Leistungssteigerungen bietet Version 4 die folgenden neuen Funktionen:
 
 | Funktion | Beschreibung |
 |--- |--- |
-| Opt-in/Opt-out | Analytics kann schnell aktiviert oder deaktiviert werden. |
+| Anmelden/Abwählen | Aktivieren und deaktivieren Sie schnell die Analyse. |
 
-Weitere Informationen zu den Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud Release Notes](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
+For more information about the release notes for all solutions, see [Adobe Experience Cloud Release Notes](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
 
 ## Bloodhound verwenden
 
 >[!IMPORTANT]
 >
->As of **April 30, 2017**, Adobe Bloodhound has been sunset. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
+>Am **30. April 2017** wurde die Entwicklung von Adobe Bloodhound eingestellt. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
