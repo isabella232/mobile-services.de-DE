@@ -1,14 +1,14 @@
 ---
 description: Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
 seo-title: Identity-Dienst-Methoden für Adobe Experience Platform
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Identity-Dienst-Methoden für Adobe Experience Platform
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: ht
-source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -23,7 +23,7 @@ Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `visitor` be
 
 * **public static String appendToURL(final String URL)**
 
-   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Für diese Methode müssen Sie Mobile-SDK 4.12 (oder höher) verwenden. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://marketing.adobe.com/resources/help/de_DE/mcvid/mcvid-appendvisitorid.html).
+   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Sie müssen über Mobile SDK 4.12+ verfügen, um diese Methode verwenden zu können. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
