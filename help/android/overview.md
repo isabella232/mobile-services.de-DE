@@ -1,14 +1,14 @@
 ---
 description: Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messung nativer Android-Anwendungen, die Bereitstellung gezielter Inhalte in Ihrer App und die Erfassung und Nutzung von Zielgruppendaten über Zielgruppen-Management.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messung nativer Android-Anwendungen, die Bereitstellung gezielter Inhalte in Ihrer App und die Erfassung und Nutzung von Zielgruppendaten über Zielgruppen-Management.
 seo-title: Android-SDK 4.x für Experience Cloud-Lösungen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Android-SDK 4.x für Experience Cloud-Lösungen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -19,7 +19,7 @@ Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messu
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -36,12 +36,12 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 Die SDK unterstützen die folgenden Android-Versionen:
 
-* Version 4.6.0 oder früher unterstützt Android 2.2 (API 8) – Android 5.1.1 (API 22)
-* Version 4.6.1 oder später unterstützt Android 2.3 (API 9) oder später
+* Version 4.6.0 oder früher unterstützt Android 2.2 (API 8) - Android 5.1.1 (API 22)
+* Version 4.6.1 oder höher unterstützt Android 2.3(API 9) oder höher
 
-Berücksichtigen Sie Folgendes:
+Beachten Sie Folgendes:
 
-* Ab Version 4.2 werden Treffer mithilfe der HTTP-POST-Methode gesendet.
+* In Version 4.2 und höher werden alle Treffer jetzt mit HTTP POST gesendet.
 
    Dies hat keine Auswirkung auf die erfassten oder gemeldeten Daten. Sie müssen jedoch eine Paketanalyse durchführen, die das Untersuchen von POST-Daten zum Anzeigen von Treffern unterstützt.
 
@@ -49,11 +49,11 @@ Berücksichtigen Sie Folgendes:
 
 ## Adobe Mobile-Benutzerdokumentation {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services bietet eine Benutzeroberfläche, die mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert. Lesen Sie [Adobe Mobile Services](https://marketing.adobe.com/resources/help/de_DE/mobile/), um weitere Informationen zur Mobile Services-Benutzeroberfläche zu erhalten und um die Benutzerdokumentation zu lesen.
+Adobe Mobile Services bietet eine Benutzeroberfläche, die mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert. Lesen Sie [Adobe Mobile Services](https://docs.adobe.com/content/help/de-DE/mobile-services/using/home.html), um weitere Informationen zur Mobile Services-Benutzeroberfläche zu erhalten und um die Benutzerdokumentation zu lesen.
 
 ## Versionshinweise {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Neueste Informationen zu Experience Cloud-Versionen finden Sie unter [Experience Cloud-Versionshinweise](https://marketing.adobe.com/resources/help/de_DE/whatsnew/).
+Neueste Informationen zu Experience Cloud-Versionen finden Sie unter [Experience Cloud-Versionshinweise](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
 
 ## Bloodhound verwenden
 
