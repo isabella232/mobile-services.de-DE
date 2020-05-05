@@ -1,13 +1,13 @@
 ---
-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
-seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
+description: Anhand dieser Informationen können Sie die Konfigurationsdatei ADBMobile.json verwenden.
+seo-description: Anhand dieser Informationen können Sie die Konfigurationsdatei ADBMobile.json verwenden.
 seo-title: ADBMobile JSON-Konfiguration
 solution: Marketing Cloud,Analytics
 title: ADBMobile JSON-Konfiguration
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -28,7 +28,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Aktiviert die Mobile App-Akquise.
 
-   Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. Weitere Informationen finden Sie unten unter *referrerTimeout*.
+   Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. For more information, see *referrerTimeout* below.
 
    * `server`: Akquiseserver, der beim ersten Start für einen Akquise-Referrer überprüft wird.
    * `appid`: Generierte ID, die diese App auf dem Akquiseserver eindeutig identifiziert.
@@ -44,15 +44,15 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Aktiviert/Deaktiviert die Möglichkeit, dass das Adobe-SDK Treffer mit Sitzungsinformationen zurückdatiert.
 
-   Aktuell umfassen Sitzungsinfotreffer Abstürze und Sitzungsdauer und können aktiviert und deaktiviert werden.
+   Treffer mit Sitzungsinformationen bestehen derzeit aus Abstürzen und Sitzungslängen und können aktiviert oder deaktiviert werden.
 
    * Wenn Sie den Wert auf `false` einstellen, werden die Treffer **deaktiviert**.
 
-      Wie schon in den Versionen vor Version 4.1 fasst das SDK die Sitzungsinformation der vorherigen Sitzung jetzt wieder mit dem ersten Treffer der nachfolgenden Sitzung zusammen. Das Adobe-SDK verbindet die Sitzungsinformation außerdem mit der aktuellen Laufzeit. Somit entstehen keine überhöhten Besuchszahlen. Die Anzahl der Aufrufe sinkt sofort, da überhöhte Besuchszahlen wegfallen.
+      Das SDK kehrt zum Verhalten vor 4.1 zurück, bei dem die Sitzungsinformationen für die vorherige Sitzung mit dem ersten Hit der nachfolgenden Sitzung zusammengefasst wurden. Das Adobe-SDK fügt die Sitzungsinformationen auch an den aktuellen Lebenszyklus an, wodurch keine erhöhten Besuche erstellt werden. Da keine erhöhten Besuche mehr erstellt werden, wird eine sofortige Reduzierung der Besuchszahlen erzielt.
 
    * Wenn Sie keinen Wert einstellen, lautet der Standardwert `true` und Treffer werden **aktiviert**.
 
-      Wenn die Treffer aktiviert sind, datiert das Adobe-SDK den Sitzungsinfotreffer auf eine Sekunde nach dem endgültigen Treffer der vorherigen Sitzung zurück. Das bedeutet, dass die Daten zu Abstürzen und zur Sitzung mit dem korrekten Datum korrelieren, an dem sie stattgefunden haben. Eine Nebenwirkung besteht darin, dass das SDK ggf. einen Aufruf für den zurückdatierten Treffer erstellt. Bei jedem Neustart der App wird ein Treffer zurückdatiert.
+      Wenn die Treffer aktiviert sind, rückt das Adobe SDK den Treffer für Sitzungsinformationen auf 1 Sekunde nach dem letzten Treffer in der vorherigen Sitzung zurück. Das bedeutet, dass Absturz- und Sitzungsdaten mit dem korrekten Datum, an dem sie aufgetreten sind, korrelieren. Eine Nebenwirkung ist, dass das SDK einen Besuch für den rückdatierten Treffer erstellen könnte. Bei jedem Neustart der App wird ein Treffer zurückdatiert.
 
    * Mindestens SDK-Version 4.6
    >[!IMPORTANT]
@@ -70,7 +70,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **charset**
 
-   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://marketing.adobe.com/resources/help/de_DE/sc/implement/charset.html).
+   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
 
    * Mindestens SDK-Version 4.0
 
@@ -109,15 +109,15 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **lifecycleTimeout**
 
-   Der Standardwert beträgt 300 Sekunden.
+   Der Standardwert ist 300 Sekunden.
 
-   Legt die Dauer in Sekunden fest, die zwischen verschiedenen Startvorgängen einer App verstreichen muss, damit ein Startvorgang als neue Sitzung gilt. Dieses Zeitlimit wird auch angewendet, wenn eine Anwendung in den Hintergrund verschoben und später reaktiviert wird. Die Dauer, für welche die App im Hintergrund ausgeführt wird, wird nicht in die Sitzungsdauer eingerechnet.
+   Gibt die Dauer in Sekunden an, die zwischen dem Start der App, aber vor dem Start der App als neue Sitzung verstreichen muss. Dieser Timeout gilt auch, wenn Ihre Anwendung in den Hintergrund gesendet und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund verbringt, ist nicht in der Sitzungslänge enthalten.
 
    * Mindestens SDK-Version 4.0
 
 * **messages**
 
-   Wird automatisch von Adobe Mobile Services generiert, definiert die Einstellungen für In-App-Nachrichten. Weitere Informationen finden Sie im Abschnitt *Nachrichtenbeschreibung*.
+   Wird automatisch von Adobe Mobile Services generiert und definiert die Einstellungen für In-App-Nachrichten. Weitere Informationen finden Sie im Abschnitt *Messages Description* .
 
    * Mindestens SDK-Version 4.2
 
@@ -187,13 +187,13 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
       Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
-      Hierdurch wird nur der anfängliche Wert festgelegt. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird. Der Standardwert lautet `optedin`.
+      Dadurch wird nur der Ausgangswert festgelegt. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird. Der Standardwert lautet `optedin`.
 
    * Mindestens SDK-Version 4.0
 
 * **referrerTimeout**
 
-   Anzahl der Sekunden, die das SDK beim ersten Start auf Akquise-Referrer-Daten wartet, bevor ein Timeout verursacht wird. Wenn Sie Akquise nutzen, empfehlen wir ein Timeout von 5 Sekunden.
+   Anzahl der Sekunden, die das SDK beim ersten Start auf Akquise-Werber-Daten wartet, bevor der Timeout erfolgt. Wenn Sie Akquise verwenden, empfehlen wir einen 5-Sekunden-Timeout.
 
    >[!IMPORTANT]
    >
@@ -213,7 +213,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **rsids**
 
-   Mindestens eine Report Suite zum Empfang der Analytics-Daten. Verschiedene Report Suite-IDs müssen durch Kommas getrennt und ohne Leerzeichen zwischen den einzelnen Suites angegeben werden.
+   Eine oder mehrere Report Suites zum Empfangen von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommas getrennt werden, wobei kein Leerzeichen dazwischen steht.
 
    ```js
    "rsids": "rsid"
@@ -343,58 +343,56 @@ Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 
 ## Nachrichtenbeschreibung {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Der Nachrichtenknoten wird automatisch von Adobe Mobile Services erstellt und muss für gewöhnlich nicht manuell geändert werden. Im Folgenden finden Sie Beschreibungen zur Problembehandlung:
+Der Node &quot;message&quot;wird automatisch von Adobe Mobile Services generiert und muss in der Regel nicht manuell geändert werden. Die folgende Beschreibung dient zur Fehlerbehebung:
 
-* „messageId“
+* &quot;messageId&quot;
 
-   * generierte ID, erforderlich
+   * Generierte ID, erforderlich
 
-* „template“
+* &quot;bearbeiten&quot;
 
-   * „alert“, „fullscreen“ oder „local“
+   * &quot;alert&quot;, &quot;fullscreen&quot;oder &quot;local&quot;
    * erforderlich
 
-* „payload“
+* &quot;payload&quot;
 
-   * „html“
+   * &quot;html&quot;
 
-      * nur Vollbildvorlage, erforderlich
-      * Nachrichtendefinition durch HTML
-   * „image“
-
-      * nur Vollbild, optional
-      * URL des Bildes, das als Vollbild verwendet werden soll
-   * „altImage“
+      * Nur Vollbild-Vorlage erforderlich
+      * html Definieren der Nachricht
+   * &quot;Bild&quot;
 
       * nur Vollbild, optional
-      * Name des Bundle-Bildes, das verwendet werden soll, wenn die in
+      * URL zu dem Bild, das für ein Vollbild-Bild verwendet werden soll
+   * &quot;altImage&quot;
+
+      * nur Vollbild, optional
+      * Name des gebündelten Bildes, das verwendet werden soll, wenn die URL in
          `image` angegebene URL nicht erreichbar ist
-   * „title“
+   * &quot;title&quot;
 
       * Vollbild und Warnhinweis, erforderlich
-      * Titeltext für eine Vollbildnachricht oder einen Warnhinweis
-   * „content“
+      * Titeltext für einen Vollbild- oder Warnhinweis
+   * &quot;content&quot;
 
       * Warnhinweis und lokale Benachrichtigung, erforderlich
-      * Text für eine Alarmnachricht oder eine lokale Benachrichtigung
-   * „confirm“
+      * Untertext für eine Warnmeldung oder Benachrichtigungstext für eine lokale Benachrichtigung
+   * &quot;verify&quot;
 
-      * Warnhinweis, optional
-      * Für Schaltfläche „Bestätigen“ verwendeter Text
-   * „cancel“
+      * alert, optional
+      * Text, der in der Schaltfläche &quot;Bestätigen&quot;verwendet wird
+   * &quot;cancel&quot;
 
-      * Warnhinweis, erforderlich
-      * Für Schaltfläche „Abbrechen“ verwendeter Text
+      * Warnung, erforderlich
+      * Text, der in der Schaltfläche &quot;Abbrechen&quot;verwendet wird
    * „url“
 
-      * Warnhinweis, optional
-      * URL, die beim Klicken der Schaltfläche „Bestätigen“ aufgerufen wird
-   * „wait“
+      * alert, optional
+      * URL-Aktion, die geladen wird, wenn auf die Schaltfläche &quot;Bestätigen&quot;geklickt wird
+   * &quot;wait&quot;
 
-      * lokale Benachrichtigung, erforderlich
-      * Zeit (in Sekunden), die zwischen Auslösungskriterium und Anzeige der lokalen Benachrichtigung gewartet wird
-
-
+      * lokale Benachrichtigung erforderlich
+      * Wartezeit (in Sekunden) zum Posten der lokalen Benachrichtigung nach Erfüllung der Kriterien
 
 
 
@@ -402,24 +400,26 @@ Der Nachrichtenknoten wird automatisch von Adobe Mobile Services erstellt und mu
 
 
 
-* „showOffline“
 
-   * „true“ oder „false“
-   * Standard ist „false“
 
-* „showRule“
+* &quot;showOffline&quot;
 
-   * „always“, „once“ oder „untilClick“
+   * true oder false
+   * default ist false
+
+* &quot;showRule&quot;
+
+   * &quot;always&quot;, &quot;once&quot;oder &quot;solangeClick&quot;
    * erforderlich
 
-* „endDate“
+* &quot;endDate&quot;
 
-   * Anzahl der Sekunden seit 1. Januar 1970
+   * Anzahl der Sekunden seit dem 1. Januar 1970
    * Standardwert ist „2524730400“
 
-* „startDate“
+* &quot;startDate&quot;
 
-   * Anzahl der Sekunden seit 1. Januar 1970
+   * Anzahl der Sekunden seit dem 1. Januar 1970
    * Standardwert ist „0“
 
 * „audiences“
@@ -434,24 +434,24 @@ Der Nachrichtenknoten wird automatisch von Adobe Mobile Services erstellt und mu
 
       Typ des Matchers, der für den Vergleich verwendet wird:
 
-      * eq = ist gleich
-      * ne = ist nicht gleich
+      * eq = gleich
+      * ne = nicht gleich
       * co = enthält
       * nc = enthält nicht
-      * sw = beginnt mit
+      * sw = Beginn mit
       * ew = endet mit
       * ex = vorhanden
-      * nx = nicht vorhanden
+      * nx = ist nicht vorhanden
       * lt = kleiner als
-      * le = kleiner/gleich
+      * le = kleiner als oder gleich
       * gt = größer als
-      * ge = größer/gleich
+      * ge = größer als oder gleich
    * „values“
 
       Eine Gruppe von Werten, die mit dem Wert der Variablen verglichen werden, die hier benannt sind:
 
-      * „key“
-      * definierten Variablen durchzuführen; mithilfe des Zuordnungstyps aus
+      * key
+      * mit dem Übereinstimmungstyp in
       * „matches“
 
 
