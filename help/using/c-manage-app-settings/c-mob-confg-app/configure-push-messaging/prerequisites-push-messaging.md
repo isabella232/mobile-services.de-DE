@@ -3,12 +3,12 @@ description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachric
 keywords: mobile
 seo-description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachrichten in Apps konfigurieren.
 seo-title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
-topic: Metriken
+topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
-source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -39,9 +39,9 @@ Weitere Informationen finden Sie unter folgenden Themen:
 
 >[!IMPORTANT]
 >
->Um die Funktion für Push-Dienste zu verwenden, müssen sich Benutzer mit ihrer Adobe ID beim Mobile-Core-Service anmelden und ihr Analytics-Konto muss mit ihren Adobe IDs verknüpft sein. Die Funktion für Push-Dienste ist nicht verfügbar, wenn sich die Benutzer über ihre bestehenden Adobe Analytics-Konten anmelden.
+>Um die Funktion für Push-Dienste zu verwenden, müssen sich Benutzer mit ihrer Adobe ID beim Mobile-Core-Service anmelden und ihr Analytics-Konto muss mit ihren Adobe IDs verknüpft sein. Die Funktion für Push-Dienste ist nicht verfügbar, wenn sich Benutzer mit ihren vorhandenen Adobe Analytics-Konten anmelden.
 
-Wenn Benutzer nicht über Adobe IDs verfügen, führen Sie folgende Schritte durch:
+Wenn Benutzer keine Adobe IDs haben, führen Sie die folgenden Schritte aus:
 
 1. (**Experience Cloud-Administrator**) Einladen der Benutzer zur Experience Cloud.
 
@@ -65,7 +65,7 @@ Jeder Benutzer muss das Analytics-Konto innerhalb der Experience Cloud-Organisat
 
    Die Adobe ID ist jetzt mit Ihrem Analytics-Konto, -Unternehmen und den zugehörigen Anmeldedaten verknüpft.
 
-Weitere Informationen finden Sie unter [Fehlerbehebung bei der Kontoverknüpfung](https://marketing.adobe.com/resources/help/de_DE/mcloud/organizations.html).
+Weitere Informationen finden Sie unter [Fehlerbehebung bei der Kontoverknüpfung](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/organizations.html).
 
 ## Push-Dienste und den SDK-ID-Dienst in der Mobile-Benutzeroberfläche konfigurieren
 
@@ -73,22 +73,22 @@ Bevor Sie den ID-Dienst für Ihre App aktivieren, ist der Abschnitt **[!UICONTRO
 
 >[!IMPORTANT]: Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern und die Push-Dienste zu aktualisieren.
 >
->Sie können pro Report Suite eine Appstore-App für Apple und eine für Google konfigurieren. Wenn Sie verschiedene Apps benötigen, z. B. eine für die Produktions- und eine andere für die Entwicklungsumgebung, richten Sie eine neue Appstore-App und eine neue Report Suite für jede Umgebung ein.
+>Sie können in jeder Report Suite eine App für Apple und eine für Google konfigurieren. Wenn Sie zusätzliche Apps benötigen, z. B. eine für eine Produktions-Umgebung und eine für eine dev-Umgebung, richten Sie für jede Umgebung eine neue App für den App Store und eine neue Report Suite ein.
 
-* **Apple:** Ziehen Sie Ihren privaten Schlüssel und/oder Ihr Zertifikat per Drag and Drop hierher. Wenn der private Schlüssel passwortverschlüsselt ist, geben Sie das entsprechende Passwort ein.
+* Ziehen Sie bei **Apple** Ihren privaten Schlüssel und/oder Ihr Zertifikat per Drag &amp; Drop. Wenn Ihr privater Schlüssel kennwortverschlüsselt ist, geben Sie das Kennwort ein.
 
    * **Privater Schlüssel:** Ziehen Sie die Datei mit dem privaten Schlüssel per Drag and Drop in das Feld.
 
       Sie können auch auf **[!UICONTROL Durchsuchen]** klicken und die Datei auswählen. Dieses Feld zeigt den privaten Schlüssel. Das Zertifikat kann ebenfalls in dieser Datei enthalten sein (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
 
-   * **Kennwort für privaten Schlüssel:** Wenn Ihr privater Schlüssel verschlüsselt ist, geben Sie das Passwort ein.
+   * Geben Sie für das Kennwort **für den** privaten Schlüssel das Kennwort ein, wenn die Datei mit dem privaten Schlüssel verschlüsselt ist.
 
       (Bedingt) **Zertifikat:** Wenn noch kein Zertifikat aus der Schlüsseldatei vorhanden ist, ziehen Sie die Zertifikatsdatei in das Feld. Sie können auch auf **[!UICONTROL Durchsuchen]** klicken und die Datei auswählen. Dieses Feld ist kein Pflichtfeld, falls die Datei mit privatem Schlüssel auch das Zertifikat enthält (`.cert`, `.cer`, `.crt`, `.pem`).
 
 * **Google:** Geben Sie den API-Schlüssel für die App an.
 
-   Klicken Sie auf **[!UICONTROL Testen]**, um zu überprüfen, ob App und Mobile Services richtig konfiguriert sind. Diese Option ist nützlich zum Debugging und zur Fehlerbehebung.
+   Klicken Sie auf **[!UICONTROL Testen]**, um zu überprüfen, ob App und Mobile Services richtig konfiguriert sind. Diese Option ist nützlich für das Debugging und die Fehlerbehebung.
 
-   Geben Sie die Push-Token des Geräts ein, an die Sie die Nachricht senden möchten. Sie können die Nachricht an mehrere Geräte senden, indem Sie Token in einer durch Kommata getrennten Liste angeben.
+   Geben Sie die Push-Token des Geräts ein, die die Nachricht senden sollen. Sie können die Nachricht an mehrere Geräte senden, indem Sie Token in einer durch Kommata getrennten Liste angeben.
 
    ![Push-Testnachricht](assets/push_test_list.png)
