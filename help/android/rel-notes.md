@@ -1,13 +1,13 @@
 ---
-description: Versionshinweise und bekannte Probleme bei Android SDK 4.x für Experience Cloud-Lösungen.
-seo-description: Versionshinweise und bekannte Probleme bei Android SDK 4.x für Experience Cloud-Lösungen.
+description: Versionshinweise und bekannte Probleme mit Android SDK 4.x für Experience Cloud-Lösungen.
+seo-description: Versionshinweise und bekannte Probleme mit Android SDK 4.x für Experience Cloud-Lösungen.
 seo-title: Versionshinweise
 solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -47,4 +47,4 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 * Besucher-ID-Dienst: Die Timeouts für das Verbinden und Lesen wurden von 2 Sekunden auf 5 Sekunden erhöht.
 
 
-Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/de_DE/whatsnew/).
+Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
