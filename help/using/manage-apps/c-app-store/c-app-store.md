@@ -3,12 +3,12 @@ description: Die appFigures-Data Connector-Integration vereint die Leistungsfäh
 keywords: mobile
 seo-description: Die appFigures-Data Connector-Integration vereint die Leistungsfähigkeit der integrierten mobilen App Store-Analyse von appFigures und des direkten App-Trackings von Adobe Analytics zu leistungsstarken Analyse- und Optimierungsfunktionen für Ihr Unternehmen.
 seo-title: App Store
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: App Store
-topic: Metriken
+topic: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -21,19 +21,18 @@ Die `appFigures`-Data Connector-Integration vereint die Leistungsfähigkeit der 
 >
 >In der Mobile Services-Benutzeroberfläche werden das Menüelement **[!UICONTROL App-Store]** und die zugehörigen Berichte nach der Konfiguration der Integration im linken Navigationsbereich angezeigt.
 
-Der [appFigures-Datenkonnektor für Adobe Analytics](https://marketing.adobe.com/resources/help/de_DE/connectors/appfigures/) enthält folgende Informationen:
-<!--REKHA: no idea where this guide lives-->
+[appFigures Data Connector for Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/appfigures/appfigures-overview.html) enthält die folgenden Informationen:
 
-* Wichtige Vorteile und Funktionen der Integration
+* Die wichtigsten Vorteile und Funktionen der Integration
 * Implementierung der Integration, einschließlich:
 
-   * Anforderungen für Adobe Analytics
-   * Anforderungen für appFigures
-   * Preise
+   * Adobe Analytics-Anforderungen
+   * appFigures-Anforderungen
+   * Preise 
    * Analytics-Integrationsvariablen
 
-* Konfiguration der Integration
+* Integration konfigurieren
 * In der Integration enthaltene Metriken und Dimensionen
-* Segment-App-Daten
+* App-Daten segmentieren
 
 Weitere Informationen zum Appstore-Bericht finden Sie unter [Bericht „App Store-Übersicht“](/help/using/usage/c-app-store-store-performance.md).
