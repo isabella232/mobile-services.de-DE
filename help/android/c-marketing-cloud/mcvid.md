@@ -2,12 +2,12 @@
 description: Der Identity-Dienst für Adobe Experience Platform stellt eine universale Besucher-ID für alle Experience Cloud-Lösungen bereit. Der ID-Service wird von Analytics für Target, Video-Heartbeats und künftige Experience Cloud-Integrationen benötigt.
 seo-description: Der Identity-Dienst für Adobe Experience Platform stellt eine universale Besucher-ID für alle Experience Cloud-Lösungen bereit. Der ID-Service wird von Analytics für Target, Video-Heartbeats und künftige Experience Cloud-Integrationen benötigt.
 seo-title: Experience Cloud ID-Konfiguration
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Experience Cloud ID-Konfiguration
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,7 +18,7 @@ Der Identity-Dienst für Adobe Experience Platform stellt eine universale Besuch
 
 >[!TIP]
 >
->Sie müssen diese ID nicht angeben, wenn Sie den Identity-Dienst für Adobe Experience Platform nicht verwenden. Weitere Informationen finden Sie unter [Identity-Dienst für Adobe Experience Platform](https://marketing.adobe.com/resources/help/de_DE/mcvid/).
+>Sie müssen diese ID nicht angeben, wenn Sie den Identity-Dienst für Adobe Experience Platform nicht verwenden. Weitere Informationen finden Sie unter [Identity-Dienst für Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/id-service/using/home.html).
 
 >[!IMPORTANT]
 >
@@ -56,4 +56,4 @@ So aktivieren Sie die Experience Cloud ID:
 
    Wenn diese IDs nicht konfiguriert sind, sollten Sie eine aktualisierte Datei `ADBMobileConfig.json` aus Adobe Mobile Services herunterladen. Weitere Informationen finden Sie unter [Bevor Sie beginnen](/help/android/getting-started/requirements.md).
 
-Nach der Konfiguration wird eine Experience Cloud ID generiert und für alle Treffer einbezogen. Auch andere IDs, z. B. benutzerdefinierte oder automatisch generierte IDs, werden weiterhin mit den Treffern gesendet.
+Nach Abschluss der Konfiguration wird eine Experience Cloud-ID generiert, die in allen Treffern enthalten ist. Andere IDs, z. B. benutzerdefinierte und automatisch generierte IDs, werden bei jedem Treffer weiterhin gesendet.
