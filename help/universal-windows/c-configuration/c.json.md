@@ -1,26 +1,26 @@
 ---
-description: Informationen, die Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile JSON“ helfen.
-seo-description: Informationen, die Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile JSON“ helfen.
+description: Informationen zur Verwendung der ADBMobile JSON-Konfigurationsdatei.
+seo-description: Informationen zur Verwendung der ADBMobile JSON-Konfigurationsdatei.
 seo-title: ADBMobileConfig.json config
 solution: Marketing Cloud,Analytics
 title: ADBMobileConfig.json config
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
 # ADBMobileConfig.json config file {#adbmobileconfig-json-config}
 
-Informationen, die Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile JSON“ helfen.
+Informationen zur Verwendung der ADBMobile JSON-Konfigurationsdatei.
 
-Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Konfigurationsmethoden ist „Config“ als Präfix vorangestellt.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Konfigurationsmethoden erhalten das Präfix &quot;Config&quot;.
 
 * **rsids**
 
-   (**Required by Analytics**) One or more report suites to receive Analytics data. Verschiedene Report Suite-IDs müssen durch Kommas getrennt und ohne Leerzeichen zwischen den einzelnen Suites angegeben werden.
+   (**Erforderlich für Analytics**) Eine oder mehrere Report Suites zum Empfang von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommas getrennt werden, wobei kein Leerzeichen dazwischen steht.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -34,17 +34,17 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **server**
 
-   (**Für Analytics und Zielgruppen-Management erforderlich**). Der Analytics- oder Zielgruppen-Management-Server, basierend auf dem übergeordneten Knoten. This variable should be populated with the server domain, without an `"https://"` or `"https://"` protocol prefix. Das Protokollpräfix wird anhand der Variable `ssl` automatisch von der Bibliothek verarbeitet.
+   (**Erforderlich für Analytics und Audience-Management**). Analytics- oder Audience Management-Server, basierend auf dem übergeordneten Knoten. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `"https://"` oder `"https://"`. Das Protokollpräfix wird automatisch von der Bibliothek auf Basis der `ssl` Variablen verarbeitet.
 
    Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
 
 * **charset**
 
-   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. For more information, see [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
 
 * **ssl**
 
-   Enables (`true`) or disables (`false`) sending measurement data via SSL (`HTTPS`). Der Standardwert lautet `false`.
+   Aktiviert (`true`) oder deaktiviert (`false`) das Senden von Messungsdaten über SSL (`HTTPS`). Der Standardwert lautet `false`.
 
 * **offlineEnabled**
 
@@ -52,31 +52,31 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. if your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be `false`.
 
-   Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. If you are unsure whether a report suite is timestamp enabled, contact Customer Care. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie nicht sicher sind, ob eine Report Suite zeitstempelfähig ist, wenden Sie sich an den Kundendienst. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    Der Standardwert lautet `false`.
 
 * **lifecycleTimeout**
 
-   Legt die Dauer in Sekunden fest, die zwischen verschiedenen Startvorgängen einer App verstreichen muss, damit ein Startvorgang als neue Sitzung gilt. Dieses Zeitlimit wird auch angewendet, wenn eine Anwendung in den Hintergrund verschoben und später reaktiviert wird. Die Dauer, für welche die App im Hintergrund ausgeführt wird, wird nicht in die Sitzungsdauer eingerechnet.
+   Gibt die Zeitdauer in Sekunden an, die vergehen muss, bevor der Start als neue Sitzung gezählt wird. Dieser Timeout gilt auch, wenn Ihre Anwendung in den Hintergrund gesendet und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund verbringt, ist nicht in der Sitzungslänge enthalten.
 
    Der Standardwert ist 300 Sekunden.
 
 * **batchLimit**
 
-   Sendet die Treffer als Stapel.
+   Senden von Treffern in Stapeln
 
-   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Requires , and the default value is  (No batching).`offlineEnabled=true``0`
+   Wenn Sie beispielsweise auf `50`setzen, werden Treffer in die Warteschlange gestellt, bis 50 gespeichert sind, dann werden alle Treffer in der Warteschlange gesendet. Erfordert `offlineEnabled=true`, und der Standardwert ist `0` (Keine Stapelverarbeitung).
 
 * **privacyDefault**
 
-   The options are:
+   Die Optionen sind:
 
-   * `optedin` - Treffer werden sofort gesendet.
-   * `optedout` - werden Treffer verworfen.
-   * `optunknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
+   * `optedin`: Treffer werden umgehend gesendet.
+   * `optedout`: werden Treffer verworfen.
+   * `optunknown` - Wenn Ihre Report Suite zeitstempelfähig ist, werden die Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
-      Hiermit wird nur der Standardwert festgelegt. Wenn dieser Wert im Code eingestellt oder geändert wird, dann wird der vom Code eingestellte Wert lokal gespeichert und ab diesem Zeitpunkt verwendet, bis er geändert wird oder die Anwendung deinstalliert und dann wieder neu installiert wird.
+      Hiermit wird nur der Standardwert festgelegt. Wenn dieser Wert jemals im Code festgelegt oder geändert wird, wird der vom Code eingestellte Wert in lokaler Datenspeicherung gespeichert und so lange verwendet, bis er geändert wird, oder die App wird deinstalliert und dann neu installiert.
 
       Der Standardwert lautet `optedin`.
 
@@ -84,7 +84,7 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    Jedes POI-Array beinhaltet den POI-Namen, den Längen- und Breitengrad sowie den Radius (in Metern) des POI-Bereichs. Für den POI-Namen kann eine beliebige Zeichenfolge gewählt werden. Wenn beim Senden eines `trackLocation`-Aufrufs die aktuellen Koordinaten zu einem definierten POI passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `trackLocation`-Aufruf gesendet.
 
-   * Here is the code sample for this variable:
+   * Das folgende Codebeispiel für diese Variable:
 
       ```js
        "poi" [ 
@@ -95,13 +95,13 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **clientCode**
 
-   (**Required by Target**) Your assigned client code.
+   (**Erforderlich nach Zielgruppe**) Ihr zugewiesener Clientcode.
 
 * **timeout**
 
-   Bestimmt, wie lange Target auf eine Antwort wartet.
+   Bestimmt, wie lange die Zielgruppe auf eine Antwort wartet.
 
-Im Folgenden finden Sie ein Beispiel für eine `ADBMobileConfig.json`-Datei:
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```js
 { 
