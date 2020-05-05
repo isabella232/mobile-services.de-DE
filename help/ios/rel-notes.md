@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -69,4 +69,4 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 
 * Besucher-ID-Dienst: Der `setPushIdentifier`-API-Aufruf sendet jetzt bei jedem Aufruf einen Synchronisierungsaufruf an den Besucher-ID-Dienst.
 
-Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://marketing.adobe.com/resources/help/de_DE/whatsnew/).
+Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
