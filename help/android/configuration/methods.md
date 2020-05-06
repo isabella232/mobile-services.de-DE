@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: Konfigurationsmethoden
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
 
-# Konfigurationsmethoden{#configuration-methods}
+# Konfigurationsmethoden {#configuration-methods}
 
 Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 
@@ -83,7 +83,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
    * Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
 
-      Die folgenden Werte für den Datenschutzstatus:
+      Dies sind die Werte für den Datenschutzstatus:
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden sofort gesendet.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
@@ -110,7 +110,8 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
       Sie können den Datenschutzstatus auf einen der folgenden Werte festlegen:
       * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden sofort gesendet. Diese Treffer werden sofort gesendet.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen. Diese Treffer werden verworfen.
-      * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) ändert. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
+      * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) ändert.
+Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
@@ -272,7 +273,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**Version 4.2 oder höher**) Legt das kleine Symbol fest, das für Benachrichtigungen verwendet wird, die vom SDK erstellt wurden. Dieses Symbol wird in der Statusleiste angezeigt und ist das sekundäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungscenter sieht.
+   * (**Version 4.2 oder höher**) Legt das kleine Symbol fest, das für Benachrichtigungen verwendet wird, die vom SDK erstellt wurden. Dieses Symbol wird in der Statusleiste angezeigt und ist das sekundäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Notification Center öffnet.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
@@ -302,7 +303,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**Version 4.2 oder höher**) Ermöglicht das Laden einer anderen ADBMobile-JSON-Konfigurationsdatei, wenn die Anwendung Beginn wird. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
+   * (**Version 4.2 oder höher**) Ermöglicht das Laden einer anderen ADBMobile-JSON-Konfigurationsdatei, wenn die Anwendung gestartet wird. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```java
