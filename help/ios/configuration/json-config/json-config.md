@@ -1,13 +1,16 @@
 ---
-description: Anhand dieser Informationen können Sie die Konfigurationsdatei ADBMobile.json verwenden.
-seo-description: Anhand dieser Informationen können Sie die Konfigurationsdatei ADBMobile.json verwenden.
+description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
+seo-description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
 seo-title: ADBMobile JSON-Konfiguration
 solution: Marketing Cloud,Analytics
 title: ADBMobile JSON-Konfiguration
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '1715'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Aktiviert die Mobile App-Akquise.
 
-   Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. For more information, see *referrerTimeout* below.
+   Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. Weitere Informationen finden Sie unten unter *referrerTimeout*.
 
    * `server`: Akquiseserver, der beim ersten Start für einen Akquise-Referrer überprüft wird.
    * `appid`: Generierte ID, die diese App auf dem Akquiseserver eindeutig identifiziert.
@@ -44,15 +47,15 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Aktiviert/Deaktiviert die Möglichkeit, dass das Adobe-SDK Treffer mit Sitzungsinformationen zurückdatiert.
 
-   Treffer mit Sitzungsinformationen bestehen derzeit aus Abstürzen und Sitzungslängen und können aktiviert oder deaktiviert werden.
+   Sitzungsinformationstreffer bestehen derzeit aus Abstürzen und Sitzungslängen und können aktiviert oder deaktiviert werden.
 
    * Wenn Sie den Wert auf `false` einstellen, werden die Treffer **deaktiviert**.
 
-      Das SDK kehrt zum Verhalten vor 4.1 zurück, bei dem die Sitzungsinformationen für die vorherige Sitzung mit dem ersten Hit der nachfolgenden Sitzung zusammengefasst wurden. Das Adobe-SDK fügt die Sitzungsinformationen auch an den aktuellen Lebenszyklus an, wodurch keine erhöhten Besuche erstellt werden. Da keine erhöhten Besuche mehr erstellt werden, wird eine sofortige Reduzierung der Besuchszahlen erzielt.
+      Das SDK kehrt zum Verhalten vor 4.1 zurück, bei dem die Sitzungsinformationen für die vorherige Sitzung mit dem ersten Treffer der nachfolgenden Sitzung zusammengefasst wurden. Das Adobe-SDK fügt die Sitzungsinformationen auch an den aktuellen Lebenszyklus an, wodurch keine zu hohen Besuchszahlen erstellt werden. Da keine zu hohen Besuchszahlen mehr erstellt werden, tritt eine unmittelbare Reduktion der Besuchszahlen auf.
 
    * Wenn Sie keinen Wert einstellen, lautet der Standardwert `true` und Treffer werden **aktiviert**.
 
-      Wenn die Treffer aktiviert sind, rückt das Adobe SDK den Treffer für Sitzungsinformationen auf 1 Sekunde nach dem letzten Treffer in der vorherigen Sitzung zurück. Das bedeutet, dass Absturz- und Sitzungsdaten mit dem korrekten Datum, an dem sie aufgetreten sind, korrelieren. Eine Nebenwirkung ist, dass das SDK einen Besuch für den rückdatierten Treffer erstellen könnte. Bei jedem Neustart der App wird ein Treffer zurückdatiert.
+      Wenn die Treffer aktiviert sind, datiert das Adobe SDK den Sitzungsinformationstreffer auf 1 Sekunde nach dem letzten Treffer in der vorherigen Sitzung zurück. Das bedeutet, dass Absturz- und Sitzungsdaten dem korrekten Datum, an dem sie aufgetreten sind, entsprechen. Als eine Auswirkung davon könnte das SDK einen Besuch für den rückdatierten Treffer erstellen. Bei jedem Neustart der App wird ein Treffer zurückdatiert.
 
    * Mindestens SDK-Version 4.6
    >[!IMPORTANT]
@@ -111,13 +114,13 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    Der Standardwert ist 300 Sekunden.
 
-   Gibt die Dauer in Sekunden an, die zwischen dem Start der App, aber vor dem Start der App als neue Sitzung verstreichen muss. Dieser Timeout gilt auch, wenn Ihre Anwendung in den Hintergrund gesendet und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund verbringt, ist nicht in der Sitzungslänge enthalten.
+   Gibt die Dauer in Sekunden an, die zwischen dem Start der App und dem Moment verstreichen muss, in dem die App als neue Sitzung erachtet wird. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten.
 
    * Mindestens SDK-Version 4.0
 
 * **messages**
 
-   Wird automatisch von Adobe Mobile Services generiert und definiert die Einstellungen für In-App-Nachrichten. Weitere Informationen finden Sie im Abschnitt *Messages Description* .
+   Wird automatisch von Adobe Mobile Services generiert und definiert die Einstellungen für In-App-Nachrichten. Weitere Informationen finden Sie unten im Abschnitt *Nachrichtenbeschreibung*.
 
    * Mindestens SDK-Version 4.2
 
@@ -130,7 +133,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    * Wenn Zeitstempel für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* Ihre Konfigurationseigenschaft wahr sein.
    * Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* die Konfigurationseigenschaft „false“ lauten.
 
-      Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich bitte an Wenden Sie sich an die Kundenunterstützung oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter. Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
+      Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,  wenden Sie sich bitte an  Wenden Sie sich an die Kundenunterstützung oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter. Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
 
    * Mindestens SDK-Version 4.0
 
@@ -193,7 +196,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **referrerTimeout**
 
-   Anzahl der Sekunden, die das SDK beim ersten Start auf Akquise-Werber-Daten wartet, bevor der Timeout erfolgt. Wenn Sie Akquise verwenden, empfehlen wir einen 5-Sekunden-Timeout.
+   Anzahl der Sekunden, die das SDK beim ersten Start auf Akquise-Werber-Daten wartet, bevor das Time-out erfolgt. Wenn Sie Akquise verwenden, empfehlen wir ein 5-Sekunden-Time-out.
 
    >[!IMPORTANT]
    >
@@ -213,7 +216,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **rsids**
 
-   Eine oder mehrere Report Suites zum Empfangen von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommas getrennt werden, wobei kein Leerzeichen dazwischen steht.
+   Eine oder mehrere Report Suites zum Empfangen von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommata getrennt werden, wobei kein Leerzeichen dazwischen steht.
 
    ```js
    "rsids": "rsid"
@@ -343,58 +346,56 @@ Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 
 ## Nachrichtenbeschreibung {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Der Node &quot;message&quot;wird automatisch von Adobe Mobile Services generiert und muss in der Regel nicht manuell geändert werden. Die folgende Beschreibung dient zur Fehlerbehebung:
+Der Nachrichtenknoten wird automatisch von Adobe Mobile Services generiert und muss in der Regel nicht manuell geändert werden. Die folgende Beschreibung dient der Fehlerbehebung:
 
-* &quot;messageId&quot;
+* „messageId“
 
    * Generierte ID, erforderlich
 
-* &quot;bearbeiten&quot;
+* „template“
 
-   * &quot;alert&quot;, &quot;fullscreen&quot;oder &quot;local&quot;
+   * „alert“, „fullscreen“ oder „local“
    * erforderlich
 
-* &quot;payload&quot;
+* „payload“
 
-   * &quot;html&quot;
+   * „html“
 
-      * Nur Vollbild-Vorlage erforderlich
-      * html Definieren der Nachricht
-   * &quot;Bild&quot;
-
-      * nur Vollbild, optional
-      * URL zu dem Bild, das für ein Vollbild-Bild verwendet werden soll
-   * &quot;altImage&quot;
+      * Nur Vollbild-Vorlage, erforderlich
+      * html, das die Nachricht definiert
+   * „image“
 
       * nur Vollbild, optional
-      * Name des gebündelten Bildes, das verwendet werden soll, wenn die URL in
+      * URL zu dem Bild, das als Vollbild verwendet werden soll
+   * „altImage“
+
+      * nur Vollbild, optional
+      * Name des gebündelten Bildes, das verwendet werden soll, wenn die in
          `image` angegebene URL nicht erreichbar ist
-   * &quot;title&quot;
+   * „title“
 
       * Vollbild und Warnhinweis, erforderlich
       * Titeltext für einen Vollbild- oder Warnhinweis
-   * &quot;content&quot;
+   * „content“
 
       * Warnhinweis und lokale Benachrichtigung, erforderlich
-      * Untertext für eine Warnmeldung oder Benachrichtigungstext für eine lokale Benachrichtigung
-   * &quot;verify&quot;
+      * Zusätzlicher Text für eine Warnmeldung oder Text für eine lokale Benachrichtigung
+   * „confirm“
 
-      * alert, optional
-      * Text, der in der Schaltfläche &quot;Bestätigen&quot;verwendet wird
-   * &quot;cancel&quot;
+      * Warnhinweis, optional
+      * Text, der in der Bestätigen-Schaltfläche verwendet wird
+   * „cancel“
 
       * Warnung, erforderlich
-      * Text, der in der Schaltfläche &quot;Abbrechen&quot;verwendet wird
+      * Text, der in der Abbrechen-Schaltfläche verwendet wird
    * „url“
 
-      * alert, optional
-      * URL-Aktion, die geladen wird, wenn auf die Schaltfläche &quot;Bestätigen&quot;geklickt wird
-   * &quot;wait&quot;
+      * Warnhinweis, optional
+      * URL-Aktion, die geladen wird, wenn auf die Bestätigen-Schaltfläche geklickt wird
+   * „wait“
 
-      * lokale Benachrichtigung erforderlich
-      * Wartezeit (in Sekunden) zum Posten der lokalen Benachrichtigung nach Erfüllung der Kriterien
-
-
+      * lokale Benachrichtigung, erforderlich
+      * Wartezeit (in Sekunden) zum Posten der lokalen Benachrichtigung nach Abgleich der Kriterien
 
 
 
@@ -402,22 +403,24 @@ Der Node &quot;message&quot;wird automatisch von Adobe Mobile Services generiert
 
 
 
-* &quot;showOffline&quot;
+
+
+* „showOffline“
 
    * true oder false
-   * default ist false
+   * Standardmäßig ist „false“ festgelegt
 
-* &quot;showRule&quot;
+* „showRule“
 
-   * &quot;always&quot;, &quot;once&quot;oder &quot;solangeClick&quot;
+   * „always“, „once“ oder „untilClick“
    * erforderlich
 
-* &quot;endDate&quot;
+* „endDate“
 
    * Anzahl der Sekunden seit dem 1. Januar 1970
    * Standardwert ist „2524730400“
 
-* &quot;startDate&quot;
+* „startDate“
 
    * Anzahl der Sekunden seit dem 1. Januar 1970
    * Standardwert ist „0“
@@ -438,10 +441,10 @@ Der Node &quot;message&quot;wird automatisch von Adobe Mobile Services generiert
       * ne = nicht gleich
       * co = enthält
       * nc = enthält nicht
-      * sw = Beginn mit
+      * sw = beginnt mit
       * ew = endet mit
-      * ex = vorhanden
-      * nx = ist nicht vorhanden
+      * ex = existiert
+      * nx = existiert nicht
       * lt = kleiner als
       * le = kleiner als oder gleich
       * gt = größer als
@@ -450,8 +453,8 @@ Der Node &quot;message&quot;wird automatisch von Adobe Mobile Services generiert
 
       Eine Gruppe von Werten, die mit dem Wert der Variablen verglichen werden, die hier benannt sind:
 
-      * key
-      * mit dem Übereinstimmungstyp in
+      * Schlüssel
+      * mit dem Matcher-Typ in
       * „matches“
 
 
