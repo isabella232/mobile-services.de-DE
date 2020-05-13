@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Vorbereitung
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -24,10 +27,10 @@ Analytics-Administratoren und App-Entwickler müssen die folgenden Aufgaben ausf
 
 So konfigurieren Sie eine Report Suite und erfassen Daten aus mobilen Apps:
 
-1. Füllen Sie einen der Abschnitte unter [Anmelden bei der Benutzeroberfläche](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)von Adobe Mobile Services aus.
+1. Füllen Sie einen der Abschnitte unter [Anmelden bei der UI von Adobe Mobile Services](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8) aus.
 1. Erstellen Sie für jeden App-Entwickler ein Analytics-Konto.
 
-App-Entwickler haben jetzt Zugriff auf die Ansicht der von Ihnen erstellten Report Suites.
+App-Entwickler können jetzt auf die Ansicht der von Ihnen erstellten Report Suites zugreifen.
 
 >[!IMPORTANT]
 >
@@ -41,9 +44,9 @@ App-Entwickler haben jetzt Zugriff auf die Ansicht der von Ihnen erstellten Repo
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Rollen und Berechtigungen](/help/using/gs/c-mob-roles-and-permissions.md).
 
-## Anmelden bei der UI von Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
+## Anmelden bei der UI von Adobe Mobile Services  {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile Services ist die primäre Benutzeroberfläche für die Analyse und das Targeting mobiler Apps auf dem Berichte. Nach Abschluss dieser Schritte können Sie eine Konfigurationsdatei herunterladen, die mit Ihrem Datenerfassungsserver, Ihrer Report Suite und vielen anderen Einstellungen vorkonfiguriert ist.
+Adobe Mobile Services ist die primäre Reporting-Benutzeroberfläche für die Analyse und das Targeting mobiler Apps. Nach Abschluss dieser Schritte können Sie eine Konfigurationsdatei herunterladen, die mit Ihrem Datenerfassungs-Server, Ihrer Report Suite und vielen anderen Einstellungen vorkonfiguriert ist.
 
 Sie können sich auf eine der folgenden Arten bei der Benutzeroberfläche von Adobe Mobile Services anmelden:
 
