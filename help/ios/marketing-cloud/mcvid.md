@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Experience Cloud ID
 topic: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Der Identity-Dienst für Adobe Experience Platform stellt eine universale Besuch
    #import "ADBMobile.h"
    ```
 
-1. Vergewissern Sie sich, dass die `ADBMobileConfig.json`-Dateien `marketingCloud``org` enthalten:
+1. Vergewissern Sie sich, dass die `ADBMobileConfig.json`-Dateien `marketingCloud` `org` enthalten:
 
    ```js
    "marketingCloud" : { 
@@ -49,4 +52,4 @@ Der Identity-Dienst für Adobe Experience Platform stellt eine universale Besuch
 
    Wenn diese Werte nicht vorhanden sind, sollten Sie eine aktualisierte `ADBMobileConfig.json`-Datei aus Adobe Mobile Services herunterladen. Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/getting-started/requirements.md).
 
-Nach der Konfiguration wird eine Experience Cloud-ID generiert und bei allen Treffern eingeschlossen. Andere Besucher-IDs, beispielsweise die benutzerdefinierten und automatisch generierten, werden weiterhin mit jedem Treffer gesendet.
+Nach der Konfiguration wird eine Experience Cloud-ID generiert und allen Treffern hinzugefügt. Andere Besucher-IDs, beispielsweise die benutzerdefinierten und automatisch generierten, werden weiterhin mit jedem Treffer gesendet.
