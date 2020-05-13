@@ -7,13 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Identity-Dienst-Methoden für Adobe Experience Platform
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '449'
+ht-degree: 100%
 
 ---
 
 
-# Identity-Dienst-Methoden für Adobe Experience Platform{#experience-cloud-id-service-methods}
+# Identity-Dienst-Methoden für Adobe Experience Platform {#experience-cloud-id-service-methods}
 
 Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
 
@@ -23,7 +26,7 @@ Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `visitor` be
 
 * **public static String appendToURL(final String URL)**
 
-   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Sie müssen über Mobile SDK 4.12+ verfügen, um diese Methode verwenden zu können. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Für diese Methode benötigen Sie SDK 4.12 oder höher. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -70,7 +73,7 @@ Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `visitor` be
 
 * **syncIdentifiers**
 
-   Mit der Experience Cloud ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs` in der JavaScript-Bibliothek.
+   Mit der Experience Cloud-ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs` in der JavaScript-Bibliothek.
 
    * Hier finden Sie die Syntax für diese Methode:
 
