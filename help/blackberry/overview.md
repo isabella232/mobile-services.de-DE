@@ -4,8 +4,11 @@ seo-description: Mit BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen könn
 seo-title: BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen
 title: BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen
 uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '186'
+ht-degree: 100%
 
 ---
 
@@ -16,13 +19,13 @@ Mit BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen können Sie native Bla
 
 ## Erste Schritte {#section_DB6175C7BD5C41E3A7D5DB175C5E01C7}
 
-Erste Schritte mit den BlackBerry SDKs:
+Erste Schritte mit den BlackBerry-SDKs:
 
-1. Um die SDKs zu Ihrem Projekt hinzuzufügen, führen Sie die Aufgaben im [Developer Quick Beginn](/help/blackberry/dev-qs.md)aus.
+1. Um die SDKs zu Ihrem Projekt hinzuzufügen, führen Sie die Aufgaben im [Developer Quick Start](/help/blackberry/dev-qs.md)aus.
 1. Überprüfen Sie die [ADBMobile-Klassen- und Methodenreferenz](/help/blackberry/methods.md).
 1. Implementieren Sie [Analytics](/help/blackberry/analytics.md).
 
-## Supported versions {#section_45978BF5C62E4986AAB7FFD96402BF2D}
+## Unterstützte Versionen {#section_45978BF5C62E4986AAB7FFD96402BF2D}
 
 BlackBerry 10 oder höher.
 
@@ -32,9 +35,9 @@ Zusätzlich zu den erheblichen Leistungssteigerungen bietet Version 4 die folgen
 
 | Funktion | Beschreibung |
 |--- |--- |
-| Anmelden/Abwählen | Aktivieren und deaktivieren Sie schnell die Analyse. |
+| Opt-in/Opt-out | Zum schnellen Aktivieren und Deaktivieren von Analysen. |
 
-For more information about the release notes for all solutions, see [Adobe Experience Cloud Release Notes](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
+Weitere Informationen zu Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
 
 ## Bloodhound verwenden
 
