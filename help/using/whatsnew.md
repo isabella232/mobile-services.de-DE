@@ -7,13 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Metrics
 uuid: 522b0589-d61f-4a9f-952e-ba7ce11af2f9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '80'
+ht-degree: 100%
 
 ---
 
 
-# Versionshinweise{#release-notes}
+# Versionshinweise {#release-notes}
 
 Neue Versionsinformationen für Adobe Mobile Services.
 
