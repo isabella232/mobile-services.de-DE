@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '646'
+ht-degree: 100%
 
 ---
 
@@ -59,7 +62,7 @@ Jeder Benutzer muss das Analytics-Konto innerhalb der Experience Cloud-Organisat
 
 1. Wählen Sie oben rechts den Namen des Analytics-Unternehmens aus.
 
-1. Klicken Sie auf **[!UICONTROL Unternehmen hinzufügen]** und wählen Sie aus der Dropdownliste **[!UICONTROL Adobe SiteCatalyst/Adobe Social]** aus.
+1. Klicken Sie auf **[!UICONTROL Unternehmen hinzufügen]** und wählen Sie aus der Dropdown-Liste **[!UICONTROL Adobe SiteCatalyst/Adobe Social]** aus.
 
 1. Geben Sie den Unternehmensnamen sowie Ihre alten Anmeldedaten für das angegebene Unternehmen ein und klicken Sie auf **[!UICONTROL Konto verknüpfen]**.
 
@@ -73,22 +76,22 @@ Bevor Sie den ID-Dienst für Ihre App aktivieren, ist der Abschnitt **[!UICONTRO
 
 >[!IMPORTANT]: Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern und die Push-Dienste zu aktualisieren.
 >
->Sie können in jeder Report Suite eine App für Apple und eine für Google konfigurieren. Wenn Sie zusätzliche Apps benötigen, z. B. eine für eine Produktions-Umgebung und eine für eine dev-Umgebung, richten Sie für jede Umgebung eine neue App für den App Store und eine neue Report Suite ein.
+>Sie können in jeder Report Suite eine App-Store-App für Apple und eine für Google konfigurieren. Wenn Sie zusätzliche Apps benötigen, z. B. eine für eine Produktionsumgebung und eine für eine Entwicklungsumgebung, richten Sie für jede Umgebung eine neue App-Store-App und eine neue Report Suite ein.
 
-* Ziehen Sie bei **Apple** Ihren privaten Schlüssel und/oder Ihr Zertifikat per Drag &amp; Drop. Wenn Ihr privater Schlüssel kennwortverschlüsselt ist, geben Sie das Kennwort ein.
+* Ziehen Sie für **Apple** Ihren privaten Schlüssel und/oder Ihr Zertifikat per Drag-and-Drop an die vorgesehene Stelle. Wenn Ihr privater Schlüssel passwortverschlüsselt ist, geben Sie das Passwort ein.
 
    * **Privater Schlüssel:** Ziehen Sie die Datei mit dem privaten Schlüssel per Drag and Drop in das Feld.
 
       Sie können auch auf **[!UICONTROL Durchsuchen]** klicken und die Datei auswählen. Dieses Feld zeigt den privaten Schlüssel. Das Zertifikat kann ebenfalls in dieser Datei enthalten sein (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
 
-   * Geben Sie für das Kennwort **für den** privaten Schlüssel das Kennwort ein, wenn die Datei mit dem privaten Schlüssel verschlüsselt ist.
+   * Geben Sie für das **Passwort für den privaten Schlüssel** das entsprechende Passwort ein, wenn die Datei mit dem privaten Schlüssel verschlüsselt ist.
 
       (Bedingt) **Zertifikat:** Wenn noch kein Zertifikat aus der Schlüsseldatei vorhanden ist, ziehen Sie die Zertifikatsdatei in das Feld. Sie können auch auf **[!UICONTROL Durchsuchen]** klicken und die Datei auswählen. Dieses Feld ist kein Pflichtfeld, falls die Datei mit privatem Schlüssel auch das Zertifikat enthält (`.cert`, `.cer`, `.crt`, `.pem`).
 
 * **Google:** Geben Sie den API-Schlüssel für die App an.
 
-   Klicken Sie auf **[!UICONTROL Testen]**, um zu überprüfen, ob App und Mobile Services richtig konfiguriert sind. Diese Option ist nützlich für das Debugging und die Fehlerbehebung.
+   Klicken Sie auf **[!UICONTROL Testen]**, um zu überprüfen, ob die App und Mobile Services richtig konfiguriert sind. Diese Option ist nützlich für das Debugging und die Fehlerbehebung.
 
-   Geben Sie die Push-Token des Geräts ein, die die Nachricht senden sollen. Sie können die Nachricht an mehrere Geräte senden, indem Sie Token in einer durch Kommata getrennten Liste angeben.
+   Geben Sie die Push-Token des Geräts ein, über die die Nachricht gesendet werden soll. Sie können die Nachricht an mehrere Geräte senden, indem Sie Token in einer durch Kommata getrennten Liste angeben.
 
    ![Push-Testnachricht](assets/push_test_list.png)
