@@ -1,16 +1,16 @@
 ---
-description: Versionshinweise und bekannte Probleme mit Android SDK 4.x für Experience Cloud-Lösungen.
-seo-description: Versionshinweise und bekannte Probleme mit Android SDK 4.x für Experience Cloud-Lösungen.
+description: Versionshinweise und bekannte Probleme für Android SDK 4.x für Experience Cloud-Lösungen.
+seo-description: Versionshinweise und bekannte Probleme für Android SDK 4.x für Experience Cloud-Lösungen.
 seo-title: Versionshinweise
 solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -19,19 +19,19 @@ ht-degree: 76%
 
 Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für Android-SDK 4.x für die Experience Cloud-Lösungen:
 
-**3. April 2020: 4,18,2**
+**3. April 2020: 4.18.2**
 
-* In App Messaging - Aus Sicherheitsgründen setzen die vom SDK erstellten WebViews jetzt die Eigenschaft &quot;setAllowFileAccess&quot;auf &quot;false&quot;.
+* In-App-Benachrichtigungen: Aus Sicherheitsgründen setzt WebViews, das vom SDK erstellt wurde, jetzt die Eigenschaft „setAllowFileAccess“ auf false.
 
-**12. März 2020: 4,18,1**
+**12. März 2020: 4.18.1**
 
-* Zielgruppe - Zielgruppe Session-ID wird jetzt als Kontextdatenparameter &quot;a.Zielgruppe.sessionId&quot;im internen Analytics-für-Zielgruppe-Treffer hinzugefügt, der an Adobe Analytics gesendet wird.
+* Target: Die Target-Sitzungs-ID wird jetzt als Kontextdatenparameter „a.target.sessionId“ im internen Treffer von Analytics für Target hinzugefügt, der an Adobe Analytics gesendet wird.
 
 **16. Januar 2020: 4.18.0**
 
 * Akquise: Es wurde die neue API `Analytics.processGooglePlayInstallReferrerUrl(final String url)` zur Unterstützung der Google Play-Install Referrer APIs hinzugefügt.
 
-   Weitere Informationen zu den Install Referrer APIs finden Sie unter [Still Using InstallBroadcast? Wechseln Sie bis zum 1. März 2020 zur Play Referrer-API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) .
+   Weitere Informationen zu den Install Referrer APIs finden Sie unter [Still Using InstallBroadcast? Wechseln Sie bis zum 1. März 2020 zur Play Referrer-API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html).
 
 **20. September 2019: Version 4.17.10**
 
