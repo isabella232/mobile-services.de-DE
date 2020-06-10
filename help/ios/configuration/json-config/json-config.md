@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: ADBMobile JSON-Konfiguration
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
-source-wordcount: '1715'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1716'
+ht-degree: 98%
 
 ---
 
@@ -89,12 +89,13 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **coopUnsafe**
 
-   Bei Mitgliedern mit Gerätekooperation, für die dieser Wert `true` sein muss, müssen Sie sich an das Kooperationsteam wenden, um eine Blacklist-Markierung auf Ihrem Gerätekooperationskonto zu verlangen. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
+   For Device Co-op members who require this value be set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
    Beachten Sie die folgenden Informationen:
 
    * Wenn `coopUnsafe` auf `true` festgelegt ist, wird `coop_unsafe=1` immer an Audience Manager und Besucher-ID-Treffer angehängt.
    * Wenn Sie die serverseitige Weiterleitung von Analytics an Audience Manager aktivieren, sehen Sie auch `coop_unsafe=1` in den Analytics-Treffern.
+
    Zusätzliche Informationen:
 
    * Mindestens SDK-Version 4.16.1
