@@ -1,13 +1,16 @@
 ---
-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
-seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei „ADBMobile.json“.
+description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
+seo-description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
 seo-title: ADBMobile-JSON-Konfiguration
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: ADBMobile-JSON-Konfiguration
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: ht
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 94%
 
 ---
 
@@ -31,6 +34,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Aktiviert die Mobile App-Akquise.
       * `server`: der Akquise-Server, der beim ersten Start auf einen Akquise-Referrer überprüft wird.
       * `appid`: die generierte ID, die diese App auf dem Akquise-Server eindeutig identifiziert.
+
    Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. Weitere Informationen finden Sie unter *referrerTimeout* in dieser Variablenliste.
 
 * **analyticsForwardingEnabled**
@@ -43,13 +47,13 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Mindestens SDK-Version 4.6.
    * Aktiviert/Deaktiviert die Möglichkeit, dass das Adobe-SDK Treffer mit Sitzungsinformationen zurückdatiert.
 
-      Aktuell umfassen Sitzungsinfotreffer Abstürze und Sitzungsdauer und können aktiviert und deaktiviert werden.
+      Sitzungsinformationstreffer bestehen derzeit aus Abstürzen und Sitzungslängen und können aktiviert oder deaktiviert werden.
 
-      **Treffer aktivieren oder deaktivieren**
+      **Aktivieren oder Deaktivieren von Treffern**
 
-      * Wenn Sie den Wert auf `false` einstellen, werden die Treffer **deaktiviert**. Wie schon in den Versionen vor Version 4.1 fasst das SDK die Sitzungsinformation der vorherigen Sitzung jetzt wieder mit dem ersten Treffer der nachfolgenden Sitzung zusammen. Das Adobe-SDK verbindet die Sitzungsinformation außerdem mit der aktuellen Laufzeit. Somit entstehen keine überhöhten Besuchszahlen. Die Anzahl der Aufrufe sinkt sofort, da überhöhte Besuchszahlen wegfallen.
+      * Wenn Sie den Wert auf `false` einstellen, werden die Treffer **deaktiviert**. Das SDK kehrt zum Verhalten vor 4.1 zurück, bei dem die Sitzungsinformationen für die vorherige Sitzung mit dem ersten Treffer der nachfolgenden Sitzung zusammengefasst wurden. Das Adobe-SDK fügt die Sitzungsinformationen auch an den aktuellen Lebenszyklus an, wodurch keine zu hohen Besuchszahlen erstellt werden. Da keine zu hohen Besuchszahlen mehr erstellt werden, tritt eine unmittelbare Reduktion der Besuchszahlen auf.
 
-      * Wenn Sie keinen Wert einstellen, lautet der Standardwert `true` und Treffer werden **aktiviert**. Wenn die Treffer aktiviert sind, datiert das Adobe-SDK den Sitzungsinfotreffer auf eine Sekunde nach dem endgültigen Treffer der vorherigen Sitzung zurück. Das bedeutet, dass die Daten zu Abstürzen und zur Sitzung mit dem korrekten Datum korrelieren, an dem sie stattgefunden haben. Eine Nebenwirkung besteht darin, dass das SDK ggf. einen Aufruf für den zurückdatierten Treffer erstellt. Bei jedem Neustart der App wird ein Treffer zurückdatiert.
+      * Wenn Sie keinen Wert einstellen, lautet der Standardwert `true` und Treffer werden **aktiviert**. Wenn die Treffer aktiviert sind, datiert das Adobe SDK den Sitzungsinformationstreffer auf 1 Sekunde nach dem letzten Treffer in der vorherigen Sitzung zurück. Das bedeutet, dass Absturz- und Sitzungsdaten dem korrekten Datum, an dem sie aufgetreten sind, entsprechen. Als eine Auswirkung davon könnte das SDK einen Besuch für den rückdatierten Treffer erstellen. Bei jedem Neustart der App wird ein Treffer zurückdatiert.
 
          >[!IMPORTANT]
          >
@@ -59,7 +63,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Mindestens SDK-Version 4.1
    * Grenzwert für die Anzahl der Treffer, die in aufeinanderfolgenden Aufrufen gesendet werden sollen.
 
-      Wenn beispielsweise `batchLimit` auf 10 festgelegt ist, wird jeder Treffer vor dem 10. Treffer in der Warteschlange gespeichert. Wenn der 10. Treffer eingeht, werden alle 10 Treffer nacheinander gesendet.
+      Wenn beispielsweise `batchLimit` auf 10 festgelegt ist, wird jeder Treffer vor dem 10. Treffer in der Warteschlange gespeichert. Wenn der 10. Treffer eingeht, werden alle 10 Treffer nacheinander gesendet.
 
       Beachten Sie die folgenden Informationen:
 
@@ -85,7 +89,8 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Die boolesche Eigenschaft des Objekts `marketingCloud`, das, wenn auf `true` festgelegt, dazu führt, dass das Gerät aus der Experience Cloud-Gerätekooperation ausgeschlossen wird.
    * Der Standardwert ist `false`.
    * Diese Einstellung wird **nur** für Kunden verwendet, die an der Gerätekooperation teilnehmen.
-   Bei Mitgliedern mit Gerätekooperation, für die dieser Wert `true` sein muss, müssen Sie sich an das Kooperationsteam wenden, um eine Blacklist-Markierung auf Ihrem Gerätekooperationskonto zu verlangen. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
+
+   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
    Beachten Sie die folgenden Informationen:
 
@@ -101,16 +106,16 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
 
 * **lifecycleTimeout**
    * Mindestens SDK-Version 4.0
-   * Der Standardwert beträgt 300 Sekunden.
+   * Der Standardwert ist 300 Sekunden.
 
-      Legt die Dauer in Sekunden fest, die zwischen verschiedenen Startvorgängen einer App verstreichen muss, damit ein Startvorgang als neue Sitzung gilt. Dieses Zeitlimit wird auch angewendet, wenn eine Anwendung in den Hintergrund verschoben und später reaktiviert wird.
+      Gibt die Dauer in Sekunden an, die zwischen dem Start der App und dem Moment verstreichen muss, in dem die App als neue Sitzung erachtet wird. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird.
 
-      Die Dauer, für die die App im Hintergrund ausgeführt wird, wird nicht in die Sitzungsdauer eingerechnet.
+      Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten.
 
 * **messages**
 
    * Mindestens SDK-Version 4.2
-   * Wird automatisch von Adobe Mobile Services generiert, definiert die Einstellungen für In-App-Nachrichten. Weitere Informationen finden Sie im Abschnitt *Nachrichtenbeschreibung*.
+   * Wird automatisch von Adobe Mobile Services generiert und definiert die Einstellungen für In-App-Nachrichten. Weitere Informationen finden Sie unten im Abschnitt *Nachrichtenbeschreibung*.
 
 * **offlineEnabled**
 
@@ -176,12 +181,13 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
       * Für `optedin` werden die Treffer sofort gesendet.
       * Bei `optedout` werden Treffer verworfen.
       * Wenn der Wert `optunknown` lautet und für ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „optedin“ (Treffer werden gesendet) oder „optedout“ (Treffer werden verworfen) ändert.
-      Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu `optedin`geändert wird.  Hierdurch wird nur der anfängliche Wert festgelegt. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird.
+
+      Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu `optedin`geändert wird.  Dadurch wird nur der Ausgangswert festgelegt. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird.
 
 
 * **referrerTimeout**
    * Mindestens SDK-Version 4.1
-   * Anzahl der Sekunden, die das SDK beim ersten Start auf Akquise-Referrer-Daten wartet, bevor ein Timeout verursacht wird. Wenn Sie Akquise nutzen, empfehlen wir ein Timeout von 5 Sekunden.
+   * Anzahl der Sekunden, die das SDK beim ersten Start auf Akquise-Werber-Daten wartet, bevor das Time-out erfolgt. Wenn Sie Akquise verwenden, empfehlen wir ein 5-Sekunden-Time-out.
 
       >[!IMPORTANT]
       >
@@ -197,7 +203,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
 
 * **rsids**
    * Mindestens SDK-Version 4.0
-   * Mindestens eine Report Suite zum Empfang der Analytics-Daten. Verschiedene Report Suite-IDs müssen durch Kommas getrennt und ohne Leerzeichen zwischen den einzelnen Suites angegeben werden.
+   * Eine oder mehrere Report Suites zum Empfangen von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommata getrennt werden, wobei kein Leerzeichen dazwischen steht.
 
       ```javascript
         "rsids" "rsid"
@@ -307,88 +313,88 @@ Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 
 ## Nachrichtenbeschreibung {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Der Nachrichtenknoten wird automatisch von Adobe Mobile Services erstellt und muss für gewöhnlich nicht manuell geändert werden. Im Folgenden finden Sie Beschreibungen zur Problembehandlung:
+Der Nachrichtenknoten wird automatisch von Adobe Mobile Services generiert und muss in der Regel nicht manuell geändert werden. Die folgende Beschreibung dient der Fehlerbehebung:
 
 * „messageId“
-* generierte ID, erforderlich
+* Generierte ID, erforderlich
 * „template“
    * „alert“, „fullscreen“ oder „local“
    * erforderlich
 
 * „showOffline“
-   * „true“ oder „false“
-   * Standard ist „false“
+   * true oder false
+   * Standardmäßig ist „false“ festgelegt
 
 * „showRule“
    * „always“, „once“ oder „untilClick“
    * erforderlich
 
 * „endDate“
-   * Anzahl der Sekunden seit 1. Januar 1970
+   * Anzahl der Sekunden seit dem 1. Januar 1970
    * Standardwert ist „2524730400“
 
 * „startDate“
-   * Anzahl der Sekunden seit 1. Januar 1970
+   * Anzahl der Sekunden seit dem 1. Januar 1970
    * Standardwert ist „0“
 
 * „payload“
    * „html“
-      * nur Vollbildvorlage, erforderlich
-      * Nachrichtendefinition durch HTML
+      * Nur Vollbild-Vorlage, erforderlich
+      * html, das die Nachricht definiert
    * „image“
       * nur Vollbild, optional
-      * URL des Bildes, das als Vollbild verwendet werden soll
+      * URL zu dem Bild, das als Vollbild verwendet werden soll
    * „altImage“
       * nur Vollbild, optional
-      * Name des Bundle-Bildes, das verwendet werden soll, wenn die in
-         * „image“
+      * Name des gebündelten Bildes, das verwendet werden soll, wenn die in
+         * Bild
          * angegebene URL nicht erreichbar ist
    * „title“
       * Vollbild und Warnhinweis, erforderlich
-      * Titeltext für eine Vollbildnachricht oder einen Warnhinweis
+      * Titeltext für einen Vollbild- oder Warnhinweis
    * „content“
       * Warnhinweis und lokale Benachrichtigung, erforderlich
-      * Text für eine Alarmnachricht oder eine lokale Benachrichtigung
+      * Zusätzlicher Text für eine Warnmeldung oder Text für eine lokale Benachrichtigung
    * „confirm“
       * Warnhinweis, optional
-      * Für Schaltfläche „Bestätigen“ verwendeter Text
+      * Text, der in der Bestätigen-Schaltfläche verwendet wird
    * „cancel“
-      * Warnhinweis, erforderlich
-      * Für Schaltfläche „Abbrechen“ verwendeter Text
+      * Warnung, erforderlich
+      * Text, der in der Abbrechen-Schaltfläche verwendet wird
    * „url“
       * Warnhinweis, optional
-      * URL, die beim Klicken der Schaltfläche „Bestätigen“ aufgerufen wird
+      * URL-Aktion, die geladen wird, wenn auf die Bestätigen-Schaltfläche geklickt wird
    * „wait“
       * lokale Benachrichtigung, erforderlich
-      * Zeit (in Sekunden), die zwischen Auslösungskriterium und Anzeige der lokalen Benachrichtigung gewartet wird
+      * Wartezeit (in Sekunden) zum Posten der lokalen Benachrichtigung nach Abgleich der Kriterien
 
 
 
 * „audiences“
-   * Array von Objekten, das definiert, wie die Nachricht angezeigt werden soll
+   * Array von Objekten, die die Anzeige der Nachricht definieren
    * „key“
-      * im Treffer zu suchender Variablenname, erforderlich
+      * Variablenname, nach dem im Treffer gesucht werden soll, erforderlich
 * „matches“
-   * beim Vergleichen verwendeter Zuordnungstyp
-   * eq = ist gleich
-   * ne = ist nicht gleich
+   * Übereinstimmungstyp, der beim Vergleich verwendet wird
+   * eq = gleich
+   * ne = nicht gleich
    * co = enthält
    * nc = enthält nicht
    * sw = beginnt mit
    * ew = endet mit
-   * ex = vorhanden
-   * nx = nicht vorhanden
+   * ex = existiert
+   * nx = existiert nicht
    * lt = kleiner als
-   * le = kleiner/gleich
+   * le = kleiner als oder gleich
    * gt = größer als
-   * ge = größer/gleich
+   * ge = größer als oder gleich
 * „values“
-   * ein Array von Werten, das verwendet wird, um eine Übereinstimmung mit den Werten der in
-      * „key“
-      * definierten Variablen durchzuführen; mithilfe des Zuordnungstyps aus
+   * ein Array von Werten, die für die Übereinstimmung mit dem Wert der Variablen in
+      * Schlüssel
+      * mit dem Matcher-Typ in
       * „matches“
 * „triggers“
-   * Ähnlich wie „audiences“, jedoch handelt es sich hierbei um die Aktion statt um die Zielgruppe
+   * entspricht Audiencen, aber dies ist die Aktion anstelle der Audience
    * „key“
    * „matches“
    * „values“
