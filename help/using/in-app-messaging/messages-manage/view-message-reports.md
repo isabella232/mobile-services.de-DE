@@ -3,12 +3,15 @@ description: Sie können Nachrichtenberichte für In-App- und Push-Nachrichten a
 keywords: mobile
 seo-description: Sie können Nachrichtenberichte für In-App- und Push-Nachrichten anzeigen.
 seo-title: Nachrichtenberichte anzeigen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Nachrichtenberichte anzeigen
-topic: Metriken
+topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: ht
-source-git-commit: 44f531ad140827d563255fad197811185c5337c9
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 78%
 
 ---
 
@@ -79,13 +82,13 @@ Im Folgenden finden Sie eine Liste der Metriken, die für Push-Nachrichten verf�
 
    * Die pushID ist ungültig.
 
-   * Die Push-Plattform (APNS, FCM usw.), an die die Nachricht übertragen werden sollte, existiert nicht für die entsprechende App. So könnte die Plattform z. B. iOS-Push-Token erfassen, während aber kein APNS-Service konfiguriert ist.
+   * Die Push-Plattform (APNS, FCM usw.), an die die Nachricht übertragen werden sollte, existiert nicht für die entsprechende App. Beispielsweise kann die Plattform iOS-Push-Token erfassen, aber der APNS-Dienst ist nicht konfiguriert.
 
-   * Die Nachricht kann auch fehlgeschlagen sein, weil der Push-Dienst nicht richtig konfiguriert war oder das Mobile Services-System ausgefallen ist.
+   * Die Nachricht ist möglicherweise fehlgeschlagen, weil der Push-Dienst nicht richtig konfiguriert wurde oder das Mobile Services-System ausfällt.
    >[!IMPORTANT]
    >
-   >Wenn es ungewöhnlich oft zu einem Fehlschlag kommt, überprüfen Sie die Konfiguration der Push-Dienste. Wenn die Push-Dienste korrekt konfiguriert zu sein scheinen, wenden Sie sich an die Adobe-Kundenunterstützung.
+   >Wenn Sie eine ungewöhnlich große Anzahl von Fehlern haben, überprüfen Sie Ihre Push-Dienste-Konfiguration. Wenn Push-Dienste korrekt konfiguriert zu sein scheinen, wenden Sie sich an den Adobe-Kundendienst.
 
 * **[!UICONTROL Auf der schwarzen Liste]**
 
-   Die Anzahl der Gerätetoken, die für das Senden an APNS oder FCM nicht mehr gültig sind. Dies bedeutet meist, dass die App vom Gerät deinstalliert wurde oder dass der Benutzer seine Teilnahmeeinstellungen für den Erhalt von Nachrichten geändert hat. Android und iOS verhalten sich unterschiedlich, wenn Token als in der Blacklist vorhandene Token gezählt werden. Android-Token erscheinen sofort in der Anzahl der Token auf der schwarzen Liste. iOS-Token werden anfangs als veröffentlicht angezeigt, in nachfolgenden Nachrichten gelten sie jedoch aufgrund des Feedbacks von APNS als in der Blacklist vorhanden.
+   Die Anzahl der Gerätetoken, die für das Senden an APNS oder FCM nicht mehr gültig sind. Dies bedeutet meist, dass die App vom Gerät deinstalliert wurde oder dass der Benutzer seine Teilnahmeeinstellungen für den Erhalt von Nachrichten geändert hat. Android und iOS unterscheiden sich darüber, wann Token als &quot;Ablehnen&quot;gezählt werden. Android-Token werden sofort in der Zählung der Liste &quot;Ablehnen&quot;angezeigt. iOS-Token werden zunächst als veröffentlicht angezeigt, werden jedoch auf Grundlage des Feedbacks von APNS in nachfolgenden Nachrichten als &quot;Ablehnen&quot;angezeigt.
