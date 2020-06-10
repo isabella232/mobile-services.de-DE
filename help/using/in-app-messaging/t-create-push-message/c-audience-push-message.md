@@ -3,12 +3,15 @@ description: Sie können Zielgruppenoptionen für Push-Nachrichten definieren un
 keywords: mobile
 seo-description: Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren, einschließlich Datumsbereichsoptionen, Analytics-Segmenten und benutzerdefinierter Segmente.
 seo-title: Zielgruppe Zielgruppensegmente für Push-Nachrichten definieren und konfigurieren
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Zielgruppe Zielgruppensegmente für Push-Nachrichten definieren und konfigurieren
-topic: Metriken
+topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: ht
-source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 76%
 
 ---
 
@@ -21,13 +24,13 @@ Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurier
 
 Wenn ein Zielgruppensegment für Push-Messaging erstellt wird, beinhaltet das Segment möglicherweise Benutzer aus einer oder mehreren Apps, da auch Report Suites bzw. Virtual Report Suites Daten aus einer oder mehreren Apps enthalten können. Weitere Informationen zu Virtual Report Suites finden Sie unter [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
 
-In Adobe Mobile Services können Marketingexperten Nachrichten an nur eine App pro Plattform pushen. Wenn sie versuchen, die Nachrichten an Segmente zu pushen, die Benutzer aus mehreren Apps enthalten, werden sie per Warnmeldung darüber benachrichtigt, dass das Fortsetzen des Vorgangs schwerwiegende Push-Fehler sowie ein mögliches Blacklisting der Benutzer verursachen kann. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+In Adobe Mobile Services können Marketingexperten pro Plattform nur an eine App senden. Wenn Marketingexperten versuchen, in Segmente zu gelangen, die Benutzer aus mehreren Apps enthalten, wird eine Warnung angezeigt, in der erklärt wird, dass ein Fortfahren zu schwerwiegenden Push-Fehlern und der möglichen Verweigerung der Benutzerliste führen kann. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 Informationen zur Verwendung von Audience Manager-Daten in Ihrer Segmentdefinition finden Sie unter [Audience Analytics](https://docs.adobe.com/content/help/de-DE/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->Wenn App-Benutzer in der Blacklist enthalten sind, können Marketingexperten **keine** Push-Nachrichten an die betroffenen Benutzer mehr senden.
+>If app users are deny listed, marketers can **never** send push messages to those affected users again.
 
 Wenn Sie ein Zielgruppensegment auswählen, das Benutzer mehrerer Apps enthält, wird möglicherweise folgender Warnhinweis angezeigt:
 
@@ -39,7 +42,7 @@ Der App-Name basiert auf der reduzierten Version der AppId, die automatisch vom 
 >
 >Die Versionsnummer ist optional.
 
-Bis zu sechs Zahlengruppen für die Version und fünf Zahlengruppen für die Bundle-ID werden entfernt.
+Es werden bis zu 6 Zahlensätze für die Version und 5 Zahlensätze für die Bündel-ID entfernt.
 
 Beispiel:
 
@@ -60,11 +63,11 @@ So wird gewährleistet, dass Push-Benachrichtigungen an ein Zielgruppensegment g
 
 ### Beispiele
 
-Im Folgenden finden Sie einige Beispiele zur richtigen Definition von Segmenten:
+Im Folgenden finden Sie einige Beispiele, wie Sie Segmente korrekt definieren können:
 
-**Richtig:** Der Marketingexperte stellt Push-Zertifikate für die iOS- und Android-Versionen einer App bereit, beispielsweise Adobe Photoshop. Daraufhin kann der Marketingexperte eine Push-Benachrichtigung an ein Benutzersegment senden, dass sich über beide Plattformen erstreckt.
+**Do**: Der Marketer stellt Push-Zertifikate für die iOS- und Android-Versionen einer App bereit, z. B. für Adobe Fotoshop. Der Marketingexperte sendet möglicherweise eine Push-Benachrichtigung an ein Benutzersegment, das sich über beide Plattformen erstreckt.
 
-**Falsch:** Marketingexperten stellen Push-Zertifikate für die iOS- und Android-Versionen einer App bereit, beispielsweise Adobe Photoshop. Wenn die Marketingexperten ein Segment *aller aktiven Benutzer der letzten 30 Tage* erstellen und die Nachricht an dieses Segment pushen, erhalten nur Benutzer der Adobe Photoshop-iOS- und -Android-App die Push-Benachrichtigung. Die Benutzer der iOS- bzw. Android-App von Adobe Illustrator hingegen befinden sich auf der Blacklist. Weitere Informationen und Beispiele finden Sie im Abschnitt *Beheben von Push-Nachrichtenfehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
+**Nicht**: Marketingexperten stellen Push-Zertifikate für iOS- und Android-Versionen einer App bereit, z. B. für Adobe Fotoshop. Wenn der Marketingexperte in den letzten 30 Tagen *ein Segment* aller aktiven Benutzer erstellt und an dieses weiterleitet, erhalten nur die Benutzer der Adobe Fotoshop iOS- und Android-App den Push-Vorgang und alle Benutzer der Adobe Illustrator iOS- und Android-App werden ausgeschlossen. Weitere Informationen und Beispiele finden Sie im Abschnitt *Beheben von Push-Nachrichtenfehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
 ## Zielgruppensegmente konfigurieren {#section_A92C60885A30421B8150820EC1CCBF13}
 
@@ -76,7 +79,7 @@ Im Folgenden finden Sie einige Beispiele zur richtigen Definition von Segmenten:
 
    * **[!UICONTROL Geschätzte Teilnehmer-Zielgruppe]** beschreibt die Anzahl der Geräte, die dem Adobe Analytics-Segment entsprechen, **und** die Anzahl teilnehmender Geräte.
 
-      Sie können eine Schätzung der Benutzeranzahl in Ihren ausgewählten Segmenten anzeigen, die den Empfang von Nachrichten aktiviert haben und die Push-Nachricht erhalten. Die Gesamtanzahl der App-Benutzer wird unter der Schätzung angegeben, und zwar unabhängig davon, ob der Erhalt von Nachrichten aktiviert ist.
+      Sie können eine Schätzung der Anzahl der Benutzer in Ihren ausgewählten Segmenten erstellen, die sich für den Empfang von Nachrichten entschieden haben und die Push-Nachricht erhalten. Die Gesamtzahl der App-Benutzer wird unabhängig vom Status der Teilnahme unterhalb der Schätzung angezeigt.
 
    * **[!UICONTROL Gesamt]** beschreibt die Anzahl der Geräte, die dem Adobe Analytics-Segment entsprechen.
 
