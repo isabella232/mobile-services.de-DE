@@ -8,9 +8,9 @@ title: Zielgruppe Zielgruppensegmente für Push-Nachrichten definieren und konfi
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1021'
 ht-degree: 76%
 
 ---
@@ -24,13 +24,13 @@ Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurier
 
 Wenn ein Zielgruppensegment für Push-Messaging erstellt wird, beinhaltet das Segment möglicherweise Benutzer aus einer oder mehreren Apps, da auch Report Suites bzw. Virtual Report Suites Daten aus einer oder mehreren Apps enthalten können. Weitere Informationen zu Virtual Report Suites finden Sie unter [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
 
-In Adobe Mobile Services können Marketingexperten pro Plattform nur an eine App senden. Wenn Marketingexperten versuchen, in Segmente zu gelangen, die Benutzer aus mehreren Apps enthalten, wird eine Warnung angezeigt, in der erklärt wird, dass ein Fortfahren zu schwerwiegenden Push-Fehlern und der möglichen Verweigerung der Benutzerliste führen kann. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+In Adobe Mobile Services können Marketingexperten pro Plattform nur an eine App senden. Wenn Marketingexperten versuchen, in Segmente zu gelangen, die Benutzer aus mehreren Apps enthalten, wird eine Warnung angezeigt, in der erklärt wird, dass ein Fortfahren zu schwerwiegenden Push-Fehlern und der möglichen Blockierung der Benutzerliste führen kann. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 Informationen zur Verwendung von Audience Manager-Daten in Ihrer Segmentdefinition finden Sie unter [Audience Analytics](https://docs.adobe.com/content/help/de-DE/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->If app users are deny listed, marketers can **never** send push messages to those affected users again.
+>If app users are blocklisted, marketers can **never** send push messages to those affected users again.
 
 Wenn Sie ein Zielgruppensegment auswählen, das Benutzer mehrerer Apps enthält, wird möglicherweise folgender Warnhinweis angezeigt:
 
@@ -67,7 +67,7 @@ Im Folgenden finden Sie einige Beispiele, wie Sie Segmente korrekt definieren k�
 
 **Do**: Der Marketer stellt Push-Zertifikate für die iOS- und Android-Versionen einer App bereit, z. B. für Adobe Fotoshop. Der Marketingexperte sendet möglicherweise eine Push-Benachrichtigung an ein Benutzersegment, das sich über beide Plattformen erstreckt.
 
-**Nicht**: Marketingexperten stellen Push-Zertifikate für iOS- und Android-Versionen einer App bereit, z. B. für Adobe Fotoshop. Wenn der Marketingexperte in den letzten 30 Tagen *ein Segment* aller aktiven Benutzer erstellt und an dieses weiterleitet, erhalten nur die Benutzer der Adobe Fotoshop iOS- und Android-App den Push-Vorgang und alle Benutzer der Adobe Illustrator iOS- und Android-App werden ausgeschlossen. Weitere Informationen und Beispiele finden Sie im Abschnitt *Beheben von Push-Nachrichtenfehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
+**Nicht**: Marketingexperten stellen Push-Zertifikate für iOS- und Android-Versionen einer App bereit, z. B. für Adobe Fotoshop. Wenn der Marketingexperte in den letzten 30 Tagen *ein Segment* aller aktiven Benutzer erstellt und an dieses weiterleitet, erhalten nur die Benutzer der Adobe Fotoshop iOS- und Android-App den Push-Vorgang und alle Benutzer der Adobe Illustrator iOS- und Android-App werden blockiert. Weitere Informationen und Beispiele finden Sie im Abschnitt *Beheben von Push-Nachrichtenfehlern* unter [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
 ## Zielgruppensegmente konfigurieren {#section_A92C60885A30421B8150820EC1CCBF13}
 
