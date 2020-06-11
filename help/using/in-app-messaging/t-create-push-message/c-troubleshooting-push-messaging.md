@@ -8,9 +8,9 @@ title: Fehlerbehebung für Push-Nachrichten
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '735'
 ht-degree: 59%
 
 ---
@@ -100,10 +100,10 @@ Der folgende Kunde verfügt über zwei iOS-Apps:
    * RSID: PhotoShop_iOS_app_LA
    * VRSID-Definitionssegment: `a.os contains “iOS”`
 
-In diesem Beispiel erhalten wie erwartet alle Benutzer der *PhotoShop_iOS_app_SF-App* diese Push-Nachricht, wenn ein Photoshop-Mitarbeiter eine Push-Nachricht an die *PhotoShop_iOS_app_SF*-App sendet. Wenn der Mitarbeiter jedoch eine Nachricht an die *PhotoShop_iOS_app_LA*-App sendet, wird die Nachricht aufgrund des falschen VRSID-Definitionssegments (`iOS` anstatt `a.os contains "PhotoShop_iOS_app_LA"`) an **alle** iOS-Benutzer unter *AllAdobe PhotoShop_apps* gesendet. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also deny-lists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. Wenn das Segment als `a.os contains “PhotoShop_iOS_app_LA”` definiert worden wäre, wäre die Nachricht nur an *PhotoShop_iOS_app_LA*-Benutzer gesendet worden.
+In diesem Beispiel erhalten wie erwartet alle Benutzer der *PhotoShop_iOS_app_SF-App* diese Push-Nachricht, wenn ein Photoshop-Mitarbeiter eine Push-Nachricht an die *PhotoShop_iOS_app_SF*-App sendet. Wenn der Mitarbeiter jedoch eine Nachricht an die *PhotoShop_iOS_app_LA*-App sendet, wird die Nachricht aufgrund des falschen VRSID-Definitionssegments (`iOS` anstatt `a.os contains "PhotoShop_iOS_app_LA"`) an **alle** iOS-Benutzer unter *AllAdobe PhotoShop_apps* gesendet. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blocklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. Wenn das Segment als `a.os contains “PhotoShop_iOS_app_LA”` definiert worden wäre, wäre die Nachricht nur an *PhotoShop_iOS_app_LA*-Benutzer gesendet worden.
 
 Wenn die Push-IDs für *PhotoShop_iOS_app_SF* mit dem *PhotoShop_IOS_app_LA*-Push-Zertifikat übergeben werden, werden sie als `invalid` zurückgegeben.
 
 >[!CAUTION]
 >
->Wenn Sie eine Push-Nachricht für eine App erstellen, die eine VRS verwendet, und auf **[!UICONTROL Speichern und Senden]** klicken, wird ein Warnhinweis angezeigt, um Sie daran zu erinnern, dass jede aufgeführte App über ein gültiges Zertifikat verfügen **muss**. If each app does **not** have a valid certificate, your audience segments might be indefinitely deny listed, and you might not be able to send future push messages to the affected users. Weitere Informationen zu Zielgruppensegmenten finden Sie unter [Zielgruppe: Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>Wenn Sie eine Push-Nachricht für eine App erstellen, die eine VRS verwendet, und auf **[!UICONTROL Speichern und Senden]** klicken, wird ein Warnhinweis angezeigt, um Sie daran zu erinnern, dass jede aufgeführte App über ein gültiges Zertifikat verfügen **muss**. If each app does **not** have a valid certificate, your audience segments might be indefinitely blocklisted, and you might not be able to send future push messages to the affected users. Weitere Informationen zu Zielgruppensegmenten finden Sie unter [Zielgruppe: Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
