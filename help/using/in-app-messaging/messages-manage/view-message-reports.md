@@ -8,9 +8,9 @@ title: Nachrichtenberichte anzeigen
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '490'
 ht-degree: 78%
 
 ---
@@ -89,6 +89,6 @@ Im Folgenden finden Sie eine Liste der Metriken, die für Push-Nachrichten verf�
    >
    >Wenn Sie eine ungewöhnlich große Anzahl von Fehlern haben, überprüfen Sie Ihre Push-Dienste-Konfiguration. Wenn Push-Dienste korrekt konfiguriert zu sein scheinen, wenden Sie sich an den Adobe-Kundendienst.
 
-* **[!UICONTROL Auf der schwarzen Liste]**
+* **[!UICONTROL Blockliste]**
 
-   Die Anzahl der Gerätetoken, die für das Senden an APNS oder FCM nicht mehr gültig sind. Dies bedeutet meist, dass die App vom Gerät deinstalliert wurde oder dass der Benutzer seine Teilnahmeeinstellungen für den Erhalt von Nachrichten geändert hat. Android und iOS unterscheiden sich darüber, wann Token als &quot;Ablehnen&quot;gezählt werden. Android-Token werden sofort in der Zählung der Liste &quot;Ablehnen&quot;angezeigt. iOS-Token werden zunächst als veröffentlicht angezeigt, werden jedoch auf Grundlage des Feedbacks von APNS in nachfolgenden Nachrichten als &quot;Ablehnen&quot;angezeigt.
+   Die Anzahl der Gerätetoken, die für das Senden an APNS oder FCM nicht mehr gültig sind. Dies bedeutet meist, dass die App vom Gerät deinstalliert wurde oder dass der Benutzer seine Teilnahmeeinstellungen für den Erhalt von Nachrichten geändert hat. Android und iOS unterscheiden sich darüber, wann Token als blockgelistet gezählt werden. Android-Token werden sofort in der Blocklist-Anzahl angezeigt. iOS-Token werden zunächst als veröffentlicht angezeigt, werden jedoch auf Grundlage des Feedbacks von APNS in nachfolgenden Nachrichten als blockiert angezeigt.
