@@ -73,7 +73,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **charset**
 
-   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/config-vars/charset.html).
 
    * Mindestens SDK-Version 4.0
 
@@ -95,7 +95,6 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    * Wenn `coopUnsafe` auf `true` festgelegt ist, wird `coop_unsafe=1` immer an Audience Manager und Besucher-ID-Treffer angehängt.
    * Wenn Sie die serverseitige Weiterleitung von Analytics an Audience Manager aktivieren, sehen Sie auch `coop_unsafe=1` in den Analytics-Treffern.
-
    Zusätzliche Informationen:
 
    * Mindestens SDK-Version 4.16.1
@@ -134,7 +133,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    * Wenn Zeitstempel für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* Ihre Konfigurationseigenschaft wahr sein.
    * Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* die Konfigurationseigenschaft „false“ lauten.
 
-      Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,  wenden Sie sich bitte an  Wenden Sie sich an die Kundenunterstützung oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter. Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
+      Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich bitte an Wenden Sie sich an die Kundenunterstützung oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter. Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
 
    * Mindestens SDK-Version 4.0
 
