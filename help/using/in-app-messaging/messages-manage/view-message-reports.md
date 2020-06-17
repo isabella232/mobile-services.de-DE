@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: 33297c9e6537f664222c91a44c20bb9ab2ee310a
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 78%
+ht-degree: 91%
 
 ---
 
 
-# Nachrichtenberichte anzeigen{#view-message-reports}
+# Nachrichtenberichte anzeigen {#view-message-reports}
 
 Sie können Nachrichtenberichte für In-App- und Push-Nachrichten anzeigen.
 
@@ -74,7 +74,7 @@ Im Folgenden finden Sie eine Liste der Metriken, die für Push-Nachrichten verf�
 
 * **[!UICONTROL Veröffentlicht]**
 
-   Die Anzahl der Gerätetoken, die erfolgreich an Apple Push Notification Service/Firebase Cloud Messaging (APNS/FCM) gesendet wurden, um eine Nachricht an die Benutzergeräte zu übertragen.
+   Die Anzahl der Gerätet-Token, die erfolgreich an Apple Push Notification Service/Firebase Cloud Messaging (APNS/FCM) gesendet wurden, um eine Nachricht an die Benutzergeräte zu übertragen.
 
 * **[!UICONTROL Fehlgeschlagen]**
 
@@ -84,10 +84,10 @@ Im Folgenden finden Sie eine Liste der Metriken, die für Push-Nachrichten verf�
 
    * Die Push-Plattform (APNS, FCM usw.), an die die Nachricht übertragen werden sollte, existiert nicht für die entsprechende App. Beispielsweise kann die Plattform iOS-Push-Token erfassen, aber der APNS-Dienst ist nicht konfiguriert.
 
-   * Die Nachricht ist möglicherweise fehlgeschlagen, weil der Push-Dienst nicht richtig konfiguriert wurde oder das Mobile Services-System ausfällt.
+   * Die Nachricht ist möglicherweise fehlgeschlagen, weil der Push-Dienst nicht richtig konfiguriert wurde oder das Mobile Services-System ausgefallen ist.
    >[!IMPORTANT]
    >
-   >Wenn Sie eine ungewöhnlich große Anzahl von Fehlern haben, überprüfen Sie Ihre Push-Dienste-Konfiguration. Wenn Push-Dienste korrekt konfiguriert zu sein scheinen, wenden Sie sich an den Adobe-Kundendienst.
+   >Wenn Sie eine ungewöhnlich hohe Anzahl von Fehlern haben, überprüfen Sie Ihre Push-Dienste-Konfiguration. Wenn Push-Dienste korrekt konfiguriert zu sein scheinen, wenden Sie sich an die Adobe-Kundenunterstützung.
 
 * **[!UICONTROL Blockierungsliste]**
 
