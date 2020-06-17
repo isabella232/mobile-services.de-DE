@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,6 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Aktiviert die Mobile App-Akquise.
       * `server`: der Akquise-Server, der beim ersten Start auf einen Akquise-Referrer überprüft wird.
       * `appid`: die generierte ID, die diese App auf dem Akquise-Server eindeutig identifiziert.
-
    Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. Weitere Informationen finden Sie unter *referrerTimeout* in dieser Variablenliste.
 
 * **analyticsForwardingEnabled**
@@ -63,7 +62,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Mindestens SDK-Version 4.1
    * Grenzwert für die Anzahl der Treffer, die in aufeinanderfolgenden Aufrufen gesendet werden sollen.
 
-      Wenn beispielsweise `batchLimit` auf 10 festgelegt ist, wird jeder Treffer vor dem 10. Treffer in der Warteschlange gespeichert. Wenn der 10. Treffer eingeht, werden alle 10 Treffer nacheinander gesendet.
+      Wenn beispielsweise `batchLimit` auf 10 festgelegt ist, wird jeder Treffer vor dem 10. Treffer in der Warteschlange gespeichert. Beim 10. Treffer werden alle 10 Treffer nacheinander gesendet.
 
       Beachten Sie die folgenden Informationen:
 
@@ -89,7 +88,6 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Die boolesche Eigenschaft des Objekts `marketingCloud`, das, wenn auf `true` festgelegt, dazu führt, dass das Gerät aus der Experience Cloud-Gerätekooperation ausgeschlossen wird.
    * Der Standardwert ist `false`.
    * Diese Einstellung wird **nur** für Kunden verwendet, die an der Gerätekooperation teilnehmen.
-
    For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
    Beachten Sie die folgenden Informationen:
@@ -128,7 +126,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
 
       >[!IMPORTANT]
       >
-      >Wenn Zeitstempel für Ihre Report Suite aktiviert sind, `offlineEnabled`muss Ihre Konfigurationseigenschaft **** wahr sein. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled`muss die Konfigurationseigenschaft **** „false“ lauten.
+      >Wenn Zeitstempel für Ihre Report Suite aktiviert sind, `offlineEnabled` **muss** Ihre Konfigurationseigenschaft wahr sein. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` **muss** die Konfigurationseigenschaft „false“ lauten.
       >
       >Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich an den Kundenservice oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter.
 
@@ -181,7 +179,6 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
       * Für `optedin` werden die Treffer sofort gesendet.
       * Bei `optedout` werden Treffer verworfen.
       * Wenn der Wert `optunknown` lautet und für ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „optedin“ (Treffer werden gesendet) oder „optedout“ (Treffer werden verworfen) ändert.
-
       Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu `optedin`geändert wird.  Dadurch wird nur der Ausgangswert festgelegt. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird.
 
 
@@ -371,11 +368,11 @@ Der Nachrichtenknoten wird automatisch von Adobe Mobile Services generiert und m
 
 
 * „audiences“
-   * Array von Objekten, die die Anzeige der Nachricht definieren
+   * Gruppe von Objekten, die definieren, wie die Meldung angezeigt werden soll:
    * „key“
-      * Variablenname, nach dem im Treffer gesucht werden soll, erforderlich
+      * Variablenname, der im Treffer zu finden ist, erforderlich
 * „matches“
-   * Übereinstimmungstyp, der beim Vergleich verwendet wird
+   * Typ des Matchers, der für den Vergleich verwendet wird
    * eq = gleich
    * ne = nicht gleich
    * co = enthält
@@ -389,12 +386,12 @@ Der Nachrichtenknoten wird automatisch von Adobe Mobile Services generiert und m
    * gt = größer als
    * ge = größer als oder gleich
 * „values“
-   * ein Array von Werten, die für die Übereinstimmung mit dem Wert der Variablen in
+   * Eine Gruppe von Werten, die mit dem Wert der Variablen verglichen werden, die hier benannt sind:
       * Schlüssel
       * mit dem Matcher-Typ in
       * „matches“
 * „triggers“
-   * entspricht Audiencen, aber dies ist die Aktion anstelle der Audience
+   * entspricht Zielgruppen, aber dies ist die Aktion anstelle der Zielgruppe
    * „key“
    * „matches“
    * „values“
