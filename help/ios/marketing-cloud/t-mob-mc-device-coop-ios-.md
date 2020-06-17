@@ -23,7 +23,7 @@ Führen Sie die folgenden Schritte für die iOS-SDK in Experience Cloud aus, um 
 >
 >Für diese Funktion ist die iOS-SDK-Version 4.8.5 oder höher erforderlich.
 
-Ab SDK-Version 4.16.1 können Mitglieder der Gerätekooperation per Opt-out ihre Mobilgerätedaten aus der Experience Cloud-Gerätekooperation abwählen. Weitere Informationen finden Sie unter [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md) und in der `visitorAPI.js` Methode für [isCoopSafe](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/coopsafe.html).
+Ab SDK-Version 4.16.1 können Mitglieder der Gerätekooperation per Opt-out ihre Mobilgerätedaten aus der Experience Cloud-Gerätekooperation abwählen. Weitere Informationen finden Sie unter [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md) und in der `visitorAPI.js` Methode für [isCoopSafe](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/configurations/coopsafe.html).
 
 1. Adobe Mobile-SDK implementieren.
 
