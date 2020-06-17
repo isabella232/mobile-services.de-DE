@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 59%
+ht-degree: 91%
 
 ---
 
 
-# Fehlerbehebung für Push-Nachrichten{#troubleshooting-push-messaging}
+# Fehlerbehebung für Push-Nachrichten {#troubleshooting-push-messaging}
 
 Mithilfe dieser Informationen können Probleme mit Push-Nachrichten behoben werden.
 
@@ -32,7 +32,7 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 
 * **Warten auf den Push-Dienst**
 
-   Der Push-Dienst (APNS oder GCM) sendet die Nachricht möglicherweise nicht sofort. Zwar sind sie ungewöhnlich, jedoch wurden bereits Wartezeiten von 5–10 Minuten festgestellt. Informationen dazu, ob die Push-Nachricht gesendet wurde, finden Sie in der **[!UICONTROL Berichtsansicht]** der Push-Nachricht. Suchen Sie dort in der Tabelle **[!UICONTROL Nachrichtenverlauf]** nach der Nachricht und ermitteln Sie die Anzahl **[!UICONTROL Veröffentlicht]**.
+   Der Push-Dienst (APNS oder GCM) versendet die Nachricht möglicherweise nicht sofort. Zwar sind sie ungewöhnlich, jedoch wurden bereits Wartezeiten von 5–10 Minuten festgestellt. Informationen dazu, ob die Push-Nachricht gesendet wurde, finden Sie in der **[!UICONTROL Berichtsansicht]** der Push-Nachricht. Suchen Sie dort in der Tabelle **[!UICONTROL Nachrichtenverlauf]** nach der Nachricht und ermitteln Sie die Anzahl **[!UICONTROL Veröffentlicht]**.
 
    >[!TIP]
    >
@@ -43,14 +43,14 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
    * [Servicequalität](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
    * [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options#lifetime.).
 
-## Warum ist mein Android GCM API-Schlüssel ungültig?
+## Warum ist mein Android-GCM-API-Schlüssel ungültig?
 
 * **Ungültiger API-Schlüssel**
 
    Ihr API-Schlüssel ist möglicherweise aus den folgenden Gründen ungültig:
 
-   * Der von Ihnen angegebene API-Schlüssel ist kein Serverschlüssel mit dem richtigen GCM-API-Schlüsselwert.
-   * Der Serverschlüssel hat die IPs zugelassen und blockiert die Server von Adobe am Senden einer Push-Nachricht.
+   * Der von Ihnen angegebene API-Schlüssel ist kein Server-Schlüssel mit dem richtigen GCM-API-Schlüsselwert.
+   * Der Serverschlüssel hat die IPs zugelassen und hindert die Server von Adobe am Senden einer Push-Nachricht.
 
 * **Bestimmen der Gültigkeit des API-Schlüssels**
 
