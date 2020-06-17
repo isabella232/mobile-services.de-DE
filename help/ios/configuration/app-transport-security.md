@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: App Transport Security
 topic: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -25,16 +25,16 @@ Damit Version 4.7 oder neuere Versionen des Adobe Mobile-SDK problemlos mit ATS
 
 In Adobe Mobile Services werden durch Aktivieren der Option **[!UICONTROL HTTPS verwenden]** auf der Seite „App-Verwaltungseinstellungen verwalten“ alle Treffer aus Analytics, Audience Manager, Target und dem Identity-Dienst für Adobe Experience Platform über HTTPS gesendet.
 
-Alternativ können Sie die folgenden Server in Ihrer &quot;zulässigen&quot; Liste platzieren:
+Alternativ können Sie die folgenden Server in Ihrer „Zulassungsliste“ platzieren:
 
 | Produkt | Anleitung |
 |--- |--- |
-| Analytics | Um Ihren Analytics-Server zuzulassen, fügen Sie Ihre Tracking-Server-Domäne der Datei &quot;info.plist&quot;als Ausnahmedomäne für ATS hinzu.  Die Verfolgungsserverdomäne finden Sie im Abschnitt Analytics der `ADBMobileConfig.json`-Datei oder im Abschnitt Analytics auf der Seite App-Verwaltungseinstellungen. |
+| Analytics | Wenn Sie Ihren Analytics-Server zulassen möchten, fügen Sie Ihre Verfolgungsserverdomäne Ihrer info.plist-Datei als Ausnahmedomäne für ATS hinzu.  Die Verfolgungsserverdomäne finden Sie im Abschnitt Analytics der `ADBMobileConfig.json`-Datei oder im Abschnitt Analytics auf der Seite App-Verwaltungseinstellungen. |
 | Audience Manager | Ihre Audience Manager-Domäne finden Sie in den Servereigenschaften des audienceManager-Objekts in Ihrer `ADBMobileConfig.json`-Datei.  Wenn Sie Audience Manager in Ihrer App verwenden und SSL nicht aktiviert ist, fügen Sie diesen Server in Ihrer `Info.plist`-Datei als Ausnahmedomäne für ATS hinzu. |
 | Target | Sie können Ihren Target-Endpunkt Ihrer Info.plist-Datei als Ausnahmedomäne für ATS hinzufügen.  Wenn Sie Ihren Target-Endpunkt finden möchten, suchen Sie `clientCodeproperty` im Zielobjekt Ihrer `ADBMobileConfig.json`-Datei. Ihr Endpunkt lautet `https://{clientCode}.tt.omtrdc.net`.  Wenn Ihr `clientCodeproperty` beispielsweise `“myCompany”` ist, lautet der Endpunkt `https://myCompany.tt.omtrdc.net`. |
 | Identity-Dienst für Adobe Experience Platform | Sie können den Experience Cloud-Server in Ihrer `Info.plist`-Datei als Ausnahmedomäne für ATS hinzufügen. Diese Domäne lautet `dpm.demdex.net`. |
-| Mobile Services: Akquise | Allow the Acquisition server as an exception domain for ATS in your  `Info.plist` file. Diese Domäne lautet `c00.adobe.com`. |
-| Mobile Services: In-App-Nachrichten | Wenn Sie In-App-Nachrichten verwenden, müssen Sie eventuell Einträge für ATS für jede URL, die Sie verwenden, aber nicht HTTPS, in die Ausnahmelomäne hinzufügen. Diese Liste umfasst gehostete Bilder und alle URLs, die in Ihren benutzerdefinierten Vollbildnachrichten-HTML-Code eingebettet sind.  Weitere Informationen zum Einrichten der Ausnahmedomäne in einer `info.plist`-Datei finden Sie in der Zeile *NSExceptionDomains* in *Tabelle 2: App Transport Security dictionary primary keys (Tabelle 2: Primärschlüssel des App Transport Security-Wörterbuchs)*. Weitere Informationen finden Sie in *Table 3 Exception domains dictionary keys (Wörterbuchschlüssel für Ausnahmedomänen)* in [Information Property List Key Reference (Schlüsselreferenz der Informationseigenschaftsliste)](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/). |
+| Mobile Services: Akquise | Nehmen Sie den Akquiseserver in der Datei `Info.plist` als Ausnahmedomäne in die Zulassungsliste auf. Diese Domäne lautet `c00.adobe.com`. |
+| Mobile Services: In-App-Nachrichten | Wenn Sie In-App-Nachrichten verwenden, müssen Sie eventuell Einträge für ATS für jede URL, die Sie verwenden und die nicht HTTPS ist, in die Ausnahme-Domain hinzufügen. Diese Liste umfasst gehostete Bilder und alle URLs, die in Ihren benutzerdefinierten Vollbildnachrichten-HTML-Code eingebettet sind.  Weitere Informationen zum Einrichten der Ausnahmedomäne in einer `info.plist`-Datei finden Sie in der Zeile *NSExceptionDomains* in *Tabelle 2: App Transport Security dictionary primary keys (Tabelle 2: Primärschlüssel des App Transport Security-Wörterbuchs)*. Weitere Informationen finden Sie in *Table 3 Exception domains dictionary keys (Wörterbuchschlüssel für Ausnahmedomänen)* in [Information Property List Key Reference (Schlüsselreferenz der Informationseigenschaftsliste)](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/). |
 
 >[!TIP]
 >
