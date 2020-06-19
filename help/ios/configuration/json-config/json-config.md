@@ -95,6 +95,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    * Wenn `coopUnsafe` auf `true` festgelegt ist, wird `coop_unsafe=1` immer an Audience Manager und Besucher-ID-Treffer angehängt.
    * Wenn Sie die serverseitige Weiterleitung von Analytics an Audience Manager aktivieren, sehen Sie auch `coop_unsafe=1` in den Analytics-Treffern.
+
    Zusätzliche Informationen:
 
    * Mindestens SDK-Version 4.16.1
