@@ -4,11 +4,11 @@ seo-description: Wenden Sie sich an einen Adobe-Support-Mitarbeiter, um mit der 
 seo-title: Experience Cloud-Gerätekooperation
 title: Experience Cloud-Gerätekooperation
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '290'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Hier sind einige zusätzliche Informationen über die `coopUnsafe`-Markierung:
 * Der Standardwert ist `false`.
 * Diese Einstellung wird **nur** für Kunden verwendet, die an der Gerätekooperation teilnehmen.
 
-For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
+Bei Mitgliedern mit Gerätekooperation, für die dieser Wert `true` sein muss, müssen Sie sich an das Kooperationsteam wenden, um eine Sperrlisten-Markierung auf Ihrem Gerätekooperationskonto zu verlangen. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
 Beachten Sie die folgenden Informationen:
 
