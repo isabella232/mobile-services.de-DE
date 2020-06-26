@@ -1,16 +1,16 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
 seo-description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
-seo-title: ADBMobile-JSON-Konfiguration
+seo-title: ADBMobile JSON-Konfiguration
 solution: Marketing Cloud,Analytics
-title: ADBMobile-JSON-Konfiguration
+title: ADBMobile JSON-Konfiguration
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 Anhand dieser Informationen können Sie die Variablen in der Konfigurationsdatei ADBMobile.json verstehen.
 
-## Referenz zur Konfigurationsdatei `ADBMobileConfig.json` {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` Referenz zur Konfigurationsdatei {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinweg verwenden:
 
@@ -88,7 +88,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Die boolesche Eigenschaft des Objekts `marketingCloud`, das, wenn auf `true` festgelegt, dazu führt, dass das Gerät aus der Experience Cloud-Gerätekooperation ausgeschlossen wird.
    * Der Standardwert ist `false`.
    * Diese Einstellung wird **nur** für Kunden verwendet, die an der Gerätekooperation teilnehmen.
-   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
+   Bei Mitgliedern mit Gerätekooperation, für die dieser Wert `true` sein muss, müssen Sie sich an das Kooperationsteam wenden, um eine Sperrlisten-Markierung auf Ihrem Gerätekooperationskonto zu verlangen. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
    Beachten Sie die folgenden Informationen:
 
@@ -128,7 +128,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
       >
       >Wenn Zeitstempel für Ihre Report Suite aktiviert sind, `offlineEnabled` **muss** Ihre Konfigurationseigenschaft wahr sein. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` **muss** die Konfigurationseigenschaft „false“ lauten.
       >
-      >Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich an den Kundenservice oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter.
+      >Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,  wenden Sie sich an den Kundenservice oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter.
 
       Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
 
