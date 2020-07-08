@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -91,4 +91,4 @@ Im Folgenden finden Sie eine Liste der Metriken, die für Push-Nachrichten verf�
 
 * **[!UICONTROL Auf die Blockierungsliste gesetzt]**
 
-   Die Anzahl der Gerätetoken, die für das Senden an APNS oder FCM nicht mehr gültig sind. Dies bedeutet meist, dass die App vom Gerät deinstalliert wurde oder dass der Benutzer seine Teilnahmeeinstellungen für den Erhalt von Nachrichten geändert hat. Android und iOS unterscheiden sich darin, wann Token als auf die Sperrliste gesetzt gezählt werden. Android-Token werden sofort in der Anzahl der blockierungsliste angezeigt. iOS-Token werden zunächst als veröffentlicht angezeigt, werden jedoch auf Grundlage des Feedbacks von APNS in nachfolgenden Nachrichten als auf die Sperrliste gesetzt angezeigt.
+   Die Anzahl der Gerätetoken, die für das Senden an APNS oder FCM nicht mehr gültig sind. Dies bedeutet meist, dass die App vom Gerät deinstalliert wurde oder dass der Benutzer seine Teilnahmeeinstellungen für den Erhalt von Nachrichten geändert hat. Android und iOS unterscheiden sich darin, wann Token als auf die Sperrliste gesetzt gezählt werden. Android-Token werden sofort in der Zählung der Blockierungsliste angezeigt. iOS-Token werden zunächst als veröffentlicht angezeigt, werden jedoch auf Grundlage des Feedbacks von APNS in nachfolgenden Nachrichten als auf die Sperrliste gesetzt angezeigt.
