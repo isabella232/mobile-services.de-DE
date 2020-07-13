@@ -2,12 +2,15 @@
 description: Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werden und wie Sie am besten mit fälschlich gemeldeten Abstürzen umgehen.
 seo-description: Mithilfe dieser Informationen können Sie ermitteln, wie Abstürze verfolgt werden und wie Sie am besten mit fälschlich gemeldeten Abstürzen umgehen.
 seo-title: App-Abstürze verfolgen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: App-Abstürze verfolgen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +31,7 @@ Um präzise Absturzberichte zu gewährleisten, müssen Sie `pauseCollectingLifeC
 
 ![](assets/android-lifecycle.png)
 
-Weitere Informationen zum Lebenszyklus von Android-Aktivitäten finden Sie unter [Aktivitäten](https://developer.android.com/guide/components/activities.html).
+For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities.html).
 
 *Diese Darstellung des Android-Lebenszyklus wurde[vom Android Open Source Project erstellt und veröffentlicht](https://source.android.com/)und wird gemäß[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/)verwendet.*
 
@@ -44,7 +47,7 @@ Weitere Informationen zum Lebenszyklus von Android-Aktivitäten finden Sie unter
 
 ## Wie gehe ich mit Fragmenten um?
 
-Fragmente verfügen über App-Lebenszyklusereignisse, die Aktivitäten ähnlich sind. Fragmente können jedoch nicht aktiv sein, ohne an eine Aktivität angehängt zu sein.
+Fragmente verfügen über App-Lebenszyklusereignisse, die Aktivitäten ähnlich sind. Ein Fragment kann jedoch nicht aktiv sein, ohne an eine Aktivität angehängt zu werden.
 
 >[!IMPORTANT]
 >
