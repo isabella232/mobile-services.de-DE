@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: App-Abstürze verfolgen
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Um präzise Absturzberichte zu gewährleisten, müssen Sie `pauseCollectingLifeC
 
 ![](assets/android-lifecycle.png)
 
-For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities.html).
+Weitere Informationen zum Android-Aktivitätslebenszyklus finden Sie unter [Activities (Aktivitäten)](https://developer.android.com/guide/components/activities.html).
 
-*Diese Darstellung des Android-Lebenszyklus wurde[vom Android Open Source Project erstellt und veröffentlicht](https://source.android.com/)und wird gemäß[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/)verwendet.*
+*Diese Darstellung des Android-Lebenszyklus wurde [vom Android Open Source Project erstellt und veröffentlicht](https://source.android.com/) und wird gemäß [Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/) verwendet.*
 
 ## Wie kann es passieren, dass fälschlicherweise ein Absturz gemeldet wird?
 
@@ -47,7 +47,7 @@ For more information about the Android activity lifecycle, see [Activities](http
 
 ## Wie gehe ich mit Fragmenten um?
 
-Fragmente verfügen über App-Lebenszyklusereignisse, die Aktivitäten ähnlich sind. Ein Fragment kann jedoch nicht aktiv sein, ohne an eine Aktivität angehängt zu werden.
+Fragmente verfügen über App-Lebenszyklusereignisse, die Aktivitäten ähnlich sind. Ein Fragment kann jedoch nicht aktiv sein, ohne mit einer Aktivität verbunden zu sein.
 
 >[!IMPORTANT]
 >
