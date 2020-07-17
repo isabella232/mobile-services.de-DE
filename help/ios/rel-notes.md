@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
-source-wordcount: '401'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 48c3addeb929f3356990ef55b44f93dd4bb2f728
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 95%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 100%
 # Versionshinweise {#release-notes}
 
 Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für iOS SDK 4.x für die Experience Cloud-Lösungen:
+
+**16. Juli 2020: Version 4.19.3**
+
+* Allgemein - Es wurde ein Fehler behoben, der dazu führte, dass deeplink-URLs mit mehreren Gleichheitszeichen im Parameter Abfrage nicht ordnungsgemäß verarbeitet werden konnten.
 
 **24. März 2020: Version 4.19.2**
 
