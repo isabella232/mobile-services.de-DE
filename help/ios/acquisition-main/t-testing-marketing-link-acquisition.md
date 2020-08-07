@@ -1,14 +1,17 @@
 ---
 description: Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für eine Akquise-Kampagne mit einem Marketinglink vorzunehmen, der auf einem Gerätefingerabdruck basiert.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für eine Akquise-Kampagne mit einem Marketinglink vorzunehmen, der auf einem Gerätefingerabdruck basiert.
 seo-title: Marketinglink-Akquise testen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Marketinglink-Akquise testen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +36,8 @@ Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für 
 
    Es sollte „contextData“ in der JSON-Antwort angezeigt werden:
 
-   ```js{"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
+   ```js
+   {"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
    {"a.launch.campaign.trackingcode":"twdf4546","a.referrer.campaign.name":"iOS Demo","a.referrer.campaign.trackingcode":"twdf4546"}
    ,"adobeData":{"unique_id":"8c14098d7c79e8a180c15e4b2403549d3cc21ea8","deeplinkid":"57477650072932ec6d3a470f"}}
    ```
@@ -42,7 +46,7 @@ Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für 
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | Der Server sollte `c00.adobe.com` lauten. `appid` sollte der *`appid`* in Ihrem Akquise-Link entsprechen. |
+   | Akquise | Der Server sollte `c00.adobe.com` sein. `appid` sollte der *`appid`* in Ihrem Akquise-Link entsprechen. |
    | analytics | `referrerTimeout` sollte einen Wert größer als 0 aufweisen. |
 
 1. (Bedingt) Wenn die SSL-Einstellung in der Konfigurationsdatei Ihrer App `false` lautet, sollten Sie Ihren Akquiselink so aktualisieren, dass er das HTTP-Protokoll anstelle von HTTPS verwendet.
@@ -81,7 +85,7 @@ Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für 
 
    * `Analytics - Acquisition referrer timed out`
 
-      Fehler beim Abrufen der Antwort in der durch `referrerTimeout` definierten Zeit. Erhöhen Sie den Wert und versuchen Sie es erneut. Sie sollten darüber hinaus sicherstellen, dass Sie den Akquiselink geöffnet haben, bevor Sie die App installieren, und dass Sie dasselbe Netzwerk verwenden, wenn Sie auf die URL klicken und die App öffnen.
+      Fehler beim Abrufen der Antwort in der durch `referrerTimeout` definierten Zeit. Erhöhen Sie den Wert und versuchen Sie es erneut. Sie sollten auch sicherstellen, dass Sie den Akquise-Link vor der Installation der App geöffnet haben und dass Sie dasselbe Netzwerk verwenden, wenn Sie auf die URL klicken und die App öffnen.
 
 Beachten Sie die folgenden Informationen:
 
