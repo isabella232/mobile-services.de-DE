@@ -7,12 +7,15 @@ solution: Marketing Cloud,Developer
 title: ADBMobile.cs-Methoden
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 65%
 
 ---
 
 
-# ADBMobile.cs methods {#adbmobile-cs-methods}
+# ADBMobile.cs-Methoden {#adbmobile-cs-methods}
 
 ## Konfigurationsmethoden
 
@@ -34,7 +37,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **EnableLocalNotifications (nur iOS)**
 
-   Ermöglicht lokale Benachrichtigungen in der App.
+   Aktivieren Sie lokale Benachrichtigungen in Ihrer App.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -85,9 +88,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden umgehend gesendet.
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert.
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird.
 
-      Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. Der Standardwert wird in der Datei [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) festgelegt.
+      Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -103,7 +106,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **GetUserIdentifier**
 
-   Gibt die benutzerdefinierte Benutzerkennung zurück, sofern eine benutzerdefinierte Kennung festgelegt wurde. Gibt null zurück, wenn keine benutzerdefinierte Kennung festgelegt wurde. Der Standardwert lautet `null`.
+   Gibt die benutzerdefinierte Benutzerkennung zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt null zurück, wenn kein benutzerdefinierter Bezeichner festgelegt ist. Der Standardwert lautet `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -139,7 +142,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
    >[!TIP]
    >
-   >Diese Methode soll für Apps verwendet werden, die sich für Benachrichtigungen im Hintergrund registrieren und nur aus dem Code heraus aufgerufen werden sollten, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
+   >This method is intended to be used for apps that register for notifications while in the background and should only be called from your code that runs while your app is in the background.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -155,7 +158,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **PauseCollectingLifecycleData (nur Android)**
 
-   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten einen Zeitstempel erfassen, mit dem die Dauer der vorherigen Sitzung ermittelt wird. Hiermit wird außerdem ein Flag gesetzt, sodass im Lebenszyklus ersichtlich wird, dass die App nicht abgestürzt ist. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
+   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. For example, on pause collects a timestamp to determine previous session length. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -187,7 +190,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **SetDebugLogging**
 
-   Aktiviert die Vorgabe für die Debug-Protokollierung.
+   Legt fest, dass die Voreinstellung für die Debug-Protokollierung aktiviert ist.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -203,11 +206,11 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **SetPrivacyStatus**
 
-   Legt den Datenschutzstatus für den aktuellen Benutzer auf „status“ fest. Die folgenden Werte sind zulässig:
+   Legt den Datenschutzstatus für den aktuellen Benutzer auf den Status fest. Die folgenden Werte sind zulässig:
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden umgehend gesendet.
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -223,7 +226,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **SetUserIdentifier**
 
-   Legt die Benutzerkennung auf „userId“ fest.
+   Sets the user identifier to userId.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -257,9 +260,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Die Statusangaben entsprechen den verfügbaren Ansichten in der App, z. B. „Titelbild“, „Level 1“ oder „Pause“. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten.
 
-   If state is empty, it displays as *`app name app version (build)`* in reports. Wenn dieser Wert in einem Bericht auftritt, müssen Sie den Status in jedem `TrackState`-Aufruf festlegen.
+   Wenn der Status leer ist, wird er wie *`app name app version (build)`* in Berichten angezeigt. If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
    >[!TIP]
    >
@@ -281,7 +284,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackAction**
 
-   Verfolgt eine Aktion in der App. Aktionen sind die Vorgänge in der App, die gemessen werden sollen, z. B. „Tode“, „Level bestanden“, „Feed-Abonnements“ und weitere Metriken.
+   Verfolgt eine Aktion in der App. Aktionen sind die Vorgänge, die in Ihrer App stattfinden und die Sie messen möchten, z. B. &quot;Todesfälle&quot;, &quot;erzielte Werte&quot;, &quot;Feed-Abonnement&quot;und andere Metriken.
 
    >[!TIP]
    >
@@ -301,7 +304,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackActionFromBackground (nur iOS)**
 
-   Verfolgt eine Aktion, die im Hintergrund abläuft. Hiermit wird das Auslösen von Lebenszyklusereignissen in bestimmten Situationen unterbunden.
+   Verfolgt eine Aktion, die im Hintergrund aufgetreten ist. Dadurch wird das Auslösen von Lebenszyklusereignissen in bestimmten Ereignissen unterbunden.
 
    >[!TIP]
    >
@@ -321,7 +324,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackLocation**
 
-   Sendet die aktuellen Koordinaten (Längen- und Breitengrad). Ermittelt außerdem anhand der in der Datei `ADBMobileConfig.json` definierten Zielpunkte (POI), ob der als Parameter angegebene Standort in einem vorhandenen Zielpunkt liegt. Falls die aktuellen Koordinaten auf einen definierten Zielpunkt passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem TrackLocation-Aufruf gesendet.
+   Sendet die aktuellen Koordinaten (Längen- und Breitengrad). Ermittelt außerdem anhand der in der Datei `ADBMobileConfig.json` definierten Zielpunkte (POI), ob der als Parameter angegebene Standort in einem vorhandenen Zielpunkt liegt. Wenn sich die aktuellen Koordinaten innerhalb eines definierten POI befinden, wird eine Kontextdatenvariable ausgefüllt und mit dem TrackLocation-Aufruf gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -363,7 +366,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackLifetimeValueIncrease**
 
-   Erhöht den Lebenszeitwert des Benutzers.
+   Fügt dem Lebenszeitwert des Benutzers einen Wert hinzu.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -399,7 +402,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackTimedActionUpdate**
 
-   Übergibt Daten, mit denen die Kontextdaten für die vorliegende Aktion aktualisiert werden sollen. Die übergebenen Daten werden an die vorhandenen Daten für die Aktion angehängt. Falls ein Schlüssel bereits für die Aktion definiert ist, werden die vorhandenen Daten dieses Schlüssels überschrieben.
+   Pass in data to update the context data associated with the given action. The data passed in is appended to the existing data for the given action, and overwrites the data if the same key is already defined for action.
 
    >[!TIP]
    >
@@ -499,7 +502,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Experience Cloud ID-Methoden
+## Experience Cloud-ID-Methoden
 
 * **GetMarketingCloudID**
 
@@ -519,7 +522,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **VisitorSyncIdentifiers**
 
-   Mit der Experience Cloud ID können Sie weitere Kunden-IDs festlegen, die den einzelnen Besuchern zugewiesen werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
+   Mit der Experience Cloud-ID können Sie weitere Kunden-IDs festlegen, die jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher zusammen mit einer Kundentypkennung, um den Umfang der verschiedenen Kunden-IDs zu trennen. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
 
    * Hier finden Sie die Syntax für diese Methode:
 
