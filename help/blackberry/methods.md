@@ -1,30 +1,33 @@
 ---
 description: Klassen und Methoden, die von der BlackBerry-Bibliothek bereitgestellt werden.
 seo-description: Klassen und Methoden, die von der BlackBerry-Bibliothek bereitgestellt werden.
-seo-title: Adobe Mobile class and method reference
-title: Adobe Mobile-Klasse und -Methodenreferenz
+seo-title: Adobe Mobile-Klasse und Methodenreferenz
+title: Adobe Mobile-Klasse und Methodenreferenz
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 56%
 
 ---
 
 
-# Adobe Mobile class and method reference {#adobe-mobile-class-and-method-reference}
+# Adobe Mobile-Klasse und Methodenreferenz {#adobe-mobile-class-and-method-reference}
 
 Klassen und Methoden, die von der BlackBerry-Bibliothek bereitgestellt werden.
 
-The SDK currently has support for Adobe Analytics, and methods are in separate classes based on the solution.
+Das SDK unterstützt derzeit Adobe Analytics, und die Methoden sind je nach Lösung in separaten Klassen unterteilt.
 
-## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## SDK-Einstellungen {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **getPrivacyStatus**
 
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
 
-   * ADBMobilePrivacyStatusOptIn: Treffer werden sofort gesendet.
-   * ADBMobilePrivacyStatusOptOut: Treffer werden verworfen.
-   * ADBMobilePrivacyStatusUnknown: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
+   * ADBMobilePrivacyStatusOptIn - Treffer werden sofort gesendet.
+   * ADBMobilePrivacyStatusOptOut - Treffer werden verworfen.
+   * ADBMobilePrivacyStatusUnknown - Wenn Ihre Report Suite zeitstempelfähig ist, werden Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Zugriffe werden dann gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
       Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
@@ -44,9 +47,9 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
    Legt für den aktuellen Benutzer den Datenschutzstatus `status` fest. Die folgenden Werte sind zulässig:
 
-   * `ADBMobilePrivacyStatusOptIn` - Treffer werden sofort gesendet.
-   * `ADBMobilePrivacyStatusOptOut` - werden Treffer verworfen.
-   * `ADBMobilePrivacyStatusUnknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
+   * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
+   * `ADBMobilePrivacyStatusOptOut`: werden Treffer verworfen.
+   * `ADBMobilePrivacyStatusUnknown` - Wenn Ihre Report Suite zeitstempelfähig ist, werden die Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -110,7 +113,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **setDebugLogging**
 
-   Legt die Debug-Protokollierungseinstellung auf `debugLogging` fest. 
+   Legt die Debug-Protokollierungseinstellung auf `debugLogging` fest.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -143,17 +146,17 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
       }
       ```
 
-## Analytics methods {#section_91F4AD0A045D4E4E8F9A93450503E49E}
+## Analytics-Methoden {#section_91F4AD0A045D4E4E8F9A93450503E49E}
 
 Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Suite verwendet.
 
 * **trackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die in Ihrer App verfügbaren Ansichten wie „Startseiten-Dashboard“, „App-Einstellungen“, „Warenkorb“ usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Home Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten.
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
+   >Dies ist der einzige Verfolgungsaufruf, bei dem die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -169,7 +172,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackAction**
 
-   Verfolgt eine Aktion in der App. Bei Aktionen handelt es sich um die Dinge, die in Ihrer App vor sich gehen, die Sie messen möchten, beispielsweise „Anmeldungen“, „Banner-Tippvorgänge“, „Feed-Abonnements“ und andere Metriken.
+   Verfolgt eine Aktion in der App. Actions are the things that happen in your app that you want to measure, such as &quot;logons&quot;, &quot;banner taps&quot;, &quot;feed subscriptions&quot;, and other metrics.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -185,7 +188,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackLocation**
 
-   Sendet die aktuellen XY-Koordinaten. Ersetzen Sie „event“ mit dem Ereignis, das vom BPS-Abonnenten empfangen wurde.
+   Sendet die aktuellen XY-Koordinaten. Ersetzen Sie Ereignis durch das Ereignis, das vom Abonnenten von BPS empfangen wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -199,15 +202,15 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json` config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` Referenz zur Konfigurationsdatei {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **rsids**
 
-   (Erforderlich) Eine oder mehrere Report Suites zum Empfangen von Analytics-Daten. Verschiedene Report Suite-IDs müssen durch Kommas getrennt und ohne Leerzeichen zwischen den einzelnen Suites angegeben werden.
+   (Erforderlich) Eine oder mehrere Report Suites zum Empfang von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommata getrennt werden, wobei kein Leerzeichen dazwischen steht.
 
-   Here are the code sample for this variable:
+   Im Folgenden finden Sie das Codebeispiel für diese Variable:
 
    ```js
    "rsids" : "rsid"
@@ -219,7 +222,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **server**
 
-   (Erforderlich). Analytics-Server. This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. Das Protokollpräfix wird anhand der Variable `ssl` automatisch von der Bibliothek verarbeitet. Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
+   (Erforderlich). Analytics-Server. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `https://` oder `https://`. Das Protokollpräfix wird automatisch von der Bibliothek auf Basis der `ssl` Variablen verarbeitet. Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
 
 * **charset**
 
@@ -227,7 +230,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **ssl**
 
-   Enables (`true`) or disables (`false`) sending measurement data via SSL (HTTPS). Der Standardwert lautet `false`.
+   Aktiviert (`true`) oder deaktiviert (`false`) das Senden von Messungsdaten über SSL (HTTPS). Der Standardwert lautet `false`.
 
 * **offlineEnabled**
 
@@ -235,15 +238,15 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled`muss die Konfigurationseigenschaft ** „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich bitte an Enterprise Support.[](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* die Konfigurationseigenschaft „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,  wenden Sie sich bitte an  [Enterprise Support](https://helpx.adobe.com/de/contact/enterprise-support.ec.html).
 
-   Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
+   If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    Der Standardwert lautet `false`.
 
 * **lifecycleTimeout**
 
-   Legt die Dauer in Sekunden fest, die zwischen verschiedenen Startvorgängen einer App verstreichen muss, damit ein Startvorgang als neue Sitzung gilt. Dieses Zeitlimit wird auch angewendet, wenn eine Anwendung in den Hintergrund verschoben und später reaktiviert wird. Die Dauer, für welche die App im Hintergrund ausgeführt wird, wird nicht in die Sitzungsdauer eingerechnet.
+   Specifies the length of time, in seconds, that must elapse between app launches before the launch is considered a new session. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten.
 
    Der Standardwert ist 300 Sekunden.
 
@@ -253,16 +256,16 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **privacyDefault**
 
-   * `optedin` - Treffer werden sofort gesendet.
-   * `optedout` - werden Treffer verworfen.
-   * `optunknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. 
+   * `optedin`: Treffer werden umgehend gesendet.
+   * `optedout`: werden Treffer verworfen.
+   * `optunknown` - If your report suite is timestamp-enabled, hits are saved until the privacy status changes to opt-in (then hits are sent) or opt-out (then hits are discarded).
 
       Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
-   Diese Variable legt nur den Ausgangswert fest. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird.
+   Diese Variable legt nur den Ausgangswert fest. If this value is ever set or changed in code, then the new value is used going forward until it is changed, or the app is uninstalled and then reinstalled.
 
    Der Standardwert lautet `optedin`.
 
-Im Folgenden finden Sie ein Beispiel für eine `ADBMobileConfig.json`-Datei:
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```js
 { 
