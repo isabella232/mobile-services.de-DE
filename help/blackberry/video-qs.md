@@ -1,54 +1,57 @@
 ---
-description: Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Aufgaben der Entwickler sowie Codebeispiele.
-seo-description: Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Aufgaben der Entwickler sowie Codebeispiele.
-seo-title: Video-Analytics
-title: Video-Analytics
+description: Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. This section provides a basic overview of the developer tasks along with code samples.
+seo-description: Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. This section provides a basic overview of the developer tasks along with code samples.
+seo-title: Video Analytics
+title: Video Analytics
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
 translation-type: tm+mt
-source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 63%
 
 ---
 
 
-# Video Analytics  {#video-analytics}
+# Video Analytics {#video-analytics}
 
-Der allgemeine Prozess zur Videomessung ist für sämtliche AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Aufgaben der Entwickler sowie Codebeispiele.
+The general process to measure video is very similar across all AppMeasurement platforms. This section provides a basic overview of the developer tasks along with code samples.
 
-Weitere Informationen zur Videomessung finden Sie im Handbuch [Messen von Audio und Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .  Die folgende Tabelle enthält die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten in der Spalte „Kontextdatenvariable“ zu einer Analytics-Variablen so zuzuordnen, wie dies in der Spalte „Variablentyp“ beschrieben wird.
+For more information about Video measurement, see the [Measuring audio and video in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html) guide.  In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Use processing rules to map the context data in the Context Data Variable column to an Analytics variable as described in the Variable Type column.
 
-## Map player events to Analytics variables
+## Player-Ereignisse Analytics-Variablen zuordnen
 
 * **a.media.name**
 
-   (Erforderlich) Erfasst den Namen des Videos, wie in der Implementierung angegeben, wenn ein Besucher das Video auf irgendeine Weise ansieht. Sie können Classification für diese Variable hinzufügen.
+   (Required) Collects the name of the video, as specified in the implementation, when a visitor views the video in some way.You can add classifications for this variable.
 
-   **(Optional)** Die Variable Custom Insight enthält Informationen zu Videopfaden.
+   **(Optional)** The Custom Insight variable provides video pathing information.
 
-   * Variablenname: eVar
+   * Variable name: eVar
       * Standardgültigkeit: Besuch
-      * Benutzerspezifischer Insight-Bericht (s.prop, wird zur Videopfadsetzung verwendet)
+      * Custom Insight (s.prop, used for video pathing)
 
 * **a.media.name**
 
-   (**Optional**) Bietet Informationen zur Videopfadsetzung. Die Pfadgebung für diese Variable muss von ClientCare aktiviert werden.
+   (**Optional**) Bietet Informationen zur Videopfadsetzung. Pfade müssen für diese Variable von ClientCare aktiviert werden.
 
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop)
-   * Benutzerspezifischer Insight-Bericht (s.prop)
+   * Custom Insight (s.prop)
 
 * **a.media.segment**
 
-   (**Erforderlich**) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen.
+   (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen.
 
    For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. The default video data collection method collects data at the video start (play), segment begin, and video end (stop) points.
 
-   Analytics zeichnet die erste Segmentansicht am Anfang des Segments auf, wenn der Besucher die Wiedergabe startet. Nachfolgende Segmentansichten werden aufgezeichnet, wenn das jeweilige Segment anfängt.
+   Analytics counts the first segment view at the start of the segment, when the visitor starts watching. Subsequent segment views as the segment begins.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
 
 * **a.contentType**
 
-   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Von der Videomessung gesendete Hits erhalten den Content-Typ „video“. Diese Variable muss nicht exklusiv für die Videoverfolgung reserviert sein. Wenn Sie einrichten, dass andere Inhalte den Content-Typ mit dieser Variable melden, können Sie die Verteilung der Besucher über die verschiedenen Content-Typen hinweg analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
+   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Treffer, die durch Videomessung gesendet werden, erhalten den Inhaltstyp &quot;Video&quot;. This variable does not need to be reserved exclusively for video tracking. Wenn Sie den Content-Typ anderer Inhaltsberichte mit dieser Variablen verwenden, können Sie die Verteilung der Besucher über die verschiedenen Inhaltstypen hinweg analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
@@ -62,34 +65,34 @@ Weitere Informationen zur Videomessung finden Sie im Handbuch [Messen von Audio 
 
 * **a.media.view**
 
-   Gibt an, dass ein Besucher einen Teil eines Videos betrachtet hat. Es werden aber keine Informationen zu der Länge oder dem Ausschnitt eines vom Besucher angesehenen Videos bereitgestellt.
+   Gibt an, dass ein Besucher einen Teil eines Videos betrachtet hat. Es werden jedoch keine Informationen zu der Länge oder dem Ausschnitt des vom Besucher angesehenen Videos bereitgestellt.
 
    * Variablentyp: Ereignis
    * Typ: Zähler
 
 * **a.media.segmentView**
 
-   Gibt an, dass ein Besucher einen Teil eines Videosegments betrachtet hat. Es werden aber keine Informationen zu der Länge oder dem Ausschnitt eines vom Besucher angesehenen Videos bereitgestellt.
+   Gibt an, dass ein Besucher einen Teil eines Videosegments betrachtet hat. Es werden jedoch keine Informationen zu der Länge oder dem Ausschnitt des vom Besucher angesehenen Videos bereitgestellt.
 
    * Variablentyp: Ereignis
    * Typ: Zähler
 
 * **a .media.complete**
 
-   Gibt an, dass ein Besucher ein Video vollständig angesehen hat. Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen. Bei der Implementierung können Sie festlegen, wie viele Sekunden vor dem Ende des Videos eine Ansicht als vollständig betrachtet werden soll. Bei Live-Videos und anderen Streams ohne definiertes Ende können Sie einen eigenen Punkt angeben, an dem Beendigungen gemessen werden sollen (z. B. nach einer bestimmten Wiedergabedauer).
+   Gibt an, dass ein Besucher ein Video vollständig angesehen hat. Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen. Bei der Implementierung können Sie festlegen, wie viele Sekunden vor dem Ende des Videos eine Ansicht als vollständig betrachtet werden soll. Bei Live-Videos und anderen Streams ohne definiertes Ende können Sie einen eigenen Punkt angeben, an dem Beendigungen gemessen werden sollen Beispielsweise nach einer bestimmten Zeit, in der das Video betrachtet wurde.
 
    * Variablentyp: Ereignis
    * Typ: Zähler
 
-## Track player events {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Player-Ereignisse verfolgen {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-To measure video playback, The `mediaPlay`, `mediaStop`, and `mediaClose` methods need to be called at the appropriate times. Wenn beispielsweise der Player angehalten wird, muss `mediaStop` aufgerufen werden. `mediaPlay` wird aufgerufen, wenn die Wiedergabe gestartet oder fortgesetzt wird.
+Zum Messen der Videowiedergabe müssen die Methoden `mediaPlay`, `mediaStop` und `mediaClose` zu den entsprechenden Zeiten aufgerufen werden. Wenn beispielsweise der Player angehalten wird, muss `mediaStop` aufgerufen werden. `mediaPlay` wird aufgerufen, wenn die Wiedergabe gestartet oder fortgesetzt wird.
 
-## Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Medienmessungsklasse und Methodenreferenz {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **open**
 
-   Öffnet ein Video für die Verfolgung.
+   Opens a video for tracking.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -137,7 +140,7 @@ To measure video playback, The `mediaPlay`, `mediaStop`, and `mediaClose` method
 
 * **play**
 
-   Plays the media item named *`name`* at the given *`offset`* (in seconds).
+   Gibt das Medienelement mit dem Namen *`name`* mit dem Versatz *`offset`* (in Sekunden) wieder.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -153,7 +156,7 @@ To measure video playback, The `mediaPlay`, `mediaStop`, and `mediaClose` method
 
 * **Fertig**
 
-   Kennzeichnet das Medienelement am angegebenen *`offset`(in Sekunden) als abgeschlossen.*
+   Kennzeichnet das Medienelement am angegebenen *`offset`* (in Sekunden) als abgeschlossen.
 
    * Hier finden Sie die Syntax für diese Methode:
 
