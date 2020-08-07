@@ -1,24 +1,27 @@
 ---
-description: Klassen und Methoden, die von der universellen Windows-Plattform-Bibliothek bereitgestellt werden.
-seo-description: Klassen und Methoden, die von der universellen Windows-Plattform-Bibliothek bereitgestellt werden.
-seo-title: SDK-Methoden
+description: Classes and methods provided by the Universal Windows Platform library.
+seo-description: Klassen und Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
+seo-title: SDK methods
 solution: Marketing Cloud,Analytics
 title: SDK-Methoden
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 62%
 
 ---
 
 
 # SDK methods {#sdk-methods}
 
-Klassen und Methoden, die von der universellen Windows-Plattform-Bibliothek bereitgestellt werden.
+Klassen und Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Wenn Sie Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert. `winmd`
 
 * **GetVersion (winJS: getVersion)**
 
@@ -40,7 +43,7 @@ Klassen und Methoden, die von der universellen Windows-Plattform-Bibliothek bere
 
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
 
-   * `ADBMobilePrivacyStatusOptIn` - Hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptIn` - Treffer werden umgehend gesendet.
    * `ADBMobilePrivacyStatusOptOut` - Treffer werden verworfen.
    * `ADBMobilePrivacyStatusUnknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „optedin“ (Treffer werden gesendet) oder „optedout“ (Treffer werden verworfen) ändert. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
@@ -53,7 +56,7 @@ Klassen und Methoden, die von der universellen Windows-Plattform-Bibliothek bere
       ^getPrivacyStatusAsync();
       ```
 
-   * Hier sind die Codebeispiele für diese Methode:
+   * Hier finden Sie Code-Beispiele für diese Methode:
 
       **C Scharf**
 
@@ -76,9 +79,9 @@ Klassen und Methoden, die von der universellen Windows-Plattform-Bibliothek bere
 * **SetPrivacyStatus (winJS: setPrivacyStatus)**
 
    Legt für den aktuellen Benutzer den Datenschutzstatus `status` fest. Die folgenden Werte sind zulässig:
-   * `ADBMobilePrivacyStatusOptIn` - Treffer werden sofort gesendet.
-   * `ADBMobilePrivacyStatusOptOut` - werden Treffer verworfen.
-   * `DBMobilePrivacyStatusUnknown` - Wenn Ihre Report Suite zeitstempelfähig ist, werden die Treffer gespeichert, bis der Datenschutzstatus in "opt-in"(Treffer werden gesendet) oder "opt-out"(Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
+   * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
+   * `ADBMobilePrivacyStatusOptOut`: werden Treffer verworfen.
+   * `DBMobilePrivacyStatusUnknown` - Wenn Ihre Report Suite zeitstempelfähig ist, werden die Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Treffer werden gesendet) oder &quot;opt-out&quot;(Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
       * Hier finden Sie die Syntax für diese Methode:
 
@@ -86,7 +89,7 @@ Klassen und Methoden, die von der universellen Windows-Plattform-Bibliothek bere
          static void SetPrivacyStatus(ADBMobilePrivacyStatus status);
          ```
 
-      * Hier sind die Codebeispiele für diese Methode:
+      * Hier finden Sie Code-Beispiele für diese Methode:
 
          **C-scharf**
 
@@ -125,12 +128,12 @@ Klassen und Methoden, die von der universellen Windows-Plattform-Bibliothek bere
 
 * **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Gibt die benutzerdefinierte Benutzerkennung zurück, sofern eine benutzerdefinierte Kennung festgelegt wurde. Returns `null` if a custom identifier is not set.
+   Gibt die benutzerdefinierte Benutzerkennung zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Returns `null` if a custom identifier is not set.
 Der Standardwert lautet `null`.
 
    >[!IMPORTANT]
    >
-   >Wenn Ihre App vom Experience Cloud-SDK 3.x auf das SDK 4.x aktualisiert, wird der vorherige ID-Dienst (benutzerdefiniert oder automatisch generiert) abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. So werden Besucherdaten auch bei Upgrades des SDK beibehalten. Bei neuen Installationen der SDK-Version 4.x lautet die Benutzer-ID `null`, bis sie festgelegt wird.
+   >Wenn Ihre App vom Experience Cloud 3.x auf das 4.x-SDK aktualisiert wird, wird der vorherige ID-Dienst (benutzerdefiniert oder automatisch generiert) abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. So werden Besucherdaten auch bei Upgrades des SDK beibehalten. Bei neuen Installationen der SDK-Version 4.x lautet die Benutzer-ID `null`, bis sie festgelegt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -181,7 +184,7 @@ Der Standardwert lautet `null`.
 
 * **SetDebugLogging (winJS: setDebugLogging)**
 
-   Legt die Debug-Protokollierungseinstellung auf `debugLogging` fest. Debug-Protokollierung funktioniert nur, wenn Sie die Debugging-Version der Bibliothek verwenden. Von der Release-Version wird diese Einstellung ignoriert.
+   Legt die Debug-Protokollierungseinstellung auf `debugLogging` fest. Die Debug-Protokollierung funktioniert nur, wenn die Debug-Version der Bibliothek verwendet wird. Diese Einstellung wird in der Release-Version ignoriert.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -198,7 +201,7 @@ Der Standardwert lautet `null`.
 
 * **CollectLifecycleData (winJS: collectionLifecycleData)**
 
-   Gibt dem SDK gegenüber an, dass Lebenszyklusdaten für die Nutzung aller Lösungen im SDK erfasst werden sollen. For more information, see  [Lifecycle metrics](/help/universal-windows/metrics.md).
+   Gibt dem SDK gegenüber an, dass Lebenszyklusdaten für die Nutzung aller Lösungen im SDK erfasst werden sollen. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/universal-windows/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -215,7 +218,7 @@ Der Standardwert lautet `null`.
 
 * **PauseCollecting &#x200B; LifecycleData (winJS: pauseCollecting &#x200B; LifecycleData)**
 
-   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten einen Zeitstempel erfassen, mit dem die Dauer der vorherigen Sitzung ermittelt wird. Hiermit wird außerdem ein Flag gesetzt, sodass im Lebenszyklus ersichtlich wird, dass die App nicht abgestürzt ist. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/universal-windows/metrics.md).
+   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. For example, on pause collects a timestamp to determine previous session length. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/universal-windows/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
