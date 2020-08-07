@@ -1,26 +1,29 @@
 ---
-description: Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
+description: Android methods for Xamarin components for Experience Cloud solutions 4.x SDK.
 keywords: Xamarin
-seo-description: Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
-seo-title: Android methods
+seo-description: Android methods for Xamarin components for Experience Cloud solutions 4.x SDK.
+seo-title: Android-Methoden
 solution: Marketing Cloud,Developer
-title: Android methods
+title: Android-Methoden
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1767'
+ht-degree: 66%
 
 ---
 
 
-# Android methods{#android-methods}
+# Android-Methoden{#android-methods}
 
-Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.x-SDK
+Android-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
-## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
+## Konfigurationsmethoden {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **DebugLogging**
 
-   Returns the current debug logging preference, and the default is false.
+   Gibt die aktuelle Einstellung für die Debug-Protokollierung zurück, die Standardeinstellung ist &quot;false&quot;.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -54,10 +57,11 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 * **PrivacyStatus**
 
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
-   * `ADBMobilePrivacyStatus.OptIn` - Treffer werden sofort gesendet.
-   * `ADBMobilePrivacyStatus.OptOut` - werden Treffer verworfen.
+   * `ADBMobilePrivacyStatus.OptIn`: Treffer werden umgehend gesendet.
+   * `ADBMobilePrivacyStatus.OptOut`: werden Treffer verworfen.
    * `ADBMobilePrivacyStatus.Unknown`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
-   Der Standardwert wird in der Datei [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) festgelegt.
+
+   The default value is set in the [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -75,7 +79,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **UserIdentifier**
 
-   If a custom identifier has been set, returns this identifier. Wenn keine benutzerdefinierte ID festgelegt ist, gibt null zurück. Der Standardwert lautet `null`.
+   Wenn eine benutzerdefinierte ID festgelegt wurde, gibt diese ID zurück. Wenn kein benutzerdefinierter Bezeichner festgelegt ist, gibt null zurück. Der Standardwert lautet `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -108,7 +112,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **PauseCollectingLifecycleData**
 
-   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten einen Zeitstempel erfassen, mit dem die Dauer der vorherigen Sitzung ermittelt wird. Hiermit wird außerdem ein Flag gesetzt, sodass im Lebenszyklus ersichtlich wird, dass die App nicht abgestürzt ist. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
+   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten wird ein Zeitstempel erfasst, um die Länge der vorherigen Sitzung zu bestimmen. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -122,9 +126,9 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
       Config.PauseCollectingLifecycleData();
       ```
 
-* **CollectLifecycleData (Activity-Aktivität)**
+* **CollectLifecycleData (Aktivität-Aktivität)**
 
-   (4.2 oder höher) Gibt dem SDK gegenüber an, dass Lebenszyklusdaten für die Nutzung aller Lösungen im SDK erfasst werden sollen. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
+   (4.2 oder höher) Gibt dem SDK an, dass Lebenszyklusdaten für die Verwendung in allen Lösungen des SDK erfasst werden sollen. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -138,9 +142,9 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
       Config.CollectLifecycleData (this);
       ```
 
-* **CollectLifecycleData (Activity-Aktivität)**
+* **CollectLifecycleData (Activity activity)**
 
-   (4.2 oder höher) Gibt dem SDK gegenüber an, dass Lebenszyklusdaten für die Nutzung aller Lösungen im SDK erfasst werden sollen. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
+   (4.2 or later) Indicates to the SDK that lifecycle data should be collected for use across all solutions in the SDK. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -159,7 +163,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **OverrideConfigStream**
 
-   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
+   (4.2 oder höher) Ermöglicht das Laden einer anderen `ADBMobile JSON` Konfigurationsdatei beim Beginn der Anwendung. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -176,7 +180,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   (4.2 oder höher) Legt das große Symbol fest, das für vom SDK erstellte Benachrichtigungen verwendet wird. Dieses Symbol ist das primäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungscenter sieht.
+   (4.2 oder höher) Legt das große Symbol fest, das für vom SDK erstellte Benachrichtigungen verwendet wird. Dieses Symbol wird als primäres Bild angezeigt, wenn der Benutzer die vollständige Benachrichtigung in der Mitteilungszentrale öffnet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -206,11 +210,11 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
        Config.SetSmallIconResourceId(R.drawable.appIcon);
       ```
 
-## Analytics methods {#section_63CF636104EF41F790C3E4190D755BBA}
+## Analytics-Methoden {#section_63CF636104EF41F790C3E4190D755BBA}
 
 * **TrackingIdentifier**
 
-   Gibt die automatisch erzeugte ID für Analytics zurück. Hierbei handelt es sich um eine App-spezifische eindeutige ID, die beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID bleibt zwischen App-Aktualisierungen erhalten und wird bei der Deinstallation entfernt.
+   Gibt die automatisch generierte ID für Analytics zurück. Hierbei handelt es sich um eine App-spezifische eindeutige ID, die beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID bleibt zwischen den App-Aktualisierungen erhalten und wird bei der Deinstallation entfernt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -226,11 +230,11 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **TrackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. `States`entsprechen den verfügbaren Ansichten in der App, z. B. „Titelbild“, „Level 1“ oder „Pause“. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn der Status leer ist, wird „AppName AppVersion (Build)“ in Berichten aufgeführt. Wenn dieser Wert in einem Bericht auftritt, müssen Sie den Status in jedem `TrackState`-Aufruf festlegen.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. `States` sind die Ansichten, die in Ihrer App verfügbar sind, wie &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn der Status leer ist, wird in Berichten als &quot;App-Name-App-Version (Build)&quot;angezeigt. If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
    >[!TIP]
    >
-   >Dies ist der einzige Verfolgungsaufruf, durch den die Seitenansichten inkrementiert werden.
+   >Dies ist der einzige Verfolgungsaufruf, bei dem die Seitenansichten inkrementiert werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -249,12 +253,12 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **TrackAction**
 
-   Verfolgt eine Aktion in der App. Aktionen sind die Vorgänge in der App, die gemessen werden sollen, z. B. „Tode“, „Level bestanden“, „Feed-Abonnements“ und weitere Metriken.
+   Verfolgt eine Aktion in der App. Actions are the things that happen in your app that you want to measure, such as &quot;deaths&quot;, &quot;level gained&quot;, &quot;feed subscriptions&quot;, and other metrics.
 
    >[!TIP]
    >
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >Falls Code aktiv ist, während die App im Hintergrund ausgeführt wird (z. B. Datenabruf im Hintergrund), verwenden Sie stattdessen `trackActionFromBackground`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -354,7 +358,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * Im Folgenden finden Sie ein Codebeispiel für diese Methode:
+   * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -362,7 +366,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **TrackTimedActionUpdate**
 
-   Übergibt Daten, mit denen die Kontextdaten für die vorliegende Aktion aktualisiert werden sollen. Die übergebenen Daten werden an die vorhandenen Daten für die Aktion angehängt. Falls ein Schlüssel bereits für die Aktion definiert ist, werden die vorhandenen Daten dieses Schlüssels überschrieben.
+   Übergeben Sie Daten, um die Kontextdaten zu aktualisieren, die der angegebenen Aktion zugeordnet sind. Die weitergeleiteten Daten werden an die vorhandenen Daten für die jeweilige Aktion angehängt und überschreiben die Daten, wenn derselbe Schlüssel bereits für die Aktion definiert ist.
 
    >[!TIP]
    >
@@ -456,7 +460,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **QueueSize**
 
-   Ruft die Anzahl der Treffer ab, die sich derzeit in der Offline-Warteschlange befinden.
+   Retrieves the number of hits that are currently in the offline queue.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -490,7 +494,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **SyncIdentifiers**
 
-   Mit der Experience Cloud ID können Sie weitere Kunden-IDs festlegen, die den einzelnen Besuchern zugewiesen werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs` in der JavaScript-Bibliothek.
+   Mit der Experience Cloud-ID können Sie weitere Kunden-IDs festlegen, die jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs` in der JavaScript-Bibliothek.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -533,7 +537,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **CreateRequest**
 
-   Vordefinierter Konstruktor zum Erzeugen eines `ADBTargetLocationRequest`-Objekts mit den angegebenen Parametern.
+   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -551,7 +555,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **CreateOrderConfirmRequest**
 
-   Erstellt eine `ADBTargetLocationRequest`.
+   Erstellt ein `ADBTargetLocationRequest`-Objekt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -567,7 +571,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **ClearCookies**
 
-   Löscht Target-Cookies aus Ihrer App.
+   Löscht Zielgruppen-Cookies aus Ihrer App.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -585,7 +589,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **VisitorProfile**
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt null zurück, falls noch kein Signal übertragen wurde. Das Besucherprofil wird in `NSUserDefaults` gespeichert und steht so bei jedem Start der App zur Verfügung.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt null zurück, wenn noch kein Signal gesendet wurde. Das Besucherprofil wird in `NSUserDefaults` gespeichert und steht so bei jedem Start der App zur Verfügung.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -633,7 +637,7 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
 
 * **AudienceSetDpidAndDpuuid**
 
-   Legt die `dpid` und `dpuuid`fest. If `dpid` and `dpuuid` are set, they are sent with each signal.
+   Legt die `dpid` und `dpuuid`fest. Wenn `dpid` und `dpuuid` werden sie mit jedem Signal gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -673,9 +677,9 @@ Android-Methoden für Xamarin-Komponenten für das Experience Cloud-Lösungen-4.
       AudienceManager.SignalWithData (traits, new AudienceManagerCallback());
       ```
 
-* **Rücksetzen**
+* **Zurücksetzen**
 
-   Setzt die `UUID` des Zielgruppen-Managers zurück und löscht das aktuelle Besucherprofil.
+   Resets audience manager `UUID` and purges current visitor profile.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -751,7 +755,7 @@ Weitere Informationen zu Video Analytics finden Sie unter [Videoanalyse](/help/a
 
 * **Close**
 
-   Schließt das angegebene Medienelement.
+   Schließt das Medienelement mit dem Namen name.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -765,9 +769,9 @@ Weitere Informationen zu Video Analytics finden Sie unter [Videoanalyse](/help/a
       Media.Close (settings.Name); 
       ```
 
-* **Abspielen**
+* **Play**
 
-   Gibt das angegebene Medienelement am angegebenen Offset (in Sekunden) wieder.
+   Gibt das Medienelement mit dem Namen name mit dem Versatz offset (in Sekunden) wieder.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -783,7 +787,7 @@ Weitere Informationen zu Video Analytics finden Sie unter [Videoanalyse](/help/a
 
 * **Abgeschlossen**
 
-   Kennzeichnet das Medienelement am angegebenen Offset (in Sekunden) als abgeschlossen.
+   Kennzeichnet das Medienelement am angegebenen offset (in Sekunden) als abgeschlossen.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -797,9 +801,9 @@ Weitere Informationen zu Video Analytics finden Sie unter [Videoanalyse](/help/a
       Media.Complete (settings.Name, 5); 
       ```
 
-* **Stop**
+* **Anhalten**
 
-   Benachrichtigt das Medienmodul, dass das Video am angegebenen Offset beendet oder angehalten wurde.
+   Benachrichtigt das Medienmodul darüber, dass das Video mit dem Versatz Offset beendet oder angehalten wurde.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -813,7 +817,7 @@ Weitere Informationen zu Video Analytics finden Sie unter [Videoanalyse](/help/a
       Media.Stop (settings.Name, 3);
       ```
 
-* **Klicken**
+* **Klicken Sie auf**
 
    Benachrichtigt das Medienmodul darüber, dass das Medienelement angeklickt wurde.
 
@@ -829,7 +833,7 @@ Weitere Informationen zu Video Analytics finden Sie unter [Videoanalyse](/help/a
       Media.Click (settings.Name, 3); 
       ```
 
-* **Verfolgen**
+* **verfolgen**
 
    Sendet einen Verfolgungsaktionsaufruf (keine Seitenansicht) für den aktuellen Medienstatus.
 
