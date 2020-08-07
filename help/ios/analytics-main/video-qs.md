@@ -2,12 +2,15 @@
 description: Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der Meilenstein-Videomessung.
 seo-description: Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der Meilenstein-Videomessung.
 seo-title: Video Analytics
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Video Analytics
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +23,7 @@ Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der M
 >
 >Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen finden Sie unter [Audio- und Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html).
 
-Der allgemeine Prozess zur Videomessung ist für sämtliche Plattformen sehr ähnlich. Dieser Inhalt bietet eine grundlegende Übersicht über die Aufgaben für Entwickler sowie einige Codebeispiele.
+Der allgemeine Prozess zum Messen von Videos ist auf allen Plattformen sehr ähnlich. Dieser Inhalt bietet einen grundlegenden Überblick über die Entwickler-Aufgaben mit Codebeispielen.
 
 ## Player-Ereignisse Analytics-Variablen zuordnen {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
@@ -28,17 +31,17 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
 * **a.media.name**
 
-   (Erforderlich) Erfasst den Namen des Videos und wie er in der Implementierung angegeben ist, wenn ein Besucher das Video auf irgendeine Weise ansieht. Sie können Classifications für diese Variable hinzufügen.
+   (Erforderlich) Erfasst den Videonamen, der in der Implementierung angegeben ist, wenn ein Besucher das Video auf irgendeine Weise Ansicht. Sie können Classifications für diese Variable hinzufügen.
 
-   (Optional) Die Variable „Custom Insight“ bietet Informationen für die Videopfadgebung.
+   (Optional) Die Variable &quot;Custom Insight&quot;enthält Informationen zu Videopfaden.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Besuch
-   * Benutzerspezifischer Insight-Bericht (s.prop, wird zur Videopfadsetzung verwendet)
+   * Custom Insight (s.prop, für Videopfadsetzung verwendet)
 
 * **a.media.name**
 
-   (Optional) Bietet Informationen zur Videopfadsetzung. Die Pfadsetzung muss für diese Variable von der Kundenunterstützung aktiviert werden.
+   (Optional) Bietet Informationen zur Videopfadsetzung. Pfade müssen für diese Variable vom Kundendienst aktiviert werden.
 
    * Variablentyp: Custom Insight (benutzerspezifischer Insight-Bericht) (s.prop)
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop)
@@ -47,12 +50,13 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (Erforderlich) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. Beispiel: Wenn ein Besucher das erste Segment in einem Video ansieht, kann SiteCatalyst Folgendes in der Segment-eVar erfassen: `1:M:0-25`.
 
-   Die standardmäßige Methode zur Videodatenerfassung sammelt Daten an folgenden Punkten:
+   Die Standardmethode zur Videodatenerfassung erfasst Daten an folgenden Punkten:
 
-   * Videostart (Wiedergabe)
-   * Segmentbeginn
+   * Video-Beginn (play)
+   * segment begin
    * Videoende (Stopp)
-   Analytics zeichnet die erste Segmentansicht am Anfang des Segments auf, wenn der Besucher die Wiedergabe startet. Nachfolgende Segmentansichten werden aufgezeichnet, wenn das jeweilige Segment anfängt.
+
+   Analytics zählt die erste Segment-Ansicht am Beginn des Segments, wenn der Besucher Beginn sieht. Nachfolgende Segmentansichten werden beim Segmentbeginn Ansicht.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
@@ -60,7 +64,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
 * **a.contentType**
 
-   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Den von der Videomessung gesendeten Treffern wird der Content-Typ `video` zugewiesen. Diese Variable muss nicht exklusiv für die Videoverfolgung reserviert sein. Wenn Sie einrichten, dass andere Inhalte den Content-Typ mit dieser Variablen melden, können Sie die Verteilung der Besucher inhaltstypübergreifend analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
+   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Hits sent by video measurement are assigned a content type of `video`. This variable does not need to be reserved exclusively for video tracking. Indem Sie den Content-Typ anderer Inhalte mithilfe derselben Variablen ermitteln, können Sie die Verteilung der Besucher über die verschiedenen Inhaltstypen hinweg analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
@@ -74,21 +78,21 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
 * **a.media.view**
 
-   Gibt an, dass ein Besucher einen Teil eines Videos betrachtet hat. Es werden aber keine Informationen zu der Länge oder dem Ausschnitt eines vom Besucher angesehenen Videos bereitgestellt.
+   Gibt an, dass ein Besucher einen Teil eines Videos betrachtet hat. Es werden jedoch keine Informationen zu der Länge oder dem Ausschnitt des vom Besucher angesehenen Videos bereitgestellt.
 
    * Variablentyp: Ereignis
    * Typ: Zähler
 
 * **a.media.segmentView**
 
-   Gibt an, dass ein Besucher einen Teil eines Videosegments betrachtet hat. Es werden aber keine Informationen zu der Länge oder dem Ausschnitt eines vom Besucher angesehenen Videos bereitgestellt.
+   Gibt an, dass ein Besucher einen Teil eines Videosegments betrachtet hat. Es werden jedoch keine Informationen zu der Länge oder dem Ausschnitt des vom Besucher angesehenen Videos bereitgestellt.
 
    * Variablentyp: Ereignis
    * Typ: Zähler
 
 * **a.media.complete**
 
-   Gibt an, dass ein Besucher ein Video vollständig angesehen hat. Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen. Bei der Implementierung können Sie festlegen, wie viele Sekunden vor dem Ende des Videos eine Ansicht als vollständig betrachtet werden soll. Bei Live-Videoinhalten und anderen Streams, die nicht über ein definiertes Ende verfügen, können Sie einen benutzerdefinierten Zeitpunkt festlegen, um abgeschlossene Ansichten zu messen, z. B. nach einer bestimmten Wiedergabedauer.
+   Gibt an, dass ein Besucher ein Video vollständig angesehen hat. Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen. Bei der Implementierung können Sie festlegen, wie viele Sekunden vor dem Ende des Videos eine Ansicht als vollständig betrachtet werden soll. Bei Live-Videos und anderen Streams ohne definiertes Ende können Sie einen benutzerdefinierten Punkt angeben, um die Vollständigkeit zu messen, z. B. nach einer bestimmten Wiedergabedauer.
 
    * Variablentyp: Ereignis
    * Typ: Zähler
