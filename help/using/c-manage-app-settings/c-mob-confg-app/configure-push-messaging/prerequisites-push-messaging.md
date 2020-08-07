@@ -7,9 +7,9 @@ solution: Marketing Cloud,Analytics
 title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 100%
 
@@ -74,7 +74,9 @@ Weitere Informationen finden Sie unter [Fehlerbehebung bei der Kontoverknüpfung
 
 Bevor Sie den ID-Dienst für Ihre App aktivieren, ist der Abschnitt **[!UICONTROL Push-Dienste]** deaktiviert. Nach der Aktivierung des ID-Dienstes ist jedoch der Abschnitt „Push-Dienste“ aktiviert. Weitere Informationen zum Aktivieren von Push-Diensten finden Sie in [Optionen für SDK-ID-Dienst konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
->[!IMPORTANT]: Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern und die Push-Dienste zu aktualisieren.
+>[!IMPORTANT]
+>
+>Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern und die Push-Dienste zu aktualisieren.
 >
 >Sie können in jeder Report Suite eine App-Store-App für Apple und eine für Google konfigurieren. Wenn Sie zusätzliche Apps benötigen, z. B. eine für eine Produktionsumgebung und eine für eine Entwicklungsumgebung, richten Sie für jede Umgebung eine neue App-Store-App und eine neue Report Suite ein.
 
