@@ -3,12 +3,15 @@ description: Nutzen Sie diese Informationen, um neue Apps zu erstellen und ihre 
 keywords: mobile
 seo-description: Nutzen Sie diese Informationen, um neue Apps zu erstellen und ihre Schlüsselmetriken zu konfigurieren, um die SDK-Optionen für Adobe Analytics und Adobe Audience Manager zu konfigurieren, um die Optionen für Akquise und ID-Dienst zu konfigurieren und um die Konfigurationsdatei, die SDK sowie die Tools für Entwickler und Tester herunterzuladen.
 seo-title: Neue App hinzufügen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Neue App hinzufügen
-topic: Metriken
+topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 95%
 
 ---
 
@@ -69,7 +72,7 @@ Bevor Sie Ihre App konfigurieren können, müssen Sie sie in der Adobe Mobile Se
 
    * **[!UICONTROL Typ]**
 
-      Wählen Sie einen Typ aus der Dropdownliste aus. Der ausgewählte App-Typ bestimmt, welche Berichte im linken Navigationsmenü verfügbar sind.
+      Select a type from the drop-down list. Die verfügbaren Berichte, die im linken Navigationsmenü angezeigt werden, hängen vom ausgewählten App-Typ ab.
 
       Folgende Typen stehen zur Verfügung:
 
