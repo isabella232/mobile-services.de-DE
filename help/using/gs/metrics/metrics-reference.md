@@ -3,12 +3,15 @@ description: Im Folgenden finden Sie Referenzinformationen für standardmäßige
 keywords: mobile
 seo-description: Im Folgenden finden Sie Referenzinformationen für standardmäßige mobile Metriken und Dimensionen.
 seo-title: Referenz zu Mobile-Metriken und -Dimensionen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Referenz zu Mobile-Metriken und -Dimensionen
-topic: Metriken
+topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: ht
-source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 94%
 
 ---
 
@@ -38,6 +41,7 @@ Hier finden Sie die Liste der standardmäßigen Mobile-Metriken:
    wird ausgelöst, wenn die Anwendung an einem bestimmten Tag verwendet wird.
 
    >[!TIP]
+   >
    >Das Ereignis „Täglich beteiligte Benutzer“ wird nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
 
 * **Monatlich beteiligte Benutzer**
@@ -56,7 +60,7 @@ Hier finden Sie die Liste der standardmäßigen Mobile-Metriken:
 
 * **Abstürze**
 
-   wird ausgelöst, wenn die App nicht ordnungsgemäß vom Benutzer beendet wird. Dieses Ereignis wird gesendet, wenn die App nach einem Absturz startet.
+   Triggered when the application does not correctly exit. Dieses Ereignis wird gesendet, wenn die Anwendung nach einem Absturz Beginn.
 
    >[!TIP]
    >Die App gilt als abgestürzt, wenn kein Befehl zum Beenden aufgerufen wird.
@@ -71,7 +75,7 @@ Hier finden Sie die Liste der standardmäßigen Mobile-Dimensionen:
 
 * **Installationsdatum**
 
-   Datum des ersten Starts nach der Installation. Das Datum liegt im Format *MM/TT/JJJJ* vor.
+   Date of the first launch after the installation. Das Datum wird im Format *MM/TT/JJJJ* angegeben.
 
 * **App-ID**
 
