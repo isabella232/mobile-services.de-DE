@@ -2,12 +2,15 @@
 description: Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereitgestellt werden.
 seo-description: Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereitgestellt werden.
 seo-title: TVJS-Methoden
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: TVJS-Methoden
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 84%
 
 ---
 
@@ -38,9 +41,9 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
 * **privacyStatus**
 
-   Gibt die NSUInteger-Darstellung für die Datenschutzstatusaufzählung des aktuellen Benutzers zurück.
+   Returns the NSUInteger representation of the privacy status enum for current user.
 
-   Optionen:
+   Die folgenden Optionen stehen zur Verfügung:
 
    * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
    * `ADBMobilePrivacyStatusOptOut`: Treffer werden verworfen.
@@ -69,6 +72,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
    * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
    * `ADBMobilePrivacyStatusOptOut`: Treffer werden verworfen.
    * `ADBMobilePrivacyStatusUnknown`: Wenn die Offline-Verfolgung aktiviert ist, werden die Zugriffe gespeichert, bis der Datenschutzstatus zu „opt-in“ (Zugriffe werden dann gesendet) oder „opt-out“ (Zugriffe werden dann verworfen) geändert wird.
+
    Ist die Offline-Verfolgung nicht aktiviert, werden die Treffer verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
@@ -145,7 +149,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
    * Parameter:  `userID`
 
       * Typ: Zeichenfolge
-      * Neue ID für diesen Benutzer.
+      * New identifier for this user.
 
 * **setAdvertisingIdentifier**
 
@@ -218,7 +222,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
          * Seitenstatusname
       * Parameter: `contextData`
          * Typ: Objekt
-         * Zusätzliche Kontextdaten für diesen Treffer.
+         * Additional context data for this hit.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -241,10 +245,10 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       * Gibt Folgendes zurück: N/A
       * Parameter: `actionName`
          * Typ: Zeichenfolge
-         * Name der zu verfolgenden Aktion.
+         * Name of the action being tracked.
       * Parameter: `contextData`
          * Typ: Objekt
-         * Zusätzliche Kontextdaten für diesen Treffer.
+         * Additional context data for this hit.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -267,14 +271,14 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Gibt Folgendes zurück: N/A
       * Parameter: `lat`
-         * Typ: Zahl
-         * Breitengrad des Standorts.
+         * Type: Number
+         * Latitude of the location.
       * Parameter: `lon`
-         * Typ: Zahl
-         * Längengrad des Standorts.
+         * Typ: Nummer
+         * Longitude of the location.
       * Parameter: `contextData`
          * Typ: Objekt
-         * Zusätzliche Kontextdaten für diesen Treffer.
+         * Additional context data for this hit.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -296,8 +300,8 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Gibt Folgendes zurück: N/A
       * Parameter: `increaseAmount`
-         * Typ: Zahl
-         * Zum aktuellen Lebenszeitwert des Benutzers hinzuzufügender Betrag.
+         * Type: Number
+         * Amount to add to the user&#39;s current lifetime value.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -322,10 +326,10 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       * Gibt Folgendes zurück: N/A
       * Parameter: `name`
          * Typ: Zeichenfolge
-         * Name der zu startenden zeitgesteuerten Aktion.
+         * Name of the timed action being started.
       * Parameter: `contextData`
          * Typ: Objekt
-         * Zusätzliche Kontextdaten für diesen Treffer.
+         * Additional context data for this hit.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -335,9 +339,9 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
 * **trackTimedActionUpdateData**
 
-   Übergibt Daten, mit denen die Kontextdaten für die vorliegende Aktion aktualisiert werden sollen.
+   Übergeben Sie Daten, um die Kontextdaten zu aktualisieren, die der angegebenen Aktion zugeordnet sind.
 
-   Die übergebenen Daten werden für die angegebene Aktion an die vorhandenen Daten angehängt. Wenn derselbe Schlüssel bereits für die Aktion definiert ist, werden die Daten überschrieben.
+   The data passed in is appended to the existing data for the given action, and if the same key is already defined for action, the data is overwritten.
 
    >[!TIP]
    >
@@ -352,10 +356,10 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       * Gibt Folgendes zurück: N/A
       * Parameter: `name`
          * Typ: Zeichenfolge
-         * Name der zu aktualisierenden zeitgesteuerten Aktion.
+         * Name of the timed action being updated.
       * Parameter: `contextData`
          * Typ: Objekt
-         * Zusätzliche Kontextdaten für diesen Treffer.
+         * Additional context data for this hit.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -368,7 +372,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Beendet eine zeitgesteuerte Aktion.
 
-   Wenn Sie eine Callback-Funktion bereitstellen, können Sie auf die endgültigen Zeitwerte zugreifen. Wenn kein Callback angegeben ist oder der Callback „true“ zurückgibt, sendet das Adobe-SDK automatisch einen Treffer. Wenn der Callback „false“ zurückgibt, wird der zeitgesteuerte Aktionstreffer unterdrückt.
+   Wenn Sie eine Rückruffunktion bereitstellen, können Sie auf die endgültigen Zeitwerte zugreifen. Wenn kein Rückruf bereitgestellt wird oder der Rückruf &quot;true&quot;zurückgibt, sendet das Adobe-SDK automatisch einen Treffer. Wenn der Callback „false“ zurückgibt, wird der zeitgesteuerte Aktionstreffer unterdrückt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -423,7 +427,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Gibt die automatisch generierte Besucher-ID zurück.
 
-   Hierbei handelt es sich um eine App-spezifische Unique Visitor-ID, die von den Adobe-Servern generiert wird. Wenn die Adobe-Server zum Zeitpunkt der Generierung nicht erreicht werden können, wird die ID mithilfe der CFUUID von Apple generiert. Der Wert wird beim ersten Start generiert, dann gespeichert und von diesem Zeitpunkt an verwendet. Diese ID wird zwischen App-Upgrades beibehalten. Sie wird gespeichert, während des Standardanwendungs-Backup-Vorgangs wiederhergestellt und bei der Deinstallation der App entfernt.
+   Hierbei handelt es sich um eine App-spezifische eindeutige Besucher-ID, die von den Servern der Adobe generiert wird. Wenn die Server der Adobe zum Zeitpunkt der Generierung nicht erreicht werden können, wird die ID mithilfe der CFUUID von Apple generiert. Der Wert wird beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet. Diese ID wird zwischen App-Aktualisierungen beibehalten, während des standardmäßigen Sicherungsprozesses der Anwendung gespeichert und wiederhergestellt und beim Deinstallieren der App entfernt.
 
    >[!TIP]
    >
@@ -599,10 +603,10 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Parameter: `traits`
          * Typ: Objekt
-         * Eigenschaftenwörterbuch für diesen Benutzer.
+         * Eigenschaften-Wörterbuch für diesen Benutzer.
       * Parameter: `callback`
-         * Typ: function(profile)
-         * Das von Audience Manager im Parameter für die Callback-Funktion zurückgegebene Profil.
+         * Typ: function(Profil)
+         * Das vom Audience Manager im Parameter für die Rückruffunktion zurückgegebene Profil.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -656,7 +660,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
 * **visitorSyncIdentifiers**
 
-   Zusätzlich zur Experience Cloud ID können Sie festlegen, dass zusätzliche Kunden-IDs zu jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
+   Zusätzlich zur Experience Cloud-ID können Sie weitere Kunden-IDs festlegen, die jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
 
    * Hier finden Sie die Syntax für diese Methode:
 
