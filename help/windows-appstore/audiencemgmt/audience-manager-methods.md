@@ -1,32 +1,35 @@
 ---
-description: Hier finden Sie eine Liste der Audience Manager-Methoden, die durch die Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
-seo-description: Hier finden Sie eine Liste der Audience Manager-Methoden, die durch die Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
-seo-title: Audience Manager-Methoden
-solution: Marketing Cloud, Analytics
-title: Audience Manager-Methoden
-topic: Entwickler und Implementierung
+description: Liste der von der Windows 8.1 Universal App Store-Bibliothek bereitgestellten Audience Manager-Methoden.
+seo-description: List of Audience Manager methods provided by the Windows 8.1 Universal App Store library.
+seo-title: Audience Manager-Methoden
+solution: Marketing Cloud,Analytics
+title: Audience Manager-Methoden
+topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 45%
 
 ---
 
 
-# Audience Manager methods {#audience-manager-methods}
+# Audience Manager-Methoden {#audience-manager-methods}
 
-Hier finden Sie eine Liste der Audience Manager-Methoden, die durch die Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
+List of Audience Manager methods provided by the Windows 8.1 Universal App Store library.
 
-Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Audience Manager-Methoden ist „AudienceManager“ als Präfix vorangestellt.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Audience Manager methods are prefixed with &quot;AudienceManager.&quot;
 
 >[!NOTE]
 >
->Wenn Sie winmd-Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
+>When you consume winmd methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
 Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit Lebenszyklusmetriken mit Ihrem Lebenszyklustreffer gesendet.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt `null` zurück, falls noch kein Signal übertragen wurde. Das Besucherprofil wird in `SharedPreferences` gespeichert und steht so bei jedem Start der Anwendung zur Verfügung.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -77,7 +80,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit 
 
 * **SetDpidAndDpuuid (winJS: setDpidAndDpuuid)**
 
-   Legt die DPID und die DPUUID fest. Wenn die DPID und die DPUUID festgelegt sind, werden sie mit jedem Signal gesendet.
+   Legt die DPID und die DPUUID fest. Wenn DPID und DPUUID festgelegt sind, werden sie mit jedem Signal gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -94,7 +97,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit 
 
 * **SignalWithData (winJS: signalWithData)**
 
-   Sendet Audience Manager ein Signal mit Eigenschaften und ruft die passenden Segmente ab, die in einem Blockrückruf zurückgegeben werden.
+   Sends Audience Manager a signal with traits and get the matching segments returned in a block callback.
 
    * Hier finden Sie die Syntax für diese Methode:
 
