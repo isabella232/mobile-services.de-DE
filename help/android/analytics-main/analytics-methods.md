@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Analytics-Methoden
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: ht
-source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 94%
 
 ---
 
@@ -63,7 +66,7 @@ Verfolgt eine Aktion in der App.
 * **getTrackingIdentifier**
 Gibt die automatisch erzeugte Besucher-ID für Analytics zurück.
 
-   Diese appspezifische, Unique Visitor-ID wird beim ersten Start generiert, gespeichert und dann fortlaufend weiterverwendet. Die ID wird auch bei App-Upgrades beibehalten und nur entfernt, wenn die App deinstalliert wird.
+   This is an app-specific, unique visitor ID that is generated at the initial launch and is stored and used from that point forward. The ID is preserved between app upgrades and is removed when the app is uninstalled.
 
    * Hier finden Sie die Syntax für diese Methode:
 
