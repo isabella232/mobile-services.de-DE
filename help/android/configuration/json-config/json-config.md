@@ -6,9 +6,9 @@ solution: Marketing Cloud,Analytics
 title: ADBMobile JSON-Konfiguration
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: ht
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 100%
 
@@ -34,6 +34,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Aktiviert die Mobile App-Akquise.
       * `server`: der Akquise-Server, der beim ersten Start auf einen Akquise-Referrer überprüft wird.
       * `appid`: die generierte ID, die diese App auf dem Akquise-Server eindeutig identifiziert.
+
    Wenn dieser Abschnitt fehlt, aktivieren Sie die App-Akquise und laden Sie die SDK-Konfigurationsdatei erneut herunter. Weitere Informationen finden Sie unter *referrerTimeout* in dieser Variablenliste.
 
 * **analyticsForwardingEnabled**
@@ -88,6 +89,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Die boolesche Eigenschaft des Objekts `marketingCloud`, das, wenn auf `true` festgelegt, dazu führt, dass das Gerät aus der Experience Cloud-Gerätekooperation ausgeschlossen wird.
    * Der Standardwert ist `false`.
    * Diese Einstellung wird **nur** für Kunden verwendet, die an der Gerätekooperation teilnehmen.
+
    Bei Mitgliedern mit Gerätekooperation, für die dieser Wert `true` sein muss, müssen Sie sich an das Kooperationsteam wenden, um eine Sperrlisten-Markierung auf Ihrem Gerätekooperationskonto zu verlangen. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
    Beachten Sie die folgenden Informationen:
@@ -153,7 +155,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
       Ab Version 4.2 sind POIs auf der Adobe Mobile-Oberfläche definiert und werden dynamisch mit der App-Konfigurationsdatei synchronisiert. Diese Synchronisation erfordert die Einstellung `analytics.poi`:
 
       ```javascript
-      “analytics.poi“: `https://assets.adobedtm.com/`
+        “analytics.poi“: `https://assets.adobedtm.com/`
       …/yourfile.json”`,
       ```
 
@@ -179,6 +181,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
       * Für `optedin` werden die Treffer sofort gesendet.
       * Bei `optedout` werden Treffer verworfen.
       * Wenn der Wert `optunknown` lautet und für ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „optedin“ (Treffer werden gesendet) oder „optedout“ (Treffer werden verworfen) ändert.
+
       Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu `optedin`geändert wird.  Dadurch wird nur der Ausgangswert festgelegt. Wenn dieser Wert im Code festgelegt oder geändert wird, wird der neue Wert verwendet, bis er wieder geändert oder die App entfernt und erneut installiert wird.
 
 
