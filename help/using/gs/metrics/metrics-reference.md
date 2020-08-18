@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Referenz zu Mobile-Metriken und -Dimensionen
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Hier finden Sie die Liste der standardmäßigen Mobile-Metriken:
 
 * **Abstürze**
 
-   Triggered when the application does not correctly exit. Dieses Ereignis wird gesendet, wenn die Anwendung nach einem Absturz Beginn.
+   Wird ausgelöst, wenn die Anwendung nicht ordnungsgemäß beendet wird. Dieses Ereignis wird gesendet, wenn die Anwendung nach einem Absturz gestartet wird.
 
    >[!TIP]
    >Die App gilt als abgestürzt, wenn kein Befehl zum Beenden aufgerufen wird.
@@ -75,7 +75,7 @@ Hier finden Sie die Liste der standardmäßigen Mobile-Dimensionen:
 
 * **Installationsdatum**
 
-   Date of the first launch after the installation. Das Datum wird im Format *MM/TT/JJJJ* angegeben.
+   Datum des ersten Starts nach der Installation. Das Datum wird im Format *MM/TT/JJJJ* angegeben.
 
 * **App-ID**
 
