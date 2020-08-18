@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Neue App hinzufügen
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '710'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# Neue Anwendung hinzufügen{#add-a-new-app}
+# Neue Anwendung hinzufügen {#add-a-new-app}
 
 Nutzen Sie diese Informationen, um neue Apps zu erstellen und ihre Schlüsselmetriken zu konfigurieren, um die SDK-Optionen für Adobe Analytics und Adobe Audience Manager zu konfigurieren, um die Optionen für Akquise und ID-Dienst zu konfigurieren und um die Konfigurationsdatei, die SDK sowie die Tools für Entwickler und Tester herunterzuladen.
 
@@ -72,13 +72,13 @@ Bevor Sie Ihre App konfigurieren können, müssen Sie sie in der Adobe Mobile Se
 
    * **[!UICONTROL Typ]**
 
-      Select a type from the drop-down list. Die verfügbaren Berichte, die im linken Navigationsmenü angezeigt werden, hängen vom ausgewählten App-Typ ab.
+      Wählen Sie einen Typ aus der Dropdown-Liste aus. Die verfügbaren Berichte, die im linken Navigationsmenü angezeigt werden, hängen vom ausgewählten App-Typ ab.
 
       Folgende Typen stehen zur Verfügung:
 
       * **[!UICONTROL Standard]**
 
-         Die Option **[!UICONTROL Standard}** können Sie für die meisten Apps verwenden.
+         Die Option **[!UICONTROL Standard]** können Sie für die meisten Apps verwenden.
 
       * **[!UICONTROL Veröffentlichung]**
 
