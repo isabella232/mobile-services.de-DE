@@ -4,16 +4,16 @@ seo-description: Mit der Target-Vorschau können Sie einfach Ende-zu-Ende-Qualit
 seo-title: Target-Vorschau auf iOS
 title: Target-Vorschau auf iOS
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Target-Vorschau auf iOS{#target-preview-on-ios}
+# Target-Vorschau auf iOS {#target-preview-on-ios}
 
 Mit der Target-Vorschau können Sie einfach Ende-zu-Ende-Qualitätssicherung für Target-Aktivitäten betreiben und diese Aktivitäten auf Ihrem Gerät ansehen.
 
@@ -27,7 +27,7 @@ Weitere Informationen über die Einrichtung und Verwendung der Target-Vorschau f
 
 * **setPreviewRestartDeeplink**
 
-   Sets an app deeplink that will be triggered when preview selections are applied in the Preview mode.
+   Legt einen App-Deeplink fest, der ausgelöst wird, wenn Vorschauauswahlen im Vorschaumodus angewendet werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
