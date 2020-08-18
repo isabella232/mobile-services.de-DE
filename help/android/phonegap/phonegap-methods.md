@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: PhoneGap-Plug-in-Methoden
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# PhoneGap-Plug-in-Methoden{#phonegap-plug-in-methods}
+# PhoneGap-Plug-in-Methoden {#phonegap-plug-in-methods}
 
 Sie können PhoneGap-Plug-in-Methoden in Android zum Durchführen einer Vielzahl von Aufgaben verwenden.
 
@@ -96,7 +96,7 @@ Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das T
 
    Gibt die automatisch generierte Besucher-ID zurück.
 
-   This is an app-specific, unique visitor ID that is generated when the app is initially launched and is stored and used from that point. This ID is preserved between app upgrades and is removed when the app is uninstalled.
+   Hierbei handelt es sich um eine App-spezifische Unique Visitor-ID, die beim ersten Start der App generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID bleibt zwischen App-Upgrades erhalten und wird entfernt wenn die App deinstalliert wird.
 
    >[!TIP]
    >
@@ -694,7 +694,7 @@ Rufen Sie in der von Cordova generierten Hauptaktivität `Config.submitAdvertisi
 
 * **visitorGetMarketingCloudId**
 
-   Gibt die Experience Cloud ID vom ID-Dienst zurück.
+   Gibt die Experience Cloud ID vom ID-Service zurück.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -710,7 +710,7 @@ Rufen Sie in der von Cordova generierten Hauptaktivität `Config.submitAdvertisi
 
 * **visitorSyncIdentifiers**
 
-   Synchronisiert die angegebenen Kennungen mit dem ID-Dienst.
+   Synchronisiert die bereitgestellten IDs mit dem ID-Service.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -730,7 +730,7 @@ Rufen Sie in der von Cordova generierten Hauptaktivität `Config.submitAdvertisi
 
 * **visitorSyncIdentifiersWithAuthenticationState**
 
-   Synchronisiert die bereitgestellten Kennungen mit dem ID-Dienst.
+   Synchronisiert die bereitgestellten IDs mit dem ID-Service.
 
    * Hier finden Sie die Syntax für diese Methode:
 
