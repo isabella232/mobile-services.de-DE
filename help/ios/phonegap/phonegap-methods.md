@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: PhoneGap-Plug-in-Methoden
 topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das T
 
 * **trackingIdentifier**
 
-   Gibt die automatisch generierte Besucher-ID zurück. Hierbei handelt es sich um eine App-spezifische eindeutige Besucher-ID, die beim ersten Start der App generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID bleibt zwischen den App-Aktualisierungen erhalten und wird entfernt, wenn die App deinstalliert wird.
+   Gibt die automatisch generierte Besucher-ID zurück. Hierbei handelt es sich um eine App-spezifische Unique Visitor-ID, die beim ersten Start der App generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID bleibt zwischen App-Upgrades erhalten und wird entfernt, wenn die App deinstalliert wird.
 
    >[!TIP]
    >
@@ -325,7 +325,7 @@ Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das T
 
 * **trackActionFromBackground**
 
-   Verfolgt eine Aktion, die im Hintergrund aufgetreten ist. Dadurch wird das Auslösen von Lebenszyklusereignissen in bestimmten Ereignissen unterbunden.
+   Verfolgt eine Aktion, die im Hintergrund aufgetreten ist. Dadurch wird das Auslösen von Lebenszyklusereignissen in bestimmten Szenarien unterbunden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
