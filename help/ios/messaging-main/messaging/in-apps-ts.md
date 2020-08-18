@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Fehlerbehebung von In-App-Nachrichten
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 
-# Fehlerbehebung von In-App-Nachrichten{#troubleshooting-in-app-messaging}
+# Fehlerbehebung von In-App-Nachrichten {#troubleshooting-in-app-messaging}
 
 Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 
@@ -24,29 +24,29 @@ Wenn Sie alle Anforderungen für In-App-Nachrichten erfüllt haben, aber keine N
 
 ## Enthält die Anwendung die neue Konfiguration und das neue SDK?
 
-Verify that the SDK is version 4.2 or higher and correctly configured. Stellen Sie sicher, dass Ihre Konfiguration (heruntergeladene JSON-Datei) einen Abschnitt `Messages` oder einen Remote-Endpunkt „Nachrichten“ enthält, der vom dynamischen Tag-Management abgerufen werden kann.
+Stellen Sie sicher, dass Sie die SDK-Version 4.2 (oder höher) verwenden und dass sie ordnungsgemäß konfiguriert ist. Stellen Sie sicher, dass Ihre Konfiguration (heruntergeladene JSON-Datei) einen Abschnitt `Messages` oder einen Remote-Endpunkt „Nachrichten“ enthält, der vom dynamischen Tag-Management abgerufen werden kann.
 
-## My full screen message in Android is not showing up. I am using the correct SDK, configuration, and my triggers are being met.
+## Meine Vollbildnachricht in Android wird nicht angezeigt. Ich verwende das richtige SDK, die richtige Konfiguration und meine Auslöser werden erfüllt.
 
-Did you update your manifest file to define the full screen activity?
+Haben Sie Ihre Manifestdatei aktualisiert, um die Aktivität im Vollbildmodus zu definieren?
 
-## My local notification message in Android isn&#39;t working.
+## Meine lokale Benachrichtigung in Android funktioniert nicht.
 
 Stellen Sie sicher, dass der Broadcast-Empfänger für lokale Benachrichtigungen in Ihrer Manifestdatei deklariert ist. Weitere Informationen finden Sie in Schritt 2 des Abschnitts [In-App-Nachrichten aktivieren](/help/android/messaging-main/messaging/messaging.md).
 
 ## Ist die Nachricht „live“?
 
-Check on the list view on the Manage In-App Message page in the Status column, and verify if it is live.
+Überprüfen Sie in der Statusspalte auf der Seite „In-App-Nachricht verwalten“ die Listenansicht und überprüfen Sie, ob sie live ist.
 
 ## Sehen Sie sich die Einstellungen *einmal anzeigen*, *immer anzeigen*, *offline anzeigen* auf der Registerkarte „Zielgruppe“ an.
 
 Stellen Sie sicher, dass diese Einstellungen wie erforderlich festgelegt sind. Überprüfen Sie auf der Registerkarte **[!UICONTROL Zielgruppe]** die **[!UICONTROL Auslöser]**-Optionen, mit deren Hilfe Sie festlegen können, wie oft die Nachricht angezeigt wird.
 
-## Wenn Sie Ereignis starten als Auslöser...
+## Bei Verwendung eines Ereignisstarts als Auslöser …
 
 Ereignis wird nur bei einer neuen Sitzung ausgelöst. Weitere Informationen dazu, wann eine Sitzung beginnt, finden Sie in der Spalte `lifecycleTimeout` in der JSON-Konfigurationsdatei. Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
 
-## Ich habe meine Nachricht remote aktualisiert, aber meine App zeigt noch die alte Nachricht an.
+## Ich habe meine Nachricht remote aktualisiert in der Anwendung wird jedoch nach wie vor die alte Nachricht angezeigt.
 
 Führen Sie eine der folgenden Aufgaben aus:
 
@@ -54,14 +54,14 @@ Führen Sie eine der folgenden Aufgaben aus:
 
    Versuchen Sie es nach einiger Zeit erneut.
 
-* Die Konfiguration wird nur bei einem Neustart aktualisiert. 
+* Die Konfiguration wird nur bei einem Neustart aktualisiert.
 Wenn die Anwendung innerhalb des Sitzungs-Timeouts des Lebenszyklus neu gestartet wurde, wurde die neue Konfiguration möglicherweise nicht heruntergeladen.
 
    Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md).
 
-## My image does not fit exactly into the space provided by the template.
+## Mein Bild passt nicht genau in den von der Vorlage bereitgestellten Raum.
 
-The In-App Message full-screen template supports displaying an image from a remote server (Image URL) or from the app bundle (Bundled Image). Das Bild sollte in einem Standard-Bildformat vorliegen, wie z. B. JPG, GIF oder PNG.
+Die Vollbildvorlage „In-App-Nachricht“ unterstützt die Anzeige eines Bildes von einem Remoteserver (Bild-URL) oder vom App-Paket (Paketbild). Das Bild sollte in einem Standard-Bildformat vorliegen, wie z. B. JPG, GIF oder PNG.
 
 Da Gerätebildschirme verschiedenste Abmessungen aufweisen, passt das Bild sehr wahrscheinlich nicht genau in den Platz der Vorlage. Die Vorlage zentriert das Bild, um die Bildmitte anzuzeigen, und schneidet Überschüssiges ab (Hochformat) bzw. lässt die Bildseiten verblassen (Querformat).
 
@@ -70,14 +70,14 @@ Im Folgenden finden Sie die genauen Positionierungs- und Größenregeln für jed
 * **Hochformat**:
    * Eine Höhe von 195 px für Smartphones
    * Eine Höhe von 529 px für Tablets
-   * Centered if the image width is smaller than the device width.
-   * Cropped if the image width is greater than the device width.
+   * Zentriert, wenn die Bildbreite geringer als die Gerätebreite ist.
+   * Zugeschnitten, wenn die Bildbreite größer als die Gerätebreite ist.
 
 * **Querformat**:
-   * The image scaled to 100% of the height of the device.
-   * The width is 75% of the device, with a fade out on the right.
+   * Das Bild wurde auf 100 % der Höhe des Geräts skaliert.
+   * Die Breite beträgt 75 % des Geräts, wobei sich eine Ausblendung auf der rechten Seite befindet.
 
-If you have issues with the full-screen template, you can download and use the Custom HTML template. This template provides more flexibility for images and allows full control of the template.
+Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinierte HTML-Vorlage herunterladen und verwenden. Diese Vorlage bietet mehr Flexibilität für Bilder und ermöglicht die vollständige Steuerung der Vorlage.
 
 ## In-App-Nachrichten auf einem iPhone X werden nicht im Vollbildmodus angezeigt.
 
@@ -89,7 +89,7 @@ So zeigen Sie In-App-Nachrichten im Vollbildmodus auf einem iPhone X an:
    <meta name="viewport" content="viewport-fit=cover">
    ```
 
-1. Richten Sie die entsprechende Auffüllung im CSS für das oberste UI-Element ein, z. B.:
+1. Richten Sie die entsprechende Füllung im CSS für das oberste UI-Element ein, z. B.:
 
    ```html
     topelement {
