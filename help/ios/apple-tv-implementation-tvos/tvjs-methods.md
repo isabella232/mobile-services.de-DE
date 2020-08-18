@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: TVJS-Methoden
 topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2013'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -41,9 +41,9 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
 * **privacyStatus**
 
-   Returns the NSUInteger representation of the privacy status enum for current user.
+   Gibt die NSUInteger-Darstellung für Datenschutzstatus-Enum des aktuellen Benutzers zurück.
 
-   Die folgenden Optionen stehen zur Verfügung:
+   Das sind die Optionen:
 
    * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
    * `ADBMobilePrivacyStatusOptOut`: Treffer werden verworfen.
@@ -149,7 +149,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
    * Parameter:  `userID`
 
       * Typ: Zeichenfolge
-      * New identifier for this user.
+      * Neue Kennung für diesen Benutzer.
 
 * **setAdvertisingIdentifier**
 
@@ -222,7 +222,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
          * Seitenstatusname
       * Parameter: `contextData`
          * Typ: Objekt
-         * Additional context data for this hit.
+         * Zusätzliche Kontextdaten für diesen Treffer.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -245,10 +245,10 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       * Gibt Folgendes zurück: N/A
       * Parameter: `actionName`
          * Typ: Zeichenfolge
-         * Name of the action being tracked.
+         * Name der verfolgten Aktion.
       * Parameter: `contextData`
          * Typ: Objekt
-         * Additional context data for this hit.
+         * Zusätzliche Kontextdaten für diesen Treffer.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -271,14 +271,14 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Gibt Folgendes zurück: N/A
       * Parameter: `lat`
-         * Type: Number
-         * Latitude of the location.
+         * Typ: Zahl
+         * Breitengrad der Position.
       * Parameter: `lon`
-         * Typ: Nummer
-         * Longitude of the location.
+         * Typ: Zahl
+         * Länge des Standorts.
       * Parameter: `contextData`
          * Typ: Objekt
-         * Additional context data for this hit.
+         * Zusätzliche Kontextdaten für diesen Treffer.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -300,8 +300,8 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
       * Gibt Folgendes zurück: N/A
       * Parameter: `increaseAmount`
-         * Type: Number
-         * Amount to add to the user&#39;s current lifetime value.
+         * Typ: Zahl
+         * Dem aktuellen Lebenszeitwert des Benutzers hinzuzufügende Menge.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -326,10 +326,10 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       * Gibt Folgendes zurück: N/A
       * Parameter: `name`
          * Typ: Zeichenfolge
-         * Name of the timed action being started.
+         * Name der zeitgesteuerten Aktion, die gestartet wird.
       * Parameter: `contextData`
          * Typ: Objekt
-         * Additional context data for this hit.
+         * Zusätzliche Kontextdaten für diesen Treffer.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -339,9 +339,9 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
 * **trackTimedActionUpdateData**
 
-   Übergeben Sie Daten, um die Kontextdaten zu aktualisieren, die der angegebenen Aktion zugeordnet sind.
+   Übergeben Sie diesen Wert in Daten, um die Kontextdaten zu aktualisieren, die der gegebenen Aktion zugewiesen sind.
 
-   The data passed in is appended to the existing data for the given action, and if the same key is already defined for action, the data is overwritten.
+   Die übergebenen Daten werden an die vorhandenen Daten für die gegebene Aktion angehängt und wenn der Schlüssel bereits für die Aktion definiert ist, werden die Daten überschrieben.
 
    >[!TIP]
    >
@@ -356,10 +356,10 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       * Gibt Folgendes zurück: N/A
       * Parameter: `name`
          * Typ: Zeichenfolge
-         * Name of the timed action being updated.
+         * Name der zu aktualisierenden zeitgesteuerten Aktion.
       * Parameter: `contextData`
          * Typ: Objekt
-         * Additional context data for this hit.
+         * Zusätzliche Kontextdaten für diesen Treffer.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
@@ -372,7 +372,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Beendet eine zeitgesteuerte Aktion.
 
-   Wenn Sie eine Rückruffunktion bereitstellen, können Sie auf die endgültigen Zeitwerte zugreifen. Wenn kein Rückruf bereitgestellt wird oder der Rückruf &quot;true&quot;zurückgibt, sendet das Adobe-SDK automatisch einen Treffer. Wenn der Callback „false“ zurückgibt, wird der zeitgesteuerte Aktionstreffer unterdrückt.
+   Wenn Sie eine Rückruffunktion bereitstellen, können Sie auf die endgültigen Zeitwerte zugreifen. Wenn kein Rückruf bereitgestellt wird oder der Rückruf „true“ zurückgibt, sendet das Adobe-SDK automatisch einen Treffer. Wenn der Callback „false“ zurückgibt, wird der zeitgesteuerte Aktionstreffer unterdrückt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -427,7 +427,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Gibt die automatisch generierte Besucher-ID zurück.
 
-   Hierbei handelt es sich um eine App-spezifische eindeutige Besucher-ID, die von den Servern der Adobe generiert wird. Wenn die Server der Adobe zum Zeitpunkt der Generierung nicht erreicht werden können, wird die ID mithilfe der CFUUID von Apple generiert. Der Wert wird beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet. Diese ID wird zwischen App-Aktualisierungen beibehalten, während des standardmäßigen Sicherungsprozesses der Anwendung gespeichert und wiederhergestellt und beim Deinstallieren der App entfernt.
+   Hierbei handelt es sich um eine App-spezifische eindeutige Besucher-ID, die von Adobe-Servern generiert wird. Wenn die Adobe-Server zum Zeitpunkt der Generierung nicht erreicht werden können, wird die ID mithilfe der Apple-CFUUID von generiert. Der Wert wird beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet. Diese ID wird zwischen App-Upgrades beibehalten, während des standardmäßigen Sicherungsprozesses der Anwendung gespeichert und wiederhergestellt sowie beim Deinstallieren der App entfernt.
 
    >[!TIP]
    >
@@ -605,7 +605,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
          * Typ: Objekt
          * Eigenschaften-Wörterbuch für diesen Benutzer.
       * Parameter: `callback`
-         * Typ: function(Profil)
+         * Typ: function(profile)
          * Das vom Audience Manager im Parameter für die Rückruffunktion zurückgegebene Profil.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -660,7 +660,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
 * **visitorSyncIdentifiers**
 
-   Zusätzlich zur Experience Cloud-ID können Sie weitere Kunden-IDs festlegen, die jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
+   Zusätzlich zur Experience Cloud-ID können Sie weitere Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
 
    * Hier finden Sie die Syntax für diese Methode:
 
