@@ -7,9 +7,9 @@ solution: Marketing Cloud,Analytics
 title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Ihr Adobe Analytics-Unternehmen muss Experience Cloud-fähig sein. Sie können d
 
 * **Push-Dienste konfigurieren**
 
-   Sie müssen Push-Dienste im mobilen SDK konfigurieren. 
+   Sie müssen Push-Dienste im mobilen SDK konfigurieren.
 Weitere Informationen finden Sie unter folgenden Themen:
 
    * [Push-Nachrichten in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
