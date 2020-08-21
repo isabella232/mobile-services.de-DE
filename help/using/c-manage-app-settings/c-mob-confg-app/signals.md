@@ -1,18 +1,21 @@
 ---
-description: Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an einen Drittanbieterserver senden. Mit denselben Auslösern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie Mobile Services so konfigurieren, dass benutzerdefinierte Daten an ein Drittanbieterziel gesendet werden.
-seo-description: Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an einen Drittanbieterserver senden. Mit denselben Auslösern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie Mobile Services so konfigurieren, dass benutzerdefinierte Daten an ein Drittanbieterziel gesendet werden.
+description: Mit Postbacks können Sie von Adobe Mobile erfasste Daten an einen Drittanbieter-Server senden. Durch die Nutzung derselben Auslöser und Eigenschaften, die Sie zur Anzeige einer In-App-Nachricht verwenden, können Sie Mobile Services so konfigurieren, dass benutzerdefinierte Daten an ein Drittanbieterziel gesendet werden.
+seo-description: Mit Postbacks können Sie von Adobe Mobile erfasste Daten an einen Drittanbieter-Server senden. Durch die Nutzung derselben Auslöser und Eigenschaften, die Sie zur Anzeige einer In-App-Nachricht verwenden, können Sie Mobile Services so konfigurieren, dass benutzerdefinierte Daten an ein Drittanbieterziel gesendet werden.
 seo-title: Postbacks konfigurieren
 title: Postbacks konfigurieren
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '474'
+ht-degree: 71%
 
 ---
 
 
 # Postbacks konfigurieren {#configure-postbacks}
 
-Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an einen Drittanbieterserver senden. Mit denselben Auslösern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie Mobile Services so konfigurieren, dass benutzerdefinierte Daten an ein Drittanbieterziel gesendet werden.
+Mit Postbacks können Sie von Adobe Mobile erfasste Daten an einen Drittanbieter-Server senden. Durch die Nutzung derselben Auslöser und Eigenschaften, die Sie zur Anzeige einer In-App-Nachricht verwenden, können Sie Mobile Services so konfigurieren, dass benutzerdefinierte Daten an ein Drittanbieterziel gesendet werden.
 
 >[!IMPORTANT]
 >
@@ -51,7 +54,7 @@ Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an einen Drittanbiet
       Geben Sie einen oder mehrere Daten-Tags und Bedingungen an, die den Postback auslösen. Beispielsweise können Sie als Auslöser **[!UICONTROL Abgestürzt]** und als Bedingung **[!UICONTROL Vorhanden]** auswählen, damit der Postback bei einem Absturz der App ausgelöst wird. Sie können auch angeben, welche Metriken den Postback aktivieren. Beispielsweise können Sie als Auslöser **[!UICONTROL Gerätename]** und als Bedingungen **[!UICONTROL Gleich]** und **[!UICONTROL iPhone 6 Plus]** auswählen, damit der Postback bei einem Absturz der App auf iPhone 6 Plus-Geräten aktiviert wird.
 
    * **[!UICONTROL Eigenschaft(en)]**
-   Geben Sie an, wer die Nachricht sehen kann, wenn sie ausgelöst wird. Zu den Optionen gehören **[!UICONTROL Sitzungslänge**, **[!UICONTROL Erster Starttermin]** und **[!UICONTROL App-ID]**.
+   Geben Sie an, wer die Nachricht sehen kann, wenn sie ausgelöst wird. Options include **[!UICONTROL Session Length]**, **[!UICONTROL First Launch Date]**, and **[!UICONTROL App ID]**.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um den Postback zu erstellen und zur Liste **[!UICONTROL Postbacks verwalten]** hinzuzufügen.
 
