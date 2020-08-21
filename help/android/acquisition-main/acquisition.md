@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Mobile App – Akquise
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: ht
-source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +22,7 @@ In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes gen
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -28,9 +31,9 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 >[!IMPORTANT]
 >
->Um die Akquise zu nutzen, ist SDK-Version 4.1 oder höher **erforderlich**.
+>To use Acquisition, you **must** have SDK version 4.1 or later.
 
-Akquise-Links müssen in Adobe Mobile Services generiert werden. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
+Akquise-Links müssen in Adobe Mobile-Diensten erstellt werden. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
 **In SDK-Versionen 4.18.0 und höher**:
 
