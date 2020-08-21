@@ -1,40 +1,43 @@
 ---
-description: Nachdem Sie die Bibliothek Ihrem Projekt hinzugefügt haben, können Sie beliebige Analysemethodenaufrufe überall in Ihrer Anwendung nutzen (importieren Sie unbedingt ADBMobile.h in Ihre Klasse).
-seo-description: Nachdem Sie die Bibliothek Ihrem Projekt hinzugefügt haben, können Sie beliebige Analysemethodenaufrufe überall in Ihrer Anwendung nutzen (importieren Sie unbedingt ADBMobile.h in Ihre Klasse).
+description: Nachdem Sie die Bibliothek zu Ihrem Projekt hinzugefügt haben, können Sie beliebige Analytics-Methodenaufrufe an beliebigen Stellen in Ihrer App durchführen (stellen Sie sicher, dass Sie ADBMobile.h in Ihre Klasse importieren).
+seo-description: Nachdem Sie die Bibliothek zu Ihrem Projekt hinzugefügt haben, können Sie beliebige Analytics-Methodenaufrufe an beliebigen Stellen in Ihrer App durchführen (stellen Sie sicher, dass Sie ADBMobile.h in Ihre Klasse importieren).
 seo-title: Analytics
 title: Analytics
 uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '684'
+ht-degree: 5%
 
 ---
 
 
 # Analytics {#analytics}
 
-Nachdem Sie die Bibliothek Ihrem Projekt hinzugefügt haben, können Sie beliebige Analysemethodenaufrufe überall in Ihrer Anwendung nutzen (importieren Sie unbedingt ADBMobile.h in Ihre Klasse).
+Nachdem Sie die Bibliothek zu Ihrem Projekt hinzugefügt haben, können Sie beliebige Analytics-Methodenaufrufe an beliebigen Stellen in Ihrer App durchführen (stellen Sie sicher, dass Sie ADBMobile.h in Ihre Klasse importieren).
 
-## Enable mobile application reports in Analytics {#task_3DA1354942CF4BF4B11B9CC97588A9ED}
+## Mobilanwendungsberichte in Analytics aktivieren {#task_3DA1354942CF4BF4B11B9CC97588A9ED}
 
-Bevor Sie Code hinzufügen, bitten Sie Ihren Analytics-Administrator, folgende Schritte auszuführen, um Mobile App-Lebenszyklus-Tracking zu ermöglichen. Dadurch wird sichergestellt, dass Ihre Report Suite zur Erfassung von Metriken bereit ist, wenn Sie die Entwicklung beginnen.
+Bevor Sie Code hinzufügen, lassen Sie Ihren Analytics-Administrator Folgendes ausführen, um die Lebenszyklusverfolgung für Mobilanwendungen zu aktivieren. Dadurch wird sichergestellt, dass Ihre Report Suite zu Beginn der Entwicklung Metriken erfassen kann.
 
 
-1. Open **[!UICONTROL Admin Tools]** &gt; **[!UICONTROL Report Suites]** and select your mobile report suite(s).
-1. Click **[!UICONTROL Edit Settings]** &gt; **[!UICONTROL Mobile Management]** &gt; **[!UICONTROL Mobile Application Reporting]**.
+1. Öffnen Sie **[!UICONTROL Admin Tools]** > **[!UICONTROL Report Suites]** und wählen Sie Ihre mobile(n) Report Suite(s) aus.
+1. Klicken Sie auf Einstellungen **[!UICONTROL bearbeiten]** > **[!UICONTROL Mobilverwaltung]** > **[!UICONTROL Mobilanwendungs-Berichte]**.
 
    ![](assets/mobile-settings.png)
 
-1. Klicken Sie auf **[!UICONTROL Neueste Anwendungsberichte aktivieren]**.
+1. Klicken Sie auf Neueste App-Berichte **[!UICONTROL aktivieren]**.
 
-   Optionally, you can also click **[!UICONTROL Enable Mobile Location Tracking]** and **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]**.
+   Optional können Sie auch auf **[!UICONTROL Verfolgung]** mobiler Standorte aktivieren und ältere Berichte und Zuordnung für Hintergrundtreffer **[!UICONTROL aktivieren]** klicken.
 
    ![](assets/enable-lifecycle.png)
 
-Lifecycle metrics are now ready to be captured, and Mobile Application Reports] appear in the **[!UICONTROL Reports]** menu in the marketing reports interface.
+Lebenszyklusmetriken können jetzt erfasst werden, und Mobilanwendungsberichte werden im Menü **[!UICONTROL Berichte]** in der Benutzeroberfläche der Marketing-Berichte angezeigt.
 
 ## Erfassen von Lebenszyklusmetriken {#task_25D469C62DF84573AEB5E8E950B96205}
 
-1. To collect lifecycle metrics in your app, call `collectLifecycleData()` in the `ApplicationUI` constructor.
+1. Rufen Sie zum Erfassen von Lebenszyklusmetriken in Ihrer App `collectLifecycleData()` den `ApplicationUI` Konstruktor auf.
 
    Beispiel:
 
@@ -45,32 +48,32 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
    } 
    ```
 
-   If `collectLifecycleData()` is called twice in the same session, then your application will report a crash on every call after the first. Das SDK setzt eine Markierung, wenn die Anwendung heruntergefahren wird, um eine erfolgreiche Beendigung anzugeben. If this flag is not set, `collectLifecyleData()` reports a crash.
+   Wenn die Anwendung in derselben Sitzung zweimal aufgerufen `collectLifecycleData()` wird, meldet sie bei jedem Aufruf nach dem ersten Absturz einen Absturz. Das SDK setzt beim Beenden der Anwendung ein Flag, das auf einen erfolgreichen Beenden hinweist. Wenn dieses Flag nicht gesetzt ist, `collectLifecyleData()` wird ein Absturz gemeldet.
 
-## Events, props, and eVars {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
+## Events, Props und eVars {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-Wenn Sie sich die [ADBMobile-Klassen- und Methodenreferenz](/help/blackberry/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignisse, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer Anwendung zuweisen. Stattdessen nutzt das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
+Wenn Sie sich die [ADBMobile-Klassen- und Methodenreferenz](/help/blackberry/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
 
 Verarbeitungsregeln bieten mehrere Vorteile:
 
-* Sie können Ihre Datenzuweisung ändern, ohne ein Update im App Store einzureichen.
-* Sie können relevante Namen für Ihre Daten verwenden, anstatt Variablen festzulegen, die spezifisch für eine Report Suite sind.
-* Es ist kaum Aufwand nötig, um zusätzliche Daten zu senden. Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
+* Das Senden zusätzlicher Daten hat kaum Auswirkungen. Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
 
-Werte, die Sie Variablen direkt zugewiesen haben, müssen stattdessen zur HashMap `data` hinzugefügt werden.
+Any values that you were assigning directly to variables should be added to the `data` HashMap instead.
 
 ## Verarbeitungsregeln {#concept_3EA4CD602AF4488A896B0EDD3BA2D969}
 
-Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren.
+Verarbeitungsregeln werden verwendet, um die Daten, die Sie in Kontextdatenvariablen senden, zu Berichten in &quot;evars&quot;, &quot;props&quot;und andere Variablen zu kopieren.
 
-[Training zu Verarbeitungsregeln](https://tv.adobe.com/embed/1181/16506/) beim Summit 2013
+[Schulung](https://tv.adobe.com/embed/1181/16506/) zu Verarbeitungsregeln anlässlich des Gipfeltreffens 2013
 
-[Verarbeitungsregeln](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Genehmigung zur Verwendung von Verarbeitungsregeln erhalten](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Autorisierung zur Verwendung der Verarbeitungsregeln erhalten](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
-Es ist empfehlenswert, die Kontextdatenvariablen mithilfe von „Namespaces“ zu gruppieren, um eine logische Ordnung beizubehalten. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
+Es wird empfohlen, Kontextdatenvariablen mithilfe von &quot;Namensräumen&quot;zu gruppieren, da dies eine logische Reihenfolge gewährleistet. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
 
 ```js
 "product.type":"hat" 
@@ -78,27 +81,27 @@ Es ist empfehlenswert, die Kontextdatenvariablen mithilfe von „Namespaces“ z
 "product.color":"blue"
 ```
 
-Kontextdatenvariablen werden auf der Verarbeitungsregeloberfläche alphabetisch sortiert. Mit Namespaces können Sie schnell nachvollziehen, welche Variablen sich im selben Namespace befinden.
+Kontextdatenvariablen werden in der Benutzeroberfläche der Verarbeitungsregeln alphabetisch sortiert, sodass Namensraum schnell Variablen im selben Namensraum anzeigen können.
 
-Wir haben außerdem erfahren, dass einige von Ihnen Kontextdatenschlüssel mithilfe der eVar- oder prop-Nummer benennen:
+Außerdem haben wir gehört, dass einige von Ihnen Kontextdatenschlüssel mit der eVar- oder prop-Nummer benennen:
 
 ```js
 "eVar1":"jimbo"
 ```
 
-Dadurch wird es *etwas* einfacher, wenn Sie die einmalige Zuordnung in den Verarbeitungsregeln durchführen. Sie verlieren dadurch jedoch auch die Lesbarkeit während des Debuggings und künftiger Codeaktualisierungen, was wiederum komplizierter sein kann. Es wird stattdessen dringend empfohlen, dass Sie beschreibende Namen für Schlüssel und Werte verwenden:
+Dies kann bei der einmaligen Zuordnung in Verarbeitungsregeln *etwas* einfacher sein, Sie verlieren jedoch die Lesbarkeit während des Debuggens, und zukünftige Code-Aktualisierungen können schwieriger sein. Stattdessen empfehlen wir dringend, aussagekräftige Namen für Schlüssel und Werte zu verwenden:
 
 ```js
 "username":"jimbo"
 ```
 
-Kontextvariablen, die Zählerereignisse definieren, können denselben Schlüssel und denselben Wert aufweisen:
+Kontextvariablen, die Zählervariablen definieren, können denselben Schlüssel und Wert haben:
 
 ```js
 "logon":"logon"
 ```
 
-Kontextvariablen, die Inkrementereignisse definieren, können das Ereignis als Schlüssel und die zu erhöhende Menge als Wert aufweisen:
+Kontextdatenvariablen, die Inkrementor-Ereignis definieren, können das Ereignis als Schlüssel und den Inkrementierungswert als Wert haben:
 
 ```js
 "levels completed":"6"
@@ -106,14 +109,14 @@ Kontextvariablen, die Inkrementereignisse definieren, können das Ereignis als S
 
 >[!TIP]
 >
->Adobe behält den Namespace `a.`. Neben dieser kleinen Einschränkung müssen Kontextvariablen nur eindeutig für Ihre Unternehmensanmeldung sein, um Konflikte zu vermeiden.
+>Adobe behält sich den Namespace `a.` vor. Neben dieser kleinen Einschränkung müssen Kontextdatenvariablen in Ihrer Firma eindeutig sein, um Kollisionen zu vermeiden.
 
-## Enable offline tracking {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
+## Offline-Verfolgung aktivieren {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
 
-To store hits when the device is offline, you can optionally enable offline tracking in the `ADBMobileConfig.json` file.
+Um Treffer zu speichern, wenn das Gerät offline ist, können Sie optional die Offline-Verfolgung in der `ADBMobileConfig.json` Datei aktivieren.
 
-Achten Sie sehr genau auf die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben werden, bevor Sie die Offline-Verfolgung aktivieren.
+Achten Sie vor der Aktivierung der Offline-Verfolgung sehr genau auf die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben sind.
 
-## Analytics methods
+## Analytics-Methoden
 
-Eine Liste der für BlackBerry verfügbaren Analytics-Methoden finden Sie unter *Analytics-Methoden* in der [Adobe Mobile-Klassen- und Methodenreferenz](/help/blackberry/methods.md).
+Eine Liste der für BlackBerry verfügbaren Analytics-Methoden finden Sie unter *Analytics-Methoden* in der [Adobe Mobile Class and Method Reference](/help/blackberry/methods.md).
