@@ -1,14 +1,17 @@
 ---
 description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 seo-title: Marketinglink-Akquise testen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Marketinglink-Akquise testen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 78%
 
 ---
 
@@ -17,12 +20,12 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&amp;Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 
-Wenn die App noch nicht in Google Play vorhanden ist, können Sie beim Erstellen des Marketinglinks eine beliebige App als Ziel auswählen. Dies wirkt sich nur auf die App aus, an die Sie vom Akquise-Server umgeleitet werden, wenn Sie auf den Akquise-Link klicken und nicht auf die Möglichkeit, den Akquise-Link zu testen. Abfragezeichenfolgen-Parameter, die im Rahmen eines Kampagnen-Broadcasts an die App übergeben werden, wenn diese installiert wird, werden an den Google Play Store übergeben. Hin&amp;Zurück-Akquisetests für mobile Apps erfordern die Simulation eines solchen Broadcasts.
+Wenn die App noch nicht in Google Play vorhanden ist, können Sie beim Erstellen des Marketinglinks eine beliebige App als Ziel auswählen. Dies betrifft nur die App, zu der Sie der Akquise-Server weiterleitet, nachdem Sie auf den Akquise-Link geklickt haben, und nicht die Fähigkeit, den Akquise-Link zu testen. Zeichenfolgenparameter der Abfrage werden an den Google Play Store übergeben, der bei der Installation im Rahmen einer Kampagne-Übertragung an die App übergeben wird. Für die Tests zur Erfassung mobiler Apps ist die Simulation dieser Art von Übertragungen erforderlich.
 
 Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den **[!UICONTROL Einstellungen]** gelöscht werden. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
 
 1. Führen Sie die erforderlichen Aufgaben in [App-Akquise](/help/android/acquisition-main/acquisition.md) aus und stellen Sie sicher, dass Sie den Broadcast-Empfänger für `INSTALL_REFERRER` ordnungsgemäß implementiert haben.
-1. Klicken Sie in der Adobe Mobile Services-Benutzeroberfläche auf **[!UICONTROL Akquise]** &gt; **[!UICONTROL Marketing Links Builder]** und generieren Sie eine Akquise-Marketinglink-URL, die Google Play als Ziel für Android-Geräte festlegt.
+1. Klicken Sie in der Adobe Mobile Services-Benutzeroberfläche auf **[!UICONTROL Akquise]** > **[!UICONTROL Marketing Links Builder]** und generieren Sie eine Akquise-Marketinglink-URL, die Google Play als Ziel für Android-Geräte festlegt.
 
    Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -70,7 +73,7 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
    | Wenn | Wert |
    |--- |--- |
    | Akquise | Der Server sollte `c00.adobe.com` sein und *`appid`* sollte der `appid` in Ihrem Akquise-Link entsprechen. |
-   | analytics | Legen Sie zu Testzwecken genügend Zeit für das Referrer-Timeout fest (mindestens 60 Sekunden), um den Broadcast manuell zu senden. Sie können die ursprüngliche Timeout-Einstellung nach dem Test wiederherstellen. |
+   | analytics | Legen Sie für Testzwecke das Zeitlimit des Werbers so fest, dass ausreichend Zeit (60 Sekunden oder mehr) zum manuellen Senden der Sendung zur Verfügung steht. Sie können die ursprüngliche Timeout-Einstellung nach dem Test wiederherstellen. |
 
 1. Verbinden Sie das Gerät mit einem Computer, deinstallieren Sie die App und installieren Sie sie anschließend erneut.
 1. Starten Sie ADB Shell und rufen Sie die Anwendung auf dem Gerät auf.
@@ -105,9 +108,9 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
    "Analytics - Received Referrer Data(<A JSON Response>)"
    ```
 
-   Wenn diese Protokolle nicht angezeigt werden, stellen Sie sicher, dass Sie die Schritte 6 bis 10 ausgeführt haben.
+   Wenn diese Protokolle nicht angezeigt werden, überprüfen Sie, ob Sie die Schritte 6 bis 10 ausgeführt haben.
 
-   Die folgende Tabelle enthält zusätzliche Informationen zu möglichen Fehlern:
+   Die folgende Tabelle enthält weitere Informationen zu möglichen Fehlern:
 
    | Fehler | Beschreibung |
    |--- |--- |
@@ -119,7 +122,7 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
 
 Beachten Sie die folgenden Informationen:
 
-* Von der App gesendete Treffer können über HTTP-Überwachungstools überwacht werden, um die Akquise-Attribution zu überprüfen.
+* Treffer, die von der App gesendet werden, können mithilfe von HTTP-Überwachungstools überwacht werden, um die Akquise-Zuordnung zu überprüfen.
 * Weitere Informationen zu `INSTALL_REFERRER`-Broadcasts finden Sie unter [Testen der Google Play-Kampagnenmessung](https://developers.google.com/analytics/solutions/testing-play-campaigns) im Google Developers-Handbuch.
 * Sie können das bereitgestellte Java-Tool `acquisitionTest.jar` verwenden, um die eindeutige ID abzurufen und den Installations-Referrer-Broadcast durchzuführen. So erhalten Sie die Informationen aus den Schritten 3 bis 10.
 
@@ -128,9 +131,9 @@ Beachten Sie die folgenden Informationen:
 So installieren Sie das Java-Tool:
 
 1. Laden Sie die Datei [`acquistionTester.zip`](../assets/acquisitionTester.zip) herunter.
-1. Entpacken Sie die JAR-Datei.
+1. Extrahieren Sie die JAR-Datei.
 
-   Sie können die JAR-Datei über die Befehlszeile ausführen.
+   Sie können die JAR-Datei in der Befehlszeile ausführen.
 
 Beispiel:
 
