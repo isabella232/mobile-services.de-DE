@@ -1,14 +1,17 @@
 ---
 description: Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SDK (verzögerte) Deep-Links in Ihren mobilen Apps zu verfolgen.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SDK (verzögerte) Deep-Links in Ihren mobilen Apps zu verfolgen.
 seo-title: Deep-Links in Adobe Mobile Services verfolgen
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Verfolgen von Deep-Links
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 88%
 
 ---
 
@@ -42,7 +45,7 @@ Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SD
    }
    ```
 
-Das Adobe Mobile SDK kann Schlüssel-Wert-Paare von an Deep- oder universelle Links angehängten Daten analysieren, sofern der Link einen Schlüssel mit der Bezeichnung `a.deeplink.id`, einen entsprechenden Wert, der nicht „Null“ entspricht, sowie einen vom Benutzer generierten Wert aufweist. Alle Schlüssel-Wert-Paare von Daten, die an den Link angehängt sind, werden analysiert, an einen Lebenszyklustreffer angehängt und an Adobe Analytics gesendet, sofern der Link das Schlüssel-Wert-Paar `a.deeplink.id` enthält.
+The Adobe Mobile SDK can parse key and value pairs of data that is appended to any Deep or Universal Link as long as the link contains a key with the `a.deeplink.id` label and a corresponding non-null and user-generated value. Alle Schlüssel-Wert-Paare von Daten, die an den Link angehängt sind, werden analysiert, an einen Lebenszyklustreffer angehängt und an Adobe Analytics gesendet, sofern der Link das Schlüssel-Wert-Paar `a.deeplink.id` enthält.
 
 Zusätzlich können Sie auswählen, ob Sie einen oder mehrere der folgenden reservierten Schlüssel (mit benutzergenerierten Werten) an Deep- oder universelle Links anhängen möchten:
 
@@ -56,7 +59,7 @@ Bei diesen Schlüsseln handelt es sich um vorab zugeordnete Variablen für das R
 
 ## Verzögerte Deep-Links (zur Verwendung mit Marketinglinks) verfolgen
 
-Im Falle eines verzögerten Deep-Links öffnet das Adobe-SDK einen neuen Intent mit dem Deep-Link als Intent-Daten. Dieser Prozess wird als externer Deep-Link unter Verwendung des obigen Codes behandelt.
+Mit einem verzögerten Deep-Link öffnet das Adobe-SDK einen neuen Intent mit dem Deep Link als Intent-Daten. Dieser Prozess wird als externer Deep-Link unter Verwendung des oben stehenden Codes gehandhabt.
 
 ## Öffentliche Deep-Link-Informationen {#section_1815396353614DA8A63D8D92112217E7}
 
