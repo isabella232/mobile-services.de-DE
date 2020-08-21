@@ -1,20 +1,23 @@
 ---
-description: Sie können das Adobe-SDK verwenden, um personenbezogene Daten (Personally Identifiable Information, PII) zu erfassen und diese an Drittanbieter-Endpunkte zu senden.
-seo-description: Sie können das Adobe-SDK verwenden, um personenbezogene Daten (Personally Identifiable Information, PII) zu erfassen und diese an Drittanbieter-Endpunkte zu senden.
+description: Sie können das Adobe SDK verwenden, um personenbezogene Daten (PII) zu erfassen und an einen Drittanbieter-Endpunkt zu senden.
+seo-description: Sie können das Adobe SDK verwenden, um personenbezogene Daten (PII) zu erfassen und an einen Drittanbieter-Endpunkt zu senden.
 seo-title: Postbacks personenbezogener Daten
 title: Postbacks personenbezogener Daten
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
-translation-type: ht
-source-git-commit: 70ac08c74e11a68d94d3f10ed6d7fc133d34149d
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 47%
 
 ---
 
 
 # PII-Postbacks {#pii-postbacks}
 
-Sie können das Adobe-SDK verwenden, um personenbezogene Daten (Personally Identifiable Information, PII) zu erfassen und diese an Drittanbieter-Endpunkte zu senden.
+Sie können das Adobe SDK verwenden, um personenbezogene Daten (PII) zu erfassen und an einen Drittanbieter-Endpunkt zu senden.
 
-Wenn Sie das Adobe-SDK zum Erfassen personenbezogener Daten nutzen wollen, sollten Sie einen trackPII-Aufruf senden. Obwohl die Verwendung dieses Aufrufs die Sammlung von PII-Daten ermöglicht, sendet das SDK die Daten nicht automatisch an einen Adobe-Endpunkt. Ein Postback personenbezogener Daten muss mit dem entsprechenden Endpunkt konfiguriert werden.
+Wenn Sie PII mit dem Adobe SDK erfassen möchten, sollten Sie einen PII-Aufruf für die Verfolgung senden. Obwohl die Verwendung dieses Aufrufs die Erfassung von PII-Daten ermöglicht, sendet das SDK die Daten nicht automatisch an einen Adobe-Endpunkt. Ein Postback personenbezogener Daten muss mit dem entsprechenden Endpunkt konfiguriert werden.
 
 >[!TIP]
 >
