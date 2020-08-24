@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Video Analytics
 topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Hier finden Sie einige Informationen zum Messen von Videos in iOS mithilfe der M
 >
 >Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen finden Sie unter [Audio- und Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html).
 
-Der allgemeine Prozess zum Messen von Videos ist auf allen Plattformen sehr ähnlich. Dieser Inhalt bietet einen grundlegenden Überblick über die Entwickler-Aufgaben mit Codebeispielen.
+Der allgemeine Prozess zur Videomessung ist für alle Plattformen sehr ähnlich. Hier finden Sie eine allgemeine Übersicht der Entwickleraufgaben samt Code-Beispielen.
 
 ## Player-Ereignisse Analytics-Variablen zuordnen {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
@@ -31,17 +31,17 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
 * **a.media.name**
 
-   (Erforderlich) Erfasst den Videonamen, der in der Implementierung angegeben ist, wenn ein Besucher das Video auf irgendeine Weise Ansicht. Sie können Classifications für diese Variable hinzufügen.
+   (Erforderlich) Erfasst den in der Implementierung angegeben Videonamen, wenn sich ein Besucher das Video auf irgendeine Weise ansieht. Sie können für diese Variable Klassifizierungen hinzufügen.
 
-   (Optional) Die Variable &quot;Custom Insight&quot;enthält Informationen zu Videopfaden.
+   (Optional) Die Variable „Custom Insight“ enthält Informationen zu Videopfaden.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Besuch
-   * Custom Insight (s.prop, für Videopfadsetzung verwendet)
+   * Custom Insight (s.prop, für den Videopfad verwendet)
 
 * **a.media.name**
 
-   (Optional) Bietet Informationen zur Videopfadsetzung. Pfade müssen für diese Variable vom Kundendienst aktiviert werden.
+   (Optional) Bietet Informationen zur Videopfadsetzung. Der Pfad muss für diese Variable von der Kundenunterstützung aktiviert werden.
 
    * Variablentyp: Custom Insight (benutzerspezifischer Insight-Bericht) (s.prop)
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop)
@@ -52,11 +52,11 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    Die Standardmethode zur Videodatenerfassung erfasst Daten an folgenden Punkten:
 
-   * Video-Beginn (play)
-   * segment begin
+   * Videostart (play)
+   * Segmentstart
    * Videoende (Stopp)
 
-   Analytics zählt die erste Segment-Ansicht am Beginn des Segments, wenn der Besucher Beginn sieht. Nachfolgende Segmentansichten werden beim Segmentbeginn Ansicht.
+   Analytics zählt die erste Segmentansicht am Beginn des Segments, wenn der Besucher zu schauen beginnt. Nachfolgende Segmentansichten bei Segmentbeginn.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
@@ -64,7 +64,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
 * **a.contentType**
 
-   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Hits sent by video measurement are assigned a content type of `video`. This variable does not need to be reserved exclusively for video tracking. Indem Sie den Content-Typ anderer Inhalte mithilfe derselben Variablen ermitteln, können Sie die Verteilung der Besucher über die verschiedenen Inhaltstypen hinweg analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
+   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Treffer, die durch Videomessung gesendet werden, erhalten den Content-Typ `video` Diese Variable muss nicht ausschließlich für das Video-Tracking reserviert werden. Wenn andere Content-Typen der Inhaltsberichte dieselbe Variable verwenden, können Sie die Verteilung der Besucher auf die verschiedenen Inhaltstypen analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
