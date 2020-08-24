@@ -1,17 +1,17 @@
 ---
-description: Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für eine Akquise-Kampagne mit einem Marketinglink vorzunehmen, der auf einem Gerätefingerabdruck basiert.
+description: Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für eine Akquise-Kampagne mit einem Marketing-Link vorzunehmen, der auf einem Gerätefingerabdruck basiert.
 keywords: android;library;mobile;sdk
 seo-description: Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&Zurück-Abfrage für eine Akquise-Kampagne mit einem Marketinglink vorzunehmen, der auf einem Gerätefingerabdruck basiert.
 seo-title: Marketinglink-Akquise testen
 solution: Marketing Cloud,Analytics
-title: Marketinglink-Akquise testen
+title: Marketing-Link-Akquise testen
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für eine Akquise-Kampagne mit einem Marketinglink vorzunehmen, der auf einem Gerätefingerabdruck basiert.
 
 1. Führen Sie die erforderlichen Schritte in [App-Akquise](/help/ios/acquisition-main/acquisition.md) aus.
-1. Klicken Sie auf der Adobe Mobile Services-Benutzeroberfläche auf **[!UICONTROL Marketing Links Builder]** und generieren Sie eine Akquise-Marketinglink-URL, die den App Store als das Ziel für iOS-Geräte festlegt.
+1. Klicken Sie auf der Adobe Mobile Services-Benutzeroberfläche auf **[!UICONTROL Marketing Links Builder]** und generieren Sie eine Akquise-Marketing-Link-URL, die den App Store als das Ziel für iOS-Geräte festlegt.
 
    Beispiel:
 
@@ -67,7 +67,7 @@ Die folgenden Anweisungen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für 
 
    Im Folgenden finden Sie einige Informationen zu möglichen Fehlern:
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`
 
       Netzwerkfehler.
 
