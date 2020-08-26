@@ -7,7 +7,7 @@ title: Windows Visual Studio-Erweiterungen für Experience Cloud Solutions 4.x-S
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Diese Erweiterung bietet eine wesentlich einfachere Möglichkeit, die Referenz d
 
 1. Laden Sie das Windows Universal SDK von [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)herunter.
 1. Dekomprimieren Sie die heruntergeladene Datei lokal.
-1. Klicken Sie mit der Dublette auf die Datei **[!UICONTRTOL ADBMobileUniversalWindowsVSIX.vsechsl]** , um das Installationsprogramm zu öffnen.
+1. Klicken Sie mit der Dublette auf die Datei **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsechsl]** , um das Installationsprogramm zu öffnen.
 1. Wählen Sie &quot; **[!UICONTROL Globaler Speicherort]** &quot;und installieren Sie die Bibliothek.
 
 ## hinzufügen Verweise auf Ihr Projekt {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
