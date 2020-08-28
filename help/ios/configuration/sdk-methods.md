@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Konfigurationsmethoden
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: ht
-source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
+translation-type: tm+mt
+source-git-commit: 527f93ae4ec910d1d1ea3637eb3a62d749a14397
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 87%
 
 ---
 
@@ -20,11 +23,12 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **setAppExtensionType**
 
-   Konfiguriert die Adobe Mobile-SDK-Einstellung, um zu bestimmen, welcher Erweiterungstyp aktuell ausgeführt wird.
+   Konfiguriert die Einstellung &quot;Adobe Mobile SDK&quot;, um festzulegen, welche Art von Erweiterung derzeit ausgeführt wird.
 
    Die folgenden Werte sind zulässig:
    * `ADBMobileAppExtensionTypeRegular`: Erweiterung wird mit einer übergeordneten App gepackt.
    * `ADBMobileAppExtensionTypeStandAlone`: Erweiterung wird nicht mit einer übergeordneten App gepackt.
+
    >[!TIP]
    >
    >Diese Methode sollte **nur** verwendet werden, wenn Ihre App eine Erweiterung oder eine eigenständige Erweiterung aufweist. Weitere Informationen finden Sie unten unter *ADBMobileAppExtensionType*.
@@ -120,7 +124,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
 * **trackingIdentifier**
 
-   Gibt die automatisch generierte Besucher-ID zurück. Hierbei handelt es sich um eine App-spezifische Unique Visitor-ID, die von den Adobe-Servern generiert wird. Wenn die Adobe-Server zum Zeitpunkt der Generierung nicht erreicht werden können, wird die ID mithilfe der CFUUID von Apple generiert. Der Wert wird beim ersten Start generiert, dann gespeichert und von diesem Zeitpunkt an verwendet. Diese ID wird zwischen App-Upgrades beibehalten. Sie wird gespeichert und während des Standardanwendungs-Backup-Vorgangs wiederhergestellt und bei der Deinstallation entfernt.
+   Gibt die automatisch generierte Besucher-ID zurück. Hierbei handelt es sich um eine App-spezifische eindeutige Besucher-ID, die von Adobe-Servern generiert wird. Wenn die Server der Adobe zum Zeitpunkt der Generierung nicht erreicht werden können, wird die ID mit der CFUUID von Apple generiert. Der Wert wird beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet. Diese ID wird zwischen App-Aktualisierungen beibehalten, während des standardmäßigen Sicherungsprozesses der Anwendung gespeichert und wiederhergestellt und bei der Deinstallation entfernt.
 
    >[!TIP]
    >
@@ -349,12 +353,15 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
 * **setAdvertisingIdentifier**
 
-   Legt den IDFA im SDK fest. Wurde der IDFA im SDK eingerichtet, wird er im Lebenszyklus übermittelt. Auf ihn kann auch in Signalen (Postbacks) zugegriffen werden.
+   Legt den IDFA im SDK fest. Wenn die IDFA im SDK festgelegt wurde, wird die IDFA im Lebenszyklus gesendet. Er kann auch in Signalen (Postbacks) aufgerufen werden.
 
    >[!TIP]
    >
    >Rufen Sie den IDFA **nur** dann aus den Apple-APIs ab, wenn Sie einen Dienst für Werbeanzeigen verwenden. Wenn Sie den IDFA abrufen und ihn nicht richtig verwenden, wird Ihre App ggf. abgelehnt.
-
+   >
+   >Wenn für Ihre Anwendung IDFA erforderlich ist, überprüfen Sie die Dokumentation [von](https://developer.apple.com/documentation/adsupport) Apple, um die Voreinstellungen des Benutzers für die Anzeigenverfolgung zu überprüfen und den IDFA-Wert abzurufen.
+   >
+   >Für iOS 14+ muss das neue [App Tracking-Transparenz-Framework](https://developer.apple.com/documentation/apptrackingtransparency) implementiert werden, um den IDFA-Wert erfolgreich abrufen zu können.
    * Hier finden Sie die Syntax für diese Methode:
 
       ```objective-c
@@ -364,7 +371,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
-      NSString *idfa = [[[ASIdentifierManager sharedManager]advertisingIdentifier] UUIDString]; 
+      NSString *idfa = // retrieve IDFA using AdSupport (before iOS 14.0) and/or AppTrackingTransparency (iOS 14.0+)
       [ADBMobile setAdvertisingIdentifier:idfa]; 
       ```
 
