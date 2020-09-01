@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Target-Methoden für Android
 topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '603'
 ht-degree: 100%
 
 ---
 
 
-# Target-Methoden für Android{#target-methods}
+# Target-Methoden für Android {#target-methods}
 
 Im Folgenden finden Sie die Liste der Adobe Target-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 
