@@ -1,24 +1,24 @@
 ---
-description: Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Name, Nachrichtentext und Zieloptionen, konfigurieren. Sie können auch erweiterte Optionen konfigurieren, einschließlich Nutzlastoptionen und benutzerdefinierte Optionen für iOS-Geräte.
+description: Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Namen, Nachrichtentext und Zieloptionen, konfigurieren. Sie können auch erweiterte Optionen konfigurieren, einschließlich Payload-Optionen und benutzerdefinierte Optionen für iOS-Geräte.
 keywords: mobile
-seo-description: Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Name, Nachrichtentext und Zieloptionen, konfigurieren. Sie können auch erweiterte Optionen konfigurieren, einschließlich Nutzlastoptionen und benutzerdefinierte Optionen für iOS-Geräte.
+seo-description: Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Namen, Nachrichtentext und Zieloptionen, konfigurieren. Sie können auch erweiterte Optionen konfigurieren, einschließlich Payload-Optionen und benutzerdefinierte Optionen für iOS-Geräte.
 seo-title: Erlebnis Push-Nachrichten
 solution: Marketing Cloud,Analytics
 title: Erlebnis Push-Nachrichten
 topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # Erlebnis: Push-Nachrichten {#experience-push-message}
 
-Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Name, Nachrichtentext und Zieloptionen, konfigurieren. Sie können auch erweiterte Optionen konfigurieren, einschließlich Nutzlastoptionen und benutzerdefinierte Optionen für iOS-Geräte.
+Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Namen, Nachrichtentext und Zieloptionen, konfigurieren. Sie können auch erweiterte Optionen konfigurieren, einschließlich Payload-Optionen und benutzerdefinierte Optionen für iOS-Geräte.
 
 1. Klicken Sie auf der Seite „Zielgruppe“ einer neuer Push-Nachricht auf **[!UICONTROL Erlebnis]**.
 
@@ -64,7 +64,7 @@ Hier finden Sie die Anforderungen zum Senden von Rich-Push-Benachrichtigungen:
       >
       >Berücksichtigen Sie folgende Informationen:
       >* Rich-Push-Nachrichten können zwar an niedrigere Versionen gesendet werden, jedoch wird hier nur der Text angezeigt.
-      >* Derzeit gibt es keine Unterstützung für Uhren.
+      >* Derzeit steht keine Unterstützung für die Uhr zur Verfügung.
 
 
 * **Dateiformate**
@@ -89,7 +89,7 @@ Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
 
 1. (**Optional**) Klicken Sie auf den Link **[!UICONTROL Erweiterte Optionen anzeigen]**, um zusätzliche Optionen zu konfigurieren:
 
-   * **[!UICONTROL Nutzlast: Daten]**
+   * **[!UICONTROL Payload: Daten]**
 
       Stellen Sie eine benutzerdefinierte Push-Nutzlast in JSON bereit, die per Push- oder lokale Benachrichtigung an die App gesendet wird. Der Grenzwert unter Android und iOS liegt bei 4 KB.
 
@@ -103,7 +103,7 @@ Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
 
    * **[!UICONTROL Apple-Optionen: Inhalt verfügbar]**
 
-      Wählen Sie diese Option, damit iOS beim Eintreffen der Nachricht Ihre im Hintergrund laufende App aktiviert und ihr auf der Grundlage der Nutzlast der Nachricht das Ausführen von Code erlaubt. Weitere Informationen finden Sie unter [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) in der *iOS Developer Library*.
+      Wählen Sie diese Option, damit iOS beim Eintreffen der Nachricht Ihre im Hintergrund laufende App aktiviert und ihr auf der Grundlage der Payload der Nachricht das Ausführen von Code erlaubt. Weitere Informationen finden Sie unter [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) in der *iOS Developer Library*.
 
 1. (Optional) Zeigen Sie eine Vorschau des Layouts Ihrer Nachricht an, indem Sie auf folgende Symbole klicken:
 
@@ -115,9 +115,9 @@ Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
 
       Klicken Sie auf ![Ausrichtung](assets/icon_orientation.png), um die Ausrichtung der Vorschau von Hochformat in Querformat zu ändern. Bei Watches ändert sich die Vorschau von einem runden Zifferblatt in ein eckiges Zifferblatt.
 
-   * **[!UICONTROL Vorschau auf der Watch eines Benutzers]**
+   * **[!UICONTROL Vorschau auf der Uhr eines Benutzers]**
 
-      Um eine Vorschau der Nachricht anzuzeigen, wie sie auf den Watches eines Benutzers angezeigt wird, klicken Sie auf ![Watch-Symbol](assets/icon_watch.png).
+      Um eine Vorschau der Nachricht anzuzeigen, wie sie auf der Uhr eines Benutzers angezeigt wird, klicken Sie auf ![Uhrensymbol](assets/icon_watch.png).
 
    * **[!UICONTROL Vorschau auf dem Mobiltelefon eines Benutzers]**
 
