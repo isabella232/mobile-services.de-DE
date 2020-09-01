@@ -1,17 +1,17 @@
 ---
-description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
+description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketing-Link auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 keywords: android;library;mobile;sdk
 seo-description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 seo-title: Marketinglink-Akquise testen
 solution: Marketing Cloud,Analytics
-title: Marketinglink-Akquise testen
+title: Marketing-Link-Akquise testen
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 78%
 
 Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&amp;Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 
-Wenn die App noch nicht in Google Play vorhanden ist, können Sie beim Erstellen des Marketinglinks eine beliebige App als Ziel auswählen. Dies betrifft nur die App, zu der Sie der Akquise-Server weiterleitet, nachdem Sie auf den Akquise-Link geklickt haben, und nicht die Fähigkeit, den Akquise-Link zu testen. Zeichenfolgenparameter der Abfrage werden an den Google Play Store übergeben, der bei der Installation im Rahmen einer Kampagne-Übertragung an die App übergeben wird. Für die Tests zur Erfassung mobiler Apps ist die Simulation dieser Art von Übertragungen erforderlich.
+Wenn die App noch nicht in Google Play vorhanden ist, können Sie beim Erstellen des Marketinglinks eine beliebige App als Ziel auswählen. Dies wirkt sich nur auf die App aus, zu der der Akquise-Server die Umleitung vornimmt, nachdem Sie auf den Akquise-Link geklickt haben, nicht aber auf die Fähigkeit, den Akquise-Link zu testen. Zeichenfolgenparameter der Abfrage werden an den Google Play Store übergeben, der bei der Installation im Zuge einer Kampagnenübertragung an die App übergeben wird. Für die Tests zur Akquise von Hin&amp;Zurück-Abfragen mobiler Apps ist die Simulation dieser Art von Übertragungen erforderlich.
 
 Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den **[!UICONTROL Einstellungen]** gelöscht werden. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
 
@@ -73,7 +73,7 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
    | Wenn | Wert |
    |--- |--- |
    | Akquise | Der Server sollte `c00.adobe.com` sein und *`appid`* sollte der `appid` in Ihrem Akquise-Link entsprechen. |
-   | analytics | Legen Sie für Testzwecke das Zeitlimit des Werbers so fest, dass ausreichend Zeit (60 Sekunden oder mehr) zum manuellen Senden der Sendung zur Verfügung steht. Sie können die ursprüngliche Timeout-Einstellung nach dem Test wiederherstellen. |
+   | analytics | Legen Sie für Testzwecke das Zeitlimit des Werbers so fest, dass ausreichend Zeit (mindestens 60 Sekunden) zum manuellen Durchführen des Versands zur Verfügung steht. Sie können die ursprüngliche Zeitlimiteinstellung nach dem Test wiederherstellen. |
 
 1. Verbinden Sie das Gerät mit einem Computer, deinstallieren Sie die App und installieren Sie sie anschließend erneut.
 1. Starten Sie ADB Shell und rufen Sie die Anwendung auf dem Gerät auf.
@@ -108,7 +108,7 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
    "Analytics - Received Referrer Data(<A JSON Response>)"
    ```
 
-   Wenn diese Protokolle nicht angezeigt werden, überprüfen Sie, ob Sie die Schritte 6 bis 10 ausgeführt haben.
+   Falls diese Protokolle nicht angezeigt werden, sollten Sie sicherstellen, dass Sie die Schritte 6 bis 10 abgeschlossen haben.
 
    Die folgende Tabelle enthält weitere Informationen zu möglichen Fehlern:
 
@@ -120,9 +120,9 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
    | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` ist nicht in contextData vorhanden. |
    | Analytics - Acquisition referrer timed out. | Die Antwort konnte nicht in der durch `referrerTimeout` festgelegten Zeit abgerufen werden. Erhöhen Sie den Wert und versuchen Sie es erneut.  Sie sollten auch sicherstellen, dass Sie den Akquise-Link geöffnet haben, bevor Sie die App installieren. |
 
-Beachten Sie die folgenden Informationen:
+Berücksichtigen Sie folgende Informationen:
 
-* Treffer, die von der App gesendet werden, können mithilfe von HTTP-Überwachungstools überwacht werden, um die Akquise-Zuordnung zu überprüfen.
+* Hits, die von der App gesendet werden, können mithilfe von HTTP-Überwachungstools überwacht werden, um die Akquise-Zuordnung zu überprüfen.
 * Weitere Informationen zu `INSTALL_REFERRER`-Broadcasts finden Sie unter [Testen der Google Play-Kampagnenmessung](https://developers.google.com/analytics/solutions/testing-play-campaigns) im Google Developers-Handbuch.
 * Sie können das bereitgestellte Java-Tool `acquisitionTest.jar` verwenden, um die eindeutige ID abzurufen und den Installations-Referrer-Broadcast durchzuführen. So erhalten Sie die Informationen aus den Schritten 3 bis 10.
 
