@@ -1,23 +1,23 @@
 ---
-description: Mit dem Lebenszeitwert können Sie die Zielgruppe und den Lebenszeitwert für jeden Android-Benutzer messen. Der Wert kann zum Speichern von Käufen während der Lebensdauer, Ansichten, Videobeendigungen, Social Sharing, Foto-Uploads usw. verwendet werden.
-seo-description: Mit dem Lebenszeitwert können Sie die Zielgruppe und den Lebenszeitwert für jeden Android-Benutzer messen. Der Wert kann zum Speichern von Käufen während der Lebensdauer, Ansichten, Videobeendigungen, Social Sharing, Foto-Uploads usw. verwendet werden.
+description: Mit dem Lebenszeitwert können Sie für jeden Android-Benutzer einen Lebenszeitwert messen und vorgeben. Dieser Wert kann verwendet werden, um Lebenszeiteinkäufe, Banner-Anzeigen, abgeschlossene Videos, Informationen zur Freigabe in sozialen Netzwerken, Foto-Uploads usw. zu speichern.
+seo-description: Mit dem Lebenszeitwert können Sie für jeden Android-Benutzer einen Lebenszeitwert messen und vorgeben. Dieser Wert kann verwendet werden, um Lebenszeiteinkäufe, Banner-Anzeigen, abgeschlossene Videos, Informationen zur Freigabe in sozialen Netzwerken, Foto-Uploads usw. zu speichern.
 seo-title: Besucherlebenszeitwert
 solution: Marketing Cloud,Analytics
 title: Besucherlebenszeitwert
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
 # Besucherlebenszeitwert {#visitor-lifetime-value}
 
-Mit dem Lebenszeitwert können Sie die Zielgruppe und den Lebenszeitwert für jeden Android-Benutzer messen. Der Wert kann zum Speichern von Käufen während der Lebensdauer, Ansichten, Videobeendigungen, Social Sharing, Foto-Uploads usw. verwendet werden.
+Mit dem Lebenszeitwert können Sie für jeden Android-Benutzer einen Lebenszeitwert messen und vorgeben. Dieser Wert kann verwendet werden, um Lebenszeiteinkäufe, Banner-Anzeigen, abgeschlossene Videos, Informationen zur Freigabe in sozialen Netzwerken, Foto-Uploads usw. zu speichern.
 
 Sobald Sie einen Wert mit `trackLifetimeValueIncrease` senden, wird der Wert zum vorhandenen Wert hinzugefügt. Der Lebenszeitwert wird auf dem Gerät gespeichert und kann jederzeit mithilfe von `lifetimeValue` abgerufen werden.
 
