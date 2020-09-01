@@ -4,11 +4,11 @@ seo-description: Sie können das Adobe SDK verwenden, um personenbezogene Daten 
 seo-title: Postbacks personenbezogener Daten
 title: Postbacks personenbezogener Daten
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '182'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
