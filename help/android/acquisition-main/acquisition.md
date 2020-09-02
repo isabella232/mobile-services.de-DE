@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Mobile App – Akquise
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 >[!IMPORTANT]
 >
->To use Acquisition, you **must** have SDK version 4.1 or later.
+>Um „Akquise“ zu nutzen, ist SDK-Version 4.1 oder höher **erforderlich**.
 
-Akquise-Links müssen in Adobe Mobile-Diensten erstellt werden. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
+Akquise-Links müssen in Adobe Mobile Services erstellt werden. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
 **In SDK-Versionen 4.18.0 und höher**:
 
@@ -148,7 +148,7 @@ Wenn Sie Akquise-Links verwenden, die in Adobe Mobile Services generiert wurden,
 
 1. Es wird der Ereignistyp `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` oder `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` verwendet.
 
-1. Den benutzerspezifischen Datenschlüsseln wird das Präfix `a.acquisition.custom.` vorangestellt.
+1. Den benutzerspezifischen Datenschlüsseln wird das Präfix „`a.acquisition.custom.`“ vorangestellt.
 
 >[!TIP]
 >
