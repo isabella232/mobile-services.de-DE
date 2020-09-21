@@ -1,21 +1,25 @@
 ---
 product: mobile-services
-audience: Endanwender
-user-guide-title: Mobile Services Xamarin Help
+audience: end-user
+user-guide-title: Mobile Services - Xamarin-Handbuch
+breadcrumb-title: Xamarin Guide
 translation-type: tm+mt
-source-git-commit: 9d1d3a2fa65c6627c748c417aa18f04f8fdc255e
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '36'
+ht-degree: 27%
 
 ---
 
 
-# Mobile Services Xamarin-Hilfe {#xamarin}
+# Mobile Services - Xamarin-Handbuch {#xamarin}
 
-+ [Xamarin-Komponenten für Experience Cloud-Lösungen 4.x-SDK](get-started.md)
++ [Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.x](get-started.md)
 + [Aufrufen der Bibliothek](library-calls.md)
 + [Lebenszyklus implementieren](lifecycle.md)
 + Android {#android-xamarin}
-   + [Android methods](c-android/methods-android.md)
+   + [Android-Methoden](c-android/methods-android.md)
    + [Klassen, Erweiterungen und Schnittstellen](c-android/c-classes-enums-interfaces.md)
 + iOS {#ios-xamarin}
    + [iOS-Methoden](c-ios/methods-ios.md)
-   + [Classes and enums](c-ios/c-classes-enums-constants.md)
+   + [Klassen und Erweiterungen](c-ios/c-classes-enums-constants.md)
