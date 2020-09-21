@@ -1,14 +1,18 @@
 ---
 product: mobile-services
-audience: Endanwender
-user-guide-title: Hilfe zu Mobile Services für iOS
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+audience: end-user
+user-guide-title: Handbuch zu Mobile Services iOS
+breadcrumb-title: iOS Guide
+translation-type: tm+mt
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 97%
 
 ---
 
 
-# Hilfe zu Mobile Services für iOS {#ios}
+# Mobile Services iOS Guide {#ios}
 
 + [iOS-SDK 4.x für Experience Cloud-Lösungen](overview.md)
 + [Versionshinweise](rel-notes.md)
