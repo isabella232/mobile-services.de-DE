@@ -1,24 +1,27 @@
 ---
-description: Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
-seo-description: Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
+description: Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
+seo-description: Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
 seo-title: SDK-Methoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: SDK-Methoden
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 50%
 
 ---
 
 
-# SDK methods {#sdk-methods}
+# SDK-Methoden {#sdk-methods}
 
-Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
+Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Wenn Sie Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert. `winmd`
 
 * **GetVersion (winJS: getVersion)**
 
@@ -40,9 +43,9 @@ Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
 
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
 
-   * `ADBMobilePrivacyStatusOptIn` - Treffer werden sofort gesendet.
-   * `ADBMobilePrivacyStatusOptOut` - werden Treffer verworfen.
-   * `ADBMobilePrivacyStatusUnknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
+   * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
+   * `ADBMobilePrivacyStatusOptOut`: werden Treffer verworfen.
+   * `ADBMobilePrivacyStatusUnknown` - Wenn Ihre Report Suite zeitstempelfähig ist, werden die Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
       The default value is set in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) file.
 
@@ -52,7 +55,7 @@ Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
       static Windows::Foundation::IAsyncOperation<ADBMobilePrivacyStatus> ^getPrivacyStatusAsync(); 
       ```
 
-   * Hier sind die Codebeispiele für diese Methode:
+   * Hier finden Sie Code-Beispiele für diese Methode:
 
       ```csharp
       public enum class ADBMobilePrivacyStatus : int  {
@@ -74,9 +77,9 @@ Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
 
    Legt für den aktuellen Benutzer den Datenschutzstatus `status` fest. Die folgenden Werte sind zulässig:
 
-   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
-   * `ADBMobilePrivacyStatusOptOut` - werden Treffer verworfen.
-   * `ADBMobilePrivacyStatusUnknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer so lange gespeichert, bis der Datenschutzstatus in „opt-in“ (Treffer werden gesendet) oder „opt-out“ (Treffer werden verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
+   * `ADBMobilePrivacyStatusOptIn`: Treffer werden umgehend gesendet.
+   * `ADBMobilePrivacyStatusOptOut`: werden Treffer verworfen.
+   * `ADBMobilePrivacyStatusUnknown` - Wenn Ihre Report Suite zeitstempelfähig ist, werden die Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -101,7 +104,7 @@ Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
 
 * **GetLifetimeValue (winJS: getLifetimeValue)**
 
-   Gibt den Lebenszeitwert für den aktuellen Benutzer zurück. Die Standardeinstellung ist „0“.
+   Gibt den Lebenszeitwert für den aktuellen Benutzer zurück. Standard: 0.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -118,11 +121,11 @@ Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
 
 * **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Gibt die benutzerdefinierte Benutzerkennung zurück, sofern eine benutzerdefinierte Kennung festgelegt wurde. Gibt null zurück, wenn keine benutzerdefinierte Kennung festgelegt wurde. Der Standardwert lautet `null`.
+   Gibt die benutzerdefinierte Benutzerkennung zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt null zurück, wenn kein benutzerdefinierter Bezeichner festgelegt ist. Der Standardwert lautet `null`.
 
    >[!TIP]
    >
-   >Wenn Ihre App vom Experience Cloud-SDK 3.x auf das SDK 4.x aktualisiert, wird die vorherige ID (entweder benutzerdefiniert oder automatisch generiert) abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. So werden Besucherdaten auch bei Upgrades des SDK beibehalten. Bei neuen Installationen der SDK-Version 4.x lautet die Benutzerkennung `null`, bis sie festgelegt wird.
+   >Wenn Ihre App vom Experience Cloud 3.x auf das 4.x-SDK aktualisiert wird, wird die vorherige ID (benutzerdefinierte oder automatisch generierte) abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. So werden Besucherdaten auch bei Upgrades des SDK beibehalten. For new installations on the 4.x SDK, user identifier is `null` until set.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -173,7 +176,7 @@ Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
 
 * **SetDebugLogging (winJS: setDebugLogging)**
 
-   Legt die Debug-Protokollierungseinstellung auf `debugLogging` fest. Debug-Protokollierung funktioniert nur, wenn Sie die Debugging-Version der Bibliothek verwenden. Von der Release-Version wird diese Einstellung ignoriert.
+   Legt die Debug-Protokollierungseinstellung auf `debugLogging` fest. Die Debug-Protokollierung funktioniert nur, wenn die Debug-Version der Bibliothek verwendet wird. Diese Einstellung wird in der Release-Version ignoriert.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -188,13 +191,13 @@ Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
       ADB.Config.setDebugLogging(true); 
       ```
 
-* **CollectLifecycleData (winJS: collectLifecycleData)**
+* **CollectLifecycleData (winJS: collectionLifecycleData)**
 
    Gibt dem SDK gegenüber an, dass Lebenszyklusdaten für die Nutzung aller Lösungen im SDK erfasst werden sollen. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/windows-appstore/metrics.md).
 
    >[!TIP]
    >
-   >Invoke this method in the `onResume()` method in each Activity inside of your application, as shown in the following example. Wir empfehlen weiterhin, die Aktivität bzw. den Dienst als das Kontextobjekt und nicht als globalen Applikationskontext weiterzugeben.
+   >Rufen Sie diese Methode in der `onResume()` Methode in jeder Aktivität Ihrer Anwendung auf, wie im folgenden Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts zu übergeben.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -209,13 +212,13 @@ Klassen und Methoden der Windows 8.1 Universal App Store-Bibliothek.
       ADB.Config.collectLifecycleData(); 
       ```
 
-* **PauseCollecting&#x200B;LifecycleData (winJS: pauseCollecting&#x200B;LifecycleData)**
+* **PauseCollecting &#x200B; LifecycleData (winJS: pauseCollecting &#x200B; LifecycleData)**
 
-   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten einen Zeitstempel erfassen, mit dem die Dauer der vorherigen Sitzung ermittelt wird. Hiermit wird außerdem ein Flag gesetzt, sodass im Lebenszyklus ersichtlich wird, dass die App nicht abgestürzt ist. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/windows-appstore/metrics.md).
+   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten wird ein Zeitstempel erfasst, um die Länge der vorherigen Sitzung zu bestimmen. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/windows-appstore/metrics.md).
 
    >[!TIP]
    >
-   >Invoke this method in the `onPause()` methods in each Activity inside Your application, as shown in the example. Wir empfehlen weiterhin, die Aktivität bzw. den Dienst als das Kontextobjekt und nicht als globalen Applikationskontext weiterzugeben.
+   >Rufen Sie diese Methode in den `onPause()` Methoden in den einzelnen Aktivitäten Ihrer Anwendung auf, wie im Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts zu übergeben.
 
    * Hier finden Sie die Syntax für diese Methode:
 
