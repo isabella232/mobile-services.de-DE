@@ -1,14 +1,17 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der Android-Bibliothek zu Version 4.x.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der Android-Bibliothek zu Version 4.x.
 seo-title: Migration zur Android 4.x-Bibliothek
 solution: Experience Cloud,Analytics
 title: Migration zur Android 4.x-Bibliothek
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
-translation-type: ht
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 60%
 
 ---
 
@@ -21,19 +24,19 @@ Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der
 >
 >Das SDK verwendet `SharedPreferences` zum Speichern von Daten, die zur Berechnung von Unique Users und Lebenszyklusmetriken benötigt werden, und anderen mit SDK-Hauptfunktionen verbundenen Daten.  Wenn Sie in `SharedPreferences` die Werte, die vom SDK erwartet werden, ändern oder entfernen, kann dies zu unerwartetem Verhalten in Form von Dateninkonsistenzen führen.
 
-In Version 4.x der Bibliothek werden die öffentlichen Methoden in einem Header zusammengeführt. Außerdem steht die Funktionalität jetzt auch über Methoden auf Klassenebenen zur Verfügung, damit Sie Pointer, Instanzen und Singletons nicht verfolgen müssen.
+In der Bibliothek der Version 4.x werden die öffentlichen Methoden zu einem Header zusammengefasst. Darüber hinaus sind alle Funktionen jetzt über Methoden auf Klassenebene verfügbar. Daher müssen Sie keine Zeiger, Instanzen oder Singletons verfolgen.
 
 ## Events, Props und eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-In Version 4 können Sie keine Variablen, wie z. B. events, eVars, props, heirs und lists, in Ihrer App zuweisen. Stattdessen nutzt das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
+In Version 4 können Sie in Ihrer App keine Variablen mehr wie Ereignis, eVars, Props, Erben und Listen zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
 
 Verarbeitungsregeln bieten folgende Vorteile:
 
-* Sie können Ihre Datenzuweisung ändern, ohne ein Update im App Store einzureichen.
-* Sie können relevante Namen für Ihre Daten verwenden, anstatt Variablen festzulegen, die spezifisch für eine Report Suite sind.
-* Es ist kaum Aufwand nötig, um zusätzliche Daten zu senden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
+* Das Senden zusätzlicher Daten hat kaum Auswirkungen.
 
-   Diese Werte werden nicht in Berichten angezeigt, bis sie mithilfe von Verarbeitungsregeln zugeordnet wurden.
+   Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
 
 >[!TIP]
 >
@@ -75,7 +78,7 @@ Die folgende Tabelle enthält die Konfigurationsvariablen, die Sie in die Konfig
 
 ### Verschieben der Konfigurationsdatei
 
-1. Verschieben Sie den Wert, der in der ersten Spalte festgelegt ist, zu der Variablen in der zweiten Spalte.
+1. Verschieben Sie den für die Variable in der ersten Spalte festgelegten Wert in die Variable in der zweiten Spalte.
 1. Entfernen Sie die alte Konfigurationsvariable aus Ihrem Code.
 
 ### Migration von Version 3.x
@@ -89,10 +92,10 @@ Um von Version 3.x auf Version 4 zu migrieren, verschieben Sie den Wert der Ko
 | reportSuiteIDs | „rsids“ |
 | trackingServer | „server“ |
 | charSet | „charset“ |
-| currencyCode | „currency“ |
+| currencyCode | &quot;currency&quot; |
 | ssl | „ssl“ |
-| linkTrackVars | Entfernen: Nicht länger verwendet. |
-| linkTrackEvents | Entfernen: Nicht länger verwendet. |
+| linkTrackVars | Entfernen, nicht mehr verwendet. |
+| linkTrackEvents | Entfernen, nicht mehr verwendet. |
 
 ### Migration von Version 2.x
 
@@ -103,20 +106,20 @@ Um von Version 2.x auf Version 4 zu migrieren, verschieben Sie den Wert aus de
 | trackOffline | „offlineEnabled“ |
 | offlineLimit | „batchLimit“ |
 | account | „rsids“ |
-| trackingServer | „server“, entfernen Sie das Präfix `"https://"`. Das Protokollpräfix wird automatisch entsprechend der „ssl“-Einstellung hinzugefügt. |
-| trackingServerSecure | Entfernen. Definieren Sie für sichere Verbindungen „server“ und aktivieren Sie dann „ssl“. |
+| trackingServer | &quot;server&quot;, remove the `"https://"` prefix. Das Protokollpräfix wird automatisch entsprechend der Einstellung &quot;ssl&quot;hinzugefügt. |
+| trackingServerSecure | Entfernen. Definieren Sie für sichere Verbindungen &quot;server&quot;und aktivieren Sie anschließend &quot;ssl&quot;. |
 | charSet | „charset“ |
-| currencyCode | „currency“ |
+| currencyCode | &quot;currency&quot; |
 | ssl | „ssl“ |
-| linkTrackVars | Entfernen: Nicht länger verwendet. |
-| linkTrackEvents | Entfernen: Nicht länger verwendet. |
-| timestamp | Entfernen: Nicht länger konfigurierbar. |
-| dc | Entfernen: Nicht länger verwendet. |
-| userAgent | Entfernen: Nicht länger konfigurierbar. |
-| dynamicVariablePrefix | Entfernen: Nicht länger verwendet. |
-| visitorNamespace | Entfernen: Nicht länger verwendet. |
-| usePlugins | Entfernen: Nicht länger verwendet. |
-| useBestPractices  Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. |
+| linkTrackVars | Entfernen, nicht mehr verwendet. |
+| linkTrackEvents | Entfernen, nicht mehr verwendet. |
+| timestamp | Entfernen, nicht mehr konfigurierbar. |
+| dc | Entfernen, nicht mehr verwendet. |
+| userAgent | Entfernen, nicht mehr konfigurierbar. |
+| dynamicVariablePrefix | Entfernen, nicht mehr verwendet. |
+| visitorNamespace | Entfernen, nicht mehr verwendet. |
+| usePlugins | Entfernen, nicht mehr verwendet. |
+| useBestPractices alle Aufrufe zur Abrufmessung ( getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. |
 
 ## Verfolgungsaufruf und -variablen aktualisieren {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -132,15 +135,15 @@ Der Parameter `contextData` für die beiden Methoden besteht aus einer `HashMap<
 
 ## Events, Props und eVars
 
-In Version 4 ist es nicht mehr möglich, Variablen direkt in Ihrer App zuzuweisen, beispielsweise events, eVars, props, heirs und lists. Das SDK nutzt jetzt Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
+In Version 4 können Sie Variablen wie Ereignis, eVars, Props, Erben und Listen nicht mehr direkt in Ihrer App zuweisen. Das SDK verwendet jetzt Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
 
 Verarbeitungsregeln bieten folgende Vorteile:
 
-* Sie können Ihre Datenzuweisung ändern, ohne ein Update im App Store einzureichen.
-* Sie können relevante Namen für Ihre Daten verwenden, anstatt Variablen festzulegen, die spezifisch für eine Report Suite sind.
-* Es ist kaum Aufwand nötig, um zusätzliche Daten zu senden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
+* Das Senden zusätzlicher Daten hat kaum Auswirkungen.
 
-   Diese Werte werden nicht in Berichten angezeigt, bis sie mithilfe von Verarbeitungsregeln zugeordnet wurden. Weitere Informationen finden Sie unter [Verarbeitungsregeln und Kontextdaten](/help/android/getting-started/proc-rules.md).
+   Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden. Weitere Informationen finden Sie unter [Verarbeitungsregeln und Kontextdaten](/help/android/getting-started/proc-rules.md).
 
 Werte, die Sie Variablen direkt zugewiesen haben, müssen zur HashMap `data` hinzugefügt werden. Das bedeutet, dass Aufrufe von `setProp`, `setEvar` sowie Zuweisungen zu persistenten Kontextdaten entfernt und die Werte zum Parameter `data` hinzugefügt werden müssen.
 
