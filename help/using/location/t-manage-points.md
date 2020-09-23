@@ -1,14 +1,17 @@
 ---
-description: Sie können Zielpunkte erstellen und verwalten, mit denen Sie geografische Standorte definieren können, die Sie für Korrelationszwecke, zum Ansprechen von Zielgruppen mit In-App-Nachrichten und vieles mehr verwenden können. Wenn ein Treffer innerhalb eines Zielpunkts gesendet wird, wird der Zielpunkt an den Treffer angehängt.
+description: Sie können Zielpunkte erstellen und verwalten, mit denen Sie geografische Orte definieren können, die Sie zu Korrelationszwecken, Zielgruppe mit In-App-Nachrichten usw. verwenden können. Wenn ein Treffer innerhalb eines Zielpunkts gesendet wird, wird der Zielpunkt an den Treffer angehängt.
 keywords: mobile
-seo-description: Sie können Zielpunkte erstellen und verwalten, mit denen Sie geografische Standorte definieren können, die Sie für Korrelationszwecke, zum Ansprechen von Zielgruppen mit In-App-Nachrichten und vieles mehr verwenden können. Wenn ein Treffer innerhalb eines Zielpunkts gesendet wird, wird der Zielpunkt an den Treffer angehängt.
+seo-description: Sie können Zielpunkte erstellen und verwalten, mit denen Sie geografische Orte definieren können, die Sie zu Korrelationszwecken, Zielgruppe mit In-App-Nachrichten usw. verwenden können. Wenn ein Treffer innerhalb eines Zielpunkts gesendet wird, wird der Zielpunkt an den Treffer angehängt.
 seo-title: Zielpunkte verwalten
 solution: Experience Cloud,Analytics
 title: Zielpunkte verwalten
-topic: Metriken
+topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +33,7 @@ Damit ein Treffer auf dem Gerät des Benutzers einem **[!UICONTROL Zielpunkt]** 
 Führen Sie die folgenden Aufgaben aus, um die Standort-Funktion zu verwenden:
 
 1. Klicken Sie auf den Namen der App, um die zugehörige Seite App-Einstellungen verwalten aufzurufen.
-1. Klicken Sie auf **[!UICONTROL Standort]** &gt; **[!UICONTROL Zielpunkte verwalten]**.
+1. Click **[!UICONTROL Location]** > **[!UICONTROL Manage Points of Interest]**.
 
    ![Schritt Ergebnis](assets/poi.png)
 
