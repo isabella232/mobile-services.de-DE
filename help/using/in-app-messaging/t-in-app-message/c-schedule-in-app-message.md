@@ -5,10 +5,13 @@ seo-description: Sie können Zeitplanoptionen für In-App-Nachrichten konfigurie
 seo-title: Zeitplan In-App-Nachricht
 solution: Experience Cloud,Analytics
 title: Zeitplan In-App-Nachricht
-topic: Metriken
+topic: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Sie können Zeitplanoptionen für In-App-Nachrichten konfigurieren, einschließl
 >
 >Die Datumsbereiche werden entsprechend Ihrer Zeitzone definiert. Einzelne Tage und Zeiträume beziehen sich auf des Gerät des Benutzers.
 
-1. Klicken Sie in Ihrer App auf **[!UICONTROL Messaging]** &gt; **[!UICONTROL Nachrichten verwalten]** &gt; **[!UICONTROL Nachricht erstellen]** &gt; **[!UICONTROL In-App-Nachricht erstellen]**.
+1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. Klicken Sie auf **[!UICONTROL Planen]**.
 1. Füllen Sie folgende Felder im Abschnitt **[!UICONTROL Dauer]** aus:
 
