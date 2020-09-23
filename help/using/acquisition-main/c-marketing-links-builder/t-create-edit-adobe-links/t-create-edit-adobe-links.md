@@ -5,10 +5,13 @@ seo-description: Sie können Marketinglinks erstellen oder bearbeiten, um Deep-L
 seo-title: Marketing-Links erstellen oder bearbeiten
 solution: Experience Cloud,Analytics
 title: Marketing-Links erstellen oder bearbeiten
-topic: Metriken
+topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +38,7 @@ Sie können Marketinglinks erstellen oder bearbeiten, um Deep-Links zu Ihrer App
 
    * **[!UICONTROL Verfolgungskontextdaten hinzufügen]**:
 
-      (**Optional**) Klicken Sie auf das Symbol **[!UICONTROL +]** und geben Sie relevante Informationen ein, um Ihre Kampagne mithilfe von Kontextdaten zu verfolgen. Wählen Sie in der Dropdownliste **[!UICONTROL Benutzerdefinierte Kontextdaten]** ein vorkonfiguriertes oder eines Ihrer eigenen Tags aus. Kontextdaten werden für Berichte verwendet, wenn der Marketinglink bereitgestellt wird.
+      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. Wählen Sie in der Dropdownliste **[!UICONTROL Benutzerdefinierte Kontextdaten]** ein vorkonfiguriertes oder eines Ihrer eigenen Tags aus. Kontextdaten werden für Berichte verwendet, wenn der Marketinglink bereitgestellt wird.
 
       Folgende vorgegebenen Tags sind verfügbar:
 
@@ -67,7 +70,7 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
 
    (**Optional**) Wenn mehrere Ziele vorhanden sind, können Benutzer abhängig davon weitergeleitet werden, ob sie die App installiert haben. Wenn die App installiert ist, wird eine Zwischenraum-Landingpage angezeigt.
 
-   Weitere Informationen finden Sie unter [Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
+   For more information, see [Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL Weiter]**.
 1. Konfigurieren Sie auf der Seite Ziel den Link.
@@ -82,7 +85,7 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
 
          Zu den unterstützten Betriebssystemen zählen u. a. iOS, Android und AMX.
 
-      * **[!UICONTROL Gerätetyp]**
+      * **[!UICONTROL Device Type]**
 
          Gerätetypen beinhalten Geräte, wie z. B. Desktops, E-Reader, Spielekonsolen, Mobiltelefone und Set-Top-Boxen.
    1. Klicken Sie auf das Symbol **[!UICONTROL Ziel]** (![Rechteckssymbol](assets/icon_square.png)) und wählen Sie einen der folgenden Zieltypen aus:
@@ -91,9 +94,10 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
       * **[!UICONTROL Web-Link]**
       * **[!UICONTROL App-Deep-Link]**
       * **[!UICONTROL Hybrid-Link]**
+
       >[!TIP]
       >
-      >Wenn Sie den Zieltyp **[!UICONTROL Web-Link]** mit einem Link zum Appstore verwenden, wird die Akquise nicht verfolgt. Verwenden Sie zum Verfolgen von Akquisen den Zieltyp **[!UICONTROL App Store].**
+      >Wenn Sie den Zieltyp **[!UICONTROL Web-Link]** mit einem Link zum Appstore verwenden, wird die Akquise nicht verfolgt. Verwenden Sie zum Verfolgen von Akquisen den Zieltyp **[!UICONTROL App Store]**.
 
       Weitere Informationen finden Sie in [Neues Link-Ziel erstellen](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
 
