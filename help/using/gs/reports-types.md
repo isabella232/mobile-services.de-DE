@@ -5,10 +5,13 @@ seo-description: Aufgrund der vielfältigen Möglichkeiten beim Anpassen von Ber
 seo-title: Berichtstypen
 solution: Experience Cloud,Analytics
 title: Berichtstypen
-topic: Berichte, Metriken
+topic: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 31%
 
 ---
 
@@ -17,75 +20,75 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Aufgrund der vielfältigen Möglichkeiten beim Anpassen von Berichten stellt sich vielleicht die Frage, welcher Typ von Bericht am besten geeignet ist, um die gewünschten Daten zu erhalten.
 
-Bevor Sie Berichte anpassen, sollten Sie den Unterschied zwischen einer Metrik und einer Dimension kennen.
+Bevor Sie Berichte anpassen, müssen Sie den Unterschied zwischen einer Metrik und einer Dimension verstehen.
 
 * Metrik
 
-   Eine Metrik dient zum Messen Ihrer Daten. Metriken sind Werte, die gezählt und addiert werden können. So können Sie erkennen, wie oft bestimmte Aktionen in Ihrer App erfolgen. Zu den gebräuchlichsten Metriken gehören die Anzahl von Installations-, Start- und Anmeldevorgängen sowie der Umsatz und der Lebenszeitwert. So wird zum Beispiel bei jedem Start Ihrer App der Wert für „_launches_value“ um einen Zähler erhöht.
+   Eine Metrik dient zum Messen Ihrer Daten. Metriken sind Werte, die gezählt und hinzugefügt werden können und anhand derer ermittelt wird, wie oft bestimmte Aktionen in Ihrer App stattfinden. Zu den gebräuchlichsten Metriken gehören die Anzahl von Installations-, Start- und Anmeldevorgängen sowie der Umsatz und der Lebenszeitwert. So wird zum Beispiel bei jedem Start Ihrer App der Wert für „_launches_value“ um einen Zähler erhöht.
 
 * Dimension
 
-   Eine Dimension dient zum Beschreiben Ihrer Daten. Dimensionen werden mittels einer Zeichenfolge oder einer Zahl, die wie eine Zeichenfolge funktioniert (z. B. eine Postleitzahl) dargestellt. Sie werden genutzt, um Daten zu strukturieren und zu unterteilen. Zu den gebräuchlichsten Dimensionen zählen beispielsweise die Betriebssystemversion, der Kampagnenname, der Produktname und der Mobilnetzbetreiber. Jede Dimension verfügt über eine Anzahl spezifischer Werte, die mit dieser Dimension verknüpft sind. So verfügt zum Beispiel die Dimension „Betriebssystemversion“ über Werte wie _iOS 7_ und _Android 4.1.2_.
+   Eine Dimension dient zum Beschreiben Ihrer Daten. Dimensionen werden mittels einer Zeichenfolge oder einer Zahl, die wie eine Zeichenfolge funktioniert (z. B. eine Postleitzahl) dargestellt. Sie werden genutzt, um Daten zu strukturieren und zu unterteilen. Beispiele für gängige Dimensionen sind Betriebssystemversion, Kampagne, Produktname und Mobilnetzbetreiber. Jede Dimension verfügt über eine Reihe spezifischer Werte, die mit dieser Dimension verknüpft sind. So verfügt zum Beispiel die Dimension „Betriebssystemversion“ über Werte wie _iOS 7_ und _Android 4.1.2_.
 
 Im Folgenden finden Sie die Berichtstypen, die Sie in der Mobile-Benutzeroberfläche erstellen können:
 
 ## Zeitverlaufsbericht {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
 
-Zeitverlaufsberichte zeigen, wie sich Metriken über einen bestimmten Zeitraum entwickeln. So können Spitzenwerte und Trends leicht erkannt werden. Eine Analyse beginnen Sie oftmals in einem Zeitverlaufsbericht und wechseln dann in Trend- und Rangberichte, die Sie weiter aufschlüsseln, um herauszufinden, welche Faktoren für einen bestimmten Spitzenwert oder einen Trend bei einer Metrik verantwortlich sind.
+Zeitverlaufsberichte zeigen die Leistung von Metriken über einen bestimmten Zeitraum an, sodass Sie Spitzen und Trends schnell identifizieren können. Analysen werden oft in einem Zeitverlaufsbericht Beginn und in Trend- und Rangberichte umgewandelt, während Sie im Drilldown-Verfahren die Faktoren untersuchen, die zu einer Metrikspitze oder einem Trend beitragen könnten.
 
-Wenn beispielsweise ein Spitzenwert bei Startvorgängen auftritt, können Sie einen Trendbericht ausführen, der die Anzahl der App-Starts aufgeschlüsselt nach den fünf wichtigsten Betriebssystemen anzeigt. So können Sie feststellen, welches Betriebssystem am meisten zum Anstieg an Starts beigetragen hat:
+Wenn Sie z. B. eine Spitze bei Startvorgängen sehen, können Sie einen Trendbericht ausführen, der die Starts für die fünf wichtigsten Betriebssysteme anzeigt, um zu sehen, welche Betriebssysteme am meisten zur Spitze bei Startvorgängen beitragen:
 
 ![](assets/overtime.png)
 
-Sollen in einem Zeitverlaufsbericht neben anderen Metriken auch Dimensionswerte angezeigt werden, können Sie unter Verwendung der Metrik „Instanzen“ einen Dimensionsfilter definieren.
+Zur Ansicht von Dimensionswerten mit anderen Metriken in einem Zeitverlaufsbericht können Sie die Metrik Instanzen verwenden und einen Dimensionsfilter definieren.
 
 ## Trendbericht {#section_C9BE9A2EDBFF4D938B9AF14C8AA67883}
 
-Mit Trendberichten können Sie die Metrikperformance Ihrer beliebtesten Dimensionen ermitteln. Mithilfe dieses Berichts können Sie bestimmten, welche Werte am meisten zur Änderung einer Metrik beitragen.
+Trendberichte zeigen Ihnen, welche Leistung Ihre beliebtesten Dimensionen im Vergleich zu einer Metrik zeigen. Mit diesem Bericht können Sie ermitteln, welche Werte am meisten zu einer Änderung der Metrik beitragen.
 
 ![](assets/trended.png)
 
-Wenn Sie einen Trendbericht für eine Dimension anzeigen möchten, fügen Sie einem Zeitverlaufsbericht einen fixierbaren Filter hinzu (z. B. Betriebssystem = iOS 6.0.1), um so die gleichen Daten zu erhalten. Darüber hinaus können Sie fünf zusätzliche Metriken zum gefilterten Zeitverlaufsbericht hinzufügen.
+Um einen Trendbericht für eine Dimension Ansicht, fügen Sie einen fixierbaren Filter (z. B. Betriebssystem = iOS 6.0.1) zu einem Zeitverlaufsbericht hinzu, um dieselben Daten Ansicht. Als Bonus können Sie dem gefilterten Zeitverlaufsbericht fünf zusätzliche Metriken hinzufügen.
 
 ## Gefilterter Zeitverlaufsbericht {#section_F8FAF2A4496F449CA99EF1E052C71A2D}
 
-Wenn Sie einen bestimmten Dimensionswert im Auge behalten möchten, können Sie einen fixierbaren Filter verwenden, den Sie einem Zeitverlaufsbericht hinzufügen. Der folgende Bericht zeigt die Werte der letzten 30 Tage für Starts, Upgrades und Abstürze auf einer bestimmten Betriebssystemversion an.
+Wenn Sie einen bestimmten Dimensionswert haben, der Ansicht werden soll, können Sie einem Zeitverlaufsbericht einen fixierbaren Filter hinzufügen. Der folgende Bericht zeigt den Wert von 30 Tagen für Starts, Upgrades und Abstürze einer bestimmten Betriebssystemversion an.
 
 ![](assets/overtime-filter.png)
 
 ## Rangbericht {#section_C073D744A95843AF99EE74FB5B013735}
 
-Rangberichte zeigen Ihnen, wie oft die 50 wichtigsten Dimensionen zu einer Metrik beigetragen haben. Dieser Bericht ist hilfreich, wenn Sie wissen möchten, wie groß der Gesamtbeitrag in einem bestimmten Datumsbereich bei einer großen Anzahl von Werten war.
+Rangberichte zeigen Ihnen, wie oft die Top-50-Dimension zu einer Metrik beiträgt. Dieser Bericht ist hilfreich, um den Gesamtbeitrag für einen Datumsbereich über eine große Anzahl von Werten hinweg Ansicht.
 
 ![](assets/ranked.png)
 
 ## Sunburst-Bericht {#section_17A9842039174DE094A6B1E9837E35BB}
 
-Sunburst-Berichte bestehen beispielsweise aus dem Basisbericht und Aufschlüsselungen. Dabei werden Metriken durch entsprechende Höhen visualisiert, sodass Performanceunterschiede leicht erkennbar sind. Jeder konzentrische Ring stellt ein Zielgruppensegment in der Kategorie des entsprechenden Rings dar. An einer Zielgruppe können Sie auch Aktionen durchführen, wie zum Beispiel einen fixierbaren Filter anwenden sowie Metriken ausblenden oder anzeigen.
+Sunburst-Berichte bestehen beispielsweise aus dem Basisbericht und Aufschlüsselungen. Die Visualisierung verwendet Höhe, um die Metrik und die Leistungsunterschiede zwischen den Metriken anzuzeigen. Jeder konzentrische Kreis stellt ein Audiencen-Segment in der Kategorie für diesen Kreis dar. Sie können Aktionen für eine Audience ausführen, z. B. einen fixierbaren Filter anwenden, eine Metrik ausblenden und Metriken anzeigen.
 
-Sie können ein produktinternes Tutorial aufrufen, in dem beschrieben wird, wie Sie mit einer Sunburst-Grafik interagieren.
+Sie können den Bericht in einem produktinternen Lernprogramm Ansicht geben, in dem beschrieben wird, wie Sie mit einem Sunburst-Diagramm interagieren.
 
-So starten Sie das Tutorial:
+Beginn des Lernprogramms:
 
 1. Klicken Sie unter App-Einstellungen verwalten auf **[!UICONTROL Nutzung]**.
 
-1. Klicken Sie auf **[!UICONTROL Technologie]** &gt; **[!UICONTROL Aufschlüsselung nach Technologie]**.
+1. Click **[!UICONTROL Technology]** > **[!UICONTROL Technology Breakdown]**.
 1. Klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Benutzerspezifisch]** und anschließend auf das Informationssymbol.
 
 ![](assets/report_technology.png)
 
 ### Pfadsetzungsbericht {#section_AD400106BC684B50B27CCCD3F4497114}
 
-Ein Pfadsetzungsbericht basiert auf einer Pfadanalyse und enthält ein Pfaddiagramm, das die Pfade darstellt, auf denen sich Benutzer von einem App-Status zu einem anderen bewegt haben.
+Ein Pfadsetzungsbericht basiert auf der Analyse des Pfades und zeigt ein Pfaddiagramm an, das Pfade darstellt, die von einem Status in der App zu einem anderen Status genommen werden.
 
 ![](assets/action_paths.png)
 
-Jeder Knoten ist kastenförmig und stellt einen Status auf den Pfaden der Benutzer durch eine App dar. In der oben stehenden Abbildung beispielsweise stellt der oberste Knoten die Anzahl der Benutzer dar, die die App gestartet und ein Foto aus der Galerie ausgewählt haben.
+Jeder Knoten ist wie ein Feld geformt und stellt einen Status in den Pfaden der Benutzer durch eine App dar. In oben stehender Abbildung beispielsweise stellt der oberste Knoten die Anzahl der Benutzer dar, die die App gestartet und ein Foto aus der Galerie ausgewählt haben.
 
 ### Trichterbericht {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
 
-Mit Trichterberichten können Sie feststellen, wo Kunden bei der Interaktion mit Ihrer App eine Marketing-Kampagne verlassen haben oder von einem definierten Konversionspfad abgewichen sind. Sie können den Trichterbericht auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.
+Trichterberichte ermöglichen es Ihnen, herauszufinden, wo Kunden eine Marketing-Kampagne verlassen oder von einem definierten Konversionspfad abweichen, während sie mit Ihrer mobilen App interagieren. Sie können den Trichterbericht auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.
 
-Die Trichtervisualisierung zeigt, an welcher Stelle Kunden aus dem Prozess fallen. Indem Sie Einblicke in Kundenentscheidungen bei jedem Schritt erhalten, können Sie nachvollziehen, wo die Kunden zurückgehalten werden, welchem Pfad sie für gewöhnlich folgen und wann sie die App verlassen.
+Mit der Trichtervisualisierung können Sie sehen, wo Kunden aus dem Prozess aussteigen. Wenn Sie sich bei jedem Schritt einen Überblick über Kundenentscheidungen verschaffen, können Sie erkennen, wo Kunden abgeschreckt werden, welchen Pfad sie normalerweise verfolgen und wann sie Ihre App verlassen.
 
 ![](assets/funnel.png)
