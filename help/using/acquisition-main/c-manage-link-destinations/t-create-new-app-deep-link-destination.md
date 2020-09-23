@@ -5,10 +5,13 @@ seo-description: Sie können ein neues Link-Ziel erstellen, das Benutzer zu eine
 seo-title: Neues Link-Ziel erstellen
 solution: Experience Cloud,Analytics
 title: Neues Link-Ziel erstellen
-topic: Metriken
+topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +25,7 @@ Sie können ein neues Link-Ziel erstellen, das Benutzer zu einem Web-Link oder z
 1. Klicken Sie auf **[!UICONTROL Link-Ziele verwalten]**.
 1. Klicken Sie auf **[!UICONTROL Neu erstellen]**.
 1. Geben Sie Informationen in folgende Felder ein:
-   * **[!UICONTROL Anrede/Titel]**
+   * **[!UICONTROL Titel]**
 
       Geben Sie einen beschreibenden Namen für Ihr App-Link-Ziel ein. Der Name wird nur auf der Seite Link-Ziele verwalten der Benutzeroberfläche von Adobe Mobile Services angezeigt. Ein beschreibender Name hilft Ihnen und anderen in Ihrer Organisation schnell ein bestimmtes Link-Ziel zu finden und dessen Zweck nachzuvollziehen.
 
@@ -32,11 +35,11 @@ Sie können ein neues Link-Ziel erstellen, das Benutzer zu einem Web-Link oder z
 
       * **[!UICONTROL App-Deep-Link]**
 
-         Geben Sie einen URI-Schema-Deep-Link (z. B. `yourapp://section`) ein. App-Deep-Link-Ziele sind URI-Schema-Deep-Links, die Benutzer zu einem Deep-Link in Ihrer App weiterleiten. Sie können Benutzer beispielsweise direkt zu einer bestimmten Produktseite in der App eines Online-Einzelhändlers weiterleiten.
+         Geben Sie einen URI-Schema-Deep-Link (z. B. `yourapp://section`) ein. App-Deep-Link-Ziele sind URI-Schema-Deep-Links, die Benutzer zu einem Deep-Link in Ihrer App weiterleiten. Beispielsweise können Sie Benutzer zu einer bestimmten Produktlinie in der mobilen App eines Online-Händlers leiten.
 
       * **[!UICONTROL Web-Link]**
 
-         Geben Sie eine Web-HTTP- oder HTTPS-URL ein (z. B. `https://adobe.com`). Web-Link-Ziele leiten Benutzer zu einer URL weiter. Sie können Benutzer beispielsweise direkt zur Produktseite auf der Website eines Online-Einzelhändlers weiterleiten.
+         Geben Sie eine Web-HTTP- oder HTTPS-URL ein (z. B. `https://adobe.com`). Weblink-Ziele leiten Benutzer zu einer URL. Beispielsweise können Sie Benutzer auf der Website eines Online-Händlers zu einer Produktlinie weiterleiten.
 
       * **[!UICONTROL Hybrid-Link]**
 
