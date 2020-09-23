@@ -5,10 +5,13 @@ seo-description: Sie können eine App aus dem Apple App Store oder aus Google Pl
 seo-title: App aus einem Appstore hinzufügen
 solution: Experience Cloud,Analytics
 title: App aus einem Appstore hinzufügen
-topic: Metriken
+topic: Metrics
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 100%
 
 ---
 
