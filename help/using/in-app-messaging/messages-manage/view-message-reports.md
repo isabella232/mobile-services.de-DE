@@ -3,12 +3,12 @@ description: Sie können Nachrichtenberichte für In-App- und Push-Nachrichten a
 keywords: mobile
 seo-description: Sie können Nachrichtenberichte für In-App- und Push-Nachrichten anzeigen.
 seo-title: Nachrichtenberichte anzeigen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Nachrichtenberichte anzeigen
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 100%
