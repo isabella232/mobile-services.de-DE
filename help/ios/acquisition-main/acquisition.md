@@ -1,24 +1,27 @@
 ---
-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem Apple App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, sammelt das SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
-seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem Apple App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, sammelt das SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
+description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem Apple App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, sammelt der SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
+seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem Apple App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, sammelt der SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
 seo-title: App-Akquise
 solution: Experience Cloud,Analytics
 title: App-Akquise
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # App-Akquise {#mobile-app-acquisition}
 
-In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem Apple App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, sammelt das SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
+In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem Apple App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, sammelt der SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
 
-Um die Akquise verwenden zu können, **müssen** Sie SDK-Version 4.1 oder höher haben.
+Um „Akquise“ zu nutzen, ist SDK-Version 4.1 oder höher **erforderlich**.
 
-Akquise-Links müssen in Adobe Mobile Services generiert werden. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
+Akquise-Links müssen in Adobe Mobile Services erstellt werden. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
 Die Informationen in diesem Abschnitt ermöglichen es dem SDK, Akquise-Daten von einem Akquise-Link zu senden.
 
