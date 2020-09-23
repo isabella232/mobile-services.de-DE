@@ -5,10 +5,13 @@ seo-description: Das Akquise-Tracking muss in der SDK-Konfiguration aktiviert se
 seo-title: Akquise konfigurieren
 solution: Experience Cloud,Analytics
 title: Akquise konfigurieren
-topic: Metriken
+topic: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 Das Akquise-Tracking muss in der SDK-Konfiguration aktiviert sein, damit Marketinglinks verfolgt und in Berichten verwendet werden können.
 
 1. Rufen Sie die Seite App-Einstellungen verwalten für die gewünschte App auf und scrollen Sie zum Abschnitt **[!UICONTROL SDK-Akquise-Optionen]** herunter.
-1. Führen Sie die folgenden Aufgaben aus:
+1. Führen Sie die folgenden Aufgaben durch:
 
    * Um die Akquise zu aktivieren, aktivieren Sie das Kontrollkästchen **[!UICONTROL Aktivieren]**.
 
