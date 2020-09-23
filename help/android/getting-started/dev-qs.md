@@ -3,12 +3,15 @@ description: Diese Information unterstützt Sie beim Implementieren der Android-
 keywords: android;library;mobile;sdk
 seo-description: Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek und Erfassen von Lebenszyklusmetriken, wie z. B. Starts, Upgrades, Sitzungen, erreichte Benutzer usw.
 seo-title: Grundlegende Implementierung und Lebenszyklus
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: ht
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 100%
 
 ---
 
