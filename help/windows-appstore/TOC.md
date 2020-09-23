@@ -3,22 +3,22 @@ product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services Windows 8.1 Universal App Store SDK
 breadcrumb-title: Windows 8.1 Universal App Store SDK
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '78'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 
 # Mobile Services Windows 8.1 Universal App Store SDK {#windows-universal-appstore}
 
-+ [Windows 8.1 Universal App Store SDK 4.x für Experience Cloud Solutions](overview.md)
++ [Windows 8.1 Universal App Store SDK 4.x für Experience Cloud-Lösungen](overview.md)
 + [Versionshinweise](release-notes.md)
 + Erste Schritte {#getting-started-win-appstore}
    + [Erste Schritte](c-getting-started/c-getting-started.md)
-   + [Developer Quick Beginn](c-getting-started/dev-qs.md)
+   + [Schnellstart für Entwickler](c-getting-started/dev-qs.md)
 + Konfiguration {#config-win-appstore}
    + [Konfigurationsübersicht](c-configuration/c-configuration.md)
    + [ADBMobileConfig.json config](c-configuration/c.json.md)
@@ -34,5 +34,5 @@ ht-degree: 47%
 + [Target-Methoden](target/target-methods.md)
 + [Audience Manager-Methoden](audiencemgmt/audience-manager-methods.md)
 + [Lebenszyklusmetriken](metrics.md)
-+ [Windows Visual Studio-Erweiterungen für Experience Cloud Solutions 4.x-SDK](extensions/win-vse-4x.md)
++ [Windows Visual Studio-Erweiterungen für Experience Cloud-Lösungen mit SDK 4.x](extensions/win-vse-4x.md)
 + [Migration](migration-v3.md)
