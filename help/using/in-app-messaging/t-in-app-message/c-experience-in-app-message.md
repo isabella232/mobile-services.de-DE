@@ -5,10 +5,13 @@ seo-description: Konfigurieren Sie Erlebnisoptionen für In-App-Nachrichten, ein
 seo-title: Erlebnis In-App-Nachricht
 solution: Experience Cloud,Analytics
 title: Erlebnis In-App-Nachricht
-topic: Metriken
+topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 Konfigurieren Sie Erlebnisoptionen für In-App-Nachrichten, einschließlich Typ (Vollbild, Warnhinweis oder Benachrichtigung) sowie Anzeige-, Text- und Schaltflächenoptionen.
 
-1. Klicken Sie in Ihrer App auf **[!UICONTROL Messaging]** &gt; **[!UICONTROL Nachrichten verwalten]** &gt; **[!UICONTROL Nachricht erstellen]** &gt; **[!UICONTROL In-App-Nachricht erstellen]**.
+1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. Geben Sie auf der Seite Erlebnis einen Namen für die Nachricht ein.
 1. Füllen Sie die Felder im Abschnitt **[!UICONTROL Typ]** aus:
 
@@ -35,12 +38,13 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
       >
       >Diese Option wird nur angezeigt, wenn Sie den Nachrichtentyp **[!UICONTROL Vollbild]** ausgewählt haben.
 
-   * **[!UICONTROL Benutzerspezifische Berichte]**
+   * **[!UICONTROL Benutzerspezifisch]**
 
-      Laden Sie Ihren HTML-Inhalt (nur Vollbild). Sie müssen einen Clickthrough-Link und einen Link zum Abbrechen bereitstellen.
+      Laden Sie Ihren benutzerdefinierten HTML-Inhalt (nur Vollbild). Sie müssen einen Clickthrough-Link und einen Link zum Abbrechen bereitstellen.
 
       1. Klicken Sie auf **[!UICONTROL Durchsuchen]** und laden Sie eine HTML-Datei herunter oder ziehen Sie ein HTML-Dokument in das Fenster.
       1. Klicken Sie auf **[!UICONTROL Beispiel herunterladen]**, um einen benutzerdefinierten HTML-Musterinhalt anzuzeigen.
+
       >[!TIP]
       >
       >Diese Option wird nur angezeigt, wenn Sie den Nachrichtentyp **[!FVollbild]** ausgewählt haben.
@@ -50,6 +54,7 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
 1. Füllen Sie die Felder im Abschnitt **[!UICONTROL Anzeige]** aus:
 
    * **[!UICONTROL Design]**
+
    Wählen Sie ein Design für Ihre Nachricht aus.
 
    * **[!UICONTROL Layout]**
@@ -62,7 +67,7 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
 
    * **[!UICONTROL Bild-Bundle]**
 
-      Pfad zu einem Bild in Ihrem Anwendungscode-Bundle. Diese Option wird verwendet, wenn kein Bild vorhanden. oder das angegebene Bild nicht verfügbar ist. Das Bild kann beispielsweise nicht verfügbar sein, weil das entsprechende Gerät derzeit offline ist. Wenn Sie bei Verwendung der Vollbildvorlage Probleme mit der Größenanpassung haben, lesen Sie den Abschnitt *Mein Bild passt nicht genau in den in der Vorlage vorgesehenen Platz* unter [Fehlerbehebung von In-App-Nachrichten](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
+      Pfad zu einem Bild in Ihrem Anwendungscode-Bundle. Diese Option wird verwendet, wenn kein Bild vorhanden. oder das Bild nicht verfügbar ist. Das Bild kann beispielsweise nicht verfügbar sein, weil das entsprechende Gerät derzeit offline ist. Wenn Sie bei Verwendung der Vollbildvorlage Probleme mit der Größenanpassung haben, lesen Sie den Abschnitt *Mein Bild passt nicht genau in den in der Vorlage vorgesehenen Platz* unter [Fehlerbehebung von In-App-Nachrichten](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
 
 
 1. Füllen Sie die Felder im Abschnitt **[!UICONTROL Text]** aus:
@@ -91,6 +96,7 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
       * `{trackingId}`, wird durch die Hilfe (entspricht dem *s_vi*-Cookie) ersetzt.
       * `{messageId}`, wird durch die eindeutige ID der In-App-Nachricht ersetzt.
       * `{lifetimeValue}`, wird durch den Lebenszeitwert ersetzt bzw. durch 0, wenn kein Wert vorhanden ist.
+
       Im Folgenden finden Sie ein Beispiel für das Verfolgen der Benutzer-ID: `https://www.mysite.com?uid={userId}`.
 
       Wenn die Clickthrough-URL `https://` oder `https://` verwendet, wird die URL außerhalb der App im Browser des Geräts geöffnet. Ansonsten unterstützt jede Plattform Schemata, mit denen Sie die App öffnen oder auf die App verweisen können, wenn die App dafür entwickelt wurde, das benutzerdefinierte Schema zu unterstützen.
@@ -110,7 +116,7 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
 
       Klicken Sie auf ![Ausrichtung](assets/icon_orientation.png), um die Ausrichtung der Vorschau von Hochformat in Querformat zu ändern. Bei Watches ändert sich die Vorschau von einem runden in ein eckiges Zifferblatt.
 
-   * **[!UICONTROL Vorschau auf der Watch eines Benutzers]**
+   * **[!UICONTROL Vorschau auf der Uhr eines Benutzers]**
 
       Um eine Vorschau der Nachricht anzuzeigen, wie sie auf der Watch eines Benutzers angezeigt wird, klicken Sie auf ![Watch-Symbol](assets/icon_watch.png).
 
