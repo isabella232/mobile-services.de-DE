@@ -5,17 +5,20 @@ seo-description: Sie können Benutzer abhängig davon, ob sie eine App installie
 seo-title: Interstitials
 solution: Experience Cloud,Analytics
 title: Interstitials
-topic: Metriken
+topic: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 79%
 
 ---
 
 
 # Interstitials{#interstitials}
 
-Sie können Benutzer abhängig davon, ob sie eine App installiert (App-Deep-Link) oder nicht installiert haben (Website oder Appstore), zu einem Ziel weiterleiten. Die Auswahl der Weiterleitung sollte am besten den Benutzern überlassen werden. Hierzu können Marketingexperten eine Zwischenraumseite konfigurieren, die Benutzern die verfügbaren Ziele anzeigen.
+Sie können Benutzer abhängig davon, ob sie eine App installiert (App-Deep-Link) oder nicht installiert haben (Website oder Appstore), zu einem Ziel weiterleiten. Die Wahl des Routings bleibt am besten den Benutzern überlassen. Marketingexperten können Benutzeroptionen bereitstellen, indem sie eine Zwischenraum-Seite konfigurieren, auf der die Benutzer die verfügbaren Einstiegsziele sehen.
 
 So konfigurieren Sie einen Zwischenraum, während Sie einen Marketinglink erstellen:
 
@@ -31,9 +34,9 @@ So konfigurieren Sie einen Zwischenraum, während Sie einen Marketinglink erstel
 
       Mithilfe benutzerdefinierter Interstitials können Marketing-Experten Interstitial-Landingpages mit benutzerdefiniertem HTML/CSS/JS anpassen, sodass Sie Ihre Seiten mit einem Branding versehen können.
 
-      Im Folgenden finden Sie die Anforderungen der HTML-Seite:
+      Die folgenden Anforderungen gelten für die HTML-Seite:
 
-      * Sie muss im HTML-Format vorliegen.
+      * Muss eine HTML-Datei sein.
       * Sie muss die Platzhalter `%%DEST%%` und `%%FALLBACK%%` enthalten.
       * Die hochgeladene HTML-Seite wird in einem `<iframe>` dargestellt.
 
@@ -56,9 +59,9 @@ So konfigurieren Sie einen Zwischenraum, während Sie einen Marketinglink erstel
 
    * **[!UICONTROL Fallback-Text]**
 
-      Geben Sie den anzuzeigenden Fallback-Text ein.
+      Geben Sie den anzuzeigenden Ersatztext an.
 
-      Über dieses Feld wird die Textschaltfläche aktualisiert, wenn ein Deep-Link fehlschlägt. Benutzer werden zuerst zum Deep-Link weitergeleitet, um diesen auszuprobieren, bevor ihnen der Fallback zu einer anderen Option ermöglicht wird. Ein Fallback kann z. B. zu einem Appstore erfolgen, um die App herunterzuladen und zu installieren, oder Benutzer werden zur Website des Unternehmens weitergeleitet. Über den Fallback-Text erfahren Benutzer, dass eine andere Option verfügbar ist, falls der Deep-Link fehlschlägt.
+      Dieses Feld aktualisiert die Textschaltfläche, wenn ein Deep Link fehlschlägt. Benutzer werden zuerst zum Deep-Link weitergeleitet, um diesen auszuprobieren, bevor ihnen der Fallback zu einer anderen Option ermöglicht wird. Ein Fallback könnte z. B. für einen App Store zum Herunterladen und Installieren der App oder zum Aufrufen der Website der Firma verwendet werden. Über den Fallback-Text erfahren Benutzer, dass eine andere Option verfügbar ist, falls der Deep-Link fehlschlägt.
 
 
 1. (**Optional**) Klicken Sie auf die Symbole über dem Bild, um zu sehen wie das Interstitial gedreht und auf unterschiedlichen Geräten aussieht.
