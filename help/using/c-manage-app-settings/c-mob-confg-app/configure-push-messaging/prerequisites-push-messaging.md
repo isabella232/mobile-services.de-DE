@@ -3,13 +3,13 @@ description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachric
 keywords: mobile
 seo-description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachrichten in Apps konfigurieren.
 seo-title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 100%
 
