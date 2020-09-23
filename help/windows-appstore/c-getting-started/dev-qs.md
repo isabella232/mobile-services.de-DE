@@ -1,21 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Developer Quick Beginn
-solution: Marketing Cloud,Analytics
-title: Developer Quick Beginn
+seo-title: Schnellstart für Entwickler
+solution: Experience Cloud,Analytics
+title: Schnellstart für Entwickler
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
-# Developer Quick Beginn {#developer-quick-start}
+# Schnellstart für Entwickler {#developer-quick-start}
 
 Sie benötigen Visual Studio 2013 oder höher, um das SDK zu implementieren.
 
@@ -182,7 +182,7 @@ Aktualisieren Sie mindestens die folgenden Werte für die von Ihnen verwendeten 
 
 Weitere Informationen finden Sie unter [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md).
 
-## Debugging {#section_3A10376A60394A15BEE483323E0CD4AA}
+## Debugging von {#section_3A10376A60394A15BEE483323E0CD4AA}
 
 Wenn Sie das Debugging für das SDK aktivieren möchten, müssen Sie aufrufen `ADBMobile.Config.setDebugLogging(true);`.
 
