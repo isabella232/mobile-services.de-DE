@@ -2,12 +2,15 @@
 description: Diese Informationen helfen Ihnen beim Implementieren der iOS-Bibliothek und beim Erfassen von Lebenszyklusmetriken wie Starts, Upgrades, Sitzungen, eingebundene Benutzer usw.
 seo-description: Diese Informationen helfen Ihnen beim Implementieren der iOS-Bibliothek und beim Erfassen von Lebenszyklusmetriken wie Starts, Upgrades, Sitzungen, eingebundene Benutzer usw.
 seo-title: Grundlegende Implementierung und Lebenszyklus
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: ht
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -61,6 +64,7 @@ So laden Sie das SDK herunter:
    * Das Kontrollkästchen **[!UICONTROL Elemente kopieren, sofern erforderlich]** ist aktiviert.
    * **[!UICONTROL Gruppen erstellen]** ist ausgewählt.
    * Keines der Kontrollkästchen im Abschnitt **[!UICONTROL Zu Zielen hinzufügen]** ist ausgewählt.
+
    ![](assets/step_3.png)
 
 1. Klicken Sie auf **[!UICONTROL Fertigstellen]**.
@@ -93,6 +97,7 @@ So laden Sie das SDK herunter:
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_TV.a`
+
    >[!CAUTION]
    >
    > Das Verknüpfen von mehr als einer Datei `AdobeMobileLibrary*.a` im selben Ziel führt zu einem unerwarteten Verhalten oder dazu, dass das Erstellen nicht möglich wird.
