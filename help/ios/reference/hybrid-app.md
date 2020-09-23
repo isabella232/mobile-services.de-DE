@@ -4,10 +4,13 @@ seo-description: Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstel
 seo-title: Besucherverfolgung zwischen einer App und dem mobilen Internet
 solution: Experience Cloud,Analytics
 title: Besucherverfolgung zwischen einer App und dem mobilen Internet
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
-translation-type: ht
-source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +21,7 @@ Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstellen, dass die Bes
 
 ## Besucher-IDs in Apps
 
-Das iOS-SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird. Diese ID wird im persistenten Speicher auf dem Mobilgerät gespeichert und bei jedem Treffer gesendet. Diese ID wird nur entfernt, wenn der Benutzer die App deinstalliert.
+Das iOS-SDK generiert eine eindeutige Besucher-ID, wenn eine App installiert wird. Diese ID wird im beständigen Speicher auf dem Mobilgerät gespeichert und bei jedem Treffer gesendet. Diese ID wird nur entfernt, wenn der Benutzer die App deinstalliert.
 
 >[!TIP]
 >
@@ -56,7 +59,7 @@ Verwenden derselben Besucher-ID in der App und im mobilen Web und Übergeben der
    }];
    ```
 
-Der ID-Dienstcode auf der Zieldomäne extrahiert die MID aus der URL, statt bei Adobe eine neue ID anzufordern. Der ID-Dienstcode auf der Zielseite verwendet die übergebene MID zum Nachverfolgen des Besuchers.
+Der ID-Dienstcode in der Zieldomäne extrahiert die MID aus der URL, anstatt eine Anforderung für eine neue ID an die Adobe zu senden. Der ID-Dienst-Code auf der Zielseite verwendet die übergebene MID, um den Besucher zu verfolgen.
 
 Überprüfen Sie für Treffer aus dem mobilen Webinhalt, ob der Parameter `mid` bei jedem Treffer vorhanden ist und ob dieser Wert mit dem Parameter `mid` übereinstimmt, der durch den App-Code gesendet wird.
 
