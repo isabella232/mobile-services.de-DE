@@ -2,13 +2,13 @@
 description: 'Bevor Sie eine Report Suite konfigurieren und Android-Appdaten erfassen, führen Sie zunächst die folgenden erforderlichen Aufgaben aus '
 seo-description: 'Bevor Sie eine Report Suite konfigurieren und Android-Appdaten erfassen, führen Sie zunächst die folgenden erforderlichen Aufgaben aus '
 seo-title: Vorbereitung
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Vorbereitung
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 100%
 
