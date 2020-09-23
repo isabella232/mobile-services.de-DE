@@ -1,13 +1,16 @@
 ---
-description: Dieses Referenzmaterial hilft Ihnen bei der Verwendung des Android-SDK für Experience Cloud-Lösungen.
-seo-description: Dieses Referenzmaterial hilft Ihnen bei der Verwendung des Android-SDK für Experience Cloud-Lösungen.
+description: Anhand dieses Referenzmaterials können Sie das Android-SDK für Experience Cloud-Lösungen verwenden.
+seo-description: Anhand dieses Referenzmaterials können Sie das Android-SDK für Experience Cloud-Lösungen verwenden.
 seo-title: Android-SDK-Referenzübersicht
 solution: Experience Cloud,Analytics
 title: Android-SDK-Referenzübersicht
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: ce8f6dcb-0e2b-47eb-99f2-fbdb97079161
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +21,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen beim Verwenden des Android-SD
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
