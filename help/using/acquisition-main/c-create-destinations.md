@@ -5,10 +5,13 @@ seo-description: Marketingexperten können Link-Ziele, wie z. B. Web-, Deep- od
 seo-title: Ziele
 solution: Experience Cloud,Analytics
 title: Ziele
-topic: Metriken
+topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +30,7 @@ Sie können die folgenden Typen von Link-Zielen erstellen:
 
 * **[!UICONTROL Web-Link]**
 
-   Web-Link-Ziele leiten Benutzer zu einer bestimmten URL. Sie können Benutzer beispielsweise direkt zur Produktseite auf der Website eines Online-Einzelhändlers weiterleiten.
+   Weblink-Ziele leiten Benutzer zu einer bestimmten URL. Beispielsweise können Sie Benutzer auf der Website eines Online-Händlers zu einer Produktlinie weiterleiten.
 
    >[!IMPORTANT]
    >
