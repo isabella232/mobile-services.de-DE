@@ -5,10 +5,13 @@ seo-description: Mithilfe dieser Informationen können Sie die integrierten Beri
 seo-title: Filter zu Berichten hinzufügen
 solution: Experience Cloud,Analytics
 title: Filter zu Berichten hinzufügen
-topic: Berichte, Metriken
+topic: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '384'
+ht-degree: 70%
 
 ---
 
@@ -23,11 +26,11 @@ Mithilfe dieser Informationen können Sie die integrierten Berichte durch Hinzuf
 
 Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzungen]** an, die Anweisungen gelten jedoch für alle Berichte.
 
-1. Öffnen Sie Ihre App und klicken Sie auf **[!UICONTROL Nutzung]** &gt; **[!UICONTROL Benutzer und Sitzungen]**.
+1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
 
    ![](assets/customize1.png)
 
-   Dieser Bericht enthält einen kompletten zeitlichen Überblick über unsere App-Nutzer. Allerdings werden hier Metriken sowohl für iOS- als auch für Android-Versionen in der gleichen Report Suite erfasst. Wir können die Benutzer nach ihrem mobilen Betriebssystem segmentieren, indem wir der Metrik „Benutzer“ einen benutzerdefinierten Filter hinzufügen.
+   Dieser Bericht bietet eine vollständige Ansicht unserer App-Benutzer im Zeitverlauf. Metriken für iOS- und Android-Versionen dieser App werden jedoch in derselben Report Suite erfasst. Wir können Benutzer nach Mobilbetriebssystem segmentieren, indem wir einen benutzerspezifischen Filter zur Benutzermetrik hinzufügen.
 
 1. Klicken Sie auf **[!UICONTROL Anpassen]**.
 
@@ -50,7 +53,7 @@ Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzunge
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
 1. Um den Bericht neu zu erstellen, klicken Sie auf **[!UICONTROL Ausführen]**.
 
-   Dieser Bericht zeigt die Benutzer aufgeschlüsselt nach Betriebssystem an. Der Berichtstitel wurde entsprechend den angewendeten Filtern geändert.
+   Dieser Bericht zeigt nun Benutzer aufgeschlüsselt nach Betriebssystem an. Der Berichttitel wurde geändert, um den Filtern zu entsprechen, die auf den Bericht angewendet wurden.
 
    ![](assets/customize5.png)
 
@@ -64,8 +67,8 @@ Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzunge
 
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]** und **[!UICONTROL Ausführen]**.
 
-   Der Bericht zeigt jetzt die Benutzer mit iOS 8.3 an, die die App zum ersten Mal gestartet haben.
+   Dieser Bericht zeigt jetzt Benutzer mit iOS 8.3 an, die die App zum ersten Mal gestartet haben.
 
    ![](assets/customize7.png)
 
-   Probieren Sie die verschiedenen Optionen im Berichtsanpassungsmenü ruhig einmal aus. Ihre Favoriten können Sie mit einem Lesezeichen versehen. Berichts-URLs in Adobe Mobile sind funktionsfähig und können per E-Mail versendet oder Ihren Favoriten hinzufügt werden.
+   Nehmen Sie sich etwas Zeit, um die verschiedenen Optionen im Menü zur Berichtsanpassung zu testen und sicherzustellen, dass Sie Ihre Favoriten mit einem Lesezeichen versehen. Berichts-URLs in Adobe Mobile sind funktionsfähig und können per E-Mail versendet oder Ihren Favoriten hinzufügt werden.
