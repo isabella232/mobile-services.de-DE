@@ -1,25 +1,28 @@
 ---
-description: In der Benutzeroberfläche von Adobe Mobile Services können Sie festlegen, ob die Push-Nachricht sofort, später oder regelmäßig gesendet werden soll. Hierbei können Sie zwischen täglicher, wöchentlicher und monatlicher Wiederholung wählen.
+description: In der Benutzeroberfläche von Adobe Mobile Services können Sie die sofortige Auslieferung einer Push-Nachricht, die später ausgeliefert werden soll, sowie ein wiederkehrendes Ereignis planen. Diese Ereignis können täglich, wöchentlich oder monatlich geplant werden.
 keywords: mobile
-seo-description: In der Benutzeroberfläche von Adobe Mobile Services können Sie festlegen, ob die Push-Nachricht sofort, später oder regelmäßig gesendet werden soll. Hierbei können Sie zwischen täglicher, wöchentlicher und monatlicher Wiederholung wählen.
+seo-description: In der Benutzeroberfläche von Adobe Mobile Services können Sie die sofortige Auslieferung einer Push-Nachricht, die später ausgeliefert werden soll, sowie ein wiederkehrendes Ereignis planen. Diese Ereignis können täglich, wöchentlich oder monatlich geplant werden.
 seo-title: Zeitplan Push-Nachrichten
 solution: Experience Cloud,Analytics
 title: Zeitplan Push-Nachrichten
-topic: Metriken
+topic: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 47%
 
 ---
 
 
 # Zeitplan: Push-Nachrichten{#schedule-push-message}
 
-In der Benutzeroberfläche von Adobe Mobile Services können Sie festlegen, ob die Push-Nachricht sofort, später oder regelmäßig gesendet werden soll. Hierbei können Sie zwischen täglicher, wöchentlicher und monatlicher Wiederholung wählen.
+In der Benutzeroberfläche von Adobe Mobile Services können Sie die sofortige Auslieferung einer Push-Nachricht, die später ausgeliefert werden soll, sowie ein wiederkehrendes Ereignis planen. Diese Ereignis können täglich, wöchentlich oder monatlich geplant werden.
 
 >[!TIP]
 >
->Die Benutzer können die Planungseinstellungen für Push-Nachrichten jederzeit ändern. Wenn keine passenden Daten für eine wiederkehrende geplante Nachricht – also eine Nachricht, die beispielsweise alle 31 Tage, immer am 31. Februar oder am jeweils fünften Dienstag des aktuellen Monats gesendet wird – vorhanden sind, wird keine Nachricht gesendet.
+>Die Benutzer können die Planungseinstellungen für Push-Nachrichten jederzeit ändern. Wenn es kein Datum gibt, an dem eine wiederkehrende geplante Nachricht gesendet werden kann, z. B. ein monatlicher wiederkehrender Auftrag alle 31. Tag, am 31. Februar oder am 5. Dienstag des Monats, wird keine Nachricht gesendet.
 
 Beachten Sie die folgenden Informationen:
 
@@ -28,9 +31,9 @@ Beachten Sie die folgenden Informationen:
 * Sie können eine geplante Nachricht auf folgende Weise bearbeiten:
 
    * Ändern Sie das Datum auf einen späteren Zeitpunkt.
-   * Ändern Sie das Wiederholungsintervall.
+   * Ändern Sie das Wiederholungsintervall in ein anderes Intervall.
 
-      Wenn Sie die Nachricht ursprünglich täglich gesendet haben, können Sie beispielsweise einstellen, dass sich die Nachricht nun wöchentlich wiederholen soll.
+      Wenn Sie zum Beispiel ursprünglich eine Nachricht hatten, die täglich gesendet wurde, können Sie die Wiederholung auf wöchentlich umstellen.
 
 ## Vor der Planung wiederkehrender Push-Nachrichten
 
@@ -46,16 +49,16 @@ Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende 
    * **[!UICONTROL Am 7. jeden Monats]**
    * **[!UICONTROL Am 1. Samstag jeden Monats]**
 
-* Push-Nachrichten werden nach Greenwich-Zeit (GMT) geplant und gesendet.
+* Push-Nachrichten werden basierend auf Greenwich Mean Time (GMT) geplant und gesendet.
 
-   Wenn Sie beispielsweise eine wiederkehrende Nachricht geplant haben, die ab dem 7. Oktober jeden Samstag um 12:00 Uhr **PST** gesendet werden soll, wird die Nachricht tatsächlich am Samstag um 19:00 Uhr **GMT** gesendet.
-* Nachrichten werden abhängig davon, ob Sie sich in den USA, in Europa oder in Asien befinden, unterschiedlich gesendet.
+   Wenn Sie zum Beispiel planen, dass jeden Samstag um 22:00 Uhr **PST** eine wiederkehrende Nachricht gesendet wird, die am 7. Oktober beginnt, wird die Nachricht am Samstag um 19:00 Uhr **GMT** gesendet.
+* Nachrichten werden unterschiedlich gesendet, je nachdem, ob Sie sich in den USA, Europa oder Asien befinden.
 
-   Wenn Sie sich beispielsweise in San Jose, Kalifornien befinden und eine Nachricht planen, die am ***31. Oktober*** um 17:30 Uhr **PST** gesendet werden soll, wird die Nachricht tatsächlich am ***1. November*** um 00:30 Uhr **GMT** gesendet. Wenn Sie sich in Tokio befinden und eine Nachricht planen, die am ***1. Januar*** um 05:30 Uhr gesendet werden soll, wird sie tatsächlich am ***31. Dezember*** um 20:30 Uhr **GMT** gesendet.
-* Push-Nachrichten werden je nach Sommer- oder Winterzeit eine Stunde früher oder später gesendet.
-* In Ihrem Bericht zu Push-Nachrichten wird die Nachricht in der lokalen Zeitzone Ihres Systems angezeigt.
+   Wenn Sie sich beispielsweise in San Jose, Kalifornien, befinden und eine Nachricht planen, die am 31. ***Oktober*** um 17:30 Uhr **PST** gesendet werden soll, wird die Nachricht am 1 ***.*** November um 12:30 Uhr **GMT** gesendet. Wenn Sie sich in Tokio befinden und planen, dass eine Nachricht am 1 ***.*** Januar um 5:30 Uhr gesendet wird, wird sie am 31. ***Dezember um 20:30 Uhr*** GMT **** gesendet.
+* Push-Nachrichten werden eine Stunde früher oder später gesendet, je nachdem, wann die Sommerzeit eingespart wird.
+* Wenn Sie sich Ihren Push-Nachrichten-Bericht ansehen, wird die Nachricht in der lokalen Zeitzone Ihres Systems angezeigt.
 
-   Wenn Sie als Startzeit beispielsweise 12:00 Uhr **PST** festgelegt haben, wird diese zwar um 19:00 Uhr **GMT** gesendet, im Bericht wird jedoch angezeigt, dass die Nachricht um 12:00 Uhr **PST** gesendet wurde.
+   Wenn Ihr Beginn z. B. um 22:00 Uhr **PST** endet, obwohl die Nachricht um 19:00 Uhr **GMT** gesendet wird, zeigt der Nachrichtenbericht die Sendezeit um 12:00 Uhr **PST** an.
 
 ## Wiederkehrende Push-Nachrichten planen {#section_675BD754E5A04423A1751193698A978F}
 
@@ -68,7 +71,7 @@ Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende 
    ![](assets/schedule-push-message.png)
 
 1. Wenn Sie **[!UICONTROL Geplant]** ausgewählt haben, klicken Sie auf das Kalendersymbol und wählen Sie ein Startdatum aus bzw. geben eines ein.
-1. Geben Sie darüber hinaus eine Uhrzeit ein. 
+1. Geben Sie eine Uhrzeit ein. 
 1. Wählen Sie unter **[!UICONTROL Wiederholen]** eine der folgenden Optionen aus:
 
    * **[!UICONTROL Nie]**
@@ -92,9 +95,9 @@ Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende 
 
    * **[!UICONTROL Speichern und planen]**
 
-      Mit dieser Option wird die Nachricht zum geplanten Zeitpunkt gesendet.
+      Diese Option sendet die Nachricht am geplanten Tag und zur geplanten Uhrzeit.
 
-Um den Nachrichtenentwurf später zu senden, führen Sie einen der folgenden Schritte durch:
+Um den Nachrichtenentwurf zu einem späteren Zeitpunkt zu senden, führen Sie eine der folgenden Aufgaben aus:
 
 * Klicken Sie auf **[!UICONTROL Nachrichten verwalten]**, aktivieren Sie das Kontrollkästchen neben der entsprechenden Nachricht und klicken Sie auf **[!UICONTROL Auswahl aktivieren]**.
 * Klicken Sie auf **[!UICONTROL Speichern &amp; Senden]**, um die Nachricht zu speichern und zu senden.
