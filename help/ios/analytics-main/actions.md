@@ -1,20 +1,23 @@
 ---
-description: Aktionen sind die Ereignisse in der App, die Sie messen möchten. Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. Sie möchten zum Beispiel möglicherweise jedes neue Abonnement, jedes Anzeigen eines Artikels und jeden Abschluss einer Stufe verfolgen. Die entsprechenden Metriken für die Ereignisse werden als Abonnements, gelesene Artikel und abgeschlossene Stufe konfiguriert.
-seo-description: Aktionen sind die Ereignisse in der App, die Sie messen möchten. Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. Sie möchten zum Beispiel möglicherweise jedes neue Abonnement, jedes Anzeigen eines Artikels und jeden Abschluss einer Stufe verfolgen. Die entsprechenden Metriken für die Ereignisse werden als Abonnements, gelesene Artikel und abgeschlossene Stufe konfiguriert.
+description: Aktionen sind die Ereignis, die in Ihrer App auftreten und die Sie messen möchten. Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. Sie können beispielsweise jedes Mal, wenn ein Artikel angezeigt wird oder wenn eine Ebene abgeschlossen ist, ein neues Abonnement verfolgen. Die entsprechenden Metriken für diese Ereignis werden als Abonnements, gelesene Artikel und abgeschlossene Ebenen konfiguriert.
+seo-description: Aktionen sind die Ereignis, die in Ihrer App auftreten und die Sie messen möchten. Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. Sie können beispielsweise jedes Mal, wenn ein Artikel angezeigt wird oder wenn eine Ebene abgeschlossen ist, ein neues Abonnement verfolgen. Die entsprechenden Metriken für diese Ereignis werden als Abonnements, gelesene Artikel und abgeschlossene Ebenen konfiguriert.
 seo-title: App-Aktionen verfolgen
 solution: Experience Cloud,Analytics
 title: App-Aktionen verfolgen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 72%
 
 ---
 
 
 # App-Aktionen verfolgen {#track-app-actions}
 
-Aktionen sind die Ereignisse in der App, die Sie messen möchten. Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. Sie möchten zum Beispiel möglicherweise jedes neue Abonnement, jedes Anzeigen eines Artikels und jeden Abschluss einer Stufe verfolgen. Die entsprechenden Metriken für die Ereignisse werden als Abonnements, gelesene Artikel und abgeschlossene Stufe konfiguriert.
+Aktionen sind die Ereignis, die in Ihrer App auftreten und die Sie messen möchten. Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. Sie können beispielsweise jedes Mal, wenn ein Artikel angezeigt wird oder wenn eine Ebene abgeschlossen ist, ein neues Abonnement verfolgen. Die entsprechenden Metriken für diese Ereignis werden als Abonnements, gelesene Artikel und abgeschlossene Ebenen konfiguriert.
 
 Aktionen werden nicht automatisch verfolgt. Möchten Sie ein Ereignis verfolgen, müssen Sie `trackAction` aufrufen.
 
@@ -42,7 +45,7 @@ Aktionen werden nicht automatisch verfolgt. Möchten Sie ein Ereignis verfolgen,
 
 1. Wählen Sie Ihre App in Adobe Mobile Services UI aus und klicken Sie auf **[!UICONTROL App-Einstellungen verwalten]**.
 
-1. Klicken Sie auf **[!UICONTROL Variablen und Metriken verwalten]** und dann auf die Registerkarte **** Benutzerdefinierte Metriken.
+1. Klicken Sie auf **[!UICONTROL Variablen und Metriken verwalten]** und dann auf die Registerkarte **[!UICONTROL Benutzerdefinierte Metriken]**.
 
 1. Weisen Sie den Kontextdatennamen, der in Ihrem Code definiert ist (z. B. `a.action=myapp.ActionName`), einem benutzerdefinierten Ereignis zu.
 
@@ -74,6 +77,6 @@ Wenn Sie eine Aktion im Code verfolgen, der aktiv ist, während die App im Hinte
 
 | Schnittstelle | Bericht |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL Bericht Aktionspfade]**: Zeigen Sie die Reihenfolge an, in der Aktionen in Ihrer App aufgetreten sind. Sie können auch auf **[!UICONTROL Anpassen]** klicken, um die Aktionen in Rang- oder Trendansicht bzw. aufgeschlüsselt anzuzeigen, oder Sie nutzen Filter, um nur Aktionen für ein bestimmtes Segment anzuzeigen. |
+| Adobe Mobile Services | **[!UICONTROL Bericht Aktionspfade]**:  Zeigen Sie die Reihenfolge an, in der Aktionen in Ihrer App aufgetreten sind. Sie können auch auf **[!UICONTROL Anpassen]** klicken, um die Aktionen in Rang- oder Trendansicht bzw. aufgeschlüsselt anzuzeigen, oder Sie nutzen Filter, um nur Aktionen für ein bestimmtes Segment anzuzeigen. |
 | Marketing Reports &amp; Analysen | **[!UICONTROL Bericht Benutzerspezifisches Ereignis]**:  Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
-| Ad-hoc-Analysen | **[!UICONTROL Bericht Benutzerspezifisches Ereignis]**: Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
+| Ad-hoc-Analysen | **[!UICONTROL Bericht Benutzerspezifisches Ereignis]**:  Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
