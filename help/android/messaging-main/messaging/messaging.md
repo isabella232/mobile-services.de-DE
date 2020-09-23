@@ -2,12 +2,12 @@
 description: Sie können In-App-Nachrichten bereitstellen, die aus beliebigen Analysedaten oder -Ereignissen ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App gesendet und benötigen keine Codeaktualisierung.
 seo-description: Sie können In-App-Nachrichten bereitstellen, die aus beliebigen Analysedaten oder -Ereignissen ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App gesendet und benötigen keine Codeaktualisierung.
 seo-title: In-App-Nachrichten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: In-App-Nachrichten
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 62%
