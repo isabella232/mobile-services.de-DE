@@ -1,21 +1,24 @@
 ---
-description: Diese Informationen helfen Ihnen bei der Verwendung von Erweiterungen mit dem Windows 8.1 Universal App Store-SDK für Experience Cloud-Lösungen.
-seo-description: Diese Informationen helfen Ihnen bei der Verwendung von Erweiterungen mit dem Windows 8.1 Universal App Store-SDK für Experience Cloud-Lösungen.
+description: Informationen zur Verwendung von Erweiterungen mit dem Windows 8.1 Universal App Store SDK for Experience Cloud Solutions.
+seo-description: Informationen zur Verwendung von Erweiterungen mit dem Windows 8.1 Universal App Store SDK for Experience Cloud Solutions.
 seo-title: Erweiterungen
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Erweiterungen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 2823b22c-d9a1-4724-9020-dfc6614691be
 translation-type: tm+mt
-source-git-commit: 3e122765fba3bd61da98918480e01e463eb34c6e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '66'
+ht-degree: 22%
 
 ---
 
 
 # Erweiterungen{#extensions}
 
-Diese Informationen helfen Ihnen bei der Verwendung von Erweiterungen mit dem Windows 8.1 Universal App Store-SDK für Experience Cloud-Lösungen.
+Informationen zur Verwendung von Erweiterungen mit dem Windows 8.1 Universal App Store SDK for Experience Cloud Solutions.
 
 ## Zusätzliche Informationen
 
-+ [Windows Visual Studio-Erweiterungen für Experience Cloud-Lösungen 4.x-SDK](/help/windows-appstore/extensions/win-vse-4x.md)
++ [Windows Visual Studio-Erweiterungen für Experience Cloud-Lösungen mit SDK 4.x](/help/windows-appstore/extensions/win-vse-4x.md)
