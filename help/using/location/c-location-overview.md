@@ -5,10 +5,13 @@ seo-description: Im Standortübersichtsbericht werden die verschiedenen Länder,
 seo-title: Übersicht (Standort)
 solution: Experience Cloud,Analytics
 title: Übersicht (Standort)
-topic: Berichte, Metriken
+topic: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 78%
 
 ---
 
@@ -23,7 +26,7 @@ Im Folgenden einige zusätzliche Informationen zu diesem Bericht:
 
 ## Navigation und Verwendung {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
 
-Diese Grafik enthält beispielsweise neben dem Basisbericht auch Aufschlüsselungen. Dabei werden die untersuchten Metriken durch entsprechende Höhen visualisiert, sodass Leistungsunterschiede leicht erkennbar sind. Jeder Ring repräsentiert ein Zielgruppensegment in der jeweiligen Kategorie des Rings. An einer Zielgruppe können Sie auch Aktionen durchführen, wie zum Beispiel einen fixierbaren Filter anwenden sowie Metriken ausblenden oder anzeigen.
+Diese Visualisierung bietet beispielsweise den Basisbericht mit Aufschlüsselungen. Die Visualisierung verwendet Höhe, um die Metrik im Fokus und die Leistungsunterschiede zwischen den Metriken anzuzeigen. Jeder Ring stellt ein Audience-Segment in der Kategorie des Rings dar. Sie können Aktionen für eine Audience ausführen, z. B. einen fixierbaren Filter anwenden, eine Metrik ausblenden und Metriken anzeigen.
 
 >[!TIP]
 >
@@ -31,7 +34,7 @@ Diese Grafik enthält beispielsweise neben dem Basisbericht auch Aufschlüsselun
 
 ![](assets/location.png)
 
-Diese Sunburst-Grafik ist interaktiv. Sie können den Zeitraum ändern, indem Sie oben rechts auf das **[!UICONTROL Kalendersymbol]** klicken. Wenn Sie den Mauszeiger über einen Teil der Darstellung bewegen, werden mehr Informationen angezeigt. In unten stehender Abbildung beispielsweise werden die Gesamtzahl und der Prozentsatz der Benutzer angegeben, die Ihre App in den USA verwenden.
+Diese Sunburst-Grafik ist interaktiv. Sie können den Zeitraum ändern, indem Sie oben rechts auf das **[!UICONTROL Kalendersymbol]** klicken. Bewegen Sie den Mauszeiger über einen beliebigen Teil des Diagramms, um weitere Informationen anzuzeigen. In der folgenden Abbildung sehen Sie beispielsweise die Gesamtzahl und den Prozentsatz der Benutzer, die Ihre App in den USA verwenden.
 
 ![](assets/location_mouse.png)
 
@@ -45,7 +48,7 @@ So sieht die Grafik aus, wenn Sie **[!UICONTROL Zielpunkte]** auswählen:
 
 ![](assets/location_poi.png)
 
-Sie können auf ein Segment im Ring klicken, um die Zielgruppe auszuwählen, an der Sie dann Aktionen durchführen können, z. B. Heranzoomen, Ausblenden von Zielgruppen oder Erstellen einer In-App-Nachricht oder eines fixierbaren Filters.
+Sie können auf ein Segment im Ring klicken, um die Audience auszuwählen, auf der Sie Aktionen durchführen können, z. B. Einzoomen, Ausblenden von Audiencen, Erstellen einer In-App-Nachricht oder eines fixierbaren Filters.
 
 ![](assets/location_aud.png)
 
