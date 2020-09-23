@@ -1,13 +1,13 @@
 ---
-description: List of Audience Manager methods provided by the Universal Windows Platform library.
-seo-description: List of Audience Manager methods provided by the Universal Windows Platform library.
+description: Liste von Audience Manager-Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
+seo-description: Liste von Audience Manager-Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
 seo-title: Audience Manager-Methoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
 topic: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 43%
@@ -17,15 +17,15 @@ ht-degree: 43%
 
 # Audience Manager-Methoden{#audience-manager-methods}
 
-List of Audience Manager methods provided by the Universal Windows Platform library.
+Liste von Audience Manager-Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
 
-The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, and Audience Manager. Methods are prefixed according to the solution. Audience Manager methods are prefixed with `AudienceManager`.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methods are prefixed according to the solution. Audience Manager methods are prefixed with `AudienceManager`.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Wenn Sie Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert. `winmd`
 
-If audience manager is configured in your JSON file, a signal that contains lifecycle metrics is sent in with your lifecycle hit.
+Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit Lebenszyklusmetriken mit Ihrem Lebenszyklustreffer gesendet.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
