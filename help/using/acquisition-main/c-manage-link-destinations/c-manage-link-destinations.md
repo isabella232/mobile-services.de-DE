@@ -5,10 +5,13 @@ seo-description: Auf der Seite „Link-Ziele verwalten“ können Sie Link-Ziele
 seo-title: Link-Ziele erstellen und verwalten
 solution: Experience Cloud,Analytics
 title: Link-Ziele erstellen und verwalten
-topic: Metriken
+topic: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 100%
 
 ---
 
