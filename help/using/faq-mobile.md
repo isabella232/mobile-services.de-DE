@@ -5,10 +5,13 @@ seo-description: Antworten auf häufig gestellte Fragen zu Adobe Mobile Services
 seo-title: Häufig gestellte Fragen
 solution: Experience Cloud,Analytics
 title: Häufig gestellte Fragen
-topic: Metriken
+topic: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1118'
+ht-degree: 57%
 
 ---
 
@@ -19,13 +22,13 @@ Die folgende Tabelle enthält eine Liste häufig gestellter Fragen zu Adobe Mob
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
-### Wird das SDK häufig aktualisiert?
+### Führen Sie häufige Aktualisierungen mit dem SDK durch?
 
-Ja, wir führen ständig Updates durch, um Ihnen SDK mit dem größten Funktionsumfang, der besten Standardkonformität und der höchsten Sicherheit zu liefern. In der Regel veröffentlichen wir jeden Monat eine neue Version. Diese SDK-Updates können direkt ausgetauscht werden (für Version 4x), was die Implementierung erleichtert. Weitere Informationen zu unseren Updates finden Sie in den [Versionshinweisen](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
+Ja, wir führen ständig Updates durch, um Ihnen SDK mit dem größten Funktionsumfang, der besten Standardkonformität und der höchsten Sicherheit zu liefern. Normalerweise veröffentlichen wir jeden Monat eine neue Version. Diese SDK-Aktualisierungen sind ein Ersatz-Dropdown-Verfahren (für Version 4x), um die Implementierung zu erleichtern. Weitere Informationen zu unseren Updates finden Sie in den [Versionshinweisen](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
 
 ### Welche SDK-Version soll ich einsetzen?
 
-Unsere aktuelle SDK-Version lautet 4.11. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
+Unsere aktuellen SDKs beziehen sich auf Version 4.11. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
 
 ### Wo kann ich die SDK herunterladen?
 
@@ -46,41 +49,41 @@ Die Adobe Mobile SDK verwenden die standardmäßigen iOS- und Android-Netzwerkst
 
 ### Was sind Lebenszyklusmetriken?
 
-Lebenszyklusmetriken sind im Lieferumfang enthaltene Metriken, die automatisch erfasst werden, wenn das SDK zum ersten Mal in Ihrer App implementiert wird. Weitere Informationen finden Sie unter. [Lebenszyklusmetriken (Android)](/help/android/metrics.md) und [Lebenszyklusmetriken (iOS)](/help/ios/metrics.md).
+Lebenszyklusmetriken sind vordefinierte Metriken, die automatisch erfasst werden, wenn das SDK zum ersten Mal in Ihrer App implementiert wird. Weitere Informationen finden Sie unter. [Lebenszyklusmetriken (Android)](/help/android/metrics.md) und [Lebenszyklusmetriken (iOS)](/help/ios/metrics.md).
 
 ### Wie kann ich Fehler in Verarbeitungsregeln beheben?
 
-Weitere Informationen finden Sie unter [Tipps und Tricks zu Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
+Weitere Informationen finden Sie unter [Verarbeitungsregeln - Tipps und Tricks](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
 
 ### Kann ich meine Analysedaten an mehrere Report Suites senden?
 
 Ja. Die SDK bieten die Möglichkeit, Daten an mehrere Adobe Analytics Report Suites zu senden. Um mithilfe einer Bildanfrage Daten in mehreren Report Suites zu erfassen, geben Sie im Feld **[!UICONTROL rsids]** unter dem Abschnitt **[!UICONTROL analytics]** der Datei `ADBMobileConfig.json` mehrere Report Suite-IDs ein, getrennt durch Kommas und ohne Leerzeichen. Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
 
-### Wie unterscheiden sich Handybesuche von Starts?
+### Inwiefern unterscheiden sich die Besuche von Mobilgeräten von den Launches?
 
-Ein Start wird durch das SDK gemessen, wenn ein Benutzer die App zum ersten Mal öffnet oder nach Überschreiten des festgelegten Timeout-Werts erneut öffnet. In der Regel beträgt der Timeout-Wert 5 Minuten (300 Sekunden). Zu finden ist der Wert im Feld **[!UICONTROL lifecycleTimeout]** in der Datei `ADBMobileConfig.json`. Ein Besuch ist eine serverseitige Kalkulation durch Adobe Analytics auf Grundlage der ersten und letzten Datentreffer, die vom SDK gesendet wurden, ohne dass ein Besuchs-Timeout überschritten wurde. Sitzungs-Timeouts für eine Report Suite werden in der Regel auf 30 Minuten festgelegt. Obwohl Besuche aus klassischen Webanalysen stammen, bieten diese Treffer wertvolle Einblicke dahingehend, wie Benutzer Ihre App aufrufen und verlassen.
+Ein Start wird vom SDK gemessen, wenn ein Benutzer die App zum ersten Mal öffnet oder nach längerem Verlassen der App zur App zurückkehrt. In der Regel beträgt der Timeout-Wert 5 Minuten (300 Sekunden). Zu finden ist der Wert im Feld **[!UICONTROL lifecycleTimeout]** in der Datei `ADBMobileConfig.json`. Ein Besuch ist eine serverseitige Berechnung von Adobe Analytics und basiert auf den ersten und letzten Daten-Hits, die vom SDK gesendet werden, ohne dass ein Besuch-Timeout überschritten wird. In der Regel werden Sitzungs-Timeouts für eine Report Suite auf 30 Minuten eingestellt. Obwohl Besuche von herkömmlichen Webanalysen stammen, bieten diese Treffer trotzdem wertvolle Einblicke, wie Benutzer Ihre App aufrufen und verlassen.
 
 ## Messaging {#section_5EFDD2B2EBA543C09902FF979C89F2EC}
 
-### Gibt es für Push-Benachrichtigungen eine Größenbeschränkung oder andere Beschränkungen?
+### Gibt es Größenbeschränkungen oder andere Einschränkungen bei Push-Benachrichtigungen?
 
-Für Push-Benachrichtigungen gilt ein Grenzwert von 140 Zeichen. Es gibt keine Beschränkung der Anzahl der gesendeten oder geplanten Benachrichtigungen oder der Häufigkeit, mit der Benachrichtigungen gesendet werden.
+Push-Benachrichtigungen haben eine Zeichenbeschränkung von 140 Zeichen. Es gibt keine Grenzen dafür, wie viele Benachrichtigungen gesendet oder geplant werden oder wie oft Benachrichtigungen gesendet werden.
 
-### Werden für Push-Benachrichtigungen benutzerdefinierte Nutzlasten unterstützt?
+### Unterstützen Sie benutzerdefinierte Nutzdaten für Push-Benachrichtigungen?
 
-Ja, wir unterstützen eine benutzerdefinierte Push-Nutzlast, die in JSON kodiert werden kann. Android- und iOS-Nutzlasten sind auf 4 KB bzw. 2 KB beschränkt. Diese Nutzlasten werden über eine Push- oder eine lokale Benachrichtigung an die App gesendet. Weitere Informationen finden Sie unter [Erlebnis: Push-Nachricht](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
+Ja, wir bieten eine benutzerdefinierte Push-Nutzlast, die in JSON kodiert werden kann. Android- und iOS-Nutzlasten sind auf 4 KB bzw. 2 KB beschränkt. Diese Nutzdaten werden über eine Push- oder eine lokale Benachrichtigung an die App gesendet. Weitere Informationen finden Sie unter [Erlebnis: Push-Nachricht](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
 ### Gibt es Größenbeschränkungen für In-App-Nachrichten?
 
-In Adobe Mobile Services erstellte In-App-Nachrichten, die veröffentlicht und aktiv sind, werden auf einem Server gehostet, auf dem eine Größenbeschränkung von 15 MB pro App-Report Suite gilt. Diese Beschränkung gilt für bei Adobe gehostete Inhalte und Ressourcen. Es gibt aber keine Beschränkungen für Ressourcen, auf die In-App-Nachrichten auf anderen Hosts oder innerhalb der App verweisen können.
+Veröffentlichte und aktive In-App-Nachrichten, die in Adobe Mobile Services erstellt wurden, werden auf einem Server mit einer Größenbeschränkung von 15 MB pro App-Report Suite gehostet. Diese Einschränkung gilt zwar für mit Adobe gehostete Inhalte und Ressourcen, es gibt jedoch keine Einschränkungen hinsichtlich der Ressourcen, auf die die In-App-Nachricht auf anderen Hosts oder in der App verweisen kann.
 
-### Kann ich für In-App-Nachrichten meine eigenen HTMLs verwenden?
+### Kann ich für In-App-Nachrichten meinen eigenen HTML-Code verwenden?
 
-Ja, wir unterstützen benutzerdefinierte HTMLs für In-App-Nachrichten. Weitere Informationen finden Sie unter [Erlebnis: In-App-Nachricht](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
+Ja, wir unterstützen benutzerdefiniertes HTML für Ihre In-App-Nachrichten. For more information, see [Experience: In-App Message](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
 
-### Welche Auslöser kann ich verwenden, um Push- oder In-App-Benachrichtigungen zu senden?
+### Welche Auslöser kann ich verwenden, um Push-Benachrichtigungen oder In-App-Nachrichten zu senden?
 
-Marketingexperten können beliebige Analytics-Daten oder -Ereignisse nutzen, die als Auslöser für die Anzeige von In-App-Nachrichten gesendet werden. In-App-Nachrichten verwenden Auslöser, die lokal auf dem Gerät auftreten. Wenn mehrere Auslöser ausgewählt werden, müssen alle Auslöser in demselben Treffer auftreten, damit die Nachricht angezeigt wird. Weitere Informationen finden Sie unter [Erlebnis: In-App-Nachricht](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
+Marketingexperten können beliebige Analytics-Daten oder -Ereignis auswählen, die als Auslöser für die Anzeige von In-App-Nachrichten gesendet werden. In-App-Nachrichten verwenden Auslöser, die lokal auf dem Gerät stattfinden. Wenn mehrere Auslöser ausgewählt sind, müssen alle Auslöser im selben Treffer auftreten, damit die Nachricht angezeigt wird. For more information, see [Experience: In-App Message](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
 
 Push-Nachrichten werden unter Verwendung von bereits bestehenden Adobe Analytics-Segmenten oder von benutzerdefinierten Segmenten gesendet, die über bereits erfasste historische Analytics-Daten erstellt wurden. Weitere Informationen finden Sie unter [Erlebnis: Push-Nachricht](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
@@ -96,9 +99,9 @@ Es gelten keine bestimmten Beschränkungen. Für optimale Performance und aufgru
 
 ## Akquise {#section_B37F1129CD5843E890D0E54179455357}
 
-### Kann ich In-App-Aktivitäten Kampagnen zuordnen?
+### Kann ich In-App-Aktivitäten Kampagnen zuweisen?
 
-Ja. Adobe Mobile Services unterstützen Sie dabei, Marketingtricks zu erstellen, mit denen Sie den Traffic zu Ihren Apps fördern und vorantreiben können, und Akquisekampagnen mit In-App-Analysen und -Konversionen zu verbinden. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
+Ja. Mit Adobe Mobile Services können Sie Marketing-Tricks entwickeln, mit denen Sie den Traffic zu Ihren Apps fördern und fördern und Akquise-Kampagnen mit In-App-Analysen und -Konversionen verbinden können. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
 ### Wie kann ich Links einrichten, um neue App-Benutzer zu erfassen und zu verfolgen?
 
