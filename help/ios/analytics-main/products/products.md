@@ -1,20 +1,23 @@
 ---
-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS-SDK 4.x müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt im Server-Aufruf festzulegen.
-seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS-SDK 4.x müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt im Server-Aufruf festzulegen.
+description: Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS 4.x-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
+seo-description: Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS 4.x-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
 seo-title: Variable „products“
 solution: Experience Cloud,Analytics
 title: Variable „products“
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
-translation-type: ht
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 44%
 
 ---
 
 
 # Variable „products“ {#products-variable}
 
-Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS-SDK 4.x müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt im Server-Aufruf festzulegen.
+Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS 4.x-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
 
 Um die Variable *`products`* festzulegen, setzen Sie einen Kontextdatenschlüssel auf `"&&products"` und legen Sie mithilfe der für die Variable *`products`* definierten Syntax den Wert fest:
 
