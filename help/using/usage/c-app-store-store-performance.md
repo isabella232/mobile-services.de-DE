@@ -5,10 +5,13 @@ seo-description: Der Bericht „App Store-Übersicht“ zeigt eine Momentaufnahm
 seo-title: Bericht „App Store-Übersicht“
 solution: Experience Cloud,Analytics
 title: Bericht „App Store-Übersicht“
-topic: Metriken
+topic: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +28,7 @@ Der Bericht **[!UICONTROL Übersicht]** enthält ein Zeitdiagramm mit Informatio
 
 ![](assets/app_store_metrics.png)
 
-Sie können auf die Metriken klicken, um die entsprechende Zeile ein- oder auszublenden. Um die Daten für einen Tag anzuzeigen, fahren Sie mit dem Mauszeiger über den entsprechenden Tag.
+Sie können auf eine beliebige Metrik klicken, um die zugehörige Zeile ein- oder auszublenden. Um die Daten für einen Tag anzuzeigen, fahren Sie mit dem Mauszeiger über den entsprechenden Tag.
 
 >[!IMPORTANT]
 >
