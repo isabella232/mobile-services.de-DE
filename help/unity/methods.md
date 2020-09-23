@@ -3,14 +3,14 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: ADBMobile.cs-Methoden
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: ADBMobile.cs-Methoden
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1324'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -142,7 +142,7 @@ ht-degree: 65%
 
    >[!TIP]
    >
-   >This method is intended to be used for apps that register for notifications while in the background and should only be called from your code that runs while your app is in the background.
+   >Diese Methode soll für Apps verwendet werden, die sich für Benachrichtigungen im Hintergrund registrieren und nur aus dem Code heraus aufgerufen werden sollten, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -158,7 +158,7 @@ ht-degree: 65%
 
 * **PauseCollectingLifecycleData (nur Android)**
 
-   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. For example, on pause collects a timestamp to determine previous session length. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
+   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten wird ein Zeitstempel erfasst, um die Länge der vorherigen Sitzung zu bestimmen. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -226,7 +226,7 @@ ht-degree: 65%
 
 * **SetUserIdentifier**
 
-   Sets the user identifier to userId.
+   Legt die Benutzerkennung auf userId fest.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -304,7 +304,7 @@ ht-degree: 65%
 
 * **TrackActionFromBackground (nur iOS)**
 
-   Verfolgt eine Aktion, die im Hintergrund aufgetreten ist. Dadurch wird das Auslösen von Lebenszyklusereignissen in bestimmten Ereignissen unterbunden.
+   Verfolgt eine Aktion, die im Hintergrund aufgetreten ist. Dadurch wird das Auslösen von Lebenszyklusereignissen in bestimmten Szenarien unterbunden.
 
    >[!TIP]
    >
@@ -402,7 +402,7 @@ ht-degree: 65%
 
 * **TrackTimedActionUpdate**
 
-   Pass in data to update the context data associated with the given action. The data passed in is appended to the existing data for the given action, and overwrites the data if the same key is already defined for action.
+   Übergeben Sie Daten, um die mit der jeweiligen Aktion verknüpften Kontextdaten zu aktualisieren. Die weitergeleiteten Daten werden an die vorhandenen Daten für die jeweilige Aktion angehängt und überschreiben die Daten, wenn derselbe Schlüssel bereits für die Aktion definiert ist.
 
    >[!TIP]
    >
