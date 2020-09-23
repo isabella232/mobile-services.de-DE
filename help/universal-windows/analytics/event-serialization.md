@@ -1,20 +1,23 @@
 ---
-description: Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im Mobile-SDK müssen Sie eine spezielle Syntax innerhalb des Kontextdatenparameters verwenden, um serialisierte Ereignisse direkt beim Server-Aufruf festzulegen.
-seo-description: Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im Mobile-SDK müssen Sie eine spezielle Syntax innerhalb des Kontextdatenparameters verwenden, um serialisierte Ereignisse direkt beim Server-Aufruf festzulegen.
+description: Die Serialisierung von Ereignissen wird von Verarbeitungsregeln nicht unterstützt. Im mobilen SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignis direkt beim Serveraufruf festzulegen.
+seo-description: Die Serialisierung von Ereignissen wird von Verarbeitungsregeln nicht unterstützt. Im mobilen SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignis direkt beim Serveraufruf festzulegen.
 seo-title: Ereignis-Serialisierung
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Ereignis-Serialisierung
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 7220a001-1174-4013-91ff-e8603d8ab265
 translation-type: tm+mt
-source-git-commit: f5ba33fe805c502b8ae91ddafcaa0b57e68704b8
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Ereignis-Serialisierung {#event-serialization}
 
-Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. In the mobile SDK, you must use a special syntax in the context data parameter to set serialized events directly on the server call.
+Die Serialisierung von Ereignissen wird von Verarbeitungsregeln nicht unterstützt. Im mobilen SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignis direkt beim Serveraufruf festzulegen.
 
 ```js
 cdata["&&events"] = "event1:12341234";
