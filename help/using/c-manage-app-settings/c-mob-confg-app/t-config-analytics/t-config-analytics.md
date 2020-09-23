@@ -5,10 +5,13 @@ seo-description: Sie können die SDK-Analytics-Optionen beim Erstellen einer neu
 seo-title: SDK-Analytics-Optionen konfigurieren
 solution: Experience Cloud,Analytics
 title: SDK-Analytics-Optionen konfigurieren
-topic: Metriken
+topic: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 65%
 
 ---
 
@@ -25,7 +28,7 @@ Geben Sie Informationen in die folgenden Felder unter **[!UICONTROL SDK-Analytic
 
 * **[!UICONTROL Sitzungstreffer zurückdatieren]**
 
-   Aktivieren oder deaktivieren Sie die Möglichkeit, dass das Adobe-SDK Treffer mit Sitzungsinformationen zurückdatiert. Treffer mit Sitzungsinformationen enthalten derzeit Informationen zu Abstürzen und zur Sitzungsdauer. Wenn diese Einstellung aktiviert wird, datiert das Adobe-SDK Treffer mit Sitzungsinformationen auf 1 Sekunde nach dem letzten Treffer der vorherigen Sitzung zurück. Das bedeutet, dass die Daten zu Abstürzen und zur Sitzung mit dem korrekten Datum, an dem sie stattgefunden haben, korrelieren. Bei jedem Neustart der App wird ein Treffer zurückdatiert. Wenn diese Einstellung deaktiviert wird, hängt das Adobe-SDK die Sitzungsinformationen dem aktuellen Lebenszyklus an.
+   Aktivieren oder deaktivieren Sie die Möglichkeit, dass das Adobe-SDK Treffer mit Sitzungsinformationen zurückdatiert. Treffer mit Sitzungsinformationen enthalten derzeit Informationen zu Abstürzen und zur Sitzungsdauer. Wenn diese Option aktiviert ist, datiert das Adobe-SDK den Treffer für Sitzungsinformationen auf 1 Sekunde nach dem letzten Treffer der vorherigen Sitzung zurück. Das bedeutet, dass Abstürze und Sitzungsdaten mit dem richtigen Datum, an dem sie stattgefunden haben, korrelieren. Bei jedem Neustart der App wird ein Treffer zurückdatiert. Wenn diese Einstellung deaktiviert wird, hängt das Adobe-SDK die Sitzungsinformationen dem aktuellen Lebenszyklus an.
 
 * **[!UICONTROL Datenschutz]**
 
@@ -38,16 +41,16 @@ Geben Sie Informationen in die folgenden Felder unter **[!UICONTROL SDK-Analytic
 
    Geben Sie einen Wert für das Sitzungs-Timeout an.
 
-   Der Standardwert liegt bei 300 Sekunden. Legt die Dauer in Sekunden fest, die zwischen verschiedenen Startvorgängen einer App verstreichen muss, damit ein Startvorgang als neue Sitzung gilt. Dieses Zeitlimit wird auch angewendet, wenn eine Anwendung in den Hintergrund verschoben und später reaktiviert wird. Die Dauer, für welche die App im Hintergrund ausgeführt wird, wird nicht in die Sitzungsdauer eingerechnet.
+   Der Standardwert liegt bei 300 Sekunden. Gibt die Zeitdauer in Sekunden an, die vergehen muss, bevor der Start als neue Sitzung gezählt wird. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten.
 
 * **[!UICONTROL Batch-Limit]**
 
    Geben Sie an, wie viele Treffer in die Warteschlange eingereiht werden sollen, bevor Daten gesendet werden.
 
-   Wenn Treffer sofort gesendet werden sollen, legen Sie diesen Wert auf „0“ fest. Das Batch-Limit stellt den Schwellenwert für die Anzahl der Treffer dar, die in aufeinanderfolgenden Aufrufen gesendet werden sollen. Wenn diese Option beispielsweise auf „10“ festgelegt wird, wird jeder Treffer vor dem 10. Treffer in der Warteschlange abgelegt. Wenn der 10. Treffer eingeht, werden alle 10 Treffer nacheinander gesendet.
+   Wenn Treffer sofort gesendet werden sollen, legen Sie diesen Wert auf „0“ fest. Die Batch-Beschränkung stellt den Schwellenwert für die Anzahl der Treffer dar, die in aufeinander folgenden Aufrufen gesendet werden sollen. Wenn diese Option beispielsweise auf 10 gesetzt ist, wird jeder Treffer vor dem 10. Treffer in der Warteschlange gespeichert. Wenn der 10. Treffer eingeht, werden alle 10 Treffer nacheinander gesendet.
 
 * **[!UICONTROL Mehr Infos]**
 
    Klicken Sie auf **[!UICONTROL Mehr Infos]**, um die Report Suite-ID und den Tracking-Server anzuzeigen, Offline-Tracking zu aktivieren bzw. zu deaktivieren und das verwendete Modell für die Zeichencodierung anzuzeigen (z. B. UTF-8).
 
-   Wenn Offline-Tracking aktiviert ist, werden Daten, die vom Gerät im Offline-Zustand generiert werden, mit einem Zeitstempel versehen und später gesendet. Wenn diese Option deaktiviert ist, werden Offline-Daten verworfen.
+   Wenn die Offline-Verfolgung aktiviert ist, werden vom Gerät erstellte Daten mit einem Zeitstempel versehen und später gesendet. Wenn diese Option deaktiviert ist, werden Offlinedaten verworfen.
