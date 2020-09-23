@@ -1,26 +1,29 @@
 ---
-description: Informationen, die Ihnen dabei helfen, Lebenszyklusmetriken für Android zu implementieren. Lebenszyklusmetriken werden für iOS automatisch gesammelt.
+description: Informationen zur Implementierung von Lebenszyklusmetriken für Android. Lebenszyklusmetriken werden automatisch für iOS erfasst.
 keywords: Xamarin
-seo-description: Informationen, die Ihnen dabei helfen, Lebenszyklusmetriken für Android zu implementieren. Lebenszyklusmetriken werden für iOS automatisch gesammelt.
-seo-title: Implement lifecycle
-solution: Marketing Cloud, Entwickler
-title: Lebenszyklus implementieren
+seo-description: Informationen zur Implementierung von Lebenszyklusmetriken für Android. Lebenszyklusmetriken werden automatisch für iOS erfasst.
+seo-title: Implementieren des Lebenszyklus
+solution: Experience Cloud
+title: Implementieren des Lebenszyklus
 uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 7%
 
 ---
 
 
-# Implement lifecycle {#implement-lifecycle}
+# Implementieren des Lebenszyklus {#implement-lifecycle}
 
-Anhand dieser Informationen können Sie Lebenszyklusmetriken für Android implementieren.
+Diese Informationen unterstützen Sie bei der Implementierung von Lebenszyklusmetriken für Android.
 
 >[!TIP]
 >
->Lebenszyklusmetriken werden für iOS automatisch gesammelt.
+>Lebenszyklusmetriken werden automatisch für iOS erfasst.
 
-For the metrics and dimensions that can be measured automatically by the mobile library after lifecycle is implemented, see [Lifecycle Metrics](/help/ios/metrics.md).
+Informationen zu den Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können, finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md).
 
 ## iOS
 
@@ -28,7 +31,7 @@ Unter iOS werden Lebenszyklusmetriken automatisch erfasst.
 
 ## Android
 
-In your main activity, set the application context for the Android SDK.
+Legen Sie in Ihrer Haupt-Aktivität den Anwendungskontext für das Android-SDK fest.
 
 ```java
 protected override void OnCreate (Bundle bundle) 
