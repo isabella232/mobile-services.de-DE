@@ -5,10 +5,13 @@ seo-description: Sie können Ihre App so konfigurieren, dass sie den Apple Push
 seo-title: App für die Verwendung von APNS oder FCM konfigurieren
 solution: Experience Cloud,Analytics
 title: App für die Verwendung von APNS oder FCM konfigurieren
-topic: Metriken
+topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
-translation-type: ht
-source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 90%
 
 ---
 
@@ -83,12 +86,12 @@ Konfigurieren Ihrer Android-App für die Verwendung von FCM in diesem Szenario:
 
 So konfigurieren Sie Ihre iOS-App für die Verwendung von APNS:
 
-1. Öffnen Sie [https://developer.apple.com/account](https://developer.apple.com/account) und melden Sie sich bei Ihrem [Apple Developer-Konto](https://developer.apple.com/account) an.
+1. Go to [https://developer.apple.com/account](https://developer.apple.com/account) and log in to your [Apple Developer account](https://developer.apple.com/account).
 1. Wählen Sie unter **[!UICONTROL iOS Apps]**, die Option **[!UICONTROL Identifiers]** aus.
 1. Wenn Sie eine App-ID für Push eingerichtet haben, gehen Sie direkt zu Schritt 11.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL +]**, um eine neue App-ID zu erstellen.
-1. Geben Sie im Feld „App ID Description“ eine Beschreibung für die App-ID ein.
-1. Geben Sie im Feld „App ID Suffix“ ein Suffix für die App-ID ein.
+1. Press the **[!UICONTROL +]** button to create a new App ID.
+1. Geben Sie eine App-ID-Beschreibung ein.
+1. Geben Sie ein App-ID-Suffix ein.
 
    >[!IMPORTANT]
    >
@@ -114,10 +117,10 @@ Abrufen des SSL-Zertifikats und des privaten Schlüssels (APNS):
 1. Öffnen Sie **[!UICONTROL Keychain Access]**.
 1. Klicken Sie auf **[!UICONTROL Meine Zertifikate]** und suchen Sie das entsprechende **[!UICONTROL iOS Push Services-Zertifikat]** für Ihre App und Ihre Umgebung.
 
-   Sie erkennen das richtige Zertifikat an der Paket-ID und daran, ob es sich in Entwicklung oder in Produktion befindet.
+   Sie können das richtige Zertifikat identifizieren, indem Sie die Bundle-ID abgleichen und angeben, ob es sich um eine Entwicklungs- oder eine Produktionsdatei handelt.
 
 1. Erweitern Sie das Zertifikat und vergewissern Sie sich, dass es einen privaten Schlüssel enthält.
-1. Klicken Sie mit der rechten Maustaste auf den privaten Schlüssel und wählen Sie **[!UICONTROL Exportieren *`<name of key>`*]** aus.
+1. Klicken Sie mit der rechten Maustaste auf den privaten Schlüssel und wählen Sie **[!UICONTROL Exportieren *`<name of key>`*]**aus.
 1. Geben Sie die erforderlichen Informationen in das Dialogfenster ein und speichern Sie die neue `.p12`-Datei.
 
    Sie müssen kein Passwort eingeben.
