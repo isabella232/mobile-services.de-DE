@@ -3,13 +3,13 @@ description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trac
 keywords: android;library;mobile;sdk
 seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App vom Appstore herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst das SDK automatisch die Akquisedaten und sendet sie an Adobe Mobile Services.
 seo-title: Mobile App – Akquise
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobile App – Akquise
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%
 
