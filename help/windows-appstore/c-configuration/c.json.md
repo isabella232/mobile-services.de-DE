@@ -2,12 +2,15 @@
 description: Informationen zur Verwendung der ADBMobile JSON-Konfigurationsdatei.
 seo-description: Informationen zur Verwendung der ADBMobile JSON-Konfigurationsdatei.
 seo-title: ADBMobileConfig.json-Konfigurationsdatei
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json-Konfigurationsdatei
 topic: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '617'
+ht-degree: 43%
 
 ---
 
@@ -20,7 +23,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **rsids**
 
-   (Erforderlich für Analytics) Eine oder mehrere Report Suites zum Empfang von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommas getrennt werden, wobei kein Leerzeichen dazwischen steht.
+   (Erforderlich für Analytics) Eine oder mehrere Report Suites zum Empfang von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommata getrennt werden, wobei kein Leerzeichen dazwischen steht.
 
    * Die folgenden Codebeispiele für diese Variable:
 
@@ -40,7 +43,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **charset**
 
-   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/config-vars/charset.html).
 
 * **ssl**
 
@@ -52,11 +55,11 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    >[!IMPORTANT]
    >
-   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled`muss die Konfigurationseigenschaft ** „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich bitte an Kundenunterstützung. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* die Konfigurationseigenschaft „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,  wenden Sie sich bitte an  Kundenunterstützung. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
 * **lifecycleTimeout**
 
-   Gibt die Zeitdauer in Sekunden an, die vergehen muss, bevor der Start als neue Sitzung gezählt wird. Dieser Timeout gilt auch, wenn Ihre Anwendung in den Hintergrund gesendet und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund verbringt, ist nicht in der Sitzungslänge enthalten. Der Standardwert ist 300 Sekunden.
+   Gibt die Zeitdauer in Sekunden an, die vergehen muss, bevor der Start als neue Sitzung gezählt wird. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten. Der Standardwert ist 300 Sekunden.
 
 * **batchLimit**
 
