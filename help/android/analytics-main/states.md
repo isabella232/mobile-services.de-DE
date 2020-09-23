@@ -4,10 +4,13 @@ seo-description: Status sind die verschiedenen Bildschirme oder Ansichten in der
 seo-title: App-Zustände verfolgen
 solution: Experience Cloud,Analytics
 title: App-Zustände verfolgen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 88%
 
 ---
 
@@ -68,11 +71,11 @@ Die Kontextdatenwerte müssen benutzerdefinierten Variablen in Adobe Mobile Serv
 
 ## App-Statusberichte {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Hier können Sie ermitteln, wie Benutzer durch Ihre App navigieren und welche Status am häufigsten angezeigt werden.
+Zustände werden in der Regel mithilfe eines Pfadberichts angezeigt, der Ihnen veranschaulicht, wie Benutzer in Ihrer App navigieren und welche Zustände am häufigsten angezeigt werden.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. Ein Beispielpfad ist  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Einstellungen]**  &gt; **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **[!UICONTROL Seiten]**, **[!UICONTROL Seitenansichten]** oder **[!UICONTROL Pfad]**. |
 | Ad-hoc-Analysen | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden, z. B. in der Dimension **[!UICONTROL Seite]**, der Metrik **[!UICONTROL Seitenansichten]** und dem Bericht **[!UICONTROL Pfad]**. |
 
