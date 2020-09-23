@@ -4,10 +4,13 @@ seo-description: Verarbeitungsregeln werden verwendet, um die in Kontextdatenvar
 seo-title: Verarbeitungsregeln und Kontextdaten
 solution: Experience Cloud,Analytics
 title: Verarbeitungsregeln und Kontextdaten
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 51%
 
 ---
 
@@ -18,14 +21,14 @@ Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten
 
 Weitere Informationen finden Sie unter folgenden Themen:
 
-* [Training zu Verarbeitungsregeln](https://tv.adobe.com/embed/1181/16506/) beim Summit 2013
+* [Schulung](https://tv.adobe.com/embed/1181/16506/) zu Verarbeitungsregeln anlässlich des Gipfeltreffens 2013
 * Autorisierung zur Verwendung der Verarbeitungsregeln erhalten
 
    Weitere Informationen zu Verarbeitungsregeln finden Sie unter Übersicht über [Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 
-* Gruppieren Sie Ihre Kontextdatenvariablen durch den Einsatz von Namespaces, um eine logische Ordnung zu wahren.
+* Gruppieren Sie Ihre Kontextdatenvariablen mithilfe von Namensräumen, da Sie damit eine logische Reihenfolge beibehalten können.
 
    Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
 
@@ -35,27 +38,27 @@ Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
    "product.color":"blue"
    ```
 
-* Kontextdatenvariablen werden in der Oberfläche der Verarbeitungsregeln alphabetisch sortiert. So können Sie schnell ermitteln, welche Variablen sich im selben Namespace befinden.
+* Kontextdatenvariablen werden in der Benutzeroberfläche der Verarbeitungsregeln alphabetisch sortiert, sodass Sie schnell sehen können, welche Variablen sich im selben Namensraum befinden.
 
-   Nutzen Sie für die Benennung von Kontextdatenschlüsseln nicht die eVar oder Eigenschaftennummer:
+   Vermeiden Sie die Benennung von Kontextdatenschlüsseln mithilfe der evar- oder prop-Nummer:
 
    ```js
    "eVar1":"jimbo"
    ```
 
-   Dadurch wird es *etwas* einfacher, wenn Sie die einmalige Zuordnung in den Verarbeitungsregeln durchführen. Sie verlieren dadurch jedoch auch die Lesbarkeit während des Debuggings und künftiger Codeaktualisierungen, was wiederum komplizierter sein kann. Verwenden Sie stattdessen beschreibende Namen für Schlüssel und Werte:
+   Dies kann bei der einmaligen Zuordnung in Verarbeitungsregeln *etwas* einfacher sein, Sie verlieren jedoch die Lesbarkeit beim Debugging und bei zukünftigen Codeaktualisierungen, was schwieriger sein kann. Verwenden Sie stattdessen aussagekräftige Namen für Schlüssel und Werte:
 
    ```js
    "username":"jimbo"
    ```
 
-* Kontextvariablen, die Zählerereignisse definieren, sollten auf „1“ festgelegt werden:
+* Kontextvariablen, die Zähler-Ereignis definieren, sollten auf 1 eingestellt werden:
 
    ```js
    "logon":"1"
    ```
 
-* Kontextvariablen, die Inkrementereignisse definieren, können das Ereignis als Schlüssel und die zu erhöhende Menge als Wert aufweisen:
+* Kontextdatenvariablen, die Inkrementor-Ereignis definieren, können das Ereignis als Schlüssel und den Inkrementierungswert als Wert haben:
 
    ```js
    "levels completed":"6"
