@@ -2,12 +2,15 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Analytics
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Analytics
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 11%
 
 ---
 
@@ -20,32 +23,32 @@ Nachdem Sie die Bibliothek zum Projekt hinzugefügt haben, können Sie beliebige
 >
 >Stellen Sie sicher, dass Sie `ADBMobile.h` in Ihre Klasse importieren.
 
-## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
+## Mobilanwendungsberichte in Analytics aktivieren {#section_F2F9234009184F20BA36B5CDE872B424}
 
-Bevor Sie Code hinzufügen, bitten Sie Ihren Analytics-Administrator, folgende Schritte auszuführen, um Mobile App-Lebenszyklus-Tracking zu ermöglichen. Dadurch wird sichergestellt, dass Ihre Report Suite zur Erfassung von Metriken bereit ist, wenn Sie die Entwicklung beginnen.
+Bevor Sie Code hinzufügen, lassen Sie Ihren Analytics-Administrator Folgendes ausführen, um die Lebenszyklusverfolgung für Mobilanwendungen zu aktivieren. Dadurch wird sichergestellt, dass Ihre Report Suite zu Beginn der Entwicklung Metriken erfassen kann.
 
-1. Open **[!UICONTROL Admin Tools]** &gt; **[!UICONTROL Report Suites]** and select your mobile report suite(s).
-1. Click **[!UICONTROL Edit Settings]** &gt; **[!UICONTROL Mobile Management]** &gt; **[!UICONTROL Mobile Application Reporting]**.
+1. Öffnen Sie **[!UICONTROL Admin Tools]** > **[!UICONTROL Report Suites]** und wählen Sie Ihre mobile(n) Report Suite(s) aus.
+1. Klicken Sie auf Einstellungen **[!UICONTROL bearbeiten]** > **[!UICONTROL Mobilverwaltung]** > **[!UICONTROL Mobilanwendungs-Berichte]**.
 
    ![](assets/mobile-settings.png)
 
-1. Klicken Sie auf **[!UICONTROL Neueste Anwendungsberichte aktivieren]**.
+1. Klicken Sie auf Neueste App-Berichte **[!UICONTROL aktivieren]**.
 
-   Optionally, you can also click **[!UICONTROL Enable Mobile Location Tracking]** and **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]**.
+   Optional können Sie auch auf **[!UICONTROL Verfolgung]** mobiler Standorte aktivieren und ältere Berichte und Zuordnung für Hintergrundtreffer **[!UICONTROL aktivieren]** klicken.
 
    ![](assets/enable-lifecycle.png)
 
-Die Lebenszyklusmetriken können jetzt erfasst werden und im Menü Berichte in der Oberfläche für Marketingberichte werden **Mobilanwendungsberichte** angezeigt.
+Lebenszyklusmetriken können jetzt erfasst werden, und Mobilanwendungsberichte werden im Menü **[!UICONTROL Berichte]** in der Benutzeroberfläche der Marketing-Berichte angezeigt.
 
 
 ### Neue Versionen
 
-Regelmäßig werden neue Versionen der Mobilanwendungs-Berichterstellung veröffentlicht. Neue Versionen werden nicht automatisch auf Ihre Report Suite angewendet. Sie müssen diese Schritte wiederholen, um die Aktualisierung durchzuführen. Jedes Mal, wenn Sie Ihrer Anwendung eine neue Experience Cloud-Funktion hinzufügen, wird empfohlen, diese Schritte zu wiederholen, um sicherzustellen, dass Sie über die neueste Konfiguration verfügen.
+In regelmäßigen Abständen werden neue Versionen von Mobile Application Berichte veröffentlicht. Neue Versionen werden nicht automatisch auf Ihre Report Suite angewendet. Wiederholen Sie diese Schritte, um die Aktualisierung durchzuführen. Jedes Mal, wenn Sie Ihrer App neue Experience Cloud-Funktionen hinzufügen, sollten Sie diese Schritte wiederholen, um sicherzustellen, dass Sie über die neueste Konfiguration verfügen.
 
 
-## Lifecycle metrics {#section_532702562A7A43809407C9A2CBA80E1E}
+## Lebenszyklusmetriken {#section_532702562A7A43809407C9A2CBA80E1E}
 
-Um Lebenszyklusmetriken in Ihrer Anwendung zu erfassen, fügen Sie Aufrufe bei Aktivierung der Anwendung hinzu, wie in den folgenden Beispielen gezeigt.
+Um Lebenszyklusmetriken in Ihrer App zu erfassen, fügen Sie Aufrufe hinzu, wenn die Anwendung aktiviert wird, wie in den folgenden Beispielen gezeigt.
 
 
 ### WinJS in default.js
@@ -122,34 +125,34 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-If `CollectLifecycleData()` is called twice in the same session, then your application will report a crash on every call after the first. Das SDK setzt eine Markierung, wenn die Anwendung heruntergefahren wird, um eine erfolgreiche Beendigung anzugeben. If this flag is not set, `CollectLifecyleData()` reports a crash.
+Wenn die Anwendung in derselben Sitzung zweimal aufgerufen `CollectLifecycleData()` wird, meldet sie bei jedem Aufruf nach dem ersten Absturz einen Absturz. Das SDK setzt beim Beenden der Anwendung ein Flag, das auf einen erfolgreichen Beenden hinweist. Wenn dieses Flag nicht gesetzt ist, `CollectLifecyleData()` wird ein Absturz gemeldet.
 
 
-## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## Events, Props und eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-Wenn Sie sich die [ADBMobile-Klassen- und Methodenreferenz](/help/windows-appstore/c-configuration/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignisse, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer Anwendung zuweisen. Stattdessen nutzt das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten zwecks Reporting Analytics-Variablen zuzuordnen.
+Wenn Sie sich die [ADBMobile-Klassen- und Methodenreferenz](/help/windows-appstore/c-configuration/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
 
 Verarbeitungsregeln bieten mehrere Vorteile:
 
-* Sie können Ihre Datenzuweisung ändern, ohne ein Update im App Store einzureichen.
-* Sie können relevante Namen für Ihre Daten verwenden, anstatt Variablen festzulegen, die spezifisch für eine Report Suite sind.
-* Es ist kaum Aufwand nötig, um zusätzliche Daten zu senden. Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
+* Das Senden zusätzlicher Daten hat kaum Auswirkungen. Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
 
-Alle Werte, die Sie Variablen direkt zugewiesen haben, müssen stattdessen Kontextdaten hinzugefügt werden.
+Alle Werte, die Sie direkt Variablen zuweisen, sollten stattdessen den Kontextdaten hinzugefügt werden.
 
 
 ## Verarbeitungsregeln {#section_66EE762EEA5E4728864166201617DEBF}
 
-Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Eigenschaften und andere Variablen für Berichte zu kopieren.
+Verarbeitungsregeln werden verwendet, um die Daten, die Sie in Kontextdatenvariablen senden, zu Berichten in &quot;evars&quot;, &quot;props&quot;und andere Variablen zu kopieren.
 
-[Training zu Verarbeitungsregeln](https://tv.adobe.com/embed/1181/16506/) beim Summit 2013
+[Schulung](https://tv.adobe.com/embed/1181/16506/) zu Verarbeitungsregeln anlässlich des Gipfeltreffens 2013
 
-[Übersicht über Verarbeitungsregeln](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Übersicht über Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Genehmigung zur Verwendung von Verarbeitungsregeln erhalten](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Autorisierung zur Verwendung der Verarbeitungsregeln erhalten](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
-Es ist empfehlenswert, die Kontextdatenvariablen mithilfe von „Namespaces“ zu gruppieren, um eine logische Ordnung beizubehalten. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
+Es wird empfohlen, Kontextdatenvariablen mithilfe von &quot;Namensräumen&quot;zu gruppieren, da dies eine logische Reihenfolge gewährleistet. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
 
 ```js
 "product.type":"hat" 
@@ -157,27 +160,27 @@ Es ist empfehlenswert, die Kontextdatenvariablen mithilfe von „Namespaces“ z
 "product.color":"blue"
 ```
 
-Kontextdatenvariablen werden auf der Verarbeitungsregeloberfläche alphabetisch sortiert. Mit Namespaces können Sie schnell nachvollziehen, welche Variablen sich im selben Namespace befinden.
+Kontextdatenvariablen werden in der Benutzeroberfläche der Verarbeitungsregeln alphabetisch sortiert, sodass Namensraum schnell Variablen im selben Namensraum anzeigen können.
 
-Wir haben außerdem erfahren, dass einige von Ihnen Kontextdatenschlüssel mithilfe der eVar- oder prop-Nummer benennen:
+Außerdem haben wir gehört, dass einige von Ihnen Kontextdatenschlüssel mit der eVar- oder prop-Nummer benennen:
 
 ```js
 "eVar1":"jimbo"
 ```
 
-Dadurch wird es *etwas* einfacher, wenn Sie die einmalige Zuordnung in den Verarbeitungsregeln durchführen. Sie verlieren dadurch jedoch auch die Lesbarkeit während des Debuggings und künftiger Codeaktualisierungen, was wiederum komplizierter sein kann. Es wird stattdessen dringend empfohlen, dass Sie beschreibende Namen für Schlüssel und Werte verwenden:
+Dies kann bei der einmaligen Zuordnung in Verarbeitungsregeln *etwas* einfacher sein, Sie verlieren jedoch die Lesbarkeit während des Debuggens, und zukünftige Code-Aktualisierungen können schwieriger sein. Stattdessen empfehlen wir dringend, aussagekräftige Namen für Schlüssel und Werte zu verwenden:
 
 ```js
 "username":"jimbo"
 ```
 
-Legen Sie für Kontextvariablen, die Zählerereignisse definieren, den Wert „1“ fest:
+Setzen Sie Kontextvariablen, die Zähler-Ereignis definieren, auf den Wert &quot;1&quot;:
 
 ```js
 "logon":"1"
 ```
 
-Kontextdatenvariablen, die Inkrementierungsereignisse definieren, können den Wert zum Inkrementieren enthalten:
+Kontextdatenvariablen, die inkrementierende Ereignis definieren, können den zu inkrementierenden Wert aufweisen:
 
 ```js
 "levels completed":"6"
@@ -185,31 +188,31 @@ Kontextdatenvariablen, die Inkrementierungsereignisse definieren, können den We
 
 >[!NOTE]
 >
->Adobe behält den Namespace `a.`. Neben dieser kleinen Einschränkung müssen Kontextvariablen nur eindeutig für Ihre Unternehmensanmeldung sein, um Konflikte zu vermeiden.
+>Adobe behält sich den Namespace `a.` vor. Neben dieser kleinen Einschränkung müssen Kontextdatenvariablen in Ihrer Firma eindeutig sein, um Kollisionen zu vermeiden.
 
-## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variable „products“ {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Um *`products`* das mobile SDK festzulegen, müssen Sie eine spezielle Syntax verwenden. Siehe [Produktvariable](/help/windows-appstore/analytics/products/products.md).
 
-## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
+## (Optional) Offline-Verfolgung aktivieren {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). Bevor Sie die Offline-Verfolgung aktivieren, beachten Sie die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben sind.
+Um Treffer zu speichern, wenn das Gerät offline ist, können Sie die Offline-Verfolgung in der [ADBMobileConfig.json-Konfiguration](/help/windows-appstore/c-configuration/methods.md)aktivieren. Bevor Sie die Offline-Verfolgung aktivieren, beachten Sie die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben sind.
 
-## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
+## Geostandort und Zielpunkte {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-Standort ermöglicht Ihnen, Standortdaten (Breitengrad/Längengrad) und vordefinierte Zielpunkte zu messen. Each `TrackLocation` call sends:
+Mithilfe der geografischen Position können Sie Standortdaten (Breiten-/Längengrad) und vordefinierte Zielpunkte messen. Jeder `TrackLocation` Aufruf sendet:
 
-* Breitengrad/Längengrad und Zielpunkt (wenn dieser unter die in der Konfigurationsdatei `ADBMobileConfig.json` definierten Zielpunkte fällt). Diese werden an die Variablen der mobilen Lösung zum automatischen Reporting weitergegeben.
-* Distanz vom Zentrum und Genauigkeit werden als Kontextdaten weitergegeben. Erfassen Sie diesen Wert mithilfe einer Verarbeitungsregel.
+* Breitengrad/Längengrad und POI (wenn innerhalb eines in der `ADBMobileConfig.json` Konfigurationsdatei definierten POI). Diese werden für den automatischen Berichte an mobile Lösungsvariablen übergeben.
+* Entfernung von Zentrum und Genauigkeit als Kontextdaten weitergegeben. Erfassen Sie mithilfe einer Verarbeitungsregel.
 
-So verfolgen Sie einen Standort:
+So verfolgen Sie einen Ort:
 
 ```js
 var ADB = ADBMobile; 
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-Wenn der folgende Zielpunkt in der Konfigurationsdatei `ADBMobileConfig.json` definiert ist:
+Wenn der folgende POI in der `ADBMobileConfig.json` Konfigurationsdatei definiert ist:
 
 ```js
 "poi" : [ 
@@ -217,7 +220,7 @@ Wenn der folgende Zielpunkt in der Konfigurationsdatei `ADBMobileConfig.json` de
         ]
 ```
 
-Wenn der Gerätestandort in einem Radius von 7.000 Metern Entfernung vom definierten Punkt festgestellt wird, dann wird eine `a.loc.poi`-Kontextdatenvariable gesendet, die den Wert „San Francisco“ mit dem Treffer `TrackLocation` enthält. Eine `a.loc.dist`-Kontextvariable wird gesendet, die den Abstand von den definierten Koordinaten in Metern enthält.
+Wenn die Geräteposition innerhalb eines Umkreises von 7000 Metern vom definierten Punkt bestimmt wird, wird eine `a.loc.poi` Kontextdatenvariable mit dem Wert &quot;San Francisco&quot;mit dem `TrackLocation` Treffer gesendet. An `a.loc.dist` context variable is sent with the distance in meters from the defined coordinates.
 
 ## Lifetime value {#section_D2C6971545BA4D639FBE07F13EF08895}
 
@@ -234,12 +237,12 @@ cdata["PurchasePrice"] = purchasePrice;
 ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 ```
 
-## Timed actions {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
+## Zeitgesteuerte Aktionen {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
 
-Mit zeitgesteuerten Aktionen können Sie die in der App verbrachte Zeit und die Gesamtzeit zwischen dem Anfang und dem Ende einer Aktion messen. Das SDK berechnet die Dauer in jeder Sitzung und die (sitzungsübergreifende) Gesamtzeit, die zum Abschluss einer Aktion benötigt wird. Damit können Segmente für den Vergleich der Zeit bis zum Kauf, Durchgänge und Checkoutfluss usw. verglichen werden.
+Mit zeitgesteuerten Aktionen können Sie die In-App-Zeit und die Gesamtzeit zwischen dem Beginn und dem Ende einer Aktion messen. Das SDK berechnet die Dauer der Sitzung und die Gesamtzeit (sitzungsübergreifend), die zum Abschluss der Aktion erforderlich ist. Auf diese Weise können Segmente definiert werden, die zeitlich mit dem Kauf verglichen werden sollen, Übermittlungsstufe, Kassengang usw.
 
-* Sitzungsübergreifende Gesamtdauer in Sekunden in der App zwischen Start und Ende
-* Gesamtdauer in Sekunden zwischen Start und Ende (Ist-Zeit)
+* Gesamtanzahl der App-Sekunden zwischen Beginn und Ende - Sitzungen
+* Gesamtanzahl der Sekunden zwischen Beginn und Ende (Uhrzeit)
 
 ```js
 // Timed Action Start Example 
