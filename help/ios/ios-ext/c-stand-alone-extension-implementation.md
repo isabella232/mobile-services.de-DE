@@ -1,20 +1,23 @@
 ---
-description: Ab iOS 10 können Sie durch Apple eine als eigenständige Erweiterung bezeichnete Erweiterung erstellen, die ohne eine übergeordnete App verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da keine übergeordnete App vorhanden ist, für die Daten freigegeben werden müssen.
-seo-description: Ab iOS 10 können Sie durch Apple eine als eigenständige Erweiterung bezeichnete Erweiterung erstellen, die ohne eine übergeordnete App verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da keine übergeordnete App vorhanden ist, für die Daten freigegeben werden müssen.
+description: Ab iOS 10 können Sie mit Apple eine Erweiterung erstellen, die als eigenständige Erweiterung bezeichnet wird und ohne eine App, die sie enthält, verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da es keine App gibt, mit der Daten freigegeben werden können.
+seo-description: Ab iOS 10 können Sie mit Apple eine Erweiterung erstellen, die als eigenständige Erweiterung bezeichnet wird und ohne eine App, die sie enthält, verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da es keine App gibt, mit der Daten freigegeben werden können.
 seo-title: Implementierung einer eigenständigen Erweiterung
 solution: Experience Cloud,Analytics
 title: Implementierung einer eigenständigen Erweiterung
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 44%
 
 ---
 
 
 # Implementierung einer eigenständigen Erweiterung {#stand-alone-extension-implementation}
 
-Ab iOS 10 können Sie durch Apple eine als eigenständige Erweiterung bezeichnete Erweiterung erstellen, die ohne eine übergeordnete App verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da keine übergeordnete App vorhanden ist, für die Daten freigegeben werden müssen.
+Ab iOS 10 können Sie mit Apple eine Erweiterung erstellen, die als eigenständige Erweiterung bezeichnet wird und ohne eine App, die sie enthält, verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da es keine App gibt, mit der Daten freigegeben werden können.
 
 >[!IMPORTANT]
 >
@@ -50,7 +53,7 @@ Zusätzliche Informationen:
       Dieser Wert bedeutet, dass der Treffer aus der übergeordneten App stammt.
    * `a.RunMode = Extension`
 
-      Dieser Wert bedeutet, dass der Treffer aus der Erweiterung stammt.
+      Dieser Wert bedeutet, dass der Treffer von der Erweiterung stammt.
 
-* Für iOS-Erweiterungs-Apps wird kein Lebenszyklusaufruf ausgelöst.
+* In iOS-Erweiterungs-Apps wird kein Lebenszyklusaufruf ausgelöst.
 
