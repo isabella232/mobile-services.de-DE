@@ -5,10 +5,13 @@ seo-description: Mit diesem Plug-in können Sie iOS-AppMeasurement-Aufrufe von I
 seo-title: PhoneGap-Plug-in
 solution: Experience Cloud,Analytics
 title: PhoneGap-Plug-in
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: ht
-source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +22,7 @@ Mit diesem Plug-in können Sie iOS-AppMeasurement-Aufrufe von Ihrem PhoneGap-Pro
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -62,7 +65,7 @@ So schließen Sie AppMeasurement ein:
 
 ### App-Berechtigungen hinzufügen
 
-Für die AppMeasurement-Bibliothek ist Folgendes erforderlich:
+Die AppMeasurement-Bibliothek erfordert Folgendes:
 
 1. Starten Sie die XCode IDE und öffnen Sie die App.
 1. Ziehen Sie den Ordner **[!UICONTROL Adobe Mobile]** in Ihr Xcode-Projekt und nehmen Sie die folgenden Einstellungen vor:
@@ -70,6 +73,7 @@ Für die AppMeasurement-Bibliothek ist Folgendes erforderlich:
    1. Wählen Sie **[!UICONTROL Elemente in den Zielgruppenordner kopieren (falls erforderlich)]**.
    1. Wählen Sie **[!UICONTROL Gruppen für hinzugefügte Ordner erstellen]**.
    1. Wählen Sie die Ziele aus, an denen Sie den AppMeasurement-Code verwenden möchten, und klicken Sie auf **[!UICONTROL Fertigstellen]**.
+
    ![](assets/xcode-settings.png){Breite=„672“}
 
 1. Erweitern Sie auf der Registerkarte **[!UICONTROL Build-Phasen]** des Ziels Ihres Projekts den Abschnitt **[!UICONTROL Binärdatei mit Bibliotheken verknüpfen]** und fügen Sie die folgenden Bibliotheken hinzu:
