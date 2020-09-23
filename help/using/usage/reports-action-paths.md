@@ -5,10 +5,13 @@ seo-description: Der Bericht „Aktionspfade“ dient der Pfadanalyse. Er zeigt 
 seo-title: Bericht „Action Paths“
 solution: Experience Cloud,Analytics
 title: Bericht „Action Paths“
-topic: Berichte, Metriken
+topic: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 69%
 
 ---
 
@@ -25,40 +28,40 @@ Bei den Berichten **[!UICONTROL Ansichtspfade]** und **[!UICONTROL Aktionspfade]
 
 ![](assets/action_paths.png)
 
-Jeder boxförmige Knoten stellt einen Status in den Pfaden der Benutzer durch eine App dar. In der oben stehenden Grafik beispielsweise stellt der oberste Knoten die Anzahl der Benutzer dar, die die App gestartet und dann ein Foto aus der Galerie ausgewählt haben.
+Jeder boxförmige Knoten stellt einen Status in den Pfaden der Benutzer durch eine App dar. In der oben stehenden Grafik steht der oberste Knoten beispielsweise für die Anzahl der Benutzer, die die App gestartet und dann ein Foto aus der Galerie ausgewählt haben.
 
 Um die Optionen zur Änderung des Diagramms anzuzeigen, klicken Sie auf einen Knoten und anschließend auf **[!UICONTROL Fokus]** oder **[!UICONTROL Erweitern]**. Wenn Sie beispielsweise im obersten Knoten auf den Status **[!UICONTROL PhotoPicked]** klicken, werden die Symbole **[!UICONTROL Fokus]** und **[!UICONTROL Erweitern]** angezeigt.
 
 ![](assets/action_paths_icons.png)
 
-Klicken Sie zum Erweitern auf das Symbol **[!UICONTROL +]**. Mit dieser Option werden zusätzliche Pfade angezeigt, die zum Knoten hin oder von ihm weg führen. In der unten stehenden Grafik entspricht Status 1 dem Starten der App und Status 2 der Auswahl eines Fotos (das zuvor erweiterte Element). Status 3 enthält die verschiedenen Pfade, auf denen sich Benutzer bewegt haben:
+To expand, click the **[!UICONTROL +]** icon. Diese Option zeigt die zusätzlichen Pfade an, die in den Knoten eingehen oder aus ihm ausgehen. In der unten stehenden Grafik wird die App von Status 1 gestartet, von Status 2 wird ein Foto ausgewählt (das Element, das Sie zuvor erweitert haben), und Status 3 enthält die verschiedenen Pfade, die Benutzer verwendet haben:
 
-* Auswahl eines Elements
+* Auswählen eines Elements
 * Hinzufügen eines Elements
 * Ziehen eines Elements
-* Größenänderung eines Elements
+* Skalieren eines Elements
 
 Das Erweitern eines Status ähnelt einem Trichter.
 
 ![Aktionspfad zum Erweitern](assets/action_paths_expand.png)
 
-Um den Knoten zu isolieren und Pfade anzuzeigen, die zum ausgewählten Pfad bzw. von ihm weg führen, klicken Sie auf das Symbol ![Fokussymbol](assets/icon_focus.png). In der unten stehenden Grafik wurden folgende Pfade abgeschlossen, **bevor** Benutzer ein Foto ausgewählt haben:
+Um den Knoten zu isolieren und Pfade anzuzeigen, die zum ausgewählten Pfad bzw. von ihm weg führen, klicken Sie auf das Symbol ![Fokussymbol](assets/icon_focus.png). In der unten stehenden Grafik wurden die folgenden Pfade abgeschlossen, **bevor** Benutzer ein Foto ausgewählt haben:
 
 * Drehen eines Elements
-* Größenänderung eines Elements
+* Skalieren eines Elements
 * Ziehen eines Elements
 * Entfernen eines Elements
 
-Benutzer, die ein Foto ausgewählt haben, haben folgende Pfade abgeschlossen, **nachdem** das Foto ausgewählt wurde:
+Von den Benutzern, die ein Foto ausgewählt haben, wurden die folgenden Pfade **nach** Auswahl des Fotos abgeschlossen:
 
-* Auswahl eines Elements
+* Auswählen eines Elements
 * Hinzufügen eines Elements
 * Ziehen eines Elements
-* Größenänderung eines Elements
+* Skalieren eines Elements
 
 ![Aktionspfad Fokus](assets/action_paths_focus.png)
 
-Sie können mehrere Knoten fokussieren oder erweitern, um eine detaillierte Darstellung der Pfade zu erhalten, denen Benutzer in Ihrer App folgen. Beispiel:
+Sie können mehrere Knoten fokussieren oder erweitern, um eine detaillierte Ansicht der Pfade zu erhalten, die Benutzer in Ihrer App verwenden. Beispiel:
 
 ![Aktionspfad – Mehrere](assets/action_paths_mult.png)
 
