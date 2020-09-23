@@ -1,21 +1,24 @@
 ---
-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie im Kontextdatenparameter eine spezielle Syntax verwenden, um „products“ direkt im Server-Aufruf festzulegen.
-keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie im Kontextdatenparameter eine spezielle Syntax verwenden, um „products“ direkt im Server-Aufruf festzulegen.
+description: Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte für den Serveraufruf festzulegen.
+keywords: android;library;mobile;sdk
+seo-description: Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte für den Serveraufruf festzulegen.
 seo-title: Variable „products“
 solution: Experience Cloud,Analytics
 title: Variable „products“
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: ht
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 48%
 
 ---
 
 
 # Variable „products“ {#products-variable}
 
-Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile-SDK müssen Sie im Kontextdatenparameter eine spezielle Syntax verwenden, um „products“ direkt im Server-Aufruf festzulegen.
+Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte für den Serveraufruf festzulegen.
 
 Um die Variable *products* festzulegen, setzen Sie einen Kontextdatenschlüssel auf `"&&products"` und legen Sie mithilfe der für die Variable *products* definierten Syntax den Wert fest:
 
