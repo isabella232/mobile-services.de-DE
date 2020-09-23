@@ -4,11 +4,14 @@ keywords: mobile
 seo-description: Sie können eine interaktive Landkarte anzeigen, auf der Ihre Zielpunkte und andere Datenmarkierungen dargestellt werden.
 seo-title: Landkarte
 solution: Experience Cloud,Analytics
-title: Landkarte
-topic: Metriken
+title: Zuordnung
+topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 74%
 
 ---
 
@@ -23,10 +26,10 @@ Im Folgenden einige wichtige Hinweise:
 
 * Sie können die Landkarte vergrößern oder verkleinern.
 
-   Diese Funktion ist beispielsweise nützlich, wenn zwei Zielpunkte nahe beieinanderliegen. Durch Vergrößern der Karte werden mehr Details angezeigt.
-* Die Zielpunkte werden blau dargestellt.
+   Diese Funktion ist beispielsweise nützlich, wenn Sie zwei Punkte von Interesse haben, die nahe beieinander liegen. Durch Vergrößern der Karte können Sie die Ansicht detaillierter gestalten.
+* Ihre Zielpunkte werden blau dargestellt.
 
-   Alte Datenmarkierungen, wie z. B. Starts, werden schwarz dargestellt. Klicken Sie auf eine Markierung, um weitere Informationen anzuzeigen.
+   Andere Datenmarkierungen, z. B. Starts, werden schwarz angezeigt. Klicken Sie auf eine Markierung, um weitere Informationen Ansicht.
 
 Wenn Sie auf ![Ebenen](assets/map_layers.png) klicken, können Sie zwischen folgenden Optionen wählen:
 
@@ -43,11 +46,11 @@ Zum Anzeigen der Landkarte im Satellitenmodus.
 
 * **[!UICONTROL Heatmap]**
 
-   Zum Festlegen, ob Heatmap-Markierungen angezeigt werden sollen. Je intensiver die Farbe, desto häufiger wird die Bedingung (z. B. Starts) erfüllt.
+   Legen Sie fest, ob Heat-Map-Markierungen angezeigt werden sollen. Je farbintensiver, desto häufiger wird die Bedingung (z. B. Starts) erfüllt.
 
 * **[!UICONTROL POI]**
 
-   Zum Festlegen, ob Ihre Zielpunkte angezeigt werden sollen.
+   Wählen Sie aus, ob Ihre Zielpunkte angezeigt werden sollen.
 
 Für diesen Bericht können folgende Optionen konfiguriert werden:
 
