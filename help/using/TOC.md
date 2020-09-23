@@ -1,19 +1,19 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services-Handbuch
+user-guide-title: Handbuch für Mobile Services
 breadcrumb-title: Mobile Services Guide
 user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and optimize their experiences.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
 ht-degree: 100%
 
 ---
 
 
-# Mobile Services-Handbuch {#using}
+# Handbuch für Mobile Services {#using}
 
 + [Adobe Mobile Services](home.md)
 + [Versionshinweise](whatsnew.md)
