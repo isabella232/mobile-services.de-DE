@@ -3,11 +3,14 @@ description: Mit diesem Plug-in senden Sie Adobe Analytics-Aufrufe aus Ihren Uni
 keywords: Unity
 seo-description: Mit diesem Plug-in senden Sie Adobe Analytics-Aufrufe aus Ihren Unity-Anwendungen heraus.
 seo-title: Unity Plug-in für die iOS- und Android 4.x-SDKs
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Unity Plug-in für die iOS- und Android 4.x-SDKs
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: ht
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +28,7 @@ Laden Sie die Datei ADBMobile.unitypackage von GitHub herunter.
 
 Im Folgenden finden Sie den Inhalt der Datei `ADBMobile.unitypackage`:
 
-* Assets (Stammverzeichnis)
+* Assets (Stammordner)
 
    * ADBMobile
 
@@ -36,7 +39,7 @@ Im Folgenden finden Sie den Inhalt der Datei `ADBMobile.unitypackage`:
 
          * adobeMobileLibrary-{version}.jar
          * AndroidManifest.xml
-         * assets
+         * Assets
 
             * ADBMobileConfig.json
       * iOS
