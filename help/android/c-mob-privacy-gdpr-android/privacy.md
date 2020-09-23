@@ -4,10 +4,13 @@ seo-description: Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlö
 seo-title: Auswahlstatus eines Benutzers festlegen
 solution: Experience Cloud,Analytics
 title: Auswahlstatus eines Benutzers festlegen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 81%
 
 ---
 
@@ -35,16 +38,16 @@ Die folgende Tabelle beschreibt die einzelnen Datenschutzstatus:
 * **Opt-in**
 
    * **Analytics**: Treffer werden gesendet.
-   * **Target**: Mbox-Anfragen werden gesendet.
-   * **Audience Manager**: Signale und ID-Synchronisationen werden gesendet.
+   * **Zielgruppe**: Mbox-Anfragen werden gesendet.
+   * **Audience Manager**: Signale und ID-Synchronisierungen werden gesendet.
    * Wert in der JSON-Konfigurationsdatei: `optedin`
    * Wert in `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_OPT_IN`
 
 * **Opt-out**
 
    * **Analytics**: Treffer werden verworfen.
-   * **Target**: Mbox-Anfragen sind nicht zulässig.
-   * **Audience Manager**: Signale und ID-Synchronisationen sind nicht zulässig.
+   * **Zielgruppe**: Mbox-Anfragen sind nicht zulässig.
+   * **Audience Manager**: Signale und ID-Synchronisierungen sind nicht zulässig.
    * Wert in der JSON-Konfigurationsdatei: `optedout`
    * Wert in `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_OPT_OUT`
 
@@ -53,8 +56,8 @@ Die folgende Tabelle beschreibt die einzelnen Datenschutzstatus:
    * **Analytics**: Wenn die Offline-Verfolgung **aktiviert** ist, werden die Zugriffe gespeichert, bis der Datenschutzstatus zu „opt-in“ (Zugriffe werden dann gesendet) oder „opt-out“ (Zugriffe werden dann verworfen) geändert wird.
 
       Ist die Offline-Verfolgung <b>nicht aktiviert</b>, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
-   * **Target**: Mbox-Anfragen werden gesendet.
-   * **Audience Manager**: Signale und ID-Synchronisationen werden gesendet.
+   * **Zielgruppe**: Mbox-Anfragen werden gesendet.
+   * **Audience Manager**: Signale und ID-Synchronisierungen werden gesendet.
    * Wert in der JSON-Konfigurationsdatei: `optunknown`
    * Wert in `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_UNKNOWN`
 
