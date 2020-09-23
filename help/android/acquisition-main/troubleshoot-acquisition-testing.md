@@ -1,13 +1,16 @@
 ---
 description: Dieses Thema enthält Informationen zur Fehlerbehebung bei Problemen, die während des Akquisetests auftreten können.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Dieses Thema enthält Informationen zur Fehlerbehebung bei Problemen, die während des Akquisetests auftreten können.
 seo-title: Fehlerbehebung beim Akquisetest
 solution: Experience Cloud,Analytics
 title: Fehlerbehebung beim Akquisetest
-topic: Entwickler und Implementierung
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+topic: Developer and implementation
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 100%
 
 ---
 
