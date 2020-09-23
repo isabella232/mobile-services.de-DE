@@ -5,10 +5,13 @@ seo-description: Auf der Seite „Apps verwalten“ können Sie Apps erstellen, 
 seo-title: Apps verwalten – Übersicht
 solution: Experience Cloud,Analytics
 title: Apps verwalten – Übersicht
-topic: Metriken
+topic: Metrics
 uuid: 5949f549-172e-417e-b668-71fec628586a
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 100%
 
 ---
 
