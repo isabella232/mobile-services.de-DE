@@ -5,10 +5,13 @@ seo-description: Sie müssen folgende Voraussetzungen erfüllen, um Akquise-Link
 seo-title: Voraussetzungen für die Akquise
 solution: Experience Cloud,Analytics
 title: Voraussetzungen für die Akquise
-topic: Metriken
+topic: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 85%
 
 ---
 
@@ -41,4 +44,4 @@ Damit Sie Marketinglinks verfolgen können, müssen Sie sicherstellen, dass folg
 
 1. Appstore-Apps hinzufügen
 
-   Sie müssen die App aus dem Apple App Store oder aus Google Play hinzufügen. Weitere Informationen finden Sie unter [App aus einem Appstore hinzufügen](/help/using/manage-apps/c-app-store/t-app-store-app.md).
+   Sie müssen die App aus dem Apple App Store oder aus Google Play hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen einer App aus einem App Store](/help/using/manage-apps/c-app-store/t-app-store-app.md).
