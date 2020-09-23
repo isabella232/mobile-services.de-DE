@@ -5,10 +5,13 @@ seo-description: Sie können Marketinglinks erstellen, um auf die Schnelle neue 
 seo-title: Akquise-Links manuell erstellen
 solution: Experience Cloud,Analytics
 title: Akquise-Links manuell erstellen
-topic: Metriken
+topic: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: ht
-source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +28,7 @@ Die folgende Abbildung zeigt die Komponenten eines manuell erstellten Tracking-L
 
 ![](assets/acquisition_url.png)
 
-Dieser Link ist so konfiguriert, dass er für eine mobile App eine plattformspezifische Weiterleitung an den Google Play Store oder den Apple App Store durchführt. Für den Fall, dass das Ziel nicht bestimmt werden kann, wurde der Apple App Store als Standard festgelegt. Nachdem die App installiert wurde, wird der benutzerdefinierte Kontextschlüssel `my.custom.key:test` an den Treffer für die Analytics-Installation angehängt.
+Dieser Link ist so konfiguriert, dass eine plattformspezifische Weiterleitung an den Google Play Store oder den Apple App Store für eine mobile App durchgeführt wird. Wenn das Ziel nicht ermittelt werden kann, wurde der Standardspeicher auf den Apple App Store eingestellt. Nachdem die App installiert wurde, wird der benutzerdefinierte Kontextschlüssel `my.custom.key:test` an den Treffer für die Analytics-Installation angehängt.
 
 Wenn Sie Links manuell erstellen, verwenden Sie das folgende URL-Format:
 
@@ -38,7 +41,7 @@ Wenn Sie Links manuell erstellen, verwenden Sie das folgende URL-Format:
 Stellen Sie bei iOS sicher, dass Sie das richtige Protokoll verwenden:
 
 * Verwenden Sie **HTTP**, wenn Sie iOS-SDK vor Version 4.7.0 verwenden oder wenn Sie das iOS SDK 4.7.0 oder höher verwenden und auf der Seite „App-Einstellungen verwalten“ die Option **[!UICONTROL HTTPS verwenden]** **nicht** aktiviert ist.
-* Verwenden Sie **HTTPS**, wenn Sie das iOS-SDK 4.7.0 oder höher verwenden und **[!UICONTROL HTTPS verwenden]** auf der Seite „App-Einstellungen verwalten“ aktiviert **ist**.
+* Verwenden Sie **HTTPS**, wenn Sie das iOS-SDK 4.7.0 oder höher verwenden und **[!UICONTROL HTTPS verwenden]****auf der Seite „App-Einstellungen verwalten“ aktiviert ist**.
 
 Wo folgende Bedingungen erfüllt wurden:
 
