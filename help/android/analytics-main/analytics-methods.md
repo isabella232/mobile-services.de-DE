@@ -3,13 +3,13 @@ description: Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, di
 keywords: android;library;mobile;sdk
 seo-description: Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Analytics-Methoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analytics-Methoden
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 100%
 
