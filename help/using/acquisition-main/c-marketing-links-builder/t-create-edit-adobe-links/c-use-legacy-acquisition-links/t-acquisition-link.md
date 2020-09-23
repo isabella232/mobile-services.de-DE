@@ -1,23 +1,26 @@
 ---
-description: Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
+description: Sie können App Store-Links erstellen, über die Sie Anwendungen direkt aus dem Apple App Store und aus Google Play herunterladen können. Mithilfe der von Ihnen erstellten Links können Sie Ihre Erfolgsereignisse den Downloads zuordnen.
 keywords: mobile
-seo-description: Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
+seo-description: Sie können App Store-Links erstellen, über die Sie Anwendungen direkt aus dem Apple App Store und aus Google Play herunterladen können. Mithilfe der von Ihnen erstellten Links können Sie Ihre Erfolgsereignisse den Downloads zuordnen.
 seo-title: Akquise-Link erstellen
 solution: Experience Cloud,Analytics
 title: Akquise-Link erstellen
-topic: Metriken
+topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 74%
 
 ---
 
 
 # Akquise-Link erstellen{#create-an-acquisition-link}
 
-Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
+Sie können App Store-Links erstellen, über die Sie Anwendungen direkt aus dem Apple App Store und aus Google Play herunterladen können. Mithilfe der von Ihnen erstellten Links können Sie Ihre Erfolgsereignisse den Downloads zuordnen.
 
-1. Klicken Sie auf **[!UICONTROL Akquise]** &gt; **[!UICONTROL Akquise-Links verwalten]** &gt; **[!UICONTROL Neu erstellen]**.
+1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
 1. Geben Sie die folgenden Informationen im Abschnitt **[!UICONTROL Linkinformationen]** ein:
 
    * (**Pflichtfeld**) **[!UICONTROL Name]**
@@ -43,7 +46,8 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
       Wählen Sie einen Appstore aus:
       * Apple App Store
       * Google Play
-      Die Optionen für jeden App Store sind unterschiedlich, wie unten beschrieben.
+
+      Die Optionen für die einzelnen App Stores sind unterschiedlich, wie unten beschrieben.
 
    * **[!UICONTROL Browserregion (nur Apple App Store)]**
 
@@ -74,7 +78,7 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
 
 
 
-1. Um die Konfiguration zu speichern und den Link zu erstellen, klicken Sie auf **[!UICONTROL Hinzufügen]** &gt; **[!UICONTROL Speichern]**.
+1. To save your configuration and to generate the link, click **[!UICONTROL Add]** > **[!UICONTROL Save]**.
 
    Der neu erstellte Link wird im Abschnitt **[!UICONTROL App Store-Links]** angezeigt.
 
