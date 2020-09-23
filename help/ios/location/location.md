@@ -1,13 +1,16 @@
 ---
-description: Diese Informationen helfen Ihnen bei der Verwendung der Standortfunktionen in Ihren iOS-Apps.
-seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Standortfunktionen in Ihren iOS-Apps.
+description: Anhand dieser Informationen können Sie die Location-Funktionen in Ihren iOS-Apps verwenden.
+seo-description: Anhand dieser Informationen können Sie die Location-Funktionen in Ihren iOS-Apps verwenden.
 seo-title: Position
 solution: Experience Cloud,Analytics
-title: Position
-topic: Entwickler und Implementierung
+title: Standort
+topic: Developer and implementation
 uuid: a4e5650a-f5d3-4fb1-bd11-a27a3918d763
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +21,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen bei der Verwendung der Stando
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
