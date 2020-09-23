@@ -5,10 +5,13 @@ seo-description: Der Bericht „Ansichtspfade“ basiert auf Pfadanalysen und en
 seo-title: Bericht „Ansichtspfade“
 solution: Experience Cloud,Analytics
 title: Bericht „Ansichtspfade“
-topic: Berichte, Metriken
+topic: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 73%
 
 ---
 
@@ -23,29 +26,29 @@ Der Bericht **[!UICONTROL Ansichtspfade]** basiert auf Pfadanalysen und enthält
 
 ![Ansichtspfade](assets/view_paths.png)
 
-Jeder boxförmige Knoten stellt einen Status in den Pfaden der Benutzer durch eine App dar. In der oben stehenden Abbildung beispielsweise stellt der oberste Knoten die Anzahl der Benutzer dar, die die App gestartet haben und zur Hauptansicht navigiert sind.
+Jeder boxförmige Knoten stellt einen Status in den Pfaden der Benutzer durch eine App dar. In oben stehender Abbildung beispielsweise stellt der oberste Knoten die Anzahl der Benutzer dar, die die App gestartet und zur Haupt-Ansicht navigiert haben.
 
 Wenn Sie auf einen Knoten klicken, werden zur Anpassung des Diagramms zusätzliche Optionen, wie z. B. **[!UICONTROL Fokus]** oder **[!UICONTROL Erweitern]**, angezeigt. Wenn Sie beispielsweise im obersten Knoten auf den Status **[!UICONTROL MainView]** klicken, werden die Symbole **[!UICONTROL Fokus]** und **[!UICONTROL Erweitern]** angezeigt.
 
-Um die Ansicht zu erweitern, klicken Sie auf das Symbol **[!UICONTROL +]**. So werden zusätzliche Pfade angezeigt, die zum Knoten hin oder von ihm weg führen. In der unten stehenden Abbildung steht Status 1 für das Starten der App und Status 2 für das Aufrufen der Hauptseite der App. Status 3 enthält die folgenden von Benutzern genutzten Pfade:
+To expand the view, click the **[!UICONTROL +]** icon to display the additional paths that come in to or go from the node. In unten stehender Abbildung zeigt Status 1 die App an, Status 2 zeigt die Hauptseite der App an und Status 3 enthält die folgenden Pfade, die Benutzer verwendet haben:
 
-* Navigation zu „Aufnahmen“
-* Navigation zur Elementauswahl
+* Navigieren zur Kamerarolle
+* Navigieren zur Elementauswahl
 * Navigation zur Kamera
-* Navigation zur Infoseite des Elements
+* Navigieren zur Seite mit den Artikelinformationen
 
 ![](assets/view_paths_expand.png)
 
-Klicken Sie auf ![Fokussymbol](assets/icon_focus.png), um einen Knoten zu isolieren und nur die ein- und ausgehenden Pfade dieses Knotens anzuzeigen. In der unten stehenden Ansicht gingen folgende Pfade Benutzern voraus, die die Hauptseite der App aufgerufen haben:
+Klicken Sie auf ![Fokussymbol](assets/icon_focus.png), um einen Knoten zu isolieren und nur die ein- und ausgehenden Pfade dieses Knotens anzuzeigen. In unten stehender Abbildung gingen die folgenden Pfade Benutzern voraus, die die Haupt-Ansicht der App angezeigt haben:
 
-* Elementinfo
+* Elementinformationen
 * Elementauswahl
-* Aufnahmen
+* Filmrolle
 * Kamera
 
 ![Ansichtspfad – Fokus](assets/view_paths_focus.png)
 
-Sie können mehrere Knoten fokussieren oder erweitern, um eine detaillierte Darstellung der Pfade zu erhalten, denen Benutzer in Ihrer App folgen. Beispiel:
+Sie können mehrere Knoten fokussieren oder erweitern, um eine detaillierte Ansicht der Pfade zu erhalten, die die Benutzer in Ihrer App verwenden. Beispiel:
 
 ![Ansichtspfad – Mehrere](assets/view_paths_mult.png)
 
