@@ -5,10 +5,13 @@ seo-description: Sie können Berichte anzeigen, die für DPS-Kunden (Digital Pub
 seo-title: Übersicht über Digital Publishing Suite
 solution: Experience Cloud,Analytics
 title: Übersicht über Digital Publishing Suite
-topic: Metriken
+topic: Metrics
 uuid: ca335891-5d73-47dc-811f-374a0844109f
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 100%
 
 ---
 
