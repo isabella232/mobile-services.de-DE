@@ -4,10 +4,13 @@ seo-description: Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen könn
 seo-title: iOS-SDK 4.x für Experience Cloud-Lösungen
 solution: Experience Cloud,Analytics
 title: iOS-SDK 4.x für Experience Cloud-Lösungen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: ht
-source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +29,7 @@ Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native App
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -37,7 +40,7 @@ Beachten Sie Folgendes:
 
 * iOS 8 oder neuer wird unterstützt.
 
-   Für iOS 11 oder neuer **müssen** Sie über SDK-Version 4.13.8 oder neuer verfügen.
+   Für iOS 11 oder höher **müssen** Sie SDK-Version 4.13.8 oder höher haben.
 
 * In Version 4.2 dieses SDK und höher werden nun alle Treffer mithilfe von „HTTP POST“ gesendet.
 
