@@ -3,15 +3,15 @@ description: Sie können iOS PhoneGap-Plug-in-Methoden verwenden, um eine Reihe
 keywords: android;library;mobile;sdk
 seo-description: Sie können iOS PhoneGap-Plug-in-Methoden verwenden, um eine Reihe verschiedener Aufgaben auszuführen.
 seo-title: PhoneGap-Plug-in-Methoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap-Plug-in-Methoden
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
-source-wordcount: '1569'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
