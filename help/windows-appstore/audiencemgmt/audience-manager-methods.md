@@ -1,13 +1,13 @@
 ---
 description: Liste der von der Windows 8.1 Universal App Store-Bibliothek bereitgestellten Audience Manager-Methoden.
-seo-description: List of Audience Manager methods provided by the Windows 8.1 Universal App Store library.
+seo-description: Liste der von der Windows 8.1 Universal App Store-Bibliothek bereitgestellten Audience Manager-Methoden.
 seo-title: Audience Manager-Methoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
 topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 45%
@@ -17,13 +17,13 @@ ht-degree: 45%
 
 # Audience Manager-Methoden {#audience-manager-methods}
 
-List of Audience Manager methods provided by the Windows 8.1 Universal App Store library.
+Liste von Audience Manager-Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Audience Manager methods are prefixed with &quot;AudienceManager.&quot;
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Den Audience Manager-Methoden wird &quot;AudienceManager&quot;vorangestellt.
 
 >[!NOTE]
 >
->When you consume winmd methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Wenn Sie winmd-Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
 
 Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit Lebenszyklusmetriken mit Ihrem Lebenszyklustreffer gesendet.
 
@@ -97,7 +97,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit 
 
 * **SignalWithData (winJS: signalWithData)**
 
-   Sends Audience Manager a signal with traits and get the matching segments returned in a block callback.
+   Sendet Audience Manager ein Signal mit Eigenschaften und ruft die entsprechenden Segmente in einem Blockrückruf zurück.
 
    * Hier finden Sie die Syntax für diese Methode:
 
