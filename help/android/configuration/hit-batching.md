@@ -1,14 +1,17 @@
 ---
 description: Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, die gesendeten Treffer so lange zu speichern, bis die Anzahl der Treffer in der Warteschlange das konfigurierte Limit überschritten hat.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, die gesendeten Treffer so lange zu speichern, bis die Anzahl der Treffer in der Warteschlange das konfigurierte Limit überschritten hat.
 seo-title: Stapelverarbeitung von Treffern
 solution: Experience Cloud,Analytics
 title: Stapelverarbeitung von Treffern
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 89%
 
 ---
 
@@ -30,9 +33,9 @@ Um die Stapelverarbeitung von Treffern zu aktivieren, aktualisieren Sie die Date
 }
 ```
 
-Wenn der Wert auf eine Zahl größer 0 festgelegt ist, versetzt das SDK die Anzahl der Treffer in die Warteschlange, die dem Wert *`batchLimit`* entspricht. Nachdem dieser Grenzwert erreicht wurde, werden alle Treffer in der Warteschlange gesendet.
+Wenn der Wert auf eine Zahl größer 0 festgelegt ist, versetzt das SDK die Anzahl der Treffer in die Warteschlange, die dem Wert *`batchLimit`* entspricht. Nachdem dieser Schwellenwert erreicht wurde, werden alle Treffer in der Warteschlange gesendet.
 
-Die folgenden Methoden werden mit Treffer-Stapelverarbeitung verwendet:
+Die folgenden Methoden werden bei der Stapelverarbeitung von Treffern verwendet:
 
 * `Analytics.getQueueSize` gibt einen `long`-Wert mit der Anzahl von Treffern zurück, die sich derzeit in der Warteschlange der Stapelverarbeitung befinden.
 
