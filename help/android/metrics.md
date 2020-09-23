@@ -1,14 +1,17 @@
 ---
 description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
 seo-title: Lebenszyklusmetriken
 solution: Experience Cloud,Analytics
 title: Lebenszyklusmetriken
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +22,7 @@ Dieser Abschnitt enthält Informationen zu den Metriken und Dimensionen, die von
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -28,7 +31,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 ## Lebenszyklusmetriken und -dimensionen {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Wenn Lebenszyklusmetriken konfiguriert sind, werden sie in Kontextdatenparametern an Analytics, bei jedem mbox-Aufruf in Parametern an Target sowie als Signale an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management ein anderes Präfix für jede Metrik verwendet.
+Bei der Konfiguration werden Lebenszyklusmetriken in Kontextdatenparametern an Analytics, in Parametern zur Zielgruppe mit jedem mbox-Aufruf und als Signal an die Audience-Verwaltung gesendet. Analytics und Zielgruppe verwenden dasselbe Format, während die Audience-Verwaltung für jede Metrik ein anderes Präfix verwendet.
 
 Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Kontextdaten automatisch mithilfe der Metrik oder Dimension erfasst und gemeldet. Ausnahmen werden angegeben.
 
@@ -72,7 +75,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 * **Starts**
 
-   Wird bei jeder Ausführung ausgelöst, auch nach Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn das Timeout der Lebenszyklussitzung überschritten wurde.
+   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn der Timeout der Lebenszyklussitzung überschritten wurde.
 
    >[!IMPORTANT]
    >
@@ -309,28 +312,28 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
 
 * **Kampagneninhalt**
 
-   Der Name der ID des Inhalts, in dem der Link angezeigt wurde. Erfasst durch App-Akquise.
+   Der Name oder die ID des Inhalts, der den Link angezeigt hat. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.content`
    * Audience Manager-Eigenschaft: `c_a_referrer_campaign_content`
 
 * **Kampagnenmedium**
 
-   Marketingmedium, beispielsweise ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
+   Marketingmedium, z. B. ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.medium`
    * Audience Manager-Eigenschaft: `c_a_referrer_campaign_medium`
 
 * **Kampagnenquelle**
 
-   Ursprünglicher Referrer, wie z. B. Newsletter oder soziales Netzwerk. Erfasst durch App-Akquise.
+   Ursprünglicher Werber, z. B. ein Newsletter oder ein Social Media-Netzwerk. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.source`
    * Audience Manager-Eigenschaft: `c_a_referrer_campaign_source`
 
 * **Kampagnenbegriff**
 
-   Bezahlte Keywords oder andere Begriffe, die Sie mit dieser Akquise verfolgen wollen. Erfasst durch App-Akquise.
+   Bezahlte Suchbegriffe oder andere Begriffe, die Sie mit dieser Akquise verfolgen möchten. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.term`
    * Audience Manager-Eigenschaft: `c_a_referrer_campaign_term`
