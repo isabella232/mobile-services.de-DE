@@ -1,40 +1,42 @@
 ---
-description: Das universelle Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen, native Windows 10-Anwendungen zu messen und zielgerichteten Inhalt innerhalb Ihrer Anwendung bereitzustellen sowie Zielgruppendaten über das Zielgruppen-Management zu erfassen.
-seo-description: Das universelle Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen, native Windows 10-Anwendungen zu messen und zielgerichteten Inhalt innerhalb Ihrer Anwendung bereitzustellen sowie Zielgruppendaten über das Zielgruppen-Management zu erfassen.
+description: Mit dem universellen Windows-Plattform-SDK 4.x für Experience Cloud Solutions können Sie native Windows 10-Anwendungen messen, zielgerichtete Inhalte in Ihrer App bereitstellen und Audiencen über das Audience-Management nutzen und erfassen.
+seo-description: Mit dem universellen Windows-Plattform-SDK 4.x für Experience Cloud Solutions können Sie native Windows 10-Anwendungen messen, zielgerichtete Inhalte in Ihrer App bereitstellen und Audiencen über das Audience-Management nutzen und erfassen.
 seo-title: Universelles Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Universelles Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 23a5bc0a-54f0-42a7-af1e-c8cbb509dfce
 translation-type: tm+mt
-source-git-commit: 9e796f590cf7717592ff3f41fa61829599264a4f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 38%
 
 ---
 
 
 # Universelles Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen {#universal-windows-platform-sdk-x-for-experience-cloud-solutions}
 
-Das universelle Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen, native Windows 10-Anwendungen zu messen und zielgerichteten Inhalt innerhalb Ihrer Anwendung bereitzustellen sowie Zielgruppendaten über das Zielgruppen-Management zu erfassen.
+Mit dem universellen Windows-Plattform-SDK 4.x für Experience Cloud Solutions können Sie native Windows 10-Anwendungen messen, zielgerichtete Inhalte in Ihrer App bereitstellen und Audiencen über das Audience-Management nutzen und erfassen.
 
-**Letzte Aktualisierung: 17. September 2015**
+**Zuletzt aktualisiert: 17. September 2015**
 
-## Supported platforms {#section_45978BF5C62E4986AAB7FFD96402BF2D}
+## Unterstützte Plattformen {#section_45978BF5C62E4986AAB7FFD96402BF2D}
 
-Windows 10 oder höher.
+Windows 10 oder höher.
 
 ## Unterstützte IDE {#section_03905798D74940C9A9F77285DA3F27D0}
 
-Visual Studio 2015 oder höher.
+Visual Studio 2015 oder höher.
 
 ## Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
 
 Adobe Mobile Services bietet eine neue Benutzeroberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile-Dienst eine nahtlose Integration der App-Analyse- und Targeting-Funktionen der Adobe Analytics- und Adobe Target-Lösungen.
 
-For more information, see the [Adobe Mobile services documentation](/help/using/home.md).
+Weitere Informationen finden Sie in der Dokumentation zu [Adobe Mobile Services](/help/using/home.md).
 
 ## Bloodhound verwenden
 
 >[!IMPORTANT]
 >
->As of **April 30, 2017**, Adobe Bloodhound has been
-sunset. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
+>Am **30. April 2017** wurde die Entwicklung von Adobe Bloodhound eingestellt. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
