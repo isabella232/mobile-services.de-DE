@@ -1,23 +1,23 @@
 ---
-description: Informationen zur Verwendung von Video Analytics.
-seo-description: Informationen zur Verwendung von Video Analytics.
+description: Informationen zur Unterstützung von Video Analytics.
+seo-description: Informationen zur Unterstützung von Video Analytics.
 seo-title: Video Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Video Analytics
 topic: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 65%
+ht-degree: 71%
 
 ---
 
 
 # Video Analytics {#video-analytics}
 
-Informationen zur Verwendung von Video Analytics.
+Informationen zur Unterstützung von Video Analytics.
 
 Die Videomessung wird im Handbuch [Messen von Audio und Video in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html/) ausführlich beschrieben. Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt mit einem kurzen Beginn bietet eine grundlegende Übersicht über die Entwickler-Aufgaben sowie Codebeispiele.
 
@@ -27,11 +27,11 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (Erforderlich) Erfasst den Videonamen, wie in der Implementierung angegeben, wenn ein Besucher das Video auf eine bestimmte Weise Ansicht.Sie können Classifications für diese Variable hinzufügen.
 
-   (**Optional**) Die Variable &quot;Custom Insight&quot;enthält Informationen zu Videopfaden.
+   (**Optional**) The Custom Insight variable provides video pathing information.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Besuch
-   * Custom Insight (s.prop, für Videopfadsetzung verwendet)
+   * Custom Insight (s.prop, für den Videopfad verwendet)
 
 * **a.media.name**
 
@@ -47,11 +47,11 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    Die Standardmethode zur Videodatenerfassung erfasst Daten an folgenden Punkten:
 
-   * Video-Beginn (play)
-   * segment begin
+   * Videostart (play)
+   * Segmentstart
    * Videoende (Stopp)
 
-   Analytics zählt die erste Segment-Ansicht am Beginn des Segments, wenn die Beginn des Besuchers zusehen. Nachfolgende Segmentansichten werden beim Segmentbeginn Ansicht.
+   Analytics zählt die erste Segmentansicht am Beginn des Segments, wenn der Besucher zu schauen beginnt. Nachfolgende Segmentansichten bei Segmentbeginn.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
