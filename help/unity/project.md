@@ -2,27 +2,30 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: Projekt erstellen
-solution: Marketing Cloud,Developer
-title: Projekt erstellen
+seo-title: Erstellen eines Projekts
+solution: Experience Cloud
+title: Erstellen eines Projekts
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 20%
 
 ---
 
 
-# Building your project{#building-your-project}
+# Erstellen eines Projekts{#building-your-project}
 
 ## iOS
 
-Beim Aufbauen für iOS wird ein Xcode-Projekt erstellt. Standardmäßig befinden sich die Dateien `ADBMobileWrapper.mm` und `AdobeMobileLibrary.a` in der Gruppe „Bibliotheken“ des neuen Projekts. Führen Sie die folgenden manuellen Schritte zum Aufbauen der App aus:
+Beim Erstellen für iOS wird ein Xcode-Projekt erstellt. Standardmäßig befinden sich die Dateien `ADBMobileWrapper.mm` und `AdobeMobileLibrary.a` Dateien in der Gruppe &quot;Bibliotheken&quot;Ihres neuen Projekts. Führen Sie zum Erstellen der App die folgenden manuellen Schritte aus:
 
-1. Fügen Sie die Datei `ADBMobileConfig.json` in das Projekt ein.
+1. Fügen Sie Ihre `ADBMobileConfig.json`-Datei zum Projekt hinzu.
 
-   Diese Datei muss Mitglied aller erforderlichen Ziele im Build sein.
+   Stellen Sie sicher, dass es Mitglied des Builds ist, alle erforderlichen Zielgruppen.
 
-1. In the **[!UICONTROL Build Phases]** tab of your project, add a link to the following libraries:
+1. Fügen Sie auf der Registerkarte &quot; **[!UICONTROL Build-Phasen]** &quot;Ihres Projekts einen Link zu den folgenden Bibliotheken hinzu:
 
    * `SystemConfiguration.framework`
 (Diese Bibliothek ist möglicherweise bereits verknüpft.)
@@ -31,13 +34,13 @@ Beim Aufbauen für iOS wird ein Xcode-Projekt erstellt. Standardmäßig befinden
 
 >[!TIP]
 >
->To use Local Notification In-App messages from the SDK, you must call `ADBMobile.EnableLocalNotifications();` from the Start method in your first Unity Scene.
+>Um In-App-Nachrichten für lokale Benachrichtigungen aus dem SDK zu verwenden, müssen Sie in Ihrer ersten Unity-Szene `ADBMobile.EnableLocalNotifications();` die Beginn-Methode aufrufen.
 
 ## Android
 
-Beim Aufbau für Android enthält die `apk`-Datei bereits die Datei `ADBMobileConfig.json` an der richtigen Position. By default, the `AndroidManifest.xml` file in your `/Plugins/Android` folder is also used.
+Wenn Sie für Android erstellen, enthält die `apk` Datei die `ADBMobileConfig.json` Datei bereits am richtigen Speicherort. Standardmäßig wird auch die `AndroidManifest.xml` Datei in Ihrem `/Plugins/Android` Ordner verwendet.
 
-Falls eine benutzerdefinierte Manifestdatei verwendet werden soll, nehmen Sie die nachfolgenden Änderungen vor.
+Wenn Sie Ihre eigene benutzerdefinierte Manifestdatei verwenden müssen, sollten die folgenden Änderungen hinzugefügt werden.
 
 Berechtigungen hinzufügen für:
 
