@@ -5,8 +5,11 @@ seo-title: Testen der V3-Akquise
 solution: Experience Cloud,Analytics
 title: Testen der V3-Akquise
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -17,12 +20,12 @@ Diese Informationen helfen Ihnen dabei, einen V3-Akquise-Kampagnenlink basierend
 
 >[!IMPORTANT]
 >
->Die V3-Akquise bezieht sich auf die Akquise-Links, die Sie mithilfe des Akquise-Builders auf der Adobe Mobile Services-Benutzeroberfläche erstellen. Zum Verwenden dieses Features müssen Sie ein Upgrade von iOS-SDK-Version 4.6.0 oder höher vornehmen.
+>Die V3-Akquise bezieht sich auf die Akquise-Links, die Sie mithilfe des Akquise-Builders auf der Adobe Mobile Services-Benutzeroberfläche erstellen. Um diese Funktion verwenden zu können, müssen Sie auf die iOS SDK-Version 4.6.0 oder höher aktualisieren.
 
-Wenn die mobile App noch nicht im App-Store vorhanden ist, wenn Sie den Kampagnenlink erstellen, sollten Sie eine beliebige mobile App als Ziel auswählen. Dies wirkt sich nur auf die App aus, zu der Sie vom Akquiseserver umgeleitet werden, nachdem Sie auf den Akquiselink geklickt haben. Dies wirkt sich jedoch nicht auf die Fähigkeit zum Testen des Links aus.
+Wenn sich die Mobile App noch nicht im App Store befindet, wählen Sie beim Erstellen des Links „Kampagne“ eine beliebige Mobile App als Ziel aus. Dies betrifft nur die Mobile App, zu der Sie der Akquise-Server weiterleitet, nachdem Sie auf den Akquise-Link geklickt haben, hat jedoch keine Auswirkungen auf die Fähigkeit, den Link zu testen.
 
-1. Führen Sie die erforderlichen Schritte in [App-Akquise](/help/ios/acquisition-main/acquisition.md) aus.
-1. Gehen Sie zu **[!UICONTROL Akquise-Builder]** auf der Adobe Mobile Services-Benutzeroberfläche und generieren Sie eine Akquise-Kampagnen-URL.
+1. Bearbeiten Sie die Aufgaben mit den Voraussetzungen unter [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md).
+1. Navigieren Sie zu **[!UICONTROL Akquise-Builder]** auf der Adobe Mobile Services-Benutzeroberfläche und generieren Sie eine Akquise-Kampagnen-URL.
 
    Beispiel:
 
@@ -31,7 +34,7 @@ Wenn die mobile App noch nicht im App-Store vorhanden ist, wenn Sie den Kampagne
    ```
 
 
-   Verwenden Sie den Apple-Store als standardmäßigen Store, sofern Sie im Akquiselink sowohl auf iOS- als auch auf Android-Apps verweisen.
+   Wenn Sie im Akquise-Link sowohl auf die iOS- als auch auf die Android-App verweisen, nutzen Sie den Apple Store als standardmäßigen Store.
 1. Öffnen Sie den generierten Link in einem Desktopbrowser und navigieren Sie zu `https://c00.adobe.com/v3/<appid>/end`.
 
    Es sollte `contextData` in der JSON-Antwort angezeigt werden:
@@ -45,7 +48,7 @@ Wenn die mobile App noch nicht im App-Store vorhanden ist, wenn Sie den Kampagne
 
    | Wenn | Wert |
    |--- |--- |
-   | Akquise | Der Server sollte `c00.adobe.com` lauten. *`appid`* sollte der *`appid`* in Ihrem Akquise-Link entsprechen. |
+   | Akquise | Der Server sollte `c00.adobe.com` sein. *`appid`* sollte der *`appid`* in Ihrem Akquise-Link entsprechen. |
    | analytics | `referrerTimeout` sollte einen Wert größer als 0 aufweisen. |
 
 
@@ -63,7 +66,7 @@ Wenn die mobile App noch nicht im App-Store vorhanden ist, wenn Sie den Kampagne
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   Falls die obigen Protokolle nicht angezeigt werden, sollten Sie sicherstellen, dass Sie die Schritte 4 und 5 abgeschlossen haben.
+   Wenn die obigen Protokolle nicht angezeigt werden, stellen Sie sicher, dass Sie die Schritte 4 und 5 abgeschlossen haben.
 
    Im Folgenden finden Sie einige Informationen zu möglichen Fehlern:
 
@@ -84,7 +87,7 @@ Netzwerkfehler.
 
    * `Analytics - Acquisition referrer timed out`
 
-      Fehler beim Abrufen der Antwort in der durch `referrerTimeout` definierten Zeit. Erhöhen Sie den Wert und versuchen Sie es erneut. Sie sollten darüber hinaus sicherstellen, dass Sie den Akquiselink geöffnet haben, bevor Sie die App installieren, und dass Sie dasselbe Netzwerk verwenden, wenn Sie auf die URL klicken und die App öffnen.
+      Fehler beim Abrufen der Antwort in der durch `referrerTimeout` definierten Zeit. Erhöhen Sie den Wert und versuchen Sie es erneut. Sie sollten auch sicherstellen, dass Sie den Akquise-Link vor der Installation der App geöffnet haben und dass Sie dasselbe Netzwerk verwenden, wenn Sie auf die URL klicken und die App öffnen.
 
       Beachten Sie die folgenden Informationen:
 
