@@ -1,20 +1,23 @@
 ---
-description: Aktionen sind die Ereignisse in Ihrer Android-App, die Sie messen möchten.
-seo-description: Aktionen sind die Ereignisse in Ihrer Android-App, die Sie messen möchten.
+description: Aktionen sind die Ereignis, die in Ihrer Android-App auftreten, die Sie messen möchten.
+seo-description: Aktionen sind die Ereignis, die in Ihrer Android-App auftreten, die Sie messen möchten.
 seo-title: App-Aktionen verfolgen
 solution: Experience Cloud,Analytics
 title: App-Aktionen verfolgen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 88%
 
 ---
 
 
 # App-Aktionen verfolgen {#track-app-actions}
 
-Aktionen sind die Ereignisse in Ihrer Android-App, die Sie messen möchten.
+Aktionen sind die Ereignis, die in Ihrer Android-App auftreten, die Sie messen möchten.
 
 Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. So könnten Sie z. B. einen `trackAction`-Aufruf für jedes neue Abonnement, jeden Artikelaufruf oder jeden Levelabschluss senden. Aktionen werden nicht automatisch verfolgt. Sie müssen `trackAction` aufrufen, wenn ein zu verfolgendes Ereignis auftritt, und die Aktion dann einem benutzerdefinierten Ereignis zuordnen.
 
