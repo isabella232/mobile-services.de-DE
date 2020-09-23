@@ -4,10 +4,13 @@ seo-description: Hier finden Sie eine Liste der Audience Manager-Methoden, die v
 seo-title: Audience Manager-Methoden
 solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 80%
 
 ---
 
@@ -70,14 +73,14 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal, das
 
 * **audienceSetDpid:&#x200B;dpuuid:**
 
-   Legt die DPID und die DPUUID fest. Nach der Einrichtung werden beide an das jeweilige Signal angehängt.
+   Legt die DPID und die DPUUID fest. Wenn diese Einstellung festgelegt ist, werden beide an jedes Signal angehängt.
 
-   * Die **Datenanbieter-ID (DPID)** ist die Partner-ID, die vom Audience Manager zugewiesen wird.
-   * Die **Datenanbieter-Unique User-ID (DPUUID)** ist die eindeutige ID des Datenanbieters für den Benutzer.
+   * Die **Datenanbieter-ID (DPID)** ist die vom Audience Manager zugewiesene Datenpartner-ID.
+   * Die eindeutige **Datenanbieter-Benutzer-ID (DPUUID)** ist die eindeutige ID des Datenanbieters für den Benutzer.
 
       >[!IMPORTANT]
       >
-      >Vor Version 4.13.x wurde die DPUUID nicht automatisch verschlüsselt. Ab Version 4.13.x entschlüsselt das SDK zunächst den übermittelten Wert und verschlüsselt ihn dann neu. Mithilfe dieses Verfahrens wird sichergestellt, dass das SDK die Rückkompatibilität nicht beeinträchtigt.
+      >Vor Version 4.13.x wurde die DPUUID nicht automatisch verschlüsselt. Ab Version 4.13.x hebt das SDK zunächst die Kodierung des übergebenen Werts auf und kodiert diesen dann erneut. Dieser Prozess stellt sicher, dass das SDK nicht die Abwärtskompatibilität beeinträchtigt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
