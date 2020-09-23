@@ -3,11 +3,11 @@ description: iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutio
 keywords: Xamarin
 seo-description: iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 seo-title: iOS-Methoden
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: iOS-Methoden
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: 70c79d404c29a8a35b5eadbb3ad99f953a5166e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 70%
