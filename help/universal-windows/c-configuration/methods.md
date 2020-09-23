@@ -1,21 +1,21 @@
 ---
-description: Classes and methods provided by the Universal Windows Platform library.
+description: Klassen und Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
 seo-description: Klassen und Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
-seo-title: SDK methods
-solution: Marketing Cloud,Analytics
+seo-title: SDK-Methoden
+solution: Experience Cloud,Analytics
 title: SDK-Methoden
 topic: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
 
-# SDK methods {#sdk-methods}
+# SDK-Methoden {#sdk-methods}
 
 Klassen und Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
 
@@ -218,7 +218,7 @@ Der Standardwert lautet `null`.
 
 * **PauseCollecting &#x200B; LifecycleData (winJS: pauseCollecting &#x200B; LifecycleData)**
 
-   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. For example, on pause collects a timestamp to determine previous session length. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/universal-windows/metrics.md).
+   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten wird ein Zeitstempel erfasst, um die Länge der vorherigen Sitzung zu bestimmen. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/universal-windows/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
