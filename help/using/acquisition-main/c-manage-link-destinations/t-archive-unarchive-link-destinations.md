@@ -5,10 +5,13 @@ seo-description: Auf der Seite „Link-Ziele“ können Sie vorhandene Ziele bea
 seo-title: Link-Ziele verwalten
 solution: Experience Cloud,Analytics
 title: Link-Ziele verwalten
-topic: Metriken
+topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +31,7 @@ So zeigen Sie die Seite Link-Ziele verwalten an:
 
    * **Vorlage**
 
-      Klicken Sie zum Bearbeiten eines vorhandenen Link-Ziels in der Liste auf den Namen und bearbeiten Sie die relevanten Felder. Weitere Informationen finden Sie in [Neues Link-Ziel erstellen](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
+      Um ein vorhandenes Link-Ziel zu bearbeiten, klicken Sie in der Liste auf dessen Namen und bearbeiten Sie die entsprechenden Felder. Weitere Informationen finden Sie in [Neues Link-Ziel erstellen](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
 
       >[!IMPORTANT]
       >
@@ -49,6 +52,7 @@ So zeigen Sie die Seite Link-Ziele verwalten an:
       1. Klicken Sie auf **[!UICONTROL Archiv anzeigen]**.
       1. Aktivieren Sie die Kontrollkästchen neben den Link-Namen, deren Archivierung Sie aufheben möchten.
       1. Klicken Sie auf **[!UICONTROL Archivierung der Ausgewählten aufheben]**.
+
       Die Option **[!UICONTROL Archiv anzeigen]** zeigt nur zuvor archivierte Link-Ziele an.
 
    * **Löschen**
