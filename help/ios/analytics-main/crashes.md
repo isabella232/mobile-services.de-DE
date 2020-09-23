@@ -4,10 +4,13 @@ seo-description: Mithilfe dieser Informationen können Sie ermitteln, wie Abstü
 seo-title: App-Abstürze verfolgen
 solution: Experience Cloud,Analytics
 title: App-Abstürze verfolgen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 79%
 
 ---
 
@@ -28,7 +31,7 @@ Wenn Ihre Anwendung beendet wird, ohne dass sie zunächst in den Hintergrund ver
 
 iOS verwendet Systembenachrichtigungen, die Entwicklern ermöglichen, unterschiedliche Status und Ereignisse im Anwendungslebenszyklus zu verfolgen und darauf zu reagieren.
 
-Das Adobe Mobile iOS-SDK verfügt über einen Benachrichtigungs-Handler, der auf die Benachrichtigung `UIApplicationDidEnterBackgroundNotification` reagiert. In diesem Code wird ein Wert festgelegt, der angibt, dass der Benutzer die App in den Hintergrund versetzt hat. Wenn bei einem nachfolgenden Start dieser Wert nicht gefunden werden kann, wird ein Absturz gemeldet.
+Das Adobe Mobile iOS-SDK verfügt über einen Benachrichtigungs-Handler, der auf die Benachrichtigung `UIApplicationDidEnterBackgroundNotification` reagiert. In diesem Code wird ein Wert festgelegt, der angibt, dass der Benutzer die App im Hintergrund erstellt hat. Bei einem nachfolgenden Start wird ein Absturz gemeldet, wenn dieser Wert nicht gefunden werden kann.
 
 ## Warum werden Abstürze von Adobe auf diese Weise gemessen?
 
@@ -38,9 +41,9 @@ Von Unternehmen wie Apteligent (hieß zuvor Crittercism) bereitgestellte Absturz
 
 ## Wie kann es passieren, dass fälschlicherweise ein Absturz gemeldet wird?
 
-Die folgenden Szenarien sind dafür bekannt, dass in ihnen fälschlicherweise ein Absturz verursacht wird, der vom SDK gemeldet wird:
+Es ist bekannt, dass die folgenden Szenarien fälschlicherweise zu einem Absturz führen, der vom SDK gemeldet wird:
 
-* Wenn Sie mittels Xcode debuggen, wird ein Absturz ausgelöst, wenn Sie versuchen, die App erneut auszuführen, während sie sich im Vordergrund befindet.
+* Wenn Sie mit Xcode debuggen und die App erneut starten, während sie sich im Vordergrund befindet, kommt es zu einem Absturz.
 
    >[!TIP]
    >
@@ -59,11 +62,11 @@ Die folgenden Szenarien sind dafür bekannt, dass in ihnen fälschlicherweise ei
 
 Mithilfe der folgenden Vorgehensweisen kann verhindert werden, dass falsche Abstürze gemeldet werden:
 
-* Im iOS-SDK 4.8.6 wurde Code hinzugefügt, um besser bestimmen zu können, ob eine neue Lebenszyklussitzung tatsächlich erwünscht ist.
+* In iOS SDK 4.8.6 wurde Code hinzugefügt, um besser festzustellen, ob eine neue Lebenszyklussitzung tatsächlich gewünscht wird.
 
-   Dieser Code behebt die falschen Abstürzte Nr. 2 und Nr. 3 aus dem vorherigen Abschnitt.
+   Dieser Code behebt Fehlabstürze Nr. 2 und Nr. 3 im vorherigen Abschnitt.
 
-* Stellen Sie sicher, dass Sie Ihre Entwicklung für produktionsfremde Report Suites durchführen, was verhindern sollte, dass der falsche Absturz Nr. 1 auftritt.
+* Stellen Sie sicher, dass Sie Ihre Entwicklung mit Report Suites ohne Produktionscharakter durchführen, wodurch ein falscher Absturz #1 verhindert werden soll.
 * Löschen oder ändern Sie keine Werte, die das Adobe Mobile-SDK in `NSUserDefaults` setzt.
 
    Wenn diese Werte außerhalb des SDK geändert werden, sind die gemeldeten Daten ungültig.
