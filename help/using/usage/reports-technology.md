@@ -5,10 +5,13 @@ seo-description: Im Bericht „Technologie“ werden die verschiedenen Gerätety
 seo-title: Bericht „Technologie“
 solution: Experience Cloud,Analytics
 title: Bericht „Technologie“
-topic: Berichte, Metriken
+topic: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 78%
 
 ---
 
@@ -21,7 +24,7 @@ Dieser Bericht bietet Ihnen eine Sunburst-Grafik vorhandener Daten, die Sie nutz
 
 ## Navigation und Verwendung {#section_83CA60E1AE6245FEBCBFF3205615C4DF}
 
-Die Grafik enthält beispielsweise den Basisbericht und Aufschlüsselungen und zeigt über die Höhe des Kreisabschnitts die Metriken im Fokus und die Performanceunterschiede zwischen den Metriken. Jeder Ring repräsentiert ein Zielgruppensegment in der jeweiligen Kategorie des Rings. An einer Zielgruppe können Sie auch Aktionen durchführen, wie zum Beispiel einen fixierbaren Filter anwenden sowie Metriken ausblenden oder anzeigen.
+Diese Visualisierung bietet beispielsweise den Basisbericht und Aufschlüsselungen, verwendet Höhe, um die Metrik im Fokus anzuzeigen, und die Leistungsunterschiede zwischen den Metriken. Jeder Ring stellt ein Audience-Segment in der Kategorie des Rings dar. Sie können Aktionen für eine Audience ausführen, z. B. einen fixierbaren Filter anwenden, eine Metrik ausblenden und Metriken anzeigen.
 
 >[!TIP]
 >
@@ -29,25 +32,25 @@ Die Grafik enthält beispielsweise den Basisbericht und Aufschlüsselungen und z
 
 ![](assets/report_technology.png)
 
-Die Sunburst-Grafik ist interaktiv. Sie können folgende Aktionen durchführen:
+Das Sunburst-Diagramm ist interaktiv und Sie können die folgenden Aufgaben ausführen:
 
-* Wenn Sie den Mauszeiger über einen Teil der Darstellung bewegen, werden mehr Informationen angezeigt.
+* Bewegen Sie den Mauszeiger über einen beliebigen Teil des Diagramms, um weitere Informationen anzuzeigen.
 * Sie können den Zeitraum ändern, indem Sie auf das **[!UICONTROL Kalendersymbol]** klicken.
 * Klicken Sie auf ein Segment im Ring, um die Zielgruppe auszuwählen, an der Sie dann Aktionen durchführen können, z. B. das Heranzoomen, Ausblenden von Zielgruppen oder das Erstellen einer In-App-Nachricht oder eines fixierbaren Filters.
 * Wählen Sie oben rechts **[!UICONTROL Gerätetyp]** und **[!UICONTROL Gerät]** aus, um Informationen zu den Geräten und Gerätetypen anzuzeigen.
 
-* Klicken Sie auf der rechten Seite auf eine sekundäre Metrik, um sie der Darstellung hinzuzufügen.
+* Klicken Sie auf eine sekundäre Metrik auf der rechten Seite, um sie der Visualisierung hinzuzufügen.
 
    Sie können die sekundäre Metrik mit Farbe, Höhe oder beidem darstellen lassen.
 
 In folgender Tabelle werden die Standardberichte beschrieben und es wird angegeben, wie die Berichte in Mobile Services ausgefüllt werden:
 
-| Bericht | Methode zum Ausfüllen | Beschreibung |
+| Bericht | Populationsmethode | Beschreibung |
 |--- |--- |--- |
-| Gerät | Lebenszyklusmetriken | Allgemeine Metriken, aufgeschlüsselt nach dem Gerätetyp. |
-| Betriebssysteme | Automatisch | Allgemeine Metriken, aufgeschlüsselt nach dem Betriebssystem. |
-| Betriebssystemversion | Lebenszyklusmetriken | Allgemeine Metriken, aufgeschlüsselt nach der Betriebssystemversion. |
-| Netzbetreiber | Automatisch | Allgemeine Metriken, aufgeschlüsselt nach dem Mobilnetzbetreiber. |
+| Gerät | Lebenszyklusmetriken | Allgemeine Metriken, aufgeschlüsselt nach Gerätetyp. |
+| Betriebssysteme | Automatisch | Allgemeine Metriken, aufgeschlüsselt nach Betriebssystem. |
+| Betriebssystemversion | Lebenszyklusmetriken | Allgemeine Metriken, aufgeschlüsselt nach Betriebssystemversion. |
+| Netzbetreiber | Automatisch | Allgemeine Metriken, aufgeschlüsselt nach Trägern. |
 
 >[!TIP]
 >
