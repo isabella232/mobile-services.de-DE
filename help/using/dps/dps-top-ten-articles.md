@@ -5,10 +5,13 @@ seo-description: Der Bericht „Die 10 beliebtesten Artikel“ enthält eine Sun
 seo-title: Die 10 beliebtesten Artikel
 solution: Experience Cloud,Analytics
 title: Die 10 beliebtesten Artikel
-topic: Metriken
+topic: Metrics
 uuid: cf53cc0b-7c84-41c8-97d5-d9ee833a916b
-translation-type: ht
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
