@@ -4,10 +4,13 @@ seo-description: Mit dem Lebenszeitwert können Sie für jeden Benutzer einen Le
 seo-title: Besucherlebenszeitwert
 solution: Experience Cloud,Analytics
 title: Besucherlebenszeitwert
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 100%
 
 ---
 
