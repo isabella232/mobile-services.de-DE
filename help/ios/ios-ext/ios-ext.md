@@ -4,10 +4,13 @@ seo-description: Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihre
 seo-title: Implementierung der iOS-Erweiterung
 solution: Experience Cloud,Analytics
 title: Implementierung der iOS-Erweiterung
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 76%
 
 ---
 
@@ -18,7 +21,7 @@ Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihren Apple Watch-App
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -31,7 +34,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 >
 >Wir empfehlen ausdrücklich die Verwendung des iOS SDK statt Ihres eigenen Wrappers.
 
-Apple bietet einen Satz APIs, über die die Watch-Anwendung mit der übergeordneten Anwendung kommuniziert, indem Anfragen an die übergeordnete Anwendung gesendet und Antworten empfangen werden. Es ist zwar möglich, Verfolgungsdaten als Wörterbuch von der Watch-Anwendung an die übergeordnete Anwendung zu senden und die übergeordnete Anwendung anschließend über eine beliebige Verfolgungsmethode zum Senden der Daten aufzufordern, jedoch gibt es bei dieser Methode Einschränkungen.
+Apple bietet eine Reihe von APIs, mit denen die Watch-App mit der zugehörigen App kommunizieren kann, indem Anforderungen an die entsprechende App gesendet und die Antworten empfangen werden. Obwohl Sie Verfolgungsdaten als Wörterbuch von der Watch-App an die entsprechende App senden und eine beliebige Verfolgungsmethode auf der zugehörigen App aufrufen können, um die Daten zu senden, hat diese Lösung Einschränkungen.
 
 Wenn ein Benutzer die Watch-App verwendet, läuft die übergeordnete App meistens im Hintergrund und es ist nur sicher, `TrackActionInBackground`, `TrackLocation` und `TrackBeacon` aufzurufen. Andere Tracking-Methoden aufzurufen würde Lebenszyklusdaten beeinträchtigen, also sollten Sie nur diese drei Methoden verwenden, um Daten von der Watch-Anwendung zu senden.
 
@@ -43,13 +46,14 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 >
 >Stellen Sie sicher, dass Sie ein Projekt mit mindestens den folgenden Zielen haben:
 >
->* ein Ziel, das in der App enthalten sein soll.
->* ein Ziel für die Erweiterung.
+>* Eine Zielgruppe, die die App enthalten soll.
+>* Eine Zielgruppe für die Erweiterung.
+
 >
 
 
 
-Wenn Sie in einer WatchKit-App arbeiten, sollten Sie über ein drittes Ziel verfügen. Weitere Informationen zur Entwicklung für Apple Watch finden Sie unter [Developing for Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
+Wenn Sie an einer WatchKit-App arbeiten, sollten Sie über eine dritte Zielgruppe verfügen. Weitere Informationen zur Entwicklung für Apple Watch finden Sie unter [Developing for Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
 
 ## Übergeordnete Apps konfigurieren {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
@@ -105,10 +109,10 @@ Hinweis:
       Dieser Wert bedeutet, dass der Treffer aus der übergeordneten App stammt.
    * `a.RunMode = Extension`
 
-      Dieser Wert bedeutet, dass der Treffer aus der Erweiterung stammt.
+      Dieser Wert bedeutet, dass der Treffer von der Erweiterung stammt.
 
-* Wenn Sie über eine ältere Version des SDK ein Upgrade vornehmen, migriert Adobe beim Start der übergeordneten App automatisch alle Benutzerstandardeinstellungen und zwischengespeicherten Dateien aus dem Ordner der übergeordneten App zum freigegebenen Ordner der App-Gruppe.
-* Wenn die übergeordnete App niemals gestartet wird, werden die Treffer aus der Erweiterung verworfen.
-* Die Versionsnummer und Buildnummer müssen zwischen Ihrer übergeordneten App und der Erweiterungs-App identisch sein.
-* Für iOS-Erweiterungs-Apps wird kein Lebenszyklusaufruf ausgelöst.
+* Wenn Sie ein Upgrade von einer älteren Version des SDK durchführen und die zugehörige App gestartet wird, migriert Adobe automatisch alle Standarddateien und zwischengespeicherten Dateien aus dem Ordner der App in den freigegebenen Ordner der App-Gruppe.
+* Wenn die enthaltene App nie gestartet wird, werden Treffer aus der Erweiterung verworfen.
+* Die Versionsnummer und die Buildnummer müssen zwischen der App, die die Erweiterung enthält, und der Erweiterung-App identisch sein.
+* In iOS-Erweiterungs-Apps wird kein Lebenszyklusaufruf ausgelöst.
 
