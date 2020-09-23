@@ -5,10 +5,13 @@ seo-description: Mit dem Trichterbericht können Sie feststellen, wo Kunden bei 
 seo-title: Trichterbericht
 solution: Experience Cloud,Analytics
 title: Trichterbericht
-topic: Berichte, Metriken
+topic: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 62%
 
 ---
 
@@ -23,25 +26,25 @@ Wenn Sie den **[!UICONTROL Trichterbericht]** öffnen, müssen Sie einen benutze
 
 >[!TIP]
 >
->Wenn Sie Ihren benutzerdefinierten Trichter speichern möchten, speichern Sie die URL, nachdem Sie seine Einstellungen konfiguriert und den Bericht ausgeführt haben. Sie können die URL weitergeben oder in einem Dokument speichern.
+>Wenn Sie Ihren benutzerdefinierten Trichter speichern möchten, speichern Sie die URL, nachdem Sie seine Einstellungen konfiguriert und den Bericht ausgeführt haben. Sie können die URL freigeben oder in einem Dokument speichern.
 
 Im Folgenden finden Sie ein Beispiel dieses Berichts:
 
 ![](assets/funnel_create.png)
 
-Zur Veranschaulichung eines einfachen Trichters sind die Einstellungen für eine Konfiguration dargestellt, die drei Trichterschritte und zwei Trichtervergleiche umfasst. Als Beispiel dient eine Demo-App, mit der Benutzer ein Element, wie z. B. ein Foto, hinzufügen können, das sie dann teilen.
+Um einen einfachen Trichter zu demonstrieren, hier die Einstellungen für eine Konfiguration, die drei Trichterschritte und zwei Trichtervergleiche verwendet. Es wird davon ausgegangen, dass eine Demo-App Benutzern das Hinzufügen eines Elements, z. B. eines Fotos, und die Freigabe ermöglicht.
 
-Das Fenster „Benutzerspezifisch“ enthält verschiedene Abschnitte, die angeben, ob Benutzer die App gestartet, ein Foto aus der Galerie hinzugefügt und mindestens ein Foto über die App in sozialen Medien, per Textnachricht, E-Mail oder anderweitig geteilt haben. Mit den Trichtervergleichen können Sie die Stufen des Hinzufügens und Teilens von Fotos zwischen Benutzern der iOS-App und der Android-App vergleichen.
+Im Fenster &quot;Anpassen&quot;finden Sie Abschnitte, die angeben, dass der Benutzer die App gestartet hat, ein Foto aus einer Galerie in der App hinzugefügt, ein oder mehrere Fotos aus der App in sozialen Medien, Textnachrichten, E-Mail usw. freigegeben hat. Mit den Trichtervergleichen können Sie die Stufen beim Hinzufügen und Freigeben von Fotos zwischen Benutzern der iOS-App und der Android-App vergleichen.
 
 Um den Bericht zu erstellen, klicken Sie auf **[!UICONTROL Ausführen]**.
 
-Im Folgenden finden Sie ein Beispiel des erstellten Berichts:
+Hier ein Beispiel für einen erstellten Bericht:
 
 ![](assets/funnel.png)
 
-Die erste Reihe zeigt, dass 100 Prozent der Benutzer die App gestartet haben. Die zweite Reihe zeigt, dass ein höherer Prozentsatz von Android-Benutzern ein Foto aus der Galerie hinzugefügt hat. Die dritte Reihe zeigt, dass fast die Hälfte der iOS-Benutzer, aber keiner der Android-Benutzer das Foto geteilt hat. Das könnte auf ein Problem mit der App hindeuten, das untersucht werden muss.
+Die erste Reihe zeigt, dass 100 Prozent der Benutzer die App gestartet haben. Die zweite Reihe zeigt, dass ein höherer Prozentsatz von Android-Benutzern ein Foto aus der Galerie hinzugefügt hat. Die dritte Reihe zeigt, dass fast die Hälfte der iOS-Benutzer das Foto freigegeben hat, aber keiner der Android-Benutzer das Foto freigegeben hat. Dies weist möglicherweise auf ein Problem mit der App hin, das untersucht werden muss.
 
-Um zusätzliche Informationen anzuzeigen, fahren Sie mit dem Mauszeiger über einen Balken des Diagramms.
+Um weitere Informationen anzuzeigen, bewegen Sie den Mauszeiger über einen Balken im Diagramm.
 
 Für diesen Bericht können folgende Optionen konfiguriert werden:
 
