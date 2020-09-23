@@ -5,10 +5,13 @@ seo-description: Mithilfe dieser Informationen können Sie die integrierten Beri
 seo-title: Reihen (Metriken) zu Berichten hinzufügen
 solution: Experience Cloud,Analytics
 title: Reihen (Metriken) zu Berichten hinzufügen
-topic: Berichte, Metriken
+topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 90%
 
 ---
 
@@ -23,11 +26,11 @@ Mithilfe dieser Informationen können Sie die integrierten Berichte durch Hinzuf
 
 Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzungen]** an, die Anweisungen gelten jedoch für alle Berichte.
 
-1. Öffnen Sie Ihre App und klicken Sie auf **[!UICONTROL Nutzung]** &gt; **[!UICONTROL Benutzer und Sitzungen]**.
+1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
 
    ![Schritt Ergebnis](assets/customize1.png)
 
-   Dieser Bericht enthält einen kompletten zeitlichen Überblick über unsere App-Nutzer. Wir möchten jedoch eine Reihe hinzufügen, um Informationen über App-Abstürze anzuzeigen.
+   Dieser Bericht bietet eine vollständige Ansicht unserer App-Benutzer im Zeitverlauf. Wir möchten jedoch eine Reihe hinzufügen, um über App-Abstürze zu berichten.
 
 1. Klicken Sie auf **[!UICONTROL Anpassen]**.
 
