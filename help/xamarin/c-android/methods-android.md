@@ -1,16 +1,16 @@
 ---
-description: Android methods for Xamarin components for Experience Cloud solutions 4.x SDK.
+description: Android-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 keywords: Xamarin
-seo-description: Android methods for Xamarin components for Experience Cloud solutions 4.x SDK.
+seo-description: Android-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 seo-title: Android-Methoden
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Android-Methoden
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1767'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -142,9 +142,9 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SD
       Config.CollectLifecycleData (this);
       ```
 
-* **CollectLifecycleData (Activity activity)**
+* **CollectLifecycleData (Aktivität-Aktivität)**
 
-   (4.2 or later) Indicates to the SDK that lifecycle data should be collected for use across all solutions in the SDK. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
+   (4.2 oder höher) Gibt dem SDK an, dass Lebenszyklusdaten für die Verwendung in allen Lösungen des SDK erfasst werden sollen. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -253,7 +253,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SD
 
 * **TrackAction**
 
-   Verfolgt eine Aktion in der App. Actions are the things that happen in your app that you want to measure, such as &quot;deaths&quot;, &quot;level gained&quot;, &quot;feed subscriptions&quot;, and other metrics.
+   Verfolgt eine Aktion in der App. Aktionen sind die Vorgänge, die in Ihrer App stattfinden und die Sie messen möchten, z. B. &quot;Todesfälle&quot;, &quot;erzielte Werte&quot;, &quot;Feed-Abonnement&quot;und andere Metriken.
 
    >[!TIP]
    >
@@ -366,7 +366,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SD
 
 * **TrackTimedActionUpdate**
 
-   Übergeben Sie Daten, um die Kontextdaten zu aktualisieren, die der angegebenen Aktion zugeordnet sind. Die weitergeleiteten Daten werden an die vorhandenen Daten für die jeweilige Aktion angehängt und überschreiben die Daten, wenn derselbe Schlüssel bereits für die Aktion definiert ist.
+   Übergeben Sie diesen Wert in Daten, um die Kontextdaten zu aktualisieren, die der gegebenen Aktion zugewiesen sind. Die weitergeleiteten Daten werden an die vorhandenen Daten für die jeweilige Aktion angehängt und überschreiben die Daten, wenn derselbe Schlüssel bereits für die Aktion definiert ist.
 
    >[!TIP]
    >
@@ -460,7 +460,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SD
 
 * **QueueSize**
 
-   Retrieves the number of hits that are currently in the offline queue.
+   Ruft die Anzahl der Treffer ab, die sich derzeit in der Offline-Warteschlange befinden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -753,7 +753,7 @@ Weitere Informationen zu Video Analytics finden Sie unter [Videoanalyse](/help/a
       }
       ```
 
-* **Close**
+* **Schließen**
 
    Schließt das Medienelement mit dem Namen name.
 
