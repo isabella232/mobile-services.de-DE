@@ -5,10 +5,13 @@ seo-description: Mit universellen Links (iOS) und App-Links (Android) können Si
 seo-title: Universelle Links (Apple) und App-Links (Android)
 solution: Experience Cloud,Analytics
 title: Universelle Links (Apple) und App-Links (Android)
-topic: Metriken
+topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: ht
-source-git-commit: e65add089499f728827321e96e439f04ebb19a73
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1142'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +66,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 1. Erstellen Sie in Adobe Mobile Services einen Marketinglink, der universelle Links verwendet:
 
-   a. Wählen Sie die App auf der Mobile Services-Startseite aus. Klicken Sie auf **[!UICONTROL Akquise]** &gt; **[!UICONTROL Marketing Link Builder]**.
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klicken Sie auf **[!UICONTROL Neu erstellen]**.
 
@@ -122,7 +125,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 1. Erstellen Sie in Adobe Mobile Services einen Marketinglink, der App-Links verwendet:
 
-   a. Wählen Sie die App auf der Mobile Services-Startseite aus. Klicken Sie auf **[!UICONTROL Akquise]** &gt; **[!UICONTROL Marketing Link Builder]**.
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klicken Sie auf **[!UICONTROL Neu erstellen]**.
 
