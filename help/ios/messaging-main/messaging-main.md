@@ -4,10 +4,13 @@ seo-description: Diese Informationen helfen Ihnen beim Verwenden der Nachrichten
 seo-title: Messaging
 solution: Experience Cloud,Analytics
 title: Messaging
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: c6475ab4-015d-46b0-af28-5d0df3f4459e
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ Diese Informationen helfen Ihnen beim Verwenden der Nachrichten in Ihren iOS-App
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
