@@ -2,12 +2,12 @@
 description: Informationen zur Verwendung des SDK für den Windows 8.1 Universal App Store mit Adobe Analytics.
 seo-description: Informationen zur Verwendung des SDK für den Windows 8.1 Universal App Store mit Adobe Analytics.
 seo-title: Analytics-Methoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analytics-Methoden
 topic: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 52%
