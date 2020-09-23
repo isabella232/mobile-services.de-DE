@@ -5,19 +5,22 @@ seo-description: Diese Informationen unterstützen Sie bei der Lösung von Probl
 seo-title: Fehlerbehebung von In-App-Nachrichten
 solution: Experience Cloud,Analytics
 title: Fehlerbehebung von In-App-Nachrichten
-topic: Metriken
+topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 58%
 
 ---
 
 
-# Fehlerbehebung von In-App-Nachrichten{#troubleshooting-in-app-messaging}
+# Fehlerbehebung von In-App-Nachrichten {#troubleshooting-in-app-messaging}
 
 Diese Informationen unterstützen Sie bei der Lösung von Problemen mit In-App-Nachrichten.
 
-Wenn alle Anforderungen für In-App-Nachrichten erfüllt sind, die Nachrichten jedoch nicht angezeigt werden, überprüfen Sie die folgenden Punkte:
+Wenn Sie alle Anforderungen für In-App-Nachrichten erfüllt haben, aber keine Nachrichten angezeigt werden, überprüfen Sie die folgenden Punkte:
 
 ## Enthält die Anwendung die neue Konfiguration und das neue SDK?
 
@@ -25,9 +28,9 @@ Wenn alle Anforderungen für In-App-Nachrichten erfüllt sind, die Nachrichten j
 
 * Sie müssen sicherstellen, dass Ihre Konfiguration (die heruntergeladene JSON-Datei) den Abschnitt [Messaging](/help/using/in-app-messaging/in-app-messaging.md) oder den Remote-Endpunkt „Nachrichten“ enthält, damit dieser vom dynamischen Tag-Management abgerufen werden kann.
 
-## Meine Vollbildnachricht in Android wird nicht angezeigt. Ich verwende das richtige SDK, die richtige Konfiguration und die Auslösebedingungen sind erfüllt.
+## Meine Vollbildnachricht in Android wird nicht angezeigt. Ich verwende das richtige SDK, die richtige Konfiguration und meine Auslöser werden erfüllt.
 
-Haben Sie die Vollbildaktivität in Ihrer Manifestdatei definiert?
+Haben Sie Ihre Manifestdatei aktualisiert, um die Aktivität im Vollbildmodus zu definieren?
 
 ## Meine lokale Benachrichtigung in Android funktioniert nicht.
 
@@ -41,39 +44,39 @@ Anhand der Listenansicht in der Spalte **[!UICONTROL Status]** auf der Seite In-
 
 Stellen Sie sicher, dass die Einstellungen korrekt sind. Überprüfen Sie auf der Seite Zielgruppe die Optionen auf der Registerkarte **[!UICONTROL Auslöser]**. Hier können Sie angeben, wie oft die Nachricht angezeigt wird.
 
-## Bei Verwendung eines Ereignisstarts als Auslöser...
+## Bei Verwendung eines Ereignisstarts als Auslöser …
 
 Ereignis wird nur bei einer neuen Sitzung ausgelöst. Informationen dazu, wann eine Sitzung beginnt, finden Sie unter `lifecycleTimeout` in der [ADBMobile JSON-Konfigurationsdatei](/help/ios/configuration/json-config/json-config.md).
 
-## Ich habe meine Nachricht remote aktualisiert; in der Anwendung wird jedoch nach wie vor die alte Nachricht angezeigt.
+## Ich habe meine Nachricht remote aktualisiert in der Anwendung wird jedoch nach wie vor die alte Nachricht angezeigt.
 
 Führen Sie eine der folgenden Aufgaben aus:
 
-* Die Aktualisierung des Endpunkts entsprechend Ihrer neuen Definition im dynamischen Tag-Management kann einige Minuten dauern.
+* Das dynamische Tag-Management kann einige Minuten dauern, bis sein Endpunkt mit Ihrer neuen Definition aktualisiert wird.
 
-   Warten Sie einige Minuten und versuchen Sie es ggf. erneut.
+   Gib es etwas Zeit und versuche es erneut.
 
 * Die Konfiguration wird nur bei einem Neustart aktualisiert.
 
-   Wenn die App innerhalb des Sitzungs-Timeouts des Lebenszyklus neu gestartet wurde, wurde die neue Konfiguration möglicherweise nicht heruntergeladen.
+   Wenn die App während des Lebenszyklussitzungs-Timeouts neu gestartet wurde, wurde Ihre neue Konfiguration möglicherweise nicht heruntergeladen.
 
-## Mein Bild passt nicht genau in den in der Vorlage vorgesehenen Platz.
+## Mein Bild passt nicht genau in den von der Vorlage bereitgestellten Raum.
 
-Die Vollbildvorlage für In-App-Nachrichten unterstützt die Anzeige eines Bildes über einen Remote-Server (Bild-URL) oder über das App-Bundle (Bild-Bundle). Das Bild sollte in einem Standardbildformat vorliegen, wie z. B. JPG, GIF oder PNG.
+Die Vollbildvorlage &quot;In-App-Nachricht&quot;unterstützt das Anzeigen eines Bildes von einem Remote-Server (Bild-URL) oder vom App-Bundle (Bundle-Bild). Das Bild sollte in einem Standardbildformat vorliegen, z. B. JPG, GIF oder PNG.
 
-Da Gerätebildschirme verschiedenste Abmessungen aufweisen, passt das Bild wahrscheinlich nicht genau in den Platz, der in der Vorlage vorgesehen ist. Die Vorlage versucht stets, die Mitte des Bildes zu zeigen, und schneidet die Seiten zu (Hochformat) bzw. blendet sie aus (Querformat), wenn das Bild nicht passt.
+Da Gerätebildschirme viele verschiedene Abmessungen haben, passt das Bild wahrscheinlich nicht genau in den von der Vorlage bereitgestellten Raum. Die Vorlage konzentriert sich immer darauf, den Mittelpunkt des Bilds anzuzeigen und die Seiten zu beschneiden (Hochformat) oder (Querformat), wenn das Bild nicht passt.
 
 Im Folgenden finden Sie die genauen Positionierungs- und Größenregeln für jede Ausrichtung:
 
-* **Hochformat:** Das Bild wird auf eine Höhe von 195 px für Smartphones bzw. 529 px für Tablets skaliert und zentriert, wenn die Bildbreite kleiner als die Breite des Geräts ist, bzw. zugeschnitten, wenn die Bildbreite größer als die Breite des Geräts ist.
+* **Hochformat**, bei dem das Bild für Smartphones auf eine Höhe von 195 px und für Tablets auf 529 px skaliert wird, zentriert, wenn die Bildbreite kleiner als die Gerätegröße ist, und abgeschnitten, wenn die Bildbreite größer als die Gerätebreite ist.
 
-* **Querformat:** Das Bild wird auf 100 % der Höhe und 75 % der Gerätebreite skaliert, wobei es nach rechts hin ausgeblendet wird.
+* **Querformat**, bei dem das Bild auf 100 % der Gerätehöhe skaliert wird, die Breite 75 % des Geräts beträgt und das Bild rechts ausgeblendet wird.
 
-   Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinierte HTML-Vorlage herunterladen und verwenden. Die benutzerdefinierte HTML-Vorlage bietet mehr Flexibilität in Bezug auf Bilder und gibt Ihnen volle Kontrolle über die Vorlage.
+   Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinierte HTML-Vorlage herunterladen und verwenden. Die benutzerdefinierte HTML-Vorlage bietet mehr Flexibilität bei Bildern und ermöglicht die vollständige Steuerung der Vorlage.
 
-## In meinen Nachrichten erscheinen keine Änderungen/Aktualisierungen, die ich über die Benutzeroberfläche vorgenommen habe.
+## Meine Nachrichten spiegeln keine Änderungen/Aktualisierungen wider, die ich in der Benutzeroberfläche vorgenommen habe.
 
-Das SDK ruft neue/aktualisierte Nachrichten zum Zeitpunkt eines Lebenszyklusstarts ab. Dies passiert erst, wenn die Anwendung für einen Zeitraum, der den Timeout-Wert für den Lebenszyklus überschreitet, geschlossen/in den Hintergrund verschoben und dann erneut geöffnet wird.
+Das SDK ruft neue/aktualisierte Nachrichten zum Zeitpunkt des Lebenszyklusstarts ab. Dies ist nur der Fall, wenn die Anwendung für einen höheren Lebenszyklustimeout-Wert geschlossen bzw. hinterlegt und dann erneut geöffnet wird.
 
 Führen Sie die folgenden Schritte aus:
 
