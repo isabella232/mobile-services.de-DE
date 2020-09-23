@@ -1,13 +1,16 @@
 ---
-description: Die folgende Tabelle enthält die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
-seo-description: Die folgende Tabelle enthält die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
+description: In den folgenden Tabellen werden die Metriken und Dimensionen Liste, die nach der Implementierung des Lebenszyklus automatisch von der Mobilbibliothek gemessen werden können.
+seo-description: In den folgenden Tabellen werden die Metriken und Dimensionen Liste, die nach der Implementierung des Lebenszyklus automatisch von der Mobilbibliothek gemessen werden können.
 seo-title: Lebenszyklusmetriken
 solution: Experience Cloud,Analytics
 title: Lebenszyklusmetriken
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
-translation-type: ht
-source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1108'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +21,7 @@ Im Folgenden die Metriken und Dimensionen, die nach der Implementierung des Lebe
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -68,7 +71,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 * **Starts**
 
-   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch ausgelöst, wenn die Anwendung nach Überschreitung der Lebenszyklus-Zeitüberschreitung aus dem Hintergrund geholt wird.
+   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch ausgelöst, wenn die App nach Überschreitung des Lebenszyklussitzungs-Timeouts aus dem Hintergrund fortgesetzt wird.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.LaunchEvent`
    * Audience Manager-Signal: `c_a_LaunchEvent`
@@ -130,7 +133,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 * **Stunde des Tages**
 
-   Misst, zu welcher Stunde die Anwendung gestartet wurde; es wird ein 24-Stunden-Format genutzt. Wird für die Zeitaufteilung verwendet, um Spitzennutzungszeiten zu ermitteln.
+   Misst die Stunde, in der die App gestartet wurde, und verwendet das numerische Format (24 Stunden). Wird für die Zeitaufteilung verwendet, um Spitzennutzungszeiten zu bestimmen.
 
    * Analytics-Kontextdaten/Target: `a.HourOfDay`
    * Zielgruppen-Management: `c_a_HourOfDay`
@@ -165,7 +168,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 * **Gerätename**
 
-   Speichert den Gerätenamen.  Zweistellige, kommagetrennte Zeichenfolge, die das iOS-Gerät angibt. Die erste Ziffer steht üblicherweise für die Gerätegeneration, die zweite weist die Version der verschiedenen Mitglieder der Gerätefamilie aus. Eine Liste gängiger Gerätenamen finden Sie unter  iOS-Geräteversionen.
+   Speichert den Gerätenamen.  Zweistellige, kommagetrennte Zeichenfolge, die das iOS-Gerät identifiziert. Die erste Ziffer steht üblicherweise für die Gerätegeneration, die zweite weist die Version der verschiedenen Mitglieder der Gerätefamilie aus. Eine Liste gängiger Gerätenamen finden Sie unter  iOS-Geräteversionen.
 
    * Analytics-Kontextdaten/Target: `a.DeviceName`
    * Zielgruppen-Management: `c_a_DeviceName`
@@ -283,7 +286,7 @@ Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit
 
 * **Rückverfolgungscode**
 
-   Erfasst durch App-Akquise. Automatisch von Adobe Mobile Services generiert.
+   Erfasst durch App-Akquise. Wird automatisch von Adobe Mobile Services generiert.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.trackingcode`
    * Zielgruppen-Management-Eigenschaft: `c_a_referrer_campaign_trackingcode`
@@ -297,28 +300,28 @@ Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit
 
 * **Kampagneninhalt**
 
-   Der Name der ID des Inhalts, in dem der Link angezeigt wurde. Erfasst durch App-Akquise.
+   Der Name oder die ID des Inhalts, der den Link angezeigt hat. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.content`
    * Zielgruppen-Management-Eigenschaft: `c_a_referrer_campaign_content`
 
 * **Kampagnenmedium**
 
-   Marketingmedium, z. B. Banner oder E-Mail. Erfasst durch App-Akquise.
+   Marketingmedium wie Banner oder E-Mail. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.medium`
    * Zielgruppen-Management-Eigenschaft: `c_a_referrer_campaign_medium`
 
 * **Kampagnenquelle**
 
-   Ursprünglicher Referrer, wie z. B. Newsletter oder soziales Netzwerk. Erfasst durch App-Akquise.
+   Ursprünglicher Werber, z. B. Newsletter oder Social Media-Netzwerk. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.source`
    * Zielgruppen-Management-Eigenschaft: `c_a_referrer_campaign_source`
 
 * **Kampagnenbegriff**
 
-   Bezahlte Keywords oder andere Begriffe, die Sie mit dieser Akquise verfolgen wollen. Erfasst durch App-Akquise.
+   Bezahlte Suchbegriffe oder andere Begriffe, die Sie mit dieser Akquisition verfolgen möchten. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.term`
    * Zielgruppen-Management-Eigenschaft: `c_a_referrer_campaign_term`
