@@ -2,13 +2,13 @@
 description: Mit dem Lebenszeitwert können Sie für jeden Android-Benutzer einen Lebenszeitwert messen und vorgeben. Dieser Wert kann verwendet werden, um Lebenszeiteinkäufe, Banner-Anzeigen, abgeschlossene Videos, Informationen zur Freigabe in sozialen Netzwerken, Foto-Uploads usw. zu speichern.
 seo-description: Mit dem Lebenszeitwert können Sie für jeden Android-Benutzer einen Lebenszeitwert messen und vorgeben. Dieser Wert kann verwendet werden, um Lebenszeiteinkäufe, Banner-Anzeigen, abgeschlossene Videos, Informationen zur Freigabe in sozialen Netzwerken, Foto-Uploads usw. zu speichern.
 seo-title: Besucherlebenszeitwert
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Besucherlebenszeitwert
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 
