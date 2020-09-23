@@ -4,10 +4,13 @@ seo-description: Das iOS Adobe Mobile-SDK kann mithilfe der Funktion „Mix and 
 seo-title: Swift-Integration
 solution: Experience Cloud,Analytics
 title: Swift-Integration
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 5fb77b57-cbf9-4bcf-8b41-65a933bf9336
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 71%
 
 ---
 
@@ -18,13 +21,13 @@ Das iOS Adobe Mobile-SDK kann mithilfe der Funktion „Mix and Match“ (Kombini
 
 Weitere Informationen finden Sie unter [Language Interoperability (Sprachinteroperabilität)](https://developer.apple.com/documentation/swift#2984801.html).
 
-Beispielsweise können Sie durch Verwendung der Methode „bridging header“ entsprechend der Beschreibung in der Dokumentation die iOS-SDK-Header-Datei in Adobe Mobile importieren:
+Durch Verwendung der Überbrückungs-Header-Methode, wie in der Dokumentation beschrieben, können Sie z. B. die Header-Datei der Adobe Mobile iOS SDK importieren:
 
 ```
 #import “ADBMobile.h”
 ```
 
-Verwenden Sie das folgende Format, um auf Methoden im SDK in Ihren Swift-Dateien zuzugreifen:
+Verwenden Sie das folgende Format, um auf Methoden aus dem SDK in Ihren Swift-Dateien zuzugreifen:
 
 ```
 ADBMobile.{methodname}
