@@ -4,10 +4,13 @@ seo-description: Mit dem Geostandort können Sie Standortdaten unter Verwendung 
 seo-title: Geostandort und Zielpunkte
 solution: Experience Cloud,Analytics
 title: Geostandort und Zielpunkte
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 82%
 
 ---
 
@@ -20,9 +23,9 @@ Jeder `trackLocation`-Aufruf sendet Folgendes:
 
 * Breitengrad, Längengrad und Standort in einem Zielpunkt (Point of Interest, POI), der in Adobe Mobile Services definiert ist.
 
-   Diese Informationen werden zur automatischen Meldung an die Variablen für die mobile Lösung übergeben.
+   Diese Informationen werden für den automatischen Berichte an mobile Lösungsvariablen übergeben.
 
-* Entfernung vom Zentrum und Präzision in Form von Kontextdaten.
+* Entfernung vom Zentrum und Genauigkeit als Kontextdaten weitergegeben.
 
    Diese Variablen werden nicht automatisch erfasst. Sie müssen diese Variablen für Kontextdaten mithilfe der Anweisungen im Abschnitt *Zusätzliche Daten senden* unten zuordnen.
 
@@ -80,9 +83,9 @@ Die Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ## Standort-Kontextdaten {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-Der Breiten- und Längengrad werden mithilfe von drei unterschiedlichen Kontextdatenparametern für insgesamt sechs Kontextdatenparameter gesendet, wobei jeder Parameter eine unterschiedliche Genauigkeitsstufe darstellt.
+Die Längen- und Breitengrade werden jeweils mit drei verschiedenen Kontextdatenparametern gesendet, wobei jeder Parameter eine andere Präzision für insgesamt sechs Kontextdatenparameter darstellt.
 
-Beispielsweise stehen die Koordinaten lat = 40.93231, lon = -111.93152 für einen Standort mit einer Genauigkeit von 1 m. Dieser Standort wird über die folgenden Variablen hinweg entsprechend der Genauigkeitsstufe aufgeteilt:
+Beispielsweise stellen die Koordinaten lat = 40.93231, lon = -111.93152 eine Position mit 1 m Präzision dar. Diese Position wird entsprechend der Präzision auf die folgenden Variablen aufgeteilt:
 
 * `a.loc.lat.a` = 040,9
 * `a.loc.lat.b` = 32
@@ -112,5 +115,5 @@ Beachten Sie die folgenden Informationen:
 
 * Wenn sich die Radien zweier POIs überschneiden, wird der erste POI verwendet, der den aktuellen Standort enthält.
 
-   Wenn sich die POIs überlappen, sollten Sie die POIs nach Detailstufe sortieren, um sicherzustellen, dass der POI mit der höheren Präzision verwendet wird.
+   Wenn sich Ihre POIs überschneiden, sollten Sie POIs in der Reihenfolge der granulärsten bis der kleinsten Granularität Liste vornehmen, um sicherzustellen, dass der granulärste POI gemeldet wird.
 
