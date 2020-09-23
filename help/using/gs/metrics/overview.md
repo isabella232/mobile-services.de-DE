@@ -1,23 +1,26 @@
 ---
-description: Sie können die Performancemetriken von Apps anzeigen, die Sie kürzlich angezeigt haben. Standardmäßig werden bis zu 12 Apps angezeigt. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren, und beliebige Apps auf der Seite „Überblick“ bearbeiten.
+description: Sie können die wichtigsten Leistungsmetriken der Apps anzeigen, die Sie zuletzt angezeigt haben. Standardmäßig können bis zu 12 Apps Ansicht werden. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren und eine beliebige App auf der Seite Überblick zu bearbeiten.
 keywords: mobile
-seo-description: Sie können die Performancemetriken von Apps anzeigen, die Sie kürzlich angezeigt haben. Standardmäßig werden bis zu 12 Apps angezeigt. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren, und beliebige Apps auf der Seite „Überblick“ bearbeiten.
+seo-description: Sie können die wichtigsten Leistungsmetriken der Apps anzeigen, die Sie zuletzt angezeigt haben. Standardmäßig können bis zu 12 Apps Ansicht werden. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren und eine beliebige App auf der Seite Überblick zu bearbeiten.
 seo-title: Mobile Metriken anzeigen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobile Metriken anzeigen
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: ht
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Mobile Metriken anzeigen {#display-mobile-metrics}
 
-Sie können die Performancemetriken von Apps anzeigen, die Sie kürzlich angezeigt haben. Standardmäßig werden bis zu 12 Apps angezeigt. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren, und beliebige Apps auf der Seite „Überblick“ bearbeiten.
+Sie können die wichtigsten Leistungsmetriken der Apps anzeigen, die Sie zuletzt angezeigt haben. Standardmäßig können bis zu 12 Apps Ansicht werden. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren und eine beliebige App auf der Seite Überblick zu bearbeiten.
 
-Die für jede App angezeigten Metriken entsprechen den Schlüsselmetriken, die Sie beim Erstellen der App ausgewählt haben. Weitere Informationen finden Sie unter  [Neue App hinzufügen](/help/using/manage-apps/t-new-app.md).
+Die für jede App angezeigten Metriken spiegeln die Schlüsselmetriken wider, die Sie beim Erstellen der App ausgewählt haben. For more information, see [Add a New App](/help/using/manage-apps/t-new-app.md).
 
 Wenn die App, die Sie aufrufen möchten, nicht angezeigt wird, suchen Sie danach, indem Sie den App-Namen eingeben oder auf die Dropdownliste in **[!UICONTROL Alle Apps]** klicken.
 
@@ -25,18 +28,18 @@ Auf der Seite Überblick haben Sie folgende Möglichkeiten:
 
 * **Datumsbereich ändern**
 
-   In den Schlüsselmetriken werden Daten aus den letzten 30 Tagen angezeigt. Sie können diese Einstellung ändern, indem Sie oben rechts auf das Kalendersymbol klicken. Über die Dropdownliste können Sie einen Datumsbereich oder einen vordefinierten Zeitrahmen auswählen.
+   In den Schlüsselmetriken werden Daten aus den letzten 30 Tagen angezeigt. Sie können dies ändern, indem Sie auf das Kalendersymbol oben rechts klicken. Sie können einen Datumsbereich oder einen vorab festgelegten Zeitraum aus der Dropdown-Liste auswählen.
 
 * **Daten filtern**
 
-   Sie können Filter verwenden, um die Daten für jede App zu segmentieren.
+   Benutzerdefinierte Filter können die Daten für jede App segmentieren.
 
-   Beispielsweise können Sie die Daten nach App-Version und Gerätetyp filtern.
+   Sie können die Daten beispielsweise nach App-Version und Gerätetyp filtern.
 
    So erstellen Sie einen Filter:
 
    1. Klicken Sie auf das Symbol **[!UICONTROL Filter]**. Daraufhin wird das Dialogfeld **[!UICONTROL Fixierbarer Filter]** eingeblendet.
-   1. Klicken Sie auf **[!UICONTROL Regel hinzufügen],** wählen Sie aus der Dropdownliste eine Option aus und geben Sie die erforderlichen Informationen ein.
+   1. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**, wählen Sie aus der Dropdownliste eine Option aus und geben Sie die erforderlichen Informationen ein.
 
       Sie können beispielsweise **[!UICONTROL App-Version]** auswählen und `4.5` für die Version eingeben. Sie können auch **[!UICONTROL Gerätetyp]** auswählen und `Android` eingeben.
 
@@ -53,7 +56,7 @@ Auf der Seite Überblick haben Sie folgende Möglichkeiten:
 
 * **Key Performance Indicators (KPIs) anzeigen**
 
-   Klicken Sie auf den Namen der App, um Details zu KPIs anzuzeigen. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Um einen Drilldown durchzuführen, klicken Sie auf das Symbol neben **[!UICONTROL Key Performance Indicators]**. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Klicken Sie auf eine Spaltenüberschrift in der Tabelle, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
+   Klicken Sie auf den Namen der App, um Details zu den wichtigsten Leistungsindikatoren anzuzeigen. Die Linien im Diagramm sind farbkodiert, und Sie können den Mauszeiger über den Datenpunkt bewegen, um die Statistik für bestimmte Daten anzuzeigen. Um einen Drilldown durchzuführen, klicken Sie auf das Symbol neben **[!UICONTROL Key Performance Indicators]**. Die Zeilen im Diagramm sind farbcodiert und Sie können mit dem Mauszeiger über einen Datenpunkt fahren, um Statistiken für bestimmte Daten anzuzeigen. Klicken Sie auf eine Spaltenüberschrift in der Tabelle, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
 
 ## Einstellungen einer App ändern {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
