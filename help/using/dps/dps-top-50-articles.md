@@ -5,10 +5,13 @@ seo-description: Der Bericht „Die 50 beliebtesten Artikel“ enthält ein Balk
 seo-title: Die 50 beliebtesten Artikel
 solution: Experience Cloud,Analytics
 title: Die 50 beliebtesten Artikel
-topic: Metriken
+topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: ht
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +24,7 @@ Der Bericht zeigt zwar standardmäßig Daten für die letzten 30 Tage nach der 
 
 ![](assets/dps_top_50.png)
 
-Dieser Bericht gibt standardmäßig den Artikeltitel und die Anzahl der Leser an.
+Dieser Bericht zeigt standardmäßig den Artikeltitel und die Anzahl der Leser an.
 
 Für diesen Bericht können folgende Optionen konfiguriert werden:
 
