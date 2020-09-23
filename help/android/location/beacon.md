@@ -1,14 +1,17 @@
 ---
 description: Die Beacon-Verfolgung ermöglicht es Ihnen, Mikrostandorte mithilfe von iBeacon und Bluetooth Low Energy zu messen und anzusprechen.
-keywords: Android;Bibliothek;Mobile;SDK
+keywords: android;library;mobile;sdk
 seo-description: Die Beacon-Verfolgung ermöglicht es Ihnen, Mikrostandorte mithilfe von iBeacon und Bluetooth Low Energy zu messen und anzusprechen.
 seo-title: Beacon-Verfolgung
 solution: Experience Cloud,Analytics
 title: Beacon-Verfolgung
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 81%
 
 ---
 
@@ -24,12 +27,12 @@ Die folgenden Beacon-Daten werden an Analytics und Target gesendet, wenn `trackB
 * `a.beacon.minor` – Minor-Wert des Beacons (z. B. die eindeutige Kennung innerhalb eines Stores)
 * `a.beacon.prox` – Die Werte 0–3 geben an, wie nah sich der Benutzer am Beacon befindet.
 
-Diese Werte haben folgende Bedeutung:
+Diese Werte bedeuten:
 
 * 0 = unbekannt
-* 1 = unmittelbar
-* 2 = nah
-* 3 = entfernt
+* 1 = sofort
+* 2 = nahe
+* 3 = far
 
 Diese Beacon-Daten werden in Variablen für mobile Lösungen erfasst.
 
@@ -45,10 +48,10 @@ Diese Beacon-Daten werden in Variablen für mobile Lösungen erfasst.
    import com.adobe.mobile.*;
    ```
 
-1. Erfassen Sie den Beacon-Standort.
+1. Beacon-Position sammeln.
 
-   Je nach Hersteller des Beacons sind für das Scannen von Bluetooth LE-Beacons verschiedene Bibliotheken von Drittanbietern verfügbar.
-1. Nachdem die Beacon-Informationen abgerufen wurden, verwenden Sie den folgenden Anruf, um den Standort zu verfolgen:
+   Es sind mehrere Drittanbieter-Bibliotheken verfügbar, um Bluetooth-LE-Beacons zu scannen, je nach Hersteller des Beacons.
+1. Nachdem die Beacon-Informationen abgerufen wurden, verwenden Sie den folgenden Aufruf, um den Ort zu verfolgen:
 
    ```java
    // assumed that the following variables will have been retrieved by the 3rd party beacon library 
