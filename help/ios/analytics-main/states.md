@@ -1,20 +1,23 @@
 ---
-description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Sobald ein neuer Zustand in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Verfolgungszustandsaufruf gesendet werden. In iOS wird ein Zustand in der Regel in der viewDidLoad-Methode jeder Ansicht verfolgt.
-seo-description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Sobald ein neuer Zustand in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Verfolgungszustandsaufruf gesendet werden. In iOS wird ein Zustand in der Regel in der viewDidLoad-Methode jeder Ansicht verfolgt.
+description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer Anwendung ein neuer Status angezeigt wird, z. B. wenn ein Benutzer von der Startseite zum News-Feed navigiert, sollte ein Verfolgungsstatusaufruf gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
+seo-description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer Anwendung ein neuer Status angezeigt wird, z. B. wenn ein Benutzer von der Startseite zum News-Feed navigiert, sollte ein Verfolgungsstatusaufruf gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
 seo-title: App-Zustände verfolgen
 solution: Experience Cloud,Analytics
 title: App-Zustände verfolgen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 58%
 
 ---
 
 
 # App-Zustände verfolgen {#track-app-states}
 
-Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Sobald ein neuer Zustand in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Verfolgungszustandsaufruf gesendet werden. In iOS wird ein Zustand in der Regel in der viewDidLoad-Methode jeder Ansicht verfolgt.
+Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer Anwendung ein neuer Status angezeigt wird, z. B. wenn ein Benutzer von der Startseite zum News-Feed navigiert, sollte ein Verfolgungsstatusaufruf gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
 
 >[!TIP]
 >
@@ -56,10 +59,10 @@ Die Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ## App-Statusberichte {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Auf diese Weise können Sie sehen, wie Benutzer in Ihrer App navigieren und welche Status am häufigsten angezeigt werden.
+Zustände werden in der Regel mithilfe eines Pfadberichts angezeigt, sodass Sie sehen können, wie Benutzer in Ihrer App navigieren und welche Zustände am häufigsten angezeigt werden.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. Ein Beispielpfad ist  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Einstellungen]**  &gt; **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **[!UICONTROL Seiten]**, **[!UICONTROL Seitenansichten]** oder **[!UICONTROL Pfad]**. |
 | Ad-hoc-Analysen | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden, z. B. in der Dimension **[!UICONTROL Seite]**, der Metrik **[!UICONTROL Seitenansichten]** und dem Bericht **[!UICONTROL Pfad]**. |
