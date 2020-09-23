@@ -5,10 +5,13 @@ seo-description: Zeigen Sie eine Liste Ihrer In-App- und Push-Nachrichten mit In
 seo-title: Nachrichten verwalten
 solution: Experience Cloud,Analytics
 title: Nachrichten verwalten
-topic: Metriken
+topic: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 73%
 
 ---
 
@@ -17,17 +20,17 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 Zeigen Sie eine Liste Ihrer In-App- und Push-Nachrichten mit Informationen zum Zeitpunkt der letzten Aktualisierung sowie zum Status (live oder deaktiviert) jeder Nachricht an.
 
-Sie können Nachrichten duplizieren, aktivieren/deaktivieren sowie archivieren/ihre Archivierung aufheben. Beispielsweise können Sie einen Bericht anzeigen, in dem die Anzahl der Benutzer angegeben wird, die die Nachricht angesehen haben, sowie die Anzahl der Benutzer, die die Nachricht durchgeklickt haben.
+Sie können Nachrichten Duplikat, aktivieren/deaktivieren und archivieren/dearchivieren. Sie können auch einen Bericht zur Ansicht der Anzahl der Benutzer, die die Nachricht angezeigt haben, sowie der Anzahl der Benutzer, die die Nachricht durchgeklickt haben, erstellen.
 
-Um Nachrichten zu verwalten, klicken Sie auf ***Ihr_App_Name*** &gt; **[!UICONTROL Messaging]** &gt; **[!UICONTROL Nachrichten verwalten]**.
+Um Nachrichten zu verwalten, klicken Sie auf ***Ihr_App_Name*** > **[!UICONTROL Nachrichten]** > Nachrichten **[!UICONTROL verwalten]**.
 
 ![](assets/manage_messages.png)
 
-Im Folgenden finden Sie zusätzliche Informationen zu den Aktionen, die Sie mit Nachrichten durchführen können:
+Im Folgenden finden Sie weitere Informationen zu den Aufgaben, die Sie in Nachrichten ausführen können:
 
 * **Nachrichten suchen und filtern**
 
-   Benutzen Sie das oberhalb der Liste angezeigte Suchfeld, um nach Nachrichten zu suchen und diese zu filtern. In der Liste werden Nachrichten angezeigt, die mit Ihren Eingaben im Suchfeld übereinstimmen. Die Suche arbeitet über alle Tabellenspalten hinweg. Sie können beispielsweise `Draft` eingeben, um nur Nachrichten mit dem entsprechenden Status anzuzeigen. Sie können auch den Namen eines Benutzers eingeben, damit nur Nachrichten angezeigt werden, die von diesem Benutzer aktualisiert wurden.
+   Benutzen Sie das oberhalb der Liste angezeigte Suchfeld, um nach Nachrichten zu suchen und diese zu filtern. Alles, was Sie in das Suchfeld eingeben, zeigt übereinstimmende Meldungen aus der Liste an. Die Suche funktioniert über alle Tabellenspalten hinweg. Sie können beispielsweise `Draft` eingeben, um nur Nachrichten mit dem entsprechenden Status anzuzeigen. Sie können auch den Namen eines Benutzers eingeben, damit nur Nachrichten angezeigt werden, die von diesem Benutzer aktualisiert wurden.
 
    Sie können außerdem auf eine beliebige Spaltenüberschrift klicken, um die Liste in auf- oder absteigender Reihenfolge nach dieser Spalte zu sortieren.
 
@@ -36,10 +39,10 @@ Im Folgenden finden Sie zusätzliche Informationen zu den Aktionen, die Sie mit 
 * **Nachrichten duplizieren**
 
    1. Aktivieren Sie das Kontrollkästchen neben mindestens einer Nachricht und klicken Sie auf **[!UICONTROL Ausgewählte duplizieren]**.
-   1. Wählen Sie die App aus, für die Sie eine Nachricht duplizieren möchten.
+   1. Wählen Sie die App aus, für die Sie eine Duplikat-Nachricht erstellen möchten.
    1. Geben Sie einen Namen für die Nachricht ein.
 
-      Um eine Nachricht für dieselbe App zu duplizieren, geben Sie einen neuen Namen für die Nachricht ein. Wenn Sie denselben Namen beibehalten, überschreiben Sie die ursprüngliche Nachricht. Wenn Sie eine Nachricht für eine andere App duplizieren, können Sie denselben Namen beibehalten, ohne dass die ursprüngliche Nachricht überschrieben wird.
+      Um eine Nachricht für dieselbe App Duplikat, geben Sie einen neuen Namen für die Nachricht ein. Wenn Sie denselben Namen behalten, um die ursprüngliche Nachricht zu überschreiben. Wenn Sie eine Nachricht für eine andere App duplizieren, können Sie denselben Namen beibehalten, ohne dass die ursprüngliche Nachricht überschrieben wird.
 
    1. Klicken Sie gegebenenfalls auf **[!UICONTROL Duplizieren]** oder auf **[!UICONTROL Überschreiben]**.
 
