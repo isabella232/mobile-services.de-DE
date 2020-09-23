@@ -5,10 +5,13 @@ seo-description: Sie können mit Adobe Mobile verschiedene Metriken messen und M
 seo-title: Mobile Metriken
 solution: Experience Cloud,Analytics
 title: Mobile Metriken
-topic: Metriken
+topic: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 33%
 
 ---
 
@@ -17,17 +20,17 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 Sie können mit Adobe Mobile verschiedene Metriken messen und Metriken erfassen, die Sie für Ihre App verfolgen möchten.
 
-Folgende Metriktypen werden gemessen:
+Die folgenden Metriktypen werden gemessen:
 
 * **App-Starts, -Upgrades und -Abstürze**
 
-   Diese Metriken geben Einblick in den allgemeinen Zustand und die Nutzung Ihrer App. Sie können die Anzahl der Startvorgänge, die Anzahl der Benutzer jeder App-Version, Abstürze usw. verfolgen. Zusammen mit dem Gesamtumsatz (bei einer kostenpflichtigen App) stellen diese Metriken den Ausgangspunkt bei der Messung mobiler Apps dar.
+   Diese Metriken bieten eine Ansicht zum allgemeinen Zustand und zur Nutzung Ihrer App. Sie können die Anzahl der Starts, die Anzahl der Benutzer auf jeder Version Ihrer App, Abstürze usw. verfolgen. Diese Metriken zusammen mit dem Gesamtumsatz (wenn Sie eine kostenpflichtige App bereitstellen) sind in der Regel der Ausgangspunkt für die Messung mobiler Apps.
 
 * **Nutzung und Kundenbindung**
 
-   Mithilfe von Nutzungsmetriken können Sie Angaben zur durchschnittlichen Sitzungslänge, zu aktiven Benutzern (täglich und monatlich), Upgrades und andere Informationen anzeigen, die Ihnen Aufschluss darüber geben, auf welche Weise und wie oft Ihre App genutzt wird. In Berichten zur Benutzerbindung werden die verschiedenen Stufen der Benutzerbindung am Tag nach dem ersten Start, nach sieben Tagen und nach 28 Tagen angezeigt.
+   Mithilfe von Nutzungsmetriken können Sie die durchschnittliche Sitzungslänge, tägliche und monatliche beteiligte Benutzer, Upgrades und andere Einblicke verstehen, die Ihnen Aufschluss darüber geben, wie und wie oft Ihre App verwendet wird. Treueberichte zeigen die Stufen der Benutzerbindung am Tag nach dem ersten Start, nach 7 Tagen und nach 28 Tagen schnell an.
 
-   Auf Android-Geräten können Sie mittels Nachverfolgung von Google Play-Referrern nachmessen, wie oft Benutzer den App Store besuchen, bevor sie Ihre App herunterladen.
+   Auf Android-Geräten können Sie mit der Google Play-Werber-Verfolgung messen, wie Benutzer zum App Store gelangen, bevor sie Ihre App herunterladen.
 
 * **Umsatz**
 
@@ -39,22 +42,22 @@ Folgende Metriktypen werden gemessen:
 
 * **App-Statuszustände**
 
-   Statuszustände sind die verschiedenen Ansichten, die eine App bietet. Da diese in einem Pfadsetzungsbericht aufgeführt werden, sollten Sie am besten darüber nachdenken, welche Pfade Sie in Ihrer App messen möchten. Das kann zum Beispiel die Frage sein, wohin die Benutzer von der Erstansicht in der App aus am häufigsten navigieren.
+   Statusangaben sind die verschiedenen Ansichten, die von Ihrer App bereitgestellt werden. Statusangaben werden in einem Pfadsetzungsbericht angezeigt. Eine gute Möglichkeit zum Definieren von Zuständen besteht darin, über die Pfade in Ihrer App nachzudenken, die Sie messen möchten. Wo navigieren die Benutzer beispielsweise am häufigsten von der ersten Ansicht aus?
 
 * **Standort und Points-of-Interest**
 
-   Bei aktiviertem GeoReporting in Ihrer Analytics-Report Suite stehen Ihnen verschiedene standortbasierte Berichte zur Verfügung. Bei WLAN ähnelt die Genauigkeit von GeoReporting der eines Desktop-Webbrowsers. Bei einer mobilen Datenverbindung hängt die Genauigkeit vom Anbieter sowie von der Art und Weise ab, mit der Anfragen weitergeleitet werden.
+   Bei aktiviertem GeoReporting in Ihrer Analytics-Report Suite stehen Ihnen verschiedene standortbasierte Berichte zur Verfügung. Bei WLAN ähnelt die Genauigkeit von GeoReporting der eines Desktop-Webbrowsers. Bei einer Datenverbindung variiert die Genauigkeit je nach Anbieter und Weiterleitung der Anforderungen.
 
-   Zur Steigerung der Genauigkeit können Sie auch Standort- und Zielpunkt-Tracking zu Ihrer App hinzufügen. Mit diesen Optionen erhalten Sie exakte Standortangaben mit Breiten- und Längengrad und können mittels Geofencing feststellen, ob sich der Benutzer innerhalb eines bestimmten Radius eines vordefinierten Zielpunkts befindet.
+   Um die Genauigkeit zu erhöhen, können Sie Ihrer App auch die Verfolgung von Orten und Zielpunkten hinzufügen. Mit diesen Optionen können Sie detaillierte Standortdaten zu Breiten- und Längengrad melden und mithilfe von Geo-Fencing ermitteln, wann sich ein Benutzer in einem Radius um einen vordefinierten Zielpunkt befindet.
 
 * **Lebenszeitwert**
 
-   Mithilfe von Lebenszeitwerten können Sie einen Wert messen, der so lange erhalten bleibt, bis der Benutzer Ihre App wieder deinstalliert. Sie können verschiedenen Aktionen in der App positive oder negative Werte zuweisen oder den Lebenszeitwert um die Beträge der einzelne Käufe erhöhen.
+   Mit dem Lebenszeitwert können Sie einen Wert messen, der so lange erhalten bleibt, wie die App installiert ist. Sie können verschiedene In-App-Aktionen, positive oder negative Werte oder den Wert für die Lebensdauer mit der Höhe jedes Kaufs erhöhen.
 
 * **Zeitdauer bis zum Abschluss**
 
-   Mit den von Ihnen gemessenen KPIs können Sie mithilfe der „Zeitdauer bis zum Abschluss“ feststellen, wie lange es dauert (pro Sitzung und sitzungsübergreifend insgesamt), bis eine bestimmte Aktion abgeschlossen ist. So können Sie zum Beispiel messen, wie lange es dauert, bis eine App nach dem Kauf fertig installiert ist.
+   Mit den KPIs, die Sie messen, können Sie die Zeit zum Abschluss verwenden, um die Zeit in der Sitzung und die Gesamtzeit (sitzungsübergreifend) zu messen, die für den Abschluss einer Aktion erforderlich ist. Sie können beispielsweise messen, wie viel Zeit zwischen der Installation und dem ersten In-App-Kauf vergeht.
 
 * **Geräte**
 
-   In Geräteberichten werden die verschiedenen Gerätetypen, Betriebssysteme und Mobilnetzbetreiber angezeigt, über die Ihre App eingesetzt wird. Diese Informationen sind hilfreich, um die Unterstützung für die nächste Version zu planen oder um Berichte zu unterteilen und Inhalte auf Zielgruppen abzustimmen.
+   Geräteberichte zeigen Ihnen die verschiedenen Gerätetypen, Betriebssysteme und Mobilnetzbetreiber, auf denen Ihre App verwendet wird. Diese Informationen sind hilfreich, um die Unterstützung für die nächste Version zu planen oder um Berichte und Zielgruppen zu segmentieren.
