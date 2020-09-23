@@ -1,14 +1,17 @@
 ---
 description: Mithilfe dieser Informationen können Sie die Mobile Services-SDK und die Hilfstools für die Mobile Services-Implementierung herunterladen.
-keywords: mobile;Android;iOS;SDK
+keywords: mobile;android;ios;sdk
 seo-description: Mithilfe dieser Informationen können Sie die Mobile Services-SDK und die Hilfstools für die Mobile Services-Implementierung herunterladen.
 seo-title: Herunterladen von mobilen SDK und Werkzeugen
 solution: Experience Cloud,Analytics
 title: Herunterladen von mobilen SDK und Werkzeugen
-topic: Entwickler und Implementierung, Metriken
+topic: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
