@@ -1,29 +1,32 @@
 ---
-description: Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können einen einzigen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
+description: Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
 keywords: mobile
-seo-description: Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können einen einzigen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
+seo-description: Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
 seo-title: Akquise
 solution: Experience Cloud,Analytics
 title: Akquise
-topic: Metriken
+topic: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 84%
 
 ---
 
 
 # Akquise {#acquisition}
 
-Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können einen einzigen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
+Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
-* Gehen Sie zu [Launch](https://launch.adobe.com/), um zu beginnen.
+* To get started, go to [Launch](https://launch.adobe.com/).
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
 >[!IMPORTANT]
@@ -54,6 +57,6 @@ Folgende Akquiseberichte bieten Einblicke in die Performance Ihrer Marketinglink
 
    Beachten Sie die folgenden Informationen:
 
-   * Durch Klicken auf das Pfeilsymbol in den Spaltenüberschriften können Sie die Daten in auf- oder absteigender Reihenfolge sortieren.
+   * Sie können auf die Pfeilsymbole in den Spaltenüberschriften klicken, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
    * Um die Daten in ein PDF-Dokument zu exportieren, klicken Sie auf **[!UICONTROL Herunterladen]**.
    ![](assets/acquisition_name.png)
