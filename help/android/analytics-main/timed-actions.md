@@ -1,31 +1,34 @@
 ---
-description: Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit über alle Sitzungen hinweg, die bis zum Abschluss der Aktion benötigt werden. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
-seo-description: Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit über alle Sitzungen hinweg, die bis zum Abschluss der Aktion benötigt werden. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
+description: Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit, die für den Abschluss der Aktion erforderlich ist. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
+seo-description: Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit, die für den Abschluss der Aktion erforderlich ist. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
 seo-title: Zeitgesteuerte Aktionen
 solution: Experience Cloud,Analytics
 title: Zeitgesteuerte Aktionen
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
-translation-type: ht
-source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 64%
 
 ---
 
 
 # Zeitgesteuerte Aktionen {#timed-actions}
 
-Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit über alle Sitzungen hinweg, die bis zum Abschluss der Aktion benötigt werden. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
+Zeitgesteuerte Aktionen ermöglichen Ihnen die Messung der in der App verbrachten Zeit sowie der Gesamtzeit zwischen Start und Ende einer Aktion. Das SDK berechnet die Zeit in jeder Sitzung und die Gesamtzeit, die für den Abschluss der Aktion erforderlich ist. Sie können zeitgesteuerte Aktionen nutzen, um Segmente zu definieren. So können Sie verschiedene zeitliche Aspekte vergleichen, wie z. B. die Zeit bis zum Tätigen eines Kaufs oder Abschluss eines Levels, den Ablauf des Kaufvorgangs usw.
 
-Die folgenden Metriken werden für zeigesteuerte Aktionen erfasst:
+Die folgenden Metriken werden für zeitgesteuerte Aktionen gemeldet:
 
-* Gesamtanzahl der Sekunden in der App zwischen Start und Ende (sitzungsübergreifend)
-* Gesamtanzahl der Sekunden zwischen Start und Ende (Uhrzeit)
+* Gesamtanzahl der Sekunden in der App zwischen Beginn und Ende (Sitzungen)
+* Gesamtanzahl der Sekunden zwischen Beginn und Ende (Uhrzeit)
 
-Ein optionaler Rückruf ermöglicht die Durchführung zusätzlicher Aktionen nach Abschluss der zeitgesteuerten Aktion:
+Bei einem optionalen Rückruf können Sie zusätzliche Aktionen ausführen, wenn die zeitgesteuerte Aktion abgeschlossen ist:
 
-* Führen Sie den Code aus und fügen Sie basierend auf den Dauerergebnissen optionale benutzerdefinierte Logiken hinzu.
-* Fügen Sie Kontextdaten hinzu, bevor Sie die Dauern übergeben.
-* Abbruch-Treffer und -Dauern werden noch nicht gesendet.
+* Führen Sie Code aus und fügen Sie eine Logik hinzu - optionale benutzerdefinierte Logik basierend auf den Ergebnissen der Dauer.
+* hinzufügen Kontextdaten vor der Übergabe von Zeiträumen.
+* Treffer abbrechen und Dauer noch nicht gesendet.
 
 ## Zeitgesteuerte Aktionen verfolgen {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
