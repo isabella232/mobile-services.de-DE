@@ -1,14 +1,17 @@
 ---
 description: Sie können sich über einen Webbrowser bei Adobe Mobile Services anmelden.
-keywords: mobil;Passwort ändern;anmelden;abmelden;Anmeldung;Abmeldung
+keywords: mobile;change password;log in;log out;login;logout;sign in;signin
 seo-description: Sie können sich über einen Webbrowser bei Adobe Mobile Services anmelden.
 seo-title: Anmeldung
 solution: Experience Cloud,Analytics
 title: Anmeldung
-topic: Metriken
+topic: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: ht
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +28,7 @@ Sie können sich mit Ihrer Adobe ID, Ihrer Enterprise ID oder Ihrer Analytics�
 
 So melden Sie sich mit Ihrer Adobe ID bei der Adobe Mobile Services-Benutzeroberfläche an:
 
-1. Geben Sie in einem Browser [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com) ein.
+1. In a browser, type [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com).
 1. Klicken Sie auf **[!UICONTROL Mit Adobe ID anmelden]**.
 1. Geben Sie Ihre E-Mail-Adresse ein.
 1. Klicken Sie unter **[!UICONTROL Konto auswählen für]** auf **[!UICONTROL Adobe ID]**.
@@ -53,7 +56,7 @@ So melden Sie sich mit Ihrer Enterprise ID bei der Adobe Mobile Services-Benutz
 
 So melden Sie sich mit Ihrer Analytics ID bei der Adobe Mobile Services-Benutzeroberfläche an:
 
-1. Geben Sie in einem Browser [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) ein.
+1. In a browser, type [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/).
 1. Klicken Sie auf **[!UICONTROL Mit Ihrem Analytics-Konto anmelden]**.
 1. Geben Sie Ihren Unternehmensnamen, den Benutzernamen und das Passwort ein.
 1. Klicken Sie auf **[!UICONTROL Anmelden]**.
@@ -66,9 +69,9 @@ Sie haben folgende Möglichkeiten, Ihr Passwort zurückzusetzen:
 
    1. Klicken Sie auf **[!UICONTROL Mit Adobe ID anmelden]** und klicken Sie auf den Link **[!UICONTROL Kennwort vergessen?]**.
    1. Geben Sie das E-Mail-Konto an, das mit Ihrer Adobe ID verknüpft ist, und klicken Sie auf **[!UICONTROL Senden]**.
-   1. Folgen Sie den Anweisungen in der erhaltenen E-Mail, um Ihr Passwort zurückzusetzen.
+   1. Befolgen Sie die Anweisungen zum Zurücksetzen Ihres Kennworts in der E-Mail, die Sie erhalten.
 
-* **Adobe Analytics** Wenn Sie Unternehmen, Benutzername und Passwort verwenden:
+* **Adobe Analytics** Wenn Sie Ihre Firma, Ihren Benutzernamen und Ihr Kennwort verwenden:
 
    1. Klicken Sie auf **[!UICONTROL Kennwort vergessen?]**.
    1. Geben Sie den Unternehmens- sowie den Benutzernamen ein und klicken Sie auf **[!UICONTROL Weiter]**.
