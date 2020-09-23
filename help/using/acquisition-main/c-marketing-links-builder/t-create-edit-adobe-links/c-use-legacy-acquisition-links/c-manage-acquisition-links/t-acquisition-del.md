@@ -5,10 +5,13 @@ seo-description: Sie können einen oder mehrere Akquise-Links löschen, wenn die
 seo-title: Akquise-Links löschen
 solution: Experience Cloud,Analytics
 title: Akquise-Links löschen
-topic: Metriken
+topic: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 71%
 
 ---
 
@@ -17,11 +20,11 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 Wenn Sie die Akquise-Links nicht mehr benötigen, können Sie diese löschen.
 
-1. Klicken Sie auf **[!UICONTROL Akquise]** &gt; **[!UICONTROL Akquise-Links verwalten]**.
+1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]**.
 1. Führen Sie eine der folgenden Aufgaben aus:
 
-   * Markieren Sie das Kontrollkästchen neben einem oder mehreren Akquise-Links.
-   * Markieren Sie das Kontrollkästchen in der Kopfzeile, um alle Akquise-Links auszuwählen.
+   * Aktivieren Sie das Kontrollkästchen neben einem oder mehreren Akquise-Links.
+   * Aktivieren Sie das Kontrollkästchen in der Kopfzeile, um alle Akquise-Links auszuwählen.
 
 1. Klicken Sie auf **[!UICONTROL Ausgewählte löschen]** und bestätigen Sie den Löschvorgang.
 
