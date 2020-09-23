@@ -5,10 +5,13 @@ seo-description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-
 seo-title: Fehlerbehebung bei In-App-Nachrichten
 solution: Experience Cloud,Analytics
 title: Fehlerbehebung bei In-App-Nachrichten
-topic: Metriken
+topic: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: ht
-source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 94%
 
 ---
 
@@ -17,15 +20,15 @@ source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 
-Wenn Sie alle Anforderungen für In-App-Nachrichten erfüllt haben, aber Nachrichten dennoch nicht angezeigt werden, überprüfen Sie Folgendes:
+Wenn Sie alle Anforderungen für In-App-Nachrichten erfüllt haben, aber keine Nachrichten angezeigt werden, überprüfen Sie die folgenden Punkte:
 
 ## Enthält die Anwendung die neue Konfiguration und das neue SDK?
 
 Stellen Sie sicher, dass Ihre Konfiguration (heruntergeladene JSON-Datei) einen Abschnitt [In-App-Nachrichten](/help/android/messaging-main/messaging/messaging.md) oder einen Remote-Endpunkt „Nachrichten“ enthält, der vom dynamischen Tag-Management abgerufen werden kann.
 
-## Meine Vollbildnachricht in Android wird nicht angezeigt. Ich verwende das richtige SDK, die richtige Konfiguration und die Auslösebedingungen sind erfüllt.
+## Meine Vollbildnachricht in Android wird nicht angezeigt. Ich verwende das richtige SDK, die richtige Konfiguration und meine Auslöser werden erfüllt.
 
-Haben Sie die Vollbildaktivität in Ihrer Manifestdatei definiert?
+Haben Sie Ihre Manifestdatei aktualisiert, um die Aktivität im Vollbildmodus zu definieren?
 
 ## Meine lokale Benachrichtigung in Android funktioniert nicht.
 
@@ -52,20 +55,21 @@ Beachten Sie die folgenden Informationen:
 
 Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
-## Mein Bild passt nicht genau in den in der Vorlage vorgesehenen Platz.
+## Mein Bild passt nicht genau in den von der Vorlage bereitgestellten Raum.
 
-Die Vollbildvorlage für In-App-Nachrichten unterstützt die Anzeige eines Bildes entweder über einen Remote-Server (Bild-URL) oder über das App-Bundle (Bundle-Bild). Das Bild sollte in einem Standard-Bildformat vorliegen, wie z. B. JPG, GIF oder PNG. Da Gerätebildschirme verschiedenste Abmessungen aufweisen, passt das Bild sehr wahrscheinlich nicht genau in den Platz der Vorlage. Die Vorlage zentriert das Bild, um die Bildmitte anzuzeigen, und schneidet Überschüssiges ab (Hochformat) bzw. lässt die Bildseiten verblassen (Querformat).
+Die Vollbildvorlage „In-App-Nachricht“ unterstützt die Anzeige eines Bildes von einem Remoteserver (Bild-URL) oder vom App-Paket (Paketbild). Das Bild sollte in einem Standard-Bildformat vorliegen, wie z. B. JPG, GIF oder PNG. Da Gerätebildschirme verschiedenste Abmessungen aufweisen, passt das Bild sehr wahrscheinlich nicht genau in den Platz der Vorlage. Die Vorlage zentriert das Bild, um die Bildmitte anzuzeigen, und schneidet Überschüssiges ab (Hochformat) bzw. lässt die Bildseiten verblassen (Querformat).
 
 Im Folgenden finden Sie die genauen Positionierungs- und Größenregeln für jede Ausrichtung:
 
 * **Hochformat**
    * Eine Höhe von 195 px für Smartphones.
    * Eine Höhe von 529 px für Tablets.
-   * Wird zentriert, wenn das Bild breiter ist als der Bildschirm.
-   * Wird abgeschnitten, wenn das Bild schmaler ist als der Bildschirm.
+   * Zentriert, wenn die Bildbreite geringer als die Gerätebreite ist.
+   * Zugeschnitten, wenn die Bildbreite größer als die Gerätebreite ist.
 
 * **Querformat**
-   * Das Bild wird auf 100 % der Bildschirmhöhe skaliert.
-   * Die Breite beträgt 75 % des Bildschirms und die rechte Seite verblasst.
-   Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinierte HTML-Vorlage herunterladen und verwenden. Diese Vorlage bietet mehr Flexibilität in Bezug auf Bilder und gibt Ihnen volle Kontrolle über die Vorlage.
+   * Das Bild wurde auf 100 % der Höhe des Geräts skaliert.
+   * Die Breite beträgt 75 % des Geräts, wobei sich eine Ausblendung auf der rechten Seite befindet.
+
+   Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinierte HTML-Vorlage herunterladen und verwenden. Diese Vorlage bietet mehr Flexibilität für Bilder und ermöglicht die vollständige Steuerung der Vorlage.
 
