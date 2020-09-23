@@ -1,13 +1,16 @@
 ---
-description: Diese Informationen helfen Ihnen dabei, Links zur Akquiseverfolgung in Ihren iOS-Apps zu verwenden.
-seo-description: Diese Informationen helfen Ihnen dabei, Links zur Akquiseverfolgung in Ihren iOS-Apps zu verwenden.
+description: Anhand dieser Informationen können Sie in Ihren iOS-Apps Links zur Akquise-Verfolgung verwenden.
+seo-description: Anhand dieser Informationen können Sie in Ihren iOS-Apps Links zur Akquise-Verfolgung verwenden.
 seo-title: Akquise
 solution: Experience Cloud,Analytics
 title: Akquise
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +21,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen dabei, Links zur Akquiseverfo
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
