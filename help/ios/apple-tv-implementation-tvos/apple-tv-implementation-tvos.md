@@ -4,10 +4,13 @@ seo-description: Diese Informationen helfen Ihnen beim Implementieren von Apple 
 seo-title: Apple TV-Implementierungen mit tvOS
 solution: Experience Cloud,Analytics
 title: Apple TV-Implementierungen mit tvOS
-topic: Entwickler und Implementierung
+topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +21,7 @@ Diese Informationen helfen Ihnen beim Implementieren von Apple TV mit tvOS.
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -27,7 +30,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 ## Übersicht
 
-Mit Apple TV können Sie Apps erstellen, die in der nativen tvOS-Umgebung ausgeführt werden. Sie können eine native App mit mehreren in iOS verfügbaren Frameworks erstellen oder eine App über XML-Vorlagen und JavaScript erstellen.
+Mit Apple TV können Sie jetzt Anwendungen erstellen, die in der nativen tvOS-Umgebung ausgeführt werden. Sie können eine native App mit mehreren Frameworks in iOS erstellen oder Ihre App mit XML-Vorlagen und JavaScript erstellen.
 
 >[!TIP]
 >
