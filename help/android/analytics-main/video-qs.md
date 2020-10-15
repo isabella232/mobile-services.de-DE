@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Video Analytics
 topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Video Analytics {#video-analytics}
+# Video Analytics  {#video-analytics}
 
 Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Android mithilfe der Videomessung.
 
@@ -32,8 +32,8 @@ Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier
    * Variablentyp: eVar
       * Standardgültigkeit: Besuch
       * Custom Insight (s.prop, für den Videopfad verwendet)
-   * (**Erforderlich**) Wenn ein Besucher das Video in irgendeiner Weise Ansicht, erfasst diese Kontextdatenvariable den Videonamen, wie in der Implementierung angegeben. Sie können für diese Variable Klassifizierungen hinzufügen.
-   * (**Optional**) The Custom Insight variable provides video pathing information.
+   * (**Erforderlich**) Wenn ein Besucher das Video auf irgendeine Weise betrachtet, erfasst diese Kontextdatenvariable den Namen des Videos, wie in der Implementierung angegeben. Sie können für diese Variable Klassifizierungen hinzufügen.
+   * (**Optional**) Die Variable „Custom Insight“ enthält Informationen zu Videopfaden.
 
 * **a.media.name**
    * Variablentyp: Custom Insight (benutzerspezifischer Insight-Bericht) (s.prop)
@@ -47,7 +47,7 @@ Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier
 * **a.media.segment**
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
-   * (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
+   * (**Erforderlich**) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint.
 
       Diese Variable wird gefüllt, indem Sie beim automatischen Verfolgen von Player-Ereignissen die Variable `segmentByMilestones` aktivieren oder beim manuellen Verfolgen der Player-Ereignisse einen benutzerdefinierten Segmentnamen festlegen. Beispiel: Wenn ein Besucher das erste Segment in einem Video ansieht, kann SiteCatalyst Folgendes in der Segment-eVar erfassen: `1:M:0-25`.
 
@@ -70,7 +70,7 @@ Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier
 * **a.media.timePlayed**
    * Variablentyp: Ereignis
    * Typ: Zähler
-   * Zählt die Zeit (in Sekunden), die seit dem letzten Datenerfassungsprozess (Bildanforderung) mit dem Ansehen eines Videos verbracht wird.
+   * Gibt in Sekunden an, wie lange ein Video seit dem letzten Datenerfassungsprozess (Bildanforderung) angesehen wurde.
 
 * **a.media.view**
    * Variablentyp: Ereignis
@@ -91,7 +91,7 @@ Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier
    * Typ: Zähler
    * Gibt an, dass ein Besucher ein Video vollständig angesehen hat.
 
-      Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen. Während der Implementierung können Sie angeben, wie viele Sekunden nach dem Ende des Videos eine Ansicht als abgeschlossen betrachtet werden soll. Bei Live-Videos und anderen Streams ohne definiertes Ende können Sie einen benutzerdefinierten Punkt angeben, um die Abschlüsse zu messen (z. B. nach einer bestimmten Wiedergabedauer).
+      Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen. Bei der Implementierung können Sie festlegen, wie viele Sekunden vor dem Ende des Videos eine Ansicht als vollständig betrachtet werden soll. Bei Live-Videos und anderen Streams ohne definiertes Ende können Sie einen benutzerdefinierten Punkt angeben, um die Vollständigkeit zu messen (z. B. nach einer bestimmten Wiedergabedauer).
 
 
 ## Medieneinstellungen konfigurieren {#section_929945D4183C428AAF3B983EFD3E2500}
