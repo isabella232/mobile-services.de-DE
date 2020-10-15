@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Testen der Version-3-Akquise
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Diese Informationen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für einen 
 
 >[!IMPORTANT]
 >
->Die Akquise in Version 3 bezieht sich auf die Akquise-Links, die Sie mithilfe des Akquise-Builders auf der Adobe Mobile Services-Benutzeroberfläche erstellen. Um diese Funktion verwenden zu können, müssen Sie auf Android SDK 4.x für Experience Cloud Solutions 4.6.0 oder höher aktualisieren.
+>Die Akquise in Version 3 bezieht sich auf die Akquise-Links, die Sie mithilfe des Akquise-Builders auf der Adobe Mobile Services-Benutzeroberfläche erstellen. Um diese Funktion verwenden zu können, müssen Sie auf Android SDK 4.x für Experience Cloud-Lösungen 4.6.0 oder höher aktualisieren.
 
-Wenn sich die mobile App noch nicht in Google Play befindet, können Sie beim Erstellen des Links zur Kampagne eine beliebige mobile App als Ziel auswählen. Dies betrifft nur die Mobile App, zu der Sie der Akquise-Server weiterleitet, nachdem Sie auf den Akquise-Link geklickt haben, hat jedoch keine Auswirkungen auf die Fähigkeit, den Link zu testen. Zeichenfolgenparameter der Abfrage werden an den Google Play Store übergeben, der bei der Installation im Zuge einer Kampagnenübertragung an die App übergeben wird. Für die Tests zur Akquise von Hin&amp;Zurück-Abfragen mobiler Apps ist die Simulation dieser Art von Übertragungen erforderlich.
+Wenn sich die App noch nicht in Google Play befindet, wählen Sie beim Erstellen des Kampagne-Links eine beliebige App als Ziel aus. Dies betrifft nur die App, zu der Sie der Akquise-Server weiterleitet, nachdem Sie auf den Akquise-Link geklickt haben, hat jedoch keine Auswirkungen auf die Fähigkeit, den Link zu testen. Zeichenfolgenparameter der Abfrage werden an den Google Play Store übergeben, der bei der Installation im Zuge einer Kampagnenübertragung an die App übergeben wird. Für die Tests zur Akquise von Hin&amp;Zurück-Abfragen mobiler Apps ist die Simulation dieser Art von Übertragungen erforderlich.
 
 >[!IMPORTANT]
 >
@@ -61,11 +61,11 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
 
 1. Öffnen Sie den Link in einem Desktop-Browser.
 
-   Sie sollten die Kontextdaten (`contextData`) in der JSON-Antwort sehen:
+   Sie sollten die Kontextdaten ( `contextData` ) in der JSON-Antwort sehen:
 
    `{"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.`
 
-   Wenn die Kontextdaten (`contextData`) nicht angezeigt werden oder Teile der Zeichenfolge fehlen, stellen Sie sicher, dass die Akquise-URL das Format aus [Akquise-Link manuell erstellen](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md) aufweist.
+   Wenn die Kontextdaten ( `contextData` ) nicht angezeigt werden oder Teile der Zeichenfolge fehlen, stellen Sie sicher, dass die Akquise-URL das Format aus [Akquise-Link manuell erstellen](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md) aufweist.
 1. Wiederholen Sie Schritt 3, um eine neue eindeutige URL zu erhalten.
 1. Stellen Sie sicher, dass die folgenden Einstellungen in Ihrer Konfigurationsdatei vorhanden sind:
 
@@ -97,7 +97,7 @@ Broadcast completed: result=0`
 
 `"Analytics - Received referrer information(<referrer content>)"   "Analytics - Trying to fetch referrer data from (acquisition end url)"; "Analytics - Received Referrer Data(<A JSON Response>)"`
 
-Wenn die oben genannten Protokolle nicht angezeigt werden, überprüfen Sie, ob Sie die Schritte 6 bis 12 abgeschlossen haben.
+Falls die Protokolle oben nicht angezeigt werden, sollten Sie sicherstellen, dass Sie die Schritte 6 bis 12 abgeschlossen haben.
 
 Die folgende Tabelle enthält weitere Informationen zu möglichen Fehlern:
 
@@ -111,10 +111,10 @@ Die folgende Tabelle enthält weitere Informationen zu möglichen Fehlern:
 
 Beachten Sie die folgenden Informationen:
 
-* Von der App gesendete Treffer können mithilfe von HTTP-Überwachungstools überwacht werden, um die Akquise-Zuordnung zu überprüfen.
+* Treffer, die von der App gesendet werden, können mithilfe von HTTP-Überwachungstools überwacht werden, um die Akquise-Zuordnung zu überprüfen.
 * Weitere Informationen zu `INSTALL_REFERRER`-Broadcasts finden Sie unter [Testen der Google Play-Kampagnenmessung](https://developers.google.com/analytics/solutions/testing-play-campaigns) im Google Developers-Handbuch.
 
-* Eine Fehlerbehebung wurde für Android 4.8.2 veröffentlicht.
+* Für Android 4.8.2 wurde eine Fehlerbehebung veröffentlicht.
 
    Aktualisieren Sie das SDK vor dem Testen auf die neueste Version.
 
@@ -128,7 +128,7 @@ So installieren Sie das Java-Tool:
 
 1. Extrahieren Sie die JAR-Datei.
 
-   Sie können die Datei über die Befehlszeile ausführen.
+   Sie können die Datei in der Befehlszeile ausführen.
 
    Beispiel:
 
