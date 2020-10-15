@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Filter zu Berichten hinzufügen
 topic: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '384'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 
-# Filter zu Berichten hinzufügen{#add-filters-to-reports}
+# Filter zu Berichten hinzufügen {#add-filters-to-reports}
 
 Mithilfe dieser Informationen können Sie die integrierten Berichte durch Hinzufügen zusätzlicher Filter (Segmente) anpassen.
 
@@ -26,11 +26,11 @@ Mithilfe dieser Informationen können Sie die integrierten Berichte durch Hinzuf
 
 Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzungen]** an, die Anweisungen gelten jedoch für alle Berichte.
 
-1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
+1. Öffnen Sie Ihre App und klicken Sie auf **[!UICONTROL Nutzung]** > **[!UICONTROL Benutzer und Sitzungen]**.
 
    ![](assets/customize1.png)
 
-   Dieser Bericht bietet eine vollständige Ansicht unserer App-Benutzer im Zeitverlauf. Metriken für iOS- und Android-Versionen dieser App werden jedoch in derselben Report Suite erfasst. Wir können Benutzer nach Mobilbetriebssystem segmentieren, indem wir einen benutzerspezifischen Filter zur Benutzermetrik hinzufügen.
+   Dieser Bericht bietet einen vollständigen Überblick über die App-Benutzer im Zeitverlauf. Metriken für iOS- und Android-Versionen dieser App werden jedoch in derselben Report Suite erfasst. Wir können Benutzer nach Mobilbetriebssystem segmentieren, indem wir einen benutzerdefinierten Filter zur Benutzermetrik hinzufügen.
 
 1. Klicken Sie auf **[!UICONTROL Anpassen]**.
 
@@ -38,13 +38,13 @@ Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzunge
 
 1. Klicken Sie unter **[!UICONTROL Benutzer]** auf **[!UICONTROL Filter hinzufügen]** und klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
 
-1. Wählen Sie **[!UICONTROL Betriebssysteme]** und anschließend **[!UICONTROL iOS]** aus der Dropdownliste aus.
+1. Wählen Sie **[!UICONTROL Betriebssysteme]** und anschließend **[!UICONTROL iOS]** aus der Dropdown-Liste aus.
 
    ![](assets/customize3.png)
 
    Wiederholen Sie diesen Schritt, um Android als Filter hinzuzufügen.
 
-1. Klicken Sie auf **[!UICONTROL Und]**, wählen Sie **[!UICONTROL Betriebssysteme]** aus der Dropdownliste und anschließend **[!UICONTROL Android]** aus.
+1. Klicken Sie auf **[!UICONTROL Und]**, wählen Sie **[!UICONTROL Betriebssysteme]** aus der Dropdown-Liste und anschließend **[!UICONTROL Android]** aus.
 
    Die Filter sollten jetzt wie folgt aussehen:
 
@@ -58,8 +58,8 @@ Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzunge
    ![](assets/customize5.png)
 
    Sie können den Bericht aber noch weiter anpassen. Ab iOS 8.3 können Sie die Metrik „Erste Starts“ mit einem Filter für die Betriebssystemversion iOS 8.3 hinzufügen, um zu sehen, wie viele iOS 8.3-Kunden ihre Apps aktualisiert und einen ersten Start durchgeführt haben.
-1. Klicken Sie unter **[!UICONTROL Erste Starts]** auf **[!UICONTROL Filter hinzufügen]** und dann auf **[!UICONTROL Regel hinzufügen]**. Wählen Sie aus der Dropdownliste den Eintrag **[!UICONTROL Betriebssysteme]** und dann **[!UICONTROL iOS]** aus.
-1. Klicken Sie auf **[!UICONTROL Und]** und wählen Sie aus der Dropdownliste den Eintrag **[!UICONTROL Betriebssystemversionen]** und dann **[!UICONTROL iOS 8.3]** aus.
+1. Klicken Sie unter **[!UICONTROL Erste Starts]** auf **[!UICONTROL Filter hinzufügen]** und dann auf **[!UICONTROL Regel hinzufügen]**. Wählen Sie aus der Dropdown-Liste den Eintrag **[!UICONTROL Betriebssysteme]** und dann **[!UICONTROL iOS]** aus.
+1. Klicken Sie auf **[!UICONTROL Und]** und wählen Sie aus der Dropdown-Liste den Eintrag **[!UICONTROL Betriebssystemversionen]** und dann **[!UICONTROL iOS 8.3]** aus.
 
    Die Filter sollten jetzt wie folgt aussehen:
 
@@ -67,7 +67,7 @@ Im folgenden Beispiel passen wir den Bericht **[!UICONTROL Benutzer und Sitzunge
 
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]** und **[!UICONTROL Ausführen]**.
 
-   Dieser Bericht zeigt jetzt Benutzer mit iOS 8.3 an, die die App zum ersten Mal gestartet haben.
+   Dieser Bericht zeigt jetzt Benutzer mit iOS 8.3 an, die die App zum ersten Mal gestartet haben.
 
    ![](assets/customize7.png)
 
