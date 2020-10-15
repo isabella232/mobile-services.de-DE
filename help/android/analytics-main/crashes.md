@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: App-Abstürze verfolgen
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Um präzise Absturzberichte zu gewährleisten, müssen Sie `pauseCollectingLifeC
 
 ![](assets/android-lifecycle.png)
 
-Weitere Informationen zum Android-Aktivitätslebenszyklus finden Sie unter [Activities (Aktivitäten)](https://developer.android.com/guide/components/activities.html).
+Weitere Informationen zum Android-Aktivitätslebenszyklus finden Sie unter [Aktivitäten](https://developer.android.com/guide/components/activities.html).
 
 *Diese Darstellung des Android-Lebenszyklus wurde [vom Android Open Source Project erstellt und veröffentlicht](https://source.android.com/) und wird gemäß [Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/) verwendet.*
 
