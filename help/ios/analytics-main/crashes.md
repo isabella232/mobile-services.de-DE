@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: App-Abstürze verfolgen
 topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Wenn Ihre Anwendung beendet wird, ohne dass sie zunächst in den Hintergrund ver
 
 iOS verwendet Systembenachrichtigungen, die Entwicklern ermöglichen, unterschiedliche Status und Ereignisse im Anwendungslebenszyklus zu verfolgen und darauf zu reagieren.
 
-Das Adobe Mobile iOS-SDK verfügt über einen Benachrichtigungs-Handler, der auf die Benachrichtigung `UIApplicationDidEnterBackgroundNotification` reagiert. In diesem Code wird ein Wert festgelegt, der angibt, dass der Benutzer die App im Hintergrund erstellt hat. Bei einem nachfolgenden Start wird ein Absturz gemeldet, wenn dieser Wert nicht gefunden werden kann.
+Das Adobe Mobile iOS-SDK verfügt über einen Benachrichtigungs-Handler, der auf die Benachrichtigung `UIApplicationDidEnterBackgroundNotification` reagiert. In diesem Code wird ein Wert festgelegt, der angibt, dass der Benutzer die App im Hintergrund ausgeführt hat. Bei einem nachfolgenden Start wird ein Absturz gemeldet, wenn dieser Wert nicht gefunden werden kann.
 
 ## Warum werden Abstürze von Adobe auf diese Weise gemessen?
 
@@ -62,11 +62,11 @@ Es ist bekannt, dass die folgenden Szenarien fälschlicherweise zu einem Absturz
 
 Mithilfe der folgenden Vorgehensweisen kann verhindert werden, dass falsche Abstürze gemeldet werden:
 
-* In iOS SDK 4.8.6 wurde Code hinzugefügt, um besser festzustellen, ob eine neue Lebenszyklussitzung tatsächlich gewünscht wird.
+* In iOS SDK 4.8.6 wurde Code hinzugefügt, um besser bestimmen zu können, ob tatsächlich eine neue Lebenszyklus-Sitzung gewünscht wird.
 
-   Dieser Code behebt Fehlabstürze Nr. 2 und Nr. 3 im vorherigen Abschnitt.
+   Dieser Code behebt die falschen Abstürze Nr. 2 und Nr. 3 im vorherigen Abschnitt.
 
-* Stellen Sie sicher, dass Sie Ihre Entwicklung mit Report Suites ohne Produktionscharakter durchführen, wodurch ein falscher Absturz #1 verhindert werden soll.
+* Stellen Sie sicher, dass Sie Ihre Entwicklung mit Report Suites ohne Produktionscharakter durchführen, um das Auftreten eines falschen Absturzes Nr. 1 zu verhindern.
 * Löschen oder ändern Sie keine Werte, die das Adobe Mobile-SDK in `NSUserDefaults` setzt.
 
    Wenn diese Werte außerhalb des SDK geändert werden, sind die gemeldeten Daten ungültig.
