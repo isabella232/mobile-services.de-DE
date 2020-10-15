@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Voraussetzungen für die Akquise
 topic: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Voraussetzungen für die Akquise{#acquisition-prerequisites}
+# Voraussetzungen für die Akquise {#acquisition-prerequisites}
 
 Sie müssen folgende Voraussetzungen erfüllen, um Akquise-Links zu verwenden.
 
@@ -44,4 +44,4 @@ Damit Sie Marketinglinks verfolgen können, müssen Sie sicherstellen, dass folg
 
 1. Appstore-Apps hinzufügen
 
-   Sie müssen die App aus dem Apple App Store oder aus Google Play hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen einer App aus einem App Store](/help/using/manage-apps/c-app-store/t-app-store-app.md).
+   Sie müssen die App aus dem Apple App Store oder aus Google Play hinzufügen. Weitere Informationen finden Sie unter [App aus einem Appstore hinzufügen](/help/using/manage-apps/c-app-store/t-app-store-app.md).
