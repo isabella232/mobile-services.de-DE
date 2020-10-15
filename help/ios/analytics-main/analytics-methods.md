@@ -199,7 +199,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackTimedActionUpdate:&#x200B;data:**
 
-   Übergibt `data`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. Die übergebenen Daten (`data`) werden an die vorhandenen Daten für die Aktion angehängt und wenn der Schlüssel bereits für `action` definiert ist, werden die Daten überschrieben.
+   Übergibt `data`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. Die übergebenen Daten ( `data` ) werden an die vorhandenen Daten für die Aktion angehängt und wenn der Schlüssel bereits für `action` definiert ist, werden die Daten überschrieben.
 
    >[!TIP]
    >
