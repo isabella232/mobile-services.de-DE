@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Analytics-Methoden
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
 ht-degree: 100%
 
@@ -137,7 +137,7 @@ Gibt die automatisch erzeugte Besucher-ID für Analytics zurück.
 
 * **trackTimed&#x200B;ActionUpdate**
 
-   Übergeben Sie diesen Wert in `contextData`, um die Kontextdaten zu aktualisieren, die der `action` zugewiesen sind. Die übergebenen Daten (`data`) werden an die vorhandenen Daten für die Aktion angehängt und wenn der Schlüssel bereits für `action` definiert ist, werden die Daten überschrieben.
+   Übergeben Sie diesen Wert in `contextData`, um die Kontextdaten zu aktualisieren, die der `action` zugewiesen sind. Die übergebenen Daten ( `data` ) werden an die vorhandenen Daten für die Aktion angehängt und wenn der Schlüssel bereits für `action` definiert ist, werden die Daten überschrieben.
 
    >[!TIP]
    >
