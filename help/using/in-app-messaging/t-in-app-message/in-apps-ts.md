@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Fehlerbehebung von In-App-Nachrichten
 topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -38,45 +38,45 @@ Stellen Sie sicher, dass der lokale Empfänger für übertragene Benachrichtigun
 
 ## Ist die Nachricht „live“?
 
-Anhand der Listenansicht in der Spalte **[!UICONTROL Status]** auf der Seite In-App-Nachricht verwalten können Sie überprüfen, ob die Nachricht live ist.
+Anhand der Listenansicht in der Spalte **[!UICONTROL Status]** auf der „Seite In-App-Nachricht verwalten“ können Sie überprüfen, ob die Nachricht live ist.
 
 ## Sehen Sie sich die Einstellungen *einmal anzeigen*, *immer anzeigen*, *offline anzeigen* auf der Seite „Zielgruppe“ an.
 
-Stellen Sie sicher, dass die Einstellungen korrekt sind. Überprüfen Sie auf der Seite Zielgruppe die Optionen auf der Registerkarte **[!UICONTROL Auslöser]**. Hier können Sie angeben, wie oft die Nachricht angezeigt wird.
+Stellen Sie sicher, dass die Einstellungen korrekt sind. Überprüfen Sie auf der Seite „Zielgruppe“ die Optionen auf der Registerkarte **[!UICONTROL Auslöser]**. Hier können Sie angeben, wie oft die Nachricht angezeigt wird.
 
 ## Bei Verwendung eines Ereignisstarts als Auslöser …
 
-Ereignis wird nur bei einer neuen Sitzung ausgelöst. Informationen dazu, wann eine Sitzung beginnt, finden Sie unter `lifecycleTimeout` in der [ADBMobile JSON-Konfigurationsdatei](/help/ios/configuration/json-config/json-config.md).
+Ereignis wird nur bei einer neuen Sitzung ausgelöst. Informationen dazu, wann eine Sitzung beginnt, finden Sie unter  `lifecycleTimeout` in der [ADBMobile JSON-Konfigurationsdatei](/help/ios/configuration/json-config/json-config.md).
 
 ## Ich habe meine Nachricht remote aktualisiert in der Anwendung wird jedoch nach wie vor die alte Nachricht angezeigt.
 
 Führen Sie eine der folgenden Aufgaben aus:
 
-* Das dynamische Tag-Management kann einige Minuten dauern, bis sein Endpunkt mit Ihrer neuen Definition aktualisiert wird.
+* Die Aktualisierung des Endpunkts entsprechend Ihrer neuen Definition im dynamischen Tag-Management kann einige Minuten dauern.
 
-   Gib es etwas Zeit und versuche es erneut.
+   Versuchen Sie es nach einiger Zeit erneut.
 
 * Die Konfiguration wird nur bei einem Neustart aktualisiert.
 
-   Wenn die App während des Lebenszyklussitzungs-Timeouts neu gestartet wurde, wurde Ihre neue Konfiguration möglicherweise nicht heruntergeladen.
+   Wenn die Anwendung innerhalb des Sitzungs-Timeouts des Lebenszyklus neu gestartet wurde, wurde die neue Konfiguration möglicherweise nicht heruntergeladen.
 
 ## Mein Bild passt nicht genau in den von der Vorlage bereitgestellten Raum.
 
-Die Vollbildvorlage &quot;In-App-Nachricht&quot;unterstützt das Anzeigen eines Bildes von einem Remote-Server (Bild-URL) oder vom App-Bundle (Bundle-Bild). Das Bild sollte in einem Standardbildformat vorliegen, z. B. JPG, GIF oder PNG.
+Die Vollbildvorlage „In-App-Nachricht“ unterstützt die Anzeige eines Bildes von einem Remoteserver (Bild-URL) oder vom App-Paket (Paketbild). Das Bild sollte in einem Standard-Bildformat vorliegen, wie z. B. JPG, GIF oder PNG.
 
-Da Gerätebildschirme viele verschiedene Abmessungen haben, passt das Bild wahrscheinlich nicht genau in den von der Vorlage bereitgestellten Raum. Die Vorlage konzentriert sich immer darauf, den Mittelpunkt des Bilds anzuzeigen und die Seiten zu beschneiden (Hochformat) oder (Querformat), wenn das Bild nicht passt.
+Da Gerätebildschirme verschiedenste Abmessungen aufweisen, passt das Bild wahrscheinlich nicht genau in den Platz der Vorlage. In Vorlagen wird immer der Mittelpunkt des Bildes angezeigt und die Seiten werden zugeschnitten (Hochformat) oder ausgeblendet (Querformat), wenn das Bild nicht passt.
 
 Im Folgenden finden Sie die genauen Positionierungs- und Größenregeln für jede Ausrichtung:
 
-* **Hochformat**, bei dem das Bild für Smartphones auf eine Höhe von 195 px und für Tablets auf 529 px skaliert wird, zentriert, wenn die Bildbreite kleiner als die Gerätegröße ist, und abgeschnitten, wenn die Bildbreite größer als die Gerätebreite ist.
+* **Hochformat**, wobei das Bild auf eine Höhe von 195 Pixel für das Telefon und 529 Pixel für das Tablett skaliert, wenn die Bildbreite kleiner als die Gerätebreite ist, zentriert, und beschnitten wird, wenn die Bildbreite größer als die Gerätebreite ist.
 
-* **Querformat**, bei dem das Bild auf 100 % der Gerätehöhe skaliert wird, die Breite 75 % des Geräts beträgt und das Bild rechts ausgeblendet wird.
+* **Querformat**, wobei das Bild auf 100 % der Höhe des Geräts skaliert wird, die Breite 75 % der Gerätebreite beträgt und rechts ausgeblendet wird.
 
-   Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinierte HTML-Vorlage herunterladen und verwenden. Die benutzerdefinierte HTML-Vorlage bietet mehr Flexibilität bei Bildern und ermöglicht die vollständige Steuerung der Vorlage.
+   Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinierte HTML-Vorlage herunterladen und verwenden. Diese benutzerdefinierte HTML-Vorlage bietet mehr Flexibilität für Bilder und ermöglicht die vollständige Steuerung der Vorlage.
 
 ## Meine Nachrichten spiegeln keine Änderungen/Aktualisierungen wider, die ich in der Benutzeroberfläche vorgenommen habe.
 
-Das SDK ruft neue/aktualisierte Nachrichten zum Zeitpunkt des Lebenszyklusstarts ab. Dies ist nur der Fall, wenn die Anwendung für einen höheren Lebenszyklustimeout-Wert geschlossen bzw. hinterlegt und dann erneut geöffnet wird.
+Das SDK ruft neue/aktualisierte Nachrichten zum Zeitpunkt des Starts des Lebenszyklus ab. Dies ist nur dann der Fall, wenn die App länger als der Wert für das Lebenszyklus-Timeout geschlossen / im Hintergrund ausgeführt und dann erneut geöffnet wird.
 
 Führen Sie die folgenden Schritte aus:
 
