@@ -1,24 +1,24 @@
 ---
-description: Erstellen Sie einen Filter, der sich über verschiedene Berichte erstreckt, um zu sehen, wie leistungsstark ein bestimmtes Segment in allen Mobilberichten ist. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann.
+description: Erstellen Sie einen Filter, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines bestimmten Segments für alle Mobilberichte anzeigen. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann.
 keywords: mobile
-seo-description: Erstellen Sie einen Filter, der sich über verschiedene Berichte erstreckt, um zu sehen, wie leistungsstark ein bestimmtes Segment in allen Mobilberichten ist. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann.
+seo-description: Erstellen Sie einen Filter, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines bestimmten Segments für alle Mobilberichte anzeigen. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann.
 seo-title: Fixierbaren Filter hinzufügen
 solution: Experience Cloud,Analytics
 title: Fixierbaren Filter hinzufügen
 topic: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 
-# Fixierbaren Filter hinzufügen{#add-sticky-filter}
+# Fixierbaren Filter hinzufügen {#add-sticky-filter}
 
-Erstellen Sie einen Filter, der sich über verschiedene Berichte erstreckt, um zu sehen, wie leistungsstark ein bestimmtes Segment in allen Mobilberichten ist. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann.
+Erstellen Sie einen Filter, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines bestimmten Segments für alle Mobilberichte anzeigen. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann.
 
 Im folgenden Beispiel werden dem Bericht **[!UICONTROL Benutzer und Sitzungen]** fixierbare Filter für die Betriebssysteme iOS und Android hinzugefügt, die Anweisungen gelten jedoch für alle Berichte oder Metriken.
 
@@ -26,13 +26,13 @@ Im folgenden Beispiel werden dem Bericht **[!UICONTROL Benutzer und Sitzungen]**
 
    ![](assets/sticky-filters.png)
 
-1. Klicken Sie im Dialogfenster „Fixierbarer Filter“ auf **[!UICONTROL Regel hinzufügen]**, wählen Sie **[!UICONTROL Betriebssysteme]** und anschließend **[!UICONTROL iOS]** aus der Dropdownliste aus.
+1. Klicken Sie im Dialogfenster „Fixierbarer Filter“ auf **[!UICONTROL Regel hinzufügen]**, wählen Sie **[!UICONTROL Betriebssysteme]** und anschließend **[!UICONTROL iOS]** aus der Dropdown-Liste aus.
 
    Wiederholen Sie diesen Schritt, um Android als Filter hinzuzufügen.
 
    ![](assets/sticky2.png)
 
-1. Klicken Sie auf **[!UICONTROL Und]**, wählen Sie **[!UICONTROL Betriebssysteme]** und anschließend **[!UICONTROL Android]** aus der Dropdownliste aus.
+1. Klicken Sie auf **[!UICONTROL Und]**, wählen Sie **[!UICONTROL Betriebssysteme]** und anschließend **[!UICONTROL Android]** aus der Dropdown-Liste aus.
 
    Die Filter sollten jetzt wie folgt aussehen:
 
