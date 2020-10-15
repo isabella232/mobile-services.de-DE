@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Push-Benachrichtigung konfigurieren
 topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Push-Benachrichtigung konfigurieren{#configure-push-messaging}
+# Push-Benachrichtigung konfigurieren {#configure-push-messaging}
 
 Mithilfe dieser Informationen können Sie die Push-Dienst-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 
@@ -30,7 +30,7 @@ Führen Sie vor dem Konfigurieren von Push-Nachrichten die unter [Voraussetzunge
 >
 >Das Verschieben Ihrer App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
 
-1. Füllen Sie unter **[!UICONTROL Push-Dienste folgende Felder aus]**:
+1. Füllen Sie unter **[!UICONTROL Push-Dienste]** folgende Felder aus:
 
    * Apple
 
