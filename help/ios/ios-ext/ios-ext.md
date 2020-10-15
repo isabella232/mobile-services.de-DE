@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Implementierung der iOS-Erweiterung
 topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 >
 >Wir empfehlen ausdrücklich die Verwendung des iOS SDK statt Ihres eigenen Wrappers.
 
-Apple bietet eine Reihe von APIs, mit denen die Watch-App mit der zugehörigen App kommunizieren kann, indem Anforderungen an die entsprechende App gesendet und die Antworten empfangen werden. Obwohl Sie Verfolgungsdaten als Wörterbuch von der Watch-App an die entsprechende App senden und eine beliebige Verfolgungsmethode auf der zugehörigen App aufrufen können, um die Daten zu senden, hat diese Lösung Einschränkungen.
+Apple bietet eine Reihe von APIs, mit denen die Watch-App mit der übergeordneten App kommunizieren kann, indem Anfragen an die übergeordnete App gesendet und die Antworten empfangen werden. Obwohl Sie Tracking-Daten als Wörterbuch von der Watch-App an die übergeordnete App senden und eine beliebige Tracking-Methode für die übergeordnete App aufrufen können, um die Daten zu senden, weist diese Lösung Einschränkungen auf.
 
 Wenn ein Benutzer die Watch-App verwendet, läuft die übergeordnete App meistens im Hintergrund und es ist nur sicher, `TrackActionInBackground`, `TrackLocation` und `TrackBeacon` aufzurufen. Andere Tracking-Methoden aufzurufen würde Lebenszyklusdaten beeinträchtigen, also sollten Sie nur diese drei Methoden verwenden, um Daten von der Watch-Anwendung zu senden.
 
@@ -46,14 +46,14 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 >
 >Stellen Sie sicher, dass Sie ein Projekt mit mindestens den folgenden Zielen haben:
 >
->* Eine Zielgruppe, die die App enthalten soll.
->* Eine Zielgruppe für die Erweiterung.
+>* Ein Ziel, das die App enthalten soll.
+>* Ein Ziel für die Erweiterung.
 
 >
 
 
 
-Wenn Sie an einer WatchKit-App arbeiten, sollten Sie über eine dritte Zielgruppe verfügen. Weitere Informationen zur Entwicklung für Apple Watch finden Sie unter [Developing for Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
+Wenn Sie an einer WatchKit-App arbeiten, sollten Sie über ein drittes Ziel verfügen. Weitere Informationen zur Entwicklung für Apple Watch finden Sie unter [Developing for Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
 
 ## Übergeordnete Apps konfigurieren {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
@@ -109,10 +109,10 @@ Hinweis:
       Dieser Wert bedeutet, dass der Treffer aus der übergeordneten App stammt.
    * `a.RunMode = Extension`
 
-      Dieser Wert bedeutet, dass der Treffer von der Erweiterung stammt.
+      Dieser Wert bedeutet, dass der Treffer aus der Erweiterung stammt.
 
-* Wenn Sie ein Upgrade von einer älteren Version des SDK durchführen und die zugehörige App gestartet wird, migriert Adobe automatisch alle Standarddateien und zwischengespeicherten Dateien aus dem Ordner der App in den freigegebenen Ordner der App-Gruppe.
-* Wenn die enthaltene App nie gestartet wird, werden Treffer aus der Erweiterung verworfen.
-* Die Versionsnummer und die Buildnummer müssen zwischen der App, die die Erweiterung enthält, und der Erweiterung-App identisch sein.
-* In iOS-Erweiterungs-Apps wird kein Lebenszyklusaufruf ausgelöst.
+* Wenn Sie ein Upgrade von einer älteren Version des SDK durchführen, migriert Adobe beim Start der übergeordneten App automatisch alle Benutzervorgaben und zwischengespeicherten Dateien aus dem Ordner der übergeordneten App in den gemeinsamen Ordner der App-Gruppe.
+* Wenn die übergeordnete App nie gestartet wird, werden Treffer aus der Erweiterung verworfen.
+* Die Versionsnummer und die Build-Nummer müssen zwischen der übergeordneten App und der Erweiterung-App identisch sein.
+* Für iOS-Erweiterungs-Apps wird kein Lebenszyklusaufruf ausgelöst.
 
