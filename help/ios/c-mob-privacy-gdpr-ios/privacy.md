@@ -1,14 +1,14 @@
 ---
 description: Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlöschung nach DSGVO.
 seo-description: Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlöschung nach DSGVO.
-seo-title: Festlegen des Auswahlstatus eines Benutzers
+seo-title: Auswahlstatus eines Benutzers festlegen
 solution: Experience Cloud,Analytics
-title: Festlegen des Auswahlstatus eines Benutzers
+title: Auswahlstatus eines Benutzers festlegen
 topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Durch Verwendung der folgenden Einstellungen können Sie steuern, ob Aktivitäte
 
    Nachdem die Datenschutzeinstellung mithilfe dieser Methode geändert wurde, ist die Änderung so lange dauerhaft, bis sie mithilfe dieser Methode erneut geändert wird, oder wenn Sie die App deinstallieren und erneut installieren.
 
-   Weitere Informationen zu den Methoden finden Sie unter [Konfigurationsmethoden](/help/ios/configuration/json-config/json-config.md).
+   Weitere Informationen zu den Methoden finden Sie unter  [Konfigurationsmethoden](/help/ios/configuration/json-config/json-config.md).
 
 Hier finden Sie Informationen zu den einzelnen Datenschutzstatus:
 
