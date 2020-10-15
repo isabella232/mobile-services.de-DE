@@ -1,28 +1,28 @@
 ---
-description: In der Benutzeroberfläche von Adobe Mobile Services können Sie die sofortige Auslieferung einer Push-Nachricht, die später ausgeliefert werden soll, sowie ein wiederkehrendes Ereignis planen. Diese Ereignis können täglich, wöchentlich oder monatlich geplant werden.
+description: In der Benutzeroberfläche von Adobe Mobile Services können Sie eine Push-Nachricht für den sofortigen Versand, für einen späteren Versand und als wiederkehrendes Ereignis planen. Diese Ereignisse können täglich, wöchentlich oder monatlich geplant werden.
 keywords: mobile
-seo-description: In der Benutzeroberfläche von Adobe Mobile Services können Sie die sofortige Auslieferung einer Push-Nachricht, die später ausgeliefert werden soll, sowie ein wiederkehrendes Ereignis planen. Diese Ereignis können täglich, wöchentlich oder monatlich geplant werden.
-seo-title: Zeitplan Push-Nachrichten
+seo-description: In der Benutzeroberfläche von Adobe Mobile Services können Sie eine Push-Nachricht für den sofortigen Versand, für einen späteren Versand und als wiederkehrendes Ereignis planen. Diese Ereignisse können täglich, wöchentlich oder monatlich geplant werden.
+seo-title: 'Zeitplan: Push-Nachrichten'
 solution: Experience Cloud,Analytics
-title: Zeitplan Push-Nachrichten
+title: 'Zeitplan: Push-Nachrichten'
 topic: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '723'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 
-# Zeitplan: Push-Nachrichten{#schedule-push-message}
+# Zeitplan: Push-Nachrichten {#schedule-push-message}
 
-In der Benutzeroberfläche von Adobe Mobile Services können Sie die sofortige Auslieferung einer Push-Nachricht, die später ausgeliefert werden soll, sowie ein wiederkehrendes Ereignis planen. Diese Ereignis können täglich, wöchentlich oder monatlich geplant werden.
+In der Benutzeroberfläche von Adobe Mobile Services können Sie eine Push-Nachricht für den sofortigen Versand, für einen späteren Versand und als wiederkehrendes Ereignis planen. Diese Ereignisse können täglich, wöchentlich oder monatlich geplant werden.
 
 >[!TIP]
 >
->Die Benutzer können die Planungseinstellungen für Push-Nachrichten jederzeit ändern. Wenn es kein Datum gibt, an dem eine wiederkehrende geplante Nachricht gesendet werden kann, z. B. ein monatlicher wiederkehrender Auftrag alle 31. Tag, am 31. Februar oder am 5. Dienstag des Monats, wird keine Nachricht gesendet.
+>Die Benutzer können die Planungseinstellungen für Push-Nachrichten jederzeit ändern. Wenn es kein zutreffendes Datum für das Senden einer wiederkehrenden geplanten Nachricht gibt, wird keine Nachricht gesendet (z. B. bei einem monatlich wiederkehrenden Vorgang am 31. Tag, am 31. Februar; oder am 5. Dienstag).
 
 Beachten Sie die folgenden Informationen:
 
@@ -39,7 +39,7 @@ Beachten Sie die folgenden Informationen:
 
 Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende Push-Nachrichten planen:
 
-* Die Optionen, die in der Dropdownliste **[!UICONTROL Wiederholen]** angezeigt werden, hängen vom eingegebenen bzw. ausgewählten Datum ab.
+* Die Optionen, die in der Dropdown-Liste **[!UICONTROL Wiederholen]** angezeigt werden, hängen vom eingegebenen bzw. ausgewählten Datum ab.
 
    Wenn Sie beispielsweise `Saturday, October 7` eingegeben haben, werden die folgenden Optionen angezeigt:
 
@@ -49,16 +49,16 @@ Sie **müssen** folgende Informationen verinnerlichen, bevor Sie wiederkehrende 
    * **[!UICONTROL Am 7. jeden Monats]**
    * **[!UICONTROL Am 1. Samstag jeden Monats]**
 
-* Push-Nachrichten werden basierend auf Greenwich Mean Time (GMT) geplant und gesendet.
+* Push-Nachrichten werden auf der Grundlage der Greenwich Mean Time (GMT) geplant und versendet.
 
-   Wenn Sie zum Beispiel planen, dass jeden Samstag um 22:00 Uhr **PST** eine wiederkehrende Nachricht gesendet wird, die am 7. Oktober beginnt, wird die Nachricht am Samstag um 19:00 Uhr **GMT** gesendet.
+   Wenn Sie beispielsweise eine wiederkehrende Nachricht geplant haben, die ab dem 7. Oktober jeden Samstag um 12:00 Uhr **PST** gesendet wird, wird die Nachricht tatsächlich am Samstag um 19:00 Uhr **GMT** gesendet.
 * Nachrichten werden unterschiedlich gesendet, je nachdem, ob Sie sich in den USA, Europa oder Asien befinden.
 
-   Wenn Sie sich beispielsweise in San Jose, Kalifornien, befinden und eine Nachricht planen, die am 31. ***Oktober*** um 17:30 Uhr **PST** gesendet werden soll, wird die Nachricht am 1 ***.*** November um 12:30 Uhr **GMT** gesendet. Wenn Sie sich in Tokio befinden und planen, dass eine Nachricht am 1 ***.*** Januar um 5:30 Uhr gesendet wird, wird sie am 31. ***Dezember um 20:30 Uhr*** GMT **** gesendet.
-* Push-Nachrichten werden eine Stunde früher oder später gesendet, je nachdem, wann die Sommerzeit eingespart wird.
-* Wenn Sie sich Ihren Push-Nachrichten-Bericht ansehen, wird die Nachricht in der lokalen Zeitzone Ihres Systems angezeigt.
+   Wenn Sie sich beispielsweise in San Jose, Kalifornien, befinden und eine Nachricht planen, die am ***31. Oktober*** um 17:30 Uhr **PST** gesendet werden soll, wird die Nachricht tatsächlich am ***1. November*** um 12:30 Uhr **GMT** gesendet. Wenn Sie sich in Tokio befinden und eine Nachricht planen, die am ***1. Januar*** um 5:30 Uhr gesendet werden soll, wird sie am ***31. Dezember*** um 20:30 Uhr **GMT** gesendet.
+* Push-Nachrichten werden eine Stunde früher oder später gesendet, je nachdem, wann die Sommerzeit beginnt.
+* Wenn Sie sich Ihren Push-Nachrichtenbericht ansehen, wird die Nachricht in der lokalen Zeitzone Ihres Systems angezeigt.
 
-   Wenn Ihr Beginn z. B. um 22:00 Uhr **PST** endet, obwohl die Nachricht um 19:00 Uhr **GMT** gesendet wird, zeigt der Nachrichtenbericht die Sendezeit um 12:00 Uhr **PST** an.
+   Wenn Ihre Startzeit beispielsweise 12:00 Uhr **PST** ist, wird im Nachrichtenbericht die Uhrzeit als 12:00 Uhr **PST** angezeigt, obwohl die Nachricht um 19:00 Uhr **GMT** gesendet wird.
 
 ## Wiederkehrende Push-Nachrichten planen {#section_675BD754E5A04423A1751193698A978F}
 
