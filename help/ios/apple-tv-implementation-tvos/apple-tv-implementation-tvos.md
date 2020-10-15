@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Apple TV-Implementierungen mit tvOS
 topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 ## Übersicht
 
-Mit Apple TV können Sie jetzt Anwendungen erstellen, die in der nativen tvOS-Umgebung ausgeführt werden. Sie können eine native App mit mehreren Frameworks in iOS erstellen oder Ihre App mit XML-Vorlagen und JavaScript erstellen.
+Mit Apple TV können Sie jetzt Anwendungen erstellen, die in der nativen tvOS-Umgebung ausgeführt werden. Sie können eine native App mit verschiedenen in iOS verfügbaren Frameworks oder eine App mit XML-Vorlagen und JavaScript erstellen.
 
 >[!TIP]
 >
