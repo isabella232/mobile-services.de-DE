@@ -1,31 +1,31 @@
 ---
-description: Versionshinweise und bekannte Probleme mit dem Universal Windows Platform SDK 4.x für Experience Cloud Solutions.
-seo-description: Versionshinweise und bekannte Probleme mit dem Universal Windows Platform SDK 4.x für Experience Cloud Solutions.
+description: Versionshinweise und bekannte Probleme für Universal Windows Platform SDK 4.x für Experience Cloud-Lösungen.
+seo-description: Versionshinweise und bekannte Probleme für Universal Windows Platform SDK 4.x für Experience Cloud-Lösungen.
 seo-title: Versionshinweise
 solution: Experience Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '105'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 
 # Versionshinweise {#release-notes}
 
-Versionshinweise und bekannte Probleme mit dem Universal Windows Platform SDK 4.x für Experience Cloud Solutions.
+Versionshinweise und bekannte Probleme für Universal Windows Platform SDK 4.x für Experience Cloud-Lösungen.
 
 ## Aktuelle Versionshinweise {#section_DC697A291F0A4CB7B669B24488E07DC1}
 
-Zusätzlich zu den erheblichen Leistungssteigerungen bietet Version 4.x die folgenden neuen Funktionen:
+Zusätzlich zu den erheblichen Leistungssteigerungen bietet Version 4.x die folgenden neuen Funktionen:
 
 | Funktion | Beschreibung |
 |--- |--- |
-| Universelles Windows-Plattform-SDK 4.x für Experience Cloud-Lösungen | Erstes Release. |
+| Universal Windows Platform SDK 4.x für Experience Cloud-Lösungen | Erste Version. |
 
 
-For more information about the release notes for all solutions, see the [Adobe Experience Cloud Release Notes](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
+Weitere Informationen zu Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
