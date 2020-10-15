@@ -1,29 +1,29 @@
 ---
-description: Anhand dieser Informationen können Sie In-App-Nachrichten in Ihren iOS-Apps verwenden.
-seo-description: Anhand dieser Informationen können Sie In-App-Nachrichten in Ihren iOS-Apps verwenden.
+description: Diese Informationen helfen Ihnen beim Verwenden der In-App-Nachrichten in Ihren iOS-Apps.
+seo-description: Diese Informationen helfen Ihnen beim Verwenden der In-App-Nachrichten in Ihren iOS-Apps.
 seo-title: In-App-Nachrichten
 solution: Experience Cloud,Analytics
 title: In-App-Nachrichten
 topic: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 
 # In-App-Nachrichten {#in-app-messaging}
 
-Anhand dieser Informationen können Sie In-App-Nachrichten in Ihren iOS-Apps verwenden.
+Diese Informationen helfen Ihnen beim Verwenden der In-App-Nachrichten in Ihren iOS-Apps.
 
-To use in-app messaging, you **must** have SDK version 4.2 or later.
+Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.2 (oder höher) **erforderlich**.
 
 Beachten Sie Folgendes:
 
-* Nachrichten und die Regeln, die definieren, wann Nachrichten angezeigt werden, werden in Adobe Mobile Services erstellt. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
+* Nachrichten und die Regeln, die definieren, wann Nachrichten angezeigt werden, werden in Adobe Mobile Services erstellt. Weitere Informationen finden Sie unter [In-App-Nachrichten erstellen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
 * Die in diesem Abschnitt beschriebenen Aktualisierungen müssen am SDK vorgenommen werden, um In-App-Nachrichten anzuzeigen.
 
    >[!TIP]
@@ -78,7 +78,7 @@ Beachten Sie Folgendes:
 
 Mobile Services SDK für iOS lassen sich folgende Metriken Ihrer In-App-Nachrichten verfolgen:
 
-* Für In-App-Nachrichten im Vollbild und Warnhinweis:
+* Für In-App-Nachrichten im Vollbild- und Warnhinweisstil:
 
    * **[!UICONTROL Impressionen]**: Benutzer löst eine In-App-Nachricht aus.
    * **[!UICONTROL Clickthrough]**: Benutzer betätigt die **[!UICONTROL Clickthrough]**-Schaltfläche.
@@ -86,8 +86,8 @@ Mobile Services SDK für iOS lassen sich folgende Metriken Ihrer In-App-Nachrich
 
 * Für benutzerdefinierte Vollbild-In-App-Nachrichten muss der HTML-Inhalt der Nachricht den richtigen Code enthalten, um die SDK-Verfolgung über die Nutzung folgender Schaltflächen informieren zu können:
 
-   * **[!UICONTROL Clickthrough]** (Umleitung) der Beispielverfolgung: `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **[!UICONTROL Abbrechen]** (Schließen) der Beispielverfolgung: `adbinapp://cancel`
+   * **[!UICONTROL Clickthrough]** (Umleitung) der Beispielverfolgung:  `adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL Abbrechen]** (Schließen) des Beispiel-Tracking: `adbinapp://cancel`
 
 * Für lokale (Remote-)Nachrichten:
 
@@ -111,9 +111,9 @@ Mobile Services SDK für iOS lassen sich folgende Metriken Ihrer In-App-Nachrich
 
 ## Lokales Ausweichbild {#section_DEACC1CE549B4573B556A44A52409941}
 
-Beim Erstellen einer Vollbildnachricht in Adobe Mobile Services können Sie optional ein Ersatzbild angeben. Wenn Ihre Nachricht nicht in der Lage ist, das gewünschte Bild aus dem Internet abzurufen, versucht das SDK, das Bild mit demselben Namen aus Ihrem Anwendungspaket zu laden. Auf diese Weise können Sie Ihre Nachricht auch dann im Originalformular anzeigen, wenn der Benutzer offline ist oder das vordefinierte Bild unerreichbar ist.
+Beim Erstellen einer Vollbildnachricht in Adobe Mobile Services können Sie optional ein Ausweichbild angeben. Wenn Ihre Nachricht nicht in der Lage ist, das gewünschte Bild aus dem Internet abzurufen, versucht das SDK, das Bild mit demselben Namen aus Ihrem App-Paket zu laden. Auf diese Weise können Sie Ihre Nachricht in ihrer ursprünglichen Form anzeigen, auch wenn der Benutzer offline ist oder das vorgegebene Bild nicht erreichbar ist.
 
-Der Name des Ersatzbild-Assets wird beim Konfigurieren der Nachricht in Adobe Mobile Services angegeben.
+Der Asset-Name des Ausweichbilds wird beim Konfigurieren der Nachricht in Adobe Mobile Services angegeben.
 
 >[!IMPORTANT]
 >
