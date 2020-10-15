@@ -2,21 +2,21 @@
 description: Sie können die Seite „Marketing-Links“ verwenden, um Marketinglinks zu erstellen, zu verwenden und zu archivieren.
 keywords: mobile
 seo-description: Sie können die Seite „Marketing-Links“ verwenden, um Marketinglinks zu erstellen, zu verwenden und zu archivieren.
-seo-title: Marketing-Links verwalten
+seo-title: Marketinglinks verwalten
 solution: Experience Cloud,Analytics
-title: Marketing-Links verwalten
+title: Marketinglinks verwalten
 topic: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Marketing-Links verwalten{#manage-marketing-links}
+# Marketing-Links verwalten {#manage-marketing-links}
 
 Sie können die Seite „Marketing-Links“ verwenden, um Marketinglinks zu erstellen, zu verwenden und zu archivieren.
 
@@ -28,7 +28,7 @@ Führen Sie auf der Seite „Marketing-Links“ die folgende Aufgaben aus:
 
 * **Marketinglinks anzeigen**
 
-   To display the list of Marketing Links, in the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
+   Um die Liste der Marketinglinks anzuzeigen, klicken Sie auf der Mobile Services-Startseite auf **[!UICONTROL Akquise]** > **[!UICONTROL Marketing Links Builder]**.
 
    In der Spalte **[!UICONTROL Klicks]** wird die Anzahl der Benutzer angezeigt, die auf den Marketinglink geklickt haben. In der Spalte **[!UICONTROL Erste Starts]** wird die Anzahl erster App-Starts angezeigt. Dieser Wert spiegelt die Anzahl von Benutzern wider, die die App nach dem Klick auf den Marketinglink installiert und gestartet haben.
 
