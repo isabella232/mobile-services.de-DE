@@ -1,24 +1,24 @@
 ---
-description: Die Serialisierung von Ereignissen wird von Verarbeitungsregeln nicht unterstützt. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignis direkt beim Serveraufruf festzulegen.
+description: Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignisse direkt beim Server-Aufruf festzulegen.
 keywords: android;library;mobile;sdk
-seo-description: Die Serialisierung von Ereignissen wird von Verarbeitungsregeln nicht unterstützt. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignis direkt beim Serveraufruf festzulegen.
+seo-description: Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignisse direkt beim Server-Aufruf festzulegen.
 seo-title: Ereignis-Serialisierung
 solution: Experience Cloud,Analytics
 title: Ereignis-Serialisierung
 topic: Developer and implementation
 uuid: acdeda16-ab83-4cfc-907d-33448b801b31
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
 # Ereignis-Serialisierung {#event-serialization}
 
-Die Serialisierung von Ereignissen wird von Verarbeitungsregeln nicht unterstützt. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignis direkt beim Serveraufruf festzulegen.
+Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um serialisierte Ereignisse direkt beim Server-Aufruf festzulegen.
 
 ```java
 cdata.put("&&events", "event1:12341234");
