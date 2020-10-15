@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Geostandort und Zielpunkte
 topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Jeder `trackLocation`-Aufruf sendet Folgendes:
 
 * Breitengrad, Längengrad und Standort in einem Zielpunkt (Point of Interest, POI), der in Adobe Mobile Services definiert ist.
 
-   Diese Informationen werden für den automatischen Berichte an mobile Lösungsvariablen übergeben.
+   Diese Informationen werden für die automatische Berichterstellung an die Variablen der mobilen Lösung übergeben.
 
-* Entfernung vom Zentrum und Genauigkeit als Kontextdaten weitergegeben.
+* Entfernung vom Zentrum und Genauigkeit werden als Kontextdaten weitergegeben.
 
    Diese Variablen werden nicht automatisch erfasst. Sie müssen diese Variablen für Kontextdaten mithilfe der Anweisungen im Abschnitt *Zusätzliche Daten senden* unten zuordnen.
 
@@ -63,7 +63,7 @@ Falls diese nicht konfiguriert ist, muss eine aktualisierte Version der Datei `A
    >
    >Sie können `trackLocation` jederzeit aufrufen.
 
-   Um den Standort zu bestimmen, der an den `trackLocation`-Aufruf weitergeleitet wird, siehe [Getting the User’s Location (Standort des Benutzers ermitteln)](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html).
+   Um den Standort zu bestimmen, der an den `trackLocation`-Aufruf weitergeleitet wird, siehe [Standort des Benutzers ermitteln](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html).
 
 Wenn festgestellt wird, dass sich der Standort in einem definierten POI-Radius befindet, wird zusätzlich eine `a.loc.poi`-Kontextdatenvariable mit dem Treffer `trackLocation` gesendet und in den Standortberichten als ein POI gemeldet. Außerdem wird eine `a.loc.dist`-Kontextvariable gesendet, die den Abstand von den definierten Koordinaten in Metern enthält.
 
@@ -83,9 +83,9 @@ Die Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ## Standort-Kontextdaten {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-Die Längen- und Breitengrade werden jeweils mit drei verschiedenen Kontextdatenparametern gesendet, wobei jeder Parameter eine andere Präzision für insgesamt sechs Kontextdatenparameter darstellt.
+Die Längen- und Breitengrade werden jeweils mit drei verschiedenen Kontextdatenparametern gesendet, wobei jeder Parameter einen anderen Genauigkeitsgrad für insgesamt sechs Kontextdatenparameter darstellt.
 
-Beispielsweise stellen die Koordinaten lat = 40.93231, lon = -111.93152 eine Position mit 1 m Präzision dar. Diese Position wird entsprechend der Präzision auf die folgenden Variablen aufgeteilt:
+Beispielsweise stellen die Koordinaten lat = 40,93231, lon = -111,93152 einen Standort mit einer Genauigkeit von 1 m dar. Dieser Standort wird entsprechend der Genauigkeit auf die folgenden Variablen aufgeteilt:
 
 * `a.loc.lat.a` = 040,9
 * `a.loc.lat.b` = 32
@@ -115,5 +115,5 @@ Beachten Sie die folgenden Informationen:
 
 * Wenn sich die Radien zweier POIs überschneiden, wird der erste POI verwendet, der den aktuellen Standort enthält.
 
-   Wenn sich Ihre POIs überschneiden, sollten Sie POIs in der Reihenfolge der granulärsten bis der kleinsten Granularität Liste vornehmen, um sicherzustellen, dass der granulärste POI gemeldet wird.
+   Wenn sich Ihre POIs überschneiden, sollten Sie die POIs in der Reihenfolge der größten bis zur niedrigsten Granularität auflisten, um sicherzustellen, dass der POI mit der größten Granularität gemeldet wird.
 
