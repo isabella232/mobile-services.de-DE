@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Zeitplan In-App-Nachricht
 topic: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '223'
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ Sie können Zeitplanoptionen für In-App-Nachrichten konfigurieren, einschließl
 >
 >Die Datumsbereiche werden entsprechend Ihrer Zeitzone definiert. Einzelne Tage und Zeiträume beziehen sich auf des Gerät des Benutzers.
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
-1. Klicken Sie auf **[!UICONTROL Planen]**.
+1. Klicken Sie in Ihrer App auf **[!UICONTROL Messaging]** > **[!UICONTROL Nachrichten verwalten]** > **[!UICONTROL Nachricht erstellen]** > **[!UICONTROL In-App-Nachricht erstellen]**.
+1. Klicken Sie auf **[!UICONTROL Zeitplan]**.
 1. Füllen Sie folgende Felder im Abschnitt **[!UICONTROL Dauer]** aus:
 
    * **[!UICONTROL Jeden Tag]**
@@ -52,7 +52,7 @@ Sie können Zeitplanoptionen für In-App-Nachrichten konfigurieren, einschließl
 
       Zeigt Ihre Nachricht zu allen Stunden des Tages an.
 
-   * **[!UICONTROL Zeitregler]**
+   * **[!UICONTROL Zeitschieberegler]**
 
       Stellen Sie den Regler ein, um die Tageszeiten festzulegen, zu denen Ihre Nachricht angezeigt werden soll.
 
