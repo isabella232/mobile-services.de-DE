@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Akquise konfigurieren
 topic: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
 ht-degree: 100%
 
@@ -20,14 +20,14 @@ ht-degree: 100%
 
 Das Akquise-Tracking muss in der SDK-Konfiguration aktiviert sein, damit Marketinglinks verfolgt und in Berichten verwendet werden können.
 
-1. Rufen Sie die Seite App-Einstellungen verwalten für die gewünschte App auf und scrollen Sie zum Abschnitt **[!UICONTROL SDK-Akquise-Optionen]** herunter.
-1. Führen Sie die folgenden Aufgaben durch:
+1. Rufen Sie die Seite „App-Einstellungen verwalten“ für die gewünschte App auf und scrollen Sie zum Abschnitt **[!UICONTROL SDK-Akquise-Optionen]** herunter.
+1. Führen Sie die folgenden Aufgaben aus:
 
    * Um die Akquise zu aktivieren, aktivieren Sie das Kontrollkästchen **[!UICONTROL Aktivieren]**.
 
       Wenn Sie dieses Kontrollkästchen aktivieren, wird das Feld **[!UICONTROL Referrer-Timeout]** angezeigt und der Wert wird von 0 in 5 geändert.
 
-   * Geben Sie im Feld **[!UICONTROL Referrer-Timeout (Sekunden)]** einen Wert ein
+   * Geben Sie im Feld **[!UICONTROL Referrer-Timeout (Sekunden)]** einen Wert ein.
 
       (**Optional**) Wenn Sie das Kontrollkästchen **[!UICONTROL Aktivieren]** aktiviert haben, ist dieses Feld optional. Sie können den Timeout-Wert ändern, indem Sie einen Sekundenwert eingeben. Diese Einstellung legt die Zeit fest, die auf Akquise-Informationen gewartet werden soll, bevor ein „Erster Start“-Treffer gesendet wird.
    >[!IMPORTANT]
