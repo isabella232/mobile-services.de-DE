@@ -1,34 +1,34 @@
 ---
-description: Sie können App Store-Links erstellen, über die Sie Anwendungen direkt aus dem Apple App Store und aus Google Play herunterladen können. Mithilfe der von Ihnen erstellten Links können Sie Ihre Erfolgsereignisse den Downloads zuordnen.
+description: Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
 keywords: mobile
-seo-description: Sie können App Store-Links erstellen, über die Sie Anwendungen direkt aus dem Apple App Store und aus Google Play herunterladen können. Mithilfe der von Ihnen erstellten Links können Sie Ihre Erfolgsereignisse den Downloads zuordnen.
+seo-description: Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
 seo-title: Akquise-Link erstellen
 solution: Experience Cloud,Analytics
 title: Akquise-Link erstellen
 topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
-# Akquise-Link erstellen{#create-an-acquisition-link}
+# Akquise-Link erstellen {#create-an-acquisition-link}
 
-Sie können App Store-Links erstellen, über die Sie Anwendungen direkt aus dem Apple App Store und aus Google Play herunterladen können. Mithilfe der von Ihnen erstellten Links können Sie Ihre Erfolgsereignisse den Downloads zuordnen.
+Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
 
-1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
-1. Geben Sie die folgenden Informationen im Abschnitt **[!UICONTROL Linkinformationen]** ein:
+1. Klicken Sie auf **[!UICONTROL Akquise]** > **[!UICONTROL Akquise-Links verwalten]** > **[!UICONTROL Neu erstellen]**.
+1. Geben Sie die folgenden Informationen im Abschnitt **[!UICONTROL Link-Informationen]** ein:
 
    * (**Pflichtfeld**) **[!UICONTROL Name]**
 Geben Sie einen beschreibenden Namen für den App-Link an.
    * **[!UICONTROL Trackingcode]**
 Geben Sie den gewünschten Trackingcode an oder klicken Sie auf **[!UICONTROL Generieren]**, um einen neuen Trackingcode zu erstellen.
    * (**Pflichtfeld**) **[!UICONTROL Quelle]**
-Geben Sie die ursprünglich verweisende Stelle an, z. B. „Newsletter“ oder „Homepage“.
+Geben Sie den ursprünglichen Referrer an, z. B. „Newsletter“ oder „Homepage“.
    * **[!UICONTROL Medium]**
 Geben Sie das Marketingmedium an, z. B. „Banner“ oder „E-Mail“.
    * **[!UICONTROL Inhalt]**
@@ -41,21 +41,21 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
 
 1. Geben Sie im Abschnitt **[!UICONTROL Appstore-Link hinzufügen]** Informationen in die Felder ein.
 
-   * **[!UICONTROL App Store]**
+   * **[!UICONTROL Appstore]**
 
       Wählen Sie einen Appstore aus:
       * Apple App Store
       * Google Play
 
-      Die Optionen für die einzelnen App Stores sind unterschiedlich, wie unten beschrieben.
+      Die Optionen für die einzelnen Appstores sind unterschiedlich, wie unten beschrieben.
 
-   * **[!UICONTROL Browserregion (nur Apple App Store)]**
+   * **[!UICONTROL Browser-Region (nur Apple App Store)]**
 
       Geben Sie einen bestimmten regionalen App Store für Desktop-Browser an.
 
       Diese Einstellung erlaubt Ihnen, den regionalen App Store zu definieren, den Sie über einen Akquise-Link verbinden möchten, wenn ein Benutzer in einem Desktop-Browsers auf den Link klickt. Bei Mobilgeräten erfolgt eine automatische Weiterleitung je nach Geräteeinstellungen.
 
-   * **[!UICONTROL Browsersprache (Google-Sprache (nur Google Play))]**
+   * **[!UICONTROL Browser-Sprache (Google-Sprache (nur Google Play))]**
 
       Wählen Sie eine Sprache aus der Dropdown-Liste aus.
 
@@ -78,9 +78,9 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
 
 
 
-1. To save your configuration and to generate the link, click **[!UICONTROL Add]** > **[!UICONTROL Save]**.
+1. Um die Konfiguration zu speichern und den Link zu erstellen, klicken Sie auf **[!UICONTROL Hinzufügen]** > **[!UICONTROL Speichern]**.
 
-   Der neu erstellte Link wird im Abschnitt **[!UICONTROL App Store-Links]** angezeigt.
+   Der neu erstellte Link wird im Abschnitt **[!UICONTROL Appstore-Links]** angezeigt.
 
    ![Link speichern](assets/apps_store_links.png)
 
