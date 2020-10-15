@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Die 10 beliebtesten Artikel
 topic: Metrics
 uuid: cf53cc0b-7c84-41c8-97d5-d9ee833a916b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '137'
+ht-degree: 100%
 
 ---
 
 
-# Bericht „Die 10 beliebtesten Artikel“{#top-articles}
+# Bericht „Die 10 beliebtesten Artikel“ {#top-articles}
 
 Der Bericht **[!UICONTROL Die 10 beliebtesten Artikel]** enthält eine Sunburst-Grafik Ihrer Daten. Dieser Bericht ist nur für DPS-Kunden verfügbar.
 
