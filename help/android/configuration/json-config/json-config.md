@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: ADBMobile JSON-Konfiguration
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
       >
       >Wenn Zeitstempel für Ihre Report Suite aktiviert sind, `offlineEnabled` **muss** Ihre Konfigurationseigenschaft wahr sein. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` **muss** die Konfigurationseigenschaft „false“ lauten.
       >
-      >Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind, wenden Sie sich an den Kundenservice oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter.
+      >Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,  wenden Sie sich an den Kundenservice oder laden Sie die Konfigurationsdatei aus Adobe Mobile Services herunter.
 
       Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für JavaScript-Treffer einfügen, die die Variable `s.timestamp` nutzen.
 
