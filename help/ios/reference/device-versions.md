@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: iOS-Geräteversionen
 topic: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ Die folgende Tabelle enthält die iOS-Versionszeichenfolge, die von vielen iOS-G
 >
 >Diese Liste basiert auf internen Tests und Onlineinformationen und ist ggf. ungenau oder unvollständig.
 
-For more information about iOS devices, go to sites such as [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
+Weitere Informationen zu iOS-Geräten finden Sie auf Websites wie [Das iPhone-Wiki](https://theiphonewiki.com/wiki/Models).
 
 | **iPhone** | **Version** |
 |---|---|
 | Original | iPhone1,1 |
 | 3G | iPhone1,2 |
 | 3GS | iPhone2,1 |
-| 4 (GSM) (im Lieferumfang von Firmware 4.0 enthalten) | iPhone3,1 |
-| 4 (GSM) (im Lieferumfang von Firmware 6.0 enthalten) | iPhone3,2 |
+| 4 (GSM) (wird mit Firmware 4.0 ausgeliefert) | iPhone3,1 |
+| 4 (GSM) (wird mit Firmware 6.0 ausgeliefert) | iPhone3,2 |
 | 4 (CDMA) | iPhone3,3 |
 | 4S | iPhone4,1 |
 | 5 (GSM) | iPhone5,1 |
@@ -42,7 +42,7 @@ For more information about iOS devices, go to sites such as [The iPhone Wiki](ht
 | 5S (Global) | iPhone6,2 |
 | 6 Plus | iPhone7,1 |
 | 6 | iPhone7,2 |
-| 6 s Plus | iPhone8,2 |
+| 6s Plus | iPhone8,2 |
 | SE (Vereinigte Staaten) | iPhone8,4 |
 | 7 (CDMA) | iPhone9,1 |
 | 7 Plus (CDMA) | iPhone9,2 |
@@ -67,13 +67,13 @@ For more information about iOS devices, go to sites such as [The iPhone Wiki](ht
 | iPad 2 (Neu 16 GB) | iPad2,4 |
 | iPad Mini (WiFi) | iPad2,5 |
 | iPad Mini (GSM) | iPad2,6 |
-| iPad Mini, globale Version (identisch mit dem GSM iPad Mini, enthält jedoch ein zusätzliches zelluläres Radio: CDMA EV-DO Rev. A und Rev. B (3.5G) | iPad2,7 |
+| iPad Mini, globale Version (identisch mit dem iPad Mini (GSM), enthält jedoch ein zusätzliches Mobilfunkgerät: CDMA EV-DO Rev. A und Rev. B (3.5G)) | iPad2,7 |
 | iPad 3 (WiFi) | iPad3,1 |
 | iPad 3 (CDMA) | iPad3,2 |
 | iPad 3 (GSM) | iPad3,3 |
 | iPad 4 (WiFi) | iPad3,4 |
 | iPad 4 (GSM) | iPad3,5 |
-| iPad 4, globale Version (entspricht GSM 4. Generation iPad, enthält jedoch ein zusätzliches zelluläres Radio: CDMA EV-DO Rev. A und Rev. B (3.5G) | iPad3,6 |
+| iPad 4, globale Version (identisch mit dem iPad der 4. Generation (GSM), enthält jedoch ein zusätzliches Mobilfunkgerät: CDMA EV-DO Rev. A und Rev. B (3.5G)) | iPad3,6 |
 | iPad Air (WiFi) | iPad4,1 |
 | iPad Air (LTE) | iPad4,2 |
 | iPad Air (CDMA) | iPad4,3 |
