@@ -5,20 +5,20 @@ seo-title: Testen der Legacy-Akquise
 solution: Experience Cloud,Analytics
 title: Testen der Legacy-Akquise
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '272'
+ht-degree: 100%
 
 ---
 
 
-# Testen der Legacy-Akquise{#testing-legacy-acquisition}
+# Testen der Legacy-Akquise {#testing-legacy-acquisition}
 
 Diese Informationen helfen Ihnen dabei, einen alten Akquise-Kampagnenlink basierend auf einem Gerätefingerabdruck zu übertragen.
 
-Wenn sich die mobile App noch nicht in Google Play befindet, können Sie beim Erstellen des Links zur Kampagne eine beliebige mobile App als Ziel auswählen. Dies wirkt sich nur darauf aus, zu welcher App der Akquiseserver die Umleitung vornimmt, nachdem Sie auf den Akquiselink geklickt haben, nicht aber auf die Fähigkeit, den Akquiselink zu testen.
+Wenn die App noch nicht in Google Play vorhanden ist, können Sie beim Erstellen des Kampagnen-Links eine beliebige App als Ziel auswählen. Dies wirkt sich nur darauf aus, zu welcher App der Akquiseserver die Umleitung vornimmt, nachdem Sie auf den Akquiselink geklickt haben, nicht aber auf die Fähigkeit, den Akquiselink zu testen.
 
 1. Navigieren Sie zu **[!UICONTROL Veraltete Akquiselinks verwenden]** in Adobe Mobile Services und generieren Sie eine Akquisekampagnen-URL.
 
