@@ -1,16 +1,16 @@
 ---
-description: In den folgenden Tabellen werden die Metriken und Dimensionen Liste, die nach der Implementierung des Lebenszyklus automatisch von der Mobilbibliothek gemessen werden können.
-seo-description: In den folgenden Tabellen werden die Metriken und Dimensionen Liste, die nach der Implementierung des Lebenszyklus automatisch von der Mobilbibliothek gemessen werden können.
+description: Die folgenden Tabellen beinhalten die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
+seo-description: Die folgenden Tabellen beinhalten die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
 seo-title: Lebenszyklusmetriken
 solution: Experience Cloud,Analytics
 title: Lebenszyklusmetriken
 topic: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1108'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -133,7 +133,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 * **Stunde des Tages**
 
-   Misst die Stunde, in der die App gestartet wurde, und verwendet das numerische Format (24 Stunden). Wird für die Zeitaufteilung verwendet, um Spitzennutzungszeiten zu bestimmen.
+   Uhrzeit, zu der die App gestartet wurde, im 24-Stunden-Format. Wird für die Zeitunterteilung verwendet, um Spitzennutzungszeiten zu ermitteln.
 
    * Analytics-Kontextdaten/Target: `a.HourOfDay`
    * Zielgruppen-Management: `c_a_HourOfDay`
@@ -168,7 +168,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 * **Gerätename**
 
-   Speichert den Gerätenamen.  Zweistellige, kommagetrennte Zeichenfolge, die das iOS-Gerät identifiziert. Die erste Ziffer steht üblicherweise für die Gerätegeneration, die zweite weist die Version der verschiedenen Mitglieder der Gerätefamilie aus. Eine Liste gängiger Gerätenamen finden Sie unter  iOS-Geräteversionen.
+   Speichert den Gerätenamen.  Kommagetrennte zweistellige Zeichenfolge, die das iOS-Gerät angibt. Die erste Ziffer steht üblicherweise für die Gerätegeneration, die zweite weist die Version der verschiedenen Mitglieder der Gerätefamilie aus. Eine Liste gängiger Gerätenamen finden Sie unter    iOS-Geräteversionen.
 
    * Analytics-Kontextdaten/Target: `a.DeviceName`
    * Zielgruppen-Management: `c_a_DeviceName`
@@ -307,21 +307,21 @@ Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit
 
 * **Kampagnenmedium**
 
-   Marketingmedium wie Banner oder E-Mail. Erfasst durch App-Akquise.
+   Marketing-Medium, z. B. ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.medium`
    * Zielgruppen-Management-Eigenschaft: `c_a_referrer_campaign_medium`
 
 * **Kampagnenquelle**
 
-   Ursprünglicher Werber, z. B. Newsletter oder Social Media-Netzwerk. Erfasst durch App-Akquise.
+   Ursprünglicher Referrer, z. B. ein Newsletter oder ein Social Media-Netzwerk. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.source`
    * Zielgruppen-Management-Eigenschaft: `c_a_referrer_campaign_source`
 
 * **Kampagnenbegriff**
 
-   Bezahlte Suchbegriffe oder andere Begriffe, die Sie mit dieser Akquisition verfolgen möchten. Erfasst durch App-Akquise.
+   Bezahlte Suchbegriffe oder andere Begriffe, die Sie mit dieser Akquise verfolgen möchten. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.term`
    * Zielgruppen-Management-Eigenschaft: `c_a_referrer_campaign_term`
