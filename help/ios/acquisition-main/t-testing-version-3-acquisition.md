@@ -5,16 +5,16 @@ seo-title: Testen der V3-Akquise
 solution: Experience Cloud,Analytics
 title: Testen der V3-Akquise
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# V3-Akquise testen{#testing-v-acquisition}
+# V3-Akquise testen {#testing-v-acquisition}
 
 Diese Informationen helfen Ihnen dabei, einen V3-Akquise-Kampagnenlink basierend auf einem Gerätefingerabdruck zu übertragen.
 
@@ -22,7 +22,7 @@ Diese Informationen helfen Ihnen dabei, einen V3-Akquise-Kampagnenlink basierend
 >
 >Die V3-Akquise bezieht sich auf die Akquise-Links, die Sie mithilfe des Akquise-Builders auf der Adobe Mobile Services-Benutzeroberfläche erstellen. Um diese Funktion verwenden zu können, müssen Sie auf die iOS SDK-Version 4.6.0 oder höher aktualisieren.
 
-Wenn sich die Mobile App noch nicht im App Store befindet, wählen Sie beim Erstellen des Links „Kampagne“ eine beliebige Mobile App als Ziel aus. Dies betrifft nur die Mobile App, zu der Sie der Akquise-Server weiterleitet, nachdem Sie auf den Akquise-Link geklickt haben, hat jedoch keine Auswirkungen auf die Fähigkeit, den Link zu testen.
+Wenn sich die Mobile App noch nicht im App Store befindet, wählen Sie beim Erstellen des Links „Kampagne“ eine beliebige Mobile App als Ziel aus. Dies betrifft nur die App, zu der Sie der Akquise-Server weiterleitet, nachdem Sie auf den Akquise-Link geklickt haben, hat jedoch keine Auswirkungen auf die Fähigkeit, den Link zu testen.
 
 1. Bearbeiten Sie die Aufgaben mit den Voraussetzungen unter [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md).
 1. Navigieren Sie zu **[!UICONTROL Akquise-Builder]** auf der Adobe Mobile Services-Benutzeroberfläche und generieren Sie eine Akquise-Kampagnen-URL.
@@ -43,7 +43,7 @@ Wenn sich die Mobile App noch nicht im App Store befindet, wählen Sie beim Erst
    {"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.
    ```
 
-   Wenn die Kontextdaten (`contextData`) nicht angezeigt werden oder Teile fehlen, stellen Sie sicher, dass die Akquise-URL das in [Akquise-Link manuell erstellen](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md) angegebene Format aufweist.
+   Wenn die Kontextdaten ( `contextData` ) nicht angezeigt werden oder Teile fehlen, stellen Sie sicher, dass die Akquise-URL das in [Akquise-Link manuell erstellen](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md) angegebene Format aufweist.
 1. Stellen Sie sicher, dass die folgenden Einstellungen in Ihrer Konfigurationsdatei vorhanden sind:
 
    | Wenn | Wert |
@@ -66,7 +66,7 @@ Wenn sich die Mobile App noch nicht im App Store befindet, wählen Sie beim Erst
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   Wenn die obigen Protokolle nicht angezeigt werden, stellen Sie sicher, dass Sie die Schritte 4 und 5 abgeschlossen haben.
+   Falls die Protokolle oben nicht angezeigt werden, sollten Sie sicherstellen, dass Sie die Schritte 4 und 5 abgeschlossen haben.
 
    Im Folgenden finden Sie einige Informationen zu möglichen Fehlern:
 
