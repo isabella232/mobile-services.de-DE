@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: PhoneGap-Plug-in-Methoden
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1569'
+ht-degree: 100%
 
 ---
 
@@ -339,7 +339,7 @@ Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das T
 
    Übergeben Sie diesen Wert in `cData`, um die Kontextdaten zu aktualisieren, die der `action` zugewiesen sind.
 
-   Die übergebenen Daten (`cData`) werden an die vorhandenen Daten für die Aktion angehängt und wenn der Schlüssel bereits für `action` definiert ist, werden die Daten überschrieben.
+   Die übergebenen Daten ( `cData` ) werden an die vorhandenen Daten für die Aktion angehängt und wenn der Schlüssel bereits für `action` definiert ist, werden die Daten überschrieben.
 
    * Hier finden Sie die Syntax für diese Methode:
 
