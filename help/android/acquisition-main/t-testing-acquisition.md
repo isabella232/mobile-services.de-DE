@@ -7,20 +7,20 @@ solution: Experience Cloud,Analytics
 title: Testen der Legacy-Akquise
 topic: Developer and implementation
 uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
-# Testen der Legacy-Akquise{#testing-legacy-acquisition}
+# Testen der Legacy-Akquise {#testing-legacy-acquisition}
 
 Die folgenden Informationen helfen Ihnen dabei, eine Hin&amp;Zurück-Abfrage für einen Legacy-Akquise-Kampagnenlink auf einem Android-Gerät durchzuführen.
 
-Wenn sich die mobile App noch nicht in Google Play befindet, können Sie beim Erstellen des Links zur Kampagne eine beliebige mobile App als Ziel auswählen. Dies wirkt sich nur auf die App aus, zu der der Akquise-Server die Umleitung vornimmt, nachdem Sie auf den Akquise-Link geklickt haben, nicht aber auf die Fähigkeit, den Akquise-Link zu testen. Zeichenfolgenparameter der Abfrage werden an den Google Play Store übergeben, der bei der Installation im Zuge einer Kampagnenübertragung an die App übergeben wird. Für die Tests zur Akquise von Hin&amp;Zurück-Abfragen mobiler Apps ist die Simulation dieser Art von Übertragungen erforderlich.
+Wenn die App noch nicht in Google Play vorhanden ist, können Sie beim Erstellen des Kampagnen-Links eine beliebige App als Ziel auswählen. Dies wirkt sich nur auf die App aus, zu der der Akquise-Server die Umleitung vornimmt, nachdem Sie auf den Akquise-Link geklickt haben, nicht aber auf die Fähigkeit, den Akquise-Link zu testen. Zeichenfolgenparameter der Abfrage werden an den Google Play Store übergeben, der bei der Installation im Zuge einer Kampagnenübertragung an die App übergeben wird. Für die Tests zur Akquise von Hin&amp;Zurück-Abfragen mobiler Apps ist die Simulation dieser Art von Übertragungen erforderlich.
 
 Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den **[!UICONTROL Einstellungen]** gelöscht werden. So wird gewährleistet, dass die anfänglichen Lebenszyklusmetriken mit den Abfragezeichenfolgen-Parametern der Kampagne gesendet werden, wenn die App zum ersten Mal gestartet wird.
 
@@ -45,4 +45,4 @@ Bei erfolgreicher Übertragung wird eine Antwort wie die folgende angezeigt:
 Broadcasting: Intent { act=com.android.vending.INSTALL_REFERRER cmp=com.example.analyticsecommtest/com.google.analytics.tracking.android.AnalyticsReceiver has extras) } Broadcast completed: result=0
 ```
 
-Außerdem wird eine Bildanforderung an die Datenerfassungsserver der Adobe gesendet. Wenn das SDK die gesamte Zeitdauer des Werber-Timeouts (wie in Schritt 1 festgelegt) mit einer Bildanforderung ohne Kampagne wartet, ist die Übertragung fehlgeschlagen.
+Sie werden auch eine Bildanforderung sehen, die an die Datenerfassungs-Server von Adobe gesendet wurde. Wenn das SDK die gesamte Zeitdauer des Referrer-Timeouts (wie in Schritt 1 festgelegt) mit einer Bildanforderung ohne Kampagne wartet, ist die Übertragung fehlgeschlagen.
