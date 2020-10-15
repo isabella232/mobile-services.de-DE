@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Fehlerbehebung bei In-App-Nachrichten
 topic: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Fehlerbehebung bei In-App-Nachrichten{#troubleshooting-in-app-messaging}
+# Fehlerbehebung bei In-App-Nachrichten {#troubleshooting-in-app-messaging}
 
 Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-App-Nachrichten.
 
@@ -36,7 +36,7 @@ Stellen Sie sicher, dass der Broadcast-Empfänger für lokale Benachrichtigungen
 
 ## Ist die Nachricht „live“?
 
-Um sicherzustellen, dass die Nachricht „live“ ist, überprüfen Sie auf der Seite In-App-Nachrichten verwalten in der Spalte **[!UICONTROL Status]** die Liste der Nachrichten.
+Um sicherzustellen, dass die Nachricht „live“ ist, überprüfen Sie auf der Seite „In-App-Nachrichten verwalten“ in der Spalte **[!UICONTROL Status]** die Liste der Nachrichten.
 
 ## Sehen Sie sich die Einstellungen *einmal anzeigen*, *immer anzeigen*, *offline anzeigen* auf der Registerkarte „Zielgruppe“ an.
 
