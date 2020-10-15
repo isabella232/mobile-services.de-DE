@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Identity-Dienst-Methoden für Adobe Experience Platform
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Das SDK unterstützt zurzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 Methoden erhalten je nach Lösung unterschiedliche Präfixe. Experience Cloud ID-Methoden erhalten beispielsweise das Präfix `visitor`. Weitere Informationen finden Sie im Thema über das [Aktivieren der Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
+* **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
    Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Zum Verwenden dieser Methode müssen Sie über Mobile SDK-Version 4.12 oder höher verfügen. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/methods/appendvisitorid.html).
 
@@ -66,7 +66,7 @@ Zeichenfolge mit angehängten Besucherinformationen.
 
 * **visitorSyncIdentifiers:**
 
-   Mit der Experience Cloud-ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs` in der JavaScript-Bibliothek.
+   Mit der Experience Cloud ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs` in der JavaScript-Bibliothek.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -169,7 +169,7 @@ Zeichenfolge mit angehängten Besucherinformationen.
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum  {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
