@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Social Sharing
 topic: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '142'
 ht-degree: 100%
 
 ---
 
 
-# Social Sharing{#social-sharing}
+# Social Sharing {#social-sharing}
 
 Der Bericht **[!UICONTROL Social Sharing]** enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht ist nur für DPS-Kunden verfügbar.
 
