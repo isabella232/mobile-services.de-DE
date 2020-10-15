@@ -1,21 +1,21 @@
 ---
-description: Ab WatchOS 2 werden Ihre WatchKit-Erweiterungen auf einem Apple Watch-Gerät ausgeführt. Anwendungen, die in dieser Umgebung ausgeführt werden, erfordern das WatchConnectivity-Framework, um Daten mit der zugehörigen iOS-App freizugeben.
-seo-description: Ab WatchOS 2 werden Ihre WatchKit-Erweiterungen auf einem Apple Watch-Gerät ausgeführt. Anwendungen, die in dieser Umgebung ausgeführt werden, erfordern das WatchConnectivity-Framework, um Daten mit der zugehörigen iOS-App freizugeben.
+description: Ab WatchOS 2 können Ihre WatchKit-Erweiterungen auf einer Apple Watch ausgeführt werden. Für Apps, die in dieser Umgebung ausgeführt werden, ist das WatchConnectivity-Framework erforderlich, damit Daten für die übergeordnete iOS-App freigegeben werden können.
+seo-description: Ab WatchOS 2 können Ihre WatchKit-Erweiterungen auf einer Apple Watch ausgeführt werden. Für Apps, die in dieser Umgebung ausgeführt werden, ist das WatchConnectivity-Framework erforderlich, damit Daten für die übergeordnete iOS-App freigegeben werden können.
 seo-title: Apple Watch-Implementierungen mit WatchOS 2
 solution: Experience Cloud,Analytics
 title: Apple Watch-Implementierungen mit WatchOS 2
 topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# Apple Watch-Implementierungen mit WatchOS 2{#apple-watch-implementation-with-watchos}
+# Apple Watch-Implementierungen mit WatchOS 2 {#apple-watch-implementation-with-watchos}
 
 Ab WatchOS 2 können Ihre WatchKit-Erweiterungen auf einer Apple Watch ausgeführt werden. Für Apps, die in dieser Umgebung ausgeführt werden, ist das `WatchConnectivity`-Framework erforderlich, damit Daten für die übergeordnete iOS-App freigegeben werden können.
 
@@ -38,7 +38,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 >
 >Stellen Sie sicher, dass Sie ein Projekt mit mindestens den folgenden Zielen haben:
 >
->* Die enthaltene App
+>* Die übergeordnete App
 >* Die WatchKit-App
 >* Die WatchKit-Erweiterung
 
@@ -46,7 +46,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 
 
-Weitere Informationen zum Entwickeln von WatchKit-Apps finden Sie unter [Die Architektur](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)für überwachte Apps.
+Weitere Informationen zum Entwickeln von WatchKit-Apps finden Sie unter [Die Watch-App-Architektur](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1).
 
 ## Übergeordnete Apps konfigurieren {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
