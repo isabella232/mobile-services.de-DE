@@ -1,24 +1,24 @@
 ---
-description: Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
+description: Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketing-Experten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
 keywords: mobile
-seo-description: Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
+seo-description: Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketing-Experten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
 seo-title: Akquise
 solution: Experience Cloud,Analytics
 title: Akquise
 topic: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '499'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
 # Akquise {#acquisition}
 
-Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketingexperten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
+Marketingexperten können Tracking-Links erstellen, um ihre Apps zu bewerben und mit Traffic zu versorgen. Diese Tracking-Links können Benutzer zu Appstores, App-Deep-Links und Zwischenräumen führen, die mit dem In-App-Verhalten korreliert werden können. Marketing-Experten können je nach Bedarf einen Link erstellen, um Benutzer zu iOS-, Android- oder anderen Plattformen zu leiten.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -26,7 +26,7 @@ Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für d
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* Gehen Sie zu [Launch](https://launch.adobe.com/), um zu beginnen.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
 >[!IMPORTANT]
@@ -45,7 +45,7 @@ Sie können Berichte zu verfolgbaren Marketinglinks mobiler Apps erstellen, bear
 
 Folgende Akquiseberichte bieten Einblicke in die Performance Ihrer Marketinglinks:
 
-* **Übersicht** {#section_5B2BA47F22694919A472AB591101237E}
+* **Übersicht**{#section_5B2BA47F22694919A472AB591101237E}
 
    Dieser Bericht enthält die Topkampagnen, die Benutzer zu Ihrer App geführt haben, einschließlich Informationen dazu, welche Performance die Kampagnen über andere Tracking-Metadaten, wie z. B. Akquisequelle, Medium, Dauer und Inhalt, hinweg erzielt haben.
 
@@ -57,6 +57,6 @@ Folgende Akquiseberichte bieten Einblicke in die Performance Ihrer Marketinglink
 
    Beachten Sie die folgenden Informationen:
 
-   * Sie können auf die Pfeilsymbole in den Spaltenüberschriften klicken, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
+   * Klicken Sie auf die Pfeilsymbole in den Spaltenüberschriften, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
    * Um die Daten in ein PDF-Dokument zu exportieren, klicken Sie auf **[!UICONTROL Herunterladen]**.
    ![](assets/acquisition_name.png)
