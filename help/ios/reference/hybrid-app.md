@@ -1,16 +1,16 @@
 ---
 description: Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstellen, dass die Besucher nicht getrennt identifiziert werden, wenn sie zwischen dem nativen und mobilen Web wechseln.
 seo-description: Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstellen, dass die Besucher nicht getrennt identifiziert werden, wenn sie zwischen dem nativen und mobilen Web wechseln.
-seo-title: Besucherverfolgung zwischen einer App und dem mobilen Internet
+seo-title: Besucher zwischen einer App und dem mobilen Internet verfolgen
 solution: Experience Cloud,Analytics
-title: Besucherverfolgung zwischen einer App und dem mobilen Internet
+title: Besucher zwischen einer App und dem mobilen Internet verfolgen
 topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstellen, dass die Bes
 
 ## Besucher-IDs in Apps
 
-Das iOS-SDK generiert eine eindeutige Besucher-ID, wenn eine App installiert wird. Diese ID wird im beständigen Speicher auf dem Mobilgerät gespeichert und bei jedem Treffer gesendet. Diese ID wird nur entfernt, wenn der Benutzer die App deinstalliert.
+Das iOS SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird. Diese ID wird im persistenten Speicher auf dem Mobilgerät gespeichert und bei jedem Treffer gesendet. Diese ID wird nur entfernt, wenn der Benutzer die App deinstalliert.
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ Verwenden derselben Besucher-ID in der App und im mobilen Web und Übergeben der
    }];
    ```
 
-Der ID-Dienstcode in der Zieldomäne extrahiert die MID aus der URL, anstatt eine Anforderung für eine neue ID an die Adobe zu senden. Der ID-Dienst-Code auf der Zielseite verwendet die übergebene MID, um den Besucher zu verfolgen.
+Der ID-Service-Code auf der Ziel-Domäne extrahiert die MID aus der URL, statt bei Adobe eine neue ID anzufordern. Der ID-Dienst-Code auf der Zielseite verwendet die übergebene MID, um den Besucher zu verfolgen.
 
 Überprüfen Sie für Treffer aus dem mobilen Webinhalt, ob der Parameter `mid` bei jedem Treffer vorhanden ist und ob dieser Wert mit dem Parameter `mid` übereinstimmt, der durch den App-Code gesendet wird.
 
