@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: PhoneGap-Plug-in
 topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# PhoneGap-Plug-in{#phonegap-plug-in}
+# PhoneGap-Plug-in {#phonegap-plug-in}
 
 Mit diesem Plug-in können Sie iOS-AppMeasurement-Aufrufe von Ihrem PhoneGap-Projekt ausführen.
 
@@ -42,7 +42,7 @@ Informationen zum Erstellen eines PhoneGap-Projekts finden Sie unter [PhoneGap](
    cordova plugin add adobe-mobile-services
    ```
 
-## Manuelles Installieren des Plug-ins {#section_D53BA60D488C4DB8AD2BDF90439C180A}
+## Manuelles Installieren des Plug-ins  {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
 ### AppMeasurement-Bibliothek einschließen
 
