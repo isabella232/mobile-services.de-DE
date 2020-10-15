@@ -2,21 +2,21 @@
 description: Der Bericht „Aktionspfade“ dient der Pfadanalyse. Er zeigt ein Pfadsetzungsdiagramm an, in dem die Pfade dargestellt werden, die von einem App-Status zu einem anderen führen.
 keywords: mobile
 seo-description: Der Bericht „Aktionspfade“ dient der Pfadanalyse. Er zeigt ein Pfadsetzungsdiagramm an, in dem die Pfade dargestellt werden, die von einem App-Status zu einem anderen führen.
-seo-title: Bericht „Action Paths“
+seo-title: Bericht „Aktionspfade“
 solution: Experience Cloud,Analytics
-title: Bericht „Action Paths“
+title: Bericht „Aktionspfade“
 topic: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
-# Bericht „Action Paths“{#action-paths}
+# Bericht „Action Paths“ {#action-paths}
 
 Der Bericht „Aktionspfade“ dient der Pfadanalyse. Er zeigt ein Pfadsetzungsdiagramm an, in dem die Pfade dargestellt werden, die von einem App-Status zu einem anderen führen.
 
@@ -28,13 +28,13 @@ Bei den Berichten **[!UICONTROL Ansichtspfade]** und **[!UICONTROL Aktionspfade]
 
 ![](assets/action_paths.png)
 
-Jeder boxförmige Knoten stellt einen Status in den Pfaden der Benutzer durch eine App dar. In der oben stehenden Grafik steht der oberste Knoten beispielsweise für die Anzahl der Benutzer, die die App gestartet und dann ein Foto aus der Galerie ausgewählt haben.
+Jeder boxförmige Knoten stellt einen Status in den Pfaden der Benutzer durch eine App dar. In der obigen Grafik stellt der oberste Knoten beispielsweise die Anzahl der Benutzer dar, die die App gestartet und anschließend ein Foto aus der Galerie ausgewählt haben.
 
 Um die Optionen zur Änderung des Diagramms anzuzeigen, klicken Sie auf einen Knoten und anschließend auf **[!UICONTROL Fokus]** oder **[!UICONTROL Erweitern]**. Wenn Sie beispielsweise im obersten Knoten auf den Status **[!UICONTROL PhotoPicked]** klicken, werden die Symbole **[!UICONTROL Fokus]** und **[!UICONTROL Erweitern]** angezeigt.
 
 ![](assets/action_paths_icons.png)
 
-To expand, click the **[!UICONTROL +]** icon. Diese Option zeigt die zusätzlichen Pfade an, die in den Knoten eingehen oder aus ihm ausgehen. In der unten stehenden Grafik wird die App von Status 1 gestartet, von Status 2 wird ein Foto ausgewählt (das Element, das Sie zuvor erweitert haben), und Status 3 enthält die verschiedenen Pfade, die Benutzer verwendet haben:
+Klicken Sie zum Erweitern auf das **[!UICONTROL +]**-Symbol. Diese Option zeigt die zusätzlichen Pfade an, die in den Knoten eingehen oder aus ihm ausgehen. In der unten stehenden Grafik wird die App von Status 1 gestartet, von Status 2 wird ein Foto ausgewählt (das Element, das Sie zuvor erweitert haben), und Status 3 enthält die verschiedenen Pfade, die Benutzer verwendet haben:
 
 * Auswählen eines Elements
 * Hinzufügen eines Elements
@@ -45,14 +45,14 @@ Das Erweitern eines Status ähnelt einem Trichter.
 
 ![Aktionspfad zum Erweitern](assets/action_paths_expand.png)
 
-Um den Knoten zu isolieren und Pfade anzuzeigen, die zum ausgewählten Pfad bzw. von ihm weg führen, klicken Sie auf das Symbol ![Fokussymbol](assets/icon_focus.png). In der unten stehenden Grafik wurden die folgenden Pfade abgeschlossen, **bevor** Benutzer ein Foto ausgewählt haben:
+Um den Knoten zu isolieren und Pfade anzuzeigen, die zum ausgewählten Pfad bzw. von ihm weg führen, klicken Sie auf das Symbol ![Fokussymbol](assets/icon_focus.png). In der unten stehenden Grafik wurden die folgenden Pfade abgeschlossen, **bevor** die Benutzer ein Foto ausgewählt haben:
 
 * Drehen eines Elements
 * Skalieren eines Elements
 * Ziehen eines Elements
 * Entfernen eines Elements
 
-Von den Benutzern, die ein Foto ausgewählt haben, wurden die folgenden Pfade **nach** Auswahl des Fotos abgeschlossen:
+Von den Benutzern, die ein Foto ausgewählt haben, wurden die folgenden Pfade **nach** der Auswahl des Fotos abgeschlossen:
 
 * Auswählen eines Elements
 * Hinzufügen eines Elements
@@ -61,7 +61,7 @@ Von den Benutzern, die ein Foto ausgewählt haben, wurden die folgenden Pfade **
 
 ![Aktionspfad Fokus](assets/action_paths_focus.png)
 
-Sie können mehrere Knoten fokussieren oder erweitern, um eine detaillierte Ansicht der Pfade zu erhalten, die Benutzer in Ihrer App verwenden. Beispiel:
+Sie können mehrere Knoten betrachten oder erweitern, um eine detaillierte Ansicht der Pfade zu erhalten, die Benutzer in Ihrer App verwenden. Beispiel:
 
 ![Aktionspfad – Mehrere](assets/action_paths_mult.png)
 
@@ -69,7 +69,7 @@ Für diesen Bericht können folgende Optionen konfiguriert werden:
 
 * **[!UICONTROL Zeitraum]**
 
-   Klicken Sie auf das **[!UICONTROL Kalendersymbol]** und wählen Sie einen benutzerdefinierten oder einen vorgegebenen Zeitraum aus der Dropdownliste aus.
+   Klicken Sie auf das **[!UICONTROL Kalendersymbol]** und wählen Sie einen benutzerdefinierten oder einen vorgegebenen Zeitraum aus der Dropdown-Liste aus.
 
 * **[!UICONTROL Anpassen]**
 
@@ -79,6 +79,6 @@ Für diesen Bericht können folgende Optionen konfiguriert werden:
 
    Klicken Sie auf **[!UICONTROL Filter]**, um einen Filter zu erstellen, der verschiedene Berichte umfasst. Auf diese Weise können Sie die Performance eines Segments für alle Mobilberichte anzeigen. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann. Weitere Informationen finden Sie in [Fixierbaren Filter hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md).
 
-* **[!UICONTROL Download]**
+* **[!UICONTROL Herunterladen]**
 
    Klicken Sie auf **[!UICONTROL PDF]** oder **[!UICONTROL CSV]**, um Dokumente herunterzuladen bzw. zu öffnen und diese mit Benutzern zu teilen, die keinen Zugriff auf Mobile Services haben, oder in Präsentationen zu verwenden.
