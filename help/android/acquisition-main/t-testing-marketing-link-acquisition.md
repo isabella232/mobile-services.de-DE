@@ -1,15 +1,15 @@
 ---
 description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketing-Link auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 keywords: android;library;mobile;sdk
-seo-description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
+seo-description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketing-Link auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 seo-title: Marketinglink-Akquise testen
 solution: Experience Cloud,Analytics
 title: Marketing-Link-Akquise testen
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Marketinglink-Akquise testen {#testing-marketing-link-acquisition}
 
-Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&amp;Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
+Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketing-Link auf einem Android-Gerät eine Hin&amp;Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 
 Wenn die App noch nicht in Google Play vorhanden ist, können Sie beim Erstellen des Marketinglinks eine beliebige App als Ziel auswählen. Dies wirkt sich nur auf die App aus, zu der der Akquise-Server die Umleitung vornimmt, nachdem Sie auf den Akquise-Link geklickt haben, nicht aber auf die Fähigkeit, den Akquise-Link zu testen. Zeichenfolgenparameter der Abfrage werden an den Google Play Store übergeben, der bei der Installation im Zuge einer Kampagnenübertragung an die App übergeben wird. Für die Tests zur Akquise von Hin&amp;Zurück-Abfragen mobiler Apps ist die Simulation dieser Art von Übertragungen erforderlich.
 
@@ -59,7 +59,7 @@ Vor jedem Testlauf muss die App neu installiert bzw. müssen ihre Daten in den *
 
 1. Öffnen Sie den Link in einem Browser.
 
-   Sie sollten die Kontextdaten (`contextData`) in der JSON-Antwort sehen:
+   Sie sollten die Kontextdaten ( `contextData` ) in der JSON-Antwort sehen:
 
    ```
    {"fingerprint":"44b2f88a062df7e727c047f006deb9971304617b","endCallbacks":["***"],"timestamp":1464301282,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData": 
