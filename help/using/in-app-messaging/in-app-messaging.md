@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Messaging
 topic: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für d
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* Gehen Sie zu [Launch](https://launch.adobe.com/), um zu beginnen.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
 >[!IMPORTANT]
@@ -39,7 +39,7 @@ In-App-Nachrichten werden Benutzern in Echtzeit ausgeliefert, basierend auf ihre
 
 Die folgenden Nachrichtentypen werden unterstützt:
 
-* Benutzerdefiniert und thematisch
+* Benutzerdefinierte und thematische
 * Vollbild
 * Native Warnhinweise
 * Lokale Benachrichtigungen
@@ -51,10 +51,10 @@ Hier finden Sie einige zusätzliche Informationen, die Ihnen helfen, die Funktio
 
    Diese Rechte ermöglichen den Zugriff auf Akquise-Links und In-App-Nachrichten. Weitere Informationen finden Sie unter [Rollen und Berechtigungen](/help/using/gs/c-mob-roles-and-permissions.md).
 * Nachdem eine Nachricht genehmigt wurde, wird sie automatisch in der Anwendung veröffentlicht.
-* Das SDK stellt die Meldung Benutzern bereit, wenn die Meldungsparameter wie Eigenschaften, Auslöser und Zeitplan erfüllt sind.
-* Nachrichten können benutzerdefiniertes HTML oder ein Bild enthalten, indem eine Online-URL verwendet wird.
+* Das SDK stellt die Nachricht den Benutzern bereit, wenn die Nachrichtenparameter wie Eigenschaften, Auslöser und Zeitplan erfüllt sind.
+* Nachrichten können benutzerdefiniertes HTML oder ein Bild unter Verwendung einer Online-URL enthalten.
 
-   Für Nachrichten, die offline ausgelöst werden, kann auch ein Backup- oder ein alternatives Bild aus dem App-Bundle angegeben werden.
+   Für Nachrichten, die offline ausgelöst werden, kann auch ein Backup- oder ein alternatives Bild aus dem App-Packet angegeben werden.
 * Aktive und abgeschlossene Nachrichten bieten Berichte zu der Gesamtanzahl der Ansichten, Clickthrough-Raten usw.
 * Für benutzerdefinierte Nachrichten stehen Vorlagen zur Verfügung, mit denen Sie schnell und einfach Ihre eigene In-App-Nachricht erstellen können.
 
@@ -62,4 +62,4 @@ Hier finden Sie einige zusätzliche Informationen, die Ihnen helfen, die Funktio
 
 Push-Nachrichten werden an Benutzer gesendet, die den Erhalt von Benachrichtigungen aktiviert haben. Sie können diese Push-Nachrichten an Benutzer in Analytics-Segmenten oder in benutzerdefinierten Segmenten richten. Sie können Push-Nachrichten verwenden, um den Kontakt zu passiven Benutzern wiederherzustellen oder zeit- und standortspezifische Informationen zu übermitteln, da die Nachrichten außerhalb Ihrer App angezeigt werden.
 
-Bevor Sie Push-Nachrichten konfigurieren können, lesen Sie [Voraussetzungen für die Aktivierung der Push-Benachrichtigung](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). Nachdem Sie diese Aufgaben durchgeführt haben, müssen Sie Push-Nachrichten in den Einstellungen Ihrer App konfigurieren. For more information, see [Configure push messaging](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
+Bevor Sie Push-Nachrichten konfigurieren können, lesen Sie [Voraussetzungen für die Aktivierung der Push-Benachrichtigung](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). Nachdem Sie diese Aufgaben ausgeführt haben, müssen Sie Push-Nachrichten in den Einstellungen Ihrer App konfigurieren. Weitere Informationen finden Sie unter [Push-Benachrichtigung konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
