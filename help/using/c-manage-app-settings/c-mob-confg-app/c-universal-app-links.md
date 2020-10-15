@@ -1,24 +1,24 @@
 ---
-description: Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep Links in Ihren iOS- oder Android-Apps herstellen.
+description: Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep-Links in Ihren iOS- oder Android-Apps herstellen.
 keywords: mobile
-seo-description: Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep Links in Ihren iOS- oder Android-Apps herstellen.
+seo-description: Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep-Links in Ihren iOS- oder Android-Apps herstellen.
 seo-title: Universelle Links (Apple) und App-Links (Android)
 solution: Experience Cloud,Analytics
 title: Universelle Links (Apple) und App-Links (Android)
 topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1142'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Universelle Links (Apple) und App-Links (Android){#universal-links-and-app-links}
+# Universelle Links (Apple) und App-Links (Android) {#universal-links-and-app-links}
 
-Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep Links in Ihren iOS- oder Android-Apps herstellen.
+Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep-Links in Ihren iOS- oder Android-Apps herstellen.
 
 >[!IMPORTANT]
 >
@@ -26,11 +26,11 @@ Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung
 
 ## Universelle Links {#section_F8147944679A42E59CF4FD8814E5EF12}
 
-Universelle Links ermöglichen Ihnen, eine Verbindung zu Deep-Links in Ihrer iOS-App herzustellen. Sie werden in iOS 9.2 oder höher unterstützt. Beim Zugriff auf einen universellen Link leitet iOS den Link direkt an den Deep-Link in Ihrer App weiter. Wenn Ihre App nicht installiert ist, wird stattdessen eine URL für Ihre Website in einem Browser geöffnet. Weitere Informationen zu universellen Links finden Sie in [Support Universal Links (Universelle Links unterstützen)](https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
+Universelle Links ermöglichen Ihnen, eine Verbindung zu Deep-Links in Ihrer iOS-App herzustellen. Sie werden in iOS 9.2 oder höher unterstützt. Beim Zugriff auf einen universellen Link leitet iOS den Link direkt an den Deep-Link in Ihrer App weiter. Wenn Ihre App nicht installiert ist, wird stattdessen eine URL für Ihre Website in einem Browser geöffnet. Weitere Informationen zu universellen Links finden Sie in [Universelle Links unterstützen](https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
 
 ## App-Links
 
-App-Links ermöglichen Ihnen, eine Verbindung zu Deep-Links in Ihrer Android-App herzustellen. Sie werden in Android 6.0 oder höher unterstützt. Beim Zugriff auf einen App-Link leitet Android den Link direkt an den Deep-Link in Ihrer App weiter. Wenn Ihre App nicht installiert ist, wird stattdessen eine URL für Ihre Website in einem Browser geöffnet. Weitere Informationen zu App-Links finden Sie in [Handling Android App Links (Umgang mit Android-App-Links)](https://developer.android.com/training/app-links/index.html).
+App-Links ermöglichen Ihnen, eine Verbindung zu Deep-Links in Ihrer Android-App herzustellen. Sie werden in Android 6.0 oder höher unterstützt. Beim Zugriff auf einen App-Link leitet Android den Link direkt an den Deep-Link in Ihrer App weiter. Wenn Ihre App nicht installiert ist, wird stattdessen eine URL für Ihre Website in einem Browser geöffnet. Weitere Informationen zu App-Links finden Sie in [Umgang mit Android-App-Links](https://developer.android.com/training/app-links/index.html).
 
 ## Marketinglinks mithilfe eines universellen oder App-Links erstellen {#section_609ADEFFB9B441C4A8C45E936D0DC859}
 
@@ -66,7 +66,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 1. Erstellen Sie in Adobe Mobile Services einen Marketinglink, der universelle Links verwendet:
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Wählen Sie die App auf der Mobile Services-Startseite aus. Klicken Sie auf **[!UICONTROL Akquise]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klicken Sie auf **[!UICONTROL Neu erstellen]**.
 
@@ -78,7 +78,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
    e. Wenn die Option **[!UICONTROL Universelle Links oder App-Links verwenden]** aktiviert ist, wird das Feld **[!UICONTROL Benutzerdefinierter Pfad]** angezeigt.
 
-   Hierüber können Benutzer den URL-Pfad nach der Domäne sowie beliebige Abfrageparameter definieren. Wenn Sie beispielsweise `my/universal/link?os=9.2` eingeben, lautet Ihre vollständige Marketinglink-URL `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
+   Hierüber können Benutzer den URL-Pfad nach der Domäne sowie beliebige Abfrageparameter definieren. Wenn Sie beispielsweise  `my/universal/link?os=9.2` eingeben, lautet Ihre vollständige Marketinglink-URL `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
 
    f. Klicken Sie auf die Registerkarte **[!UICONTROL Entscheidungen]** und konfigurieren Sie Ihren Entscheidungsbaum.
 
@@ -93,7 +93,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 ### App-Links konfigurieren
 
-1. Gehen Sie zu [Add Android App Links (Android-App-Links hinzufügen)](https://developer.android.com/studio/write/app-link-indexing), um App-Links in Ihrer Android-App einzurichten.
+1. Gehen Sie zu [Android-App-Links hinzufügen](https://developer.android.com/studio/write/app-link-indexing), um App-Links in Ihrer Android-App einzurichten.
 
 1. Richten Sie die Standortverknüpfungsdokumente in Adobe Mobile Services ein:
 
@@ -125,7 +125,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 1. Erstellen Sie in Adobe Mobile Services einen Marketinglink, der App-Links verwendet:
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Wählen Sie die App auf der Mobile Services-Startseite aus. Klicken Sie auf **[!UICONTROL Akquise]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klicken Sie auf **[!UICONTROL Neu erstellen]**.
 
@@ -137,7 +137,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
    e. Wenn die Option **[!UICONTROL Universelle Links oder App-Links verwenden]** aktiviert ist, wird das Feld **[!UICONTROL Benutzerdefinierter Pfad]** angezeigt.
 
-   Hierüber können Benutzer den URL-Pfad nach der Domäne sowie beliebige Abfrageparameter definieren. Wenn Sie beispielsweise `my/app/link?os=6.0` eingeben, lautet Ihre vollständige Marketinglink-URL `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
+   Hierüber können Benutzer den URL-Pfad nach der Domäne sowie beliebige Abfrageparameter definieren. Wenn Sie beispielsweise  `my/app/link?os=6.0` eingeben, lautet Ihre vollständige Marketinglink-URL `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
 
    f. Klicken Sie auf die Registerkarte **[!UICONTROL Entscheidungen]** und konfigurieren Sie Ihren Entscheidungsbaum.
 
