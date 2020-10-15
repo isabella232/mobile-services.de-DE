@@ -2,14 +2,14 @@
 description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App vom Appstore herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst das SDK automatisch die Akquisedaten und sendet sie an Adobe Mobile Services.
 keywords: android;library;mobile;sdk
 seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App vom Appstore herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst das SDK automatisch die Akquisedaten und sendet sie an Adobe Mobile Services.
-seo-title: Mobile App – Akquise
+seo-title: App-Akquise
 solution: Experience Cloud,Analytics
-title: Mobile App – Akquise
+title: App-Akquise
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Nach der Einstellung müssen Sie anstatt `BroadcastReceiver` zu erstellen, die I
 
    `implementation 'com.android.installreferrer:installreferrer:1.1'`
 
-1. Um die Referrer-URL aus der Install-Referrer-API abzurufen, führen Sie die Schritte unter [Getting the install referrer](https://developer.android.com/google/play/installreferrer/library#install-referrer) (Abrufen des Install-Referrers) aus.
+1. Um die Referrer-URL aus der Install-Referrer-API abzurufen, führen Sie die Schritte unter [Abrufen des Install-Referrers](https://developer.android.com/google/play/installreferrer/library#install-referrer) aus.
 
 1. Übergeben der Referrer-URL an das SDK:
 
