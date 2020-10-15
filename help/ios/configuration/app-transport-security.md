@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: App Transport Security
 topic: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Diese Informationen helfen Ihnen beim Verwenden von App Transport Security (ATS), einem neuen Satz an Sicherheitsanforderungen für iOS 9.
 
-Ab iOS 9 führte Apple „App Transport Security“ ein, einen Satz von Anforderungen, die den Best Practices für sichere Verbindungen entsprechen. Weitere Informationen finden Sie unter *NSAppTransportSecurity* in [Information Property List Key Reference (Schlüsselreferenz zur Informationseigenschaftsliste)](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/).
+Ab iOS 9 führte Apple „App Transport Security“ ein, einen Satz von Anforderungen, die den Best Practices für sichere Verbindungen entsprechen. Weitere Informationen finden Sie unter *NSAppTransportSecurity* in [Schlüsselreferenz zur Informationseigenschaftsliste](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/).
 
 Damit Version 4.7 oder neuere Versionen des Adobe Mobile-SDK problemlos mit ATS zusammenarbeiten können, müssen Sie die SSL-Aktivierungsoption auf der Seite App-Verwaltungseinstellungen verwenden. Weitere Informationen finden Sie unter [App-Einstellungen verwalten](/help/using/c-manage-app-settings/c-manage-app-settings.md) oder [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
 
@@ -34,7 +34,7 @@ Alternativ können Sie die folgenden Server in Ihrer „Zulassungsliste“ platz
 | Target | Sie können Ihren Target-Endpunkt Ihrer Info.plist-Datei als Ausnahmedomäne für ATS hinzufügen.  Wenn Sie Ihren Target-Endpunkt finden möchten, suchen Sie `clientCodeproperty` im Zielobjekt Ihrer `ADBMobileConfig.json`-Datei. Ihr Endpunkt lautet `https://{clientCode}.tt.omtrdc.net`.  Wenn Ihr `clientCodeproperty` beispielsweise `“myCompany”` ist, lautet der Endpunkt `https://myCompany.tt.omtrdc.net`. |
 | Identity-Dienst für Adobe Experience Platform | Sie können den Experience Cloud-Server in Ihrer `Info.plist`-Datei als Ausnahmedomäne für ATS hinzufügen. Diese Domäne lautet `dpm.demdex.net`. |
 | Mobile Services: Akquise | Nehmen Sie den Akquiseserver in der Datei `Info.plist` als Ausnahmedomäne in die Zulassungsliste auf. Diese Domäne lautet `c00.adobe.com`. |
-| Mobile Services: In-App-Nachrichten | Wenn Sie In-App-Nachrichten verwenden, müssen Sie eventuell Einträge für ATS für jede URL, die Sie verwenden und die nicht HTTPS ist, in die Ausnahme-Domain hinzufügen. Diese Liste umfasst gehostete Bilder und alle URLs, die in Ihren benutzerdefinierten Vollbildnachrichten-HTML-Code eingebettet sind.  Weitere Informationen zum Einrichten der Ausnahmedomäne in einer `info.plist`-Datei finden Sie in der Zeile *NSExceptionDomains* in *Tabelle 2: App Transport Security dictionary primary keys (Tabelle 2: Primärschlüssel des App Transport Security-Wörterbuchs)*. Weitere Informationen finden Sie in *Table 3 Exception domains dictionary keys (Wörterbuchschlüssel für Ausnahmedomänen)* in [Information Property List Key Reference (Schlüsselreferenz der Informationseigenschaftsliste)](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/). |
+| Mobile Services: In-App-Nachrichten | Wenn Sie In-App-Nachrichten verwenden, müssen Sie eventuell Einträge für ATS für jede URL, die Sie verwenden und die nicht HTTPS ist, in die Ausnahme-Domain hinzufügen. Diese Liste umfasst gehostete Bilder und alle URLs, die in Ihren benutzerdefinierten Vollbildnachrichten-HTML-Code eingebettet sind.  Weitere Informationen zum Einrichten der Ausnahmedomäne in einer `info.plist`-Datei finden Sie in der Zeile *NSExceptionDomains* in *Tabelle 2: Primärschlüssel des App Transport Security-Wörterbuchs*. Weitere Informationen finden Sie in *Tabelle 3: Wörterbuchschlüssel für Ausnahmedomänen* in [Schlüsselreferenz der Informationseigenschaftsliste](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/). |
 
 >[!TIP]
 >
