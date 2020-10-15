@@ -5,16 +5,16 @@ seo-title: Deep-Links verfolgen
 solution: Experience Cloud,Analytics
 title: Deep-Links verfolgen
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Deep-Links verfolgen{#tracking-deep-links}
+# Deep-Links verfolgen {#tracking-deep-links}
 
 Mit diesen Informationen können Sie Deep-Links und verzögerte Deep-Links in Ihren mobilen Apps verfolgen, indem Sie das Adobe Mobile iOS-SDK verwenden.
 
@@ -29,7 +29,7 @@ Weitere Informationen dahingehend, wie Marketingexperten Deep-Links in ihren Anw
 
    Weitere Informationen finden Sie unter [Inter-App-Kommunikation](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) oder [Unterstützung universeller Links.](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 
-1. Verfolgen Sie Deep-Link in openURL.
+1. Verfolgen Sie den Deep-Link in openURL.
 
    Im Folgenden finden Sie einen Beispielpfad-Deep-Link:
 
