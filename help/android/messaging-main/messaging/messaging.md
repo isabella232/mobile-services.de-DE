@@ -1,23 +1,23 @@
 ---
-description: Sie können In-App-Nachrichten bereitstellen, die aus beliebigen Analysedaten oder -Ereignissen ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App gesendet und benötigen keine Codeaktualisierung.
-seo-description: Sie können In-App-Nachrichten bereitstellen, die aus beliebigen Analysedaten oder -Ereignissen ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App gesendet und benötigen keine Codeaktualisierung.
+description: Sie können In-App-Nachrichten senden, die von beliebigen Analysedaten oder -Ereignissen ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App gesendet und benötigen keine Code-Aktualisierung.
+seo-description: Sie können In-App-Nachrichten senden, die von beliebigen Analysedaten oder -Ereignissen ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App gesendet und benötigen keine Code-Aktualisierung.
 seo-title: In-App-Nachrichten
 solution: Experience Cloud,Analytics
 title: In-App-Nachrichten
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
 # In-App-Nachrichten {#in-app-messaging}
 
-Sie können In-App-Nachrichten bereitstellen, die aus beliebigen Analysedaten oder -Ereignissen ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App gesendet und benötigen keine Codeaktualisierung.
+Sie können In-App-Nachrichten senden, die von beliebigen Analysedaten oder -Ereignissen ausgelöst werden. Nach der Implementierung werden Nachrichten dynamisch an die App gesendet und benötigen keine Code-Aktualisierung.
 
 ## Neue Adobe Experience Cloud SDK-Version
 
@@ -27,7 +27,7 @@ Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für d
 >
 >Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* Gehen Sie zu [Launch](https://launch.adobe.com/), um zu beginnen.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
 
 >[!IMPORTANT]
@@ -36,9 +36,9 @@ Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für d
 
 >[!IMPORTANT]
 >
->To use in-app messaging, you **must** have SDK version 4.2 or later.
+>Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.2 (oder höher) **erforderlich**.
 
-Sie können Nachrichten und die Regeln in Adobe Mobile Services erstellen, die definieren, wann Nachrichten angezeigt werden. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Um In-App-Nachrichten anzuzeigen, müssen Aktualisierungen am SDK vorgenommen werden. Sie können diese Schritte auch dann ausführen, wenn Sie noch keine Meldungen definiert haben. Nachdem Sie Nachrichten definiert haben, werden sie dynamisch an Ihre App gesendet und ohne App Store-Aktualisierung angezeigt.
+Sie können die Nachrichten und die Regeln in Adobe Mobile Services erstellen, die festlegen, wann die Nachrichten angezeigt werden. Weitere Informationen finden Sie unter [In-App-Nachrichten erstellen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Um In-App-Nachrichten anzuzeigen, müssen Aktualisierungen am SDK vorgenommen werden. Sie können diese Schritte selbst dann ausführen, wenn Sie noch keine Nachrichten definiert haben. Nachdem Sie Nachrichten definiert haben, werden sie dynamisch an die App bereitgestellt und ohne Update des Appstores angezeigt.
 
 ## In-App-Nachrichten aktivieren {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -123,9 +123,9 @@ Sie können Nachrichten und die Regeln in Adobe Mobile Services erstellen, die d
 
 Mithilfe der mobilen SDK für Android lassen sich folgende Metriken Ihrer In-App-Nachrichten verfolgen:
 
-* Für In-App-Nachrichten im Vollbild und Warnhinweis:
+* Für In-App-Nachrichten im Vollbild- und Warnhinweisstil:
 
-   * **Impressionen**: wenn der Benutzer eine In-App-Nachricht auslöst.
+   * **Impressionen**: Benutzer löst eine In-App-Nachricht aus.
    * **Clickthrough**: Benutzer betätigt **[!UICONTROL Clickthrough]**.
    * **Abbrechen**: Benutzer betätigt **[!UICONTROL Abbrechen]**.
 
@@ -140,7 +140,7 @@ Mithilfe der mobilen SDK für Android lassen sich folgende Metriken Ihrer In-App
 
 ## Lokales Ausweichbild {#section_DEACC1CE549B4573B556A44A52409941}
 
-Beim Erstellen einer Vollbildnachricht können Sie optional ein Ersatzbild angeben. Wenn Ihre Nachricht das gewünschte Bild nicht aus dem Internet abrufen kann, versucht das SDK, das Bild mit demselben Namen aus dem Asset-Ordner Ihrer Anwendung zu laden. Auf diese Weise können Sie Ihre Nachricht im Originalformular anzeigen, auch wenn der Benutzer offline ist oder das vordefinierte Bild unerreichbar ist.
+Beim Erstellen einer Vollbildnachricht können Sie optional ein Ausweichbild angeben. Wenn Ihre Nachricht nicht in der Lage ist, das gewünschte Bild aus dem Internet abzurufen, versucht das SDK, das Bild mit demselben Namen aus dem Assets-Ordner Ihrer App zu laden. Auf diese Weise können Sie Ihre Nachricht in ihrer ursprünglichen Form anzeigen, auch wenn der Benutzer offline ist oder das vorgegebene Bild nicht erreichbar ist.
 
 >[!IMPORTANT]
 >
@@ -152,7 +152,7 @@ Folgende Methoden ermöglichen es Ihnen, kleine und große Symbole zu konfigurie
 
 * **Config.setSmallIconResourceId(int resourceId)**
 
-   Legen Sie das kleine Symbol fest, das für Benachrichtigungen verwendet wird, die vom SDK erstellt werden. Dieses Symbol wird in der Statusleiste angezeigt und ist das sekundäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung im Benachrichtigungscenter sieht.
+   Legt das kleine Symbol fest, das für die vom SDK erstellten Benachrichtigungen verwendet wird. Dieses Symbol wird in der Statusleiste angezeigt und ist das sekundäre Bild, das angezeigt wird, wenn der Benutzer die vollständige Benachrichtigung in der Mitteilungszentrale öffnet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
