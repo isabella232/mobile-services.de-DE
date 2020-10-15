@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Bericht „Technologie“
 topic: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -24,17 +24,17 @@ Dieser Bericht bietet Ihnen eine Sunburst-Grafik vorhandener Daten, die Sie nutz
 
 ## Navigation und Verwendung {#section_83CA60E1AE6245FEBCBFF3205615C4DF}
 
-Diese Visualisierung bietet beispielsweise den Basisbericht und Aufschlüsselungen, verwendet Höhe, um die Metrik im Fokus anzuzeigen, und die Leistungsunterschiede zwischen den Metriken. Jeder Ring stellt ein Audience-Segment in der Kategorie des Rings dar. Sie können Aktionen für eine Audience ausführen, z. B. einen fixierbaren Filter anwenden, eine Metrik ausblenden und Metriken anzeigen.
+Diese Visualisierung bietet beispielsweise den Basisbericht und Aufschlüsselungen, verwendet Höhe, um die zu betrachtende Metrik und die Leistungsunterschiede zwischen den Metriken anzuzeigen. Jeder Ring stellt ein Zielgruppensegment in der Kategorie des Rings dar. Sie können Aktionen für eine Zielgruppe ausführen, z. B. einen fixierbaren Filter anwenden, eine Metrik ausblenden und Metriken anzeigen.
 
 >[!TIP]
 >
->Neben diesen Informationen können Sie ein in das Produkt integriertes Tutorial anzeigen, in dem beschrieben wird, wie Sie mit der Sunburst-Grafik interagieren. Um das Tutorial zu starten, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Technologie]**, auf **[!UICONTROL Benutzerspezifisch]** und dann auf das Symbol **[!UICONTROL i]**.
+>Neben diesen Informationen können Sie ein in das Produkt integriertes Tutorial anzeigen, in dem beschrieben wird, wie Sie mit der Sunburst-Grafik interagieren. Um das Tutorial zu starten, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Technologie]**, auf **[!UICONTROL Anpassen]** und dann auf das Symbol **[!UICONTROL i]**.
 
 ![](assets/report_technology.png)
 
-Das Sunburst-Diagramm ist interaktiv und Sie können die folgenden Aufgaben ausführen:
+Die Sunburst-Grafik ist interaktiv. Sie können die folgenden Aufgaben ausführen:
 
-* Bewegen Sie den Mauszeiger über einen beliebigen Teil des Diagramms, um weitere Informationen anzuzeigen.
+* Bewegen Sie den Mauszeiger über einen beliebigen Teil der Grafik, um weitere Informationen anzuzeigen.
 * Sie können den Zeitraum ändern, indem Sie auf das **[!UICONTROL Kalendersymbol]** klicken.
 * Klicken Sie auf ein Segment im Ring, um die Zielgruppe auszuwählen, an der Sie dann Aktionen durchführen können, z. B. das Heranzoomen, Ausblenden von Zielgruppen oder das Erstellen einer In-App-Nachricht oder eines fixierbaren Filters.
 * Wählen Sie oben rechts **[!UICONTROL Gerätetyp]** und **[!UICONTROL Gerät]** aus, um Informationen zu den Geräten und Gerätetypen anzuzeigen.
@@ -45,12 +45,12 @@ Das Sunburst-Diagramm ist interaktiv und Sie können die folgenden Aufgaben ausf
 
 In folgender Tabelle werden die Standardberichte beschrieben und es wird angegeben, wie die Berichte in Mobile Services ausgefüllt werden:
 
-| Bericht | Populationsmethode | Beschreibung |
+| Bericht | Erfassungsmethode | Beschreibung |
 |--- |--- |--- |
 | Gerät | Lebenszyklusmetriken | Allgemeine Metriken, aufgeschlüsselt nach Gerätetyp. |
 | Betriebssysteme | Automatisch | Allgemeine Metriken, aufgeschlüsselt nach Betriebssystem. |
 | Betriebssystemversion | Lebenszyklusmetriken | Allgemeine Metriken, aufgeschlüsselt nach Betriebssystemversion. |
-| Netzbetreiber | Automatisch | Allgemeine Metriken, aufgeschlüsselt nach Trägern. |
+| Netzbetreiber | Automatisch | Allgemeine Metriken, aufgeschlüsselt nach Netzbetreiber. |
 
 >[!TIP]
 >
@@ -65,7 +65,7 @@ Sie können Aufschlüsselungen und sekundäre Metriken hinzufügen, die dann die
 >
 >Je mehr Ringe Sie der grafischen Darstellung hinzufügen, umso länger dauert die Verarbeitung.
 
-Um Aufschlüsselungen und sekundäre Metriken hinzuzufügen, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Technologie]** und dann auf **[!UICONTROL Benutzerspezifisch]**.
+Um Aufschlüsselungen und sekundäre Metriken hinzuzufügen, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Technologie]** und dann auf **[!UICONTROL Anpassen]**.
 
 Wenn Sie auf **[!UICONTROL Aufschlüsselung hinzufügen]** oder **[!UICONTROL Metrik hinzufügen]** klicken, wird ein neues Element mit demselben Namen wie das vorherige Element in der Liste angezeigt. Klicken Sie auf die neu erstellte Aufschlüsselung oder Metrik, um eine Dropdown-Liste zu öffnen, aus der Sie ein neues Element auswählen können.
 
@@ -73,6 +73,6 @@ Wenn Sie auf **[!UICONTROL Aufschlüsselung hinzufügen]** oder **[!UICONTROL Me
 
 Klicken Sie auf ein Segment im Ring, um die Zielgruppe auszuwählen, für die Sie einen fixierbaren Filter erstellen möchten, und klicken Sie auf **[!UICONTROL Fixierbarer Filter]**. Mit diesem Filter können Sie die aktuellen Filter anwenden und einen neuen Bericht ausführen, der auf diesen Filtern basiert.
 
-## Berichte freigeben {#section_560DD5CED5144249B7E49461E2422100}
+## Berichte freigeben  {#section_560DD5CED5144249B7E49461E2422100}
 
 Nachdem Sie einen Bericht erstellt haben, wird unter Verwendung Ihrer Einstellungen eine benutzerdefinierte URL erstellt, die Sie kopieren und weitergeben können.
