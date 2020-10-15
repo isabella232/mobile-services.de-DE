@@ -1,23 +1,23 @@
 ---
-description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer Anwendung ein neuer Status angezeigt wird, z. B. wenn ein Benutzer von der Startseite zum News-Feed navigiert, sollte ein Verfolgungsstatusaufruf gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
-seo-description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer Anwendung ein neuer Status angezeigt wird, z. B. wenn ein Benutzer von der Startseite zum News-Feed navigiert, sollte ein Verfolgungsstatusaufruf gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
+description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn ein neuer Status in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Aufruf zur Statusverfolgung gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
+seo-description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn ein neuer Status in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Aufruf zur Statusverfolgung gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
 seo-title: App-Zustände verfolgen
 solution: Experience Cloud,Analytics
 title: App-Zustände verfolgen
 topic: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 
 # App-Zustände verfolgen {#track-app-states}
 
-Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer Anwendung ein neuer Status angezeigt wird, z. B. wenn ein Benutzer von der Startseite zum News-Feed navigiert, sollte ein Verfolgungsstatusaufruf gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
+Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn ein neuer Status in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Aufruf zur Statusverfolgung gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes
                     data:nil];
    ```
 
-In Adobe Mobile Services wird der **[!UICONTROL State Name]** in der Variablen *`View State`* gemeldet und für jeden -Aufruf wird eine Ansicht aufgezeichnet`trackState`. In anderen Analytics-Oberflächen wird **[!UICONTROL Status anzeigen]** als **[!UICONTROL Seitenname]** und Statusansichten als Seitenansichten aufgeführt.
+In Adobe Mobile Services wird der **[!UICONTROL Statusname]** in der Variablen *`View State`* gemeldet und für jeden `trackState`-Aufruf wird eine Ansicht aufgezeichnet. In anderen Analytics-Oberflächen wird **[!UICONTROL Status anzeigen]** als **[!UICONTROL Seitenname]** und Statusansichten als Seitenansichten aufgeführt.
 
 ## Zusätzliche Daten senden {#section_CFDB4F944496401786A145C209AB387C}
 
@@ -59,10 +59,10 @@ Die Kontextdatenwerte müssen benutzerdefinierten Variablen zugeordnet werden:
 
 ## App-Statusberichte {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Zustände werden in der Regel mithilfe eines Pfadberichts angezeigt, sodass Sie sehen können, wie Benutzer in Ihrer App navigieren und welche Zustände am häufigsten angezeigt werden.
+Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Auf diese Weise können Sie sehen, wie Anwender in Ihrer App navigieren und welche Status am häufigsten angezeigt werden.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. Ein Beispielpfad ist  **[!UICONTROL Home]** > **[!UICONTROL Einstellungen]** > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **[!UICONTROL Seiten]**, **[!UICONTROL Seitenansichten]** oder **[!UICONTROL Pfad]**. |
 | Ad-hoc-Analysen | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden, z. B. in der Dimension **[!UICONTROL Seite]**, der Metrik **[!UICONTROL Seitenansichten]** und dem Bericht **[!UICONTROL Pfad]**. |
