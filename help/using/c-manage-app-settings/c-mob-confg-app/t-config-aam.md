@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Audience Manager-Optionen konfigurieren
 topic: Metrics
 uuid: 471270ca-cee5-401e-aac1-e48146ee8399
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '129'
+ht-degree: 100%
 
 ---
 
 
-# Audience Manager-Optionen konfigurieren{#configure-audience-manager-options}
+# Audience Manager-Optionen konfigurieren {#configure-audience-manager-options}
 
 Sie können die SDK-Audience Manager-Optionen beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 
