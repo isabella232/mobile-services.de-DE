@@ -1,23 +1,23 @@
 ---
-description: Aktionen sind die Ereignis, die in Ihrer Android-App auftreten, die Sie messen möchten.
-seo-description: Aktionen sind die Ereignis, die in Ihrer Android-App auftreten, die Sie messen möchten.
+description: Aktionen sind die Ereignisse in der Android-App, die Sie messen möchten.
+seo-description: Aktionen sind die Ereignisse in der Android-App, die Sie messen möchten.
 seo-title: App-Aktionen verfolgen
 solution: Experience Cloud,Analytics
 title: App-Aktionen verfolgen
 topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # App-Aktionen verfolgen {#track-app-actions}
 
-Aktionen sind die Ereignis, die in Ihrer Android-App auftreten, die Sie messen möchten.
+Aktionen sind die Ereignisse in der Android-App, die Sie messen möchten.
 
 Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. So könnten Sie z. B. einen `trackAction`-Aufruf für jedes neue Abonnement, jeden Artikelaufruf oder jeden Levelabschluss senden. Aktionen werden nicht automatisch verfolgt. Sie müssen `trackAction` aufrufen, wenn ein zu verfolgendes Ereignis auftritt, und die Aktion dann einem benutzerdefinierten Ereignis zuordnen.
 
@@ -39,7 +39,7 @@ Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkomme
    Analytics.trackAction("myapp.ActionName", null);
    ```
 
-1. Wählen Sie Ihre App in Adobe Mobile Services UI aus und klicken Sie auf **[!UICONTROL App-Verwaltungseinstellungen]**.
+1. Wählen Sie Ihre App in der Benutzeroberfläche von Adobe Mobile Services aus und klicken Sie auf **[!UICONTROL App-Einstellungen verwalten]**.
 1. Klicken Sie auf **[!UICONTROL Variablen und Metriken verwalten]** und dann auf die Registerkarte **[!UICONTROL Benutzerdefinierte Metriken]**.
 
 1. Weisen Sie den Kontextdatennamen, der in Ihrem Code definiert ist (z. B. `myapp.ActionName`), einem benutzerdefinierten Ereignis zu.
@@ -68,7 +68,7 @@ Die Kontextdatenwerte müssen benutzerdefinierten Variablen in Adobe Mobile Serv
 
 | Schnittstelle | Bericht |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL Bericht Aktionspfade]**:  Zeigen Sie die Reihenfolge an, in der Aktionen in Ihrer App aufgetreten sind. Sie können auch auf **[!UICONTROL Anpassen]** klicken, um die Aktionen in Rang- oder Trendansicht bzw. aufgeschlüsselt anzuzeigen, oder Sie nutzen Filter, um nur Aktionen für ein bestimmtes Segment anzuzeigen. |
-| Marketing Reports &amp; Analysen | **[!UICONTROL Bericht Benutzerspezifisches Ereignis]**:  Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
-| Ad-hoc-Analysen | **[!UICONTROL Bericht Benutzerspezifisches Ereignis]**:  Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
+| Adobe Mobile Services | Bericht **[!UICONTROL Aktionspfade]**:  Zeigen Sie die Reihenfolge an, in der Aktionen in Ihrer App aufgetreten sind. Sie können auch auf **[!UICONTROL Anpassen]** klicken, um die Aktionen in Rang- oder Trendansicht bzw. aufgeschlüsselt anzuzeigen, oder Sie nutzen Filter, um nur Aktionen für ein bestimmtes Segment anzuzeigen. |
+| Marketing Reports and Analytics | Bericht **[!UICONTROL Benutzerspezifisches Ereignis]**:  Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
+| Ad-hoc-Analysen | Bericht **[!UICONTROL Benutzerspezifisches Ereignis]**:  Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
 
