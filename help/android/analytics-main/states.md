@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: App-Zustände verfolgen
 topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -71,11 +71,11 @@ Die Kontextdatenwerte müssen benutzerdefinierten Variablen in Adobe Mobile Serv
 
 ## App-Statusberichte {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Zustände werden in der Regel mithilfe eines Pfadberichts angezeigt, der Ihnen veranschaulicht, wie Benutzer in Ihrer App navigieren und welche Zustände am häufigsten angezeigt werden.
+Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Auf diese Weise können Sie sehen, wie Anwender in Ihrer App navigieren und welche Status am häufigsten angezeigt werden.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. Ein Beispielpfad ist  **[!UICONTROL Home]** > **[!UICONTROL Einstellungen]** > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **[!UICONTROL Seiten]**, **[!UICONTROL Seitenansichten]** oder **[!UICONTROL Pfad]**. |
 | Ad-hoc-Analysen | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden, z. B. in der Dimension **[!UICONTROL Seite]**, der Metrik **[!UICONTROL Seitenansichten]** und dem Bericht **[!UICONTROL Pfad]**. |
 
