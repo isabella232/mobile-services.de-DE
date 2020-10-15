@@ -1,23 +1,23 @@
 ---
 description: Das Adobe-SDK nutzt die Zuordnungs-APIs der Suchanzeigen-App von Apple, damit Entwickler und Marketingexperten App-Downloads, die von Suchanzeigenkampagnen im Apple App Store stammen, verfolgen und zuordnen können.
 seo-description: Das Adobe-SDK nutzt die Zuordnungs-APIs der Suchanzeigen-App von Apple, damit Entwickler und Marketingexperten App-Downloads, die von Suchanzeigenkampagnen im Apple App Store stammen, verfolgen und zuordnen können.
-seo-title: Apple-Suchanzeigen
+seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
-title: Apple-Suchanzeigen
+title: Apple Search Ads
 topic: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '280'
+ht-degree: 100%
 
 ---
 
 
-# Apple-Suchanzeigen {#apple-search-ads}
+# Apple Search Ads {#apple-search-ads}
 
-Das Adobe-SDK nutzt die Zuordnungs-APIs der Suchanzeigen-App von Apple, damit Entwickler und Marketingexperten App-Downloads, die von Suchanzeigenkampagnen im Apple App Store stammen, verfolgen und zuordnen können. Weitere Informationen zu Suchanzeigekampagnen finden Sie unter [Apple-Suchanzeigen](https://searchads.apple.com/de/).
+Das Adobe-SDK nutzt die Zuordnungs-APIs der Suchanzeigen-App von Apple, damit Entwickler und Marketingexperten App-Downloads, die von Suchanzeigenkampagnen im Apple App Store stammen, verfolgen und zuordnen können. Weitere Informationen zu Suchanzeigekampagnen finden Sie unter [Apple Search Ads](https://searchads.apple.com/de/).
 
 ## Vorteile {#section_CEA30C652AC8470784B8054E299B80FA}
 
@@ -34,15 +34,15 @@ Vorteile durch die Verwendung von Apple-Werbeanzeigen:
 
 So aktivieren Sie Ihre App für die Suchanzeigenzuordnung:
 
-1. Implementieren Sie Adobe SDK Version 4.13.2 oder höher.
+1. Implementieren Sie das Adobe SDK, Version 4.13.2 oder höher.
 
-   For more information, see [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
+   Weitere Informationen finden Sie unter [Grundlegende Implementierung und Lebenszyklus](/help/ios/getting-started/dev-qs.md).
 
 1. Fügen Sie das iAd-Framework zu Ihrer Xcode-Projektdatei für Ihre App hinzu.
 
 ## Erstellen von Berichten zur Suchanzeigenzuordnung {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
-1. Apple-Suchanzeigen-Zuordnungsdaten werden im Akquisenamen, in der Quelle und den Begriffswerten angegeben.
+1. Apple Search Ads-Zuordnungsdaten werden im Akquisenamen, in der Quelle und den Begriffswerten angegeben.
 
    Wenn die Zuordnung `true` lautet, sind alle Felder vom Typ `iad-*` im Lebenszyklustreffer enthalten.
 
