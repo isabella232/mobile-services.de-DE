@@ -1,16 +1,16 @@
 ---
-description: Anhand dieser Informationen können Sie die Location-Funktionen in Ihren iOS-Apps verwenden.
-seo-description: Anhand dieser Informationen können Sie die Location-Funktionen in Ihren iOS-Apps verwenden.
-seo-title: Position
+description: Diese Informationen helfen Ihnen bei der Verwendung der Standortfunktionen in Ihren iOS-Apps.
+seo-description: Diese Informationen helfen Ihnen bei der Verwendung der Standortfunktionen in Ihren iOS-Apps.
+seo-title: Standort
 solution: Experience Cloud,Analytics
 title: Standort
 topic: Developer and implementation
 uuid: a4e5650a-f5d3-4fb1-bd11-a27a3918d763
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
