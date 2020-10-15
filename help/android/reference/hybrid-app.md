@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Besucher zwischen einer App und dem mobilen Internet verfolgen
 topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Wenn Ihre App mobile Webinhalte öffnet, stellen Sie sicher, dass Besucher zwisc
 
 ## Besucher-IDs in Apps
 
-Das Android-SDK generiert eine eindeutige Besucher-ID, wenn eine App installiert wird. Diese ID wird im permanenten Speicher auf dem Mobilgerät gespeichert, bei jedem Treffer gesendet und nur entfernt, wenn der Benutzer die App deinstalliert.
+Das Android SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird. Diese ID wird im persistenten Speicher des Mobilgeräts gespeichert, bei jedem Treffer gesendet und nur entfernt, wenn der Benutzer die App deinstalliert.
 
 >[!TIP]
 >
@@ -62,7 +62,7 @@ So verwenden Sie dieselbe Besucher-ID in der App und im mobilen Web:
    });
    ```
 
-Der ID-Dienstcode in der Zieldomäne extrahiert die MID aus der URL, anstatt eine Anforderung für eine neue ID an die Adobe zu senden. Der Code verwendet die übergebene MID zur Verfolgung des Besuchers.
+Der ID-Service-Code auf der Ziel-Domäne extrahiert die MID aus der URL, statt bei Adobe eine neue ID anzufordern. Der Code verwendet die übergebene MID zum Tracking des Besuchers.
 
 Stellen Sie bei Treffern aus dem mobilen Webinhalt sicher, dass der Parameter `mid` bei jedem Treffer vorhanden ist und mit dem vom App-Code gesendeten `mid`-Parameter übereinstimmt.
 
