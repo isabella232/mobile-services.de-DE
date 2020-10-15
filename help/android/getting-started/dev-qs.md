@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
 ht-degree: 100%
 
@@ -151,7 +151,7 @@ Andere Lebenszyklusmetriken werden automatisch erfasst. Weitere Informationen fi
 
 ## Nächste Schritte {#section_BF709684E1DD40EA9169BC1D0D4B37C2}
 
-Führen Sie die folgenden Aufgaben durch:
+Führen Sie die folgenden Aufgaben aus:
 
 * [App-Zustände verfolgen](/help/android/analytics-main/states.md)
 * [App-Aktionen verfolgen](/help/android/analytics-main/actions.md)
