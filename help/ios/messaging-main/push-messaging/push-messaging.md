@@ -1,23 +1,23 @@
 ---
-description: Mit Adobe Mobile und dem Adobe Mobile SDK können Sie Push-Nachrichten an Ihre Benutzer senden. Mit dem SDK können Sie außerdem ganz einfach Berichte zu Benutzern erstellen, die Ihre App durch Klicken auf eine Push-Nachricht geöffnet haben.
-seo-description: Mit Adobe Mobile und dem Adobe Mobile SDK können Sie Push-Nachrichten an Ihre Benutzer senden. Mit dem SDK können Sie außerdem ganz einfach Berichte zu Benutzern erstellen, die Ihre App durch Klicken auf eine Push-Nachricht geöffnet haben.
+description: Adobe Mobile und das Adobe Mobile SDK ermöglichen es Ihnen, Push-Nachrichten an Ihre Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App durch Klicken auf eine Push-Nachricht geöffnet haben.
+seo-description: Adobe Mobile und das Adobe Mobile SDK ermöglichen es Ihnen, Push-Nachrichten an Ihre Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App durch Klicken auf eine Push-Nachricht geöffnet haben.
 seo-title: Push-Nachrichten
 solution: Experience Cloud,Analytics
 title: Push-Nachrichten
 topic: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 
 # Push-Nachrichten {#push-messaging}
 
-Mit Adobe Mobile und dem Adobe Mobile SDK können Sie Push-Nachrichten an Ihre Benutzer senden. Mit dem SDK können Sie außerdem ganz einfach Berichte zu Benutzern erstellen, die Ihre App durch Klicken auf eine Push-Nachricht geöffnet haben.
+Adobe Mobile und das Adobe Mobile SDK ermöglichen es Ihnen, Push-Nachrichten an Ihre Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App durch Klicken auf eine Push-Nachricht geöffnet haben.
 
 >[!IMPORTANT]
 >
@@ -27,9 +27,9 @@ Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderli
 
 >[!IMPORTANT]
 >
->Legen Sie die Experience Cloud ID nicht manuell in Ihrer App fest. Dies führt zur Erstellung eines neuen, eindeutigen Benutzers, der aufgrund seines Anmeldestatus keine Push-Nachrichten erhält. Angenommen, ein Benutzer, der sich für den Empfang von Push-Nachrichten angemeldet hat, meldet sich bei Ihrer App an. Wenn Sie nach der Anmeldung die ID manuell in Ihrer App festlegen, wird ein neuer Unique User erstellt, der sich nicht für den Empfang von Push-Nachrichten entschieden hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
+>Legen Sie die Experience Cloud ID nicht manuell in Ihrer App fest. Dies führt zur Erstellung eines neuen Unique Users, der aufgrund seines Opt-in-Status keine Push-Nachrichten erhält. Angenommen, ein Benutzer, der sich für den Empfang von Push-Nachrichten angemeldet hat, meldet sich bei Ihrer App an. Wenn Sie nach der Anmeldung die ID manuell in Ihrer App festlegen, wird ein neuer Unique User erstellt, der sich nicht für den Empfang von Push-Nachrichten entschieden hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
 
-## Voraussetzungen {#section_06655ABE973743DC965897B229A2118D}
+## Voraussetzungen  {#section_06655ABE973743DC965897B229A2118D}
 
 * Fügen Sie die Bibliothek zu Ihrem Projekt hinzu und implementieren Sie die Lebenszyklusmetriken.
 
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie unter [Optionen für SDK-ID-Dienst konfiguriere
    #import "ADBMobile.h"
    ```
 
-1. Lesen Sie [Configuring Remote Notification Support (Support für Remote-Benachrichtigung konfigurieren)](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1), um die Einstellungen zu bestimmen, für die Ihre App eine Berechtigung anfordern muss.
+1. Lesen Sie [Support für Remote-Benachrichtigung konfigurieren](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1), um die Einstellungen zu bestimmen, für die Ihre App eine Berechtigung anfordern muss.
 
    Hier ist ein Beispiel einer möglichen Implementierung, die um Zugriffsberechtigung zum Verwenden von Warnhinweisen, Zeichen, Tönen und Remote-Benachrichtigungen bittet:
 
