@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Erlebnis In-App-Nachricht
 topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 95%
 
 Konfigurieren Sie Erlebnisoptionen für In-App-Nachrichten, einschließlich Typ (Vollbild, Warnhinweis oder Benachrichtigung) sowie Anzeige-, Text- und Schaltflächenoptionen.
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
-1. Geben Sie auf der Seite Erlebnis einen Namen für die Nachricht ein.
+1. Klicken Sie in Ihrer App auf **[!UICONTROL Messaging]** > **[!UICONTROL Nachrichten verwalten]** > **[!UICONTROL Nachricht erstellen]** > **[!UICONTROL In-App-Nachricht erstellen]**.
+1. Geben Sie auf der Seite „Erlebnis“ einen Namen für die Nachricht ein.
 1. Füllen Sie die Felder im Abschnitt **[!UICONTROL Typ]** aus:
 
    * **[!UICONTROL Typ]**
@@ -32,7 +32,7 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
       * **[!UICONTROL Lokale Benachrichtigung]**
    * **[!UICONTROL Vorlage]**
 
-      Passen Sie eine dynamische Motto-Nachrichtenvorlage für Ihren Inhalt an.
+      Passen Sie eine dynamische Themen-Nachrichtenvorlage für Ihren Inhalt an.
 
       >[!TIP]
       >
@@ -53,9 +53,9 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
 
 1. Füllen Sie die Felder im Abschnitt **[!UICONTROL Anzeige]** aus:
 
-   * **[!UICONTROL Design]**
+   * **[!UICONTROL Thema]**
 
-   Wählen Sie ein Design für Ihre Nachricht aus.
+   Wählen Sie ein Thema für Ihre Nachricht aus.
 
    * **[!UICONTROL Layout]**
 
@@ -67,14 +67,14 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
 
    * **[!UICONTROL Bild-Bundle]**
 
-      Pfad zu einem Bild in Ihrem Anwendungscode-Bundle. Diese Option wird verwendet, wenn kein Bild vorhanden. oder das Bild nicht verfügbar ist. Das Bild kann beispielsweise nicht verfügbar sein, weil das entsprechende Gerät derzeit offline ist. Wenn Sie bei Verwendung der Vollbildvorlage Probleme mit der Größenanpassung haben, lesen Sie den Abschnitt *Mein Bild passt nicht genau in den in der Vorlage vorgesehenen Platz* unter [Fehlerbehebung von In-App-Nachrichten](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
+      Pfad zu einem Bild in Ihrem Anwendungscode-Bundle. Diese Option wird verwendet, wenn kein Bild vorhanden oder das Bild nicht verfügbar ist. Das Bild kann beispielsweise nicht verfügbar sein, weil das entsprechende Gerät derzeit offline ist. Wenn Sie bei Verwendung der Vollbildvorlage Probleme mit der Größenanpassung haben, lesen Sie den Abschnitt *Mein Bild passt nicht genau in den in der Vorlage vorgesehenen Platz* unter [Fehlerbehebung von In-App-Nachrichten](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
 
 
 1. Füllen Sie die Felder im Abschnitt **[!UICONTROL Text]** aus:
 
-   * **[!UICONTROL Header]**
+   * **[!UICONTROL Kopfzeile]**
 
-      Geben Sie den Text für den Nachrichten-Header ein.
+      Geben Sie den Text für die Kopfzeile der Nachricht ein.
 
    * **[!UICONTROL Inhalt]**
 
@@ -118,7 +118,7 @@ Wählen Sie den Nachrichtentyp für die In-App-Nachrichtenkampagne aus:
 
    * **[!UICONTROL Vorschau auf der Uhr eines Benutzers]**
 
-      Um eine Vorschau der Nachricht anzuzeigen, wie sie auf der Watch eines Benutzers angezeigt wird, klicken Sie auf ![Watch-Symbol](assets/icon_watch.png).
+      Um eine Vorschau der Nachricht anzuzeigen, wie sie auf der Uhr eines Benutzers angezeigt wird, klicken Sie auf ![Uhrensymbol](assets/icon_watch.png).
 
    * **[!UICONTROL Vorschau auf dem Mobiltelefon eines Benutzers]**
 
