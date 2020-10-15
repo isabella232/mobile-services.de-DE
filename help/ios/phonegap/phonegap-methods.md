@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: PhoneGap-Plug-in-Methoden
 topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1730'
+ht-degree: 100%
 
 ---
 
