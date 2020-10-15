@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Erste Schritte
 topic: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1373'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 
-# Erste Schritte{#getting-started}
+# Erste Schritte {#getting-started}
 
 Diese Informationen sollen Sie bei der Verwendung von Adobe Mobile Services unterstützen.
 
@@ -25,102 +25,102 @@ Adobe Mobile Services besteht aus den folgenden Komponenten:
 * Adobe Mobile Services-Benutzeroberfläche
 * Adobe Mobile SDK
 
-Für Firmen in Unternehmen, die nach dem effektivsten Weg zur Erhöhung der Benutzerinteraktion und zum Nachweis der Rentabilität ihrer Investitionen in mobile Apps suchen, bietet die Adobe eine End-to-End-Lösung, Adobe Mobile Services, mit der Sie App-Benutzer erfassen und binden und deren Erlebnisse analysieren und optimieren können.
+Für Unternehmen, die nach dem effektivsten Weg suchen, um die Benutzerinteraktion zu steigern und den ROI für ihre Investition in Apps nachzuweisen, bietet Adobe eine End-to-End-Lösung, Adobe Mobile Services, mit der sie App-Benutzer erfassen und binden und deren Erlebnisse analysieren und optimieren können.
 
-Heute unterscheidet sich die mobile App-Landschaft deutlich von der Zeit, als das Smartphone zum ersten Mal gestartet wurde. Eine mobile App, mit der Ihre Kunden mit Ihrer Marke verbunden werden können, reicht nicht mehr aus. Heute müssen Sie ein einheitliches und überzeugendes Kundenerlebnis für alle Kanal bereitstellen und Ihre mobile App als strategischen Touchpoint nutzen, um Ihre treuesten und hochwertigsten Kunden zu gewinnen. Um diese Benutzer mit Ihrer App zu interagieren, sind jedoch zwingende Inhalte, kontextbezogene Benachrichtigungen, intelligente Personalisierung und integrierte App-Analysen usw. erforderlich.
+Heute unterscheidet sich die Landschaft der mobilen Anwendungen erheblich von der Landschaft, als das Smartphone zum ersten Mal auf den Markt kam. Es reicht nicht mehr aus, eine mobile Anwendung zu haben, um Ihre Kunden mit Ihrer Marke in Verbindung zu bringen. Heute müssen Sie ein kohärentes, überzeugendes Kundenerlebnis über alle Kanäle hinweg schaffen und Ihre mobile Anwendung als strategischen Kontaktpunkt nutzen, um Ihre treuesten und hochwertigsten Kunden zu erreichen. Um diese Benutzer zur Interaktion mit Ihrer App zu bewegen, sind jedoch überzeugende Inhalte, kontextbezogene Benachrichtigungen, intelligente Personalisierung und integrierte App-Analysen usw. erforderlich.
 
 ## Adobe Mobile Services-Benutzeroberfläche {#mobile-services-ui}
 
 Die Mobile Services-Benutzeroberfläche wird in den folgenden Browsern unterstützt:
 
-* Google Chrome (die letzten beiden Versionen)
-* Mozilla Firefox (die letzten beiden Versionen)
-* Apple Safari (die letzten beiden Versionen)
-* Microsoft Edge (die letzten beiden Versionen)
+* Google Chrome (die zwei aktuellen Versionen)
+* Mozilla Firefox (die zwei aktuellen Versionen)
+* Apple Safari (die zwei aktuellen Versionen)
+* Microsoft Edge (die zwei aktuellen Versionen)
 
 Mit Adobe Mobile Services können Sie die App-Interaktion in folgenden Bereichen optimieren:
 
 ### Akquise
 
-In *Acquire* verwenden Sie bezahlte, eigene und verdiente Medien, um die Akquise von Benutzern für App-Downloads in den führenden App Stores zu fördern. Mit Adobe Mobile Services können Sie den App-Benutzerakquise beschleunigen.
+In der Phase der *Aquise* verwenden Sie bezahlte, eigene und Earned Media, um die Benutzerakquise für App-Downloads in den führenden Appstores voranzutreiben. Mit Adobe Mobile Services können Sie den Prozess der App-Benutzerakquise beschleunigen.
 
-Adobe Mobile Services bieten Workflows, einschließlich Akquise-Tracking und Deep-Linking, die die Effektivität Ihrer Kanal beim Erwerb von App-Benutzern messen. Mit Marketinglinks, die verfolgen, welche Benutzer aus welchen Kanälen stammen, können Sie ermitteln, welche Akquisekanäle bei der Gewinnung aktiver und gewinnbringender Benutzer am effektivsten sind.
+Adobe Mobile Services bieten Workflows zur Benutzerakquise, einschließlich Akquise-Tracking und Deep-Linking, mit denen die Effektivität Ihrer Kanäle bei der Akquise von App-Benutzern gemessen wird. Mit Marketinglinks, die verfolgen, welche Benutzer aus welchen Kanälen stammen, können Sie ermitteln, welche Akquisekanäle bei der Gewinnung aktiver und gewinnbringender Benutzer am effektivsten sind.
 
-Darüber hinaus können Sie mit Deep-Linking Benutzer direkt in den App-Inhalt bringen, den sie sehen möchten, und sie bei Bedarf dazu anhalten, die App zu installieren.
+Darüber hinaus können Sie mit Deep-Linking Benutzer direkt zu den App-Inhalten führen, die sie sehen sollen, und sie dazu ermutigen, Ihre App bei Bedarf zu installieren.
 
-Akquise-Angebote:
+Die Akquisephase bietet die folgenden Schlüsselfunktionen:
 
-* Akquise-Analyse für Apps
-* Verfolgen von Links in App Stores
+* Akquiseanalyse für Apps
+* Linktracking über Appstores hinweg
 * Deep-Linking in Apps
-* Post-back-Integration in Werbenetzwerke
+* Postback-Integration in Werbenetzwerke
 
-Weitere Informationen zu diesem Bereich finden Sie unter [Akquise](/help/using/acquisition-main/acquisition-main.md).
+Weitere Informationen zu diesem Bereich finden Sie unter  [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
 ### Analyse
 
-In *Analyze* können Sie verstehen, wie Benutzer die mobile App verwenden und was sie dazu bringt, umzuwandeln oder zurückzukehren.
+In der Phase der *Analyse* können Sie nachvollziehen, wie die Verbraucher die App nutzen und was sie veranlasst, zu konvertieren oder zurückzukommen.
 
-Mit Adobe Analytics erhalten Sie wichtige Einblicke in den Trichter, wie Benutzer Ihre App herunterladen, installieren und öffnen. Sie können auch Ihren App-Inhalt und Ihre Benutzeroberfläche messen und analysieren, Kohorten-Analysen, Pfade und Trichteranalysen durchführen. Mit Adobe Analytics können Sie einen zentralen Datenspeicher verwenden, um Ihre Marketingentscheidungen zu informieren und die Marketingdaten in Ihrem Unternehmen zu reduzieren.
+Mit Adobe Analytics erhalten Sie wichtige Einblicke in die Art und Weise, wie Benutzer Ihre App herunterladen, installieren und öffnen. Sie können auch den Inhalt und die Benutzeroberfläche Ihrer App messen und analysieren, Kohortenanalysen, Pfadsetzung und Fallout-Analysen durchführen. Mit Adobe Analytics können Sie einen zentralen Datenspeicher verwenden, um Ihre Marketing-Entscheidungen zu treffen und die Marketing-Datensilos in Ihrem Unternehmen zu reduzieren.
 
-Sie können Adobe Audience Manager verwenden, um Ihre Audiencen mit Rich-Data-Daten zu bereichern und so kontextbezogene und persönliche Erlebnisse bereitzustellen.
+Mithilfe von Adobe Audience Manager können Sie Ihre Zielgruppensegmente mit reichhaltigen Daten anreichern, um kontextbezogenere und persönlichere Erlebnisse zu vermitteln.
 
-*Analysieren* Sie Angebot anhand der folgenden Hauptfunktionen:
+Die *Analysephase* bietet die folgenden Schlüsselfunktionen:
 
 * Analyse der App-Interaktion
 * Analyse von Pfaden und Trichtern
-* Analyse von Kohorten und Retention
+* Kohorten- und Treueanalyse
 * Standortanalyse
 * Umfassende Unterstützung von Geräten und Plattformen
 
-Weitere Informationen zu den Berichten, die Ihnen zur Analyse Ihrer Kunden zur Verfügung stehen, finden Sie unter [Berichte](/help/using/usage/usage.md).
+Weitere Informationen zu den Berichten, die Ihnen zur Analyse Ihrer Kunden zur Verfügung stehen, finden Sie unter  [Berichte](/help/using/usage/usage.md).
 
 ### Interagieren
 
-In *Engage* können Sie relevante Push-Benachrichtigungen und In-App-Nachrichten verwenden, um mit Ihren Benutzern zu kommunizieren. Mit zielgerichteten Push-Benachrichtigungen und In-App-Nachrichten können Sie sicherstellen, dass Benutzer weiterhin zu Ihrer App zurückkehren. Dank der Unterstützung von Segmenten aus Analytics können Sie Ihre Push-Benachrichtigungen an Benutzersegmente, die reagieren und deren Konvertierungsneigung erhöhen, Zielgruppe geben.
+In der Phase der *Interaktion* können Sie relevante Push-Benachrichtigungen und In-App-Nachrichten verwenden, um mit Ihren Benutzern zu kommunizieren. Mit zielgerichteten Push-Benachrichtigungen und In-App-Nachrichten können Sie sicherstellen, dass Benutzer weiterhin zu Ihrer App zurückkehren. Dank der Unterstützung von Segmenten aus Analytics können Sie Ihre Push-Benachrichtigungen gezielt an Benutzersegmente richten, die darauf reagieren und ihre Konversionsbereitschaft erhöhen.
 
-*Angeboten die folgenden Hauptfunktionen bieten* :
+Die *Interaktionsphase* bietet die folgenden Schlüsselfunktionen:
 
-* Push-Benachrichtigungen werden durch Analytics-Segmente ausgelöst.
+* Push-Benachrichtigungen werden durch Analysesegmente ausgelöst.
 * In-App-Nachrichten werden durch Echtzeitanalysen, Warnhinweise und neue Angebote/Inhalte ausgelöst.
-* Verstehen Sie Ansichten, Durchklickraten und das nachgelagerte Verhalten.
+* Ansichten, Clickthrough-Raten und das nachgelagerte Verhalten verstehen
 
 ### Adobe Mobile-Messaging
 
-Sie können Push- und In-App-Benachrichtigungen verwenden, um mit Ihren Benutzern zu kommunizieren. Push-Benachrichtigungen werden über das Betriebssystem des Geräts gesendet, während In-App-Nachrichten in der App gesendet werden, wenn ein Benutzer aktiv mit der App interagiert. In-App-Nachrichten können in der Regel eine Reihe zusätzlicher Formate wie Popup- und Zwischenräume enthalten.
+Sie können Push- und In-App-Benachrichtigungen verwenden, um mit Ihren Benutzern zu kommunizieren. Push-Benachrichtigungen werden über das Betriebssystem des Geräts gesendet, während In-App-Nachrichten in der App gesendet werden, wenn ein Benutzer aktiv mit der App interagiert. In-App-Nachrichten können in der Regel eine Reihe zusätzlicher Formate wie Popup- und Interstitials enthalten.
 
 In Adobe Mobile können Sie die folgenden Arten von Nachrichten konfigurieren:
 
 **Push-Benachrichtigungen**, die außerhalb der App angezeigt werden, bieten die folgenden Funktionen:
 
-* Erhöhen Sie die Interaktion durch relevante Push-Benachrichtigungen.
-* Erstellen, segmentieren und senden Sie Nachrichten an Kunden, die die App einer Marke heruntergeladen und per opt-in für den Empfang von Push-Benachrichtigungen akzeptiert haben.
-* werden serverseitig von den App Stores und nicht von der mobilen App gesendet.
+* Fördern der erneuten Interaktion durch relevante Push-Benachrichtigungen
+* Erstellen, Segmentieren und Senden von Nachrichten an Kunden, die die App einer Marke heruntergeladen per Opt-in für den Erhalt von Push-Benachrichtigungen akzeptiert haben.
+* Dies Benachrichtigungen werden Server-seitig von den Appstores und nicht von der App gesendet.
 
-Weitere Informationen zum Erstellen von Push-Benachrichtigungen finden Sie unter [Push-Nachrichten erstellen](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
+Weitere Informationen zum Erstellen von Push-Benachrichtigungen finden Sie unter  [Push-Nachrichten erstellen](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
-**In-App-Benachrichtigungen** Angebot:
+**In-App-Benachrichtigungen** bieten die folgenden Funktionen:
 
-* Lenken Sie Benutzer zu einer bestimmten Aktion, während sie sich in der App-Sitzung befinden.
+* Veranlassen, dass Benutzer in der App-Sitzung eine bestimmte Aktion ausführen.
 * Nutzen Sie zusätzliche Formate (Warnhinweis, Vollbild), da die Nachrichten von der App statt von einem Push-Netzwerk bereitgestellt werden.
-* werden durch Echtzeitanalysen ausgelöst.
-* Querwertanwendungen und Produkte zulassen
-* Ermutigen Sie Benutzer, eine App Store-Bewertung zu hinterlassen.
-* Echtzeit- und standortbasierte Nachrichten bereitstellen
+* Diese Benachrichtigungen werden über Real-Time Analytics ausgelöst.
+* Sie lassen die Querwerbung für Apps und Produkte zu.
+* Ermutigen der Benutzer, eine Appstore-Bewertung zu hinterlassen.
+* Bereitstellen von Echtzeit- und standortbasierten Nachrichten
 
-Weitere Informationen zum Erstellen von In-App-Nachrichten finden Sie unter [In-App-Nachrichten erstellen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
+Weitere Informationen zum Erstellen von In-App-Nachrichten finden Sie unter  [In-App-Nachrichten erstellen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
 
 ### Optimieren
 
-Bei der *Optimierung* können Sie Konversionen (Abonnement, Handel, Anzeigenumsatz usw.) optimieren und die Kundenbindung verbessern. Die Optimierung der Benutzererfahrung in Ihrer App kann Ihnen dabei helfen, Ihre Inhalte zu personalisieren, um eine maximale Rentabilität und Konvertierung zu erzielen.
+In der Phase der *Optimierung* können Sie Konversionen (Abonnement, Handel, Anzeigenumsatz usw.) optimieren und die Kundenbindung verbessern. Die Optimierung des Benutzererlebnisses in Ihrer Anwendung kann Ihnen helfen, Ihre Inhalte zu personalisieren, um maximalen ROI und eine maximale Konversion zu erzielen.
 
 Weitere Informationen zu Tests und Adobe Target finden Sie unter [Adobe Target](https://docs.adobe.com/content/help/de-DE/target/using/target-home.html).
 
 ### Geotargeting
 
-Mit einem Mobilgerät können Sie per se erkennen, wo sich ein Kunde befindet, während er mit Ihrer App interagiert, oder sie über den GPS-Standort im Hintergrund ausführen lassen. Mit Geo-Targeting können Sie mit Adobe Target maßgeschneiderte, relevante Inhalte, Angebot oder Nachrichten in einer Zeit bereitstellen, in der Nähe eine wichtige Rolle spielt. Sie können Benutzer, die sich in einem definierten Radius um einen Zielpunkt befinden oder sich in der Nähe von iBeacons und entsprechenden Push-Benachrichtigungen befinden, mit Zielgruppen versehen.
+Bei einem Mobilgerät können Sie von Natur aus über die GPS-Ortung sehen, wo sich ein Verbraucher befindet, während er mit Ihrer App interagiert oder sie im Hintergrund laufen lässt. Mit Geotargeting können Sie mit Adobe Target maßgeschneiderte, relevante Inhalte, Angebote oder Nachrichten zu einem Zeitpunkt bereitstellen, an dem es auf die Nähe ankommt. Sie können Benutzer ansprechen, die sich in einem bestimmten Radius um einen Zielpunkt oder in der Nähe von iBeacons und entsprechenden Push-Benachrichtigungen befinden.
 
-Adobe Target for Mobile-Apps nutzen jetzt die verbesserte Segmentierung und den verbesserten Berichte, die über Adobe Analytics verfügbar sind. Das bedeutet, dass Adobe Target alle wichtigen App-Metriken in Analytics nutzen kann, indem es sie zur Zielgruppe und Personalisierung verwendet; Sie bietet außerdem einen tieferen Berichte zum Testerfolg, sodass Marketingexperten besser verstehen können, welche Fragen &quot;was ist, wenn&quot;beantwortet werden - Antworten, die dem App-Marketingexperten den Druck entziehen könnten, eine Rendite aus App-Investitionen zu zeigen. Die Analytics/Zielgruppe für die App-Integration bietet ein kombiniertes Angebot, das die zuverlässigste App-Interaktionslösung darstellt, die auf dem Markt erhältlich ist.
+Adobe Target für Apps nutzt jetzt die verbesserte Segmentierung und Berichterstellung, die über Adobe Analytics verfügbar sind. Das bedeutet, dass Adobe Target alle wichtigen App-Metriken in Analytics für die Zielgruppenbestimmung und Personalisierung nutzen kann. Außerdem wird eine detaillierte Berichterstellung hinsichtlich des Testerfolgs ermöglicht, so dass Marketing-Experten die „Was-wäre-wenn“-Fragen besser verstehen können. Die Antworten darauf könnten dem App-Marketing-Experten entgehen, der unter dem Druck steht, ROI der App-Investitionen aufzuzeigen. Die Integration von Analytics/Target für Apps stellt die robusteste im Markt erhältliche Lösung für die App-Interaktion dar.
 
 Weitere Informationen zum Standort finden Sie unter folgenden Themen:
 
@@ -132,33 +132,33 @@ Weitere Informationen zum Standort finden Sie unter folgenden Themen:
 
 Adobe bietet eine umfassende Lösung für mobiles Marketing, mit der Sie die Benutzerinteraktion in all diesen Bereichen optimieren können. Mit einem einzelnen SDK können Sie auf die Funktionen von Adobe Analytics, Adobe Campaign und Adobe Audience Manager zugreifen. So reduzieren sich die technischen Kosten für die Verwaltung mehrerer SDK.
 
-Das Adobe Mobile SDK Angebot die folgenden Funktionen:
+Das Adobe Mobile SDK bietet die folgenden Funktionen:
 
-* End-to-End-Interaktion mit Mobilgeräten
+* End-to-End-Interaktion für Mobilgeräte
 
-   Mit dem mobilen SDK für eine Adobe können Sie Apps plattformübergreifend messen und optimieren.
+   Sie können Apps mit einem schlanken und integrierten Adobe Mobile SDK plattformübergreifend messen und optimieren.
 * Neue Kunden gewinnen und ansprechende Mikromomente bereitstellen
 
    * Bringen Sie Benutzer durch gezielte Push-Benachrichtigungen, einschließlich Rich-Media-Unterstützung und In-App-Nachrichten, immer wieder zurück zu Ihrer App.
-   * Verwenden Sie Deep-Linking, um App-Benutzer direkt in den gewünschten Inhalt zu bringen.
+   * Verwenden Sie Deep-Linking, um App-Benutzer direkt zum gewünschten Inhalt zu bringen.
 
 * Erlebnisse zur Steigerung des ROI messen und optimieren
 
-   Sie können Einblicke in App-Lebenszyklusmetriken erhalten, einschließlich Trichteranalyse-Analyse (Downloads, Installationen, Öffnen), Aktionen wie Sitzungslänge, Abstürze, Beacons und Nachrichten-Interaktionen.
+   Sie können Einblicke in App-Lebenszyklusmetriken erhalten, einschließlich Trichteranalysen (Downloads, Installationen, Öffnungen), Aktionen wie Sitzungslänge, Abstürze, Beacons und Interaktionen mit Nachrichten.
 * Umfassend
 
-   * Umfassende Unterstützung für führende mobile Betriebssysteme und plattformübergreifende Entwicklungstools.
-   * Umfassende Geräteunterstützung für Smartphones, Tablets, tragbare Geräte und OTT-Konsolen (OTT).
+   * Umfassende Unterstützung für führende mobile Betriebssysteme und plattformübergreifende Entwicklungs-Tools.
+   * Umfassende Geräteunterstützung für Smartphones, Tablets, tragbare Geräte und OTT-Konsolen.
 
-* integriert
+* Integriert
 
-   * Ein SDK für mehrere Lösungen (Analytics, Kampagne und Audience Manager), wodurch Implementierungszeit und -aufwand für Entwickler reduziert werden.
-   * Für die Erfassung der Lebenszyklusmetriken der App &quot;Basisversion&quot;ist nur eine Codezeile erforderlich.
-   * Wenn Sie Ihre Mobilgerätestrategie weiterentwickeln, können Sie Adobe Experience Cloud-Funktionen einfach aktivieren, um Benutzer zu akquirieren, zu analysieren und zu binden.
+   * Ein SDK für mehrere Lösungen (Analytics, Campaign und Audience Manager), wodurch Implementierungszeit und -aufwand für Entwickler reduziert werden.
+   * Nur eine Codezeile ist für die Erfassung der Lebenszyklusbasismetriken einer App erforderlich.
+   * Bei der Entwicklung Ihrer Mobilgerätestrategie können Sie die Funktionen von Adobe Experience Cloud problemlos aktivieren, um Anwender zu akquirieren, zu analysieren und zu binden.
 
-* Schnell und leicht
+* Schnell und leichtgewichtig
 
-   * Minimiert die Verarbeitungslast des Geräts für das Senden von Daten an Adoben- und Drittanbietersysteme.
-   * Durch geringen Platzbedarf wird die Größe des App-Pakets, das an App Stores übermittelt wird, minimiert.
+   * Minimiert die Verarbeitungslast des Geräts für das Senden von Daten an Adobe-Server und Drittanbietersysteme.
+   * Ein geringer Platzbedarf minimiert die Größe des App-Pakets, das an Appstores gesendet wird.
 
 Weitere Informationen zu den Adobe Mobile-SDK finden Sie unter [Android-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/de-DE/mobile-services/android/overview.html) und [iOS-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/rel-notes.html).
