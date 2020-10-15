@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Geostandort und Zielpunkte
 topic: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '596'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Jeder `trackLocation`-Aufruf sendet folgende Informationen:
 
 * Längengrad, Breitengrad und Standort als POI, der in der Adobe Mobile Services UI definiert ist.
 
-   Diese Informationen werden für den automatischen Berichte an mobile Lösungsvariablen übergeben.
+   Diese Informationen werden für die automatische Berichterstellung an die Variablen der mobilen Lösung übergeben.
 
-* Entfernung vom Zentrum und Genauigkeit als Kontextdaten weitergegeben.
+* Entfernung vom Zentrum und Genauigkeit werden als Kontextdaten weitergegeben.
 
    Diese Variablen werden nicht automatisch erfasst. Sie müssen diese Variablen für Kontextdaten mithilfe der Anweisungen im Abschnitt *Zusätzliche Daten senden* unten zuordnen.
 
@@ -62,7 +62,7 @@ Wenn dies nicht konfiguriert ist, müssen Sie eine aktualisierte Version der Dat
    >
    >Sie können `trackLocation` jederzeit aufrufen.
 
-   Sie können Standortstrategien nutzen, um den Standort zu bestimmen, der an den `trackLocation`-Aufruf übergeben wird. Weitere Informationen finden Sie unter [Android Location Strategies (Android-Standortstrategien)](https://developer.android.com/guide/topics/location/strategies.html).
+   Sie können Standortstrategien nutzen, um den Standort zu bestimmen, der an den `trackLocation`-Aufruf übergeben wird. Weitere Informationen finden Sie unter [Android-Standortstrategien](https://developer.android.com/guide/topics/location/strategies.html).
 
 Darüber hinaus wird, wenn sich der Standort innerhalb eines definierten Radius zum POI befindet, eine `a.loc.poi`-Kontextdatenvariable mit dem `trackLocation`-Treffer gesendet und als POI im Bericht **[!UICONTROL Aufschlüsselung nach Ort]** aufgeführt. Außerdem wird eine `a.loc.dist`-Kontextvariable gesendet, die den Abstand von den definierten Koordinaten in Metern enthält.
 
@@ -84,9 +84,9 @@ Die Werte der Kontextdaten müssen in der Adobe Mobile Services UI benutzerdefin
 
 ## Standort-Kontextdaten {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-Die Werte für Breiten- und Längengrad werden mithilfe von drei verschiedenen Kontextdatenparametern gesendet, wobei jeder Parameter eine andere Präzisionsstufe für insgesamt sechs Kontextdatenparameter darstellt.
+Die Längen- und Breitengrade werden mit drei verschiedenen Kontextdatenparametern gesendet, wobei jeder Parameter einen anderen Genauigkeitsgrad für insgesamt sechs Kontextdatenparameter darstellt.
 
-Beispielsweise stellen die Koordinaten lat = 40.93231, long = -111.93152 eine Position mit 1 m Präzision dar. Diese Position wird entsprechend der Präzision auf die folgenden Variablen aufgeteilt:
+Beispielsweise stellen die Koordinaten lat = 40,93231, long = -111,93152 einen Standort mit einer Genauigkeit von 1 m dar. Dieser Standort wird entsprechend der Genauigkeit auf die folgenden Variablen aufgeteilt:
 
 `a.loc.lat.a` = 040,9
 
@@ -119,5 +119,5 @@ Beachten Sie die folgenden Informationen:
 
 * Wenn sich die Radien zweier POIs überschneiden, wird der erste POI verwendet, der den aktuellen Standort enthält.
 
-   Wenn sich Ihre POIs überschneiden, sollten Sie POIs in der Reihenfolge der meisten bis der geringsten Granularität Liste vornehmen, um sicherzustellen, dass der granulärste POI gemeldet wird.
+   Wenn sich Ihre POIs überschneiden, sollten Sie die POIs in der Reihenfolge der größten bis zur niedrigsten Granularität auflisten, um sicherzustellen, dass der POI mit der größten Granularität gemeldet wird.
 
