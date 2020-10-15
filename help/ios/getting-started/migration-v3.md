@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Zur iOS-Bibliothek der Version 4.x migrieren
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
-# Zur iOS-Bibliothek der Version 4.x migrieren{#migrating-to-the-x-ios-library}
+# Zur iOS-Bibliothek der Version 4.x migrieren {#migrating-to-the-x-ios-library}
 
 Diese Informationen helfen Ihnen beim Migrieren von den Versionen 3.x oder 2.x zu Version 4.x der iOS-Bibliothek.
 
@@ -27,13 +27,13 @@ In Version 4.x der iOS-SDK-Bibliothek sind alle öffentlichen Methoden in einem
 
 ## Events, Props und eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-In Version 4 können Sie Variablen wie Ereignis, eVars, Props, Erben und Listen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
+In Version 4 können Sie in Ihrer App keine Variablen, wie z. B. Ereignisse, eVars, Props, Erben und Listen, mehr direkt zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
 Verarbeitungsregeln bieten folgende Vorteile:
 
-* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den Appstore zu senden.
 * Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
-* Das Senden zusätzlicher Daten hat kaum Auswirkungen.
+* Das Senden zusätzlicher Daten hat geringe Auswirkungen.
 
    Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
 
@@ -74,7 +74,7 @@ Die neue Datei `ADBMobileConfig.json` enthält anwendungsspezifische, globale Ei
 
 ### Verschieben der Konfigurationsdatei
 
-So verschieben Sie die Konfigurationsdatei:
+Verschieben der Konfigurationsdatei:
 
 1. Verschieben Sie den für die Variable in der ersten Spalte festgelegten Wert in die Variable in der zweiten Spalte.
 1. Entfernen Sie die alte Konfigurationsvariable aus Ihrem Code.
@@ -94,10 +94,10 @@ Verschieben Sie den Wert aus der ersten Spalte in die Variable in der zweiten Sp
 | reportSuiteIDs | „rsids“ |
 | trackingServer | „server“ |
 | charSet | „charset“ |
-| currencyCode | &quot;currency&quot; |
+| currencyCode | „currency“ |
 | ssl | „ssl“ |
-| linkTrackVars | Entfernen, nicht mehr verwendet. |
-| linkTrackEvents | Entfernen, nicht mehr verwendet. |
+| linkTrackVars | Entfernen, wird nicht mehr verwendet. |
+| linkTrackEvents | Entfernen, wird nicht mehr verwendet. |
 
 
 #### Migration von Version 2.x
@@ -109,20 +109,20 @@ Verschieben Sie den Wert aus der ersten Spalte in die Variable in der zweiten Sp
 | trackOffline | „offlineEnabled“ |
 | offlineLimit | „batchLimit“ |
 | account | „rsids“ |
-| trackingServer | &quot;server&quot;, remove the `"https://"` prefix. Das Protokollpräfix wird automatisch entsprechend der Einstellung &quot;ssl&quot;hinzugefügt. |
-| trackingServerSecure | Entfernen. Definieren Sie für sichere Verbindungen &quot;server&quot;und aktivieren Sie anschließend &quot;ssl&quot;. |
+| trackingServer | „server“, Präfix `"https://"` entfernen. Das Protokollpräfix wird basierend auf der Einstellung „ssl“ automatisch hinzugefügt. |
+| trackingServerSecure | Entfernen. Definieren Sie für sichere Verbindungen „Server“ und aktivieren Sie dann „ssl“. |
 | charSet | „charset“ |
-| currencyCode | &quot;currency&quot; |
+| currencyCode | „currency“ |
 | ssl | „ssl“ |
-| linkTrackVars | Entfernen, nicht mehr verwendet. |
-| linkTrackEvents | Entfernen, nicht mehr verwendet. |
-| timestamp | Entfernen, nicht mehr konfigurierbar. |
-| dc | Entfernen, nicht mehr verwendet. |
-| userAgent | Entfernen, nicht mehr konfigurierbar. |
-| dynamicVariablePrefix | Entfernen, nicht mehr verwendet. |
-| visitorNamespace | Entfernen, nicht mehr verwendet. |
-| usePlugins | Entfernen, nicht mehr verwendet. |
-| useBestPractices alle Aufrufe zur Abbruchmessung ( getChurnInstance ) | Entfernen: Durch Lebenszyklusmetriken ersetzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](//help/ios/metrics.md). |
+| linkTrackVars | Entfernen, wird nicht mehr verwendet. |
+| linkTrackEvents | Entfernen, wird nicht mehr verwendet. |
+| timestamp | Entfernen, ist nicht mehr konfigurierbar. |
+| dc | Entfernen, wird nicht mehr verwendet. |
+| userAgent | Entfernen, ist nicht mehr konfigurierbar. |
+| dynamicVariablePrefix | Entfernen, wird nicht mehr verwendet. |
+| visitorNamespace | Entfernen, wird nicht mehr verwendet. |
+| usePlugins | Entfernen, wird nicht mehr verwendet. |
+| useBestPractices Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](//help/ios/metrics.md). |
 
 
 ## Verfolgungsaufruf und -variablen aktualisieren {#section_96E7D9B3CDAC444789503B7E7F139AB9}
@@ -139,21 +139,21 @@ Beim Parameter `data` für beide dieser Methoden handelt es sich um ein `NSDicti
 
 ### Events, Props und eVars
 
-In Version 4 können Sie Variablen wie Ereignis, eVars, Props, Erben und Listen nicht mehr direkt in Ihrer App zuweisen. Das SDK verwendet jetzt Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
+In Version 4 können Sie in Ihrer App keine Variablen, wie z. B. Ereignisse, eVars, Props, Erben und Listen, mehr direkt zuweisen. Das SDK verwendet jetzt Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
 Verarbeitungsregeln bieten folgende Vorteile:
 
-* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den Appstore zu senden.
 * Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
-* Das Senden zusätzlicher Daten hat kaum Auswirkungen.
+* Das Senden zusätzlicher Daten hat geringe Auswirkungen.
 
    Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden. Weitere Informationen finden Sie unter [Verarbeitungsregeln und Kontextdaten](/help/ios/getting-started/proc-rules.md).
 
-Werte, die Sie direkt zu Variablen zugewiesen haben, sollten stattdessen zum `data``NSDictionary` hinzugefügt werden. Aufrufe zu `setProp`, `setEvar` und Zuweisungen zu persistenten Kontextdaten sollten entfernt und die Daten dem Parameter `data` hinzugefügt werden.
+Werte, die Sie direkt zu Variablen zugewiesen haben, sollten stattdessen zum `data` `NSDictionary` hinzugefügt werden. Aufrufe zu `setProp`, `setEvar` und Zuweisungen zu persistenten Kontextdaten sollten entfernt und die Daten dem Parameter `data` hinzugefügt werden.
 
 ### AppSection/Server, GeoZip, Transaktions-ID, Kampagne und andere Standardvariablen
 
-Daten, die Sie im Messobjekt festgelegt haben, einschließlich der oben aufgeführten Variablen, sollten stattdessen zum `data``NSDictionary` hinzugefügt werden. Die einzigen Daten, die mit dem Aufruf `trackState` oder `trackAction` gesendet werden, beinhalten die Nutzlast des Parameters `data`.
+Daten, die Sie im Messobjekt festgelegt haben, einschließlich der oben aufgeführten Variablen, sollten stattdessen zum `data` `NSDictionary` hinzugefügt werden. Die einzigen Daten, die mit dem Aufruf `trackState` oder `trackAction` gesendet werden, beinhalten die Nutzlast des Parameters `data`.
 
 ### Verfolgungsaufrufe ersetzen
 
@@ -194,7 +194,7 @@ Entfernen Sie aus Ihrem Code Aufrufe folgender Methoden:
 
 ## Variable „products“ {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Da die Variable „“ in Verarbeitungsregeln nicht verfügbar ist, können Sie die folgende Syntax zum Festlegen von `products`products verwenden:
+Da die Variable „products“ in Verarbeitungsregeln nicht verfügbar ist, können Sie die folgende Syntax zum Festlegen von `products` verwenden:
 
 ```objective-c
 //create a processing rule to set the corresponding product event. 
