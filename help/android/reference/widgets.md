@@ -1,26 +1,26 @@
 ---
-description: Android-Widgets können mit denselben Methoden wie Ihre App verfolgt werden. Widgets verwenden den Anwendungskontext mit Ihrer App, sodass die Trefferreihenfolge und die Besucher-ID beibehalten werden.
+description: Android-Widgets können mit denselben Methoden wie Ihre App verfolgt werden. Widgets teilen den Anwendungskontext mit Ihrer Anwendung, so dass die Reihenfolge der Treffer und die Identifizierung der Besucher erhalten bleibt.
 keywords: android;library;mobile;sdk
-seo-description: Android-Widgets können mit denselben Methoden wie Ihre App verfolgt werden. Widgets verwenden den Anwendungskontext mit Ihrer App, sodass die Trefferreihenfolge und die Besucher-ID beibehalten werden.
+seo-description: Android-Widgets können mit denselben Methoden wie Ihre App verfolgt werden. Widgets teilen den Anwendungskontext mit Ihrer Anwendung, so dass die Reihenfolge der Treffer und die Identifizierung der Besucher erhalten bleibt.
 seo-title: Android-Widgets
 solution: Experience Cloud,Analytics
 title: Android-Widgets
 topic: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # Android-Widgets {#android-widgets}
 
-Android-Widgets können mit denselben Methoden wie Ihre App verfolgt werden. Widgets verwenden den Anwendungskontext mit Ihrer App, sodass die Trefferreihenfolge und die Besucher-ID beibehalten werden.
+Android-Widgets können mit denselben Methoden wie Ihre App verfolgt werden. Widgets teilen den Anwendungskontext mit Ihrer Anwendung, so dass die Reihenfolge der Treffer und die Identifizierung der Besucher erhalten bleibt.
 
-Die folgenden Richtlinien helfen Ihnen bei der Verfolgung von Android-Widgets:
+Die folgenden Richtlinien helfen Ihnen beim Tracking von Android-Widgets:
 
 * Implementieren Sie Aufrufe zu Lebenszyklusmetriken (`startActivity`/ `stopActivity`) im Widget.
 
