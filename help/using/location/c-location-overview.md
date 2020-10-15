@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Übersicht (Standort)
 topic: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
-# Übersicht (Standort){#overview-location}
+# Übersicht (Standort) {#overview-location}
 
 Im **[!UICONTROL Standortübersichtsbericht]** werden die verschiedenen Länder, Regionen und Zielpunkte angezeigt, in bzw. an denen Ihre App verwendet wird.
 
@@ -26,7 +26,7 @@ Im Folgenden einige zusätzliche Informationen zu diesem Bericht:
 
 ## Navigation und Verwendung {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
 
-Diese Visualisierung bietet beispielsweise den Basisbericht mit Aufschlüsselungen. Die Visualisierung verwendet Höhe, um die Metrik im Fokus und die Leistungsunterschiede zwischen den Metriken anzuzeigen. Jeder Ring stellt ein Audience-Segment in der Kategorie des Rings dar. Sie können Aktionen für eine Audience ausführen, z. B. einen fixierbaren Filter anwenden, eine Metrik ausblenden und Metriken anzeigen.
+Diese Visualisierung besteht beispielsweise aus dem Basisbericht und Aufschlüsselungen. Die Visualisierung verwendet die Höhe, um die zu betrachtende Metrik und die Leistungsunterschiede zwischen den Metriken anzuzeigen. Jeder Ring stellt ein Zielgruppensegment in der Kategorie des Rings dar. Sie können Aktionen für eine Zielgruppe ausführen, z. B. einen fixierbaren Filter anwenden, eine Metrik ausblenden und Metriken anzeigen.
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ Diese Visualisierung bietet beispielsweise den Basisbericht mit Aufschlüsselung
 
 ![](assets/location.png)
 
-Diese Sunburst-Grafik ist interaktiv. Sie können den Zeitraum ändern, indem Sie oben rechts auf das **[!UICONTROL Kalendersymbol]** klicken. Bewegen Sie den Mauszeiger über einen beliebigen Teil des Diagramms, um weitere Informationen anzuzeigen. In der folgenden Abbildung sehen Sie beispielsweise die Gesamtzahl und den Prozentsatz der Benutzer, die Ihre App in den USA verwenden.
+Diese Sunburst-Grafik ist interaktiv. Sie können den Zeitraum ändern, indem Sie oben rechts auf das **[!UICONTROL Kalendersymbol]** klicken. Bewegen Sie den Mauszeiger über einen beliebigen Teil der Grafik, um weitere Informationen anzuzeigen. In der folgenden Abbildung sehen Sie beispielsweise die Gesamtzahl und den Prozentsatz der Benutzer, die Ihre App in den Vereinigten Staaten verwenden.
 
 ![](assets/location_mouse.png)
 
@@ -48,7 +48,7 @@ So sieht die Grafik aus, wenn Sie **[!UICONTROL Zielpunkte]** auswählen:
 
 ![](assets/location_poi.png)
 
-Sie können auf ein Segment im Ring klicken, um die Audience auszuwählen, auf der Sie Aktionen durchführen können, z. B. Einzoomen, Ausblenden von Audiencen, Erstellen einer In-App-Nachricht oder eines fixierbaren Filters.
+Sie können auf ein Segment im Ring klicken, um die Zielgruppe auszuwählen, an der Sie dann Aktionen durchführen können, z. B. das Heranzoomen, Ausblenden von Zielgruppen oder das Erstellen einer In-App-Nachricht oder eines fixierbaren Filters.
 
 ![](assets/location_aud.png)
 
@@ -64,7 +64,7 @@ Sie können Aufschlüsselungen und sekundäre Metriken hinzufügen, die dann die
 >
 >Je mehr Ringe Sie der grafischen Darstellung hinzufügen, umso länger dauert die Verarbeitung.
 
-Um Aufschlüsselungen und sekundäre Metriken hinzuzufügen, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Ort]** und dann auf **[!UICONTROL Benutzerspezifisch]**. Hierdurch wird die rechte Leiste geöffnet.
+Um Aufschlüsselungen und sekundäre Metriken hinzuzufügen, klicken Sie in der Titelleiste des Berichts auf **[!UICONTROL Aufschlüsselung nach Ort]** und dann auf **[!UICONTROL Anpassen]**. Hierdurch wird die rechte Leiste geöffnet.
 
 ![](assets/location_rail.png)
 
@@ -74,7 +74,7 @@ Wenn Sie auf **[!UICONTROL Aufschlüsselung hinzufügen]** oder **[!UICONTROL Me
 
 Klicken Sie auf ein Segment im Ring, um die Zielgruppe auszuwählen, für die Sie einen fixierbaren Filter erstellen möchten, und klicken Sie auf **[!UICONTROL Fixierbarer Filter]**. Mit einem fixierbaren Filter können Sie die aktuellen Filter anwenden und einen neuen Bericht ausführen, der auf diesen Filtern basiert.
 
-## Berichte freigeben {#section_F8AF2AA73D4C4C008976D45847F82D0B}
+## Berichte freigeben  {#section_F8AF2AA73D4C4C008976D45847F82D0B}
 
 Nachdem Sie einen Bericht erstellt haben, wird unter Verwendung Ihrer Einstellungen eine benutzerdefinierte URL erstellt, die Sie kopieren und weitergeben können.
 
