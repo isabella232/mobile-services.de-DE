@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Bericht „Ansichtspfade“
 topic: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -26,36 +26,36 @@ Der Bericht **[!UICONTROL Ansichtspfade]** basiert auf Pfadanalysen und enthält
 
 ![Ansichtspfade](assets/view_paths.png)
 
-Jeder boxförmige Knoten stellt einen Status in den Pfaden der Benutzer durch eine App dar. In oben stehender Abbildung beispielsweise stellt der oberste Knoten die Anzahl der Benutzer dar, die die App gestartet und zur Haupt-Ansicht navigiert haben.
+Jeder boxförmige Knoten stellt einen Status in den Pfaden der Benutzer durch eine App dar. In der obigen Abbildung stellt der oberste Knoten beispielsweise die Anzahl der Benutzer dar, die die App gestartet und zur Hauptansicht navigiert haben.
 
 Wenn Sie auf einen Knoten klicken, werden zur Anpassung des Diagramms zusätzliche Optionen, wie z. B. **[!UICONTROL Fokus]** oder **[!UICONTROL Erweitern]**, angezeigt. Wenn Sie beispielsweise im obersten Knoten auf den Status **[!UICONTROL MainView]** klicken, werden die Symbole **[!UICONTROL Fokus]** und **[!UICONTROL Erweitern]** angezeigt.
 
-To expand the view, click the **[!UICONTROL +]** icon to display the additional paths that come in to or go from the node. In unten stehender Abbildung zeigt Status 1 die App an, Status 2 zeigt die Hauptseite der App an und Status 3 enthält die folgenden Pfade, die Benutzer verwendet haben:
+Um die Ansicht zu erweitern, klicken Sie auf das **[!UICONTROL +]**-Symbol. So werden zusätzliche Pfade angezeigt, die zum Knoten hin oder von ihm weg führen. In der unten stehenden Abbildung wird die App von Status 1 gestartet, von Status 2 wird die Hauptseite der App angezeigt und Status 3 enthält die Pfade, die Benutzer verwendet haben:
 
-* Navigieren zur Kamerarolle
+* Navigieren zu den Aufnahmen
 * Navigieren zur Elementauswahl
 * Navigation zur Kamera
-* Navigieren zur Seite mit den Artikelinformationen
+* Navigieren zur Infoseite für das Element
 
 ![](assets/view_paths_expand.png)
 
-Klicken Sie auf ![Fokussymbol](assets/icon_focus.png), um einen Knoten zu isolieren und nur die ein- und ausgehenden Pfade dieses Knotens anzuzeigen. In unten stehender Abbildung gingen die folgenden Pfade Benutzern voraus, die die Haupt-Ansicht der App angezeigt haben:
+Klicken Sie auf ![Fokussymbol](assets/icon_focus.png), um einen Knoten zu isolieren und nur die ein- und ausgehenden Pfade dieses Knotens anzuzeigen. In unten stehender Abbildung gingen die folgenden Pfade Benutzern voraus, die die Hauptansicht der App angezeigt haben:
 
 * Elementinformationen
 * Elementauswahl
-* Filmrolle
+* Aufnahmen
 * Kamera
 
 ![Ansichtspfad – Fokus](assets/view_paths_focus.png)
 
-Sie können mehrere Knoten fokussieren oder erweitern, um eine detaillierte Ansicht der Pfade zu erhalten, die die Benutzer in Ihrer App verwenden. Beispiel:
+Sie können mehrere Knoten betrachten oder erweitern, um eine detaillierte Ansicht der Pfade zu erhalten, die Benutzer in Ihrer App verwenden. Beispiel:
 
 ![Ansichtspfad – Mehrere](assets/view_paths_mult.png)
 
 Für diesen Bericht können folgende Optionen konfiguriert werden:
 
 * **[!UICONTROL Zeitraum]**
-Klicken Sie auf das Symbol **[!UICONTROL Kalender]** und wählen Sie einen benutzerdefinierten oder einen vorgegebenen Zeitraum aus der Dropdownliste aus.
+Klicken Sie auf das Symbol **[!UICONTROL Kalender]** und wählen Sie einen benutzerdefinierten oder einen vorgegebenen Zeitraum aus der Dropdown-Liste aus.
 * **[!UICONTROL Anpassen]**
 Passen Sie Ihre Berichte an, indem Sie beispielsweise die Option **[!UICONTROL Anzeigen nach]** ändern oder Metriken und Filter bzw. zusätzliche Reihen (Metriken) hinzufügen. Weitere Informationen finden Sie in [Berichte anpassen](/help/using/usage/reports-customize/reports-customize.md).
 * **[!UICONTROL Filter]**
