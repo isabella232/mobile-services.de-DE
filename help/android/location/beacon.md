@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Beacon-Verfolgung
 topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '240'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -29,10 +29,10 @@ Die folgenden Beacon-Daten werden an Analytics und Target gesendet, wenn `trackB
 
 Diese Werte bedeuten:
 
-* 0 = unbekannt
-* 1 = sofort
-* 2 = nahe
-* 3 = far
+* 0 = nicht bekannt
+* 1 = unmittelbar
+* 2 = nah
+* 3 = fern
 
 Diese Beacon-Daten werden in Variablen für mobile Lösungen erfasst.
 
@@ -48,10 +48,10 @@ Diese Beacon-Daten werden in Variablen für mobile Lösungen erfasst.
    import com.adobe.mobile.*;
    ```
 
-1. Beacon-Position sammeln.
+1. Erfassen Sie den Standort des Beacons.
 
-   Es sind mehrere Drittanbieter-Bibliotheken verfügbar, um Bluetooth-LE-Beacons zu scannen, je nach Hersteller des Beacons.
-1. Nachdem die Beacon-Informationen abgerufen wurden, verwenden Sie den folgenden Aufruf, um den Ort zu verfolgen:
+   Je nach Hersteller des Beacons stehen mehrere Drittanbieter-Bibliotheken zum Scannen von Bluetooth-LE-Beacons zur Verfügung.
+1. Nachdem die Beacon-Informationen abgerufen wurden, verwenden Sie den folgenden Aufruf, um den Standort zu verfolgen:
 
    ```java
    // assumed that the following variables will have been retrieved by the 3rd party beacon library 
