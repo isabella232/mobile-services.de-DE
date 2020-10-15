@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Verarbeitungsregeln und Kontextdaten
 topic: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten
 
 Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 
-* Gruppieren Sie Ihre Kontextdatenvariablen mithilfe von Namensräumen, da Sie damit eine logische Reihenfolge beibehalten können. Um beispielsweise Informationen zu einem Produkt zu erfassen, können Sie die folgenden Variablen definieren:
+* Gruppieren Sie Ihre Kontextdatenvariablen mithilfe von Namespaces, da Sie damit eine logische Reihenfolge beibehalten können. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
 
    ```js
    "product.type":"hat" 
@@ -29,27 +29,27 @@ Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
    "product.color":"blue"
    ```
 
-* Kontextdatenvariablen werden in der Benutzeroberfläche der Verarbeitungsregeln alphabetisch sortiert, sodass Sie schnell sehen können, welche Variablen sich im selben Namensraum befinden.
+* Kontextdatenvariablen werden in der Benutzeroberfläche der Verarbeitungsregeln alphabetisch sortiert, sodass Sie schnell sehen können, welche Variablen sich im selben Namespace befinden.
 
-   Vermeiden Sie die Benennung von Kontextdatenschlüsseln mithilfe der evar- oder prop-Nummer:
+   Vermeiden Sie die Benennung von Kontextdatenschlüsseln mithilfe der eVar- oder Prop-Nummer:
 
    ```js
    "eVar1":"jimbo"
    ```
 
-   Dies kann beim Abschluss der einmaligen Zuordnung in Verarbeitungsregeln *etwas* einfacher sein, Sie verlieren jedoch die Lesbarkeit während des Debuggens und künftiger Codeaktualisierungen, was schwieriger sein kann. Stattdessen empfehlen wir dringend, beschreibende Namen für Schlüssel und Werte zu verwenden:
+   Dies könnte die einmalige Zuordnung in Verarbeitungsregeln *etwas* vereinfachen. Sie verlieren aber Lesbarkeit während des Debuggens und bei zukünftigen Code-Updates, wodurch diese erschwert werden können. Stattdessen empfehlen wir dringend, beschreibende Namen für Schlüssel und Werte zu verwenden:
 
    ```js
    "username":"jimbo"
    ```
 
-* Kontextvariablen, die Zähler-Ereignis definieren, sollten auf 1 eingestellt werden:
+* Kontextvariablen, die Zählerereignisse definieren, sollten auf 1 gesetzt werden:
 
    ```js
    "logon":"1"
    ```
 
-* Kontextdatenvariablen, die Inkrementor-Ereignis definieren, können das Ereignis als Schlüssel und den Inkrementierungswert als Wert haben:
+* Kontextdatenvariablen, die Inkrementiererereignisse definieren, können das Ereignis als Schlüssel und den Inkrementierungswert als Wert haben:
 
    ```js
    "levels completed":"6"
