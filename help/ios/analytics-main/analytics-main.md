@@ -1,6 +1,6 @@
 ---
-description: Anhand dieser Informationen können Sie das iOS-SDK mit Adobe Analytics verwenden.
-seo-description: Anhand dieser Informationen können Sie das iOS-SDK mit Adobe Analytics verwenden.
+description: Diese Informationen helfen Ihnen bei der Verwendung des iOS SDK mit Adobe Analytics.
+seo-description: Diese Informationen helfen Ihnen bei der Verwendung des iOS SDK mit Adobe Analytics.
 seo-title: Übersicht über Analytics
 solution: Experience Cloud,Analytics
 title: Übersicht über Analytics
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -34,12 +34,12 @@ In den SDK werden Identifikatoren verwendet, um Anwender zu verfolgen, und hier 
 
 1. Benutzerspezifische Besucher-ID (VID)
 1. Analytics-Tracking-ID (AID)
-1. Experience Cloud-ID (MID)
+1. Experience Cloud ID (MID)
 
 >[!TIP]
 >
 >Das korrekte Akronym für Experience Cloud ID lautet ECID. Obwohl die SDK immer noch MID verwenden, ist dies der alte Name.
 
-Die AID, die manchmal auch als Tracking Identifier bezeichnet wird, wird vom SDK generiert, wenn die App nicht für die Verwendung eines MID konfiguriert ist. Der Wert bleibt zwischen den Starts und den App-Upgrades in `NSUserDefaults` erhalten. Wenn der Anwender die App von seinem Gerät löscht und dann die App anschließend erneut installiert oder wenn der App-Entwickler `NSUserDefaults` löscht, wird vom SDK eine neue Kennung generiert. Dieser Vorgang führt zu einem neuen Benutzer im Analytics-Berichte.
+Die AID, die manchmal auch als Tracking Identifier bezeichnet wird, wird vom SDK generiert, wenn die App nicht für die Verwendung eines MID konfiguriert ist. Der Wert bleibt zwischen den Starts und den App-Upgrades in `NSUserDefaults` erhalten. Wenn der Anwender die App von seinem Gerät löscht und dann die App anschließend erneut installiert oder wenn der App-Entwickler `NSUserDefaults` löscht, wird vom SDK eine neue Kennung generiert. Dieser Vorgang führt zu einem neuen Benutzer in der Analytics-Berichterstellung.
 
-Für Benutzer in einer App, die Identitätsdienstunterstützung (MID) einführt, werden vorhandene AID-Werte mit Analytics-Treffern gesendet. Der Analytics-Treffer enthält eine AID und eine MID. Für neue Benutzer in einer App mit Unterstützung für den Identitätsdienst enthalten die Analytics-Anforderungen nur eine MID. Weitere Informationen zur Identifizierung von Besuchern finden Sie unter [Besucher-Kennung](https://docs.adobe.com/content/help/de-DE/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html).
+Für Benutzer in einer App, die die Unterstützung für Identity Service (MID) einführt, werden vorhandene AID-Werte mit Analytics-Treffern gesendet, und der Analytics-Treffer enthält eine AID und eine MID. Für neue Benutzer in einer App mit Unterstützung für Identity Service enthalten die Analytics-Anfragen nur eine MID. Weitere Informationen zur Identifizierung von Besuchern finden Sie unter [Besucher-Kennung](https://docs.adobe.com/content/help/de-DE/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html).
