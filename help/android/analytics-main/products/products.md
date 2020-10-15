@@ -1,24 +1,24 @@
 ---
-description: Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte für den Serveraufruf festzulegen.
+description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um die Variable „products“ beim Server-Aufruf festzulegen.
 keywords: android;library;mobile;sdk
-seo-description: Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte für den Serveraufruf festzulegen.
+seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um die Variable „products“ beim Server-Aufruf festzulegen.
 seo-title: Variable „products“
 solution: Experience Cloud,Analytics
 title: Variable „products“
 topic: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
 # Variable „products“ {#products-variable}
 
-Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte für den Serveraufruf festzulegen.
+Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im Mobile SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um die Variable „products“ beim Server-Aufruf festzulegen.
 
 Um die Variable *products* festzulegen, setzen Sie einen Kontextdatenschlüssel auf `"&&products"` und legen Sie mithilfe der für die Variable *products* definierten Syntax den Wert fest:
 
@@ -49,4 +49,4 @@ Die Variable *products* wird in der Bildanfrage festgelegt und die anderen Varia
 
 ![](assets/map-products.png)
 
-Sie müssen die Variable *products* nicht mithilfe von Verarbeitungsregeln zuordnen, da diese Variable direkt in der Bildanfrage vom SDK festgelegt wird.
+Sie müssen die Variable  *products* nicht mithilfe von Verarbeitungsregeln zuordnen, da diese Variable direkt in der Bildanfrage vom SDK festgelegt wird.
