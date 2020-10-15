@@ -1,23 +1,23 @@
 ---
-description: Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS 4.x-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
-seo-description: Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS 4.x-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
+description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS SDK 4.x müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um die Variable „products“ direkt beim Server-Aufruf festzulegen.
+seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS SDK 4.x müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um die Variable „products“ direkt beim Server-Aufruf festzulegen.
 seo-title: Variable „products“
 solution: Experience Cloud,Analytics
 title: Variable „products“
 topic: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 
 # Variable „products“ {#products-variable}
 
-Die Produktvariable kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS 4.x-SDK müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
+Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS SDK 4.x müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um die Variable „products“ direkt beim Server-Aufruf festzulegen.
 
 Um die Variable *`products`* festzulegen, setzen Sie einen Kontextdatenschlüssel auf `"&&products"` und legen Sie mithilfe der für die Variable *`products`* definierten Syntax den Wert fest:
 
@@ -44,8 +44,8 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Order Confirmation" data:contextData]; 
 ```
 
-*`products`* direkt für die Bildanforderung festgelegt ist und dass andere Variablen als Kontextdaten festgelegt werden. Sämtliche Kontextdatenvariablen müssen mithilfe von Verarbeitungsregeln zugeordnet werden:
+*`products`* wird direkt für die Bildanforderung festgelegt und die anderen Variablen werden als Kontextdaten festgelegt. Sämtliche Kontextdatenvariablen müssen mithilfe von Verarbeitungsregeln zugeordnet werden:
 
 ![](assets/map-products.png)
 
-Sie müssen die Variable *`products`* nicht mithilfe von Verarbeitungsregeln zuordnen, da sie direkt in der Bildanforderung vom SDK festgelegt wird.
+Sie müssen die Variable  *`products`* nicht mithilfe von Verarbeitungsregeln zuordnen, da sie direkt in der Bildanforderung vom SDK festgelegt wird.
