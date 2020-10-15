@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Vorbereitung
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ App-Entwickler können jetzt auf die Ansicht der von Ihnen erstellten Report Sui
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Rollen und Berechtigungen](/help/using/gs/c-mob-roles-and-permissions.md).
 
-## Anmelden bei der UI von Adobe Mobile Services  {#section_690A2EC4572E47869F183974E932A6A8}
+## Anmelden bei der UI von Adobe Mobile Services   {#section_690A2EC4572E47869F183974E932A6A8}
 
 Adobe Mobile Services ist die primäre Reporting-Benutzeroberfläche für die Analyse und das Targeting mobiler Apps. Nach Abschluss dieser Schritte können Sie eine Konfigurationsdatei herunterladen, die mit Ihrem Datenerfassungs-Server, Ihrer Report Suite und vielen anderen Einstellungen vorkonfiguriert ist.
 
