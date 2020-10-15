@@ -1,21 +1,21 @@
 ---
-description: Dieses Referenzmaterial hilft Ihnen bei der Verwendung des iOS-SDK für Experience Cloud-Lösungen.
-seo-description: Dieses Referenzmaterial hilft Ihnen bei der Verwendung des iOS-SDK für Experience Cloud-Lösungen.
-seo-title: iOS-SDK-Referenz
+description: Dieses Referenzmaterial hilft Ihnen beim Verwenden des iOS SDK für Experience Cloud-Lösungen.
+seo-description: Dieses Referenzmaterial hilft Ihnen beim Verwenden des iOS SDK für Experience Cloud-Lösungen.
+seo-title: iOS SDK-Referenz
 solution: Experience Cloud,Analytics
-title: iOS-SDK-Referenz
+title: iOS SDK-Referenz
 topic: Developer and implementation
 uuid: 4e80b0ce-d36e-440e-96ff-de5df6804e3e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# iOS-SDK-Referenz {#ios-sdk-reference}
+# iOS SDK-Referenz {#ios-sdk-reference}
 
 Die Informationen in diesem Abschnitt helfen Ihnen beim Verwenden des iOS-SDK für Experience Cloud-Lösungen.
 
