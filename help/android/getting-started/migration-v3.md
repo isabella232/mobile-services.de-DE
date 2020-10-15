@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Migration zur Android 4.x-Bibliothek
 topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '880'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -24,17 +24,17 @@ Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der
 >
 >Das SDK verwendet `SharedPreferences` zum Speichern von Daten, die zur Berechnung von Unique Users und Lebenszyklusmetriken benötigt werden, und anderen mit SDK-Hauptfunktionen verbundenen Daten.  Wenn Sie in `SharedPreferences` die Werte, die vom SDK erwartet werden, ändern oder entfernen, kann dies zu unerwartetem Verhalten in Form von Dateninkonsistenzen führen.
 
-In der Bibliothek der Version 4.x werden die öffentlichen Methoden zu einem Header zusammengefasst. Darüber hinaus sind alle Funktionen jetzt über Methoden auf Klassenebene verfügbar. Daher müssen Sie keine Zeiger, Instanzen oder Singletons verfolgen.
+In Version 4.x der Bibliothek sind alle öffentlichen Methoden in einem Header vereinigt. Außerdem steht die gesamte Funktionalität jetzt auch über Methoden auf Klassenebenen zur Verfügung, damit Sie Pointer, Instanzen und Singletons nicht verfolgen müssen.
 
 ## Events, Props und eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-In Version 4 können Sie in Ihrer App keine Variablen mehr wie Ereignis, eVars, Props, Erben und Listen zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
+In Version 4 können Sie in Ihrer App keine Variablen, wie z. B. Ereignisse, eVars, Props, Erben und Listen, mehr zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
 Verarbeitungsregeln bieten folgende Vorteile:
 
-* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den Appstore zu senden.
 * Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
-* Das Senden zusätzlicher Daten hat kaum Auswirkungen.
+* Das Senden zusätzlicher Daten hat geringe Auswirkungen.
 
    Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
 
@@ -92,10 +92,10 @@ Um von Version 3.x auf Version 4 zu migrieren, verschieben Sie den Wert der Ko
 | reportSuiteIDs | „rsids“ |
 | trackingServer | „server“ |
 | charSet | „charset“ |
-| currencyCode | &quot;currency&quot; |
+| currencyCode | „currency“ |
 | ssl | „ssl“ |
-| linkTrackVars | Entfernen, nicht mehr verwendet. |
-| linkTrackEvents | Entfernen, nicht mehr verwendet. |
+| linkTrackVars | Entfernen, wird nicht mehr verwendet. |
+| linkTrackEvents | Entfernen, wird nicht mehr verwendet. |
 
 ### Migration von Version 2.x
 
@@ -106,20 +106,20 @@ Um von Version 2.x auf Version 4 zu migrieren, verschieben Sie den Wert aus de
 | trackOffline | „offlineEnabled“ |
 | offlineLimit | „batchLimit“ |
 | account | „rsids“ |
-| trackingServer | &quot;server&quot;, remove the `"https://"` prefix. Das Protokollpräfix wird automatisch entsprechend der Einstellung &quot;ssl&quot;hinzugefügt. |
-| trackingServerSecure | Entfernen. Definieren Sie für sichere Verbindungen &quot;server&quot;und aktivieren Sie anschließend &quot;ssl&quot;. |
+| trackingServer | „server“, Präfix `"https://"` entfernen. Das Protokollpräfix wird basierend auf der Einstellung „ssl“ automatisch hinzugefügt. |
+| trackingServerSecure | Entfernen. Definieren Sie für sichere Verbindungen „Server“ und aktivieren Sie dann „ssl“. |
 | charSet | „charset“ |
-| currencyCode | &quot;currency&quot; |
+| currencyCode | „currency“ |
 | ssl | „ssl“ |
-| linkTrackVars | Entfernen, nicht mehr verwendet. |
-| linkTrackEvents | Entfernen, nicht mehr verwendet. |
-| timestamp | Entfernen, nicht mehr konfigurierbar. |
-| dc | Entfernen, nicht mehr verwendet. |
-| userAgent | Entfernen, nicht mehr konfigurierbar. |
-| dynamicVariablePrefix | Entfernen, nicht mehr verwendet. |
-| visitorNamespace | Entfernen, nicht mehr verwendet. |
-| usePlugins | Entfernen, nicht mehr verwendet. |
-| useBestPractices alle Aufrufe zur Abrufmessung ( getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. |
+| linkTrackVars | Entfernen, wird nicht mehr verwendet. |
+| linkTrackEvents | Entfernen, wird nicht mehr verwendet. |
+| timestamp | Entfernen, ist nicht mehr konfigurierbar. |
+| dc | Entfernen, wird nicht mehr verwendet. |
+| userAgent | Entfernen, ist nicht mehr konfigurierbar. |
+| dynamicVariablePrefix | Entfernen, wird nicht mehr verwendet. |
+| visitorNamespace | Entfernen, wird nicht mehr verwendet. |
+| usePlugins | Entfernen, wird nicht mehr verwendet. |
+| useBestPractices Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. |
 
 ## Verfolgungsaufruf und -variablen aktualisieren {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -135,13 +135,13 @@ Der Parameter `contextData` für die beiden Methoden besteht aus einer `HashMap<
 
 ## Events, Props und eVars
 
-In Version 4 können Sie Variablen wie Ereignis, eVars, Props, Erben und Listen nicht mehr direkt in Ihrer App zuweisen. Das SDK verwendet jetzt Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
+In Version 4 können Sie in Ihrer App keine Variablen, wie z. B. Ereignisse, eVars, Props, Erben und Listen, mehr direkt zuweisen. Das SDK verwendet jetzt Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
 Verarbeitungsregeln bieten folgende Vorteile:
 
-* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den Appstore zu senden.
 * Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
-* Das Senden zusätzlicher Daten hat kaum Auswirkungen.
+* Das Senden zusätzlicher Daten hat geringe Auswirkungen.
 
    Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden. Weitere Informationen finden Sie unter [Verarbeitungsregeln und Kontextdaten](/help/android/getting-started/proc-rules.md).
 
