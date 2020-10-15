@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Zielgruppe Zielgruppensegmente für Push-Nachrichten definieren und konfigurieren
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1021'
 ht-degree: 100%
 
@@ -22,9 +22,9 @@ Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurier
 
 ## Zielgruppensegmente definieren {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-Wenn ein Zielgruppensegment für Push-Messaging erstellt wird, beinhaltet das Segment möglicherweise Benutzer aus einer oder mehreren Apps, da auch Report Suites bzw. Virtual Report Suites Daten aus einer oder mehreren Apps enthalten können. Weitere Informationen zu Virtual Report Suites finden Sie unter  [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
+Wenn ein Zielgruppensegment für Push-Messaging erstellt wird, beinhaltet das Segment möglicherweise Benutzer aus einer oder mehreren Apps, da auch Report Suites bzw. Virtual Report Suites Daten aus einer oder mehreren Apps enthalten können. Weitere Informationen zu Virtual Report Suites finden Sie unter   [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
 
-In Adobe Mobile Services können Marketer Push-Benachrichtigungen nur an eine App pro Plattform senden. Wenn Marketer versuchen, Push-Benachrichtigungen an Segmente zu senden, die Benutzer aus mehreren Apps enthalten, wird eine Warnung angezeigt, in der erklärt wird, dass ein Fortfahren zu schwerwiegenden Push-Fehlern führen kann und Benutzer möglicherweise auf die Sperrliste gesetzt werden. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter  [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+In Adobe Mobile Services können Marketer Push-Benachrichtigungen nur an eine App pro Plattform senden. Wenn Marketer versuchen, Push-Benachrichtigungen an Segmente zu senden, die Benutzer aus mehreren Apps enthalten, wird eine Warnung angezeigt, in der erklärt wird, dass ein Fortfahren zu schwerwiegenden Push-Fehlern führen kann und Benutzer möglicherweise auf die Sperrliste gesetzt werden. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter   [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 Informationen zur Verwendung von Audience Manager-Daten in Ihrer Segmentdefinition finden Sie unter [Audience Analytics](https://docs.adobe.com/content/help/de-DE/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
@@ -67,7 +67,7 @@ Im Folgenden finden Sie einige Beispiele, wie Sie Segmente korrekt definieren k�
 
 **Richtig**: Der Marketer stellt Push-Zertifikate für die iOS- und Android-Versionen einer einzigen App bereit, z. B. für Adobe Photoshop. Der Marketer sendet möglicherweise eine Push-Benachrichtigung an ein Benutzersegment, das sich über beide Plattformen erstreckt.
 
-**Falsch**: Marketer stellen Push-Zertifikate für iOS- und Android-Versionen einer einzigen App bereit, z. B. für Adobe Photoshop. Wenn ein Marketer *in den letzten 30 Tagen ein Segment aller aktiven Benutzer* erstellt und an dieses gepusht hat, erhalten nur die Benutzer der Adobe Photoshop-iOS- und -Android-App den Push-Vorgang und alle Benutzer der Adobe Illustrator-iOS- und -Android-App werden auf die Sperrliste gesetzt. Weitere Informationen und Beispiele finden Sie im Abschnitt *Beheben von Push-Nachrichtenfehlern* unter  [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
+**Falsch**: Marketer stellen Push-Zertifikate für iOS- und Android-Versionen einer einzigen App bereit, z. B. für Adobe Photoshop. Wenn ein Marketer *in den letzten 30 Tagen ein Segment aller aktiven Benutzer* erstellt und an dieses gepusht hat, erhalten nur die Benutzer der Adobe Photoshop-iOS- und -Android-App den Push-Vorgang und alle Benutzer der Adobe Illustrator-iOS- und -Android-App werden auf die Sperrliste gesetzt. Weitere Informationen und Beispiele finden Sie im Abschnitt *Beheben von Push-Nachrichtenfehlern* unter   [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
 ## Zielgruppensegmente konfigurieren {#section_A92C60885A30421B8150820EC1CCBF13}
 
