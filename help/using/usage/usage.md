@@ -1,24 +1,24 @@
 ---
-description: Nutzungsberichte zeigen die durchschnittliche Sitzungslänge, täglich und monatlich eingesetzte Benutzer, Upgrades und andere Einblicke an, die Ihnen dabei helfen, zu verstehen, wie und wie oft Ihre App verwendet wird. In Treueberichten werden die Stufen der Benutzerbindung 1 Tag, 7 Tage und 28 Tage nach dem ersten Start schnell angezeigt.
+description: Mithilfe von Nutzungsberichten können Sie die durchschnittliche Sitzungslänge, täglich und monatlich beteiligte Benutzer, Upgrades und andere Einblicke anzeigen, die Ihnen Aufschluss darüber geben, wie und wie oft Ihre App verwendet wird. In Treueberichten wird der Grad der Benutzerbindung 1 Tag, 7 Tage und 28 Tage nach dem ersten Start schnell angezeigt.
 keywords: mobile
-seo-description: Nutzungsberichte zeigen die durchschnittliche Sitzungslänge, täglich und monatlich eingesetzte Benutzer, Upgrades und andere Einblicke an, die Ihnen dabei helfen, zu verstehen, wie und wie oft Ihre App verwendet wird. In Treueberichten werden die Stufen der Benutzerbindung 1 Tag, 7 Tage und 28 Tage nach dem ersten Start schnell angezeigt.
+seo-description: Mithilfe von Nutzungsberichten können Sie die durchschnittliche Sitzungslänge, täglich und monatlich beteiligte Benutzer, Upgrades und andere Einblicke anzeigen, die Ihnen Aufschluss darüber geben, wie und wie oft Ihre App verwendet wird. In Treueberichten wird der Grad der Benutzerbindung 1 Tag, 7 Tage und 28 Tage nach dem ersten Start schnell angezeigt.
 seo-title: Berichte
 solution: Experience Cloud,Analytics
 title: Berichte
 topic: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '173'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
-# Berichte{#reports}
+# Berichte {#reports}
 
-Nutzungsberichte zeigen die durchschnittliche Sitzungslänge, täglich und monatlich eingesetzte Benutzer, Upgrades und andere Einblicke an, die Ihnen dabei helfen, zu verstehen, wie und wie oft Ihre App verwendet wird. In Treueberichten werden die Stufen der Benutzerbindung 1 Tag, 7 Tage und 28 Tage nach dem ersten Start schnell angezeigt.
+Mithilfe von Nutzungsberichten können Sie die durchschnittliche Sitzungslänge, täglich und monatlich beteiligte Benutzer, Upgrades und andere Einblicke anzeigen, die Ihnen Aufschluss darüber geben, wie und wie oft Ihre App verwendet wird. In Treueberichten wird der Grad der Benutzerbindung 1 Tag, 7 Tage und 28 Tage nach dem ersten Start schnell angezeigt.
 
 Sie können die folgenden Berichte in der Mobile-Benutzeroberfläche generieren:
 
