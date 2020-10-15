@@ -6,20 +6,20 @@ solution: Experience Cloud,Analytics
 title: 'Android Wearables: Zusätzliche Hinweise'
 topic: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '161'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 
-# Android Wearables: Zusätzliche Hinweise{#android-wearables-additional-notes}
+# Android Wearables: Zusätzliche Hinweise {#android-wearables-additional-notes}
 
 Im Folgenden finden Sie einige Informationen zum Konfigurieren der Android-Erweiterung, mit der Sie Daten aus Ihrer Android Wearable-App erfassen können.
 
-* Für die Adobe Mobile Android Wearables Extension ist Android Version 4.4 (KitKat) oder höher erforderlich.
+* Für die Adobe Mobile Android Wearables-Erweiterung ist Android-Version 4.4 (KitKat) oder höher erforderlich.
 * Es gibt nur einen zusätzlichen Kontextwert, `A.RunMode`, der hinzugefügt wurde, um anzuzeigen, ob die Daten aus der entsprechenden App oder von der Erweiterung stammen.
 
    * `RunMode` = `Application`
