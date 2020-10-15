@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Lebenszyklusmetriken
 topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1240'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Lebenszyklusmetriken{#lifecycle-metrics}
+# Lebenszyklusmetriken {#lifecycle-metrics}
 
 Dieser Abschnitt enthält Informationen zu den Metriken und Dimensionen, die von der Mobile-Bibliothek nach der Implementierung des Lebenszyklus automatisch gemessen werden können, sowie einen Link zur Fehlerbehebung bei Lebenszyklusdaten. Weitere Informationen zur Fehlerbehebung finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](https://helpx.adobe.com/de/analytics/kb/troubleshoot-lifecycle-data.html).
 
@@ -31,7 +31,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 ## Lebenszyklusmetriken und -dimensionen {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Bei der Konfiguration werden Lebenszyklusmetriken in Kontextdatenparametern an Analytics, in Parametern zur Zielgruppe mit jedem mbox-Aufruf und als Signal an die Audience-Verwaltung gesendet. Analytics und Zielgruppe verwenden dasselbe Format, während die Audience-Verwaltung für jede Metrik ein anderes Präfix verwendet.
+Wenn sie konfiguriert sind, werden die Lebenszyklusmetriken in Kontextdatenparametern an Analytics, in Parametern mit jedem Mbox-Aufruf an Target und als Signal an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management für jede Metrik ein anderes Präfix verwendet.
 
 Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Kontextdaten automatisch mithilfe der Metrik oder Dimension erfasst und gemeldet. Ausnahmen werden angegeben.
 
@@ -75,7 +75,7 @@ Für Analytics werden die mit jedem Lebenszyklus-Verfolgungsaufruf gesendeten Ko
 
 * **Starts**
 
-   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn der Timeout der Lebenszyklussitzung überschritten wurde.
+   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn das Sitzungs-Timeout des Lebenszyklus überschritten wurde.
 
    >[!IMPORTANT]
    >
@@ -319,14 +319,14 @@ Die folgenden Metriken und Dimensionen werden von der Methode in der Spalte **Be
 
 * **Kampagnenmedium**
 
-   Marketingmedium, z. B. ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
+   Marketing-Medium, z. B. ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.medium`
    * Audience Manager-Eigenschaft: `c_a_referrer_campaign_medium`
 
 * **Kampagnenquelle**
 
-   Ursprünglicher Werber, z. B. ein Newsletter oder ein Social Media-Netzwerk. Erfasst durch App-Akquise.
+   Ursprünglicher Referrer, z. B. ein Newsletter oder ein Social Media-Netzwerk. Erfasst durch App-Akquise.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.referrer.campaign.source`
    * Audience Manager-Eigenschaft: `c_a_referrer_campaign_source`
