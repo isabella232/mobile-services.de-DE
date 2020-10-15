@@ -1,29 +1,29 @@
 ---
-description: Mit Adobe Mobile und dem Adobe Mobile SDK können Sie Push-Nachrichten an Ihre Benutzer senden. Mit dem SDK können Sie außerdem ganz einfach Berichte zu Benutzern erstellen, die Ihre App nach dem Klicken auf eine Push-Nachricht geöffnet haben.
-seo-description: Mit Adobe Mobile und dem Adobe Mobile SDK können Sie Push-Nachrichten an Ihre Benutzer senden. Mit dem SDK können Sie außerdem ganz einfach Berichte zu Benutzern erstellen, die Ihre App nach dem Klicken auf eine Push-Nachricht geöffnet haben.
-seo-title: Push-Benachrichtigung
+description: Adobe Mobile und das Adobe Mobile SDK ermöglichen es Ihnen, Push-Nachrichten an Ihre Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App geöffnet haben, nachdem sie sich durch eine Push-Nachricht geklickt haben.
+seo-description: Adobe Mobile und das Adobe Mobile SDK ermöglichen es Ihnen, Push-Nachrichten an Ihre Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App geöffnet haben, nachdem sie sich durch eine Push-Nachricht geklickt haben.
+seo-title: Push-Nachrichten
 solution: Experience Cloud,Analytics
-title: Push-Benachrichtigung
+title: Push-Nachrichten
 topic: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 
 # Push-Nachrichten {#push-messaging}
 
-Mit Adobe Mobile und dem Adobe Mobile SDK können Sie Push-Nachrichten an Ihre Benutzer senden. Mit dem SDK können Sie außerdem ganz einfach Berichte zu Benutzern erstellen, die Ihre App nach dem Klicken auf eine Push-Nachricht geöffnet haben.
+Adobe Mobile und das Adobe Mobile SDK ermöglichen es Ihnen, Push-Nachrichten an Ihre Benutzer zu senden. Mit dem SDK können Sie darüber hinaus auf einfache Weise Benutzer erfassen, die Ihre App geöffnet haben, nachdem sie sich durch eine Push-Nachricht geklickt haben.
 
 Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderlich**.
 
 >[!IMPORTANT]
 >
->Legen Sie die Experience Cloud ID nicht manuell in Ihrer App fest. Dies führt zur Erstellung eines neuen, eindeutigen Benutzers, der aufgrund seines Anmeldestatus keine Push-Nachrichten erhält. Ein Benutzer hat sich beispielsweise dafür entschieden, Push-Nachrichten bei Ihrer App zu empfangen. Wenn Sie nach der Anmeldung die ID manuell in Ihrer App festlegen, wird ein neuer, eindeutiger Benutzer erstellt, der sich nicht für den Empfang von Push-Nachrichten entschieden hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
+>Legen Sie die Experience Cloud ID nicht manuell in Ihrer App fest. Dies führt zur Erstellung eines neuen Unique Users, der aufgrund seines Opt-in-Status keine Push-Nachrichten erhält. Angenommen, ein Benutzer, der sich für den Empfang von Push-Nachrichten angemeldet hat, meldet sich bei Ihrer App an. Wenn Sie nach der Anmeldung die ID manuell in Ihrer App festlegen, wird ein neuer Unique User erstellt, der sich nicht für den Empfang von Push-Nachrichten entschieden hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
 >
 >Das Verschieben Ihrer App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
 
