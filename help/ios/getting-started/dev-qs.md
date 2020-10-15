@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '656'
+ht-degree: 100%
 
 ---
 
@@ -63,13 +63,13 @@ So laden Sie das SDK herunter:
 
    * Das Kontrollkästchen **[!UICONTROL Elemente kopieren, sofern erforderlich]** ist aktiviert.
    * **[!UICONTROL Gruppen erstellen]** ist ausgewählt.
-   * Keines der Kontrollkästchen im Abschnitt **[!UICONTROL Zu Zielen hinzufügen]** ist ausgewählt.
+   * Keines der Kontrollkästchen im Abschnitt **[!UICONTROL Zu Zielen hinzufügen]** ist aktiviert.
 
    ![](assets/step_3.png)
 
 1. Klicken Sie auf **[!UICONTROL Fertigstellen]**.
 1. Wählen Sie im **[!UICONTROL Projektnavigator]** **`ADBMobileConfig.json`** aus.
-1. Fügen Sie in der **[!UICONTROL Dateikontrolle]** die JSON-Datei zu den Zielen in Ihrem Projekt hinzu, die das Adobe-SDK verwenden.
+1. Fügen Sie in der **[!UICONTROL Dateikontrolle]** die JSON-Datei zu den Zielen in Ihrem Projekt hinzu, die das Adobe SDK verwenden.
 
    ![](assets/step_4.png)
 
@@ -146,7 +146,7 @@ Andere Lebenszyklusmetriken werden automatisch erfasst. Weitere Informationen fi
 
 ## Nächste Schritte {#section_A24DC703359D4B5C8F493D6421306FD3}
 
-Führen Sie die folgenden Aufgaben durch:
+Führen Sie die folgenden Aufgaben aus:
 
 * [App-Zustände verfolgen](/help/ios/analytics-main/states.md)
 * [App-Aktionen verfolgen](/help/ios/analytics-main/actions.md)
