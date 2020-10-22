@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Übersicht über Analytics
 topic: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '323'
 ht-degree: 100%
 
@@ -43,4 +43,4 @@ In den SDK werden Identifikatoren verwendet, um Anwender zu verfolgen, und hier 
 
 Die AID, die manchmal auch als Tracking Identifier bezeichnet wird, wird vom SDK generiert, wenn die App nicht für die Verwendung eines MID konfiguriert ist. Der Wert bleibt zwischen den Starts und den App-Upgrades in `SharedPreferences` erhalten. Wenn der Anwender die App von seinem Gerät löscht und anschließend die App erneut installiert oder wenn der App-Entwickler SharedPreferences löscht, wird vom SDK eine neue Kennung generiert. Dieser Vorgang führt zu einem neuen Benutzer in der Analytics-Berichterstellung.
 
-Für Benutzer in einer App, die die Unterstützung für Identity Service (MID) einführt, werden vorhandene AID-Werte mit Analytics-Treffern gesendet, und der Analytics-Treffer enthält eine AID und eine MID. Für neue Benutzer in einer App mit Unterstützung für Identity Service enthalten die Analytics-Anfragen nur eine MID. Weitere Informationen zur Identifizierung von Besuchern finden Sie unter [Besucher-Kennung](https://docs.adobe.com/content/help/de-DE/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html).
+Für Benutzer in einer App, die die Unterstützung für Identity Service (MID) einführt, werden vorhandene AID-Werte mit Analytics-Treffern gesendet, und der Analytics-Treffer enthält eine AID und eine MID. Für neue Benutzer in einer App mit Unterstützung für Identity Service enthalten die Analytics-Anfragen nur eine MID. Weitere Informationen zur Identifizierung von Besuchern finden Sie unter [Besucher-Kennung](https://docs.adobe.com/content/help/de-DE/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-calculate.html).
