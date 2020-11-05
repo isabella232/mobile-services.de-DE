@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
-source-wordcount: '422'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 89%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 100%
 # Versionshinweise {#release-notes}
 
 Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für iOS SDK 4.x für die Experience Cloud-Lösungen:
+
+**4. November 2020: Version 4.20.0**
+
+* Besucher-ID-Dienst: Der Parameter device_approval wurde hinzugefügt, wenn setAdvertisingIdentifier aufgerufen wird, nachdem die Anzeigenverfolgung aktiviert/deaktiviert wurde.
+* Analytics: Es wurde ein Fehler behoben, durch den Analytics-Treffer bei einer Installation nicht gesendet wurden, wenn iAd.framework verknüpft ist und auf dem Gerät &quot;Eingeschränkte Anzeigenverfolgung&quot;aktiviert ist.
 
 **16. Juli 2020: Version 4.19.3**
 
