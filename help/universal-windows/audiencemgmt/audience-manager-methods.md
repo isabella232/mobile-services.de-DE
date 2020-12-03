@@ -15,7 +15,7 @@ ht-degree: 43%
 ---
 
 
-# Audience Manager-Methoden{#audience-manager-methods}
+# Audience Manager-Methoden {#audience-manager-methods}
 
 Liste von Audience Manager-Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
 
