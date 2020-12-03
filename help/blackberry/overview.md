@@ -4,9 +4,9 @@ seo-description: Mit BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen könn
 seo-title: BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen
 title: BlackBerry 10 SDK 4.x für Experience Cloud-Lösungen
 uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
 
