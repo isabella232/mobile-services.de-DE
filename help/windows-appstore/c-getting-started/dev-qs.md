@@ -23,7 +23,7 @@ Sie benötigen Visual Studio 2013 oder höher, um das SDK zu implementieren.
 
 Nachdem Sie den [SDK-Download](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)entpackt haben, verfügen Sie für jede unterstützte Architektur- und Plattformkombination über einen separaten Ordner. Sie haben auch eine `ADBMobileConfig.json` Datei, die weiter unten in diesem Handbuch beschrieben wird.
 
-## Wählen Sie die richtige Version {#section_E53C5AA7D5474824A89BB32C003865A1}
+## Select the correct version {#section_E53C5AA7D5474824A89BB32C003865A1}
 
 Für jede Zielgruppe (Windows 8.1, Windows Phone 8.1) und für jede unterstützte  (x86, x64, ARM) stehen verschiedene `.dll`/ `.winmd` -dateien zur Verfügung. Die Dateien werden wie folgt in eine Ordnerstruktur aufgeteilt:
 
