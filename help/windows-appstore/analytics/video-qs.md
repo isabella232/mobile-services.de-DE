@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
 
-# Video Analytics {#video-analytics}
+# Video Analytics  {#video-analytics}
 
 Informationen zur Unterstützung von Video Analytics.
 
@@ -27,7 +27,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (Erforderlich) Erfasst den Videonamen, wie in der Implementierung angegeben, wenn ein Besucher das Video auf eine bestimmte Weise Ansicht.Sie können Classifications für diese Variable hinzufügen.
 
-   (**Optional**) The Custom Insight variable provides video pathing information.
+   (**Optional**) Die Variable „Custom Insight“ enthält Informationen zu Videopfaden.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Besuch
