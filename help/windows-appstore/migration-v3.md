@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 13%
+ht-degree: 24%
 
 ---
 
@@ -63,11 +63,11 @@ Die folgende Tabelle enthält die Konfigurationsvariablen, die Sie in die Konfig
 | reportSuiteIDs | „rsids“ |
 | trackingServer | „server“ |
 | charSet | „charset“ |
-| currencyCode | &quot;currency&quot; |
+| currencyCode | „currency“ |
 | ssl | „ssl“ |
-| setOfflineHitLimit | Entfernen, nicht mehr verwendet. |
-| linkTrackVars | Entfernen, nicht mehr verwendet. |
-| linkTrackEvents | Entfernen, nicht mehr verwendet. |
+| setOfflineHitLimit | Entfernen, wird nicht mehr verwendet. |
+| linkTrackVars | Entfernen, wird nicht mehr verwendet. |
+| linkTrackEvents | Entfernen, wird nicht mehr verwendet. |
 
 ## Verfolgungsaufruf und -variablen aktualisieren {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -81,13 +81,13 @@ The `contextData` parameter for both of these methods contains name-value pairs 
 
 ## Ereignis, Props, eVars
 
-Wenn Sie sich die [SDK-Methoden](/help/windows-appstore/c-configuration/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen einstellen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
+Wenn Sie sich die [SDK-Methoden](/help/windows-appstore/c-configuration/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen einstellen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
 Verarbeitungsregeln bieten mehrere Vorteile:
 
-* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den Appstore zu senden.
 * Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
-* Das Senden zusätzlicher Daten hat kaum Auswirkungen. Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
+* Das Senden zusätzlicher Daten hat geringe Auswirkungen. Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
 
 For more information, see *Processing Rules* in [Analytics](/help/windows-appstore/analytics/analytics.md).
 
@@ -127,7 +127,7 @@ Entfernen Sie im gesamten Code Aufrufe der folgenden Methoden:
 
 ## Variable „products“ {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Da die Variable „“ in Verarbeitungsregeln nicht verfügbar ist, können Sie die folgende Syntax zum Festlegen von `products`products verwenden:
+Da die Variable „products“ in Verarbeitungsregeln nicht verfügbar ist, können Sie die folgende Syntax zum Festlegen von `products` verwenden:
 
 ```js
 // create a processing rule to set the corresponding product event. 
