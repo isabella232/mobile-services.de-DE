@@ -4,8 +4,11 @@ seo-description: Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDK,
 seo-title: Vorabruf-Angebotsinhalte in iOS
 title: Vorabruf-Angebotsinhalte in iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +21,7 @@ Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDK, um so Angebotsin
 >
 >Die Vorabruffunktion in den Mobile SDK für iOS wird für die Aktivitätstypen „Auto Target“, „Auto Allocate“ und „Automated Personalization“ in Adobe Target nicht unterstützt.
 
-Dieser Vorgang reduziert die Ladezeit, vermeidet mehrfache Netzwerk-Aufrufe und ermöglicht es Adobe Target, eine Benachrichtigung darüber zu erhalten, welche mbox vom Benutzer der mobilen App besucht wurde. Der gesamte Inhalt wird abgerufen und während des Aufrufs für den Vorabruf im Cache abgelegt, und dieser Inhalt wird bei allen zukünftigen Aufrufen abgerufen, die im Cache abgelegte Inhalte für den spezifizierten mbox-Namen enthalten.
+Dieser Vorgang verringert die Ladezeit, verhindert mehrere Netzwerkaufrufe und ermöglicht es Adobe Target, darüber informiert zu werden, welche Mbox vom Benutzer der mobilen App besucht wurde. Alle Inhalte werden während des Vorab-Aufrufs abgerufen und zwischengespeichert. Dieser Inhalt wird für alle zukünftigen Aufrufe, die zwischengespeicherten Inhalt für den angegebenen Mbox-Namen enthalten, aus dem Cache abgerufen.
 
 Vorabgerufene Inhalte werden nicht über Starts hinweg behalten. Der vorabgerufene Inhalt verbleibt im Cache, bis die Lebensdauer der App endet oder die Methode `clearPrefetchCache()` aufgerufen wird.
 
@@ -154,13 +157,13 @@ Umfasst mbox-Namen sowie die Parameter, die für den mbox-Vorabruf verwendet wer
 
 * **`orderParameters`**
 
-   Optionales Wörterbuch, das die Schlüssel-Wert-Paare der Auftragsparameter enthält.
+   Wörterbuch, das die Schlüssel-Wert-Paare von Bestellparametern enthält.
 
    * **Typ**: NSDictionary*
 
 * **`productParameters`**
 
-   Optionales Wörterbuch, das die Schlüssel-Wert-Paare der Produktparameter enthält.
+   Wörterbuch, das die Schlüssel-Wert-Paare der Produktparameter enthält.
 
    * **Typ**: NSDictionary*
 
@@ -176,13 +179,13 @@ Diese Klasse kapselt den mbox-Namen, den Standardinhalt, die mbox-Parameter und 
 
 * **`mboxParameters`**
 
-   Der NSString-Wert steht für den Namen des Orts/der mbox, den oder die Sie aufrufen möchten.
+   Der NSString-Wert, der den Namen für die Position/Mbox darstellt, die Sie abrufen möchten.
 
    * **Typ**: NSString*
 
 * **`defaultContent`**
 
-   Der Standardinhalt, der zurückgegeben wird, wenn die Target-Server nicht erreichbar sind.
+   Der Standardinhalt, der zurückgegeben wird, wenn die Zielgruppe-Server unerreichbar sind.
 
    * **Typ**: NSString*
 
