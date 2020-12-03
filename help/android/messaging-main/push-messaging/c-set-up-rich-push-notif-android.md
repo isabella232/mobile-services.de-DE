@@ -1,18 +1,21 @@
 ---
-description: Sie können Grafikdateien an Ihre Android-Benachrichtigungen anhängen. Die visuelle Komponente kann das Benutzerinteresse an Push-Benachrichtigungen deutlich erhöhen.
-seo-description: Sie können Grafikdateien an Ihre Android-Benachrichtigungen anhängen. Die visuelle Komponente kann das Benutzerinteresse an Push-Benachrichtigungen deutlich erhöhen.
-seo-title: Multimediale Push-Benachrichtigungen empfangen
-title: Multimediale Push-Benachrichtigungen empfangen
+description: Sie können Bilddateien an Ihre Android-Benachrichtigungen anhängen. Das Hinzufügen visueller Komponenten kann die Interaktion Ihres Benutzers mit Push-Benachrichtigungen deutlich erhöhen.
+seo-description: Sie können Bilddateien an Ihre Android-Benachrichtigungen anhängen. Das Hinzufügen visueller Komponenten kann die Interaktion Ihres Benutzers mit Push-Benachrichtigungen deutlich erhöhen.
+seo-title: Rich-Push-Benachrichtigungen empfangen
+title: Rich-Push-Benachrichtigungen empfangen
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 60%
 
 ---
 
 
 # Rich-Push-Benachrichtigungen empfangen {#receive-rich-push-notifications}
 
-Sie können Grafikdateien an Ihre Android-Benachrichtigungen anhängen. Die visuelle Komponente kann das Benutzerinteresse an Push-Benachrichtigungen deutlich erhöhen.
+Sie können Bilddateien an Ihre Android-Benachrichtigungen anhängen. Das Hinzufügen visueller Komponenten kann die Interaktion Ihres Benutzers mit Push-Benachrichtigungen deutlich erhöhen.
 
 ## Eingehende Rich-Push-Nachricht verarbeiten (FCM) {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
@@ -98,4 +101,4 @@ Im Folgenden finden Sie ein Beispiel einer multimedialen Push-Benachrichtigung m
 
 ![](assets/rich-push-notification_example.png)
 
-Weitere Informationen zu multimedialen Push-Benachrichtigungen unter Android finden Sie unter [Interaktion dank multimedialer Benachrichtigungen](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).
+For more information about rich push notifications with Android, see [Engage with Rich Notifications](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).
