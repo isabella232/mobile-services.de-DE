@@ -4,8 +4,11 @@ seo-description: Diese Informationen helfen Ihnen beim Abrufen von lokal gespeic
 seo-title: Gespeicherte IDs abrufen
 title: Gespeicherte IDs abrufen
 uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 76%
 
 ---
 
@@ -16,17 +19,17 @@ Diese Informationen helfen Ihnen beim Abrufen von lokal gespeicherten SDK-Identi
 
 >[!IMPORTANT]
 >
->Die Methode `getAllIdentifiersAsync` ruft im SDK gespeicherte Identitäten ab. Diese Methode muss **vor** dem Opt-out des Benutzers aufgerufen werden.
+>Die Methode `getAllIdentifiersAsync` ruft im SDK gespeicherte Identitäten ab. You must call this method **before** the user opts-out.
 
-SDK-Identitäten (falls anwendbar) werden lokal gespeichert und in einer JSON-Zeichenfolge zurückgegeben, die Folgendes enthalten kann:
+SDK-IDs (sofern zutreffend) werden lokal gespeichert und in einer JSON-Zeichenfolge zurückgegeben, die Folgendes enthalten kann:
 
-* Unternehmenskontext – IMS-Org-ID
-* Anwender-IDs
+* Firmeninformationen: IMS-Org-IDs
+* Benutzer-IDs
 * Experience Cloud ID (MID), vormals Experience Cloud ID
-* Integrationscodes (ADID, Push-ID)
+* Integrationscodes (HINZUFÜGEN, Push-ID)
 * Datenquellen-IDs (DPID, DPUUID)
-* Analytics-IDs (AVID, AID, VID und verbundene RSIDs)
-* Ältere Target-IDs (TNTID, TNT3rdpartyID)
+* Analytics-IDs (AVID, AID, VID und zugehörige RSIDs)
+* Zielgruppe Legacy-IDs (TNTID, TNT3rdpartyID)
 * Audience Manager-ID (UUID)
 
 Im Folgenden finden Sie ein Beispiel der Methode `ADBMobile getAllIdentifiersAsync` für Android:
