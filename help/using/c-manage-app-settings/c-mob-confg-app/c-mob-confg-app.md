@@ -4,8 +4,11 @@ seo-description: 'Auf der Seite „App-Einstellungen verwalten“ können Sie fo
 seo-title: Konfigurieren Ihrer App
 title: Konfigurieren Ihrer App
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 45%
 
 ---
 
@@ -16,44 +19,44 @@ Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen
 
 * **App-Informationen**
 
-   In diesem Abschnitt finden Sie verschiedene Informationen, wie z. B. Name und Typ der App, Schlüsselmetriken sowie Lebenszyklus- und Standort-Berichte.
+   Dieser Abschnitt enthält Informationen wie den Namen der App, den Typ der App, Schlüsselmetriken, Lebenszyklus- und Ortsberichte.
 
-   * **Lebenszyklus-Berichte**
+   * **Lebenszyklusberichte**
 
       >[!TIP]
       >
       >Wenn Sie die Report Suite in Adobe Analytics erstellt haben, müssen Sie Lebenszyklus-Berichte aktivieren. Wenn Sie die Report Suite in Adobe Mobile erstellt haben, ist diese Option standardmäßig aktiviert.
 
-      Mit diesem Bericht können Sie folgende Metriken messen:
+      Mit diesem Bericht können Sie die folgenden Metriken messen:
 
       * **Akquise**
 
-         Verfolgen Sie Referrer-URLs für App-Download-Kampagnen. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
+         Verfolgen Sie verweisende URLs für Kampagnen zum Herunterladen von Apps. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
       * **Lebenszyklus**
 
-         Verfolgen Sie die Metriken und Dimensionen, die nach dem Implementieren des Lebenszyklus automatisch durch die mobile Bibliothek gemessen werden können. Weitere Informationen finden Sie in den folgenden Abschnitten:
+         Verfolgen Sie die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-         * [iOS-SDK-Lebenszyklusmetriken](/help/ios/metrics.md)
+         * [iOS SDK-Lebenszyklusmetriken](/help/ios/metrics.md)
          * [Android-Lebenszyklusmetriken](/help/android/metrics.md)
          * [Windows-Lebenszyklusmetriken](/help/universal-windows/metrics.md)
          * [BlackBerry-Lebenszyklusmetriken](/help/blackberry/metrics.md)
       * **App-Aktionen**
 
-         Aktivieren Sie Berichte und Pfade basierend auf Aktionen in Apps.
+         Aktivieren Sie Berichte und Pfade basierend auf In-App-Aktionen.
 
       * **Lebenszeitwert**
 
-         Vollziehen Sie mithilfe von App-KPIs nach, wie Benutzer mit der Zeit Werte schaffen, wie z. B. Käufe, Ad-Ansichten, beendete Videos, das Teilen von Inhalten in sozialen Netzwerken und Foto-Uploads.
+         Erfahren Sie, wie Benutzer mithilfe von App-KPIs wie Käufen, Ansichten für Werbeanzeigen, Videobeendigungen, Social Sharing, Foto-Uploads und mehr Werte generieren.
 
-      * **Zeitgesteuerte Ereignisse**
+      * **Zeitgesteuerte Ereignis**
 
-         Messen Sie die Zeit (in der App und insgesamt) zwischen wichtigen App-Aktionen, z. B. Zeit bis zum ersten Kauf.
+         Messen Sie die verstrichene Zeit (In-App- und Gesamtzeit) zwischen wichtigen App-Aktionen, z. B. der Zeit vor dem ersten Kauf.
 
 
 * **Standort-Berichte**
 
-   Mit dieser Option können Sie Berichte aktivieren, mit denen Längen- und Breitengrad verfolgt sowie bestimmte Zielpunkte (POIs) identifiziert werden können. Sie können auch Bluetooth-Beacons (UUID, Major, Minor und Nähe) verfolgen.
+   Mit dieser Option können Sie Berichte aktivieren, um Längen- und Breitengrad zu verfolgen und bestimmte Zielpunkte (POIs) zu identifizieren. Sie können auch Bluetooth-Beacons (UUID, Major, Minor und Nähe) verfolgen.
 
 * **App-SDK und Testtools für Entwickler**
 
@@ -63,4 +66,4 @@ Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen
 
    Wenn Sie ein Upgrade auf Version 4.x der SDK durchführen möchten oder derzeit an einer neuen App arbeiten, können Sie unten auf der Seite „App-Einstellungen verwalten“ die neuesten SDK und Entwicklertools herunterladen.
 
-   Nachdem die Einrichtung abgeschlossen ist, können Sie die Konfigurationsdatei an Ihre Entwickler senden, damit Daten ordnungsgemäß erfasst werden können. Wenn Sie die SDK und Tools jetzt noch nicht herunterladen möchten, können Sie jederzeit auf App-Einstellungen verwalten und dann auf die entsprechende App klicken, um die Seite App-Informationen anzuzeigen.
+   Nachdem die Einrichtung abgeschlossen ist, können Sie die Konfigurationsdatei an Ihre Entwickler senden, damit die Daten ordnungsgemäß erfasst werden können. Wenn Sie die SDK und Tools jetzt noch nicht herunterladen möchten, können Sie jederzeit auf App-Einstellungen verwalten und dann auf die entsprechende App klicken, um die Seite App-Informationen anzuzeigen.
