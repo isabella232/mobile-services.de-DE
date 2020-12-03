@@ -45,7 +45,7 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*`products`* direkt für die Bildanforderung festgelegt ist und dass andere Variablen als Kontextdaten festgelegt werden. Alle Kontextdatenvariablen müssen mithilfe von Verarbeitungsregeln zugeordnet werden:
+*`products`* wird direkt für die Bildanforderung festgelegt und die anderen Variablen werden als Kontextdaten festgelegt. Alle Kontextdatenvariablen müssen mithilfe von Verarbeitungsregeln zugeordnet werden:
 
 ![](assets/products-procrules.png)
 
