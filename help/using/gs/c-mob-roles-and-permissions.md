@@ -4,8 +4,11 @@ seo-description: In Adobe Analytics können Sie Rollen auf der Startseite der Ad
 seo-title: Rollen und Berechtigungen
 title: Rollen und Berechtigungen
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 58%
 
 ---
 
@@ -20,7 +23,7 @@ Die folgenden Rollen können Berechtigungen in der Mobile Services-Benutzeroberf
 
 ### Analytics-Admin
 
-Analytics-Admins verwalten Benutzergruppen und weisen Berechtigungen zu. Hierzu zählt auch der Mobile App Admin. Der Experience Cloud-Admin verknüpft Ihre Adobe ID mit Ihrem Adobe Analytics-Konto. So können Sie sich mit Ihrer Adobe ID bei der Mobile Services-Benutzeroberfläche anmelden. Weitere Informationen zum Experience Cloud-Administrator finden Sie unter [Administration – Benutzerverwaltung und häufig gestellte Fragen](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Ein Analytics-Administrator verwaltet Benutzergruppen und weist Berechtigungen zu, von denen einer der Administrator für die mobile App ist. Der Experience Cloud-Administrator verknüpft Ihr Adobe ID mit Ihrem Adobe Analytics-Konto, sodass Sie sich über Ihr Adobe ID bei der Mobile Services-Benutzeroberfläche anmelden können. Weitere Informationen zum Experience Cloud-Administrator finden Sie unter [Administration – Benutzerverwaltung und häufig gestellte Fragen](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
@@ -46,7 +49,7 @@ Im Folgenden finden Sie einige zusätzliche Informationen zu Zugriffsoptionen in
 
 ### Apps und Report Suites
 
-Alle Mobile Services-Apps sind mit Report Suites verbunden. Wenn Benutzer nicht auf eine Report Suite zugreifen können, können sie auch nicht auf die mit der Report Suite verbundene App zugreifen.
+Alle Mobile Service-Apps sind an Report Suites gebunden. Wenn Benutzer keinen Zugriff auf eine Report Suite haben, haben sie keinen Zugriff auf die zugehörige App dieser Report Suite.
 
 ### Mobile Services- und Analytics-Funktionen
 
@@ -69,8 +72,8 @@ Im Folgenden finden Sie die Rollen in der Mobile Services-Benutzeroberfläche, e
 * App-Einstellungen verwalten
 
    * Lebenszyklus-Berichte aktivieren
-   * Standort-Berichte aktivieren
-   * Erstellen/Aktualisieren/Löschen von Variablen und Metriken
+   * Location Berichte aktivieren
+   * Variablen und Metriken erstellen/aktualisieren/löschen
 
 ### Mobile App Admin
 
@@ -78,47 +81,47 @@ Im Folgenden finden Sie die Rollen in der Mobile Services-Benutzeroberfläche, e
 * App mit vorhandener Report Suite erstellen
 * App-Einstellungen verwalten
 
-   * Optionen des mobilen SDK der App konfigurieren
-   * UI-Einstellungen der App konfigurieren
-   * Verknüpfte Appstore-Apps konfigurieren
-   * Optionen für universelle Links der App konfigurieren
-   * Push-Dienst-Zertifikate und API-Schlüssel konfigurieren
-   * Erstellen/Ändern/Aktivieren/Deaktivieren/Duplizieren/Archivieren/Löschen von Postbacks
-   * Erstellen/Ändern/Archivieren/Löschen von Link-Zielen
+   * Mobile SDK-Optionen der App konfigurieren
+   * Benutzeroberflächeneinstellungen der App konfigurieren
+   * Verknüpfte App Store-Apps konfigurieren
+   * Optionen für universellen Link der App konfigurieren
+   * Konfigurieren von Push-Diensten-Zertifikaten und API-Schlüsseln
+   * Postbacks erstellen/aktualisieren/aktivieren/deaktivieren/Duplikat/archivieren/löschen
+   * Link-Ziele erstellen/aktualisieren/archivieren/löschen
 
-* Erstellen/Ändern/Archivieren von Marketinglinks
+* Marketing-Links erstellen/aktualisieren/archivieren
 * Erstellen/Importieren/Ändern/Löschen von Legacy-Akquise-Links
-* Erstellen/Importieren/Ändern/Löschen der Orte-Konfiguration (Zielpunkte)
-* Erstellen/Ändern/Senden/Planen/Abbrechen/Duplizieren/Archivieren/Löschen von Push-Nachrichten
-* Erstellen/Ändern/Aktivieren/Deaktivieren/Duplizieren/Archivieren/Löschen von In-App-Nachrichten
+* Konfiguration &quot;Orte (Zielpunkte) erstellen/importieren/aktualisieren/löschen&quot;
+* Push-Nachrichten erstellen/aktualisieren/senden/planen/Abbrechen/Duplikat/Archivieren/Löschen
+* In-App-Nachrichten erstellen/aktualisieren/aktivieren/deaktivieren/Duplikat/archivieren/löschen
 
-Weitere Informationen zu Gruppen und Benutzern finden Sie unter folgenden Themen:
+Weitere Informationen zu Gruppen und Benutzern finden Sie unter:
 
 * [Benutzergruppeneinstellungen](https://docs.adobe.com/content/help/de-DE/analytics/admin/user-product-management/user-groups/groups.html)
 * [Einen Benutzer zu einer Gruppe hinzufügen](https://docs.adobe.com/content/help/de-DE/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Mobile Services-Benutzer
 
-Diese Rolle verfügt über Leseberechtigungen und kann in der Mobile Services-Benutzeroberfläche Feedback bereitstellen.
+Diese Rolle hat nur Ansichten und kann in der Mobile Services-Benutzeroberfläche Feedback geben.
 
-* Feedback in der Mobile Services-Benutzeroberfläche bereitstellen
-* Apps anzeigen
+* Feedback zur Mobile Services-Benutzeroberfläche
+* Ansicht-Apps
 
    >[!IMPORTANT]
    >
    >Benutzer können nur die Report Suites anzeigen, auf die sie in Adobe Analytics zugreifen können.
 
-* App-Einstellungen anzeigen
+* Ansicht-App-Einstellungen
 
    * App-SDK-Konfiguration herunterladen
-   * Alle UI- und SDK-Einstellungen anzeigen
-   * Variablen- und Metrikkonfiguration anzeigen
-   * Postbacks anzeigen
-   * Link-Ziele anzeigen
+   * Ansicht aller UI- und SDK-Einstellungen
+   * Konfiguration von Ansichten und Metriken
+   * Ansicht Postbacks
+   * Link-Ziele für Ansichten
 
 * Berichte anzeigen und ausführen
 * Marketinglinks anzeigen
 * Legacy-Akquise-Links anzeigen und exportieren
-* Orte-Konfiguration (Zielpunkte) anzeigen und exportieren
-* Push-Nachrichten anzeigen
-* In-App-Nachrichten anzeigen
+* Konfiguration von Ansichten- und Exportplätzen (Zielpunkte)
+* Push-Nachrichten für Ansichten
+* In-App-Nachrichten für Ansichten
