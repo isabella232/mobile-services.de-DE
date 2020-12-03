@@ -4,8 +4,11 @@ seo-description: Mobile SDK für die Experience Cloud verfügen über mit der D
 seo-title: Privatsphäre und Datenschutz-Grundverordnung
 title: Privatsphäre und Datenschutz-Grundverordnung
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +23,7 @@ Mobile SDK für die Experience Cloud verfügen über mit der Datenschutz-Grundv
 
 ## Neue Version des Adobe Experience Platform Mobile SDK
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
@@ -29,7 +32,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 ## Übersicht
 
-Wenn Adobe einem Unternehmen Software und Dienstleistungen bereitstellt, tritt Adobe als Datenverarbeiter für alle personenbezogenen Daten auf, die im Rahmen dieser Dienstleistungen gespeichert und verarbeitet werden. Als Datenverarbeiter verarbeitet Adobe personenbezogene Daten in Einklang mit den unserem Unternehmen gewährten Befugnissen und den uns erteilten Anweisungen (Informationen hierzu finden Sie beispielsweise in Ihrer mit Adobe getroffenen Vereinbarung).
+Wenn Adobe einem Unternehmen Software und Dienstleistungen anbietet, fungiert Adobe als Datenverarbeiter für alle personenbezogenen Daten, die sie im Rahmen der Bereitstellung dieser Dienste verarbeitet und speichert. Als Datenverarbeiter verarbeitet Adobe personenbezogene Daten gemäß den Vorgaben und Anweisungen Ihrer Firma (z. B. gemäß Ihrer Vereinbarung mit der Adobe).
 
 Als Datenverantwortlicher können Sie SDK von Adobe Mobile Services nutzen, um DSGVO-konform Abruf- und Löschanforderungen über Ihre Apps zu verarbeiten.
 
@@ -43,10 +46,11 @@ Für die Adobe Mobile SDK-Abschnitte Ihrer Mobil-Apps können Sie folgende Einst
 
    * `privacyDefault`
    * `setPrivacyStatus`
+
    Weitere Informationen finden Sie unter [Auswahlstatus eines Benutzers festlegen](/help/ios/c-mob-privacy-gdpr-ios/privacy.md).
 
 ## Weitere Informationen {#section_7C7124C50D85469C8C8714533FB1A37D}
 
-* Weitere Informationen zur DSGVO finden Sie in unserem Artikel über die [DSGVO und Ihr Unternehmen](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
-* Die Dokumentation zur DSGVO API finden Sie auf der Seite [Datenschutz-Grundverordnung API](https://adobe.io/apis/cloudplatform/gdpr.html).
+* Weitere Informationen zu GDPR finden Sie unter [GDPR und Ihr Unternehmen](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
+* To see the GDPR API documentation, go to [General Data Protection Regulation API](https://adobe.io/apis/cloudplatform/gdpr.html).
 
