@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 68%
+ht-degree: 72%
 
 ---
 
 
-# Video Analytics {#video-analytics}
+# Video Analytics  {#video-analytics}
 
 Informationen zur Unterstützung von Video Analytics.
 
@@ -27,7 +27,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (**Erforderlich**) Erfasst den Videonamen, der in der Implementierung angegeben ist, wenn ein Besucher das Video auf irgendeine Weise Ansicht.Sie können Classifications für diese Variable hinzufügen.
 
-   (**Optional**) The Custom Insight variable provides video pathing information.
+   (**Optional**) Die Variable „Custom Insight“ enthält Informationen zu Videopfaden.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Besuch
@@ -42,7 +42,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
 * **a.media.segment**
 
-   (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
+   (**Erforderlich**) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint.
 
    Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segments eVar.
 
