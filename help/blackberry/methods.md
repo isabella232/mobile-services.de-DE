@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
@@ -172,7 +172,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **trackAction**
 
-   Verfolgt eine Aktion in der App. Actions are the things that happen in your app that you want to measure, such as &quot;logons&quot;, &quot;banner taps&quot;, &quot;feed subscriptions&quot;, and other metrics.
+   Verfolgt eine Aktion in der App. Aktionen sind die Vorgänge, die in Ihrer App stattfinden und die Sie messen möchten, z. B. &quot;Anmeldungen&quot;, &quot;Bannerklappen&quot;, &quot;Feed-Abonnement&quot;und andere Metriken.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -238,7 +238,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* die Konfigurationseigenschaft „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,  wenden Sie sich bitte an  [Enterprise Support](https://helpx.adobe.com/de/contact/enterprise-support.ec.html).
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* die Konfigurationseigenschaft „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,   wenden Sie sich bitte an   [Enterprise Support](https://helpx.adobe.com/de/contact/enterprise-support.ec.html).
 
    If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
@@ -246,7 +246,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **lifecycleTimeout**
 
-   Specifies the length of time, in seconds, that must elapse between app launches before the launch is considered a new session. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten.
+   Gibt die Dauer in Sekunden an, die zwischen dem App-Starts verstreichen muss, damit der Start als neue Sitzung erachtet wird. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten.
 
    Der Standardwert ist 300 Sekunden.
 
@@ -258,10 +258,10 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    * `optedin`: Treffer werden umgehend gesendet.
    * `optedout`: werden Treffer verworfen.
-   * `optunknown` - If your report suite is timestamp-enabled, hits are saved until the privacy status changes to opt-in (then hits are sent) or opt-out (then hits are discarded).
+   * `optunknown` - Wenn Ihre Report Suite zeitstempelfähig ist, werden die Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird.
 
       Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
-   Diese Variable legt nur den Ausgangswert fest. If this value is ever set or changed in code, then the new value is used going forward until it is changed, or the app is uninstalled and then reinstalled.
+   Diese Variable legt nur den Ausgangswert fest. Wenn dieser Wert jemals im Code festgelegt oder geändert wurde, wird der neue Wert verwendet, bis er geändert wird, oder die App wird deinstalliert und dann neu installiert.
 
    Der Standardwert lautet `optedin`.
 
