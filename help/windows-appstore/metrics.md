@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
 
-# Lebenszyklusmetriken{#lifecycle-metrics}
+# Lebenszyklusmetriken {#lifecycle-metrics}
 
 Liste der Metriken und Dimensionen, die automatisch von der Mobilbibliothek gemessen werden können.
 
@@ -68,7 +68,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
 
 * **Starts**
 
-   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn der Timeout der Lebenszyklussitzung überschritten wurde.
+   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn das Sitzungs-Timeout des Lebenszyklus überschritten wurde.
 
    * Analytics context data/Target parameter: `a.LaunchEvent`
    * Audience Manager-Signal: `c_a_LaunchEvent`
