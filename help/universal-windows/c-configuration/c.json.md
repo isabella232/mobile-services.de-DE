@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 39%
+ht-degree: 43%
 
 ---
 
@@ -61,7 +61,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **lifecycleTimeout**
 
-   Gibt die Zeitdauer in Sekunden an, die vergehen muss, bevor der Start als neue Sitzung gezählt wird. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten.
+   Gibt die Dauer in Sekunden an, die zwischen dem App-Starts verstreichen muss, damit der Start als neue Sitzung erachtet wird. Dieses Time-out gilt auch, wenn Ihre Anwendung in den Hintergrund gestellt und reaktiviert wird. Die Zeit, die Ihre App im Hintergrund ist, ist nicht in der Sitzungslänge enthalten.
 
    Der Standardwert ist 300 Sekunden.
 
