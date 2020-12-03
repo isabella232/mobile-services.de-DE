@@ -1,6 +1,6 @@
 ---
-description: Liste der von der Windows 8.1 Universal App Store-Bibliothek bereitgestellten Audience Manager-Methoden.
-seo-description: Liste der von der Windows 8.1 Universal App Store-Bibliothek bereitgestellten Audience Manager-Methoden.
+description: Liste von Audience Manager-Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
+seo-description: Liste von Audience Manager-Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
 seo-title: Audience Manager-Methoden
 solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
