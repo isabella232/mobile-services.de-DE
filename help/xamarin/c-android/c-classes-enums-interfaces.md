@@ -1,18 +1,21 @@
 ---
-description: Liste der Klassen und Aufzählungen, die in Xamarin-Anwendungen verwendet werden können
-seo-description: Liste der Klassen und Aufzählungen, die in Xamarin-Anwendungen verwendet werden können
-seo-title: Klassen, Erweiterungen und Schnittstellen
-title: Klassen, Erweiterungen und Schnittstellen
+description: Liste von Klassen und Auflistungen zur Verwendung in Xamarin-Anwendungen.
+seo-description: Liste von Klassen und Auflistungen zur Verwendung in Xamarin-Anwendungen.
+seo-title: Klassen, Auflistungen und Schnittstellen
+title: Klassen, Auflistungen und Schnittstellen
 uuid: 2527b3ae-a447-4b2e-9e90-b3b8ec8cb47a
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 25%
 
 ---
 
 
-# Classes, enums, and interfaces{#classes-enums-and-interfaces}
+# Klassen, Auflistungen und Schnittstellen{#classes-enums-and-interfaces}
 
-Liste der Klassen und Aufzählungen, die in Xamarin-Anwendungen verwendet werden können
+Liste von Klassen und Auflistungen zur Verwendung in Xamarin-Anwendungen.
 
 ## Klassen {#section_30E9E14CF38843B5B9792BBEC07667DC}
 
@@ -85,7 +88,7 @@ public class VisitorID : Object {
 }
 ```
 
-## Aufzählungen {#section_8648B871E42C416A8CB1508C2836C317}
+## Auflistungen {#section_8648B871E42C416A8CB1508C2836C317}
 
 ### MobileDataEvent
 
