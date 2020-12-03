@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 71%
+ht-degree: 78%
 
 ---
 
@@ -24,7 +24,7 @@ Weitere Informationen finden Sie in der Wissensdatenbank unter [Fehlerbehebung b
 
 ## Lebenszyklusmetriken und -dimensionen {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Bei der Konfiguration werden Lebenszyklusmetriken in Kontextdatenparametern an Analytics, in Parametern zur Zielgruppe mit jedem mbox-Aufruf und als Signal an die Audience-Verwaltung gesendet. Analytics und Zielgruppe verwenden dasselbe Format, während die Audience-Verwaltung für jede Metrik ein anderes Präfix verwendet.
+Wenn sie konfiguriert sind, werden die Lebenszyklusmetriken in Kontextdatenparametern an Analytics, in Parametern mit jedem Mbox-Aufruf an Target und als Signal an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management für jede Metrik ein anderes Präfix verwendet.
 
 Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufruf gesendet werden, automatisch mit der Metrik oder Dimension erfasst und in Berichten verwendet.
 
@@ -68,7 +68,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
 
 * **Starts**
 
-   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn der Timeout der Lebenszyklussitzung überschritten wurde.
+   Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn das Sitzungs-Timeout des Lebenszyklus überschritten wurde.
 
    * Analytics context data/Target parameter: `a.LaunchEvent`
    * Audience Manager-Signal: `c_a_LaunchEvent`
