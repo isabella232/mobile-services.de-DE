@@ -1,18 +1,21 @@
 ---
-description: Liste der Klassen und Aufzählungen, die in Xamarin-Anwendungen verwendet werden können
-seo-description: Liste der Klassen und Aufzählungen, die in Xamarin-Anwendungen verwendet werden können
-seo-title: Klassen und Erweiterungen
-title: Klassen und Erweiterungen
+description: Liste von Klassen und Auflistungen zur Verwendung in Xamarin-Anwendungen.
+seo-description: Liste von Klassen und Auflistungen zur Verwendung in Xamarin-Anwendungen.
+seo-title: Klassen und Auflistungen
+title: Klassen und Auflistungen
 uuid: 410d27ee-ce2b-4183-971e-39a7031d1bd5
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+workflow-type: tm+mt
+source-wordcount: '50'
+ht-degree: 24%
 
 ---
 
 
-# Classes and enums{#classes-and-enums}
+# Klassen und Auflistungen{#classes-and-enums}
 
-Liste der Klassen und Aufzählungen, die in Xamarin-Anwendungen verwendet werden können
+Liste von Klassen und Auflistungen zur Verwendung in Xamarin-Anwendungen.
 
 ## Klassen {#section_E28D6156EB0F4A84AAA7749DF7D3E193}
 
@@ -265,7 +268,7 @@ public static class Constants
 }
 ```
 
-## Aufzählungen {#section_A78A5A305FBF4E478EAF0492E0DFD102}
+## Auflistungen {#section_A78A5A305FBF4E478EAF0492E0DFD102}
 
 ### ADBMobileVisitorAuthenticationState
 
