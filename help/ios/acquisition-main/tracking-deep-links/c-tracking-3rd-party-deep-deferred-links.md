@@ -1,11 +1,14 @@
 ---
 description: Verwenden Sie das iOS-SDK, um die Verfolgung verzögerter Deep-Links von Drittanbietern zu implementieren.
 seo-description: Verwenden Sie das iOS-SDK, um die Verfolgung verzögerter Deep-Links von Drittanbietern zu implementieren.
-seo-title: Verfolgen verzögerter Deep-Links von Drittanbietern
-title: Verfolgen verzögerter Drittanbieter-Deep-Links
+seo-title: Verfolgen von verzögerten Deep-Links von Drittanbietern
+title: Verfolgen von verzögerten Deep-Links von Drittanbietern
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +23,7 @@ Das Adobe Mobile SDK unterstützt derzeit Deep-Links, bei dem vom App-Entwickler
 
 ## Facebook-Deep-Links {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-Ersteller von Werbeanzeigen können eine Werbeanzeige auf Facebook als Deep-Link erstellen. Wenn Benutzer auf diese Facebook-Werbeanzeige klicken, werden sie direkt an die Information weitergeleitet, an der sie in der App interessiert waren. Der Deep-Link ist **keine** Fingerprinting-URL. Während der Werbekonfiguration ist jedoch eine Option zur Bereitstellung einer Drittanbieter-Deep-Link-URL verfügbar. Von einem App-Entwickler, der die Experience Cloud Mobile-SDK und Services verwendet, wird erwartet, dass er die für Adobe Mobile Services konfigurierte Fingerprinter-URL in dieses Feld eingibt. Wenn alles ordnungsgemäß eingerichtet ist, übergibt das Facebook-SDK diese URL an die Anwendung, wenn die App installiert oder gestartet wird.
+Ersteller von Werbeanzeigen können eine Werbeanzeige auf Facebook als Deep-Link erstellen. Wenn Benutzer auf die Anzeige auf Facebook klicken, werden sie direkt zu den Informationen weitergeleitet, an denen sie in der App interessiert sind. Der Deep-Link ist **keine** Fingerprinting-URL. Während der Werbekonfiguration ist jedoch eine Option zur Bereitstellung einer Drittanbieter-Deep-Link-URL verfügbar. Von einem App-Entwickler, der die Experience Cloud Mobile-SDK und Services verwendet, wird erwartet, dass er die für Adobe Mobile Services konfigurierte Fingerprinter-URL in dieses Feld eingibt. Wenn alles ordnungsgemäß eingerichtet ist, übergibt das Facebook-SDK diese URL an die Anwendung, wenn die App installiert oder gestartet wird.
 
 ## Einrichten der SDK {#section_834CD3109175432B8173ECB6EA7DE315}
 
@@ -29,7 +32,7 @@ Ersteller von Werbeanzeigen können eine Werbeanzeige auf Facebook als Deep-Link
    Weitere Informationen finden Sie hier:
 
    * [Erste Schritte mit dem Facebook-SDK für iOS](https://developers.facebook.com/docs/ios/getting-started)
-   * [Deep-Linking-Setup](https://developers.facebook.com/docs/app-ads/deep-linking#os)
+   * [Deep-Setup](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
 1. Um das SDK einzurichten, rufen Sie `trackAdobeDeepLink` auf und übergeben Sie die URL an die SDK:
 
@@ -51,7 +54,7 @@ Wenn die Anwendung entsprechend der obigen Beschreibung eingerichtet ist, funkti
 
 1. Registrieren Sie ein URL-Schema.
 
-   Stellen Sie sicher, dass Sie ein URL-Schema registriert haben, das der Deep-Link-URL entspricht.
+   Stellen Sie sicher, dass Sie ein URL-Schema registriert haben, das mit der Deep-Link-URL identisch ist.
 
    ```objective-c
    <key>CFBundleURLTypes</key> 
