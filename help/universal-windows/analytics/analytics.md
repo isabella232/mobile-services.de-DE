@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
@@ -125,13 +125,13 @@ Wenn die Anwendung in derselben Sitzung zweimal aufgerufen `CollectLifecycleData
 
 ## Events, Props und eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Wenn Sie sich die [SDK-Methoden](/help/universal-windows/c-configuration/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für den Berichte zuzuordnen.
+Wenn Sie sich die [SDK-Methoden](/help/universal-windows/c-configuration/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
 Verarbeitungsregeln bieten mehrere Vorteile:
 
-* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den App Store zu senden.
+* Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den Appstore zu senden.
 * Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
-* Das Senden zusätzlicher Daten hat kaum Auswirkungen. Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
+* Das Senden zusätzlicher Daten hat geringe Auswirkungen. Diese Werte werden erst dann in Berichten angezeigt, wenn sie mithilfe von Verarbeitungsregeln zugeordnet werden.
 
 Alle Werte, die Sie direkt Variablen zuweisen, sollten stattdessen den Kontextdaten hinzugefügt werden.
 
@@ -139,7 +139,7 @@ Alle Werte, die Sie direkt Variablen zuweisen, sollten stattdessen den Kontextda
 
 Verarbeitungsregeln werden verwendet, um die Daten, die Sie in Kontextdatenvariablen senden, zu Berichten in &quot;evars&quot;, &quot;props&quot;und andere Variablen zu kopieren.
 
-[Schulung](https://tv.adobe.com/embed/1181/16506/) zu Verarbeitungsregeln anlässlich des Gipfeltreffens 2013
+[Processing Rules Training (Schulung zu den Verarbeitungsregeln)](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
 [Hilfe zu Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
@@ -161,7 +161,7 @@ Außerdem haben wir gehört, dass einige von Ihnen Kontextdatenschlüssel mit de
 "eVar1":"jimbo"
 ```
 
-Dies kann bei der einmaligen Zuordnung in Verarbeitungsregeln *etwas* einfacher sein, Sie verlieren jedoch die Lesbarkeit während des Debuggens, und zukünftige Code-Aktualisierungen können schwieriger sein. Stattdessen empfehlen wir dringend, aussagekräftige Namen für Schlüssel und Werte zu verwenden:
+This might make it *slightly* easier when you perform the one time mapping in processing rules, but you lose readability during debugging and future code updates can be more difficult. Stattdessen empfehlen wir dringend, aussagekräftige Namen für Schlüssel und Werte zu verwenden:
 
 ```js
 "username":"jimbo"
@@ -199,7 +199,7 @@ Mithilfe der geografischen Position können Sie Standortdaten (Breiten-/Längeng
 
    Diese werden für den automatischen Berichte an mobile Lösungsvariablen übergeben.
 
-* Entfernung vom Zentrum und Genauigkeit als Kontextdaten weitergegeben.
+* Entfernung vom Zentrum und Genauigkeit werden als Kontextdaten weitergegeben.
 
    Erfassen Sie mithilfe einer Verarbeitungsregel.
 
@@ -239,8 +239,8 @@ ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 
 Mit zeitgesteuerten Aktionen können Sie die In-App-Zeit und die Gesamtzeit zwischen dem Beginn und dem Ende einer Aktion messen. Das SDK berechnet die Dauer der Sitzung und die Gesamtzeit (sitzungsübergreifend), die zum Abschluss der Aktion erforderlich ist. Auf diese Weise können Segmente definiert werden, die zeitlich mit dem Kauf verglichen werden sollen, Übermittlungsstufe, Kassengang usw.
 
-* Gesamtanzahl der App-Sekunden zwischen Beginn und Ende - Sitzungen
-* Gesamtanzahl der Sekunden zwischen Beginn und Ende (Uhrzeit)
+* Gesamtanzahl der Sekunden in der App zwischen Start und Ende – sitzungsübergreifend
+* Gesamtanzahl der Sekunden zwischen Start und Ende (Uhrzeit)
 
 ```js
 // Timed Action Start Example 
