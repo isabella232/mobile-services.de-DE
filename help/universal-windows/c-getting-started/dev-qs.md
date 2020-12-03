@@ -27,7 +27,7 @@ Im Folgenden finden Sie einige Informationen zur Implementierung der universelle
 
 Nachdem Sie die [SDK-Download](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) -Datei entpackt haben, verfügen Sie für jede unterstützte Architektur- und Plattformkombination über einen separaten Ordner. Sie haben auch eine `ADBMobileConfig.json` Datei. Weitere Informationen zu dieser Datei finden Sie in der Konfigurationsdatei [ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
 
-## Wählen Sie die richtige Version {#section_E53C5AA7D5474824A89BB32C003865A1}
+## Select the correct version {#section_E53C5AA7D5474824A89BB32C003865A1}
 
 Für jede unterstützte Architektur (x86, x64, ARM) werden verschiedene `.dll/.winmd` Dateien bereitgestellt.
 
