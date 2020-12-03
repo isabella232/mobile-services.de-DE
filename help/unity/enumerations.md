@@ -9,8 +9,8 @@ uuid: 7109cd0b-554f-4c4a-9acc-4b60812fb747
 translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '7'
+ht-degree: 71%
 
 ---
 
