@@ -1,20 +1,23 @@
 ---
-description: Sie können das Adobe-SDK verwenden, um personenbezogene Daten (Personally Identifiable Information, PII) zu erfassen und diese an Drittanbieter-Endpunkte zu senden.
-seo-description: Sie können das Adobe-SDK verwenden, um personenbezogene Daten (Personally Identifiable Information, PII) zu erfassen und diese an Drittanbieter-Endpunkte zu senden.
+description: Sie können das Adobe SDK verwenden, um personenbezogene Daten (PII) zu erfassen und an einen Drittanbieter-Endpunkt zu senden.
+seo-description: Sie können das Adobe SDK verwenden, um personenbezogene Daten (PII) zu erfassen und an einen Drittanbieter-Endpunkt zu senden.
 seo-title: Postbacks personenbezogener Daten
 title: Postbacks personenbezogener Daten
 uuid: 08f76a52-75dd-4fc1-b4cc-4f5eef93d0f7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 88%
 
 ---
 
 
 # PII-Postbacks {#pii-postbacks}
 
-Sie können das Adobe-SDK verwenden, um personenbezogene Daten (Personally Identifiable Information, PII) zu erfassen und diese an Drittanbieter-Endpunkte zu senden.
+Sie können das Adobe SDK verwenden, um personenbezogene Daten (PII) zu erfassen und an einen Drittanbieter-Endpunkt zu senden.
 
-Wenn Sie das Adobe-SDK zum Erfassen personenbezogener Daten nutzen wollen, sollten Sie einen trackPII-Aufruf senden. Obwohl dieser Aufruf die Erfassung personenbezogener Daten ermöglicht, sendet das SDK die Daten nicht automatisch an einen Adobe-Endpunkt. Ein Postback personenbezogener Daten muss mit dem entsprechenden Endpunkt konfiguriert werden.
+Wenn Sie PII mit dem Adobe SDK erfassen möchten, sollten Sie einen PII-Aufruf für die Verfolgung senden. Obwohl die Verwendung dieses Aufrufs die Erfassung von PII-Daten ermöglicht, sendet das SDK die Daten nicht automatisch an einen Endpunkt der Adobe. Ein Postback personenbezogener Daten muss mit dem entsprechenden Endpunkt konfiguriert werden.
 
 >[!TIP]
 >
