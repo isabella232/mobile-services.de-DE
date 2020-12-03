@@ -4,8 +4,11 @@ keywords: mobile
 seo-description: Eine Übersicht zum Abschnitt „Standort“.
 seo-title: Übersicht über die Funktion „Standort“
 title: Übersicht über die Funktion „Standort“
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
 
 ## Neue Adobe Experience Cloud SDK-Version
 
-Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie für die neueste Dokumentation [hier](https://aep-sdks.gitbook.io/docs/).
+Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
 >[!IMPORTANT]
 >
