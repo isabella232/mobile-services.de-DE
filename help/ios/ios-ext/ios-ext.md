@@ -48,7 +48,6 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 >
 >* Ein Ziel, das die App enthalten soll.
 >* Ein Ziel für die Erweiterung.
-
 >
 
 
