@@ -1,16 +1,12 @@
 ---
-source-git-commit: 635ca6a376b5d1380712ebb01a3e238d5caffc6a
+source-git-commit: b743d87d8b9a590a6a488a077ac0a16ad19a6964
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '517'
-ht-degree: 85%
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 # Artikel beitragen
-
-| EXL-PR | EXL | Vorschau | Aktivieren | Veröffentlicht | Hilfe |
-|--- |--- |--- |--- |--- |--- |
-| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/mobile-services.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/mobile-services.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/mobile-services.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/mobile-services.en_exl/lastBuild/lastBuild) | [Vorschauen-URL](https://experienceleague.corp.adobe.com/docs/mobile-services/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Wir freuen uns über Beiträge unserer Community sowie von Adobe-Mitarbeitern, die nicht zum Dokumentationsteam gehören.
 
