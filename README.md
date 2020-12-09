@@ -1,7 +1,7 @@
 ---
 source-git-commit: b743d87d8b9a590a6a488a077ac0a16ad19a6964
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '435'
 ht-degree: 100%
 
@@ -16,13 +16,13 @@ Für dieses Projekt gilt der [Adobe Open Source-Verhaltenskodex](code-of-conduct
 
 ## Informationen zu Ihren Beiträgen zu den Adobe-Inhalten
 
-Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/content/help/de-DE/contributor/contributor-guide/introduction.html).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
 ### Geringfügige Änderungen
 
-Wenn Sie aus Gemeinschaftsgeist kleine Updates beitragen wollen, besuchen Sie den Artikel, und klicken Sie auf den Link **Bearbeiten** im Artikel, der zur GitHub-Quelle des Artikels führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Contributor-Handbuch](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Wenn Sie aus Gemeinschaftsgeist kleine Updates beitragen wollen, besuchen Sie den Artikel, und klicken Sie auf den Link **Bearbeiten** im Artikel, der zur GitHub-Quelle des Artikels führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Contributor-Handbuch](https://docs.adobe.com/content/help/de-DE/contributor/contributor-guide/introduction.html).
 
 Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentation und Codebeispiele in diesem Repository senden, sind durch die Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -42,7 +42,7 @@ Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams
 
 Community-Mitarbeiter können die GitHub-Benutzeroberfläche zur einfachen Bearbeitung oder zur Abspaltung des Repositorys verwenden, um umfangreiche Beiträge vorzunehmen.
 
-Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/content/help/de-DE/contributor/contributor-guide/introduction.html).
 
 ## Markdown zum Formatieren Ihres Themas verwenden
 
