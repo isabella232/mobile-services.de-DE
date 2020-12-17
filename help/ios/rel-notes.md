@@ -7,10 +7,10 @@ title: Versionshinweise
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 90%
 
 ---
 
@@ -18,6 +18,12 @@ ht-degree: 100%
 # Versionshinweise {#release-notes}
 
 Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informationen für iOS SDK 4.x für die Experience Cloud-Lösungen:
+
+**15. Dezember 2020: Version 4.21.0**
+
+* Allgemein - Das SDK wird jetzt mit XCFrameworks verteilt, um Hardware mit der neuen Apple M1-Architektur zu unterstützen und gleichzeitig die Unterstützung der bestehenden Intel Architektur zu erhalten.
+   * WICHTIG: Für die Aktualisierung auf AdobeMobile XCFrameworks ist Xcode 12.0 oder höher erforderlich
+   * WICHTIG: Bei Verwendung von Cocoapods erfordert die Aktualisierung auf AdobeMobile XCFrameworks Cocoapods 1.10.0 oder höher
 
 **4. November 2020: Version 4.20.0**
 
