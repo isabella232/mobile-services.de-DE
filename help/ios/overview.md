@@ -7,10 +7,10 @@ title: iOS SDK 4.x für Experience Cloud-Lösungen
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 1b888d0184e20d2134edbc488d36c09d0492a334
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '538'
+ht-degree: 84%
 
 ---
 
@@ -18,6 +18,20 @@ ht-degree: 100%
 # iOS-SDK 4.x für Experience Cloud-Lösungen {#ios-sdk-x-for-experience-cloud-solutions}
 
 Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native Apple iPhone- und iPad-Anwendungen messen, zielgruppenorientierte Inhalte in Ihren Apps bereitstellen und Zielgruppendaten über Audience Manager nutzen und erfassen.
+
+>[!IMPORTANT]
+>
+>Ab Version 4.21.0 verfügt das iOS SDK über eine erforderliche Mindestversion von Xcode 12. Wenn Sie Cocoapods verwenden, um Abhängigkeiten in Ihrer App zu verwalten, erfordert das Adobe SDK Version 1.10.0 oder höher von Cocoapods.
+
+Wenn Sie Version 4.21.0 oder neuer verwenden, lesen Sie die Dokumentation mit folgenden Änderungen:
+
+* Jedes Mal, wenn eine Binärbibliotheksdatei erwähnt wird, sollte deren XCFraframework-Ersatz stattdessen verwendet werden:
+   * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
+   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
+* Die `ADBMobile.h`-Header-Datei ist in jedem XCFraframework eingebettet.
+* Wenn Sie die Adobe XCFrameworks manuell zu Ihrem Projekt hinzufügen, stellen Sie sicher, dass sie nicht eingebettet sind.
 
 >[!IMPORTANT]
 >
