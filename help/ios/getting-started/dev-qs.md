@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 75%
+ht-degree: 99%
 
 ---
 
@@ -33,29 +33,29 @@ So laden Sie das SDK herunter:
 
 >[!IMPORTANT]
 >
->Ab Version 4.21.0 wird das SDK über XCFrameworks verteilt. Gehen Sie wie folgt vor, wenn Sie 4.21.0 oder höher verwenden.
+>Ab Version 4.21.0 wird das SDK über XCFrameworks verteilt. Gehen Sie wie folgt vor, wenn Sie Version 4.21.0 oder höher verwenden.
 >
->Für Version 4.21.0 des SDK ist Xcode 12.0 oder neuer und, falls zutreffend, Cocoapods 1.10.0 oder neuer erforderlich.
+>Für Version 4.21.0 des SDK ist Xcode 12.0 oder höher und, falls verwendet, Cocoapods 1.10.0 oder höher erforderlich.
 
-1. Laden Sie die Datei `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` herunter, dekomprimieren Sie sie und stellen Sie sicher, dass Sie die folgenden Softwarekomponenten im Ordner `AdobeMobileLibrary` haben:
+1. Laden Sie die Datei `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` herunter, entpacken Sie sie und stellen Sie sicher, dass Sie über folgende Software-Komponenten im Verzeichnis `AdobeMobileLibrary` verfügen:
 
    * `ADBMobile.h` - die Objective-C Header-Datei, die für das iOS SDK verwendet wird.
-   * `ADBMobileConfig.json` - die SDK-Konfigurationsdatei, die für Ihre App angepasst wurde.
-   * `AdobeMobile.xcframework` - enthält zwei Fettbibliotheken, jeweils einen für iOS-Geräte (armv7, armv7s, arm64) und Simulatoren (i386, x86_64, arm64).
+   * `ADBMobileConfig.json`: die SDK-Konfigurationsdatei, die für Ihre Applikation angepasst ist.
+   * `AdobeMobile.xcframework`: enthält zwei umfangreiche Binärdateien, jeweils eine für iOS-Geräte (armv7, armv7s, arm64) und für Simulatoren (i386, x86_64, arm64). 
 
-      Dieses XCFraframework sollte beim Targeting einer iOS-App verknüpft werden.
+      Dieses XCFramework sollte beim Targeting einer iOS-Applikation verknüpft werden.
 
-   * `AdobeMobileExtension.xcframework` - enthält zwei Fettbibliotheken, jeweils einen für iOS-Geräte (armv7, armv7s, arm64) und Simulatoren (i386, x86_64, arm64).
+   * `AdobeMobileExtension.xcframework`: enthält zwei umfangreiche Binärdateien, jeweils eine für iOS-Geräte (armv7, armv7s, arm64) und für Simulatoren (i386, x86_64, arm64). 
 
-      Dieses XCFraframework sollte beim Targeting einer iOS-Erweiterung verknüpft werden.
+      Dieses XCFramework sollte beim Targeting einer iOS-Erweiterung verknüpft werden.
 
-   * `AdobeMobileWatch.xcframework` - enthält zwei Fett-Binärdateien, jeweils einen für watchOS-Geräte (arm64_32, armv7k) und Simulatoren (i386, x86_64, arm64).
+   * `AdobeMobileWatch.xcframework`: enthält zwei Fat-Binärdateien, jeweils eine für watchOS-Geräte (arm64_32, armv7k) und für Simulatoren (i386, x86_64, arm64). 
 
-      Dieses XCFraframework sollte beim Targeting einer Apple Watch-App (watchOS) verknüpft werden.
+      Dieses XCFramework sollte beim Targeting einer Apple Watch-Applikation (watchOS) verknüpft werden.
 
-   * `AdobeMobileTV.xcframework` - enthält zwei Fett-Binärdateien, jeweils einen für tvOS-Geräte (arm64) und Simulatoren (x86_64, arm64).
+   * `AdobeMobileTV.xcframework`: enthält zwei Fat-Binärdateien, jeweils eine für tvOS-Geräte (arm64) und für Simulatoren (x86_64, arm64). 
 
-      Dieses XCFraframework sollte beim Targeting einer Apple TV-App (tvOS) verknüpft werden.
+      Dieses XCFramework sollte beim Targeting einer Apple TV-Applikation (tvOS) verknüpft werden.
 
 >[!IMPORTANT]
 >
@@ -134,7 +134,7 @@ So laden Sie das SDK herunter:
 
    >[!IMPORTANT]
    >
-   > Wenn Sie Version 4.21.0 oder höher verwenden, stellen Sie sicher, dass die Adobe XCFrameworks nicht eingebettet ist.
+   > Wenn Sie Version 4.21.0 oder höher verwenden, stellen Sie sicher, dass die Adobe XCFrameworks nicht eingebettet sind.
 
    ![](assets/no-embed.png)
 
