@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ So laden Sie das SDK herunter:
 
 1. Laden Sie die Datei `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` herunter, entpacken Sie sie und stellen Sie sicher, dass Sie über folgende Software-Komponenten im Verzeichnis `AdobeMobileLibrary` verfügen:
 
-   * `ADBMobile.h` - die Objective-C Header-Datei, die für das iOS SDK verwendet wird.
+   * `ADBMobile.h`: die Objective-C-Header-Datei, die für das iOS SDK verwendet wird.
    * `ADBMobileConfig.json`: die SDK-Konfigurationsdatei, die für Ihre Applikation angepasst ist.
    * `AdobeMobile.xcframework`: enthält zwei umfangreiche Binärdateien, jeweils eine für iOS-Geräte (armv7, armv7s, arm64) und für Simulatoren (i386, x86_64, arm64). 
 
