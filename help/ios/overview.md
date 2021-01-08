@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: iOS SDK 4.x für Experience Cloud-Lösungen
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native App
 
 >[!IMPORTANT]
 >
->Ab Version 4.21.0 verfügt das iOS SDK über eine erforderliche Mindestversion von Xcode 12. Wenn Sie Cocoapods verwenden, um Abhängigkeiten in Ihrer App zu verwalten, erfordert das Adobe SDK Version 1.10.0 oder höher von Cocoapods.
+>Ab Version 4.21.0 verfügt das SDK für iOS über eine erforderliche Mindestversion von Xcode 12. Wenn Sie Cocoapods verwenden, um Abhängigkeiten in Ihrer Applikation zu verwalten, erfordert das Adobe-SDK die Cocoapods-Version 1.10.0 oder höher.
 
-Wenn Sie Version 4.21.0 oder neuer verwenden, lesen Sie die Dokumentation mit folgenden Änderungen:
+Wenn Sie Version 4.21.0 oder höher verwenden, lesen Sie die Dokumentation und beachten Sie die folgenden Änderungen:
 
-* Jedes Mal, wenn eine Binärbibliotheksdatei erwähnt wird, sollte deren XCFraframework-Ersatz stattdessen verwendet werden:
+* Jedes Mal, wenn eine Binärbibliotheksdatei erwähnt wird, sollte stattdessen deren XCFramework-Ersatz verwendet werden:
    * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
-   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
-   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
-   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
+   * `AdobeMobileLibrary_Extension.a` > `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` > `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` > `AdobeMobileTV.xcframework`
 * Wenn Sie die Adobe XCFrameworks manuell zu Ihrem Projekt hinzufügen, stellen Sie sicher, dass sie nicht eingebettet sind.
 
 >[!IMPORTANT]
