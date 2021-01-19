@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Versionshinweise
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 53d407056dd89dcf32d1895231999b2d92e879ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 
 **13. Januar 2021: Version 4.21.1**
 
-* Allgemein - Es wurde ein Problem behoben, das beim Herunterfahren der App SQLite-Ausnahmen verursachte.
+* Allgemein – Es wurde ein Problem behoben, das evtl. beim Herunterfahren des Programms SQLite Ausnahmen verursachte.
 
 **15. Dezember 2020: Version 4.21.0**
 
