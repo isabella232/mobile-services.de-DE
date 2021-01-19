@@ -7,7 +7,7 @@ title: Zur iOS-Bibliothek der Version 4.x migrieren
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 100%
@@ -122,7 +122,7 @@ Verschieben Sie den Wert aus der ersten Spalte in die Variable in der zweiten Sp
 | dynamicVariablePrefix | Entfernen, wird nicht mehr verwendet. |
 | visitorNamespace | Entfernen, wird nicht mehr verwendet. |
 | usePlugins | Entfernen, wird nicht mehr verwendet. |
-| useBestPractices Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](//help/ios/metrics.md). |
+| useBestPractices Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/ios/metrics.md). |
 
 
 ## Verfolgungsaufruf und -variablen aktualisieren {#section_96E7D9B3CDAC444789503B7E7F139AB9}
