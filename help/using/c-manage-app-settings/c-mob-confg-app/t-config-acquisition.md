@@ -8,7 +8,7 @@ title: SDK-Akquise-Optionen konfigurieren
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Sie können die SDK-Akquise-Optionen beim Erstellen einer neuen App oder Bearbei
 
    * **[!UICONTROL Aktivieren]**
 
-      Erstellen Sie Appstore-Links, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen. Weitere Informationen finden Sie in [Akquise](//help/using/acquisition-main/acquisition-main.md).
+      Erstellen Sie Appstore-Links, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen. Weitere Informationen finden Sie in [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
    * **[!UICONTROL Referrer-Timeout (Sekunden)]**
 
