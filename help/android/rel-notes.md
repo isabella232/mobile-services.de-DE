@@ -7,10 +7,10 @@ title: Versionshinweise
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 8b5842068c602f3f9b1c020c1c9a686eb0e56b74
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '303'
+ht-degree: 98%
 
 ---
 
@@ -58,4 +58,4 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 * Besucher-ID-Dienst: Die Timeouts für das Verbinden und Lesen wurden von 2 Sekunden auf 5 Sekunden erhöht.
 
 
-Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Weitere Informationen zu aktuellen und älteren Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
