@@ -1,22 +1,21 @@
 ---
-description: Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep-Links in Ihren iOS- oder Android-Apps herstellen.
-keywords: mobile
+description: Die Verknüpfung innerhalb von Apps und Websites ist wichtig, um die Benutzerfreundlichkeit zu erhalten. Erfahren Sie, wie universelle und App-Links funktionieren und Unterschiede bestehen.
 seo-description: Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep-Links in Ihren iOS- oder Android-Apps herstellen.
 seo-title: Universelle Links (Apple) und App-Links (Android)
 solution: Experience Cloud,Analytics
-title: Universelle Links (Apple) und App-Links (Android)
-topic: Metrics
+title: Handbuch zu universellen Links und App-Links
+topic: Metriken
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 100%
+source-wordcount: '1146'
+ht-degree: 96%
 
 ---
 
 
-# Universelle Links (Apple) und App-Links (Android) {#universal-links-and-app-links}
+# Universelle Links im Vergleich zu App-Links: Wie funktionieren sie? {#universal-links-and-app-links}
 
 Mit universellen Links (iOS) und App-Links (Android) können Sie eine Verbindung zu Deep-Links in Ihren iOS- oder Android-Apps herstellen.
 
