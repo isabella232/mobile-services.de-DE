@@ -5,16 +5,16 @@ seo-description: Zeigen Sie eine Liste Ihrer In-App- und Push-Nachrichten mit In
 seo-title: Nachrichten verwalten
 solution: Experience Cloud,Analytics
 title: Nachrichten verwalten
-topic: Metrics
+topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
+exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
-
 
 # Nachrichten verwalten {#manage-messages}
 
@@ -66,4 +66,3 @@ Im Folgenden finden Sie weitere Informationen zu den Aufgaben, die Sie für Nach
 
    1. Klicken Sie auf **[!UICONTROL Archiv anzeigen]**.
    1. Aktivieren Sie das Kontrollkästchen neben mindestens einer archivierten Nachricht und klicken Sie auf **[!UICONTROL Archivierung der Ausgewählten aufheben]**.
-
