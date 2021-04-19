@@ -4,22 +4,22 @@ seo-description: Die Variable "products"kann nicht mit Verarbeitungsregeln einge
 seo-title: 'Variable „products“ '
 solution: Experience Cloud,Analytics
 title: 'Variable „products“ '
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
+exl-id: 0575236c-9858-4bf9-a2ce-6e2667d58ddd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 7%
 
 ---
 
-
 # Variable „products“ {#products-variable}
 
 Die Variable &quot;products&quot;kann nicht mit Verarbeitungsregeln eingestellt werden. Im mobilen SDK müssen Sie eine spezielle Syntax innerhalb des Kontextdatenparameters verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
 
-To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products` variable:
+Um die Variable *`products`* festzulegen, setzen Sie einen Kontextdatenschlüssel auf `"&&products"` und den Wert mit der für die Variable *`products` definierten Syntax:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -45,15 +45,15 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-The *`products`* is set directly on the image request, and the other variables are set as context data. Alle Kontextdatenvariablen müssen mithilfe von Verarbeitungsregeln zugeordnet werden:
+Die Variablen *`products`* werden direkt in der Bildanforderung festgelegt, die anderen Variablen werden als Kontextdaten festgelegt. Alle Kontextdatenvariablen müssen mithilfe von Verarbeitungsregeln zugeordnet werden:
 
 ![](assets/products-procrules.png)
 
-Sie müssen die *`products`* Variable nicht mithilfe von Verarbeitungsregeln zuordnen, da sie direkt auf der Bildanforderung des SDK eingestellt wird.
+Sie müssen die Variable *`products`* nicht mithilfe von Verarbeitungsregeln zuordnen, da sie direkt auf der Bildanforderung des SDK eingestellt wird.
 
 ## Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen {#section_685D53AD3D064F9A8E225F995A9BA545}
 
-An example of the *`products`* variable with Merchandising eVars and product-specific events.
+Ein Beispiel für die Variable *`products`* mit Merchandising eVars und produktspezifischen Ereignissen.
 
 ```
 //create a context data dictionary 
@@ -76,5 +76,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Wenn Sie ein produktspezifisches Ereignis mithilfe der *`&&products`* Variablen auslösen, müssen Sie dieses Ereignis auch in der *`&&events`* Variablen einstellen, da das Ereignis andernfalls während der Verarbeitung herausgefiltert wird.
-
+>Wenn Sie ein produktspezifisches Ereignis mit der Variablen *`&&products`* Trigger haben, müssen Sie dieses Ereignis auch in der Variablen *`&&events`* festlegen. Andernfalls wird das Ereignis während der Verarbeitung herausgefiltert.
