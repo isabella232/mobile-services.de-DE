@@ -4,16 +4,16 @@ seo-description: Adobe Mobile und das Adobe Mobile SDK ermöglichen es Ihnen, 
 seo-title: Push-Nachrichten
 solution: Experience Cloud,Analytics
 title: Push-Nachrichten
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
+exl-id: 4472e0b9-1d00-4e1a-8653-f3976b74c078
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 100%
 
 ---
-
 
 # Push-Nachrichten {#push-messaging}
 
@@ -23,7 +23,7 @@ Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderli
 
 >[!IMPORTANT]
 >
->Legen Sie die Experience Cloud ID nicht manuell in Ihrer App fest. Dies führt zur Erstellung eines neuen Unique Users, der aufgrund seines Opt-in-Status keine Push-Nachrichten erhält. Angenommen, ein Benutzer, der sich für den Empfang von Push-Nachrichten angemeldet hat, meldet sich bei Ihrer App an. Wenn Sie nach der Anmeldung die ID manuell in Ihrer App festlegen, wird ein neuer Unique User erstellt, der sich nicht für den Empfang von Push-Nachrichten entschieden hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
+>Legen Sie die Experience Cloud ID nicht manuell in Ihrer App fest. Dies führt zur Erstellung eines neuen eindeutigen Benutzers, der aufgrund seines Opt-in-Status keine Push-Nachrichten erhält. Angenommen, ein Benutzer, der sich für den Empfang von Push-Nachrichten angemeldet hat, meldet sich bei Ihrer App an. Wenn Sie nach der Anmeldung die ID manuell in Ihrer App festlegen, wird ein neuer eindeutiger Benutzer erstellt, der sich nicht für den Empfang von Push-Nachrichten entschieden hat. Dementsprechend erhält dieser neue Benutzer keine Push-Nachrichten.
 >
 >Das Verschieben Ihrer App in eine neue Report Suite wird nicht unterstützt. Wenn Sie zu einer neuen Berichtssuite migrieren, kann Ihre Push-Konfiguration kaputt gehen und Nachrichten werden möglicherweise nicht gesendet.
 
@@ -77,6 +77,3 @@ Um In-App-Nachrichten zu nutzen, ist SDK-Version 4.6 (oder höher) **erforderli
       * Verwenden Sie `Config.collectLifecycleData(this)` oder `Config.collectLifecycleData(this, contextData)`.
 
       * Verwenden Sie **nicht** `Config.collectLifecycleData()`.
-
-
-
