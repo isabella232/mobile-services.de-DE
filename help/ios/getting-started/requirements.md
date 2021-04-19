@@ -4,16 +4,16 @@ seo-description: Führen Sie diese Schritte aus, um eine Report Suite zum Erfass
 seo-title: Vorbereitung
 solution: Experience Cloud,Analytics
 title: Vorbereitung
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
+exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
 ---
-
 
 # Vorbereitung {#before-you-start}
 
@@ -75,7 +75,7 @@ So erstellen Sie eine Report Suite, um App-Daten zu erfassen und eine App zu def
 
 1. Wählen Sie im Dropdown-Menü **[!UICONTROL Report Suite]** die Option **[!UICONTROL Neue Report Suite]** aus.
 
-1. Geben Sie den Namen Ihrer App ein und wählen Sie eine eindeutige Report Suite-ID.
+1. Geben Sie den Namen Ihrer App ein und wählen Sie eine eindeutige Report-Suite-ID.
 
    Beispiel einer Report Suite-ID: `mycomobileappdev`. Sie müssen separate Report Suites und Apps für die Entwicklungs- und Produktionsversionen einrichten. Wenn Sie bereit sind, die Produktionsversion einzurichten, wiederholen Sie diese Schritte.
 1. Behalten Sie die Option **[!UICONTROL Vorlage für mobile Anwendung]** bei.
@@ -101,4 +101,3 @@ Um das mobile SDK herunterzuladen,
 >[!TIP]
 >
 >Der SDK-Download beinhaltet auch eine Konfigurationsdatei. Sie müssen die Datei also nicht separat herunterladen. Wenn Sie das SDK jedoch bereits heruntergeladen haben und nur Ihre Einstellungen aktualisieren möchten, laden Sie die Konfigurationsdatei erneut herunter.
-
