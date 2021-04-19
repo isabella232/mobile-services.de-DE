@@ -4,16 +4,16 @@ seo-description: Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstel
 seo-title: Besucher zwischen einer App und dem mobilen Internet verfolgen
 solution: Experience Cloud,Analytics
 title: Besucher zwischen einer App und dem mobilen Internet verfolgen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
+exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 100%
 
 ---
-
 
 # Besucher zwischen einer App und dem mobilen Internet verfolgen {#visitor-tracking-between-an-app-and-mobile-web}
 
@@ -21,7 +21,7 @@ Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstellen, dass die Bes
 
 ## Besucher-IDs in Apps
 
-Das iOS SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird. Diese ID wird im persistenten Speicher auf dem Mobilgerät gespeichert und bei jedem Treffer gesendet. Diese ID wird nur entfernt, wenn der Benutzer die App deinstalliert.
+Das iOS SDK generiert eine Unique-Visitor-ID, wenn eine App installiert wird. Diese ID wird im persistenten Speicher auf dem Mobilgerät gespeichert und bei jedem Treffer gesendet. Diese ID wird nur entfernt, wenn der Benutzer die App deinstalliert.
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ Das iOS SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird. Di
 
 ## Besucher-IDs im mobilen Web
 
-Typische Implementierungen des mobilen Webs nutzen dieselben standardmäßigen Analytics-Dateien `s_code.js` oder `AppMeasurement.js`, die auch bei Desktop-Sites verwendet werden. Die JavaScript-Bibliotheken besitzen ihre eigenen Methoden zum Generieren von Unique Visitor-IDs, wodurch eine unterschiedliche Besucher-ID generiert werden muss, wenn Sie mobile Webinhalte über Ihre App öffnen.
+Typische Implementierungen des mobilen Webs nutzen dieselben standardmäßigen Analytics-Dateien `s_code.js` oder `AppMeasurement.js`, die auch bei Desktop-Sites verwendet werden. Die JavaScript-Bibliotheken besitzen ihre eigenen Methoden zum Generieren von Unique-Visitor-IDs, wodurch eine unterschiedliche Besucher-ID generiert werden muss, wenn Sie mobile Webinhalte über Ihre App öffnen.
 
 Verwenden derselben Besucher-ID in der App und im mobilen Web und Übergeben der App-Besucher-ID in der URL an das mobile Web:
 
