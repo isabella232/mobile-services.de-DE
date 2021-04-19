@@ -5,16 +5,16 @@ seo-description: Mithilfe dieser Informationen können Probleme mit Push-Nachric
 seo-title: Fehlerbehebung für Push-Nachrichten
 solution: Experience Cloud,Analytics
 title: Fehlerbehebung für Push-Nachrichten
-topic: Metrics
+topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
+exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
-
 
 # Fehlerbehebung für Push-Nachrichten {#troubleshooting-push-messaging}
 
@@ -28,7 +28,7 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 
    Jede Report Suite verfügt über eine Einstellung, die festlegt, wann eingehende Analytics-Treffer verarbeitet werden sollen. Der Standardwert liegt bei 1 Stunde zur vollen Stunde. Die eigentliche Verarbeitung von Analytics-Treffern kann bis zu 30 Minuten dauern, in der Regel sind es jedoch 15 bis 20 Minuten.
 
-   Beispielsweise verarbeitet eine Report Suite Treffer jede Stunde. Wenn Sie die Verarbeitungszeit von maximal 30 Minuten berücksichtigen, könnte es bis zu 90 Minuten dauern, bis ein eingehender Treffer für eine Push-Nachricht verfügbar ist. Wenn ein Benutzer die App um 9:01 Uhr gestartet hat, wird der Treffer auf der Mobile Services-Benutzeroberfläche als neuer Unique User zwischen 10:15 und 10:30 Uhr angezeigt.
+   Beispielsweise verarbeitet eine Report Suite Treffer jede Stunde. Wenn Sie die Verarbeitungszeit von maximal 30 Minuten berücksichtigen, könnte es bis zu 90 Minuten dauern, bis ein eingehender Treffer für eine Push-Nachricht verfügbar ist. Wenn ein Benutzer die App um 9:01 Uhr gestartet hat, wird der Treffer auf der Mobile Services-Benutzeroberfläche als neuer eindeutiger Benutzer zwischen 10:15 und 10:30 Uhr angezeigt.
 
 * **Warten auf Push-Dienst**
 
@@ -39,8 +39,9 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
    >Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird. Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie in der entsprechenden Dokumentation:
    >
    >* **APNS**: [Servicequalität](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**: [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options)
+      >
+      >
+   * **GCM**: [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Wie erneuere ich mein Apple Push Service-Zertifikat?
