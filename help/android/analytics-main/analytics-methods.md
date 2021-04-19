@@ -1,20 +1,20 @@
 ---
 description: Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden finden Sie eine Liste von Adobe Analytics-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Analytics-Methoden
 solution: Experience Cloud,Analytics
 title: Analytics-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
+exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '744'
 ht-degree: 100%
 
 ---
-
 
 # Analytics-Methoden {#analytics-methods}
 
@@ -66,7 +66,7 @@ Verfolgt eine Aktion in der App.
 * **getTrackingIdentifier**
 Gibt die automatisch erzeugte Besucher-ID für Analytics zurück.
 
-   Hierbei handelt es sich um eine App-spezifische Unique Visitor-ID, die beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Die ID bleibt zwischen App-Upgrades erhalten und wird entfernt wenn die App deinstalliert wird.
+   Hierbei handelt es sich um eine App-spezifische Unique-Visitor-ID, die beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Die ID bleibt zwischen App-Upgrades erhalten und wird entfernt wenn die App deinstalliert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
