@@ -5,16 +5,16 @@ seo-description: Aufgrund der vielfältigen Möglichkeiten beim Anpassen von Ber
 seo-title: Berichtstypen
 solution: Experience Cloud,Analytics
 title: Berichtstypen
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
+exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '772'
 ht-degree: 100%
 
 ---
-
 
 # Berichtstypen {#report-types}
 
@@ -62,7 +62,7 @@ Rangberichte zeigen Ihnen, wie oft die 50 wichtigsten Dimensionen zu einer Metri
 
 ![](assets/ranked.png)
 
-## Sunburst-Bericht  {#section_17A9842039174DE094A6B1E9837E35BB}
+## Sunburst-Bericht   {#section_17A9842039174DE094A6B1E9837E35BB}
 
 Sunburst-Berichte bestehen beispielsweise aus dem Basisbericht und Aufschlüsselungen. Die Visualisierung verwendet die Höhe, um die Metrik und die Leistungsunterschiede zwischen den Metriken anzuzeigen. Jeder konzentrische Kreis stellt ein Zielgruppensegment in der Kategorie für diesen Kreis dar. Sie können Aktionen für eine Zielgruppe ausführen, z. B. einen fixierbaren Filter anwenden, eine Metrik ausblenden und Metriken anzeigen.
 
@@ -85,7 +85,7 @@ Ein Pfadsetzungsbericht dient der Pfadanalyse. Er zeigt ein Pfadsetzungsdiagramm
 
 Jeder Knoten hat die Form eines Kastens und stellt einen Status in den Pfaden der Benutzer durch eine App dar. In der obigen Abbildung stellt der oberste Knoten beispielsweise die Anzahl der Benutzer dar, die die App gestartet und ein Foto aus der Galerie ausgewählt haben.
 
-### Trichterbericht  {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
+### Trichterbericht   {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
 
 Mit Trichterberichten können Sie feststellen, wo Kunden bei der Interaktion mit Ihrer App eine Marketing-Kampagne verlassen haben oder von einem definierten Konversionspfad abgewichen sind. Sie können den Trichterbericht auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.
 
