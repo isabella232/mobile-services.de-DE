@@ -4,16 +4,16 @@ seo-description: Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihre
 seo-title: Implementierung der iOS-Erweiterung
 solution: Experience Cloud,Analytics
 title: Implementierung der iOS-Erweiterung
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
+exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 
 ---
-
 
 # Implementierung der iOS-Erweiterung {#ios-extension-implementation}
 
@@ -48,6 +48,7 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 >
 >* Ein Ziel, das die App enthalten soll.
 >* Ein Ziel für die Erweiterung.
+
 >
 
 
@@ -114,4 +115,3 @@ Hinweis:
 * Wenn die übergeordnete App nie gestartet wird, werden Treffer aus der Erweiterung verworfen.
 * Die Versionsnummer und die Build-Nummer müssen zwischen der übergeordneten App und der Erweiterung-App identisch sein.
 * Für iOS-Erweiterungs-Apps wird kein Lebenszyklusaufruf ausgelöst.
-
