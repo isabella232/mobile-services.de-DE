@@ -4,16 +4,16 @@ seo-description: Informationen zur Verwendung des SDK für den Windows 8.1 Unive
 seo-title: Analytics-Methoden
 solution: Experience Cloud,Analytics
 title: Analytics-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
+exl-id: 007bb801-55ef-4c5b-87fa-d0db42cde163
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 52%
 
 ---
-
 
 # Analytics-Methoden {#analytics-methods}
 
@@ -25,11 +25,11 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 >[!TIP]
 >
->Wenn Sie Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert. `winmd`
+>Wenn Sie die Methoden `winmd` von winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
 
 * **TrackState (winJS: trackState)**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Home Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Home Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn `state` leer ist, wird in Berichten als &quot;App-Name-App-Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten angezeigt wird, stellen Sie sicher, dass Sie `state` in jedem `TrackState`-Aufruf einstellen.
 
    >[!TIP]
    >
@@ -141,7 +141,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **TrackTimed &#x200B; ActionUpdate (winJS: trackTimed &#x200B; ActionUpdate)**
 
-   Übergibt `contextData`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. The `data` passed is appended to the existing data for the given action, and overwrites the data if the same key is already defined for `action`.
+   Übergibt `contextData`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. Das übergebene `data` wird an die vorhandenen Daten für die angegebene Aktion angehängt und überschreibt die Daten, wenn derselbe Schlüssel bereits für `action` definiert ist.
 
    >[!TIP]
    >
