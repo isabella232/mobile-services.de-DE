@@ -1,20 +1,20 @@
 ---
 description: Im Folgenden finden Sie eine Liste der Audience Manager-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden finden Sie eine Liste der Audience Manager-Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Audience Manager-Methoden
 solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
+exl-id: 707b40b8-e56e-4c26-8b59-87c5d71cad0c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '296'
 ht-degree: 100%
 
 ---
-
 
 # Audience Manager-Methoden {#audience-manager-methods}
 
