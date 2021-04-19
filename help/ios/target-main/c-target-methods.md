@@ -4,16 +4,16 @@ seo-description: Hier finden Sie die Liste der Adobe Target-Methoden, die von de
 seo-title: iOS-Target-Methoden für Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Target-Methoden für iOS
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
+exl-id: ba03f865-970c-4b48-af35-749f05b273d8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 
 ---
-
 
 # Target-Methoden für iOS {#target-methods}
 
@@ -56,8 +56,9 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* Wenn Sie SDK **vor** Version 4.14.0 verwenden, finden Sie die Parameterbeschränkungen unter [Eingabeparameter](https://developers.adobetarget.com/api/#input-parameters).
->
->* Wenn Sie SDK der Version 4.14.0 **oder später** verwenden, finden Sie die Parameterbeschränkungen unter [Batch-Eingabeparameter](https://developers.adobetarget.com/api/#batch-input-parameters).
+   >
+   >
+* Wenn Sie SDK der Version 4.14.0 **oder später** verwenden, finden Sie die Parameterbeschränkungen unter [Batch-Eingabeparameter](https://developers.adobetarget.com/api/#batch-input-parameters).
 
 
 ### Methoden
