@@ -5,16 +5,16 @@ seo-description: Mithilfe dieser Informationen können Probleme mit Push-Nachric
 seo-title: Fehlerbehebung für Push-Nachrichten
 solution: Experience Cloud,Analytics
 title: Fehlerbehebung für Push-Nachrichten
-topic: Metrics
+topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
+exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '736'
 ht-degree: 100%
 
 ---
-
 
 # Fehlerbehebung für Push-Nachrichten {#troubleshooting-push-messaging}
 
@@ -28,7 +28,7 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 
    Jede Report Suite verfügt über eine Einstellung, die festlegt, wann eingehende Analytics-Treffer verarbeitet werden sollen. Standardmäßig geschieht dies einmal pro Stunde.
 
-   Die eigentliche Verarbeitung von Analytics-Treffern kann bis zu 30 Minuten dauern, in der Regel sind es jedoch 15 bis 20 Minuten. Beispielsweise verarbeitet eine Report Suite Treffer jede Stunde. Wenn Sie die erforderliche Verarbeitungszeit von maximal 30 Minuten berücksichtigen, kann es bis zu 90 Minuten dauern, bis ein eingehender Treffer für eine Push-Nachricht verfügbar ist. Wenn ein Benutzer die App um 9:01 Uhr gestartet hat, wird der Treffer in der Mobile Services-Benutzeroberfläche als neuer Unique User zwischen 10:15 und 10:30 Uhr angezeigt.
+   Die eigentliche Verarbeitung von Analytics-Treffern kann bis zu 30 Minuten dauern, in der Regel sind es jedoch 15 bis 20 Minuten. Beispielsweise verarbeitet eine Report Suite Treffer jede Stunde. Wenn Sie die erforderliche Verarbeitungszeit von maximal 30 Minuten berücksichtigen, kann es bis zu 90 Minuten dauern, bis ein eingehender Treffer für eine Push-Nachricht verfügbar ist. Wenn ein Benutzer die App um 9:01 Uhr gestartet hat, wird der Treffer in der Mobile Services-Benutzeroberfläche als neuer eindeutiger Benutzer zwischen 10:15 und 10:30 Uhr angezeigt.
 
 * **Warten auf den Push-Dienst**
 
