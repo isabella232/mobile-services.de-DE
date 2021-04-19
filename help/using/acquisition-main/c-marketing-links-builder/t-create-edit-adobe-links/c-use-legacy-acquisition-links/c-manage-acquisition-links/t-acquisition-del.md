@@ -5,16 +5,16 @@ seo-description: Sie können einen oder mehrere Akquise-Links löschen, wenn die
 seo-title: Akquise-Links löschen
 solution: Experience Cloud,Analytics
 title: Akquise-Links löschen
-topic: Metrics
+topic-fix: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
+exl-id: 4c007ec6-40ba-468f-8bfc-0930a04c59c1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '107'
 ht-degree: 100%
 
 ---
-
 
 # Akquise-Links löschen {#delete-acquisition-links}
 
@@ -31,4 +31,3 @@ Wenn Sie die Akquise-Links nicht mehr benötigen, können Sie diese löschen.
    >[!TIP]
    >
    >Die Option **[!UICONTROL Ausgewählte löschen]** wird erst angezeigt, wenn Sie mindestens einen Akquise-Link ausgewählt haben.
-
