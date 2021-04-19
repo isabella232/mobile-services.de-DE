@@ -4,16 +4,16 @@ seo-description: Wenn Ihre App mobile Webinhalte öffnet, stellen Sie sicher, da
 seo-title: Besucher zwischen einer App und dem mobilen Internet verfolgen
 solution: Experience Cloud,Analytics
 title: Besucher zwischen einer App und dem mobilen Internet verfolgen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
+exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
 ---
-
 
 # Besucher zwischen einer App und dem mobilen Internet verfolgen {#visitor-tracking-between-an-app-and-mobile-web}
 
@@ -21,7 +21,7 @@ Wenn Ihre App mobile Webinhalte öffnet, stellen Sie sicher, dass Besucher zwisc
 
 ## Besucher-IDs in Apps
 
-Das Android SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird. Diese ID wird im persistenten Speicher des Mobilgeräts gespeichert, bei jedem Treffer gesendet und nur entfernt, wenn der Benutzer die App deinstalliert.
+Das Android SDK generiert eine Unique-Visitor-ID, wenn eine App installiert wird. Diese ID wird im persistenten Speicher des Mobilgeräts gespeichert, bei jedem Treffer gesendet und nur entfernt, wenn der Benutzer die App deinstalliert.
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ Das Android SDK generiert eine Unique Visitor-ID, wenn eine App installiert wird
 
 ## Besucher-IDs im mobilen Web
 
-Typische Implementierungen des mobilen Webs nutzen dieselben standardmäßigen Analytics-Dateien `s_code.js` oder `AppMeasurement.js`, die auch bei Desktop-Sites verwendet werden. Die JavaScript-Bibliotheken besitzen ihre eigenen Methoden zum Generieren von Unique Visitor-IDs, wodurch eine unterschiedliche Besucher-ID generiert werden muss, wenn Sie mobile Webinhalte über Ihre App öffnen.
+Typische Implementierungen des mobilen Webs nutzen dieselben standardmäßigen Analytics-Dateien `s_code.js` oder `AppMeasurement.js`, die auch bei Desktop-Sites verwendet werden. Die JavaScript-Bibliotheken besitzen ihre eigenen Methoden zum Generieren von Unique-Visitor-IDs, wodurch eine unterschiedliche Besucher-ID generiert werden muss, wenn Sie mobile Webinhalte über Ihre App öffnen.
 
 ## Besucherverfolgung zwischen einer App und dem mobilen Internet implementieren {#section_1755BCCFD42D456EB2319141030FDDFF}
 
@@ -94,4 +94,3 @@ Wenn Sie das Problem nicht mithilfe dieser Schritte beheben können, wenden Sie 
 >[!IMPORTANT]
 >
 >Damit Adobe die Implementierung überprüfen kann, sind eine Beispiel-App und die zugehörige Site erforderlich.
-
