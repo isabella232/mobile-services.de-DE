@@ -5,16 +5,16 @@ seo-description: Sie können die Seite „Marketing-Links“ verwenden, um Marke
 seo-title: Marketinglinks verwalten
 solution: Experience Cloud,Analytics
 title: Marketinglinks verwalten
-topic: Metrics
+topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
+exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '202'
 ht-degree: 100%
 
 ---
-
 
 # Marketing-Links verwalten {#manage-marketing-links}
 
@@ -38,4 +38,3 @@ Führen Sie auf der Seite „Marketing-Links“ die folgende Aufgaben aus:
    * Um die Archivierung eines Marketinglinks aufzuheben, klicken Sie auf **[!UICONTROL Archiv anzeigen]**, wählen Sie einen Link aus und klicken Sie auf **[!UICONTROL Archivierung der Ausgewählten aufheben]**.
 
       Nur zuvor archivierte Marketinglinks werden auf der Seite „Archiv anzeigen“ angezeigt.
-
