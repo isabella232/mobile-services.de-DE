@@ -1,20 +1,20 @@
 ---
 description: Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SDK (verzögerte) Deep-Links in Ihren mobilen Apps zu verfolgen.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Sie können diese Information verwenden, um mithilfe des Adobe Mobile Android SDK (verzögerte) Deep-Links in Ihren mobilen Apps zu verfolgen.
 seo-title: Deep-Links in Adobe Mobile Services verfolgen
 solution: Experience Cloud,Analytics
 title: Deep-Links verfolgen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
+exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
 translation-type: tm+mt
-source-git-commit: e28340249c22d9f121d5c21205227ee758fb9e1b
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 100%
 
 ---
-
 
 # Deep-Links verfolgen
 
@@ -72,4 +72,3 @@ Mit einem verzögerten Deep-Link öffnet das Adobe-SDK einen neuen Intent mit de
  */
 public static final String ADB_MESSAGE_DEEPLINK_KEY = "adb_deeplink";
 ```
-
