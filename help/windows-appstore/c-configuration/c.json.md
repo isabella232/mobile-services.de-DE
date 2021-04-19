@@ -4,20 +4,20 @@ seo-description: Informationen zur Verwendung der ADBMobile JSON-Konfigurationsd
 seo-title: ADBMobileConfig.json-Konfigurationsdatei
 solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json-Konfigurationsdatei
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
+exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 47%
 
 ---
 
+# `ADBMobileConfig.json` config-Datei  {#adbmobileconfig-json-config}
 
-# `ADBMobileConfig.json` config-Datei {#adbmobileconfig-json-config}
-
-Informationen zur Verwendung der `ADBMobile.json` Konfigurationsdatei.
+Informationen zur Verwendung der Konfigurationsdatei `ADBMobile.json`.
 
 Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Konfigurationsmethoden erhalten das Präfix &quot;Config&quot;.
 
@@ -37,7 +37,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **server**
 
-   (Erforderlich für Analytics und Audience-Management). Analytics- oder Audience Management-Server, basierend auf dem übergeordneten Knoten. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `https://` oder `https://`. Das Protokollpräfix wird automatisch von der Bibliothek auf Basis der `ssl` Variablen verarbeitet.
+   (Erforderlich für Analytics und Audience-Management). Analytics- oder Audience Management-Server, basierend auf dem übergeordneten Knoten. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `https://` oder `https://`. Das Protokollpräfix wird automatisch von der Bibliothek verarbeitet, basierend auf der Variablen `ssl`.
 
    Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
 
@@ -55,7 +55,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    >[!IMPORTANT]
    >
-   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* die Konfigurationseigenschaft „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,   wenden Sie sich bitte an   Kundenunterstützung. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   >Wenn in Ihrer Report Suite Zeitstempel aktiviert sind, muss Ihre `offlineEnabled` Konfigurationseigenschaft *true sein.* Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, `offlineEnabled` *muss* die Konfigurationseigenschaft „false“ lauten. Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie sich nicht sicher sind, ob Zeitstempel für Ihre Report Suite aktiviert sind,   wenden Sie sich bitte an   Kundenunterstützung. Wenn Sie derzeit AppMeasurement-Daten an eine Report Suite senden, die auch Daten aus JavaScript erfasst, müssen Sie möglicherweise eine separate Report Suite für Mobildaten einrichten oder einen benutzerspezifischen Zeitstempel für alle JavaScript-Treffer mit der Variablen `s.timestamp` einfügen.
 
 * **lifecycleTimeout**
 
@@ -92,13 +92,13 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **clientCode**
 
-   (**Erforderlich nach Zielgruppe**) Ihr zugewiesener Clientcode.
+   (**Erforderlich durch Zielgruppe**) Ihr zugewiesener Clientcode.
 
 * **timeout**
 
    Bestimmt, wie lange Target auf eine Antwort wartet.
 
-The following is an example of an `ADBMobileConfig.json` file:
+Das folgende Beispiel zeigt eine `ADBMobileConfig.json`-Datei:
 
 ```js
 { 
@@ -125,4 +125,3 @@ The following is an example of an `ADBMobileConfig.json` file:
  } 
 }
 ```
-
