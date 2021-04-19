@@ -4,16 +4,16 @@ seo-description: 'Die folgenden Informationen helfen Ihnen bei der Konfiguration
 seo-title: Konfigurationsübersicht
 solution: Experience Cloud,Analytics
 title: Konfigurationsübersicht
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 207d6eae-7fc5-449d-b92b-c2d83e8e82b4
+exl-id: 6e16f15a-71c9-4f0d-ba45-f6c22e05b9c2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 100%
 
 ---
-
 
 # Konfigurationsübersicht {#configuration}
 
@@ -27,4 +27,3 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
-
