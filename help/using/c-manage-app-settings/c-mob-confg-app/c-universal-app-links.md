@@ -4,16 +4,16 @@ seo-description: Mit universellen Links (iOS) und App-Links (Android) können Si
 seo-title: Universelle Links (Apple) und App-Links (Android)
 solution: Experience Cloud,Analytics
 title: Handbuch zu universellen Links und App-Links
-topic: Metriken
+topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
+exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
 translation-type: tm+mt
-source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1145'
 ht-degree: 96%
 
 ---
-
 
 # Universelle Links im Vergleich zu App-Links: Wie funktionieren sie? {#universal-links-and-app-links}
 
@@ -157,4 +157,3 @@ Sie können diese Marketinglinks jetzt in Messaging- und anderen Bereichen Ihrer
 >[!IMPORTANT]
 >
 >Klick-Tracking-Zählungen werden für universelle Links und App-Links nicht angezeigt. Außerdem können Sie keine Interstitials verwenden.
-
