@@ -4,16 +4,16 @@ seo-description: 'null'
 seo-title: Analytics
 solution: Experience Cloud,Analytics
 title: Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
+exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 20%
 
 ---
-
 
 # Analytics {#analytics}
 
@@ -23,18 +23,18 @@ Nachdem Sie die Bibliothek zum Projekt hinzugefügt haben, können Sie beliebige
 >
 >Stellen Sie sicher, dass Sie `ADBMobile.h` in Ihre Klasse importieren.
 
-## Mobilanwendungsberichte in Analytics aktivieren {#section_F2F9234009184F20BA36B5CDE872B424}
+## Mobilanwendungsberichte in Analytics aktivieren{#section_F2F9234009184F20BA36B5CDE872B424}
 
 Bevor Sie Code hinzufügen, lassen Sie Ihren Analytics-Administrator Folgendes ausführen, um die Lebenszyklusverfolgung für Mobilanwendungen zu aktivieren. Dadurch wird sichergestellt, dass Ihre Report Suite zu Beginn der Entwicklung Metriken erfassen kann.
 
 1. Öffnen Sie **[!UICONTROL Admin Tools]** > **[!UICONTROL Report Suites]** und wählen Sie Ihre mobile(n) Report Suite(s) aus.
-1. Klicken Sie auf Einstellungen **[!UICONTROL bearbeiten]** > **[!UICONTROL Mobilverwaltung]** > **[!UICONTROL Mobilanwendungs-Berichte]**.
+1. Klicken Sie auf **[!UICONTROL Einstellungen bearbeiten]** > **[!UICONTROL Mobilverwaltung]** > **[!UICONTROL Mobilanwendungs-Berichte]**.
 
    ![](assets/mobile-settings.png)
 
-1. Klicken Sie auf Neueste App-Berichte **[!UICONTROL aktivieren]**.
+1. Klicken Sie auf **[!UICONTROL Aktuelle App-Berichte aktivieren]**.
 
-   Optional können Sie auch auf **[!UICONTROL Verfolgung]** mobiler Standorte aktivieren und ältere Berichte und Zuordnung für Hintergrundtreffer **[!UICONTROL aktivieren]** klicken.
+   Optional können Sie auch auf **[!UICONTROL Mobilstandortverfolgung aktivieren]** und **[!UICONTROL Legacy-Berichte und Zuordnung für Hintergrundtreffer aktivieren]** klicken.
 
    ![](assets/enable-lifecycle.png)
 
@@ -125,13 +125,13 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Wenn die Anwendung in derselben Sitzung zweimal aufgerufen `CollectLifecycleData()` wird, meldet sie bei jedem Aufruf nach dem ersten Absturz einen Absturz. Das SDK setzt beim Beenden der Anwendung ein Flag, das auf einen erfolgreichen Beenden hinweist. Wenn dieses Flag nicht gesetzt ist, `CollectLifecyleData()` wird ein Absturz gemeldet.
+Wenn `CollectLifecycleData()` in derselben Sitzung zweimal aufgerufen wird, meldet Ihre Anwendung bei jedem Aufruf nach dem ersten Absturz einen Absturz. Das SDK setzt beim Beenden der Anwendung ein Flag, das auf einen erfolgreichen Beenden hinweist. Wenn dieses Flag nicht gesetzt ist, meldet `CollectLifecyleData()` einen Absturz.
 
 
 ## Events, Props und eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-Wenn Sie sich die [ADBMobile-Klassen- und Methodenreferenz](/help/windows-appstore/c-configuration/methods.md)angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
+Wenn Sie sich die Klasse- und Methodenreferenz [ADBMobile angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen festlegen können. ](/help/windows-appstore/c-configuration/methods.md) In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
 Verarbeitungsregeln bieten mehrere Vorteile:
 
@@ -168,7 +168,7 @@ Außerdem haben wir gehört, dass einige von Ihnen Kontextdatenschlüssel mit de
 "eVar1":"jimbo"
 ```
 
-This might make it *slightly* easier when you perform the one time mapping in processing rules, but you lose readability during debugging and future code updates can be more difficult. Stattdessen empfehlen wir dringend, aussagekräftige Namen für Schlüssel und Werte zu verwenden:
+Dies kann es bei der einmaligen Zuordnung in Verarbeitungsregeln erleichtern, *geringfügig*, aber Sie verlieren die Lesbarkeit während des Debuggens, und zukünftige Code-Aktualisierungen können schwieriger sein. Stattdessen empfehlen wir dringend, aussagekräftige Namen für Schlüssel und Werte zu verwenden:
 
 ```js
 "username":"jimbo"
@@ -192,17 +192,17 @@ Kontextdatenvariablen, die inkrementierende Ereignis definieren, können den zu 
 
 ## Variable „products“ {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Um *`products`* das mobile SDK festzulegen, müssen Sie eine spezielle Syntax verwenden. Siehe [Produktvariable](/help/windows-appstore/analytics/products/products.md).
+Um *`products`* im mobilen SDK festzulegen, müssen Sie eine spezielle Syntax verwenden. Siehe [Produktvariable](/help/windows-appstore/analytics/products/products.md).
 
-## (Optional) Offline-Verfolgung aktivieren {#section_955B2A03EB854742BDFC4A0A3C287009}
+## (Optional) Aktivieren Sie die Offline-Verfolgung {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-Um Treffer zu speichern, wenn das Gerät offline ist, können Sie die Offline-Verfolgung in der [ADBMobileConfig.json-Konfiguration](/help/windows-appstore/c-configuration/methods.md)aktivieren. Bevor Sie die Offline-Verfolgung aktivieren, beachten Sie die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben sind.
+Um Treffer zu speichern, wenn das Gerät offline ist, können Sie die Offline-Verfolgung in der [ADBMobileConfig.json-Konfiguration](/help/windows-appstore/c-configuration/methods.md) aktivieren. Bevor Sie die Offline-Verfolgung aktivieren, beachten Sie die Zeitstempelanforderungen, die in der Konfigurationsdatei-Referenz beschrieben sind.
 
 ## Geostandort und Zielpunkte {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-Mithilfe der geografischen Position können Sie Standortdaten (Breiten-/Längengrad) und vordefinierte Zielpunkte messen. Jeder `TrackLocation` Aufruf sendet:
+Mithilfe der geografischen Position können Sie Standortdaten (Breiten-/Längengrad) und vordefinierte Zielpunkte messen. Jeder `TrackLocation`-Aufruf sendet:
 
-* Breitengrad/Längengrad und POI (wenn innerhalb eines in der `ADBMobileConfig.json` Konfigurationsdatei definierten POI). Diese werden für den automatischen Berichte an mobile Lösungsvariablen übergeben.
+* Breitengrad/Längengrad und POI (wenn innerhalb eines in der Konfigurationsdatei `ADBMobileConfig.json` definierten POI). Diese werden für den automatischen Berichte an mobile Lösungsvariablen übergeben.
 * Entfernung von Zentrum und Genauigkeit als Kontextdaten weitergegeben. Erfassen Sie mithilfe einer Verarbeitungsregel.
 
 So verfolgen Sie einen Ort:
@@ -212,7 +212,7 @@ var ADB = ADBMobile;
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-Wenn der folgende POI in der `ADBMobileConfig.json` Konfigurationsdatei definiert ist:
+Wenn in der Konfigurationsdatei `ADBMobileConfig.json` der folgende POI definiert ist:
 
 ```js
 "poi" : [ 
@@ -220,9 +220,9 @@ Wenn der folgende POI in der `ADBMobileConfig.json` Konfigurationsdatei definier
         ]
 ```
 
-Wenn die Geräteposition innerhalb eines Umkreises von 7000 Metern vom definierten Punkt bestimmt wird, wird eine `a.loc.poi` Kontextdatenvariable mit dem Wert &quot;San Francisco&quot;mit dem `TrackLocation` Treffer gesendet. An `a.loc.dist` context variable is sent with the distance in meters from the defined coordinates.
+Wenn die Geräteposition innerhalb eines Radius von 7000 Metern vom definierten Punkt bestimmt wird, wird eine `a.loc.poi` Kontextdatenvariable mit dem Wert &quot;San Francisco&quot; mit dem Treffer `TrackLocation` gesendet. Eine `a.loc.dist`-Kontextvariable wird mit dem Abstand in Metern zu den definierten Koordinaten gesendet.
 
-## Lifetime value {#section_D2C6971545BA4D639FBE07F13EF08895}
+## Lebenszeitwert {#section_D2C6971545BA4D639FBE07F13EF08895}
 
 Mit dem Lebenszeitwert können Sie für jeden Benutzer einen Lebenszeitwert messen und vorgeben. Sobald Sie einen Wert mit `TrackLifetimeValueIncrease` senden, wird der Wert zum vorhandenen Wert hinzugefügt. Der Lebenszeitwert wird auf dem Gerät gespeichert und kann jederzeit mithilfe von `GetLifetimeValue` abgerufen werden. Dies kann verwendet werden, um Lebenszeiteinkäufe, Banneranzeigen, abgeschlossene Videos, Informationen zur Freigabe in sozialen Netzwerken, Fotouploads usw. zu speichern.
 
