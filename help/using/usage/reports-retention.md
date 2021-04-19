@@ -1,24 +1,24 @@
 ---
-description: Der Treuebericht (ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele Unique Users die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.
+description: Der Treuebericht (ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele eindeutige Benutzer die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.
 keywords: mobile
-seo-description: Der Treuebericht (ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele Unique Users die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.
+seo-description: Der Treuebericht (ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele eindeutige Benutzer die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.
 seo-title: Treuebericht
 solution: Experience Cloud,Analytics
 title: Treuebericht
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
+exl-id: de68f00a-5de0-4e9a-9255-207a1a44df6e
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '310'
 ht-degree: 100%
 
 ---
 
-
 # Treuebericht {#retention}
 
-Der **[!UICONTROL Treuebericht]** (ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele Unique Users die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.
+Der **[!UICONTROL Treuebericht]** (ehemals „Erste-Start-Kohorten“) ist ein Kohortenbericht, in dem angezeigt wird, wie viele eindeutige Benutzer die App zum ersten Mal gestartet und dann in den Folgemonaten mindestens einmal erneut gestartet haben.
 
 Dieser Bericht zeigt standardmäßig die Treue von Benutzergruppen an, basierend darauf, wann die Benutzer die App zum ersten Mal gestartet haben. Sie können diesen Bericht auch anpassen, um eine andere Metrik als „Erster Start“ zu verwenden und zusätzliche Aktionen hinzuzufügen.
 
