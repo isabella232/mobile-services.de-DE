@@ -1,20 +1,20 @@
 ---
-description: Auf der Seite „Link-Ziele“ können Sie vorhandene Ziele bearbeiten, archivieren, deren Archivierung aufheben oder löschen.
+description: Auf der Seite „Link-Ziele“ können Sie vorhandene Ziele bearbeiten, archivieren, dearchivieren oder löschen.
 keywords: mobile
-seo-description: Auf der Seite „Link-Ziele“ können Sie vorhandene Ziele bearbeiten, archivieren, deren Archivierung aufheben oder löschen.
+seo-description: Auf der Seite „Link-Ziele“ können Sie vorhandene Ziele bearbeiten, archivieren, dearchivieren oder löschen.
 seo-title: Link-Ziele verwalten
 solution: Experience Cloud,Analytics
 title: Link-Ziele verwalten
-topic: Metrics
+topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
+exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '297'
 ht-degree: 100%
 
 ---
-
 
 # Link-Ziele verwalten {#manage-link-destinations}
 
@@ -62,6 +62,3 @@ So zeigen Sie die Seite Link-Ziele verwalten an:
       >[!IMPORTANT]
       >
       >Das Löschen eines Link-Ziels ist **dauerhaft**. Falls Sie sich nicht sicher sind, ob Sie ein Link-Ziel löschen können, sollten Sie es stattdessen archivieren.
-
-
-
