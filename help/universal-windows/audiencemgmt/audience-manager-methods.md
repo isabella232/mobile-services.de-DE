@@ -4,32 +4,32 @@ seo-description: Liste von Audience Manager-Methoden, die von der universellen W
 seo-title: Audience Manager-Methoden
 solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
+exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 43%
 
 ---
 
-
 # Audience Manager-Methoden {#audience-manager-methods}
 
 Liste von Audience Manager-Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methods are prefixed according to the solution. Audience Manager methods are prefixed with `AudienceManager`.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Die Methoden werden entsprechend der Lösung mit einem Präfix versehen. Audience Manager-Methoden erhalten das Präfix `AudienceManager`.
 
 >[!TIP]
 >
->Wenn Sie Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert. `winmd`
+>Wenn Sie die Methoden `winmd` von winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
 
 Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit Lebenszyklusmetriken mit Ihrem Lebenszyklustreffer gesendet.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt `null` zurück, wenn noch kein Signal gesendet wurde. Besucher-Profil wird in `SharedPreferences` gespeichert, um den Zugriff über mehrere Starts Ihrer App hinweg zu erleichtern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
