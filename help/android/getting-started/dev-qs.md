@@ -1,20 +1,20 @@
 ---
 description: Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek und Erfassen von Lebenszyklusmetriken, wie z. B. Starts, Upgrades, Sitzungen, erreichte Benutzer usw.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Diese Information unterstützt Sie beim Implementieren der Android-Bibliothek und Erfassen von Lebenszyklusmetriken, wie z. B. Starts, Upgrades, Sitzungen, erreichte Benutzer usw.
 seo-title: Grundlegende Implementierung und Lebenszyklus
 solution: Experience Cloud,Analytics
 title: Grundlegende Implementierung und Lebenszyklus
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
+exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '564'
 ht-degree: 100%
 
 ---
-
 
 # Grundlegende Implementierung und Lebenszyklus {#core-implementation-and-lifecycle}
 
@@ -155,4 +155,3 @@ Führen Sie die folgenden Aufgaben aus:
 
 * [App-Zustände verfolgen](/help/android/analytics-main/states.md)
 * [App-Aktionen verfolgen](/help/android/analytics-main/actions.md)
-
