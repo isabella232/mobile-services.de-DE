@@ -1,20 +1,20 @@
 ---
 description: Liste der Metriken und Dimensionen, die automatisch von der Mobilbibliothek gemessen werden können.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Liste der Metriken und Dimensionen, die automatisch von der Mobilbibliothek gemessen werden können.
 seo-title: Lebenszyklusmetriken
 solution: Experience Cloud,Analytics
 title: Lebenszyklusmetriken
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
+exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '921'
 ht-degree: 83%
 
 ---
-
 
 # Lebenszyklusmetriken {#lifecycle-metrics}
 
@@ -267,21 +267,21 @@ Die folgenden Metriken und Dimensionen werden mit der folgenden Methode in Varia
 
 * **Zielpunkt-Bezeichnung**
 
-   Populated by `trackLocation` methods when device is in a defined POI.
+   Wird durch `trackLocation`-Methoden gefüllt, wenn sich das Gerät in einem definierten POI befindet.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.loc.poi`
-   * Audience Manager trait: `c_a_loc_poi`
+   * Eigenschaft des Audience Managers: `c_a_loc_poi`
 
 * **Entfernung zum Zentrum des Zielpunkts**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   Wird durch `trackLocation`-Methoden gefüllt, wenn sich das Gerät innerhalb eines definierten POI befindet.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.loc.dist`
-   * Audience Manager trait: `c_a_loc_dist`
+   * Eigenschaft des Audience Managers: `c_a_loc_dist`
 
 * **Lebenszeitwert (Konversionsvariable)**
 
    Erfasst durch `trackLifetimeValue`-Methoden.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.ltv.amount`
-   * Audience Manager trait: `c_a_ltv_amount`
+   * Eigenschaft des Audience Managers: `c_a_ltv_amount`
