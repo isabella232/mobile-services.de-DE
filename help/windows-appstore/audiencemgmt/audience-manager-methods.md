@@ -4,16 +4,16 @@ seo-description: Liste von Audience Manager-Methoden, die von der Windows 8.1 Un
 seo-title: Audience Manager-Methoden
 solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
+exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 45%
 
 ---
-
 
 # Audience Manager-Methoden {#audience-manager-methods}
 
@@ -29,7 +29,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit 
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt `null` zurück, wenn noch kein Signal gesendet wurde. Besucher-Profil wird in `SharedPreferences` gespeichert, um den Zugriff über mehrere Starts Ihrer App hinweg zu erleichtern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -115,4 +115,3 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit 
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
       }); 
       ```
-
