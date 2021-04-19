@@ -5,16 +5,16 @@ seo-description: Mithilfe dieser Informationen können Sie die Funktion der inte
 seo-title: Berichte anpassen
 solution: Experience Cloud,Analytics
 title: Berichte anpassen
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
+exl-id: 287b12fb-96f8-4fa9-a4f4-7325e30e1797
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 100%
 
 ---
-
 
 # Berichte anpassen {#customize-reports}
 
@@ -45,4 +45,3 @@ Im Folgenden werden die einzelnen Bereiche des Berichts und die Leiste **[!UICON
 | 6 | **[!UICONTROL Fixierbare Filter:]** Sie können Filter erstellen, die für verschiedene Berichte gelten. So können sie beispielsweise die Performance eines bestimmten Segments in sämtlichen Mobile-Berichten ermitteln. Mit einem fixierbaren Filter können Sie einen Filter definieren, der auf alle Berichte (außer auf Pfadsetzungsberichte) angewendet werden kann.  Weitere Informationen finden Sie unter [Fixierbaren Filter hinzufügen](/help/using/usage/reports-customize/t-sticky-filter.md). |
 | 7 | **[!UICONTROL Datendiagramm:]** Das Datendiagramm stellt Daten basierend auf den ausgewählten Metriken in einem geeigneten Diagramm dar. Die Diagrammtypen umfassen Liniendiagramme, Balkendiagramme, Ringdiagramme usw. |
 | 8 | **[!UICONTROL Datentabelle:]** Die Datentabelle zeigt Daten im Tabellenformat an. Klicken Sie auf eine Spaltenüberschrift, um die Daten in auf- oder absteigender Reihenfolge zu sortieren. |
-
