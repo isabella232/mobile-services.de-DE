@@ -4,16 +4,16 @@ seo-description: Klassen und Methoden, die von der universellen Windows-Plattfor
 seo-title: SDK-Methoden
 solution: Experience Cloud,Analytics
 title: SDK-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
+exl-id: 0aac477c-074d-457c-b117-bb205119c475
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 63%
 
 ---
-
 
 # SDK-Methoden {#sdk-methods}
 
@@ -21,7 +21,7 @@ Klassen und Methoden, die von der universellen Windows-Plattformbibliothek berei
 
 >[!TIP]
 >
->Wenn Sie Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert. `winmd`
+>Wenn Sie die Methoden `winmd` von winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -47,7 +47,7 @@ Klassen und Methoden, die von der universellen Windows-Plattformbibliothek berei
    * `ADBMobilePrivacyStatusOptOut` - Treffer werden verworfen.
    * `ADBMobilePrivacyStatusUnknown`: Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden Treffer gespeichert, bis sich der Datenschutzstatus zu „optedin“ (Treffer werden gesendet) oder „optedout“ (Treffer werden verworfen) ändert. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
-      The default value is set in the `ADBMobileConfig.json` config file. Weitere Informationen finden Sie in der Konfigurationsdatei [ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
+      Der Standardwert wird in der Konfigurationsdatei `ADBMobileConfig.json` festgelegt. Weitere Informationen finden Sie unter [ADBMobileConfig.json config file](/help/universal-windows/c-configuration/c.json.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -128,7 +128,7 @@ Klassen und Methoden, die von der universellen Windows-Plattformbibliothek berei
 
 * **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Gibt die benutzerdefinierte Benutzerkennung zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Returns `null` if a custom identifier is not set.
+   Gibt die benutzerdefinierte Benutzerkennung zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt `null` zurück, wenn kein benutzerdefinierter Bezeichner festgelegt ist.
 Der Standardwert lautet `null`.
 
    >[!IMPORTANT]
