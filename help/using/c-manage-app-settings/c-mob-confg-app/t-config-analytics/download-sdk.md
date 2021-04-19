@@ -1,20 +1,20 @@
 ---
 description: Mithilfe dieser Informationen können Sie die Mobile Services-SDK und die Hilfstools für die Mobile Services-Implementierung herunterladen.
-keywords: mobile;android;ios;sdk
+keywords: mobile;Android;iOS;SDK
 seo-description: Mithilfe dieser Informationen können Sie die Mobile Services-SDK und die Hilfstools für die Mobile Services-Implementierung herunterladen.
 seo-title: Mobile SDK und Werkzeuge herunterladen
 solution: Experience Cloud,Analytics
 title: Mobile SDK und Werkzeuge herunterladen
-topic: Developer and implementation,Metrics
+topic-fix: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
+exl-id: 34ec76fa-3bcb-4b77-9d1e-7160941deb44
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '180'
 ht-degree: 100%
 
 ---
-
 
 # Mobile SDK und Werkzeuge herunterladen {#download-mobile-sdks-and-tools}
 
@@ -36,4 +36,3 @@ Konfigurieren Sie Ihre Anwendung in Adobe Mobile Services, damit Sie ein angepas
 * [Android-Anweisungen](/help/android/getting-started/requirements.md)
 
 Die Dokumentation zu systemeigenen Bibliotheken wie Windows Phone 8, Blackberry, Xamarin und anderen finden Sie im Abschnitt *SDK-Dokumentation* in [Adobe Mobile Services](/help/using/home.md).
-
