@@ -1,20 +1,20 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der Android-Bibliothek zu Version 4.x.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der Android-Bibliothek zu Version 4.x.
 seo-title: Migration zur Android 4.x-Bibliothek
 solution: Experience Cloud,Analytics
 title: Migration zur Android 4.x-Bibliothek
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
+exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '884'
 ht-degree: 100%
 
 ---
-
 
 # Migration zur Android 4.x-Bibliothek {#migrating-to-the-android-x-library}
 
@@ -22,7 +22,7 @@ Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der
 
 >[!IMPORTANT]
 >
->Das SDK verwendet `SharedPreferences` zum Speichern von Daten, die zur Berechnung von Unique Users und Lebenszyklusmetriken benötigt werden, und anderen mit SDK-Hauptfunktionen verbundenen Daten.  Wenn Sie in `SharedPreferences` die Werte, die vom SDK erwartet werden, ändern oder entfernen, kann dies zu unerwartetem Verhalten in Form von Dateninkonsistenzen führen.
+>Das SDK verwendet `SharedPreferences` zum Speichern von Daten, die zur Berechnung von eindeutigen Benutzern und Lebenszyklusmetriken benötigt werden, und anderen mit SDK-Hauptfunktionen verbundenen Daten.  Wenn Sie in `SharedPreferences` die Werte, die vom SDK erwartet werden, ändern oder entfernen, kann dies zu unerwartetem Verhalten in Form von Dateninkonsistenzen führen.
 
 In Version 4.x der Bibliothek sind alle öffentlichen Methoden in einem Header vereinigt. Außerdem steht die gesamte Funktionalität jetzt auch über Methoden auf Klassenebenen zur Verfügung, damit Sie Pointer, Instanzen und Singletons nicht verfolgen müssen.
 
@@ -190,4 +190,3 @@ Entfernen Sie Aufrufe der folgenden Methoden:
 ## Variable „products“ {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Weitere Informationen zur Variablen „products“ finden Sie unter [Variable „products“](/help/android/analytics-main/products/products.md).
-
