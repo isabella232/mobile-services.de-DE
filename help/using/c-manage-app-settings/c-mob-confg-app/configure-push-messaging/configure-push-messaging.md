@@ -5,16 +5,16 @@ seo-description: Mithilfe dieser Informationen können Sie die Push-Dienst-Optio
 seo-title: Push-Benachrichtigung konfigurieren
 solution: Experience Cloud,Analytics
 title: Push-Benachrichtigung konfigurieren
-topic: Metrics
+topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
+exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '319'
 ht-degree: 100%
 
 ---
-
 
 # Push-Benachrichtigung konfigurieren {#configure-push-messaging}
 
