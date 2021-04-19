@@ -5,16 +5,16 @@ seo-description: Diese Informationen helfen Ihnen bei der Fehlerbehebung von In-
 seo-title: Fehlerbehebung bei In-App-Nachrichten
 solution: Experience Cloud,Analytics
 title: Fehlerbehebung bei In-App-Nachrichten
-topic: Metrics
+topic-fix: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
+exl-id: 6c7d97ed-3b0a-48ff-b761-1485aea5e96d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # Fehlerbehebung bei In-App-Nachrichten {#troubleshooting-in-app-messaging}
 
@@ -70,6 +70,4 @@ Im Folgenden finden Sie die genauen Positionierungs- und Größenregeln für jed
 * **Querformat**
    * Das Bild wurde auf 100 % der Höhe des Geräts skaliert.
    * Die Breite beträgt 75 % des Geräts, wobei sich eine Ausblendung auf der rechten Seite befindet.
-
    Wenn Sie Probleme mit der Vollbildvorlage haben, können Sie die benutzerdefinierte HTML-Vorlage herunterladen und verwenden. Diese Vorlage bietet mehr Flexibilität für Bilder und ermöglicht die vollständige Steuerung der Vorlage.
-
