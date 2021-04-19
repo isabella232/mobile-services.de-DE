@@ -1,20 +1,20 @@
 ---
-description: Sie können über die Mobile Services-Benutzeroberfläche Push-Nachrichten an Analytics-Segmente senden, um die umfassenden Analytics-Daten bei der Interaktion mit Kunden zu nutzen.
+description: Sie können über die Mobile Services-UI Push-Nachrichten an Analytics-Segmente senden, um die umfassenden Analytics-Daten bei der Interaktion mit Kunden zu nutzen.
 keywords: mobile
-seo-description: Sie können über die Mobile Services-Benutzeroberfläche Push-Nachrichten an Analytics-Segmente senden, um die umfassenden Analytics-Daten bei der Interaktion mit Kunden zu nutzen.
+seo-description: Sie können über die Mobile Services-UI Push-Nachrichten an Analytics-Segmente senden, um die umfassenden Analytics-Daten bei der Interaktion mit Kunden zu nutzen.
 seo-title: Push-Nachrichten erstellen
 solution: Experience Cloud,Analytics
 title: Push-Nachrichten erstellen
-topic: Metrics
+topic-fix: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
+exl-id: e7ad3797-17c7-41ad-8b65-d9f8e5b01960
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '188'
 ht-degree: 100%
 
 ---
-
 
 # Push-Nachrichten erstellen {#create-a-push-message}
 
