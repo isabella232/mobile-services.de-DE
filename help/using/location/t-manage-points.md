@@ -5,16 +5,16 @@ seo-description: Sie können Zielpunkte erstellen und verwalten, mit denen Sie g
 seo-title: Zielpunkte verwalten
 solution: Experience Cloud,Analytics
 title: Zielpunkte verwalten
-topic: Metrics
+topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
+exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 100%
 
 ---
-
 
 # Zielpunkte verwalten {#manage-points-of-interest}
 
