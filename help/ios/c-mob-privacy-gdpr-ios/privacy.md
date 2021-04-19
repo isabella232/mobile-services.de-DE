@@ -4,16 +4,16 @@ seo-description: Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlö
 seo-title: Auswahlstatus eines Benutzers festlegen
 solution: Experience Cloud,Analytics
 title: Auswahlstatus eines Benutzers festlegen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
+exl-id: 8fd30bea-6316-46ac-9787-8ca594545d1b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%
 
 ---
-
 
 # Auswahlstatus eines Benutzers festlegen {#setting-the-user-s-opt-status}
 
@@ -77,4 +77,3 @@ Hier finden Sie Informationen zu den einzelnen Datenschutzstatus:
  [ADBMobile setPrivacyStatus:ADBMobilePrivacyStatusUnknown]; 
 }
 ```
-
