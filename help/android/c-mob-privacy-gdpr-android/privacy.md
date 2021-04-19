@@ -4,16 +4,16 @@ seo-description: Diese Informationen helfen Ihnen bei einer Anfrage auf Datenlö
 seo-title: Auswahlstatus eines Benutzers festlegen
 solution: Experience Cloud,Analytics
 title: Auswahlstatus eines Benutzers festlegen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
+exl-id: ef5160ac-5a73-4433-b217-1bd990f8456b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
 
 ---
-
 
 # Auswahlstatus eines Benutzers festlegen {#setting-the-user-s-opt-status}
 
@@ -77,4 +77,3 @@ public void setOptUnknown(View view) {
  currentStatus = Config.getPrivacyStatus(); 
 }
 ```
-
