@@ -4,16 +4,16 @@ seo-description: Aktionen sind die Ereignisse in der Android-App, die Sie messen
 seo-title: App-Aktionen verfolgen
 solution: Experience Cloud,Analytics
 title: App-Aktionen verfolgen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
+exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 
 ---
-
 
 # App-Aktionen verfolgen {#track-app-actions}
 
@@ -71,4 +71,3 @@ Die Kontextdatenwerte müssen benutzerdefinierten Variablen in Adobe Mobile Serv
 | Adobe Mobile Services | Bericht **[!UICONTROL Aktionspfade]**:  Zeigen Sie die Reihenfolge an, in der Aktionen in Ihrer App aufgetreten sind. Sie können auch auf **[!UICONTROL Anpassen]** klicken, um die Aktionen in Rang- oder Trendansicht bzw. aufgeschlüsselt anzuzeigen, oder Sie nutzen Filter, um nur Aktionen für ein bestimmtes Segment anzuzeigen. |
 | Marketing Reports and Analytics | Bericht **[!UICONTROL Benutzerspezifisches Ereignis]**:  Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
 | Ad-hoc-Analysen | Bericht **[!UICONTROL Benutzerspezifisches Ereignis]**:  Nachdem eine Aktion einem benutzerdefinierten Ereignis zugewiesen wurde, können Sie mobile Ereignisse ähnlich anzeigen wie alle anderen Analytics-Ereignisse. |
-
