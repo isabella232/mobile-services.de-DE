@@ -1,20 +1,20 @@
 ---
 description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App vom Appstore herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst das SDK automatisch die Akquisedaten und sendet sie an Adobe Mobile Services.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App vom Appstore herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst das SDK automatisch die Akquisedaten und sendet sie an Adobe Mobile Services.
 seo-title: App-Akquise
 solution: Experience Cloud,Analytics
 title: App-Akquise
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
+exl-id: 266f0266-38f5-410b-ae14-92874fb0e7ce
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '880'
 ht-degree: 100%
 
 ---
-
 
 # App-Akquise {#mobile-app-acquisition}
 
