@@ -4,16 +4,16 @@ seo-description: 'Die folgenden Informationen bieten erste Schritte mit dem iOS-
 seo-title: Übersicht über die ersten Schritte
 solution: Experience Cloud,Analytics
 title: Übersicht über die ersten Schritte
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
+exl-id: bf1c059d-3ca7-4d77-8acb-597350c03433
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
 ---
-
 
 # Übersicht über die ersten Schritte {#getting-started}
 
