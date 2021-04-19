@@ -4,16 +4,16 @@ seo-description: Liste der von der Windows 8.1 Universal App Store-Bibliothek be
 seo-title: Target-Methoden
 solution: Experience Cloud,Analytics
 title: Target-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
+exl-id: 2db9f594-01e7-4ca8-a90e-9d12278350d0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 42%
 
 ---
-
 
 # Target-Methoden {#target-methods}
 
@@ -25,7 +25,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 >[!TIP]
 >
->Wenn Sie Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert. `winmd`
+>Wenn Sie die Methoden `winmd` von winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
 
 ## Class reference: TargetLocationRequest
 
@@ -73,7 +73,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
+   Sendet `request` an den konfigurierten Zielgruppe-Server und gibt den Zeichenfolgenwert des Angebots zurück, das in einem Block `callback` generiert wurde.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -92,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   Erstellt ein `TargetLocationRequest`-Objekt mit den angegebenen Parametern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -109,7 +109,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS: createOrder &#x200B; ConfirmRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   Erstellt ein `TargetLocationRequest`-Objekt mit den angegebenen Parametern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -171,4 +171,3 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ```js
       auto sessionId = ADBMobile.Target.getSessionId(); 
       ```
-
