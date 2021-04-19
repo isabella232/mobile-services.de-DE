@@ -4,16 +4,16 @@ seo-description: Klassen und Methoden, die von der Windows 8.1 Universal App Sto
 seo-title: SDK-Methoden
 solution: Experience Cloud,Analytics
 title: SDK-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
+exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 50%
 
 ---
-
 
 # SDK-Methoden {#sdk-methods}
 
@@ -21,7 +21,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
 >[!TIP]
 >
->Wenn Sie Methoden aus winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert. `winmd`
+>Wenn Sie die Methoden `winmd` von winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -47,7 +47,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
    * `ADBMobilePrivacyStatusOptOut`: werden Treffer verworfen.
    * `ADBMobilePrivacyStatusUnknown` - Wenn Ihre Report Suite zeitstempelfähig ist, werden die Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
-      The default value is set in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) file.
+      Der Standardwert wird in der Datei [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) festgelegt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -125,7 +125,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
    >[!TIP]
    >
-   >Wenn Ihre App vom Experience Cloud 3.x auf das 4.x-SDK aktualisiert wird, wird die vorherige ID (benutzerdefinierte oder automatisch generierte) abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. So werden Besucherdaten auch bei Upgrades des SDK beibehalten. For new installations on the 4.x SDK, user identifier is `null` until set.
+   >Wenn Ihre App vom Experience Cloud 3.x auf das 4.x-SDK aktualisiert wird, wird die vorherige ID (benutzerdefinierte oder automatisch generierte) abgerufen und als benutzerdefinierte Benutzerkennung gespeichert. So werden Besucherdaten auch bei Upgrades des SDK beibehalten. Bei neuen Installationen auf dem 4.x-SDK ist der Benutzer-Bezeichner bis zur Einstellung `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -197,7 +197,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
    >[!TIP]
    >
-   >Rufen Sie diese Methode in der `onResume()` Methode in jeder Aktivität Ihrer Anwendung auf, wie im folgenden Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts zu übergeben.
+   >Rufen Sie diese Methode in der `onResume()`-Methode in jeder Aktivität in Ihrer Anwendung auf, wie im folgenden Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts zu übergeben.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -218,7 +218,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
    >[!TIP]
    >
-   >Rufen Sie diese Methode in den `onPause()` Methoden in den einzelnen Aktivitäten Ihrer Anwendung auf, wie im Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts zu übergeben.
+   >Rufen Sie diese Methode in den `onPause()`-Methoden in jeder Aktivität in Ihrer Anwendung auf, wie im Beispiel dargestellt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts zu übergeben.
 
    * Hier finden Sie die Syntax für diese Methode:
 
