@@ -4,16 +4,16 @@ seo-description: Verarbeitungsregeln werden verwendet, um die in Kontextdatenvar
 seo-title: Verarbeitungsregeln und Kontextdaten
 solution: Experience Cloud,Analytics
 title: Verarbeitungsregeln und Kontextdaten
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
+exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
 
 ---
-
 
 # Verarbeitungsregeln und Kontextdaten {#processing-rules-and-context-data}
 
@@ -58,4 +58,3 @@ Berücksichtigen Sie beim Umgang mit Verarbeitungsregeln folgende Informationen:
 >[!TIP]
 >
 >Adobe behält sich den Namespace `"a."` vor. Um Probleme zu vermeiden, müssen Kontextdatenvariablen in Ihrem Anmeldeunternehmen eindeutig sein.
-
