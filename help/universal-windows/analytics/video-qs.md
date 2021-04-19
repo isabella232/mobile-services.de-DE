@@ -3,29 +3,29 @@ description: Informationen zur Unterstützung von Video Analytics.
 seo-description: Informationen zur Unterstützung von Video Analytics.
 seo-title: Video Analytics
 solution: Experience Cloud,Analytics
-title: Video Analytics
-topic: Developer and implementation
+title: Videoanalyse
+topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
+exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 72%
 
 ---
 
-
 # Video Analytics  {#video-analytics}
 
 Informationen zur Unterstützung von Video Analytics.
 
-Die Videomessung wird im Handbuch [Messen von Video und Audio in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html) ausführlich beschrieben. Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt mit einem kurzen Beginn bietet eine grundlegende Übersicht über die Entwickler-Aufgaben sowie Codebeispiele.
+Die Videomessung wird im Handbuch [Video- und Audiomessung in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html) ausführlich beschrieben. Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt mit einem kurzen Beginn bietet eine grundlegende Übersicht über die Entwickler-Aufgaben sowie Codebeispiele.
 
 In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten einer Analytics-Variablen zuzuordnen.
 
 * **a.media.name**
 
-   (**Erforderlich**) Erfasst den Videonamen, der in der Implementierung angegeben ist, wenn ein Besucher das Video auf irgendeine Weise Ansicht.Sie können Classifications für diese Variable hinzufügen.
+   (**Erforderlich**) Erfasst den Videonamen, wie in der Implementierung angegeben, wenn ein Besucher das Video auf eine Weise Ansicht.Sie können Klassifizierungen für diese Variable hinzufügen.
 
    (**Optional**) Die Variable „Custom Insight“ enthält Informationen zu Videopfaden.
 
@@ -44,7 +44,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (**Erforderlich**) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint.
 
-   Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segments eVar.
+   Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. Wenn ein Besucher beispielsweise das erste Segment in einem Video Ansicht, kann SiteCatalyst Folgendes im eVar `1:M:0-25` erfassen.
 
    Die Standardmethode zur Videodatenerfassung erfasst Daten an folgenden Punkten: Video-Beginn (Wiedergabe), Segmentbeginn und Videoende (Stopp). Analytics zählt die erste Segmentansicht am Beginn des Segments, wenn der Besucher zu schauen beginnt. Nachfolgende Segmentansichten bei Segmentbeginn.
 
@@ -161,7 +161,7 @@ property bool isMediaAd;
 
 * **Öffnen (winJS: open)**
 
-   Verfolgt ein geöffnetes Medium mithilfe der unter `settings`&quot;Einstellungen&quot;definierten Einstellungen.
+   Verfolgt ein geöffnetes Medium mithilfe der unter `settings` definierten Einstellungen.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -177,7 +177,7 @@ property bool isMediaAd;
 
 * **Close (winJS: close)**
 
-   Verfolgt eine Medienbeendigung für das Medienelement mit dem Namen *`name`*.
+   Verfolgt eine Medienbeendigung für das Medienelement *`name`*.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -193,7 +193,7 @@ property bool isMediaAd;
 
 * **Play (winJS: play)**
 
-   Verfolgt eine Medienwiedergabe für das Medienelement mit dem Namen *`name`* am angegebenen *Offset* (in Sekunden).
+   Verfolgt eine Medienwiedergabe für das Medienelement *`name`* am angegebenen *offset* (in Sekunden).
 
    * Hier finden Sie die Syntax für diese Methode:
 
