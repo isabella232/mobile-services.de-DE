@@ -5,16 +5,16 @@ seo-description: Mithilfe dieser Informationen können Probleme mit Push-Nachric
 seo-title: Fehlerbehebung bei Push-Nachrichten
 solution: Experience Cloud,Analytics
 title: Fehlerbehebung bei Push-Nachrichten
-topic: Metrics
+topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
+exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
-
 
 # Fehlerbehebung bei Push-Nachrichten {#troubleshooting-push-messaging}
 
@@ -26,7 +26,7 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 
 * Warten auf einen Analytics-Treffer
 
-   Jede Report Suite verfügt über eine Einstellung, die festlegt, wann eingehende Analytics-Treffer verarbeitet werden sollen. Der Standardwert liegt bei 1 Stunde zur vollen Stunde. Die eigentliche Verarbeitung von Analytics-Treffern kann bis zu 30 Minuten dauern, in der Regel sind es jedoch 15 bis 20 Minuten. Beispielsweise verarbeitet eine Report Suite Treffer jede Stunde. Wenn Sie die Verarbeitungszeit von maximal 30 Minuten berücksichtigen, könnte es bis zu 90 Minuten dauern, bis ein eingehender Treffer für eine Push-Nachricht verfügbar ist. Wenn ein Benutzer die App um 9:01 Uhr gestartet hat, wird der Treffer auf der Mobile Services-Benutzeroberfläche als neuer Unique User zwischen 10:15 und 10:30 Uhr angezeigt.
+   Jede Report Suite verfügt über eine Einstellung, die festlegt, wann eingehende Analytics-Treffer verarbeitet werden sollen. Der Standardwert liegt bei 1 Stunde zur vollen Stunde. Die eigentliche Verarbeitung von Analytics-Treffern kann bis zu 30 Minuten dauern, in der Regel sind es jedoch 15 bis 20 Minuten. Beispielsweise verarbeitet eine Report Suite Treffer jede Stunde. Wenn Sie die Verarbeitungszeit von maximal 30 Minuten berücksichtigen, könnte es bis zu 90 Minuten dauern, bis ein eingehender Treffer für eine Push-Nachricht verfügbar ist. Wenn ein Benutzer die App um 9:01 Uhr gestartet hat, wird der Treffer auf der Mobile Services-Benutzeroberfläche als neuer eindeutiger Benutzer zwischen 10:15 und 10:30 Uhr angezeigt.
 
 * Warten auf Push-Dienst
 
