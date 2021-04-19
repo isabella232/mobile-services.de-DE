@@ -3,17 +3,17 @@ description: Das Adobe-SDK nutzt die Zuordnungs-APIs der Suchanzeigen-App von Ap
 seo-description: Das Adobe-SDK nutzt die Zuordnungs-APIs der Suchanzeigen-App von Apple, damit Entwickler und Marketingexperten App-Downloads, die von Suchanzeigenkampagnen im Apple App Store stammen, verfolgen und zuordnen können.
 seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
-title: Apple Search Ads
-topic: Developer and implementation
+title: Apple-Suchanzeigen
+topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
+exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
 ---
-
 
 # Apple Search Ads {#apple-search-ads}
 
@@ -49,7 +49,7 @@ So aktivieren Sie Ihre App für die Suchanzeigenzuordnung:
    Zusätzlich werden die folgenden Werte aus dem `"iad"`-Wörterbuch unseren typischen Akquisitionskontext-Datenfeldern zugeordnet:
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` --> `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` --> `"a.referrer.campaign.content"`
-   * `"iad-keyword"` --> `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
    Diese Zuordnung stellt sicher, dass die Werte in unseren Standardberichten verfügbar sind.
