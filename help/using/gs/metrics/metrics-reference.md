@@ -5,16 +5,16 @@ seo-description: Im Folgenden finden Sie Referenzinformationen für standardmä�
 seo-title: Referenz zu Mobile-Metriken und -Dimensionen
 solution: Experience Cloud,Analytics
 title: Referenz zu Mobile-Metriken und -Dimensionen
-topic: Metrics
+topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
+exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '638'
 ht-degree: 100%
 
 ---
-
 
 # Hinweise zu Mobile-Metriken und -Dimensionen {#mobile-metrics-and-dimensions-reference}
 
