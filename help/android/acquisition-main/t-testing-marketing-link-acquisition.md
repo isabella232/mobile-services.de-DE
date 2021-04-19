@@ -1,20 +1,20 @@
 ---
 description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketing-Link auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
-keywords: android;library;mobile;sdk
-seo-description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketing-Link auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
+keywords: Android;Bibliothek;Mobile;SDK
+seo-description: Die folgenden Anweisungen helfen Ihnen dabei, mit einem Marketinglink auf einem Android-Gerät eine Hin&Zurück-Abfrage einer Akquise-Kampagne durchzuführen.
 seo-title: Marketinglink-Akquise testen
 solution: Experience Cloud,Analytics
 title: Marketing-Link-Akquise testen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
+exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 100%
 
 ---
-
 
 # Marketinglink-Akquise testen {#testing-marketing-link-acquisition}
 
