@@ -4,18 +4,18 @@ seo-description: Informationen zur Verwendung der ADBMobile JSON-Konfigurationsd
 seo-title: ADBMobileConfig.json config
 solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json config
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
+exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 43%
 
 ---
 
-
-# ADBMobileConfig.json config file {#adbmobileconfig-json-config}
+# ADBMobileConfig.json-Konfigurationsdatei {#adbmobileconfig-json-config}
 
 Informationen zur Verwendung der ADBMobile JSON-Konfigurationsdatei.
 
@@ -37,7 +37,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **server**
 
-   (**Erforderlich für Analytics und Audience-Management**). Analytics- oder Audience Management-Server, basierend auf dem übergeordneten Knoten. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `"https://"` oder `"https://"`. Das Protokollpräfix wird automatisch von der Bibliothek auf Basis der `ssl` Variablen verarbeitet.
+   (**Erforderlich für Analytics und Audience-Management**). Analytics- oder Audience Management-Server, basierend auf dem übergeordneten Knoten. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `"https://"` oder `"https://"`. Das Protokollpräfix wird automatisch von der Bibliothek verarbeitet, basierend auf der Variablen `ssl`.
 
    Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
 
@@ -51,11 +51,11 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **offlineEnabled**
 
-   When enabled (`true`), hits are queued while the device is offline and sent later when the device is online. Für Ihre Report Suite müssen Zeitstempel aktiviert sein, um die Offline-Verfolgung zu nutzen.
+   Bei Aktivierung (`true`) werden Treffer in die Warteschlange gestellt, während das Gerät offline ist, und später gesendet, wenn das Gerät online ist. Für Ihre Report Suite müssen Zeitstempel aktiviert sein, um die Offline-Verfolgung zu nutzen.
 
-   If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. if your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be `false`.
+   Wenn in Ihrer Report Suite Zeitstempel aktiviert sind, muss Ihre `offlineEnabled` Konfigurationseigenschaft ** `true`  sein. Wenn Ihre Report Suite nicht zeitstempelfähig ist, muss Ihre `offlineEnabled` Konfigurationseigenschaft ** `false`  sein.
 
-   Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie nicht sicher sind, ob eine Report Suite zeitstempelfähig ist, wenden Sie sich an den Kundendienst. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie nicht sicher sind, ob eine Report Suite zeitstempelfähig ist, wenden Sie sich an den Kundendienst. Wenn Sie derzeit AppMeasurement-Daten an eine Report Suite senden, die auch Daten aus JavaScript erfasst, müssen Sie möglicherweise eine separate Report Suite für Mobildaten einrichten oder einen benutzerspezifischen Zeitstempel für alle JavaScript-Treffer mit der Variablen `s.timestamp` einfügen.
 
    Der Standardwert lautet `false`.
 
@@ -69,7 +69,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    Senden von Treffern in Stapeln
 
-   Wenn Sie beispielsweise auf `50`setzen, werden Treffer in die Warteschlange gestellt, bis 50 gespeichert sind, dann werden alle Treffer in der Warteschlange gesendet. Erfordert `offlineEnabled=true`, und der Standardwert ist `0` (Keine Stapelverarbeitung).
+   Wenn Sie beispielsweise auf `50` setzen, werden Treffer in die Warteschlange gestellt, bis 50 gespeichert sind, dann werden alle Treffer in der Warteschlange gesendet. Erfordert `offlineEnabled=true` und der Standardwert ist `0` (Keine Stapelverarbeitung).
 
 * **privacyDefault**
 
@@ -98,13 +98,13 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **clientCode**
 
-   (**Erforderlich nach Zielgruppe**) Ihr zugewiesener Clientcode.
+   (**Erforderlich durch Zielgruppe**) Ihr zugewiesener Clientcode.
 
 * **timeout**
 
    Bestimmt, wie lange die Zielgruppe auf eine Antwort wartet.
 
-The following is an example of an `ADBMobileConfig.json` file:
+Das folgende Beispiel zeigt eine `ADBMobileConfig.json`-Datei:
 
 ```js
 { 
