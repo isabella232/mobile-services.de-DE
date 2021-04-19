@@ -4,16 +4,16 @@ seo-description: Status sind die verschiedenen Bildschirme oder Ansichten in der
 seo-title: App-Zustände verfolgen
 solution: Experience Cloud,Analytics
 title: App-Zustände verfolgen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
+exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
 
 ---
-
 
 # App-Zustände verfolgen {#track-app-states}
 
@@ -78,5 +78,3 @@ Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Au
 | Adobe Mobile Services | Der Bericht **[!UICONTROL Status anzeigen]**: Dieser Bericht basiert auf den Pfaden, die Benutzer in Ihrer Anwendung durchlaufen. Ein Beispielpfad ist  **[!UICONTROL Home]** > **[!UICONTROL Einstellungen]** > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden können, z. B. in den Berichten **[!UICONTROL Seiten]**, **[!UICONTROL Seitenansichten]** oder **[!UICONTROL Pfad]**. |
 | Ad-hoc-Analysen | Status können überall dort angezeigt werden, wo auch Seiten angezeigt werden, z. B. in der Dimension **[!UICONTROL Seite]**, der Metrik **[!UICONTROL Seitenansichten]** und dem Bericht **[!UICONTROL Pfad]**. |
-
-
