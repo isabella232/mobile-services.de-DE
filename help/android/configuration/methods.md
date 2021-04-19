@@ -1,16 +1,16 @@
 ---
 description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 seo-title: Konfigurationsmethoden
 solution: Experience Cloud,Analytics
 title: Konfigurationsmethoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '989'
 ht-degree: 100%
 
 ---
