@@ -4,16 +4,16 @@ seo-description: Mit dem Geostandort können Sie Standortdaten unter Verwendung 
 seo-title: Geostandort und Zielpunkte
 solution: Experience Cloud,Analytics
 title: Geostandort und Zielpunkte
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
+exl-id: 732c3863-2010-4d04-a17b-a656e857f567
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
 ---
-
 
 # Geostandort und Zielpunkte {#geo-location-and-points-of-interest}
 
@@ -116,4 +116,3 @@ Beachten Sie die folgenden Informationen:
 * Wenn sich die Radien zweier POIs überschneiden, wird der erste POI verwendet, der den aktuellen Standort enthält.
 
    Wenn sich Ihre POIs überschneiden, sollten Sie die POIs in der Reihenfolge der größten bis zur niedrigsten Granularität auflisten, um sicherzustellen, dass der POI mit der größten Granularität gemeldet wird.
-
