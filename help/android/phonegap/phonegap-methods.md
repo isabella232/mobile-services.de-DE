@@ -1,20 +1,20 @@
 ---
 description: Sie können iOS PhoneGap-Plug-in-Methoden verwenden, um eine Reihe verschiedener Aufgaben auszuführen.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Sie können iOS PhoneGap-Plug-in-Methoden verwenden, um eine Reihe verschiedener Aufgaben auszuführen.
 seo-title: PhoneGap-Plug-in-Methoden
 solution: Experience Cloud,Analytics
 title: PhoneGap-Plug-in-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
+exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1573'
 ht-degree: 100%
 
 ---
-
 
 # PhoneGap-Plug-in-Methoden {#phonegap-plug-in-methods}
 
@@ -96,7 +96,7 @@ Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das T
 
    Gibt die automatisch generierte Besucher-ID zurück.
 
-   Hierbei handelt es sich um eine App-spezifische Unique Visitor-ID, die beim ersten Start der App generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID bleibt zwischen App-Upgrades erhalten und wird entfernt wenn die App deinstalliert wird.
+   Hierbei handelt es sich um eine App-spezifische Unique-Visitor-ID, die beim ersten Start der App generiert und ab diesem Zeitpunkt gespeichert und verwendet wird. Diese ID bleibt zwischen App-Upgrades erhalten und wird entfernt wenn die App deinstalliert wird.
 
    >[!TIP]
    >
