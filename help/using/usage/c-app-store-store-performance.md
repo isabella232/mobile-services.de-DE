@@ -5,16 +5,16 @@ seo-description: Der Bericht „App Store-Übersicht“ zeigt eine Momentaufnahm
 seo-title: Bericht „Appstore-Übersicht“
 solution: Experience Cloud,Analytics
 title: Bericht „Appstore-Übersicht“
-topic: Metrics
+topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
+exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 100%
 
 ---
-
 
 # Bericht „Appstore-Übersicht“ {#app-store-overview-report}
 
@@ -56,7 +56,7 @@ Dieser Bericht zeigt die Höhe des Umsatzes, die durch das Herunterladen Ihrer A
 
 Dieser Bericht zeigt die Höhe des Umsatzes aus In-App-Käufen, die mithilfe der App getätigt wurden.
 
-## Downloads nach Land  {#section_10373CD28CA94BA5859DFDEED7D548C6}
+## Downloads nach Land   {#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 Dieser Bericht zeigt die Anzahl der Downloads Ihrer App nach Ländern gruppiert.
 
@@ -66,7 +66,7 @@ Um ein Diagramm anzuzeigen, das die Anzahl der Downloads pro Land nach Datum anz
 
 ![](assets/downloads_by_country.png)
 
-## Downloads nach App Store  {#section_F1CD1A3F0105469D879E4F280CE32484}
+## Downloads nach App Store   {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 Dieser Bericht zeigt die Anzahl der Downloads Ihrer App nach Appstore gruppiert.
 
@@ -76,6 +76,6 @@ Um ein Diagramm anzuzeigen, das die Anzahl der Downloads pro Appstore nach Datum
 
 ![](assets/app_store_downloads_detail.png)
 
-## In-App-Käufe nach Namen  {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## In-App-Käufe nach Namen   {#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 Dieser Bericht zeigt alle In-App-Käufe nach Namen.
