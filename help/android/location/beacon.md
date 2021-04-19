@@ -1,20 +1,20 @@
 ---
 description: Die Beacon-Verfolgung ermöglicht es Ihnen, Mikrostandorte mithilfe von iBeacon und Bluetooth Low Energy zu messen und anzusprechen.
-keywords: android;library;mobile;sdk
+keywords: Android;Bibliothek;Mobile;SDK
 seo-description: Die Beacon-Verfolgung ermöglicht es Ihnen, Mikrostandorte mithilfe von iBeacon und Bluetooth Low Energy zu messen und anzusprechen.
 seo-title: Beacon-Verfolgung
 solution: Experience Cloud,Analytics
 title: Beacon-Verfolgung
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
+exl-id: b8493e9d-ed1c-4404-a218-47a18a9c8faa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '244'
 ht-degree: 100%
 
 ---
-
 
 # Beacon-Verfolgung {#beacon-tracking}
 
@@ -83,4 +83,3 @@ Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 Die Werte der Kontextdaten müssen in Adobe Mobile Services benutzerdefinierten Variablen zugewiesen werden:
 
 ![](assets/map-variable-context-ltv.png)
-
