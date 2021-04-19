@@ -4,16 +4,16 @@ seo-description: Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-
 seo-title: TVJS-Methoden
 solution: Experience Cloud,Analytics
 title: TVJS-Methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
+exl-id: 4e0c6a29-953d-49fc-b44f-533dd393ffb1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 100%
 
 ---
-
 
 # TVJS-Methoden {#tvjs-methods}
 
@@ -427,7 +427,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
 
    Gibt die automatisch generierte Besucher-ID zurück.
 
-   Hierbei handelt es sich um eine App-spezifische eindeutige Besucher-ID, die von Adobe-Servern generiert wird. Wenn die Adobe-Server zum Zeitpunkt der Generierung nicht erreicht werden können, wird die ID mithilfe der Apple-CFUUID von generiert. Der Wert wird beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet. Diese ID wird zwischen App-Upgrades beibehalten, während des standardmäßigen Sicherungsprozesses der Anwendung gespeichert und wiederhergestellt sowie beim Deinstallieren der App entfernt.
+   Hierbei handelt es sich um eine App-spezifische Unique-Visitor-ID, die von Adobe-Servern generiert wird. Wenn die Adobe-Server zum Zeitpunkt der Generierung nicht erreicht werden können, wird die ID mithilfe der Apple-CFUUID von generiert. Der Wert wird beim ersten Start generiert und ab diesem Zeitpunkt gespeichert und verwendet. Diese ID wird zwischen App-Upgrades beibehalten, während des standardmäßigen Sicherungsprozesses der Anwendung gespeichert und wiederhergestellt sowie beim Deinstallieren der App entfernt.
 
    >[!TIP]
    >
@@ -649,7 +649,7 @@ Hier finden Sie eine Liste der TVJS-Methoden, die von der tvOS-Bibliothek bereit
       visitorMarketingCloudID()
       ```
 
-      * Returns: String
+      * Gibt zurück: Zeichenfolge
       * Parameter: Ohne
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
