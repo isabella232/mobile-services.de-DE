@@ -1,19 +1,17 @@
 ---
-description: 'null'
+description: ADBMobile.cs-Konfigurationsmethoden
 keywords: Unity
-seo-description: 'null'
-seo-title: ADBMobile.cs-Methoden
 solution: Experience Cloud
 title: ADBMobile.cs-Methoden
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
+exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 66%
 
 ---
-
 
 # ADBMobile.cs-Methoden {#adbmobile-cs-methods}
 
@@ -90,7 +88,7 @@ ht-degree: 66%
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird.
 
-      Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
+      Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. Der Standardwert wird in der Datei [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) festgelegt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -262,7 +260,7 @@ ht-degree: 66%
 
    Verfolgt einen App-Status mit optionalen Kontextdaten. Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten.
 
-   Wenn der Status leer ist, wird er wie *`app name app version (build)`* in Berichten angezeigt. If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   Wenn der Status leer ist, wird in Berichten *`app name app version (build)`* angezeigt. Wenn dieser Wert in Berichten angezeigt wird, stellen Sie sicher, dass Sie bei jedem `TrackState`-Aufruf den Status festlegen.
 
    >[!TIP]
    >
