@@ -1,19 +1,17 @@
 ---
-description: 'null'
+description: Metriken und Dimensionen messen, die automatisch mit der mobilen Bibliothek gemessen werden können
 keywords: Unity
-seo-description: 'null'
-seo-title: Implementieren des Lebenszyklus
 solution: Experience Cloud
 title: Implementieren des Lebenszyklus
 uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
+exl-id: eca0cebb-6c69-4b0f-b003-c7fc422d0383
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 11%
+source-wordcount: '95'
+ht-degree: 7%
 
 ---
-
 
 # Implementieren des Lebenszyklus{#implement-lifecycle}
 
@@ -25,7 +23,7 @@ Lebenszyklusmetriken werden in iOS automatisch erfasst.
 
 ## Android
 
-Im Unity-Skript legen Sie den Anwendungskontext für das Android-SDK fest. hinzufügen Sie den folgenden Code in die `Awake()` Funktion Ihrer ERSTEN Szene ein:
+Im Unity-Skript legen Sie den Anwendungskontext für das Android-SDK fest. hinzufügen Sie den folgenden Code in die Funktion `Awake()` Ihrer ERSTEN Szene ein:
 
 ```java
 void Awake()
@@ -65,4 +63,3 @@ void OnEnable()
   ...
  }
 ```
-
