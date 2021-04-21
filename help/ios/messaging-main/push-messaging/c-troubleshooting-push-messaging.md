@@ -39,9 +39,8 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
    >Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird. Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie in der entsprechenden Dokumentation:
    >
    >* **APNS**: [Servicequalität](https://developer.apple.com/documentation/usernotifications)
-      >
-      >
-   * **GCM**: [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options)
+   >
+   >* **GCM**: [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Wie erneuere ich mein Apple Push Service-Zertifikat?
