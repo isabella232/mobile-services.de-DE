@@ -8,9 +8,8 @@ title: Mobile Metriken
 topic-fix: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 exl-id: 13912d5e-9813-4f8f-80d5-1f3cfcdd6aa3
-translation-type: tm+mt
 source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
 ht-degree: 100%
 
@@ -38,17 +37,17 @@ Die folgenden Metriktypen werden gemessen:
 
 * **App-Ereignisse**
 
-   App-Ereignisse bilden die Leistungsindikatoren (Key Performance Indicators, KPIs), die Sie definieren, um den Erfolg Ihrer App zu messen. Je nach dem Typ Ihrer App können KPIs die verschiedensten Aspekte sein, zum Beispiel  gelesene Artikel, abgeschlossene Level oder der Lebensdauerumsatz.
+   App-Ereignisse bilden die Leistungsindikatoren (Key Performance Indicators, KPIs), die Sie definieren, um den Erfolg Ihrer App zu messen. Je nach dem Typ Ihrer App können KPIs die verschiedensten Aspekte sein, zum Beispiel gelesene Artikel, abgeschlossene Level oder der Lebensdauerumsatz.
 
 * **App-Statuszustände**
 
-   Statuszustände sind die verschiedenen Ansichten, die von Ihrer App bereitgestellt werden. Statuszustände werden in einem Pfadsetzungsbericht angezeigt. Eine gute Möglichkeit zum Definieren von Statuszuständen besteht darin, über die Pfade in Ihrer App nachzudenken, die Sie messen möchten. Wohin navigieren die Benutzer beispielsweise am häufigsten von der ersten Ansicht aus?
+   Statuszustände sind die verschiedenen Ansichten, die von Ihrer App bereitgestellt werden. Statuszustände werden in einem Pfadbericht angezeigt. Eine gute Möglichkeit zum Definieren von Statuszuständen besteht darin, über die Pfade in Ihrer App nachzudenken, die Sie messen möchten. Wohin navigieren die Benutzer beispielsweise am häufigsten von der ersten Ansicht aus?
 
 * **Standort und Points-of-Interest**
 
    Bei aktiviertem GeoReporting in Ihrer Analytics-Report Suite stehen Ihnen verschiedene standortbasierte Berichte zur Verfügung. Bei WLAN ähnelt die Genauigkeit von GeoReporting der eines Desktop-Webbrowsers. Bei einer Datenverbindung variiert die Genauigkeit je nach Anbieter und Weiterleitung der Anfragen.
 
-   Um die Genauigkeit zu erhöhen, können Sie Ihrer App auch das Tracking von Standorten und Zielpunkten hinzufügen. Diese Optionen ermöglichen es Ihnen, detaillierte Breiten- und Längengrad-Standortdaten zu melden und mithilfe von Geo-Fencing zu bestimmen, wann sich ein Benutzer in einem Radius eines vordefinierten Zielpunkts befindet.
+   Um die Genauigkeit zu erhöhen, können Sie Ihrer App auch das Tracking von Standorten und Zielpunkten hinzufügen. Diese Optionen ermöglichen es Ihnen, detaillierte Breiten- und Längengrad-Standortdaten zu melden und mithilfe von Geofencing zu bestimmen, wann sich ein Benutzer in einem Radius eines vordefinierten Zielpunkts befindet.
 
 * **Lebenszeitwert**
 
