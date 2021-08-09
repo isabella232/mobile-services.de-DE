@@ -7,9 +7,8 @@ title: Versionshinweise
 topic-fix: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 exl-id: 5cc3d031-5952-4e9b-b551-9402d3c05ccb
-translation-type: tm+mt
 source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '303'
 ht-degree: 100%
 
@@ -21,7 +20,7 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 
 **3. April 2020: 4.18.2**
 
-* In-App-Benachrichtigungen: Aus Sicherheitsgründen setzt WebViews, das vom SDK erstellt wurde, jetzt die Eigenschaft „setAllowFileAccess“ auf false.
+* In-App-Benachrichtigungen: Aus Sicherheitsgründen setzt WebViews, das vom SDK erstellt wurde, jetzt die Eigenschaft „setAllowFileAccess“ auf „false“.
 
 **12. März 2020: 4.18.1**
 
@@ -31,7 +30,7 @@ Hier finden Sie die Versionshinweise, bekannten Probleme und Hotfix-Informatione
 
 * Akquise: Es wurde die neue API `Analytics.processGooglePlayInstallReferrerUrl(final String url)` zur Unterstützung der Google Play-Install Referrer APIs hinzugefügt.
 
-   Weitere Informationen zu den Install Referrer APIs finden Sie unter [Still Using InstallBroadcast? Wechseln Sie bis zum 1. März 2020 zur Play Referrer-API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html).
+   Weitere Informationen zu den Install Referrer APIs finden Sie unter [Still Using InstallBroadcast? Switch to the Play Referrer API by March 1, 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) .
 
 **20. September 2019: Version 4.17.10**
 
