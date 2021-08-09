@@ -8,9 +8,8 @@ title: Migration zur Android 4.x-Bibliothek
 topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
-translation-type: tm+mt
 source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '884'
 ht-degree: 100%
 
@@ -72,7 +71,7 @@ Die neue Datei `ADBMobileConfig.json` enthält anwendungsspezifische, globale Ei
 }
 ```
 
-## Konfigurationsdateien verschieben und auf Version 4 migrieren {#section_0B844235E0B04DD4B36976A73DB28FB5}
+## Verschieben der Konfigurationsdatei und Migration zu Version 4 {#section_0B844235E0B04DD4B36976A73DB28FB5}
 
 Die folgende Tabelle enthält die Konfigurationsvariablen, die Sie in die Konfigurationsdatei verschieben müssen.
 
@@ -119,7 +118,7 @@ Um von Version 2.x auf Version 4 zu migrieren, verschieben Sie den Wert aus de
 | dynamicVariablePrefix | Entfernen, wird nicht mehr verwendet. |
 | visitorNamespace | Entfernen, wird nicht mehr verwendet. |
 | usePlugins | Entfernen, wird nicht mehr verwendet. |
-| useBestPractices Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. |
+| useBestPractices  Alle Aufrufe für massenhafte Messung (getChurnInstance) | Entfernen: Durch Lebenszyklusmetriken ersetzt. |
 
 ## Verfolgungsaufruf und -variablen aktualisieren {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
