@@ -8,15 +8,14 @@ title: Referenz zu Mobile-Metriken und -Dimensionen
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-translation-type: tm+mt
 source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '638'
 ht-degree: 100%
 
 ---
 
-# Hinweise zu Mobile-Metriken und -Dimensionen {#mobile-metrics-and-dimensions-reference}
+# Referenz zu Mobile-Metriken und -Dimensionen {#mobile-metrics-and-dimensions-reference}
 
 Diese Informationen helfen Ihnen, mehr über die standardmäßigen Mobile-Metriken und- Dimensionen zu erfahren.
 
@@ -30,15 +29,15 @@ Hier finden Sie die Liste der standardmäßigen Mobile-Metriken:
 
 * **Erste Starts**
 
-   wird beim ersten Start nach der (erneuten) Installation ausgelöst.
+   Wird beim ersten Start nach der (erneuten) Installation ausgelöst.
 
 * **Upgrades**
 
-   wird beim ersten Start nach einem Upgrade oder einer Änderung der Versionsnummer ausgelöst.
+   Wird beim ersten Start nach einem Upgrade oder einer Änderung der Versionsnummer ausgelöst.
 
 * **Täglich eingesetzte Benutzer**
 
-   wird ausgelöst, wenn die Anwendung an einem bestimmten Tag verwendet wird.
+   Wird ausgelöst, wenn die Anwendung an einem bestimmten Tag verwendet wird.
 
    >[!TIP]
    >
@@ -46,14 +45,14 @@ Hier finden Sie die Liste der standardmäßigen Mobile-Metriken:
 
 * **Monatlich beteiligte Benutzer**
 
-   wird ausgelöst, wenn die Anwendung während eines Monats verwendet wird.
+   Wird ausgelöst, wenn die Anwendung während eines Monats verwendet wird.
 
    >[!TIP]
    >Das Ereignis „Monatlich beteiligte Benutzer“ wird nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
 
 * **Starts**
 
-   wird bei jedem Start ausgelöst, außer bei Installationen oder Upgrades. wird auch ausgelöst, wenn die Applikation aus dem Hintergrund gebracht wird. Standardmäßig wird ein Neustart ausgelöst, wenn die App mindestens fünf Minuten im Hintergrund ausgeführt wird. Die Dauer, über die die App im Hintergrund läuft, bevor ein Neustart ausgelöst wird, können Sie in den **[!UICONTROL SDK-Analytics-Optionen]** auf der Seite „App-Einstellungen verwalten“ konfigurieren. Weitere Informationen finden Sie in der Zeile *Sitzungs-Timeout (Sekunden)* unter [SDK-Analytics-Optionen konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
+   Wird bei jedem Start ausgelöst, außer bei Installationen oder Upgrades. Wird auch ausgelöst, wenn die Applikation aus dem Hintergrund gebracht wird. Standardmäßig wird ein Neustart ausgelöst, wenn die App mindestens fünf Minuten im Hintergrund ausgeführt wird. Die Dauer, über die die App im Hintergrund läuft, bevor ein Neustart ausgelöst wird, können Sie in den **[!UICONTROL SDK-Analytics-Optionen]** auf der Seite „App-Einstellungen verwalten“ konfigurieren. Weitere Informationen finden Sie in der Zeile *Sitzungs-Timeout (Sekunden)* unter [SDK-Analytics-Optionen konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    >[!IMPORTANT]
    >Aufgrund der Art der Berechnung von Besuchen in [!UICONTROL Adobe Analytics] und von App-Starts in [!UICONTROL Adobe Mobile Services] werden möglicherweise unterschiedliche Ergebnisse in den Berichten angezeigt. Weitere Informationen finden Sie unter [Besuche und App-Starts vergleichen](https://helpx.adobe.com/de/analytics/kb/compare-visits-and-mobile-app-launches.html).
