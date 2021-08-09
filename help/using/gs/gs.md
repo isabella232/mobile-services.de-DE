@@ -8,9 +8,8 @@ title: Erste Schritte
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-translation-type: tm+mt
 source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1374'
 ht-degree: 100%
 
@@ -42,7 +41,7 @@ Mit Adobe Mobile Services können Sie die App-Interaktion in folgenden Bereichen
 
 ### Akquise
 
-In der Phase der *Aquise* verwenden Sie bezahlte, eigene und Earned Media, um die Benutzerakquise für App-Downloads in den führenden Appstores voranzutreiben. Mit Adobe Mobile Services können Sie den Prozess der App-Benutzerakquise beschleunigen.
+In der Phase der *Akquise* verwenden Sie bezahlte, eigene und Earned Media, um die Benutzerakquise für App-Downloads in den führenden Appstores voranzutreiben. Mit Adobe Mobile Services können Sie den Prozess der App-Benutzerakquise beschleunigen.
 
 Adobe Mobile Services bieten Workflows zur Benutzerakquise, einschließlich Akquise-Tracking und Deep-Linking, mit denen die Effektivität Ihrer Kanäle bei der Akquise von App-Benutzern gemessen wird. Mit Marketinglinks, die verfolgen, welche Benutzer aus welchen Kanälen stammen, können Sie ermitteln, welche Akquisekanäle bei der Gewinnung aktiver und gewinnbringender Benutzer am effektivsten sind.
 
@@ -55,7 +54,7 @@ Die Akquisephase bietet die folgenden Schlüsselfunktionen:
 * Deep-Linking in Apps
 * Postback-Integration in Werbenetzwerke
 
-Weitere Informationen zu diesem Bereich finden Sie unter  [Akquise](/help/using/acquisition-main/acquisition-main.md).
+Weitere Informationen zu diesem Bereich finden Sie unter [Akquise](/help/using/acquisition-main/acquisition-main.md).
 
 ### Analyse
 
@@ -73,7 +72,7 @@ Die *Analysephase* bietet die folgenden Schlüsselfunktionen:
 * Standortanalyse
 * Umfassende Unterstützung von Geräten und Plattformen
 
-Weitere Informationen zu den Berichten, die Ihnen zur Analyse Ihrer Kunden zur Verfügung stehen, finden Sie unter  [Berichte](/help/using/usage/usage.md).
+Weitere Informationen zu den Berichten, die Ihnen zur Analyse Ihrer Kunden zur Verfügung stehen, finden Sie unter [Berichte](/help/using/usage/usage.md).
 
 ### Interagieren
 
@@ -93,11 +92,11 @@ In Adobe Mobile können Sie die folgenden Arten von Nachrichten konfigurieren:
 
 **Push-Benachrichtigungen**, die außerhalb der App angezeigt werden, bieten die folgenden Funktionen:
 
-* Fördern der erneuten Interaktion durch relevante Push-Benachrichtigungen
+* Fördern der erneuten Interaktion durch relevante Push-Benachrichtigungen.
 * Erstellen, Segmentieren und Senden von Nachrichten an Kunden, die die App einer Marke heruntergeladen per Opt-in für den Erhalt von Push-Benachrichtigungen akzeptiert haben.
 * Dies Benachrichtigungen werden Server-seitig von den Appstores und nicht von der App gesendet.
 
-Weitere Informationen zum Erstellen von Push-Benachrichtigungen finden Sie unter  [Push-Nachrichten erstellen](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
+Weitere Informationen zum Erstellen von Push-Benachrichtigungen finden Sie unter [Push-Nachrichten erstellen](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
 **In-App-Benachrichtigungen** bieten die folgenden Funktionen:
 
@@ -108,7 +107,7 @@ Weitere Informationen zum Erstellen von Push-Benachrichtigungen finden Sie unter
 * Ermutigen der Benutzer, eine Appstore-Bewertung zu hinterlassen.
 * Bereitstellen von Echtzeit- und standortbasierten Nachrichten
 
-Weitere Informationen zum Erstellen von In-App-Nachrichten finden Sie unter  [In-App-Nachrichten erstellen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
+Weitere Informationen zum Erstellen von In-App-Nachrichten finden Sie unter [In-App-Nachrichten erstellen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
 
 ### Optimieren
 
