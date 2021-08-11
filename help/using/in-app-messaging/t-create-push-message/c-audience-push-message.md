@@ -8,11 +8,10 @@ title: Zielgruppe Zielgruppensegmente für Push-Nachrichten definieren und konfi
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +25,7 @@ Wenn ein Zielgruppensegment für Push-Messaging erstellt wird, beinhaltet das Se
 
 In Adobe Mobile Services können Marketer Push-Benachrichtigungen nur an eine App pro Plattform senden. Wenn Marketer versuchen, Push-Benachrichtigungen an Segmente zu senden, die Benutzer aus mehreren Apps enthalten, wird eine Warnung angezeigt, in der erklärt wird, dass ein Fortfahren zu schwerwiegenden Push-Fehlern führen kann und Benutzer möglicherweise auf die Sperrliste gesetzt werden. Wenn bei Ihnen Push-Fehler auftreten, lesen Sie den Abschnitt *Beheben von Push-Fehlern* unter   [Fehlerbehebung für Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
-Informationen zur Verwendung von Audience Manager-Daten in Ihrer Segmentdefinition finden Sie unter [Audience Analytics](https://docs.adobe.com/content/help/de-DE/analytics/integration/audience-analytics/mc-audiences-aam.html).
+Informationen zur Verwendung von Audience Manager-Daten in Ihrer Segmentdefinition finden Sie unter [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
