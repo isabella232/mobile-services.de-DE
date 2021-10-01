@@ -1,17 +1,14 @@
 ---
 description: 'Bevor Sie eine Report Suite konfigurieren und Android-Appdaten erfassen, führen Sie zunächst die folgenden erforderlichen Aufgaben aus '
-seo-description: 'Bevor Sie eine Report Suite konfigurieren und Android-Appdaten erfassen, führen Sie zunächst die folgenden erforderlichen Aufgaben aus '
-seo-title: Vorbereitung
 solution: Experience Cloud,Analytics
 title: Vorbereitung
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -52,7 +49,7 @@ Sie können sich auf eine der folgenden Arten bei der Benutzeroberfläche von Ad
 
 ### Experience Cloud
 
-Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://experiencecloud.adobe.com) anmelden. Dies setzt voraus, dass Ihr Unternehmen in der Experience Cloud präsent ist und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://experiencecloud.adobe.com) anmelden. Dies setzt voraus, dass Ihr Unternehmen in der Experience Cloud präsent ist und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen finden Sie unter [Verwalten von Experience Cloud-Benutzern und -produkten](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) im Handbuch Experience Cloud Central Interface Components .
 
 >[!TIP]
 >
@@ -66,7 +63,7 @@ Klicken Sie auf **[!UICONTROL Mit Analytics-Konto anmelden]** und geben Sie Ihr
 
 So erstellen Sie eine Report Suite, um App-Daten zu erfassen und eine App zu definieren:
 
-1. Melden Sie sich bei der Mobile Services-Benutzeroberfläche an, indem Sie im Browser [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) eingeben.
+1. Melden Sie sich bei [Adobe Mobile Services](https://mobilemarketing.adobe.com) an.
 1. Klicken Sie auf **[!UICONTROL App erstellen]**.
 
    Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf **[!UICONTROL Apps verwalten]** > **[!UICONTROL Hinzufügen]**.
@@ -93,7 +90,7 @@ Sie können Ihre App auch im rechten Bereich auswählen.
 
    >[!IMPORTANT]
    >
-   >Um Ihre App im rechten Bereich anzeigen zu können, müssen Sie zunächst eine App erstellen. Weitere Informationen zum Erstellen einer App finden Sie unter [Hinzufügen einer neuen App.](https://docs.adobe.com/content/help/de-DE/mobile-services/using/manage-apps-ug/t-new-app.html)
+   >Um Ihre App im rechten Bereich anzeigen zu können, müssen Sie zunächst eine App erstellen. Weitere Informationen zum Erstellen einer App finden Sie unter [Hinzufügen einer neuen App](/help/using/manage-apps/t-new-app.md).
 
 1. Klicken Sie in Ihrer App im linken Bereich auf **[!UICONTROL App-Einstellungen verwalten]**.
 

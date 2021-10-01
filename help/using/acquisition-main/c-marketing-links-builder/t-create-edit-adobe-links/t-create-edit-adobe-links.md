@@ -1,18 +1,15 @@
 ---
 description: Sie können Marketinglinks erstellen oder bearbeiten, um Deep-Links zu Ihrer App oder Ihrer Website bereitzustellen.
 keywords: mobile
-seo-description: Sie können Marketinglinks erstellen oder bearbeiten, um Deep-Links zu Ihrer App oder Ihrer Website bereitzustellen.
-seo-title: Marketinglinks erstellen oder bearbeiten
 solution: Experience Cloud,Analytics
 title: Marketinglinks erstellen oder bearbeiten
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +40,7 @@ Sie können Marketinglinks erstellen oder bearbeiten, um Deep-Links zu Ihrer App
       Folgende vorgegebenen Tags sind verfügbar:
 
       * **Benutzerdefinierte Kontextdaten**
-Geben Sie den Schlüssel und den Wert an. Wenn Sie benutzerdefinierte Kontextdaten hinzufügen, müssen Sie eine Verarbeitungsregel erstellen. Weitere Informationen finden Sie unter Übersicht über [Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Geben Sie den Schlüssel und den Wert an. Wenn Sie benutzerdefinierte Kontextdaten hinzufügen, müssen Sie eine Verarbeitungsregel erstellen. Weitere Informationen finden Sie unter [Übersicht über Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in der Adobe Analytics-Dokumentation.
 
       * **Quelle**
 Geben Sie die ursprünglich verweisende Stelle an, z. B. „Newsletter“ oder „Homepage“.

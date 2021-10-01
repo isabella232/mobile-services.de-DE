@@ -1,18 +1,15 @@
 ---
 description: Sie können die Daten, die Sie von der App erhalten, verfolgen und verwalten, indem Sie verschiedene Variablen und Metriken konfigurieren.
 keywords: mobile
-seo-description: Sie können die Daten, die Sie von der App erhalten, verfolgen und verwalten, indem Sie verschiedene Variablen und Metriken konfigurieren.
-seo-title: Verwalten Ihrer App
 solution: Experience Cloud,Analytics
 title: Verwalten Ihrer App
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 91%
 
 ---
 
@@ -39,7 +36,7 @@ Sie können die Daten, die Sie von der App erhalten, verfolgen und verwalten, in
 
 Klicken Sie auf **[!UICONTROL App-Einstellungen verwalten]** > **[!UICONTROL Variablen und Metriken verwalten]** > **[!UICONTROL Benutzerdefinierte Variablen]**.
 
-Diese Zuordnungen rufen dieselbe API auf, die in [Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html) verwendet wird.
+Diese Zuordnungen rufen dieselbe API auf, die [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in Adobe Analytics verwenden.
 
 ![Kontextdatenzuordnung](assets/custom_data_content.png)
 
@@ -49,8 +46,8 @@ Im Folgenden finden Sie eine Liste der benutzerdefinierten Variablen, die Sie ko
 
    Wenn ein Wert für eine Eigenschaft in einem Tracking-Aufruf (oder Treffer) festgelegt wird, gilt er nur für diesen Aufruf.
 
-* **[!UICONTROL Benutzerdefinierte Variablen]** (oder „eVars“) beantworten ebenfalls die Frage „Welcher/Welche/Welches?“. Ein eVar-Wert kann jedoch nicht nur auf den Hit zutreffen, für den er gesendet wird, sondern auch für Variablen und Metriken, die in folgenden Hits gesendet werden, bis der Wert abläuft oder ein neuer Wert festgelegt wird.
-* **[!UICONTROL Benutzerdefinierte Listenvariablen (oder mehrwertige Variablen)]** weisen das gleiche Verhalten wie Variablen auf, ermöglichen Ihnen jedoch auch, aus einem einzigen Treffer mehrere Variablen zu erfassen. Weitere Informationen finden Sie unter [Listenvariablen](https://docs.adobe.com/content/help/de-DE/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html).
+* Die **[!UICONTROL benutzerdefinierten Variablen]** (oder eVars) beantworten auch die Frage &quot;Welcher/Welche/Welches?&quot; Ein eVar kann jedoch nicht nur auf den Treffer angewendet werden, an den er gesendet wird, sondern auch auf Variablen und Metriken, die in nachfolgenden Treffern gesendet werden, bis der Wert abläuft oder ein neuer Wert festgelegt wird.
+* **[!UICONTROL Benutzerdefinierte Listenvariablen (oder mehrwertige Variablen)]** weisen das gleiche Verhalten wie Variablen auf, ermöglichen Ihnen jedoch auch, aus einem einzigen Treffer mehrere Variablen zu erfassen. Weitere Informationen finden Sie unter [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) -Variablen in der Adobe Analytics-Dokumentation.
 
 Die folgenden Zuordnungen werden in Analytics als „in Mobile Services erstellt“ angezeigt.
 

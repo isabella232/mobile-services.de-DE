@@ -1,16 +1,13 @@
 ---
 description: Die Android-SDK-Version 4.5 enthält eine neue Erweiterung von Android, die Ihnen das Erfassen der Nutzungsdaten von Ihrer Android Wearable App ermöglicht.
-seo-description: Die Android-SDK-Version 4.5 enthält eine neue Erweiterung von Android, die Ihnen das Erfassen der Nutzungsdaten von Ihrer Android Wearable App ermöglicht.
-seo-title: 'Android Wearables: Erste Schritte'
 solution: Experience Cloud,Analytics
 title: 'Android Wearables: Erste Schritte'
 topic-fix: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 exl-id: 79cfaa48-d9b2-4518-8b31-d7041898a71b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '265'
 ht-degree: 100%
 
 ---
@@ -19,7 +16,7 @@ ht-degree: 100%
 
 Die Android-SDK-Version 4.5 enthält eine neue Erweiterung von Android, die Ihnen das Erfassen der Nutzungsdaten von Ihrer Android Wearable App ermöglicht.
 
-## SDK für eine Handheld App (Android Studio) konfigurieren {#section_262237484EC44C58953891B105F0D000}
+## SDK für eine Handheld App (Android Studio) konfigurieren  {#section_262237484EC44C58953891B105F0D000}
 
 Weitere Informationen zum Importieren des SDK in Ihr Projekt finden Sie unter [Grundlegende Implementierung und Lebenszyklus](/help/android/getting-started/dev-qs.md).
 
@@ -120,7 +117,7 @@ Weitere Informationen zum Importieren des SDK in Ihr Projekt finden Sie unter [G
    Permalink Edit
    ```
 
-## SDK für eine Wearable App (Android Studio) konfigurieren {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
+## SDK für eine Wearable App (Android Studio) konfigurieren  {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
 
 1. Führen Sie eine der folgenden Aufgaben aus:
 

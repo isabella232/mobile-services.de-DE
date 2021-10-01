@@ -1,17 +1,14 @@
 ---
 description: Führen Sie diese Schritte aus, um eine Report Suite zum Erfassen von iOS-App-Daten zu konfigurieren.
-seo-description: Führen Sie diese Schritte aus, um eine Report Suite zum Erfassen von iOS-App-Daten zu konfigurieren.
-seo-title: Vorbereitung
 solution: Experience Cloud,Analytics
 title: Vorbereitung
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 100%
+source-wordcount: '584'
+ht-degree: 91%
 
 ---
 
@@ -53,9 +50,9 @@ Sie können sich auf eine der folgenden Arten bei Adobe Mobile Services anmelden
 
 * **Experience Cloud**
 
-   Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://marketing.adobe.com) anmelden.
+   Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://experience.adobe.com) anmelden.
 
-   Dies setzt voraus, dass Ihr Unternehmen bereitgestellt wurde und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen zur Bereitstellung finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/admin-getting-started.html). Weitere Informationen zum Verknüpfen Ihres Kontos finden Sie unter [Organisationen und Kontoverknüpfung](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/organizations.html).
+   Dies setzt voraus, dass Ihr Unternehmen bereitgestellt wurde und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen zur Bereitstellung finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) im Handbuch zu den Komponenten der zentralen Experience Cloud-Benutzeroberfläche. Weitere Informationen zur Verknüpfung Ihres Kontos finden Sie unter [Organisationen im Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html).
 
    >[!TIP]
    >

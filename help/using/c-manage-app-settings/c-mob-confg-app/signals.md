@@ -1,17 +1,14 @@
 ---
 description: Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an einen Drittanbieterserver senden. Mit denselben Triggern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie Adobe Mobile Services so konfigurieren, dass es benutzerdefinierte Daten an ein Drittanbieterziel sendet.
-seo-description: Mit Postbacks können Sie durch Adobe Mobile erfasste Daten an einen Drittanbieterserver senden. Mit denselben Triggern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie Adobe Mobile Services so konfigurieren, dass es benutzerdefinierte Daten an ein Drittanbieterziel sendet.
-seo-title: Postbacks konfigurieren
 title: Postbacks konfigurieren
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+exl-id: 99b27f16-303a-4853-bfdb-2066a53867bf
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '430'
 ht-degree: 100%
 
 ---
-
 
 # Postbacks konfigurieren {#configure-postbacks}
 

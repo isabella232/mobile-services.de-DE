@@ -1,23 +1,20 @@
 ---
-description: iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
+description: iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.x.
 keywords: Xamarin
-seo-description: iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
-seo-title: iOS-Methoden
 solution: Experience Cloud
 title: iOS-Methoden
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1737'
 ht-degree: 70%
 
 ---
 
-
 # iOS-Methoden{#ios-methods}
 
-iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
+iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.x.
 
 ## Konfigurationsmethoden {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -55,7 +52,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **SetDebugLogging**
 
-   Legt fest, dass die Voreinstellung für die Debug-Protokollierung aktiviert ist.
+   Legt die Debug-Protokollierungseinstellung auf &quot;Aktiviert&quot;fest.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -90,9 +87,9 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
    * `ADBMobilePrivacyStatus.OptIn`: Treffer werden umgehend gesendet.
    * `ADBMobilePrivacyStatus.OptOut`: werden Treffer verworfen.
-   * ADBMobilePrivacyStatus.Unknown - Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus in &quot;opt-in&quot;(Zugriffe werden dann gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Wenn die Offline-Verfolgung deaktiviert ist, werden Treffer verworfen, bis sich der Datenschutzstatus in Opt-in ändert.
+   * ADBMobilePrivacyStatus.Unknown : Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(anschließend werden die Treffer gesendet) oder &quot;opt-out&quot;(anschließend werden die Treffer verworfen) geändert wird. Wenn die Offline-Verfolgung deaktiviert ist, werden die Treffer verworfen, bis der Datenschutzstatus zu &quot;opt-in&quot;geändert wird.
 
-   The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+   Der Standardwert wird in [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) festgelegt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -128,7 +125,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **UserIdentifier**
 
-   Gibt die benutzerdefinierte Benutzerkennung zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt null zurück, wenn kein benutzerdefinierter Bezeichner festgelegt ist. Der Standardwert lautet `null`.
+   Gibt die benutzerdefinierte Benutzer-ID zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt null zurück, wenn keine benutzerdefinierte ID festgelegt ist. Der Standardwert lautet `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -144,7 +141,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **SetUserIdentifier**
 
-   Gibt die benutzerdefinierte Benutzerkennung zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt null zurück, wenn kein benutzerdefinierter Bezeichner festgelegt ist. Der Standardwert lautet `null`.
+   Gibt die benutzerdefinierte Benutzer-ID zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt null zurück, wenn keine benutzerdefinierte ID festgelegt ist. Der Standardwert lautet `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -155,7 +152,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
       ```objective-c
-      ADBMobile.SetUserIdentifier ("customUserIdentifier”); 
+      ADBMobile.SetUserIdentifier ("customUserIdentifier"); 
       ```
 
 * **GetVersion**
@@ -180,7 +177,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
    >[!TIP]
    >
-   >Diese Methode soll für Apps verwendet werden, die sich für Benachrichtigungen im Hintergrund registrieren und nur aus dem Code heraus aufgerufen werden sollten, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
+   >Diese Methode ist für Apps vorgesehen, die sich für Benachrichtigungen während der Ausführung im Hintergrund registrieren und die nur aus dem Code heraus aufgerufen werden sollen, der aktiv ist, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -214,7 +211,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **TrackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;usw. Diese Zustände ähneln den Seiten auf einer Website und `TrackState` rufen inkrementelle Ansichten auf. Ist der Status leer, wird in Berichten als &quot;App-Name-App-Version (Build)&quot;angezeigt. If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die in Ihrer App verfügbaren Ansichten, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;. Diese Statusangaben sind mit den Seiten einer Website vergleichbar, und `TrackState` -Aufrufe erhöhen die Seitenansichten. Wenn der Status leer ist, wird in Berichten als &quot;App Name App Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie den Status in jedem `TrackState` -Aufruf festlegen.
 
    >[!TIP]
    >
@@ -236,7 +233,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **TrackAction**
 
-   Verfolgt eine Aktion in der App. Aktionen sind die Vorgänge, die in Ihrer App stattfinden und die Sie messen möchten, z. B. &quot;Todesfälle&quot;, &quot;erzielte Werte&quot;, &quot;Feed-Abonnement&quot;und andere Metriken.
+   Verfolgt eine Aktion in der App. Bei Aktionen handelt es sich um die Dinge, die in Ihrer App vor sich gehen, die Sie messen möchten, z. B. &quot;Todesfälle&quot;, &quot;Erreichte Stufe&quot;, &quot;Feed-Abonnements&quot;und andere Metriken.
 
    >[!TIP]
    >
@@ -326,11 +323,11 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **TrackLifetimeValueIncrease**
 
-   Fügt dem Lebenszeitwert des Benutzers einen Wert hinzu.
+   Erhöht den Lebenszeitwert des Benutzers um einen Wert.
 
    * Hier finden Sie die Syntax für diese Methode:
 
-      public nbsp;static void TrackLifetimeValueIncrease(Dublette amount, NSDictionary data);
+      public nbsp;static void TrackLifetimeValueIncrease(double amount, NSDictionary data);
 
    * Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -360,7 +357,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **TrackTimedActionUpdate**
 
-   Übergeben Sie Daten, um die mit der jeweiligen Aktion verknüpften Kontextdaten zu aktualisieren. Die weitergeleiteten Daten werden an die vorhandenen Daten für die jeweilige Aktion angehängt und überschreiben die Daten, wenn derselbe Schlüssel bereits für die Aktion definiert ist.
+   Übergibt Daten, um die Kontextdaten zu aktualisieren, die mit der angegebenen Aktion verknüpft sind. Die übergebenen Daten werden an die vorhandenen Daten für die Aktion angehängt und überschreiben die Daten, wenn der Schlüssel bereits für die Aktion definiert ist.
 
    >[!TIP]
    >
@@ -399,7 +396,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **TrackingTimedActionExists**
 
-   Gibt zurück, ob eine zeitgesteuerte Aktion ausgeführt wird (oder nicht).
+   Gibt an, ob eine zeitgesteuerte Aktion ausgeführt wird (oder nicht).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -464,7 +461,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
       var queueSize = ADBMobile.TrackingGetQueueSize(); 
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Experience Cloud-ID-Methoden {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **GetMarketingCloudID**
 
@@ -484,7 +481,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **VisitorSyncIdentifiers**
 
-   Mit der Experience Cloud-ID können Sie weitere Kunden-IDs festlegen, die jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher zusammen mit einer Kundentypkennung, um den Umfang der verschiedenen Kunden-IDs zu trennen. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
+   Mit der Experience Cloud-ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -503,7 +500,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **TargetLoadRequest**
 
-   Sends request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
+   Sendet Anforderungen an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des Angebots zurück, das in einem `Action<NSDictionary>` -Rückruf generiert wurde.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -523,7 +520,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **TargetCreateRequest**
 
-   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
+   Komfortabler Konstruktor zum Erstellen eines `ADBTargetLocationRequest`-Objekts mit den angegebenen Parametern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -570,11 +567,11 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
       ADBMobile.TargetClearCookies(); 
       ```
 
-## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
+## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
 * **AudienceVisitorProfile**
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt null zurück, wenn noch kein Signal gesendet wurde. Visitor profile is saved in `NSUserDefaults` for easy access across multiple launches of your app.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt null zurück, wenn noch kein Signal gesendet wurde. Das Besucherprofil wird in `NSUserDefaults` gespeichert und steht so bei jedem Start Ihrer App zur Verfügung.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -622,7 +619,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **AudienceSetDpidAndDpuuid**
 
-   Legt die dpid und dpuuid fest. Wenn dpid und dpuuid eingestellt sind, werden sie mit jedem Signal gesendet.
+   Legt die dpid und dpuuid fest. Wenn dpid und dpuuid festgelegt sind, werden sie mit jedem Signal gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -638,7 +635,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 * **AudienceSignalWithData**
 
-   Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>`  callback.
+   Sendet dem Zielgruppen-Management ein Signal mit Eigenschaften und ruft die passenden Segmente ab, die in einem `Action<NSDictionary>` -Rückruf zurückgegeben werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -673,7 +670,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud Solutions 4.x SDK.
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Weitere Informationen finden Sie unter [Videoanalyse](/help/ios/getting-started/dev-qs.md).
+Weitere Informationen finden Sie unter [Video Analytics](/help/ios/getting-started/dev-qs.md).
 
 * **MediaCreateSettings**
 

@@ -1,17 +1,15 @@
 ---
 description: Diese Informationen sollen Sie bei der Verwendung von Adobe Mobile Services unterstützen.
 keywords: mobile
-seo-description: Diese Informationen sollen Sie bei der Verwendung von Adobe Mobile Services unterstützen.
-seo-title: Erste Schritte
 solution: Experience Cloud,Analytics
 title: Erste Schritte
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: ht
-source-wordcount: '1374'
-ht-degree: 100%
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+workflow-type: tm+mt
+source-wordcount: '1344'
+ht-degree: 97%
 
 ---
 
@@ -113,7 +111,7 @@ Weitere Informationen zum Erstellen von In-App-Nachrichten finden Sie unter [In-
 
 In der Phase der *Optimierung* können Sie Konversionen (Abonnement, Handel, Anzeigenumsatz usw.) optimieren und die Kundenbindung verbessern. Die Optimierung des Benutzererlebnisses in Ihrer Anwendung kann Ihnen helfen, Ihre Inhalte zu personalisieren, um maximalen ROI und eine maximale Konversion zu erzielen.
 
-Weitere Informationen zu Tests und Adobe Target finden Sie unter [Adobe Target](https://docs.adobe.com/content/help/de-DE/target/using/target-home.html).
+Weitere Informationen zu Tests und Adobe Target finden Sie in der Dokumentation zu [Adobe Target](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html).
 
 ### Geotargeting
 
@@ -152,7 +150,7 @@ Das Adobe Mobile SDK bietet die folgenden Funktionen:
 * Integriert
 
    * Ein SDK für mehrere Lösungen (Analytics, Campaign und Audience Manager), wodurch Implementierungszeit und -aufwand für Entwickler reduziert werden.
-   * Nur eine Codezeile ist für die Erfassung der Lebenszyklusbasismetriken einer App erforderlich.
+   * Für die Erfassung der Lebenszyklusmetriken der &quot;Grundlinien&quot;-App ist nur eine Codezeile erforderlich.
    * Bei der Entwicklung Ihrer Mobilgerätestrategie können Sie die Funktionen von Adobe Experience Cloud problemlos aktivieren, um Anwender zu akquirieren, zu analysieren und zu binden.
 
 * Schnell und leichtgewichtig
@@ -160,4 +158,4 @@ Das Adobe Mobile SDK bietet die folgenden Funktionen:
    * Minimiert die Verarbeitungslast des Geräts für das Senden von Daten an Adobe-Server und Drittanbietersysteme.
    * Ein geringer Platzbedarf minimiert die Größe des App-Pakets, das an Appstores gesendet wird.
 
-Weitere Informationen zu den Adobe Mobile-SDK finden Sie unter [Android-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/de-DE/mobile-services/android/overview.html) und [iOS-SDK 4.x für Experience Cloud-Lösungen](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/rel-notes.html).
+Weitere Informationen zu den Adobe Mobile-SDK finden Sie unter [Android-SDK 4.x für Experience Cloud-Lösungen](/help/android/overview.md) und [iOS-SDK 4.x für Experience Cloud-Lösungen](/help/ios/overview.md).

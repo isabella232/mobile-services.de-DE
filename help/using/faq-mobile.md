@@ -1,18 +1,15 @@
 ---
 description: Antworten auf häufig gestellte Fragen zu Adobe Mobile Services sowie allgemeine Funktionsbeschreibungen.
 keywords: mobile
-seo-description: Antworten auf häufig gestellte Fragen zu Adobe Mobile Services sowie allgemeine Funktionsbeschreibungen.
-seo-title: Häufig gestellte Fragen
 solution: Experience Cloud,Analytics
 title: Häufig gestellte Fragen
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 96%
 
 ---
 
@@ -22,13 +19,9 @@ Die folgende Tabelle enthält eine Liste häufig gestellter Fragen zu Adobe Mob
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
-### Führen Sie häufige Aktualisierungen mit dem SDK durch?
-
-Ja, wir führen ständig Updates durch, um Ihnen SDK mit dem größten Funktionsumfang, der besten Standardkonformität und der höchsten Sicherheit zu liefern. Normalerweise veröffentlichen wir jeden Monat eine neue Version. Diese SDK-Aktualisierungen können (für Version 4x) einfach ersetzt werden, um die Implementierung zu erleichtern. Weitere Informationen zu unseren Updates finden Sie in den [Versionshinweisen](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
-
 ### Welche SDK-Version soll ich einsetzen?
 
-Unsere aktuellen SDK beziehen sich auf Version 4.11. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Unsere aktuellen SDKs beziehen sich auf Version 4.11. Weitere Informationen finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de).
 
 ### Wo kann ich die SDK herunterladen?
 
@@ -44,7 +37,6 @@ Die Adobe Mobile SDK verwenden die standardmäßigen iOS- und Android-Netzwerkst
 
 *Wenn Sie eine clientseitige App schreiben, die High-Level-Netzwerk-APIs wie NSURLSession und die CFNetwork-Frameworks verwendet, und eine Verbindung nach Name hergestellt wird, sollten keine Änderungen erforderlich sein, damit Ihre App mit IPv6-Adressen funktioniert.* Weitere Informationen finden Sie unter [Unterstützende IPv6 DNS64/NAT64-Netzwerke](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
-
 ## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
 
 ### Was sind Lebenszyklusmetriken?
@@ -53,7 +45,7 @@ Lebenszyklusmetriken sind vorkonfigurierte Metriken, die automatisch erfasst wer
 
 ### Wie kann ich Fehler in Verarbeitungsregeln beheben?
 
-Weitere Informationen finden Sie unter [Verarbeitungsregeln – Tipps und Tricks](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
+Siehe [Verarbeitungsregeln - Tipps und Tricks](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) in der Adobe Analytics-Dokumentation.
 
 ### Kann ich meine Analysedaten an mehrere Report Suites senden?
 
@@ -91,7 +83,7 @@ Push-Nachrichten werden unter Verwendung von bereits bestehenden Adobe Analytics
 
 Sie können nicht ein und denselben Namen für In-App-Nachrichten, Push-Nachrichten oder Marketinglinks in verschiedenen Apps verwenden, die dieselbe übergeordnete Report Suite oder VRS verwenden. Um dieses Problem zu beheben, geben Sie einfach einen anderen Namen für Ihre In-App-Nachricht, Push-Nachricht oder Ihren Marketinglink ein.
 
-## Ort {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
+## Standort {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
 
 ### Gibt es eine Beschränkung für die Anzahl meiner Zielpunkte (POIs)?
 

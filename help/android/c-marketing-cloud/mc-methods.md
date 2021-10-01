@@ -1,22 +1,19 @@
 ---
 description: Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
-seo-title: Identity-Dienst-Methoden für Adobe Experience Platform
 solution: Experience Cloud,Analytics
 title: Identity-Dienst-Methoden für Adobe Experience Platform
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 100%
+source-wordcount: '435'
+ht-degree: 97%
 
 ---
 
-# Identity-Dienst-Methoden für Adobe Experience Platform {#experience-cloud-id-service-methods}
+# Identity-Dienst-Methoden für Adobe Experience Platform{#experience-cloud-id-service-methods}
 
 Im Folgenden finden Sie die Methoden des Experience Cloud ID-Dienstes, die von der Android-Bibliothek bereitgestellt werden.
 
@@ -26,7 +23,7 @@ Methoden erhalten je nach Lösung unterschiedliche Präfixe, z. B. `visitor` be
 
 * **public static String appendToURL(final String URL)**
 
-   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Für diese Methode benötigen Sie SDK 4.12 oder höher. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Für diese Methode benötigen Sie SDK 4.12 oder höher. Weitere Informationen finden Sie unter [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html?lang=de) in der Dokumentation zum Adobe Experience Cloud Identity-Dienst.
 
    >[!IMPORTANT]
    >

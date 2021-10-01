@@ -1,17 +1,14 @@
 ---
 description: Verwenden Sie das iOS-SDK, um die Verfolgung verzögerter Deep-Links von Drittanbietern zu implementieren.
-seo-description: Verwenden Sie das iOS-SDK, um die Verfolgung verzögerter Deep-Links von Drittanbietern zu implementieren.
-seo-title: Verfolgen von verzögerten Deep-Links von Drittanbietern
-title: Verfolgen von verzögerten Deep-Links von Drittanbietern
+title: Verfolgen verzögerter Deep-Links von Drittanbietern
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+exl-id: c6d2ec6e-cd2a-4670-96e9-cb5e09f7cc10
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 97%
+source-wordcount: '396'
+ht-degree: 98%
 
 ---
-
 
 # Verzögerte Drittanbieter-Deep-Links verfolgen {#tracking-third-party-deferred-deep-links}
 
@@ -25,14 +22,14 @@ Das Adobe Mobile SDK unterstützt derzeit Deep-Links, bei dem vom App-Entwickler
 
 Ersteller von Werbeanzeigen können eine Werbeanzeige auf Facebook als Deep-Link erstellen. Wenn Benutzer auf die Anzeige auf Facebook klicken, werden sie direkt zu den Informationen weitergeleitet, an denen sie in der App interessiert sind. Der Deep-Link ist **keine** Fingerprinting-URL. Während der Werbekonfiguration ist jedoch eine Option zur Bereitstellung einer Drittanbieter-Deep-Link-URL verfügbar. Von einem App-Entwickler, der die Experience Cloud Mobile-SDK und Services verwendet, wird erwartet, dass er die für Adobe Mobile Services konfigurierte Fingerprinter-URL in dieses Feld eingibt. Wenn alles ordnungsgemäß eingerichtet ist, übergibt das Facebook-SDK diese URL an die Anwendung, wenn die App installiert oder gestartet wird.
 
-## Einrichten der SDK {#section_834CD3109175432B8173ECB6EA7DE315}
+## Einrichten der SDKs {#section_834CD3109175432B8173ECB6EA7DE315}
 
 1. Einrichten des Facebook-SDK.
 
    Weitere Informationen finden Sie hier:
 
    * [Erste Schritte mit dem Facebook-SDK für iOS](https://developers.facebook.com/docs/ios/getting-started)
-   * [Deep-Setup](https://developers.facebook.com/docs/app-ads/deep-linking#os)
+   * [Deep-Linking-Einrichtung](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
 1. Um das SDK einzurichten, rufen Sie `trackAdobeDeepLink` auf und übergeben Sie die URL an die SDK:
 
@@ -141,4 +138,3 @@ Wenn die Anwendung entsprechend der obigen Beschreibung eingerichtet ist, funkti
           return YES; 
       }
       ```
-

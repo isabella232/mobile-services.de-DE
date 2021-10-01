@@ -1,17 +1,15 @@
 ---
 description: Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren, einschließlich Datumsbereichsoptionen, Analytics-Segmenten und benutzerdefinierter Segmente.
 keywords: mobile
-seo-description: Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren, einschließlich Datumsbereichsoptionen, Analytics-Segmenten und benutzerdefinierter Segmente.
-seo-title: Zielgruppe Zielgruppensegmente für Push-Nachrichten definieren und konfigurieren
 solution: Experience Cloud,Analytics
 title: Zielgruppe Zielgruppensegmente für Push-Nachrichten definieren und konfigurieren
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 99%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -90,11 +88,10 @@ Im Folgenden finden Sie einige Beispiele, wie Sie Segmente korrekt definieren k�
 
    * Weitere Informationen zur Fehlerbehebung bei Push-Nachrichten finden Sie unter folgenden Themen:
 
-      * [Push-Nachrichten in iOS](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [Push-Nachrichten in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
+      * [Push-Nachrichten in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
-      * [Push-Nachrichten in Android](https://docs.adobe.com/content/help/de-DE/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
-
-1. Geben Sie Informationen in folgende Felder ein:
+2. Geben Sie Informationen in folgende Felder ein:
 
    * **[!UICONTROL Während]**
 
@@ -110,7 +107,7 @@ Im Folgenden finden Sie einige Beispiele, wie Sie Segmente korrekt definieren k�
 
    * **[!UICONTROL Analytics-Segmente]**
 
-      Wählen Sie ein vorhandenes Adobe Analytics-Segment aus der Dropdown-Liste aus. Weitere Informationen finden Sie unter [Aufbau von Segmenten](https://docs.adobe.com/content/help/de-DE/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+      Wählen Sie ein vorhandenes Adobe Analytics-Segment aus der Dropdown-Liste aus. Weitere Informationen finden Sie im Abschnitt [Segment Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=de) in der Adobe Analytics-Dokumentation.
 
    * **[!UICONTROL Benutzerdefinierte Segmente]**
 

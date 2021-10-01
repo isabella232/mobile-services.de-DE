@@ -1,21 +1,18 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Bereitstellung zielgerichteter Inhalte in iOS-Apps.
-seo-description: Diese Informationen helfen Ihnen bei der Bereitstellung zielgerichteter Inhalte in iOS-Apps.
-seo-title: Target
 solution: Experience Cloud,Analytics
-title: Zielgruppe
+title: Target
 topic-fix: Developer and implementation
 uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
 exl-id: 1494bf8e-a9e5-4594-a09d-903c141fdd68
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '113'
 ht-degree: 100%
 
 ---
 
-# Target {#target}
+# Target{#target}
 
 Die Informationen in diesem Abschnitt helfen Ihnen bei der Bereitstellung zielgerichteter Inhalte in iOS-Apps.
 
@@ -23,7 +20,7 @@ Die Informationen in diesem Abschnitt helfen Ihnen bei der Bereitstellung zielge
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.

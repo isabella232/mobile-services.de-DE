@@ -1,22 +1,19 @@
 ---
 description: Sie können die Seite „Marketing-Links“ verwenden, um Marketinglinks zu erstellen, zu verwenden und zu archivieren.
 keywords: mobile
-seo-description: Sie können die Seite „Marketing-Links“ verwenden, um Marketinglinks zu erstellen, zu verwenden und zu archivieren.
-seo-title: Marketinglinks verwalten
 solution: Experience Cloud,Analytics
 title: Marketinglinks verwalten
 topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
 exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '185'
 ht-degree: 100%
 
 ---
 
-# Marketing-Links verwalten {#manage-marketing-links}
+# Marketinglinks verwalten{#manage-marketing-links}
 
 Sie können die Seite „Marketing-Links“ verwenden, um Marketinglinks zu erstellen, zu verwenden und zu archivieren.
 

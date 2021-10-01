@@ -1,22 +1,19 @@
 ---
 description: Mit dem Trichterbericht können Sie feststellen, wo Kunden bei der Interaktion mit Ihrer App eine Marketing-Kampagne verlassen haben oder von einem definierten Konversionspfad abgewichen sind. Sie können den Trichterbericht auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.
 keywords: mobile
-seo-description: Mit dem Trichterbericht können Sie feststellen, wo Kunden bei der Interaktion mit Ihrer App eine Marketing-Kampagne verlassen haben oder von einem definierten Konversionspfad abgewichen sind. Sie können den Trichterbericht auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.
-seo-title: Trichterbericht
 solution: Experience Cloud,Analytics
 title: Trichterbericht
 topic-fix: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
 exl-id: 43f9d0aa-0651-42c6-85ea-307ed253cf8d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
 
-# Trichterbericht {#funnel}
+# Trichterbericht{#funnel}
 
 Mit dem **[!UICONTROL Trichterbericht]** können Sie feststellen, wo Kunden bei der Interaktion mit Ihrer App eine Marketing-Kampagne verlassen haben oder von einem definierten Konversionspfad abgewichen sind. Sie können den **[!UICONTROL Trichterbericht]** auch dazu verwenden, die Aktionen verschiedener Segmente zu vergleichen.
 

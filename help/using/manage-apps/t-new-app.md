@@ -1,17 +1,14 @@
 ---
 description: Nutzen Sie diese Informationen, um neue Apps zu erstellen und ihre Schlüsselmetriken zu konfigurieren, um die SDK-Optionen für Adobe Analytics und Adobe Audience Manager zu konfigurieren, um die Optionen für Akquise und ID-Dienst zu konfigurieren und um die Konfigurationsdatei, die SDK sowie die Tools für Entwickler und Tester herunterzuladen.
 keywords: mobile
-seo-description: Nutzen Sie diese Informationen, um neue Apps zu erstellen und ihre Schlüsselmetriken zu konfigurieren, um die SDK-Optionen für Adobe Analytics und Adobe Audience Manager zu konfigurieren, um die Optionen für Akquise und ID-Dienst zu konfigurieren und um die Konfigurationsdatei, die SDK sowie die Tools für Entwickler und Tester herunterzuladen.
-seo-title: Neue App hinzufügen
 solution: Experience Cloud,Analytics
 title: Neue App hinzufügen
 topic-fix: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 exl-id: 30dca517-61ac-495b-aa91-3febd1cb8639
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '663'
 ht-degree: 100%
 
 ---

@@ -1,17 +1,14 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
-seo-description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
-seo-title: ADBMobile JSON-Konfiguration
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON-Konfiguration
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 100%
+source-wordcount: '1708'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +16,7 @@ ht-degree: 100%
 
 Diese Informationen helfen Ihnen bei der Verwendung der Konfigurationsdatei `ADBMobile.json`.
 
-## Referenz zur Konfigurationsdatei „ADBMobileConfig.json“ {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## Referenz zur Konfigurationsdatei „ADBMobileConfig.json“  {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinweg verwenden:
 
@@ -73,7 +70,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
 * **charset**
 
-   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen dazu finden Sie unter [s.charSet](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/config-vars/charset.html).
+   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen finden Sie unter der Variablen [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=de) in der Adobe Analytics-Dokumentation.
 
    * Mindestens SDK-Version 4.0
 
@@ -162,7 +159,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    >Ab Version 4.2 sind POIs auf der Adobe Mobile-Oberfläche definiert und werden dynamisch mit der App-Konfigurationsdatei synchronisiert. Diese Synchronisation erfordert die Einstellung `analytics.poi`:
 
    ```js
-   “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
+   "analytics.poi": "`https://assets.adobedtm.com/…/yourfile.json`",
    ```
 
    Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. Informationen zum Herunterladen einer aktualisierten Konfigurationsdatei finden Sie unter [Vorbereitung](/help/ios/getting-started/requirements.md).
@@ -275,8 +272,7 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
 
    * Mindestens SDK-Version 4.0
 
-
-## Beispieldatei `ADBMobileConfig.json` {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Beispieldatei `ADBMobileConfig.json`  {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 

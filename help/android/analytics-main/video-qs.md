@@ -1,18 +1,15 @@
 ---
 description: Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Android mithilfe der Videomessung.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Android mithilfe der Videomessung.
-seo-title: Video Analytics
 solution: Experience Cloud,Analytics
-title: Videoanalyse
+title: Video Analytics
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +19,7 @@ Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Androi
 
 >[!TIP]
 >
->Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen zur Videomessungslösung von Adobe finden Sie unter [Audio- und Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html).
+>Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen zur Videomessungslösung von Adobe finden Sie unter [Messen von Streaming-Medien in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de).
 
 Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier finden Sie eine Übersicht der Entwickleraufgaben samt Code-Beispielen. In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verarbeitungsregeln werden verwendet, um die Kontextdaten einer Analytics-Variablen zuzuordnen.
 

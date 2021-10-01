@@ -1,16 +1,13 @@
 ---
 description: Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihren Apple Watch-Apps (WatchOS 1), Today Widgets, Fotobearbeitungs-Widgets und anderen iOS-Erweiterungs-Apps erfassen.
-seo-description: Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihren Apple Watch-Apps (WatchOS 1), Today Widgets, Fotobearbeitungs-Widgets und anderen iOS-Erweiterungs-Apps erfassen.
-seo-title: Implementierung der iOS-Erweiterung
 solution: Experience Cloud,Analytics
 title: Implementierung der iOS-Erweiterung
 topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '691'
 ht-degree: 100%
 
 ---
@@ -23,7 +20,7 @@ Mithilfe der iOS-Erweiterung können Sie Nutzungsdaten aus Ihren Apple Watch-App
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
@@ -48,8 +45,8 @@ Selbst wenn diese drei Verfolgungsmethoden Ihren Anforderungen genügen, sollten
 >
 >* Ein Ziel, das die App enthalten soll.
 >* Ein Ziel für die Erweiterung.
->
 
+>
 
 
 Wenn Sie an einer WatchKit-App arbeiten, sollten Sie über ein drittes Ziel verfügen. Weitere Informationen zur Entwicklung für Apple Watch finden Sie unter [Developing for Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
@@ -77,7 +74,7 @@ Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus:
 
 1. Bestätigen Sie, dass Ihre App ohne unerwartete Fehler erstellt wird.
 
-## Erweiterungen konfigurieren {#section_28C994B7892340AC8D1F07AF26FF3946}
+## Konfigurieren Sie die Erweiterung {#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. Stellen Sie sicher, dass die Datei `ADBMobileConfig.json` ein Mitglied des Ziels der Erweiterung ist.
 1. Erweitern Sie auf der Registerkarte **[!UICONTROL Build-Phasen]** des Ziels Ihrer Erweiterung den Abschnitt **[!UICONTROL Binärdatei mit Bibliotheken verknüpfen]** und fügen Sie die folgenden Bibliotheken hinzu:

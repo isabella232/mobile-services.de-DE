@@ -1,21 +1,18 @@
 ---
 description: Diese Informationen helfen Ihnen beim Verwenden der In-App-Nachrichten in Ihren iOS-Apps.
-seo-description: Diese Informationen helfen Ihnen beim Verwenden der In-App-Nachrichten in Ihren iOS-Apps.
-seo-title: In-App-Nachrichten
 solution: Experience Cloud,Analytics
 title: In-App-Nachrichten
 topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '407'
 ht-degree: 100%
 
 ---
 
-# In-App-Nachrichten {#in-app-messaging}
+# In-App-Nachrichten  {#in-app-messaging}
 
 Diese Informationen helfen Ihnen beim Verwenden der In-App-Nachrichten in Ihren iOS-Apps.
 
@@ -46,25 +43,25 @@ Beachten Sie Folgendes:
 1. Damit In-App-Nachrichten beim Start dynamisch aktualisiert werden, muss das Objekt `remotes` vorhanden und entsprechend konfiguriert sein:
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 

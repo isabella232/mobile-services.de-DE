@@ -1,16 +1,13 @@
 ---
 description: Aktionen sind die Ereignisse in Ihrer App, die Sie messen möchten. Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. So könnten Sie z. B. ein neues Abonnement, jeden Artikelaufruf oder jeden Abschluss einer Ebene verfolgen. Die entsprechenden Metriken für diese Ereignisse werden als Abonnements, gelesene Artikel und abgeschlossene Ebenen konfiguriert.
-seo-description: Aktionen sind die Ereignisse in Ihrer App, die Sie messen möchten. Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. So könnten Sie z. B. ein neues Abonnement, jeden Artikelaufruf oder jeden Abschluss einer Ebene verfolgen. Die entsprechenden Metriken für diese Ereignisse werden als Abonnements, gelesene Artikel und abgeschlossene Ebenen konfiguriert.
-seo-title: App-Aktionen verfolgen
 solution: Experience Cloud,Analytics
 title: App-Aktionen verfolgen
 topic-fix: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 exl-id: ff317eff-1b8e-46e1-a305-a404979447cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '468'
 ht-degree: 100%
 
 ---

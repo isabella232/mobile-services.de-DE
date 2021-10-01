@@ -1,21 +1,18 @@
 ---
 description: Informationen zur Bereitstellung zielgerichteter Inhalte in universellen Windows-Plattformanwendungen.
-seo-description: Informationen zur Bereitstellung zielgerichteter Inhalte in universellen Windows-Plattformanwendungen.
-seo-title: Target
 solution: Experience Cloud,Analytics
-title: Zielgruppe
+title: Target
 topic-fix: Developer and implementation
 uuid: c764e65c-476d-47a4-a463-ac232d011824
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 16%
+source-wordcount: '30'
+ht-degree: 20%
 
 ---
 
 
-# Target {#target}
+# Target{#target}
 
 Informationen zur Bereitstellung zielgerichteter Inhalte in universellen Windows-Plattformanwendungen.
 

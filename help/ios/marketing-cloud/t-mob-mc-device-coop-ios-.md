@@ -1,17 +1,14 @@
 ---
 description: Wenden Sie sich an einen Adobe-Support-Mitarbeiter, um mit der Verwendung der Experience Cloud-Gerätekooperation zu beginnen.
-seo-description: Wenden Sie sich an einen Adobe-Support-Mitarbeiter, um mit der Verwendung der Experience Cloud-Gerätekooperation zu beginnen.
-seo-title: Experience Cloud-Gerätekooperation
 title: Experience Cloud-Gerätekooperation
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
-translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+exl-id: bf4f7a81-152c-4033-bcdf-22a939a3109e
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '282'
+ht-degree: 90%
 
 ---
-
 
 # Experience Cloud-Gerätekooperation {#experience-cloud-device-co-op}
 
@@ -23,7 +20,7 @@ Führen Sie die folgenden Schritte für die iOS-SDK in Experience Cloud aus, um 
 >
 >Für diese Funktion ist die iOS-SDK-Version 4.8.5 oder höher erforderlich.
 
-Ab SDK-Version 4.16.1 können Mitglieder der Gerätekooperation per Opt-out ihre Mobilgerätedaten aus der Experience Cloud-Gerätekooperation abwählen. Weitere Informationen finden Sie unter [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md) und in der `visitorAPI.js` Methode für [isCoopSafe](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/configurations/coopsafe.html).
+Ab SDK-Version 4.16.1 können Mitglieder der Gerätekooperation per Opt-out ihre Mobilgerätedaten aus der Experience Cloud-Gerätekooperation abwählen. Weitere Informationen finden Sie unter [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md) und die `visitorAPI.js`-Methode für [isCoopSafe](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/coopsafe.html) in der Dokumentation zum Adobe Experience Cloud Identity-Dienst.
 
 1. Adobe Mobile-SDK implementieren.
 
@@ -50,5 +47,3 @@ Beachten Sie die folgenden Informationen:
 
 * Wenn `coopUnsafe` auf `true` festgelegt ist, wird `coop_unsafe=1` immer an Audience Manager und Besucher-ID-Treffer angehängt.
 * Wenn Sie die serverseitige Weiterleitung von Analytics an Audience Manager aktivieren, sehen Sie auch `coop_unsafe=1` in den Analytics-Treffern.
-
-

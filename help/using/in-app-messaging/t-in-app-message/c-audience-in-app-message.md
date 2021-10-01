@@ -1,17 +1,14 @@
 ---
 description: Sie können Zielgruppenoptionen für In-App-Nachrichten konfigurieren, einschließlich der Anzeige-, Auslöse- und Eigenschaftsoptionen.
 keywords: mobile
-seo-description: Sie können Zielgruppenoptionen für In-App-Nachrichten konfigurieren, einschließlich der Anzeige-, Auslöse- und Eigenschaftsoptionen.
-seo-title: Zielgruppe In-App-Nachricht
 solution: Experience Cloud,Analytics
 title: Zielgruppe In-App-Nachricht
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '567'
 ht-degree: 100%
 
 ---
@@ -48,7 +45,6 @@ Sie können Zielgruppenoptionen für In-App-Nachrichten konfigurieren, einschlie
 
    * **[!UICONTROL Eigenschaften]**
 Sie können bestimmen, wem die In-App-Nachricht angezeigt wird, wenn sie ausgelöst wird, und die Zielgruppe nach Treffern filtern (segmentieren), die bestimmte Daten aufweisen. Sie können beispielsweise eine Regel definieren, in der Zielpunkte Denver enthalten. Mit diesem Filter können Sie die Nachricht Kunden anzeigen, die zum Zeitpunkt des Auslösers an einem Ihrer Zielpunkte mit Denver im Namen sind.
-
 
 
 ## Zusätzliche Informationen über Eigenschaften und Auslöser {#section_48C39EFB8CAA4F62B994FCC91DF588E6}

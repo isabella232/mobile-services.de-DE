@@ -1,16 +1,13 @@
 ---
 description: Mit dem Geostandort können Sie Standortdaten unter Verwendung von Breiten-/Längengrad und der vordefinierten Zielpunkte in Ihrer iOS-App messen.
-seo-description: Mit dem Geostandort können Sie Standortdaten unter Verwendung von Breiten-/Längengrad und der vordefinierten Zielpunkte in Ihrer iOS-App messen.
-seo-title: Geostandort und Zielpunkte
 solution: Experience Cloud,Analytics
 title: Geostandort und Zielpunkte
 topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
 exl-id: 732c3863-2010-4d04-a17b-a656e857f567
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '566'
 ht-degree: 100%
 
 ---
@@ -34,7 +31,7 @@ Jeder `trackLocation`-Aufruf sendet Folgendes:
 Ab Version 4.2 sind POIs auf der Adobe Mobile-Oberfläche definiert und werden dynamisch mit der App-Konfigurationsdatei synchronisiert. Diese Synchronisation erfordert die Einstellung `analytics.poi` in der Datei `ADBMobile.json`:
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).

@@ -1,17 +1,14 @@
 ---
 description: Der Bericht „Ansichtspfade“ basiert auf Pfadanalysen und enthält ein Pfaddiagramm, das die Pfade darstellt, auf denen sich Benutzer von einem App-Status zu einem anderen bewegt haben.
 keywords: mobile
-seo-description: Der Bericht „Ansichtspfade“ basiert auf Pfadanalysen und enthält ein Pfaddiagramm, das die Pfade darstellt, auf denen sich Benutzer von einem App-Status zu einem anderen bewegt haben.
-seo-title: Bericht „Ansichtspfade“
 solution: Experience Cloud,Analytics
 title: Bericht „Ansichtspfade“
 topic-fix: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
 exl-id: 475dbe01-fa4d-433c-ac77-68f2a6972c0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '494'
 ht-degree: 100%
 
 ---

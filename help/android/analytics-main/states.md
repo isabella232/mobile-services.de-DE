@@ -1,16 +1,13 @@
 ---
 description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung.
-seo-description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung.
-seo-title: App-Zustände verfolgen
 solution: Experience Cloud,Analytics
 title: App-Zustände verfolgen
 topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '278'
 ht-degree: 100%
 
 ---

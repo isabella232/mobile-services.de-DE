@@ -1,23 +1,20 @@
 ---
-description: Ein Beispiel für die Produktvariable mit Merchandising eVars und produktspezifischen Ereignissen.
-seo-description: Ein Beispiel für die Produktvariable mit Merchandising eVars und produktspezifischen Ereignissen.
-seo-title: Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen
+description: Ein Beispiel für die Variable "products"mit Merchandising-eVars und produktspezifischen Ereignissen.
 solution: Experience Cloud,Analytics
 title: Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen
 topic-fix: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 exl-id: 3a90f624-da13-4c26-9e4c-3a4af33bc5ee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 27%
+source-wordcount: '66'
+ht-degree: 24%
 
 ---
 
 # Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen{#products-variable-with-merchandising-evars-and-product-specific-events}
 
-Ein Beispiel für die Produktvariable mit Merchandising eVars und produktspezifischen Ereignissen.
+Ein Beispiel für die Variable &quot;products&quot;mit Merchandising-eVars und produktspezifischen Ereignissen.
 
 ```
 //create a context data dictionary 
@@ -40,4 +37,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Wenn Sie ein produktspezifisches Ereignis mit der Variablen *`&&products`* Trigger haben, müssen Sie dieses Ereignis auch in der Variablen *`&&events`* festlegen. Andernfalls wird das Ereignis während der Verarbeitung herausgefiltert.
+>Wenn Sie ein produktspezifisches Ereignis mit der Variable *`&&products`* Trigger haben, müssen Sie dieses Ereignis auch in der Variable *`&&events`* festlegen. Andernfalls wird das Ereignis während der Verarbeitung herausgefiltert.

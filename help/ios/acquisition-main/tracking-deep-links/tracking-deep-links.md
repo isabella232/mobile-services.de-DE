@@ -1,20 +1,17 @@
 ---
 description: Mit diesen Informationen können Sie Deep-Links und verzögerte Deep-Links in Ihren mobilen Apps verfolgen, indem Sie das Adobe Mobile iOS-SDK verwenden.
-seo-description: Mit diesen Informationen können Sie Deep-Links und verzögerte Deep-Links in Ihren mobilen Apps verfolgen, indem Sie das Adobe Mobile iOS-SDK verwenden.
-seo-title: Deep-Links verfolgen
 solution: Experience Cloud,Analytics
 title: Deep-Links verfolgen
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: a8b20233-d800-4318-ad4f-39229d8b3a5e
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '295'
 ht-degree: 100%
 
 ---
 
-
-# Deep-Links verfolgen {#tracking-deep-links}
+# Deep-Links verfolgen{#tracking-deep-links}
 
 Mit diesen Informationen können Sie Deep-Links und verzögerte Deep-Links in Ihren mobilen Apps verfolgen, indem Sie das Adobe Mobile iOS-SDK verwenden.
 
@@ -104,4 +101,3 @@ Bei diesen Schlüsseln handelt es sich um vorab zugeordnete Variablen für das R
  */ 
 FOUNDATION_EXPORT NSString *const __nonnull ADBConfigKeyCallbackDeepLink;
 ```
-

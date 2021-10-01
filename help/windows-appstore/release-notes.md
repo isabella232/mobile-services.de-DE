@@ -1,21 +1,18 @@
 ---
 description: Versionshinweise und bekannte Probleme für Windows 8.1 Universal App Store SDK 4.x für Experience Cloud-Lösungen.
-seo-description: Versionshinweise und bekannte Probleme für Windows 8.1 Universal App Store SDK 4.x für Experience Cloud-Lösungen.
-seo-title: Versionshinweise
 solution: Experience Cloud,Analytics
 title: Versionshinweise
 topic-fix: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
 exl-id: 21bd2e72-cc9e-4fc0-940f-dfc560d7a536
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
 
-# Versionshinweise {#release-notes}
+# Versionshinweise{#release-notes}
 
 Versionshinweise und bekannte Probleme für Windows 8.1 Universal App Store SDK 4.x für Experience Cloud-Lösungen.
 
@@ -30,5 +27,4 @@ Zusätzlich zu den erheblichen Leistungssteigerungen bietet Version 4 die folgen
 | Zeitgesteuerte Aktion | Mit zeitgesteuerten Aktionen können Sie auf einfache Weise sehen, wie lange Ihre Benutzer benötigen, um einen Prozess in Ihrer App durchgängig abzuschließen. Mit zeitgesteuerten Aktionen können Sie die Zeit in der Sitzung und die Gesamtzeit (sitzungsübergreifend) berechnen, die zum Abschluss der Aktion erforderlich ist. Weitere Informationen finden Sie unter *Zeitgesteuerte Aktionen* in [Analytics](/help/windows-appstore/analytics/analytics.md). |
 | Opt-in/Opt-out | Zum schnellen Aktivieren und Deaktivieren von Analysen. |
 
-
-Weitere Informationen zu Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
+Weitere Informationen zu Versionshinweisen für alle Lösungen finden Sie unter [Adobe Experience Cloud – Versionshinweise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de).

@@ -1,17 +1,14 @@
 ---
 description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Im Folgenden sehen Sie die Metriken und Dimensionen, die von der Mobile-Bibliothek automatisch gemessen werden können, nachdem der Lebenszyklus implementiert wurde, sowie eine Verknüpfung zur Problembehandlung von Lebenszyklusdaten.
-seo-title: Lebenszyklusmetriken
 solution: Experience Cloud,Analytics
 title: Lebenszyklusmetriken
 topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '864'
 ht-degree: 78%
 
 ---
@@ -26,7 +23,7 @@ Weitere Informationen finden Sie in der Wissensdatenbank unter [Fehlerbehebung b
 
 Wenn sie konfiguriert sind, werden die Lebenszyklusmetriken in Kontextdatenparametern an Analytics, in Parametern mit jedem Mbox-Aufruf an Target und als Signal an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management für jede Metrik ein anderes Präfix verwendet.
 
-Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufruf gesendet werden, automatisch mit der Metrik oder Dimension erfasst und in Berichten verwendet.
+Für Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsaufruf gesendet werden, automatisch mithilfe der Metrik oder Dimension erfasst und in Berichten verwendet.
 
 ### Metriken
 
@@ -34,14 +31,14 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
 
    Wird beim ersten Ausführen nach einer Installation oder Neuinstallation ausgelöst.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.InstallEvent`
+   * Analytics-Kontextdaten/Target-Parameter: `a.InstallEvent`
    * Audience Manager-Signal: `c_a_InstallEvent`
 
 * **Upgrades**
 
    Wird beim ersten Start nach einem Upgrade oder bei Änderung der Versionsnummer ausgelöst.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.UpgradeEvent`
+   * Analytics-Kontextdaten/Target-Parameter: `a.UpgradeEvent`
    * Audience Manager-Signal: `c_a_UpgradeEvent`
 
 * **Täglich eingesetzte Benutzer**
@@ -52,7 +49,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
    >
    >Diese Metrik wird nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.DailyEngUserEvent`
+   * Analytics-Kontextdaten/Target-Parameter: `a.DailyEngUserEvent`
    * Audience Manager-Signal: `c_a_DailyEngUserEvent`
 
 * **Monatlich beteiligte Benutzer**
@@ -63,28 +60,28 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
    >
    >Diese Metrik wird nicht automatisch in einer Analytics-Metrik gespeichert. Sie müssen eine Verarbeitungsregel erstellen, die ein benutzerdefiniertes Ereignis zum Erfassen dieser Metrik festlegt.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.MonthlyEngUserEvent`
+   * Analytics-Kontextdaten/Target-Parameter: `a.MonthlyEngUserEvent`
    * Audience Manager-Signal: `c_a_MonthlyEngUserEvent`
 
 * **Starts**
 
    Wird bei jeder Ausführung ausgelöst, einschließlich Abstürzen und Installationen. Wird auch bei einer Wiederaufnahme aus dem Hintergrund ausgelöst, wenn das Sitzungs-Timeout des Lebenszyklus überschritten wurde.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.LaunchEvent`
+   * Analytics-Kontextdaten/Target-Parameter: `a.LaunchEvent`
    * Audience Manager-Signal: `c_a_LaunchEvent`
 
 * **Abstürze**
 
    Wird ausgelöst, wenn die Anwendung beim Beenden nicht im Hintergrund ausgeführt wird. Das Ereignis wird gesendet, wenn die Anwendung nach dem Absturz gestartet wird. Adobe Mobile-Absturz-Reporting implementiert keinen globalen Handler für nicht abgefangene Ausnahmen.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.CrashEvent`
+   * Analytics-Kontextdaten/Target-Parameter: `a.CrashEvent`
    * Audience Manager-Signal: `c_a_CrashEvent`
 
 * **Länge der vorherigen Sitzung**
 
    Gibt die Dauer einer vorherigen Anwendungssitzung in Sekunden an, basierend darauf, wie lange die Anwendung geöffnet und im Vordergrund war.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.PrevSessionLength`
+   * Analytics-Kontextdaten/Target-Parameter: `a.PrevSessionLength`
    * Audience Manager-Signal: `c_a_PrevSessionLength`
 
 ### Dimensionen
@@ -93,59 +90,59 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
 
    Datum des ersten Starts nach der Installation. Das Datumsformat ist `MM/DD/YYYY`.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.InstallDate`
+   * Analytics-Kontextdaten/Target-Parameter: `a.InstallDate`
    * Audience Manager-Signal: `c_a_InstallDate`
 
 * **App-ID**
 
-   Speichert den App-Namen und die Version im folgenden Format:
+   Speichert den App-Namen und die Version im folgenden Format:  
    `[AppName] [BundleVersion]`.
 
    Ein Beispiel für dieses Format ist `myapp 1.1`.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.AppID`
+   * Analytics-Kontextdaten/Target-Parameter: `a.AppID`
    * Audience Manager-Signal: `c_a_AppID`
 
 * **Startanzahl**
 
    Gibt an, wie oft die Applikation gestartet bzw. aus dem Hintergrund gebracht wurde.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.Launches`
+   * Analytics-Kontextdaten/Target-Parameter: `a.Launches`
    * Audience Manager-Signal: `c_a_Launches`
 
 * **Tage seit der ersten Benutzung**
 
    Anzahl der Tage seit dem ersten Start
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.DaysSinceFirstUse`
+   * Analytics-Kontextdaten/Target-Parameter: `a.DaysSinceFirstUse`
    * Audience Manager-Signal: `c_a_DaysSinceFirstUse`
 
 * **Tage seit der letzten Benutzung**
 
    Anzahl der Tage seit der letzten Verwendung.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.DaysSinceLastUse`
+   * Analytics-Kontextdaten/Target-Parameter: `a.DaysSinceLastUse`
    * Audience Manager-Signal: `c_a_DaysSinceLastUse`
 
 * **Stunde des Tages**
 
    Erfasst die Stunde, in der die App gestartet wurde. Diese Metrik verwendet das 24-Stunden-Zahlenformat und wird zur Zeitdarstellung verwendet, um die Spitzennutzungszeiten zu bestimmen.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.HourOfDay`
+   * Analytics-Kontextdaten/Target-Parameter: `a.HourOfDay`
    * Audience Manager-Signal: `c_a_HourOfDay`
 
 * **Wochentag**
 
    Anzahl der Wochentage, an denen die App gestartet wurde.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.DayOfWeek`
+   * Analytics-Kontextdaten/Target-Parameter: `a.DayOfWeek`
    * Audience Manager-Signal: `c_a_DayOfWeek`
 
 * **Betriebssystemversion**
 
    Die Version des Betriebssystems.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.OSVersion`
+   * Analytics-Kontextdaten/Target-Parameter: `a.OSVersion`
    * Audience Manager-Signal: `c_a_OSVersion`
 
 * **Tage seit der letzten Aktualisierung**
@@ -156,7 +153,7 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
    >
    >Diese Metrik wird nicht automatisch in einer Analytics-Variable gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.DaysSinceLastUpgrade`
+   * Analytics-Kontextdaten/Target-Parameter: `a.DaysSinceLastUpgrade`
    * Audience Manager-Signal: `c_a_DaysSinceLastUpgrade`
 
 * **Starts seit der letzten Aktualisierung**
@@ -167,14 +164,14 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
    >
    >Diese Metrik wird nicht automatisch in einer Analytics-Variable gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.LaunchesSinceUpgrade`
+   * Analytics-Kontextdaten/Target-Parameter: `a.LaunchesSinceUpgrade`
    * Audience Manager-Signal: `c_a_LaunchesSinceUpgrade`
 
 * **Gerätename**
 
    Speichert den Gerätenamen.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.DeviceName`
+   * Analytics-Kontextdaten/Target-Parameter: `a.DeviceName`
    * Audience Manager-Signal: `c_a_DeviceName`
 
 * **Betreibername**
@@ -185,14 +182,14 @@ Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufr
    >
    >Diese Metrik wird nicht automatisch in einer Analytics-Variable gespeichert. Sie müssen eine Verarbeitungsregel erstellen, um diesen Wert in eine Analytics-Variable für die Berichterstellung zu kopieren.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.CarrierName`
+   * Analytics-Kontextdaten/Target-Parameter: `a.CarrierName`
    * Audience Manager-Signal: `c_a_CarrierName`
 
 * **Auflösung**
 
    Breite x Höhe in Pixel.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter: `a.Resolution`
+   * Analytics-Kontextdaten/Target-Parameter: `a.Resolution`
    * Audience Manager-Signal: `c_a_Resolution`
 
 ## Zusätzliche Mobile-Metriken und -Dimensionen {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
@@ -203,7 +200,7 @@ Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit
 
    Erfasst durch `trackLocation`-Methoden.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
@@ -217,7 +214,7 @@ Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit
 
    Erfasst durch `trackLocation`-Methoden.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
@@ -231,7 +228,7 @@ Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit
 
    Erfasst durch `trackLocation`-Methoden.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -243,9 +240,9 @@ Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit
 
 * **Zielpunkt-Bezeichnung**
 
-   Wird durch `trackLocation`-Methoden gefüllt, wenn sich das Gerät innerhalb eines definierten POI befindet.
+   Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem definierten POI befindet.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.poi`
    * Zielgruppen-Management-Eigenschaft:
@@ -255,9 +252,9 @@ Die folgenden Metriken und Dimensionen werden in Variablen mobiler Lösungen mit
 
 * **Entfernung zum Zentrum des Zielpunkts**
 
-   Wird durch `trackLocation`-Methoden gefüllt, wenn sich das Gerät innerhalb eines definierten POI befindet.
+   Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem definierten POI befindet.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.dist`
    * Zielgruppen-Management-Eigenschaft:

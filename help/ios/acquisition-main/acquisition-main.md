@@ -1,16 +1,13 @@
 ---
 description: Diese Informationen helfen Ihnen dabei, Links zum Akquise-Tracking in Ihren iOS-Apps zu verwenden.
-seo-description: Diese Informationen helfen Ihnen dabei, Links zum Akquise-Tracking in Ihren iOS-Apps zu verwenden.
-seo-title: Akquise
 solution: Experience Cloud,Analytics
 title: Akquise
 topic-fix: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
 exl-id: 35c83dc9-2a66-46b3-9dce-81006855319d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '122'
 ht-degree: 100%
 
 ---

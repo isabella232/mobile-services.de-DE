@@ -1,31 +1,28 @@
 ---
-description: In diesem Abschnitt wird beschrieben, wie Sie von der 3.x-Version eines vorherigen Windows Mobile SDK zum Windows 8.1 Universal App Store 4.x SDK for Experience Cloud Solutions migrieren.
-seo-description: In diesem Abschnitt wird beschrieben, wie Sie von der 3.x-Version eines vorherigen Windows Mobile SDK zum Windows 8.1 Universal App Store 4.x SDK for Experience Cloud Solutions migrieren.
-seo-title: Zu den 4.x-SDKs migrieren
+description: In diesem Abschnitt wird beschrieben, wie Sie von der 3.x-Version eines vorherigen Windows Mobile SDK zum Windows 8.1 Universal App Store 4.x SDK für Experience Cloud-Lösungen migrieren.
 solution: Experience Cloud,Analytics
-title: Zu den 4.x-SDKs migrieren
+title: Migration zu den SDKs der Version 4.x
 topic-fix: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 exl-id: d6dc34f2-61b7-4026-a66a-19284e21e69c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 24%
+source-wordcount: '650'
+ht-degree: 25%
 
 ---
 
-# Zu den 4.x SDKs migrieren {#migrate-to-the-x-sdks}
+# Migration zu den SDKs der Version 4.x {#migrate-to-the-x-sdks}
 
-In diesem Abschnitt wird beschrieben, wie Sie von der 3.x-Version eines vorherigen Windows Mobile SDK zum Windows 8.1 Universal App Store 4.x SDK for Experience Cloud Solutions migrieren.
+In diesem Abschnitt wird beschrieben, wie Sie von der 3.x-Version eines vorherigen Windows Mobile SDK zum Windows 8.1 Universal App Store 4.x SDK für Experience Cloud-Lösungen migrieren.
 
-Mit der Umstellung auf Version 4.x sind alle Funktionen jetzt über statische Methoden verfügbar, sodass Sie Ihre eigenen Objekte nicht mehr verfolgen können.
+Mit der Umstellung auf Version 4.x ist nun über statische Methoden auf alle Funktionen zugegriffen werden kann, sodass Ihre eigenen Objekte nicht mehr verfolgt werden.
 
-Die folgenden Abschnitte führen Sie durch die Migration von Version 3.x auf Version 4.x.
+Die folgenden Abschnitte führen Sie durch die Migration von Version 3.x zu Version 4.x.
 
 ## Ungenutzte Eigenschaften entfernen {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-Sie haben wahrscheinlich eine neue `ADBMobileConfig.json` Datei bemerkt, die in Ihrem Download enthalten ist. Diese Datei enthält anwendungsspezifische globale Einstellungen und ersetzt die meisten Konfigurationsvariablen, die in früheren Versionen verwendet wurden. Im Folgenden finden Sie ein Beispiel für eine `ADBMobileConfig.json`-Datei:
+Wahrscheinlich haben Sie eine neue `ADBMobileConfig.json`-Datei bemerkt, die im Download enthalten ist. Diese Datei enthält anwendungsspezifische globale Einstellungen und ersetzt die meisten Konfigurationsvariablen, die in früheren Versionen verwendet wurden. Im Folgenden finden Sie ein Beispiel für eine `ADBMobileConfig.json`-Datei:
 
 ```js
 { 
@@ -53,7 +50,7 @@ Sie haben wahrscheinlich eine neue `ADBMobileConfig.json` Datei bemerkt, die in 
 }
 ```
 
-Die folgende Tabelle enthält die Konfigurationsvariablen, die Sie in die Konfigurationsdatei verschieben müssen. Verschieben Sie den für die Variable in der ersten Spalte eingestellten Wert in die Variable in der zweiten Spalte und entfernen Sie dann die alte Konfigurationsvariable aus Ihrem Code.
+Die folgende Tabelle enthält die Konfigurationsvariablen, die Sie in die Konfigurationsdatei verschieben müssen. Verschieben Sie den für die Variable festgelegten Wert in der ersten Spalte in die Variable in der zweiten Spalte und entfernen Sie dann die alte Konfigurationsvariable aus Ihrem Code.
 
 ## Migration von 3.x
 
@@ -73,17 +70,17 @@ Die folgende Tabelle enthält die Konfigurationsvariablen, die Sie in die Konfig
 
 Anstatt die webfokussierten `Track`- und `TrackLink`-Aufrufe zu verwenden, verwendet das SDK Version 4 zwei Methoden, die in der mobilen Welt etwas sinnvoller sind:
 
-* `TrackState` Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Home Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten.
+* `TrackState` Status sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Startseiten-Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `trackState`-Aufrufe inkrementieren die Seitenansichten.
 
-* `TrackAction` Aktionen sind die Vorgänge, die in Ihrer App stattfinden und die Sie messen möchten, z. B. &quot;Anmeldungen&quot;, &quot;Bannerklappen&quot;, &quot;Feed-Abonnement&quot;und andere Metriken. Durch diese Aufrufe werden die Ansichten der Seite nicht inkrementiert.
+* `TrackAction` Bei Aktionen handelt es sich um die Dinge, die in Ihrer App vor sich gehen, die Sie messen möchten, z. B. &quot;Anmeldungen&quot;, &quot;Banner-Tippvorgänge&quot;, &quot;Feed-Abonnements&quot;und andere Metriken. Diese Aufrufe erhöhen nicht die Seitenansichten.
 
-Der Parameter `contextData` für beide Methoden enthält Name-Wert-Paare, die als Kontextdaten gesendet werden.
+Der Parameter `contextData` für beide dieser Methoden enthält Name-Wert-Paare, die als Kontextdaten gesendet werden.
 
-## Ereignis, Props, eVars
+## Ereignisse, Props und eVars
 
-Wenn Sie sich die [SDK-Methoden](/help/windows-appstore/c-configuration/methods.md) angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignis, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
+Wenn Sie sich die [SDK-Methoden](/help/windows-appstore/c-configuration/methods.md) angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignisse, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
-Verarbeitungsregeln bieten mehrere Vorteile:
+Verarbeitungsregeln bieten Ihnen verschiedene Vorteile:
 
 * Sie können Ihre Datenzuordnung ändern, ohne eine Aktualisierung an den Appstore zu senden.
 * Sie können aussagekräftige Namen für Daten verwenden, anstatt Variablen festzulegen, die für eine Report Suite spezifisch sind.
@@ -91,13 +88,13 @@ Verarbeitungsregeln bieten mehrere Vorteile:
 
 Weitere Informationen finden Sie unter *Verarbeitungsregeln* in [Analytics](/help/windows-appstore/analytics/analytics.md).
 
-Alle Werte, die Sie direkt Variablen zuweisen, sollten stattdessen den Kontextdaten hinzugefügt werden. Das bedeutet, dass Aufrufe von `SetProp`, `SetEvar` und Zuweisungen zu persistenten Kontextdaten entfernt und die Werte zu Kontextdaten hinzugefügt werden sollten.
+Alle Werte, die Sie Variablen direkt zugewiesen haben, sollten stattdessen zu Kontextdaten hinzugefügt werden. Aufrufe zu `SetProp`, `SetEvar` und Zuweisungen zu persistenten Kontextdaten sollten entfernt und die Werte zu Kontextdaten hinzugefügt werden.
 
 **AppSection/Server, GeoZip, Transaktions-ID, Kampagne und andere Standardvariablen**
 
-Alle anderen Daten, die Sie für das Messungsobjekt eingestellt haben, einschließlich der oben aufgeführten Variablen, sollten stattdessen den Kontextdaten hinzugefügt werden.
+Alle anderen Daten, die Sie für das Messobjekt festgelegt haben, einschließlich der oben aufgeführten Variablen, sollten stattdessen zu Kontextdaten hinzugefügt werden.
 
-Um es einfach zu sagen: Die einzigen Daten, die mit einem `TrackState`- oder `TrackAction`-Aufruf gesendet werden, sind die Nutzdaten im Parameter `data`.
+Einfach ausgedrückt: Die einzigen Daten, die mit einem `TrackState`- oder `TrackAction`-Aufruf gesendet werden, sind die Nutzdaten im Parameter `data` .
 
 ### Verfolgungsaufrufe ersetzen
 
@@ -116,7 +113,7 @@ Ersetzen Sie die Variable `visitorID` durch einen Aufruf von `setUserIdentifier`
 
 ## Offline-Verfolgung {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Die Offline-Verfolgung ist in der Datei `ADBMobileConfig.json` aktiviert. Alle anderen Offlinekonfigurationen werden automatisch durchgeführt.
+Die Offline-Verfolgung ist in der Datei `ADBMobileConfig.json` aktiviert. Alle anderen Offline-Konfigurationen erfolgen automatisch.
 
 Entfernen Sie im gesamten Code Aufrufe der folgenden Methoden:
 
@@ -139,4 +136,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-In diesem Beispiel ist der Wert von `"&&products"` `";Cool Shoe`&quot;und sollte der Produktzeichenfolgen-Syntax für den Typ des zu verfolgenden Ereignisses folgen.
+In diesem Beispiel ist der Wert von `"&&products"` `";Cool Shoe`&quot;und sollte der Syntax der Produktzeichenfolge für den Ereignistyp entsprechen, den Sie verfolgen.

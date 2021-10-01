@@ -1,17 +1,15 @@
 ---
 description: Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messung nativer Android-Anwendungen, die Bereitstellung gezielter Inhalte in Ihrer App und die Erfassung und Nutzung von Zielgruppendaten über Zielgruppen-Management.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messung nativer Android-Anwendungen, die Bereitstellung gezielter Inhalte in Ihrer App und die Erfassung und Nutzung von Zielgruppendaten über Zielgruppen-Management.
-seo-title: Android-SDK 4.x für Experience Cloud-Lösungen
 solution: Experience Cloud,Analytics
 title: Android-SDK 4.x für Experience Cloud-Lösungen
 topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: ht
-source-wordcount: '451'
-ht-degree: 100%
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 93%
 
 ---
 
@@ -51,14 +49,14 @@ Beachten Sie Folgendes:
 
 ## Adobe Mobile-Benutzerdokumentation {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services bietet eine Benutzeroberfläche, die mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert. Lesen Sie [Adobe Mobile Services](https://docs.adobe.com/content/help/de-DE/mobile-services/using/home.html), um weitere Informationen zur Mobile Services-Benutzeroberfläche zu erhalten und um die Benutzerdokumentation zu lesen.
+Adobe Mobile Services bietet eine Benutzeroberfläche, die mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert. Lesen Sie [Adobe Mobile Services](/help/using/home.md), um weitere Informationen zur Mobile Services-Benutzeroberfläche zu erhalten und um die Benutzerdokumentation zu lesen.
 
 ## Versionshinweise {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Neueste Informationen zu Experience Cloud-Versionen finden Sie unter [Experience Cloud-Versionshinweise](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
+Neueste Informationen zu Experience Cloud-Versionen finden Sie unter [Experience Cloud-Versionshinweise](/help/using/home.md).
 
 ## Bloodhound verwenden
 
 >[!IMPORTANT]
 >
->Am **30. April 2017** wurde die Entwicklung von Adobe Bloodhound eingestellt. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
+>Ab **3. April 2017** ist Adobe Bloodhound nicht mehr verfügbar. Ab dem 1. Mai 2017 werden keine weiteren Verbesserungen vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.

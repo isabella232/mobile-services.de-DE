@@ -1,17 +1,14 @@
 ---
 description: Der Bericht „Bannermetriken“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht ist nur für DPS-Kunden (Digital Publishing Suite) verfügbar.
 keywords: mobile
-seo-description: Der Bericht „Bannermetriken“ enthält eine Sunburst-Grafik mit Ihren vorhandenen Daten. Dieser Bericht ist nur für DPS-Kunden (Digital Publishing Suite) verfügbar.
-seo-title: Bannermetriken
 solution: Experience Cloud,Analytics
 title: Bannermetriken
 topic-fix: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
 exl-id: 0383e23f-579e-4177-922d-71f193a3c606
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '171'
 ht-degree: 100%
 
 ---

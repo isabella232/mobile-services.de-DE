@@ -1,22 +1,19 @@
 ---
 description: Sie können iOS PhoneGap-Plug-in-Methoden verwenden, um eine Reihe verschiedener Aufgaben auszuführen.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Sie können iOS PhoneGap-Plug-in-Methoden verwenden, um eine Reihe verschiedener Aufgaben auszuführen.
-seo-title: PhoneGap-Plug-in-Methoden
 solution: Experience Cloud,Analytics
 title: PhoneGap-Plug-in-Methoden
 topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1557'
 ht-degree: 100%
 
 ---
 
-# PhoneGap-Plug-in-Methoden {#phonegap-plug-in-methods}
+# PhoneGap-Plug-in-Methoden{#phonegap-plug-in-methods}
 
 Sie können PhoneGap-Plug-in-Methoden in Android zum Durchführen einer Vielzahl von Aufgaben verwenden.
 
@@ -564,7 +561,7 @@ Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das T
        ADB.targetThirdPartyID(function (value) { alert(value); },function (value) { alert('fail')__;});
       ```
 
-## Akquisemethoden {#section_EDEA25C4B2884487827069E9257A0BA6}
+## Akquisemethoden  {#section_EDEA25C4B2884487827069E9257A0BA6}
 
 * **acquisitionCampaignStartForApp**
 
@@ -579,11 +576,11 @@ Fügen Sie in `html`-Dateien, in denen Sie die Verfolgung nutzen möchten, das T
    * Hier finden Sie Code-Beispiele für diese Methode:
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’}, function() {…}, function() {…}));
       ```
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’});  
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’});  
       ```
 
 ## Advertising-ID {#section_194607D101B047A19C51B19E176E1500}

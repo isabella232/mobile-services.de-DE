@@ -1,17 +1,14 @@
 ---
 description: Verwenden Sie das Android SDK zum Implementieren der Nachverfolgung von verzögerten Deep-Links von Drittanbietern.
-seo-description: Verwenden Sie das Android SDK zum Implementieren der Nachverfolgung von verzögerten Deep-Links von Drittanbietern.
-seo-title: Verfolgen von verzögerten Deep-Links von Drittanbietern
-title: Verfolgen von verzögerten Deep-Links von Drittanbietern
+title: Verfolgen verzögerter Deep-Links von Drittanbietern
 uuid: 4c798e47-7988-4a06-a191-6c4d05f6ee61
-translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+exl-id: d8cbc679-a512-44db-8c30-6a029ff738ae
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '495'
 ht-degree: 84%
 
 ---
-
 
 # Verzögerte Drittanbieter-Deep-Links verfolgen{#tracking-third-party-deferred-deep-links}
 
@@ -25,7 +22,7 @@ Das Adobe Mobile SDK unterstützt derzeit ein Deep Linking, bei dem erwartet wir
 
 Ersteller von Werbeanzeigen können eine Werbeanzeige auf Facebook als Deep-Link erstellen. Wenn Benutzer auf die Anzeige klicken, werden sie direkt zu den Informationen weitergeleitet, an denen sie in der App interessiert sind. Der Deep-Link ist **keine** Fingerprinting-URL. Während der Werbekonfiguration ist jedoch eine Option zur Bereitstellung einer Drittanbieter-Deep-Link-URL verfügbar. Von einem App-Entwickler, der die Adobe Mobile-SDK und Services verwendet, wird erwartet, dass er die für Adobe Mobile Services konfigurierte Fingerprinter-URL in dieses Feld eingibt. Wenn alles ordnungsgemäß eingerichtet ist, übergibt das Facebook-SDK diese URL an die Anwendung, wenn die App installiert oder gestartet wird.
 
-## Einrichten der SDK {#section_834CD3109175432B8173ECB6EA7DE315}
+## Einrichten der SDKs {#section_834CD3109175432B8173ECB6EA7DE315}
 
 Als Vorbereitung der Hinzufügung der Deep Linking-Unterstützung von Facebook im Adobe Mobile SDK führt der App-Entwickler die folgenden Aufgaben aus:
 
@@ -43,7 +40,7 @@ Wenn die App ordnungsgemäß eingerichtet ist, sollte die `trackAdobeDeepLink()`
 >
 >Stellen Sie sicher, dass die Deep-Link-URL über einen Schlüssel mit dem Namen `a.deeplink.id` verfügt. Wenn die URL den Deep Link ID-Parameter nicht enthält, werden die URL-Parameter nicht an die Kontextdaten angehängt.
 
-Wenn der Link einer Akquise zugeordnet werden kann, speichert das Adobe Mobile SDK die Akquisedaten von der Facebook-Deep-Link-Adresse, über die `trackAdobeDeepLink()` () aufgerufen wurde. Diese Daten stehen der Adobe Mobile SDK in zukünftigen Starts zur Verfügung. Wenn ein Rückruf registriert wurde, wird der Rückruf bei der Adobe auch verwendet, um die Daten an den Client zurückzusenden.
+Wenn der Link einer Akquise zugeordnet werden kann, speichert das Adobe Mobile SDK die Akquisedaten von der Facebook-Deep-Link-Adresse, über die `trackAdobeDeepLink()` () aufgerufen wurde. Diese Daten stehen dem Adobe Mobile SDK bei zukünftigen Starts zur Verfügung. Wenn ein Rückruf registriert wurde, wird auch der Rückruf der Adobe verwendet, um die Daten zurück an den Client zu senden.
 
 ## Deep-Linking in einer Android-App aktivieren {#section_64C15E269E89424B8E3D029F88094620}
 
@@ -84,4 +81,3 @@ Wenn der Link einer Akquise zugeordnet werden kann, speichert das Adobe Mobile S
       ); 
    }
    ```
-

@@ -1,31 +1,28 @@
 ---
-description: Informationen zur Unterstützung von Video Analytics.
-seo-description: Informationen zur Unterstützung von Video Analytics.
-seo-title: Video Analytics
+description: Informationen, die Sie bei Video Analytics unterstützen.
 solution: Experience Cloud,Analytics
-title: Videoanalyse
+title: Video Analytics
 topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 72%
+source-wordcount: '888'
+ht-degree: 71%
 
 ---
 
 # Video Analytics  {#video-analytics}
 
-Informationen zur Unterstützung von Video Analytics.
+Informationen, die Sie bei Video Analytics unterstützen.
 
-Die Videomessung wird im Handbuch [Video- und Audiomessung in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html) ausführlich beschrieben. Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt mit einem kurzen Beginn bietet eine grundlegende Übersicht über die Entwickler-Aufgaben sowie Codebeispiele.
+Die Videomessung wird ausführlich im Handbuch [Messen von Streaming-Medien in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de) beschrieben. Der allgemeine Prozess zur Videomessung ist für alle AppMeasurement-Plattformen sehr ähnlich. Dieser Schnellstartabschnitt bietet einen grundlegenden Überblick über die Entwickleraufgaben sowie Codebeispiele.
 
 In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten einer Analytics-Variablen zuzuordnen.
 
 * **a.media.name**
 
-   (**Erforderlich**) Erfasst den Videonamen, wie in der Implementierung angegeben, wenn ein Besucher das Video auf eine Weise Ansicht.Sie können Klassifizierungen für diese Variable hinzufügen.
+   (**Erforderlich**) Erfasst den Namen des Videos, wie in der Implementierung angegeben, wenn ein Besucher das Video auf irgendeine Weise ansieht. Sie können für diese Variable Klassifizierungen hinzufügen.
 
    (**Optional**) Die Variable „Custom Insight“ enthält Informationen zu Videopfaden.
 
@@ -35,7 +32,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
 * **a.media.name**
 
-   (**Optional**) Bietet Informationen zur Videopfadsetzung. Pfade müssen für diese Variable von ClientCare aktiviert werden.
+   (**Optional**) Bietet Informationen zur Videopfadsetzung. Der Pfad muss für diese Variable von der Kundenunterstützung aktiviert werden.
 
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop).
    * Variablentyp: Custom Insight (benutzerspezifischer Insight-Bericht) (s.prop)
@@ -44,16 +41,16 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
    (**Erforderlich**) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint.
 
-   Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. Wenn ein Besucher beispielsweise das erste Segment in einem Video Ansicht, kann SiteCatalyst Folgendes im eVar `1:M:0-25` erfassen.
+   Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. Wenn ein Besucher beispielsweise das erste Segment in einem Video anzeigt, kann SiteCatalyst Folgendes in der eVar für `1:M:0-25`-Segmente erfassen.
 
-   Die Standardmethode zur Videodatenerfassung erfasst Daten an folgenden Punkten: Video-Beginn (Wiedergabe), Segmentbeginn und Videoende (Stopp). Analytics zählt die erste Segmentansicht am Beginn des Segments, wenn der Besucher zu schauen beginnt. Nachfolgende Segmentansichten bei Segmentbeginn.
+   Die standardmäßige Methode zur Videodatenerfassung erfasst Daten an den folgenden Punkten: Videostart (Wiedergabe), Segmentbeginn und Videoende (Stopp). Analytics zählt die erste Segmentansicht am Beginn des Segments, wenn der Besucher zu schauen beginnt. Nachfolgende Segmentansichten bei Segmentbeginn.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
 
 * **a.contentType**
 
-   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Treffer, die durch Videomessung gesendet werden, erhalten den Inhaltstyp &quot;Video&quot;. Diese Variable muss nicht ausschließlich für die Videoverfolgung reserviert werden. Wenn Sie den Content-Typ anderer Inhaltsberichte mit dieser Variablen verwenden, können Sie die Verteilung der Besucher über die verschiedenen Inhaltstypen hinweg analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen.
+   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Den von der Videomessung gesendeten Treffern wird der Content-Typ &quot;Video&quot;zugewiesen. Diese Variable muss nicht ausschließlich für das Video-Tracking reserviert werden. Wenn andere Content-Typen den Content-Typ mit dieser Variablen melden, können Sie die Verteilung der Besucher über die verschiedenen Inhaltstypen analysieren. Sie können beispielsweise mithilfe dieser Variablen andere Content-Typen mit Werten wie &quot;article&quot;oder &quot;product page&quot;taggen.
 
    Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
 
@@ -159,9 +156,9 @@ property bool isMediaAd;
       var  myAdSettings = ADB.Media.adSettingsWith("name", 10,  "playerName", "parentName", "parentPod", 5, "myCPM");
       ```
 
-* **Öffnen (winJS: open)**
+* **Öffnen Sie (winJS: open)**
 
-   Verfolgt ein geöffnetes Medium mithilfe der unter `settings` definierten Einstellungen.
+   Verfolgt das Öffnen eines Mediums mithilfe der in `settings` definierten Einstellungen.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -177,7 +174,7 @@ property bool isMediaAd;
 
 * **Close (winJS: close)**
 
-   Verfolgt eine Medienbeendigung für das Medienelement *`name`*.
+   Zeichnet ein Medienende für das Medienelement *`name`* auf.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -193,7 +190,7 @@ property bool isMediaAd;
 
 * **Play (winJS: play)**
 
-   Verfolgt eine Medienwiedergabe für das Medienelement *`name`* am angegebenen *offset* (in Sekunden).
+   Verfolgt eine Medienwiedergabe für das Medienelement *`name`* am angegebenen *Offset* (in Sekunden).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -239,7 +236,7 @@ property bool isMediaAd;
       ADB.Media.stop("mediaName",  4);
       ```
 
-* **Klicken (winJS: click)**
+* **Klicken Sie auf (winJS: click)**
 
    Benachrichtigt das Medienmodul darüber, dass das Medienelement angeklickt wurde.
 

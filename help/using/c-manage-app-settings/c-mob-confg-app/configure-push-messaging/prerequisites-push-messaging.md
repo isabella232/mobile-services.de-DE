@@ -1,18 +1,15 @@
 ---
 description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachrichten in Apps konfigurieren.
 keywords: mobile
-seo-description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachrichten in Apps konfigurieren.
-seo-title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
 solution: Experience Cloud,Analytics
 title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '633'
+ht-degree: 94%
 
 ---
 
@@ -58,7 +55,7 @@ Wenn Benutzer keine Adobe IDs haben, führen Sie die folgenden Schritte aus:
 
 Jeder Benutzer muss das Analytics-Konto innerhalb der Experience Cloud-Organisation verknüpfen.
 
-1. Um sich mit einer Adobe ID bei Experience Cloud anzumelden, geben Sie in einem Browser [https://marketing.adobe.com](https://marketing.adobe.com) ein.
+1. Melden Sie sich mit einer Adobe ID bei [Adobe Experience Cloud](https://experience.adobe.com) an.
 
 1. Wählen Sie oben rechts den Namen des Analytics-Unternehmens aus.
 
@@ -68,7 +65,7 @@ Jeder Benutzer muss das Analytics-Konto innerhalb der Experience Cloud-Organisat
 
    Die Adobe ID ist jetzt mit Ihrem Analytics-Konto, -Unternehmen und den zugehörigen Anmeldedaten verknüpft.
 
-Weitere Informationen finden Sie unter [Fehlerbehebung bei der Kontoverknüpfung](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/organizations.html).
+Weitere Informationen finden Sie unter [Organisationen im Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) im Komponentenleitfaden für die zentrale Experience Cloud-Benutzeroberfläche.
 
 ## Push-Dienste und den SDK-ID-Dienst in der Mobile-Benutzeroberfläche konfigurieren
 

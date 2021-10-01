@@ -1,17 +1,14 @@
 ---
 description: Mobile SDK für die Experience Cloud verfügen über mit der Datenschutz-Grundverordnung (DSGVO) konforme APIs für Datenverantwortliche, die es Benutzern ermöglichen, lokal gespeicherte Identitäten abzurufen und Auswahlstatuskennzeichnungen für die Datenerfassung und -übertragung festzulegen.
-seo-description: Mobile SDK für die Experience Cloud verfügen über mit der Datenschutz-Grundverordnung (DSGVO) konforme APIs für Datenverantwortliche, die es Benutzern ermöglichen, lokal gespeicherte Identitäten abzurufen und Auswahlstatuskennzeichnungen für die Datenerfassung und -übertragung festzulegen.
-seo-title: Übersicht über Privatsphäre und Datenschutz-Grundverordnung
 title: Übersicht über Privatsphäre und Datenschutz-Grundverordnung
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
-translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+exl-id: 57696f2e-87f4-4f72-bec2-80c7192576f9
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 84%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
-
 
 # Übersicht über Privatsphäre und Datenschutz-Grundverordnung {#privacy-and-general-data-protection-regulation}
 
@@ -21,7 +18,7 @@ Mobile SDK für die Experience Cloud verfügen über mit der Datenschutz-Grundv
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
@@ -32,7 +29,7 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 >
 >**Nur** die mobilen SDK der Version 4.16.0 und neuer sind mit der DSGVO konform.
 
-Wenn Adobe einem Unternehmen Software und Dienstleistungen anbietet, fungiert Adobe als Datenverarbeiter für alle personenbezogenen Daten, die sie im Rahmen der Bereitstellung dieser Dienste verarbeitet und speichert. Als Datenverarbeiter verarbeitet Adobe personenbezogene Daten gemäß den Vorgaben und Anweisungen Ihrer Firma (z. B. gemäß Ihrer Vereinbarung mit der Adobe).
+Wenn Adobe einem Unternehmen Software und Dienstleistungen anbietet, fungiert Adobe als Datenverarbeiter für alle personenbezogenen Daten, die im Rahmen dieser Dienstleistungen verarbeitet und gespeichert werden. Als Datenverarbeiter verarbeitet Adobe personenbezogene Daten gemäß den Berechtigungen und Anweisungen Ihres Unternehmens (z. B. gemäß Ihrer Vereinbarung mit Adobe).
 
 Als Datenverantwortlicher können Sie SDK von Adobe Mobile Services nutzen, um DSGVO-konform Abruf- und Löschanforderungen über Ihre Apps zu verarbeiten.
 

@@ -1,16 +1,14 @@
 ---
 description: Im Folgenden finden Sie Referenzinformationen für standardmäßige mobile Metriken und Dimensionen.
 keywords: mobile
-seo-description: Im Folgenden finden Sie Referenzinformationen für standardmäßige mobile Metriken und Dimensionen.
-seo-title: Referenz zu Mobile-Metriken und -Dimensionen
 solution: Experience Cloud,Analytics
 title: Referenz zu Mobile-Metriken und -Dimensionen
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: ht
-source-wordcount: '638'
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+workflow-type: tm+mt
+source-wordcount: '621'
 ht-degree: 100%
 
 ---

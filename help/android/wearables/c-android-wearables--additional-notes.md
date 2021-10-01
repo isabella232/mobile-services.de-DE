@@ -1,16 +1,13 @@
 ---
 description: Im Folgenden finden Sie einige Informationen zum Konfigurieren der Android-Erweiterung, mit der Sie Daten aus Ihrer Android Wearable-App erfassen können.
-seo-description: Im Folgenden finden Sie einige Informationen zum Konfigurieren der Android-Erweiterung, mit der Sie Daten aus Ihrer Android Wearable-App erfassen können.
-seo-title: 'Android Wearables: Zusätzliche Hinweise'
 solution: Experience Cloud,Analytics
 title: 'Android Wearables: Zusätzliche Hinweise'
 topic-fix: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
 exl-id: ae8cf2d1-d2b0-456b-bbd3-3980e00bbc84
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '135'
 ht-degree: 100%
 
 ---

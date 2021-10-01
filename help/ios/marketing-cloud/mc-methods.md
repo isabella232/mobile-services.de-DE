@@ -1,17 +1,14 @@
 ---
 description: Hier finden Sie die Identity-Dienst-Methoden für Adobe Experience Platform, die von der iOS-Bibliothek bereitgestellt werden.
-seo-description: Hier finden Sie die Identity-Dienst-Methoden für Adobe Experience Platform, die von der iOS-Bibliothek bereitgestellt werden.
-seo-title: Identity-Dienst-Methoden für Adobe Experience Platform
 solution: Experience Cloud,Analytics
 title: Identity-Dienst-Methoden für Adobe Experience Platform
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 100%
+source-wordcount: '439'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +22,7 @@ Methoden erhalten je nach Lösung unterschiedliche Präfixe. Experience Cloud ID
 
 * **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
-   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Zum Verwenden dieser Methode müssen Sie über Mobile SDK-Version 4.12 oder höher verfügen. Weitere Informationen finden Sie unter [Hilfefunktion zum Anhängen der Besucher-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Hängt die Adobe-Besucherdaten an eine URL-Zeichenfolge zur Verwendung mit der Adobe-JavaScript-Bibliothek an. Zum Verwenden dieser Methode müssen Sie über Mobile SDK-Version 4.12 oder höher verfügen. Weitere Informationen finden Sie unter [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html?lang=de) in der Dokumentation zum Adobe Experience Cloud Identity-Dienst.
 
    >[!IMPORTANT]
    >

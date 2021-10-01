@@ -1,31 +1,28 @@
 ---
-description: Liste der von der Windows 8.1 Universal App Store-Bibliothek bereitgestellten Zielgruppen.
-seo-description: Liste der von der Windows 8.1 Universal App Store-Bibliothek bereitgestellten Zielgruppen.
-seo-title: Target-Methoden
+description: Liste der Target-Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
 solution: Experience Cloud,Analytics
 title: Target-Methoden
 topic-fix: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 exl-id: 2db9f594-01e7-4ca8-a90e-9d12278350d0
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 42%
+source-wordcount: '267'
+ht-degree: 43%
 
 ---
 
 # Target-Methoden {#target-methods}
 
-Liste der von der Windows 8.1 Universal App Store-Bibliothek bereitgestellten Zielgruppen.
+Liste der Target-Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Analytics-Methoden wird &quot;Zielgruppe&quot;vorangestellt.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Analytics-Methoden wird das Präfix &quot;Target&quot;vorangestellt.
 
 [Lebenszyklusmetriken](/help/windows-appstore/metrics.md) werden als Parameter jeder mbox-Load gesendet.
 
 >[!TIP]
 >
->Wenn Sie die Methoden `winmd` von winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
+>Wenn Sie `winmd`-Methoden aus winJS (JavaScript) verwenden, wird für alle Methoden automatisch der erste Buchstabe kleingeschrieben.
 
 ## Class reference: TargetLocationRequest
 
@@ -39,7 +36,7 @@ property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Obj
 
 ## Zeichenfolgenkonstanten
 
-Anhand dieser Informationen können Sie Schlüssel für benutzerdefinierte Parameter festlegen.
+Diese Informationen helfen Ihnen beim Festlegen von Schlüsseln für benutzerdefinierte Parameter.
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -73,7 +70,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Sendet `request` an den konfigurierten Zielgruppe-Server und gibt den Zeichenfolgenwert des Angebots zurück, das in einem Block `callback` generiert wurde.
+   Sendet `request` an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des in einem Block `callback` generierten Angebots zurück.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -92,7 +89,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest)**
 
-   Erstellt ein `TargetLocationRequest`-Objekt mit den angegebenen Parametern.
+   Erstellt ein `TargetLocationRequest` -Objekt mit den angegebenen Parametern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -109,7 +106,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS: createOrder &#x200B; ConfirmRequest)**
 
-   Erstellt ein `TargetLocationRequest`-Objekt mit den angegebenen Parametern.
+   Erstellt ein `TargetLocationRequest` -Objekt mit den angegebenen Parametern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -126,7 +123,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **ClearCookies (winJS: clearCookies)**
 
-   Löscht Zielgruppen-Cookies für die Anwendung auf dem aktuellen Gerät.
+   Löscht Target-Cookies für die Anwendung auf dem aktuellen Gerät.
 
    * Hier finden Sie die Syntax für diese Methode:
 

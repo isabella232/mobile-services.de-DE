@@ -1,21 +1,18 @@
 ---
 description: Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstellen, dass die Besucher nicht getrennt identifiziert werden, wenn sie zwischen dem nativen und mobilen Web wechseln.
-seo-description: Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstellen, dass die Besucher nicht getrennt identifiziert werden, wenn sie zwischen dem nativen und mobilen Web wechseln.
-seo-title: Besucher zwischen einer App und dem mobilen Internet verfolgen
 solution: Experience Cloud,Analytics
 title: Besucher zwischen einer App und dem mobilen Internet verfolgen
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '494'
 ht-degree: 100%
 
 ---
 
-# Besucher zwischen einer App und dem mobilen Internet verfolgen {#visitor-tracking-between-an-app-and-mobile-web}
+# Besucher zwischen einer App und dem mobilen Internet verfolgen  {#visitor-tracking-between-an-app-and-mobile-web}
 
 Wenn Ihre App mobile Webinhalte öffnet, müssen Sie sicherstellen, dass die Besucher nicht getrennt identifiziert werden, wenn sie zwischen dem nativen und mobilen Web wechseln.
 
@@ -41,7 +38,7 @@ Verwenden derselben Besucher-ID in der App und im mobilen Web und Übergeben der
 1. Um Besucherinformationen an die URL anzuhängen, die zum Öffnen der Webansicht verwendet wird, rufen Sie `visitorAppendToURL` auf:
 
    ```objective-c
-   NSURL *url = [NSURL URLWithString:@”https://www.mydomain.com/index.php"]; 
+   NSURL *url = [NSURL URLWithString:@"https://www.mydomain.com/index.php"]; 
    NSURL *urlWithVisitorData = [ADBMobile visitorAppendToURL:url]; 
    [[UIApplication sharedApplication] openURL:urlWithVisitorData];
    ```

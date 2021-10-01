@@ -1,17 +1,14 @@
 ---
 description: Sie müssen folgende Voraussetzungen erfüllen, um Akquise-Links verwenden zu können.
 keywords: mobile
-seo-description: Sie müssen folgende Voraussetzungen erfüllen, um Akquise-Links verwenden zu können.
-seo-title: Voraussetzungen für die Akquise
 solution: Experience Cloud,Analytics
 title: Voraussetzungen für die Akquise
 topic-fix: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
 exl-id: 31201bec-e823-47b1-8912-2f8d69cea5be
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '186'
 ht-degree: 100%
 
 ---

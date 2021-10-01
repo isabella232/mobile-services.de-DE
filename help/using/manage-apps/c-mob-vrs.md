@@ -1,31 +1,28 @@
 ---
 description: Bei einer Virtual Report Suite (VRS) handelt es sich um eine Report Suite, die durch Anwenden einer oder mehrerer Segmentdefinitionen auf eine Report Suite erstellt wird. So können Benutzer ihre Daten in der Report Suite beibehalten und sie dennoch so verwalten, als befänden sie sich in separaten Report Suites.
-seo-description: Bei einer Virtual Report Suite (VRS) handelt es sich um eine Report Suite, die durch Anwenden einer oder mehrerer Segmentdefinitionen auf eine Report Suite erstellt wird. So können Benutzer ihre Daten in der Report Suite beibehalten und sie dennoch so verwalten, als befänden sie sich in separaten Report Suites.
-seo-title: Virtual Report Suites
 title: Virtual Report Suites
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 77%
+source-wordcount: '1006'
+ht-degree: 71%
 
 ---
 
-
-# Virtual Report Suites {#virtual-report-suites}
+# Virtual Report Suites {#virtual-report-suites}
 
 Bei einer Virtual Report Suite (VRS) handelt es sich um eine Report Suite, die durch Anwenden einer oder mehrerer Segmentdefinitionen auf eine Report Suite erstellt wird. So können Benutzer ihre Daten in der Report Suite beibehalten und sie dennoch so verwalten, als befänden sie sich in separaten Report Suites.
 
 Apps, die eine VRS verwenden, verhalten sich abgesehen von der Verwaltung folgender Funktionen genauso wie Apps mit normalen Report Suites:
 
 * Verarbeitungsregeln
-* evars/props/listvars/Ereignisses
+* eVars/props/listvars/events
 * Zeitstempel-aktivierte Option
-* Flags für Dimensionen (Lebenszyklus, Ort usw.)
+* Dimension-Flags (Lebenszyklus, Ort usw.)
 * Classifications
 
-Diese Werte werden in der übergeordneten Report Suite verwaltet und für die VRS freigegeben, die zur gleichen übergeordneten Report Suite gehören.
+Diese Werte werden in der übergeordneten Report Suite verwaltet und für die VRSs freigegeben, die zur gleichen übergeordneten Report Suite gehören.
 
 Auf folgende Bereiche können Sie unabhängig von der übergeordneten Report Suite in der Adobe Mobile Services-Benutzeroberfläche zugreifen:
 
@@ -40,7 +37,7 @@ Mit einer VRS können Sie folgende Aufgaben ausführen:
 
 * Datenzugriff beschränken
 
-   Eine multinationale Firma verfügt über eine App, die Daten an eine Report Suite für alle geografischen Standorte sendet. Das Unternehmen möchte jedoch den Zugriff so einschränken, dass Unternehmensbenutzer einer Region nicht auf die Daten einer anderen Region zugreifen können. Der Administrator des Unternehmens kann eine VRS erstellen, um die Benutzer nach Region zu unterteilen, und nur dem Unternehmensbenutzer Zugriff auf die VRS gewähren, der die Region verwaltet.
+   Ein multinationales Unternehmen verfügt über eine App, die Daten für alle geografischen Standorte an eine Report Suite sendet. Das Unternehmen möchte jedoch den Zugriff so einschränken, dass Unternehmensbenutzer einer Region nicht auf die Daten einer anderen Region zugreifen können. Der Administrator des Unternehmens kann eine VRS erstellen, um die Benutzer nach Region zu unterteilen, und nur dem Unternehmensbenutzer Zugriff auf die VRS gewähren, der die Region verwaltet.
 
    Diese Einschränkung hindert Benutzer daran, Daten anzuzeigen, die nicht zu ihrer Region gehören. So muss beispielsweise ein Unternehmensbenutzer im EMEA-Raum nicht auf Daten aus der APAC-Region zugreifen können.
 
@@ -54,17 +51,17 @@ Mit einer VRS können Sie folgende Aufgaben ausführen:
 
 >[!IMPORTANT]
 >
->Nur Adobe Analytics-Administratoren können Virtual Report Suites in Adobe Analytics erstellen und ändern. Informationen zum Erstellen einer Virtual Report Suite finden Sie unter [Erstellen von Virtual Report Suites](https://docs.adobe.com/content/help/de-DE/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html).
+>Nur Adobe Analytics-Administratoren können Virtual Report Suites in Adobe Analytics erstellen und ändern. Informationen zum Erstellen einer Virtual Report Suite finden Sie unter [Virtual Report Suites erstellen](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) in der Adobe Analytics-Dokumentation.
 
 Jede VRS verfügt über eine eindeutige ID. Um die übergeordnete Report Suite-ID in der Benutzeroberfläche von Adobe Mobile Services anzuzeigen, klicken Sie auf der Seite „App-Einstellungen verwalten“ im Abschnitt **[!UICONTROL App-Informationen]** auf **[!UICONTROL Mehr Details]**.
 
-In der Benutzeroberfläche von Adobe Mobile Services können Sie eine VRS verwenden, um eine App zu erstellen und Daten für eine bestimmte Gruppe in Ihrem Unternehmen zu segmentieren. So kann beispielsweise ein Geschäftsbenutzer in Spanien die Daten, die für einen Geschäftsbenutzer in Japan relevant sind, nicht sehen.
+In der Adobe Mobile Services-Benutzeroberfläche können Sie eine VRS verwenden, um eine App zu erstellen und Daten für eine bestimmte Gruppe in Ihrem Unternehmen zu segmentieren. So kann beispielsweise ein Geschäftsbenutzer in Spanien die Daten nicht sehen, die für einen Geschäftsbenutzer in Japan relevant sind.
 
 >[!TIP]
 >
 >Sie können die Werte, die von der übergeordneten Report Suite übernommen wurden, nicht ändern.
 
-Eine VRS ist eine serverseitige Segmentdefinition, die an eine übergeordnete Report Suite angehängt wird. Daher können Sie keine Datenerfassung an eine VRS durchführen, da das SDK nur Treffer an die übergeordnete Report Suite sendet, die wiederum die Treffer aufzeichnet.
+Eine VRS ist eine serverseitige Segmentdefinition, die an eine übergeordnete Report Suite angehängt ist. Daher können Sie keine Datenerfassung an eine VRS durchführen, da das SDK Treffer nur an die übergeordnete Report Suite sendet, die wiederum die Treffer aufzeichnet.
 
 ## Virtual Report Suite in Adobe Mobile Services und Datenerfassung {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
@@ -74,7 +71,7 @@ In Adobe Mobile Services können Sie Apps basierend auf einer übergeordneten Re
 >
 >Push-Zertifikate sind auf App-Ebene in der Mobile Services-Benutzeroberfläche angehängt.
 
-Um sicherzustellen, dass Ihre Push-Nachrichten korrekt gesendet werden, muss das Audience-Segment korrekt definiert sein. For more information, see [Audience: Define and Configure Audience Segments for Push Messages](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+Um sicherzustellen, dass Ihre Push-Nachrichten korrekt gesendet werden, muss das Zielgruppensegment korrekt definiert sein. Weitere Informationen finden Sie unter [Zielgruppe: Zielgruppensegmente für Push-Nachrichten definieren und konfigurieren](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
 ## Zeitzonen verstehen {#section_498E1EED22D741C3BDED44F01FACA72A}
 
@@ -96,7 +93,7 @@ Im Folgenden finden Sie die VRS-Eigenschaften:
 >
 >Die schreibgeschützten Eigenschaften werden von der übergeordneten Report Suite übernommen.
 
-| Eigenschaft | Von der übergeordneten Berichte-Suite geerbt | Bearbeitbar? | Hinweise |
+| Eigenschaft | Von der übergeordneten Report Suite übernommen | Bearbeitbar? | Hinweise |
 |--- |--- |--- |--- |
 | `target.clientCode` | Nein | Ja |  |
 | `target.timeout` | Nein | Ja |  |
@@ -110,10 +107,10 @@ Im Folgenden finden Sie die VRS-Eigenschaften:
 | `analytics.ssl` | Nein | Ja |  |
 | `analytics.offlineEnabled` | Ja |  |  |
 | `analytics.charset` | Ja | Nein |  |
-| `analytics.lifecycleTimeout` | Nein | Ja | Sollte die übergeordnete Berichte-Suite sein, wenn die Benutzer nicht möchten, dass ihre Daten inkonsistent sind. |
+| `analytics.lifecycleTimeout` | Nein | Ja | Sollte die übergeordnete Report Suite sein, wenn Benutzer nicht möchten, dass ihre Daten inkonsistent sind. |
 | `analytics.privacyDefault` | Nein | Ja |  |
 | `analytics.batchLimit` | Nein | Ja |  |
-| `analytics.timezone` | Ja | Ja, wenn Sie die App zum ersten Mal erstellen. | Diese Zeitzoneneigenschaft wird zum Senden von Daten an Adobe Analytics verwendet und unterscheidet sich von der Zeitzoneneigenschaft, die beim Erstellen einer VRS festgelegt wird. |
+| `analytics.timezone` | Ja | Ja, wenn Sie die App zum ersten Mal erstellen. | Diese Zeitzonen-Eigenschaft wird zum Senden von Daten an Adobe Analytics verwendet und unterscheidet sich von der Zeitzonen-Eigenschaft, die beim Erstellen einer VRS festgelegt wird. |
 | `analytics.timezoneOffset` | Ja | Nein |  |
 | `analytics.referrerTimeout` | Nein | Ja |  |
 | `analytics.backdateSessionInfo` | Ja | Ja |  |
@@ -122,5 +119,5 @@ Im Folgenden finden Sie die VRS-Eigenschaften:
 
 Im Folgenden finden Sie einige zusätzliche Informationen zu Virtual Report Suites:
 
-* Weitere Informationen zu VRSs finden Sie unter [Virtual Report Suites](https://docs.adobe.com/content/help/de-DE/analytics/components/virtual-report-suites/vrs-about.html).
-* Weitere Informationen zur Planung einer VRS-Implementierung finden Sie unter [Virtual Report Suite-Workflow](https://docs.adobe.com/content/help/de-DE/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).
+* Weitere Informationen zu VRSs finden Sie unter [Übersicht über Virtual Report Suites](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
+* Weitere Informationen zur Planung einer VRS-Implementierung finden Sie unter [Virtual Report Suite-Workflow](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).

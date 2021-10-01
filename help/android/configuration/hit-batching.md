@@ -1,17 +1,14 @@
 ---
 description: Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, die gesendeten Treffer so lange zu speichern, bis die Anzahl der Treffer in der Warteschlange das konfigurierte Limit überschritten hat.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Die Stapelverarbeitung von Treffern ermöglicht es Anwendungen, die gesendeten Treffer so lange zu speichern, bis die Anzahl der Treffer in der Warteschlange das konfigurierte Limit überschritten hat.
-seo-title: Stapelverarbeitung von Treffern
 solution: Experience Cloud,Analytics
 title: Stapelverarbeitung von Treffern
 topic-fix: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
 exl-id: 74147f09-52fc-46dc-b4dd-2bf60b039f6e
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '162'
 ht-degree: 100%
 
 ---

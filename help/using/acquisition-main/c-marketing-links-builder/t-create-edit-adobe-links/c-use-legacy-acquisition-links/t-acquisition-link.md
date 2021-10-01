@@ -1,22 +1,19 @@
 ---
 description: Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
 keywords: mobile
-seo-description: Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
-seo-title: Akquise-Link erstellen
 solution: Experience Cloud,Analytics
 title: Akquise-Link erstellen
 topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
 exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
 
-# Akquise-Link erstellen {#create-an-acquisition-link}
+# Akquise-Link erstellen{#create-an-acquisition-link}
 
 Sie können Appstore-Links erstellen, über die Apps direkt aus dem Apple App Store und aus Google Play heruntergeladen werden können. Über diese Links können Sie Erfolgsereignisse bei Downloads zuordnen.
 

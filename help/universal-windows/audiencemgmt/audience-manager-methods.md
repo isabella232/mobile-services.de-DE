@@ -1,35 +1,32 @@
 ---
-description: Liste von Audience Manager-Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
-seo-description: Liste von Audience Manager-Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
-seo-title: Audience Manager-Methoden
+description: Liste der von der universellen Windows-Plattformbibliothek bereitgestellten Audience Manager-Methoden.
 solution: Experience Cloud,Analytics
 title: Audience Manager-Methoden
 topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 43%
+source-wordcount: '261'
+ht-degree: 44%
 
 ---
 
-# Audience Manager-Methoden {#audience-manager-methods}
+# Audience Manager-Methoden{#audience-manager-methods}
 
-Liste von Audience Manager-Methoden, die von der universellen Windows-Plattformbibliothek bereitgestellt werden.
+Liste der von der universellen Windows-Plattformbibliothek bereitgestellten Audience Manager-Methoden.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Die Methoden werden entsprechend der Lösung mit einem Präfix versehen. Audience Manager-Methoden erhalten das Präfix `AudienceManager`.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Audience Manager-Methoden wird `AudienceManager` vorangestellt.
 
 >[!TIP]
 >
->Wenn Sie die Methoden `winmd` von winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
+>Wenn Sie `winmd`-Methoden aus winJS (JavaScript) verwenden, wird für alle Methoden automatisch der erste Buchstabe kleingeschrieben.
 
-Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit Lebenszyklusmetriken mit Ihrem Lebenszyklustreffer gesendet.
+Wenn der Zielgruppen-Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit Lebenszyklusmetriken mit Ihrem Lebenszyklustreffer gesendet.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt `null` zurück, wenn noch kein Signal gesendet wurde. Besucher-Profil wird in `SharedPreferences` gespeichert, um den Zugriff über mehrere Starts Ihrer App hinweg zu erleichtern.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt `null` zurück, wenn noch kein Signal gesendet wurde. Das Besucherprofil wird in `SharedPreferences` gespeichert und steht so bei jedem Start Ihrer App zur Verfügung.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -97,7 +94,7 @@ Wenn Audience Manager in Ihrer JSON-Datei konfiguriert ist, wird ein Signal mit 
 
 * **SignalWithData (winJS: signalWithData)**
 
-   Sendet Audience Management ein Signal mit Eigenschaften und ruft die passenden Segmente in einem Blockrückruf zurück.
+   Sendet dem Zielgruppen-Management ein Signal mit Eigenschaften und ruft die passenden Segmente ab, die in einem Block-Callback zurückgegeben werden.
 
    * Hier finden Sie die Syntax für diese Methode:
 

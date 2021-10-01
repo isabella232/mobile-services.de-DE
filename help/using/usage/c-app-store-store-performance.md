@@ -1,17 +1,14 @@
 ---
 description: Der Bericht „App Store-Übersicht“ zeigt eine Momentaufnahme Ihrer App Store-Metriken, einschließlich der Anzahl der Downloads, der In-App-Käufe, der durchschnittlichen App Store-Bewertung, des Downloadumsatzes, des In-App-Umsatzes, der Downloads nach Ländern, der Downloads nach App Stores und der In-App-Käufe nach Namen.
 keywords: mobile
-seo-description: Der Bericht „App Store-Übersicht“ zeigt eine Momentaufnahme Ihrer App Store-Metriken, einschließlich der Anzahl der Downloads, der In-App-Käufe, der durchschnittlichen App Store-Bewertung, des Downloadumsatzes, des In-App-Umsatzes, der Downloads nach Ländern, der Downloads nach App Stores und der In-App-Käufe nach Namen.
-seo-title: Bericht „Appstore-Übersicht“
 solution: Experience Cloud,Analytics
 title: Bericht „Appstore-Übersicht“
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '473'
 ht-degree: 100%
 
 ---
@@ -56,7 +53,7 @@ Dieser Bericht zeigt die Höhe des Umsatzes, die durch das Herunterladen Ihrer A
 
 Dieser Bericht zeigt die Höhe des Umsatzes aus In-App-Käufen, die mithilfe der App getätigt wurden.
 
-## Downloads nach Land   {#section_10373CD28CA94BA5859DFDEED7D548C6}
+## Downloads nach Land  {#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 Dieser Bericht zeigt die Anzahl der Downloads Ihrer App nach Ländern gruppiert.
 
@@ -66,7 +63,7 @@ Um ein Diagramm anzuzeigen, das die Anzahl der Downloads pro Land nach Datum anz
 
 ![](assets/downloads_by_country.png)
 
-## Downloads nach App Store   {#section_F1CD1A3F0105469D879E4F280CE32484}
+## Downloads nach App Store  {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 Dieser Bericht zeigt die Anzahl der Downloads Ihrer App nach Appstore gruppiert.
 
@@ -76,6 +73,6 @@ Um ein Diagramm anzuzeigen, das die Anzahl der Downloads pro Appstore nach Datum
 
 ![](assets/app_store_downloads_detail.png)
 
-## In-App-Käufe nach Namen   {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## In-App-Käufe nach Namen  {#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 Dieser Bericht zeigt alle In-App-Käufe nach Namen.

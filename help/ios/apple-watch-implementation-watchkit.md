@@ -1,16 +1,13 @@
 ---
 description: Ab WatchOS 2 können Ihre WatchKit-Erweiterungen auf einer Apple Watch ausgeführt werden. Für Apps, die in dieser Umgebung ausgeführt werden, ist das WatchConnectivity-Framework erforderlich, damit Daten für die übergeordnete iOS-App freigegeben werden können.
-seo-description: Ab WatchOS 2 können Ihre WatchKit-Erweiterungen auf einer Apple Watch ausgeführt werden. Für Apps, die in dieser Umgebung ausgeführt werden, ist das WatchConnectivity-Framework erforderlich, damit Daten für die übergeordnete iOS-App freigegeben werden können.
-seo-title: Apple Watch-Implementierungen mit WatchOS 2
 solution: Experience Cloud,Analytics
 title: Apple Watch-Implementierungen mit WatchOS 2
 topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '506'
 ht-degree: 100%
 
 ---
@@ -27,7 +24,7 @@ Ab WatchOS 2 können Ihre WatchKit-Erweiterungen auf einer Apple Watch ausgefü
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
@@ -41,8 +38,8 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 >* Die übergeordnete App
 >* Die WatchKit-App
 >* Die WatchKit-Erweiterung
->
 
+>
 
 
 Weitere Informationen zum Entwickeln von WatchKit-Apps finden Sie unter [Die Watch-App-Architektur](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1).
@@ -69,7 +66,7 @@ Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus:
 1. Importieren Sie in der Implementierungsdatei Ihrer App-Delegatklasse `AdobeMobileLibrary`.
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. Bevor Sie einen Aufruf für die `ADBMobile`-Bibliothek vornehmen, konfigurieren Sie in `application:didFinishLaunchingWithOptions:` Ihres App-Delegats Ihre `WCSession`.
@@ -120,7 +117,7 @@ Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus:
 1. Importieren Sie in der Implementierungsdatei Ihrer Erweiterungsdelegatklasse `AdobeMobileLibrary`.
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. Konfigurieren Sie in `applicationDidFinishLaunching` Ihres Erweiterungsdelegats Ihre `WCSession`, bevor Sie Aufrufe für die `ADBMobile`-Bibliothek vornehmen.

@@ -1,16 +1,13 @@
 ---
 description: Mit dem Geostandort können Sie mithilfe von Längen- und Breitengrad und vordefinierten POIs in Ihren Android-Apps Positionsdaten messen.
-seo-description: Mit dem Geostandort können Sie mithilfe von Längen- und Breitengrad und vordefinierten POIs in Ihren Android-Apps Positionsdaten messen.
-seo-title: Geostandort und Zielpunkte
 solution: Experience Cloud,Analytics
 title: Geostandort und Zielpunkte
 topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '571'
 ht-degree: 100%
 
 ---
@@ -34,7 +31,7 @@ Jeder `trackLocation`-Aufruf sendet folgende Informationen:
 Ab Version 4.2 werden POIs in der Adobe Mobile-UI definiert und dynamisch mit der App-Konfigurationsdatei synchronisiert. Diese Synchronisation erfordert die Einstellung `analytics.poi` in der [ADBMobile JSON-Konfiguration](/help/android/configuration/json-config/json-config.md):
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 Wenn dies nicht konfiguriert ist, müssen Sie eine aktualisierte Version der Datei `ADBMobile.json` herunterladen und sie zu Ihrer App hinzufügen. Weitere Informationen finden Sie unter [SDK und Testwerkzeuge herunterladen](/help/android/getting-started/requirements.md).

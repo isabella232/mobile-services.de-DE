@@ -1,17 +1,14 @@
 ---
 description: Mit Postbacks können Sie Daten, die vom SDK erfasst werden, an einen Drittanbieter-Server senden. Mit denselben Triggern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie das SDK so konfigurieren, dass es benutzerdefinierte Daten an ein Drittanbieterziel sendet.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Mit Postbacks können Sie Daten, die vom SDK erfasst werden, an einen Drittanbieter-Server senden. Mit denselben Triggern und Eigenschaften wie bei der Anzeige einer In-App-Nachricht können Sie das SDK so konfigurieren, dass es benutzerdefinierte Daten an ein Drittanbieterziel sendet.
-seo-title: Postbacks
 solution: Experience Cloud,Analytics
 title: Übersicht über Postbacks
 topic-fix: Developer and implementation
 uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
 exl-id: 318f6eab-ff71-4bfe-8eb7-51a35380b992
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '308'
 ht-degree: 100%
 
 ---

@@ -1,24 +1,21 @@
 ---
-description: Liste der Metriken und Dimensionen, die automatisch von der Mobilbibliothek gemessen werden können.
+description: Listet die Metriken und Dimensionen auf, die automatisch von der Mobile-Bibliothek gemessen werden können.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Liste der Metriken und Dimensionen, die automatisch von der Mobilbibliothek gemessen werden können.
-seo-title: Lebenszyklusmetriken
 solution: Experience Cloud,Analytics
 title: Lebenszyklusmetriken
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 83%
+source-wordcount: '905'
+ht-degree: 84%
 
 ---
 
 # Lebenszyklusmetriken {#lifecycle-metrics}
 
-Liste der Metriken und Dimensionen, die automatisch von der Mobilbibliothek gemessen werden können.
+Listet die Metriken und Dimensionen auf, die automatisch von der Mobile-Bibliothek gemessen werden können.
 
 Weitere Informationen finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](https://helpx.adobe.com/de/analytics/kb/troubleshoot-lifecycle-data.html).
 
@@ -27,7 +24,7 @@ Weitere Informationen finden Sie unter [Fehlerbehebung bei Lebenszyklusdaten](ht
 
 Wenn sie konfiguriert sind, werden die Lebenszyklusmetriken in Kontextdatenparametern an Analytics, in Parametern mit jedem Mbox-Aufruf an Target und als Signal an das Zielgruppen-Management gesendet. Analytics und Target verwenden dasselbe Format, während das Zielgruppen-Management für jede Metrik ein anderes Präfix verwendet.
 
-Bei Analytics werden die Kontextdaten, die mit jedem Lebenszyklusverfolgungsaufruf gesendet werden, automatisch mit der Metrik oder Dimension erfasst und in Berichten verwendet. Ausnahmen werden im Inhalt vermerkt.
+Für Analytics werden die Kontextdaten, die mit jedem Lebenszyklus-Verfolgungsaufruf gesendet werden, automatisch mithilfe der Metrik oder Dimension erfasst und in Berichten verwendet. Ausnahmen sind im Inhalt angegeben.
 
 ## Metriken
 
@@ -227,11 +224,11 @@ Die folgenden Metriken und Dimensionen werden mit der folgenden Methode in Varia
 
    Erfasst durch `trackLocation`-Methoden.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager-Eigenschaft(n):
+   * Audience Manager-Eigenschaften:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -241,11 +238,11 @@ Die folgenden Metriken und Dimensionen werden mit der folgenden Methode in Varia
 
    Erfasst durch `trackLocation`-Methoden.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Manager-Eigenschaft(n):
+   * Audience Manager-Eigenschaften:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -255,11 +252,11 @@ Die folgenden Metriken und Dimensionen werden mit der folgenden Methode in Varia
 
    Erfasst durch `trackLocation`-Methoden.
 
-   * Analytics-Kontextdaten/Zielgruppe-Parameter:
+   * Analytics-Kontextdaten/Target-Parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Audience Manager-Eigenschaft(n):
+   * Audience Manager-Eigenschaften:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -267,21 +264,21 @@ Die folgenden Metriken und Dimensionen werden mit der folgenden Methode in Varia
 
 * **Zielpunkt-Bezeichnung**
 
-   Wird durch `trackLocation`-Methoden gefüllt, wenn sich das Gerät in einem definierten POI befindet.
+   Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem definierten POI befindet.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.loc.poi`
-   * Eigenschaft des Audience Managers: `c_a_loc_poi`
+   * Audience Manager-Eigenschaft: `c_a_loc_poi`
 
 * **Entfernung zum Zentrum des Zielpunkts**
 
-   Wird durch `trackLocation`-Methoden gefüllt, wenn sich das Gerät innerhalb eines definierten POI befindet.
+   Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem definierten POI befindet.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.loc.dist`
-   * Eigenschaft des Audience Managers: `c_a_loc_dist`
+   * Audience Manager-Eigenschaft: `c_a_loc_dist`
 
 * **Lebenszeitwert (Konversionsvariable)**
 
    Erfasst durch `trackLifetimeValue`-Methoden.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.ltv.amount`
-   * Eigenschaft des Audience Managers: `c_a_ltv_amount`
+   * Audience Manager-Eigenschaft: `c_a_ltv_amount`

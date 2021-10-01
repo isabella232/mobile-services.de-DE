@@ -1,21 +1,18 @@
 ---
 description: Diese Informationen helfen Ihnen beim Migrieren von den Versionen 3.x oder 2.x zu Version 4.x der iOS-Bibliothek.
-seo-description: Diese Informationen helfen Ihnen beim Migrieren von den Versionen 3.x oder 2.x zu Version 4.x der iOS-Bibliothek.
-seo-title: Zur iOS-Bibliothek der Version 4.x migrieren
 solution: Experience Cloud,Analytics
 title: Zur iOS-Bibliothek der Version 4.x migrieren
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '871'
 ht-degree: 100%
 
 ---
 
-# Zur iOS-Bibliothek der Version 4.x migrieren {#migrating-to-the-x-ios-library}
+# Zur iOS-Bibliothek der Version 4.x migrieren{#migrating-to-the-x-ios-library}
 
 Diese Informationen helfen Ihnen beim Migrieren von den Versionen 3.x oder 2.x zu Version 4.x der iOS-Bibliothek.
 

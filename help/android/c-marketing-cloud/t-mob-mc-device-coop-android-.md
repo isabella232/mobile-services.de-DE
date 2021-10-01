@@ -1,17 +1,14 @@
 ---
 description: Wenden Sie sich an einen Adobe-Support-Mitarbeiter, um mit der Verwendung der Experience Cloud-Gerätekooperation zu beginnen.
-seo-description: Wenden Sie sich an einen Adobe-Support-Mitarbeiter, um mit der Verwendung der Experience Cloud-Gerätekooperation zu beginnen.
-seo-title: Experience Cloud-Gerätekooperation
 title: Experience Cloud-Gerätekooperation
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
-translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+exl-id: e34b8a7e-3b70-4725-94a5-9903987c34f8
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 97%
 
 ---
-
 
 # Experience Cloud-Gerätekooperation {#experience-cloud-device-co-op}
 
@@ -23,7 +20,7 @@ Um Ihre mobilen Apps für die Experience Cloud-Gerätekooperation zu aktivieren,
 >
 >Für diese Funktion ist die Android-SDK-Version 4.8.3 oder höher erforderlich.
 
-Ab SDK-Version 4.16.1 können Mitglieder der Gerätekooperation per Opt-out ihre Mobilgerätedaten aus der Experience Cloud-Gerätekooperation abwählen. Weitere Informationen finden Sie unter [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md) und in der `visitorAPI.js` Methode für [isCoopSafe](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/configurations/coopsafe.html).
+Ab SDK-Version 4.16.1 können Mitglieder der Gerätekooperation per Opt-out ihre Mobilgerätedaten aus der Experience Cloud-Gerätekooperation abwählen. Weitere Informationen finden Sie unter [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md) und in der `visitorAPI.js` Methode für [isCoopSafe](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/coopsafe.html).
 
 1. Adobe Mobile-SDK implementieren.
 

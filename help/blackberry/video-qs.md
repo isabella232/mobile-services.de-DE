@@ -1,31 +1,28 @@
 ---
-description: Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Entwickler-Aufgaben sowie Codebeispiele.
-seo-description: Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Entwickler-Aufgaben sowie Codebeispiele.
-seo-title: Video Analytics
+description: Der allgemeine Prozess zur Videomessung ist für alle AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet einen grundlegenden Überblick über die Aufgaben für Entwickler sowie Codebeispiele.
 title: Video Analytics
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: 90da1a9e-2faa-429c-969e-869ebedf08cc
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 69%
+source-wordcount: '835'
+ht-degree: 70%
 
 ---
 
-
 # Video Analytics  {#video-analytics}
 
-Der allgemeine Prozess zum Messen von Videos ist auf allen AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet eine grundlegende Übersicht über die Entwickler-Aufgaben sowie Codebeispiele.
+Der allgemeine Prozess zur Videomessung ist für alle AppMeasurement-Plattformen sehr ähnlich. Dieser Abschnitt bietet einen grundlegenden Überblick über die Aufgaben für Entwickler sowie Codebeispiele.
 
-For more information about Video measurement, see the [Measuring audio and video in Adobe Analytics](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html) guide.  In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten in der Spalte Kontextdatenvariable einer Analytics-Variablen zuzuordnen, wie in der Spalte Variablentyp beschrieben.
+Weitere Informationen zur Videomessung finden Sie im Handbuch [Messen von Streaming-Medien in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de) .  In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten in der Spalte Kontextdatenvariable einer Analytics-Variablen zuzuordnen, wie in der Spalte Variablentyp beschrieben.
 
 ## Player-Ereignisse Analytics-Variablen zuordnen
 
 * **a.media.name**
 
-   (Erforderlich) Erfasst den Videonamen, wie in der Implementierung angegeben, wenn ein Besucher das Video auf eine bestimmte Weise Ansicht.Sie können Classifications für diese Variable hinzufügen.
+   (Erforderlich) Erfasst den in der Implementierung angegebenen Videonamen, wenn ein Besucher das Video auf irgendeine Weise anzeigt. Sie können für diese Variable Classifications hinzufügen.
 
-   **(Optional)** Die Variable &quot;Custom Insight&quot;enthält Informationen zu Videopfaden.
+   **(Optional)** Die Custom Insight-Variable enthält Informationen zu Videopfaden.
 
    * Variablenname: eVar
       * Standardgültigkeit: Besuch
@@ -33,7 +30,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.media.name**
 
-   (**Optional**) Bietet Informationen zur Videopfadsetzung. Pfade müssen für diese Variable von ClientCare aktiviert werden.
+   (**Optional**) Bietet Informationen zur Videopfadsetzung. Der Pfad muss für diese Variable von der Kundenunterstützung aktiviert werden.
 
    * Ereignistyp: Benutzerspezifischer Insight-Bericht (s.prop)
    * Custom Insight (s.prop)
@@ -42,7 +39,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
    (**Erforderlich**) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen.
 
-   For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. Die Standardmethode zur Videodatenerfassung erfasst Daten am Video-Beginn (Wiedergabe), Segmentbeginn und Videoende (Stopp).
+   Wenn beispielsweise ein Besucher das erste Segment in einem Video anzeigt, kann SiteCatalyst `1:M:0-25` in der eVar Segmente erfassen. Die standardmäßige Methode zur Videodatenerfassung erfasst Daten am Videostartpunkt (Wiedergabe), Segmentbeginn und am Ende des Videos (Stopp).
 
    Analytics zählt die erste Segmentansicht am Beginn des Segments, wenn der Besucher zu schauen beginnt. Nachfolgende Segmentansichten bei Segmentbeginn.
 
@@ -51,7 +48,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.contentType**
 
-   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Treffer, die durch Videomessung gesendet werden, erhalten den Inhaltstyp &quot;Video&quot;. Diese Variable muss nicht ausschließlich für die Videoverfolgung reserviert werden. Wenn Sie den Content-Typ anderer Inhaltsberichte mit dieser Variablen verwenden, können Sie die Verteilung der Besucher über die verschiedenen Inhaltstypen hinweg analysieren. Sie könnten z. B. andere Content-Typen mit Werten wie „article“ oder „product page“ über diese Variable mit Tags versehen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
+   Erfasst Daten zum Typ des Inhalts, der von einem Besucher angesehen wird. Den von der Videomessung gesendeten Treffern wird der Content-Typ &quot;Video&quot;zugewiesen. Diese Variable muss nicht ausschließlich für das Video-Tracking reserviert werden. Wenn andere Content-Typen den Content-Typ mit dieser Variablen melden, können Sie die Verteilung der Besucher über die verschiedenen Inhaltstypen analysieren. Sie können beispielsweise mithilfe dieser Variablen andere Content-Typen mit Werten wie &quot;article&quot;oder &quot;product page&quot;taggen. Im Hinblick auf die Videomessung können Sie über den Content-Typ Videobesucher identifizieren und somit Videokonversionsraten berechnen.
 
    * Variablentyp: eVar
    * Standardgültigkeit: Seitenansicht
@@ -92,7 +89,7 @@ Zum Messen der Videowiedergabe müssen die Methoden `mediaPlay`, `mediaStop` und
 
 * **open**
 
-   Öffnet ein Video zur Verfolgung.
+   Öffnet ein Video zum Tracking.
 
    * Hier finden Sie die Syntax für diese Methode:
 

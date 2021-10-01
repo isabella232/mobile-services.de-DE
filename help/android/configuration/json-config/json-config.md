@@ -1,16 +1,13 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
-seo-description: Diese Informationen helfen Ihnen bei der Verwendung der ADBMobile.json-Konfigurationsdatei.
-seo-title: ADBMobile JSON-Konfiguration
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON-Konfiguration
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1666'
 ht-degree: 100%
 
 ---
@@ -155,8 +152,8 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
       Ab Version 4.2 sind POIs auf der Adobe Mobile-Oberfläche definiert und werden dynamisch mit der App-Konfigurationsdatei synchronisiert. Diese Synchronisation erfordert die Einstellung `analytics.poi`:
 
       ```javascript
-        “analytics.poi“: `https://assets.adobedtm.com/`
-      …/yourfile.json”`,
+        "analytics.poi": `https://assets.adobedtm.com/`
+      …/yourfile.json"`,
       ```
 
       Wenn diese Einstellung nicht konfiguriert ist, muss die Datei `ADBMobile.json` um folgende Zeile ergänzt werden. Informationen zum Herunterladen einer aktualisierten Konfigurationsdatei finden Sie unter [Vorbereitung](/help/android/getting-started/requirements.md).
@@ -242,7 +239,7 @@ Hier finden Sie eine Liste der Variablen in der JSON-Datei und die minimale SDK-
    * Bestimmt, wie lange Target auf eine Antwort wartet.
 
 
-## Beispieldatei `ADBMobileConfig.json` {#section_4655EF79744649E5A5AE19E3224C472C}
+## Beispieldatei `ADBMobileConfig.json`  {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Im Folgenden finden Sie eine beispielhafte Datei `ADBMobileConfig.json`:
 

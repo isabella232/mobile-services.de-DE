@@ -1,35 +1,32 @@
 ---
-description: Informationen zur Verwendung des SDK für den Windows 8.1 Universal App Store mit Adobe Analytics.
-seo-description: Informationen zur Verwendung des SDK für den Windows 8.1 Universal App Store mit Adobe Analytics.
-seo-title: Analytics-Methoden
+description: Informationen, die Sie bei der Verwendung des SDK für Windows 8.1 Universal App Store mit Adobe Analytics unterstützen.
 solution: Experience Cloud,Analytics
 title: Analytics-Methoden
 topic-fix: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 exl-id: 007bb801-55ef-4c5b-87fa-d0db42cde163
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 52%
+source-wordcount: '614'
+ht-degree: 53%
 
 ---
 
 # Analytics-Methoden {#analytics-methods}
 
-Informationen zur Verwendung des SDK für den Windows 8.1 Universal App Store mit Adobe Analytics.
+Informationen, die Sie bei der Verwendung des SDK für Windows 8.1 Universal App Store mit Adobe Analytics unterstützen.
 
-Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Zielgruppe und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Analytics-Methoden wird der Zeichenfolge &quot;Analytics&quot;vorangestellt.
+Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Analytics-Methoden wird &quot;Analytics&quot;vorangestellt.
 
 Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Suite verwendet.
 
 >[!TIP]
 >
->Wenn Sie die Methoden `winmd` von winJS (JavaScript) verwenden, wird bei allen Methoden automatisch der erste Buchstabe verringert.
+>Wenn Sie `winmd`-Methoden aus winJS (JavaScript) verwenden, wird für alle Methoden automatisch der erste Buchstabe kleingeschrieben.
 
 * **TrackState (winJS: trackState)**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Home Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn `state` leer ist, wird in Berichten als &quot;App-Name-App-Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten angezeigt wird, stellen Sie sicher, dass Sie `state` in jedem `TrackState`-Aufruf einstellen.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Startseiten-Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn `state` leer ist, wird in Berichten als &quot;App Name App Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie `state` in jedem `TrackState` -Aufruf festlegen.
 
    >[!TIP]
    >
@@ -50,7 +47,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **TrackAction (winJS: trackAction)**
 
-   Verfolgt eine Aktion in der App. Aktionen sind die Vorgänge, die in Ihrer App stattfinden und die Sie messen möchten, z. B. &quot;Anmeldungen&quot;, &quot;Bannerklappen&quot;, &quot;Feed-Abonnement&quot;und andere Metriken.
+   Verfolgt eine Aktion in der App. Bei Aktionen handelt es sich um die Dinge, die in Ihrer App vor sich gehen, die Sie messen möchten, z. B. &quot;Anmeldungen&quot;, &quot;Banner-Tippvorgänge&quot;, &quot;Feed-Abonnements&quot;und andere Metriken.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -67,7 +64,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **GetTrackingIdentifierAsync (winJS: getTrackingIdentifierAsync)**
 
-   Gibt die automatisch erzeugte Besucher-ID für Analytics zurück. Dies ist eine App-spezifische eindeutige Besucher-ID, die beim ersten Start generiert und dann gespeichert und ab diesem Zeitpunkt verwendet wird. Diese ID bleibt zwischen den App-Aktualisierungen erhalten und wird bei der Deinstallation entfernt.
+   Gibt die automatisch erzeugte Besucher-ID für Analytics zurück. Hierbei handelt es sich um eine App-spezifische Unique Visitor-ID, die beim ersten Start generiert und dann gespeichert und ab diesem Zeitpunkt verwendet wird. Diese ID bleibt zwischen App-Upgrades erhalten und wird bei der Deinstallation entfernt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -141,7 +138,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **TrackTimed &#x200B; ActionUpdate (winJS: trackTimed &#x200B; ActionUpdate)**
 
-   Übergibt `contextData`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. Das übergebene `data` wird an die vorhandenen Daten für die angegebene Aktion angehängt und überschreibt die Daten, wenn derselbe Schlüssel bereits für `action` definiert ist.
+   Übergibt `contextData`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. Der übergebene `data` wird an die vorhandenen Daten für die Aktion angehängt und überschreibt die Daten, wenn derselbe Schlüssel bereits für `action` definiert ist.
 
    >[!TIP]
    >
@@ -164,7 +161,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **TrackTimedActionExistsAsync (winJS: trackTimedActionExistsAsync)**
 
-   Gibt TRUE zurück, wenn die angegebene zeitgesteuerte Aktion vorhanden ist, bzw. FALSE, wenn dies nicht der Fall ist.
+   Gibt &quot;true&quot;zurück, wenn die angegebene zeitgesteuerte Aktion vorhanden ist, und &quot;false&quot;, wenn dies nicht der Fall ist.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -199,15 +196,15 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **ClearTrackingQueue (winJS: clearTrackingQueue)**
 
-   Löscht alle gespeicherten Treffer aus der Analytics-Verfolgungswarteschlange.
+   Löscht alle gespeicherten Treffer aus der Analytics-Tracking-Warteschlange.
 
-   * Die Syntax für diese Meldung lautet:
+   * Hier finden Sie die Syntax für diese Nachricht:
 
       ```csharp
       static void ClearTrackingQueue();
       ```
 
-   * Das folgende Codebeispiel:
+   * Hier finden Sie das Code-Beispiel:
 
       ```js
       ADBMobile.Analytics.clearTrackingQueue();

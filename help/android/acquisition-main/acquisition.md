@@ -1,17 +1,14 @@
 ---
 description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App vom Appstore herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst das SDK automatisch die Akquisedaten und sendet sie an Adobe Mobile Services.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App vom Appstore herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst das SDK automatisch die Akquisedaten und sendet sie an Adobe Mobile Services.
-seo-title: App-Akquise
 solution: Experience Cloud,Analytics
 title: App-Akquise
 topic-fix: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 exl-id: 266f0266-38f5-410b-ae14-92874fb0e7ce
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '833'
 ht-degree: 100%
 
 ---
@@ -24,7 +21,7 @@ In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes gen
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.

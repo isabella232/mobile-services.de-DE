@@ -1,21 +1,18 @@
 ---
-description: Sie können Adobe Target in Ihren TVML-/TVJS-Apps nutzen, indem Sie Ihre .xml-Dateien direkt ersetzen. Geben Sie Seitenbereiche an, die durch Seiteninhalte ersetzt werden sollen, indem Sie das benutzerdefinierte ADBTarget-XML-Element verwenden.
-seo-description: Sie können Adobe Target in Ihren TVML-/TVJS-Apps nutzen, indem Sie Ihre .xml-Dateien direkt ersetzen. Geben Sie Seitenbereiche an, die durch Seiteninhalte ersetzt werden sollen, indem Sie das benutzerdefinierte ADBTarget-XML-Element verwenden.
-seo-title: Adobe Target für TVML/TVJS
+description: Sie können Adobe Target in Ihren TVML-/TVJS-Apps nutzen, indem Sie direkte Ersetzungen an Ihren .xml-Dateien vornehmen. Legen Sie Bereiche Ihrer Seite fest, die durch Target-Inhalte ersetzt werden sollen, indem Sie das benutzerdefinierte ADBTarget-XML-Element verwenden.
 title: Adobe Target für TVML/TVJS
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+exl-id: 9348d49c-2a5a-4ea0-b90d-99d446bd336a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 70%
+source-wordcount: '461'
+ht-degree: 75%
 
 ---
 
-
 # Adobe Target für TVML/TVJS{#adobe-target-for-tvml-tvjs}
 
-Sie können Adobe Target in Ihren TVML-/TVJS-Apps nutzen, indem Sie Ihre .xml-Dateien direkt ersetzen. Geben Sie Seitenbereiche an, die durch Seiteninhalte ersetzt werden sollen, indem Sie das benutzerdefinierte ADBTarget-XML-Element verwenden.
+Sie können Adobe Target in Ihren TVML-/TVJS-Apps nutzen, indem Sie direkte Ersetzungen an Ihren .xml-Dateien vornehmen. Legen Sie Bereiche Ihrer Seite fest, die durch Target-Inhalte ersetzt werden sollen, indem Sie das benutzerdefinierte ADBTarget-XML-Element verwenden.
 
 >[!IMPORTANT]
 >
@@ -114,7 +111,7 @@ Angenommen, Sie besitzen eine Mbox-Position mit dem Namen `landingPage` und der 
 
 #### Konfigurieren von „landingPage.xml.js“
 
-* Die Konfiguration für landingPage.xml.js lautet wie folgt:
+* Dies ist die Konfiguration für landingPage.xml.js:
 
    ```js
    <alertTemplate> 
@@ -125,7 +122,7 @@ Angenommen, Sie besitzen eine Mbox-Position mit dem Namen `landingPage` und der 
    </alertTemplate> 
    ```
 
-* Wenn die Anforderung zur Zielgruppe erfolgreich ausgeführt wurde und Ihr Angebot-Inhalt zurückgegeben wird, resultiert Ihre Seite wie folgt:
+* Wenn die Anfrage an Target erfolgreich ist und Ihr Angebotsinhalt zurückgegeben wird, resultiert Ihre Seite aus:
 
    ```objective-c
    <alertTemplate> 
@@ -134,7 +131,7 @@ Angenommen, Sie besitzen eine Mbox-Position mit dem Namen `landingPage` und der 
    </alertTemplate>
    ```
 
-* Wenn der Zielgruppe-Server nicht erreicht werden kann oder die Anforderung eine Zeitüberschreitung aufweist, ergibt sich Folgendes:
+* Wenn der Target-Server nicht erreicht werden kann oder die Anfrage eine Zeitüberschreitung aufweist, ergibt sich für Ihre Seite Folgendes:
 
    ```objective-c
    <alertTemplate> 

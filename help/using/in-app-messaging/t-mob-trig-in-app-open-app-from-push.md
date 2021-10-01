@@ -1,17 +1,14 @@
 ---
 description: Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festlegen, die gesendet wird, wenn ein Anwender die App von der Push-Nachricht aus öffnet.
-seo-description: Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festlegen, die gesendet wird, wenn ein Anwender die App von der Push-Nachricht aus öffnet.
-seo-title: Auslösen einer In-App-Nachricht, wenn die App aus einer Push-Nachricht geöffnet wird
-title: Auslösen einer In-App-Nachricht, wenn die App aus einer Push-Nachricht geöffnet wird
+title: Trigger einer In-App-Nachricht, wenn die App von einer Push-Nachricht aus geöffnet wird
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
-translation-type: tm+mt
-source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
+exl-id: 4496222f-b6f0-4fa1-86c6-149b590244d3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 59%
+source-wordcount: '270'
+ht-degree: 58%
 
 ---
-
 
 # In-App-Nachricht auslösen, wenn die App von einer Push-Nachricht aus geöffnet wird{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
 
@@ -19,7 +16,7 @@ Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festle
 
 1. Ermitteln Sie die Push-Nachricht-ID für die Push-Nachricht, die an den Anwender gesendet wird.
 
-   Sie können die Push-Nachrichten-ID während des Nachrichtenerstellungsarbeitsablaufs in der URL suchen.
+   Sie finden die Push-Nachricht-ID während des Erstellungsarbeitsablaufs der Nachricht in der URL.
 
    Siehe folgendes Beispiel:
 
@@ -27,7 +24,7 @@ Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festle
 
 1. Speichern und aktivieren Sie die In-App-Nachricht mit dem folgenden Auslöser:
 
-   `“a.push.payloadID” =`
+   `"a.push.payloadID" =`
 
    >[!TIP]
    >
@@ -43,7 +40,5 @@ Sie können die Push-Nachricht-ID als Auslöser für die In-App-Nachricht festle
    Beachten Sie beim Testen die folgenden Informationen:
 
    * Nach dem Speichern der In-App-Nachricht dauert es etwa 45 Sekunden, bis die gehostete Konfigurationsdatei mit der neuen Nachricht aktualisiert wird.
-   * Die App sucht nach Konfigurationsdatei-Aktualisierungen (der neuen In-App-Nachricht), wenn ein **neuer** Start stattfindet. Daher müssen Sie sicherstellen, dass die App einen neuen Start auslöst, wenn auf die Push-Nachricht geklickt wird.
-
-   Dies bedeutet in der Regel, dass Sie sicherstellen müssen, dass der Sitzungs-Timeout aufgetreten ist. Der standardmäßige Timeout beträgt 5 Minuten.
-
+   * Die App sucht nach Aktualisierungen der Konfigurationsdatei (der neuen In-App-Nachricht), wenn ein **neuer** Launch vorhanden ist. Stellen Sie daher sicher, dass die App einen neuen Launch auslöst, wenn auf die Push-Nachricht geklickt wird.
+   Dies bedeutet normalerweise, dass Sie sicherstellen müssen, dass das Sitzungs-Timeout aufgetreten ist. Der Standardwert für die Zeitüberschreitung beträgt 5 Minuten.

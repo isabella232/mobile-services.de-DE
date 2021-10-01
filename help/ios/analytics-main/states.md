@@ -1,16 +1,13 @@
 ---
 description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn ein neuer Status in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Aufruf zur Statusverfolgung gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
-seo-description: Status sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn ein neuer Status in der Anwendung angezeigt wird (z. B. wenn ein Benutzer von der Startseite zum Newsfeed navigiert), sollte ein Aufruf zur Statusverfolgung gesendet werden. Unter iOS wird ein Status normalerweise in der viewDidLoad-Methode jeder Ansicht verfolgt.
-seo-title: App-Zustände verfolgen
 solution: Experience Cloud,Analytics
 title: App-Zustände verfolgen
 topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---

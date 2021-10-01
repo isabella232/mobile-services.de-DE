@@ -1,23 +1,20 @@
 ---
 description: Informationen zur Implementierung von Lebenszyklusmetriken für Android. Lebenszyklusmetriken werden automatisch für iOS erfasst.
 keywords: Xamarin
-seo-description: Informationen zur Implementierung von Lebenszyklusmetriken für Android. Lebenszyklusmetriken werden automatisch für iOS erfasst.
-seo-title: Implementieren des Lebenszyklus
 solution: Experience Cloud
 title: Implementieren des Lebenszyklus
 uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: c76e63d1-48a5-4831-85d5-f3d3e9798a43
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '85'
 ht-degree: 7%
 
 ---
 
-
 # Implementieren des Lebenszyklus {#implement-lifecycle}
 
-Diese Informationen unterstützen Sie bei der Implementierung von Lebenszyklusmetriken für Android.
+Diese Informationen helfen Ihnen bei der Implementierung von Lebenszyklusmetriken für Android.
 
 >[!TIP]
 >
@@ -31,7 +28,7 @@ Unter iOS werden Lebenszyklusmetriken automatisch erfasst.
 
 ## Android
 
-Legen Sie in Ihrer Haupt-Aktivität den Anwendungskontext für das Android-SDK fest.
+Legen Sie in Ihrer Hauptaktivität den Anwendungskontext für das Android-SDK fest.
 
 ```java
 protected override void OnCreate (Bundle bundle) 

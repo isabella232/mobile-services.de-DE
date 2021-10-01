@@ -1,17 +1,14 @@
 ---
 description: Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDK, um so Angebotsinhalte so selten wie möglich abzurufen, indem die Serverantworten im Cache abgelegt werden.
-seo-description: Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDK, um so Angebotsinhalte so selten wie möglich abzurufen, indem die Serverantworten im Cache abgelegt werden.
-seo-title: Vorabruf-Angebotsinhalte in iOS
 title: Vorabruf-Angebotsinhalte in iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
-translation-type: tm+mt
-source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 86%
+source-wordcount: '731'
+ht-degree: 85%
 
 ---
-
 
 # Vorabruf-Angebotsinhalte in iOS {#prefetch-offer-content-in-ios}
 
@@ -21,7 +18,7 @@ Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDK, um so Angebotsin
 >
 >Die Vorabruffunktion in den Mobile SDK für iOS wird für die Aktivitätstypen „Auto Target“, „Auto Allocate“ und „Automated Personalization“ in Adobe Target nicht unterstützt.
 
-Dieser Vorgang verringert die Ladezeit, verhindert mehrere Netzwerkaufrufe und ermöglicht es Adobe Target, darüber informiert zu werden, welche Mbox vom Benutzer der mobilen App besucht wurde. Alle Inhalte werden während des Vorab-Aufrufs abgerufen und zwischengespeichert. Dieser Inhalt wird für alle zukünftigen Aufrufe, die zwischengespeicherten Inhalt für den angegebenen Mbox-Namen enthalten, aus dem Cache abgerufen.
+Dadurch wird die Ladezeit verkürzt, es werden mehrere Netzwerkaufrufe verhindert und Adobe Target kann darüber informiert werden, welche Mbox vom Benutzer der mobilen App besucht wurde. Alle Inhalte werden während des Vorabrufs abgerufen und zwischengespeichert. Dieser Inhalt wird für alle zukünftigen Aufrufe abgerufen, die zwischengespeicherten Inhalt für den angegebenen Mbox-Namen enthalten.
 
 Vorabgerufene Inhalte werden nicht über Starts hinweg behalten. Der vorabgerufene Inhalt verbleibt im Cache, bis die Lebensdauer der App endet oder die Methode `clearPrefetchCache()` aufgerufen wird.
 
@@ -163,7 +160,7 @@ Umfasst mbox-Namen sowie die Parameter, die für den mbox-Vorabruf verwendet wer
 
 * **`productParameters`**
 
-   Wörterbuch, das die Schlüssel-Wert-Paare der Produktparameter enthält.
+   Wörterbuch, das die Schlüssel-Wert-Paare von Produktparametern enthält.
 
    * **Typ**: NSDictionary*
 
@@ -179,13 +176,13 @@ Diese Klasse kapselt den mbox-Namen, den Standardinhalt, die mbox-Parameter und 
 
 * **`mboxParameters`**
 
-   Der NSString-Wert, der den Namen für die Position/Mbox darstellt, die Sie abrufen möchten.
+   Der NSString-Wert, der den Namen für den Standort/die Mbox darstellt, den/die Sie abrufen möchten.
 
    * **Typ**: NSString*
 
 * **`defaultContent`**
 
-   Der Standardinhalt, der zurückgegeben wird, wenn die Zielgruppe-Server unerreichbar sind.
+   Der Standardinhalt, der zurückgegeben wird, wenn Target-Server nicht erreichbar sind.
 
    * **Typ**: NSString*
 

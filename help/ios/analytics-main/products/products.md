@@ -1,16 +1,13 @@
 ---
 description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS SDK 4.x müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um die Variable „products“ direkt beim Server-Aufruf festzulegen.
-seo-description: Die Variable „products“ kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im iOS SDK 4.x müssen Sie eine spezielle Syntax im Kontextdatenparameter verwenden, um die Variable „products“ direkt beim Server-Aufruf festzulegen.
-seo-title: Variable „products“
 solution: Experience Cloud,Analytics
 title: Variable „products“
 topic-fix: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 exl-id: c945add4-5358-44f6-b445-554b0df056c1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '148'
 ht-degree: 100%
 
 ---

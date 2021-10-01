@@ -1,19 +1,16 @@
 ---
 description: In diesem Thema werden die ersten Schritte zur Verwendung von Xamarin-Komponenten für das Mobile Solutions 4.x-SDK beschrieben.
 keywords: Xamarin
-seo-description: In diesem Thema werden die ersten Schritte zur Verwendung von Xamarin-Komponenten für das Mobile Solutions 4.x-SDK beschrieben.
-seo-title: Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.x
 solution: Experience Cloud
 title: Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.x
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 39628548-5787-4022-8792-86b78214a1c0
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 99%
 
 ---
-
 
 # Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.x {#xamarin-components-for-experience-cloud-solutions-x-sdk}
 

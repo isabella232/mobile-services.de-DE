@@ -1,16 +1,13 @@
 ---
 description: Diese Informationen helfen Ihnen beim Implementieren von Apple TV mit tvOS.
-seo-description: Diese Informationen helfen Ihnen beim Implementieren von Apple TV mit tvOS.
-seo-title: Apple TV-Implementierungen mit tvOS
 solution: Experience Cloud,Analytics
 title: Apple TV-Implementierungen mit tvOS
 topic-fix: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
 exl-id: 35b7f02d-ae48-4c6f-9a3a-6d106a1026ad
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '388'
 ht-degree: 100%
 
 ---
@@ -23,7 +20,7 @@ Diese Informationen helfen Ihnen beim Implementieren von Apple TV mit tvOS.
 
 Sind Sie auf der Suche nach Informationen und Dokumentation zu Mobile SDK für die Adobe Experience Platform? Klicken Sie [hier](https://aep-sdks.gitbook.io/docs/), um unsere aktuelle Dokumentation abzurufen.
 
-Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDK können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
+Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Diese neuen Adobe Experience Platform Mobile SDKs können über [Experience Platform Launch](https://www.adobe.com/de/experience-platform/launch.html) konfiguriert werden.
 
 * Beginnen Sie mit Adobe Experience Platform Launch.
 * Gehen Sie zu [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks), um zu sehen, was in den Experience Platform SDK-Repositorys enthalten ist.
@@ -69,7 +66,7 @@ Weitere Informationen finden Sie in der iOS-Dokumentation unter [iOS](https://de
 1. Importieren Sie das SDK in der Implementierungsdatei Ihrer `TVApplicationControllerDelegate`-Klasse.
 
    ```objective-c
-   #import “ADBMobile.h"
+   #import "ADBMobile.h"
    ```
 
 1. Übergeben Sie in der `application:didFinishLaunchWithOptions:`-Methode Ihrer `TVApplicationControllerDelegate`-Klasse Ihr `TVApplicationController`-Objekt mit der `installTVMLHooks:`-Methode an das SDK.

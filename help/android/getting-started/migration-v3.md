@@ -1,16 +1,14 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der Android-Bibliothek zu Version 4.x.
 keywords: Android;Bibliothek;Mobile;SDK
-seo-description: Diese Informationen helfen Ihnen bei der Migration von Version 3.x bzw. 2.x der Android-Bibliothek zu Version 4.x.
-seo-title: Migration zur Android 4.x-Bibliothek
 solution: Experience Cloud,Analytics
 title: Migration zur Android 4.x-Bibliothek
 topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
-workflow-type: ht
-source-wordcount: '884'
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+workflow-type: tm+mt
+source-wordcount: '860'
 ht-degree: 100%
 
 ---
