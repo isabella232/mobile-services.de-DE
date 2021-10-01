@@ -38,7 +38,6 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 >* Die übergeordnete App
 >* Die WatchKit-App
 >* Die WatchKit-Erweiterung
-
 >
 
 
