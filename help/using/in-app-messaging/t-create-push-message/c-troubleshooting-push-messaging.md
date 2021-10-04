@@ -6,9 +6,9 @@ title: Fehlerbehebung für Push-Nachrichten
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
@@ -33,12 +33,11 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 
    >[!TIP]
    >
-   >Diese Anzahl entspricht der Anzahl erfolgreicher Sendeversuche an den bzw. die Push-Dienst(e). Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird.
+   >Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird. Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie in der entsprechenden Dokumentation:
+   >
+   >* **APNS**: [Servicequalität](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**: [Lebensdauer einer Nachricht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie unter:
-
-   * [Servicequalität](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options#lifetime.).
 
 ## Warum ist mein Android-GCM-API-Schlüssel ungültig?
 
@@ -52,8 +51,6 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
 * **Bestimmen der Gültigkeit des API-Schlüssels**
 
    Führen Sie den folgenden Befehl aus, um die Gültigkeit Ihres API-Schlüssels zu ermitteln:
-
-   **Android**
 
    ```java
    # api_key=YOUR_API_KEY
@@ -81,8 +78,6 @@ Ihr APNS-Zertifikat ist möglicherweise aus den folgenden Gründen ungültig:
 * Sie verwenden eine `.p8`-Datei anstelle einer `.p12`-Datei.
 
 ## Beheben von Push-Nachrichtenfehlern
-
-**Ein Beispiel**
 
 Das folgende Beispiel zeigt, wie Sie einen Push-Fehler bei der Verwendung einer VRS beheben können.
 

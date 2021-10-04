@@ -5,10 +5,10 @@ title: Analysen
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 18%
+source-wordcount: '945'
+ht-degree: 17%
 
 ---
 
@@ -62,7 +62,7 @@ app.oncheckpoint = function (args) {
 
 ### C# in App.xaml.cs
 
-```js
+```csharp
 public App() 
 { 
     this.InitializeComponent(); 
@@ -91,7 +91,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 
 ### C/CX in App.xaml.cpp
 
-```js
+```c
 App::App() 
 { 
  InitializeComponent(); 
@@ -136,16 +136,14 @@ Alle Werte, die Sie Variablen direkt zugewiesen haben, sollten stattdessen zu Ko
 
 Verarbeitungsregeln werden verwendet, um die in Kontextdatenvariablen gesendeten Daten in eVars, Props und andere Variablen für die Berichterstellung zu kopieren.
 
-[Processing Rules Training (Schulung zu den Verarbeitungsregeln)](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
-
 [Übersicht über Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-Es wird empfohlen, Kontextdatenvariablen mithilfe von &quot;Namespaces&quot;zu gruppieren, da dies die logische Reihenfolge erleichtert. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
+Adobe empfiehlt die Gruppierung Ihrer Kontextdatenvariablen mithilfe von &quot;Namespaces&quot;, da dies Ihnen hilft, die logische Reihenfolge zu wahren. Wenn Sie beispielsweise Informationen zu einem Produkt erfassen möchten, können Sie die folgenden Variablen definieren:
 
 ```js
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 Kontextdatenvariablen werden in der Benutzeroberfläche der Verarbeitungsregeln alphabetisch sortiert, sodass Sie mit Namespaces schnell Variablen sehen können, die sich im selben Namespace befinden.
@@ -153,25 +151,25 @@ Kontextdatenvariablen werden in der Benutzeroberfläche der Verarbeitungsregeln 
 Wir haben auch gehört, dass einige von Ihnen Kontextdatenschlüssel mithilfe der eVar- oder Prop-Nummer benennen:
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 Dies könnte *etwas* vereinfachen, wenn Sie die einmalige Zuordnung in Verarbeitungsregeln durchführen. Sie verlieren jedoch Lesbarkeit während des Debuggens und künftiger Code-Aktualisierungen. Stattdessen empfehlen wir dringend die Verwendung beschreibender Namen für Schlüssel und Werte:
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 Legen Sie Kontextvariablen, die Zählerereignisse definieren, auf den Wert &quot;1&quot;fest:
 
 ```js
-"logon":"1"
+"logon":"1";
 ```
 
 Kontextdatenvariablen, die Inkrementierungsereignisse definieren, können den zu inkrementierenden Wert aufweisen:
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!NOTE]

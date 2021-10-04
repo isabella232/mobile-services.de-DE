@@ -6,9 +6,9 @@ title: Fehlerbehebung für Push-Nachrichten
 topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -35,9 +35,8 @@ Folgende Verzögerungen können bei Push-Nachrichten für Mobile Services auftre
    >
    >Die Push-Dienste garantieren nicht, dass eine Nachricht gesendet wird. Weitere Informationen zur Zuverlässigkeit der Dienste finden Sie in der entsprechenden Dokumentation:
    >
-   >* **APNS**: [Servicequalität](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**: [Lebensdauer einer Nachricht](https://developers.google.com/cloud-messaging/concept-options)
+   >* **APNS**: [Servicequalität](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**: [Lebensdauer einer Nachricht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 
 ## Wie erneuere ich mein Apple Push Service-Zertifikat?
