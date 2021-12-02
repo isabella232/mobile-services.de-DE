@@ -3,10 +3,10 @@ description: In Adobe Analytics können Sie Rollen auf der Startseite der Admin 
 title: Rollen und Berechtigungen
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 44%
+source-wordcount: '592'
+ht-degree: 48%
 
 ---
 
@@ -20,7 +20,7 @@ Die folgenden Rollen können Berechtigungen in der Mobile Services-Benutzeroberf
 
 ### Analytics-Admin
 
-Ein Analytics-Administrator verwaltet Benutzergruppen und weist ihnen Berechtigungen zu, darunter auch der Mobile App-Administrator. Der Experience Cloud-Administrator verknüpft Ihre Adobe ID mit Ihrem Adobe Analytics-Konto, über das Sie sich über Ihre Adobe ID bei der Mobile Services-Benutzeroberfläche anmelden können. Weitere Informationen zum Experience Cloud-Administrator finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) im Handbuch zu den Komponenten der zentralen Benutzeroberfläche von Experience Cloud.
+Ein Analytics-Administrator verwaltet Benutzergruppen und weist ihnen Berechtigungen zu, darunter auch der Mobile App-Administrator. Der Experience Cloud-Administrator verknüpft Ihre Adobe ID mit Ihrem Adobe Analytics-Konto, über das Sie sich über Ihre Adobe ID bei der Mobile Services-Benutzeroberfläche anmelden können. Weitere Informationen zum Experience Cloud-Administrator finden Sie unter [Verwalten von Experience Cloud-Benutzern und -produkten](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) im Komponentenleitfaden für die zentrale Experience Cloud-Benutzeroberfläche.
 
 >[!TIP]
 >
@@ -28,8 +28,8 @@ Ein Analytics-Administrator verwaltet Benutzergruppen und weist ihnen Berechtigu
 
 Weitere Informationen zu dieser Rolle finden Sie in der Adobe Analytics-Dokumentation unter folgenden Themen:
 
-* [Übersicht über die Benutzerverwaltung](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
-* [Änderungen an Berechtigungen für Benutzer und Gruppen](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Übersicht über die Benutzerverwaltung](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=de)
+* [Änderungen an Berechtigungen für Benutzer und Gruppen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Mobile App Admin
 
@@ -79,7 +79,7 @@ Im Folgenden finden Sie die Rollen in der Mobile Services-Benutzeroberfläche, e
 
    * Mobile SDK-Optionen der App konfigurieren
    * Benutzeroberflächeneinstellungen der App konfigurieren
-   * Verknüpfte Appstore-Apps konfigurieren
+   * Verknüpfte App Store-Apps konfigurieren
    * Universelle Link-Optionen der App konfigurieren
    * Konfigurieren von Push-Dienst-Zertifikaten und API-Schlüsseln
    * Postbacks erstellen/aktualisieren/aktivieren/deaktivieren/duplizieren/archivieren/löschen
@@ -93,8 +93,8 @@ Im Folgenden finden Sie die Rollen in der Mobile Services-Benutzeroberfläche, e
 
 Weitere Informationen zu Gruppen und Benutzern finden Sie in der Adobe Analytics-Dokumentation unter folgenden Themen:
 
-* [Benutzergruppeneinstellungen (alt)](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
-* [Einen Benutzer zu einer Gruppe hinzufügen](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [Benutzergruppeneinstellungen (alt)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Einen Benutzer zu einer Gruppe hinzufügen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Mobile Services-Benutzer
 
