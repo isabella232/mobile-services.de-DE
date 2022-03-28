@@ -3,10 +3,10 @@ description: Mobile SDK für die Experience Cloud verfügen über mit der Daten
 title: Privatsphäre und Datenschutz-Grundverordnung
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
 exl-id: 8549310d-31b8-49a3-9276-f8e9ab980a10
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: bd55e3525488f24bc9845220f0df62706ec28f31
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 77%
+source-wordcount: '336'
+ht-degree: 80%
 
 ---
 
@@ -49,4 +49,3 @@ Für die Adobe Mobile SDK-Abschnitte Ihrer Mobil-Apps können Sie folgende Einst
 ## Weitere Informationen {#section_7C7124C50D85469C8C8714533FB1A37D}
 
 * Weitere Informationen zur DSGVO finden Sie unter [DSGVO und Ihr Unternehmen](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
-* Die DSGVO-API-Dokumentation finden Sie unter [API für die Datenschutz-Grundverordnung](https://adobe.io/apis/cloudplatform/gdpr.html).
