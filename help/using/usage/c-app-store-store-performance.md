@@ -1,12 +1,12 @@
 ---
 description: Der Bericht „App Store-Übersicht“ zeigt eine Momentaufnahme Ihrer App Store-Metriken, einschließlich der Anzahl der Downloads, der In-App-Käufe, der durchschnittlichen App Store-Bewertung, des Downloadumsatzes, des In-App-Umsatzes, der Downloads nach Ländern, der Downloads nach App Stores und der In-App-Käufe nach Namen.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Bericht „Appstore-Übersicht“
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 100%

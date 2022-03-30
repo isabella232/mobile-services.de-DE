@@ -1,12 +1,12 @@
 ---
 description: Mithilfe von Nutzungsberichten können Sie die durchschnittliche Sitzungslänge, täglich und monatlich beteiligte Benutzer, Upgrades und andere Einblicke anzeigen, die Ihnen Aufschluss darüber geben, wie und wie oft Ihre App verwendet wird. In Treueberichten wird der Grad der Benutzerbindung 1 Tag, 7 Tage und 28 Tage nach dem ersten Start schnell angezeigt.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Berichte
 topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%

@@ -1,12 +1,12 @@
 ---
 description: Diese Informationen helfen Ihnen bei der Verwendung des Android-SDK mit Adobe Analytics.
 keywords: Android;Bibliothek;Mobile;SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Übersicht über Analytics
 topic-fix: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 exl-id: ed9f55e6-f3ab-4c1e-9a2f-1ee67a7b4c03
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 95%

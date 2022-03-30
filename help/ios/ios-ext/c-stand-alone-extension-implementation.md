@@ -1,11 +1,11 @@
 ---
 description: Ab iOS 10 können Sie mit Apple eine Erweiterung erstellen, die als eigenständige Erweiterung bezeichnet wird und ohne eine übergeordnete App verteilt werden kann. Mit dieser Erweiterung benötigen Sie keine App-Gruppe, da es keine übergeordnete App gibt, mit der Daten geteilt werden können.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Implementierung einer eigenständigen Erweiterung
 topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%

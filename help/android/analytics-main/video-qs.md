@@ -1,12 +1,12 @@
 ---
 description: Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Android mithilfe der Videomessung.
 keywords: Android;Bibliothek;Mobile;SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Video Analytics
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 98%
@@ -19,7 +19,7 @@ Im Folgenden finden Sie einige Informationen zur Messung von Videos unter Androi
 
 >[!TIP]
 >
->Während der Videowiedergabe werden diesem Dienst häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen zur Videomessungslösung von Adobe finden Sie unter [Messen von Streaming-Medien in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de).
+>Während der Videowiedergabe werden diesem Service häufige Heartbeat-Aufrufe gesendet, um die wiedergegebene Zeit zu messen. Diese Heartbeat-Aufrufe werden alle 10 Sekunden gesendet. Dies führt zu detaillierten Videointeraktionsmetriken und genaueren Video-Fallout-Berichten. Weitere Informationen zur Videomessungslösung von Adobe finden Sie unter [Messen von Streaming-Medien in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de).
 
 Der allgemeine Prozess zur Videomessung ist für alle Plattformen ähnlich. Hier finden Sie eine Übersicht der Entwickleraufgaben samt Code-Beispielen. In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verarbeitungsregeln werden verwendet, um die Kontextdaten einer Analytics-Variablen zuzuordnen.
 

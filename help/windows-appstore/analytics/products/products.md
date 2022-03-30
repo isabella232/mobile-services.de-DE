@@ -1,11 +1,11 @@
 ---
 description: Die Variable "products"kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im mobilen SDK müssen Sie eine spezielle Syntax innerhalb des Kontextdatenparameters verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Variable „products“
 topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 15%
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 Die Variable &quot;products&quot;kann nicht mithilfe von Verarbeitungsregeln festgelegt werden. Im mobilen SDK müssen Sie eine spezielle Syntax innerhalb des Kontextdatenparameters verwenden, um Produkte direkt beim Server-Aufruf festzulegen.
 
-Um die Variable *`products`* festzulegen, setzen Sie einen Kontextdatenschlüssel auf `"&&products"` und legen Sie den Wert mithilfe der für *`products`* definierten Syntax fest:
+So legen Sie die *`products`* festlegen, setzen Sie einen Kontextdatenschlüssel auf `"&&products"`und legen Sie den Wert mithilfe der für die *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -46,4 +46,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-Sie müssen die Variable *`products`* nicht mithilfe von Verarbeitungsregeln zuordnen, da sie vom SDK direkt in der Bildanforderung festgelegt wird.
+Sie müssen die *`products`* -Variable mithilfe von Verarbeitungsregeln zuordnen, da sie direkt in der Bildanforderung vom SDK festgelegt wird.

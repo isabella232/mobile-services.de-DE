@@ -1,12 +1,12 @@
 ---
 description: Diese Informationen sollen Sie bei der Verwendung von Adobe Mobile Services unterstützen.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Erste Schritte
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 97%
@@ -111,7 +111,7 @@ Weitere Informationen zum Erstellen von In-App-Nachrichten finden Sie unter [In-
 
 In der Phase der *Optimierung* können Sie Konversionen (Abonnement, Handel, Anzeigenumsatz usw.) optimieren und die Kundenbindung verbessern. Die Optimierung des Benutzererlebnisses in Ihrer Anwendung kann Ihnen helfen, Ihre Inhalte zu personalisieren, um maximalen ROI und eine maximale Konversion zu erzielen.
 
-Weitere Informationen zu Tests und Adobe Target finden Sie in der Dokumentation zu [Adobe Target](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html).
+Weitere Informationen zu Tests und Adobe Target finden Sie unter [Adobe Target](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html) Dokumentation.
 
 ### Geotargeting
 

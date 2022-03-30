@@ -1,11 +1,11 @@
 ---
 description: iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.x.
 keywords: Xamarin
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: iOS-Methoden
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 70%
@@ -89,7 +89,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.
    * `ADBMobilePrivacyStatus.OptOut`: werden Treffer verworfen.
    * ADBMobilePrivacyStatus.Unknown : Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(anschließend werden die Treffer gesendet) oder &quot;opt-out&quot;(anschließend werden die Treffer verworfen) geändert wird. Wenn die Offline-Verfolgung deaktiviert ist, werden die Treffer verworfen, bis der Datenschutzstatus zu &quot;opt-in&quot;geändert wird.
 
-   Der Standardwert wird in [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) festgelegt.
+   Der Standardwert wird im [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -211,7 +211,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.
 
 * **TrackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die in Ihrer App verfügbaren Ansichten, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;. Diese Statusangaben sind mit den Seiten einer Website vergleichbar, und `TrackState` -Aufrufe erhöhen die Seitenansichten. Wenn der Status leer ist, wird in Berichten als &quot;App Name App Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie den Status in jedem `TrackState` -Aufruf festlegen.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die in Ihrer App verfügbaren Ansichten, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;. Diese Status ähneln den Seiten auf einer Website und `TrackState` Aufrufe inkrementieren der Seitenansichten. Wenn der Status leer ist, wird in Berichten als &quot;App Name App Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie in jedem `TrackState` aufrufen.
 
    >[!TIP]
    >
@@ -500,7 +500,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.
 
 * **TargetLoadRequest**
 
-   Sendet Anforderungen an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des Angebots zurück, das in einem `Action<NSDictionary>` -Rückruf generiert wurde.
+   Sendet Anforderungen an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des in einer `Action<NSDictionary>` Callback.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -520,7 +520,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.
 
 * **TargetCreateRequest**
 
-   Komfortabler Konstruktor zum Erstellen eines `ADBTargetLocationRequest`-Objekts mit den angegebenen Parametern.
+   Komfortabler Konstruktor zum Erstellen eines `ADBTargetLocationRequest` -Objekt mit den angegebenen Parametern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -571,7 +571,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.
 
 * **AudienceVisitorProfile**
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt null zurück, wenn noch kein Signal gesendet wurde. Das Besucherprofil wird in `NSUserDefaults` gespeichert und steht so bei jedem Start Ihrer App zur Verfügung.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt null zurück, wenn noch kein Signal gesendet wurde. Das Besucherprofil wird gespeichert in `NSUserDefaults` für einfachen Zugriff über mehrere Starts Ihrer App hinweg.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -635,7 +635,7 @@ iOS-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.
 
 * **AudienceSignalWithData**
 
-   Sendet dem Zielgruppen-Management ein Signal mit Eigenschaften und ruft die passenden Segmente ab, die in einem `Action<NSDictionary>` -Rückruf zurückgegeben werden.
+   Sendet dem Zielgruppen-Management ein Signal mit Eigenschaften und ruft die passenden Segmente ab, die in einer `Action<NSDictionary>`  Callback.
 
    * Hier finden Sie die Syntax für diese Methode:
 

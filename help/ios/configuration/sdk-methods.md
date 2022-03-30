@@ -1,11 +1,11 @@
 ---
 description: Hier finden Sie eine Liste der Methoden, die von der iOS-Bibliothek bereitgestellt werden.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Konfigurationsmethoden
 topic-fix: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 exl-id: b6841808-8fa8-4090-8cb3-ce647a3d5d08
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 100%
@@ -354,7 +354,7 @@ Der Standardwert wird in der Datei `ADBMobileConfig.json` festgelegt.
 
    >[!TIP]
    >
-   >Rufen Sie den IDFA **nur** dann aus den Apple-APIs ab, wenn Sie einen Dienst für Werbeanzeigen verwenden. Wenn Sie den IDFA abrufen und ihn nicht richtig verwenden, wird Ihre App ggf. abgelehnt.
+   >Rufen Sie den IDFA **nur** dann aus den Apple-APIs ab, wenn Sie einen Service für Werbeanzeigen verwenden. Wenn Sie den IDFA abrufen und ihn nicht richtig verwenden, wird Ihre App ggf. abgelehnt.
    >
    >Wenn für Ihre Anwendung ein IDFA erforderlich ist, prüfen Sie [die Dokumentation von Apple](https://developer.apple.com/documentation/adsupport), um die Benutzereinstellungen für die Anzeigenverfolgung nachzulesen und den IDFA-Wert abzurufen.
    >

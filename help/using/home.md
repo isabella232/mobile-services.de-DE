@@ -1,10 +1,10 @@
 ---
 description: Technische Dokumente für Adobe Mobile Services
-solution: Experience Cloud, Analytics, Experience Cloud
+solution: Experience Cloud Services,Analytics
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 exl-id: 5ca1dad0-aa34-4950-b8e7-b73d691e4b03
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 74%
@@ -17,15 +17,15 @@ In diesem Handbuch werden die technische Dokumentation und die Selbsthilfe für 
 
 >[!IMPORTANT]
 >
->Mobile Services endet am **31. Dezember 2022**. Weitere Informationen finden Sie in den häufig gestellten Fragen zum Ende der Lebensdauer von Mobile Services](eol.md).[
+>Mobile Services endet am **31. Dezember 2022**. Siehe [Häufig gestellte Fragen zur Einstellung der Mobile-Dienste](eol.md).
 
 ## Ende der Unterstützung für 4x-SDKs
 
-Die Unterstützung für die mobilen SDKs [Version 4](https://github.com/Adobe-Marketing-Cloud/mobile-services) wurde am 31. August 2021 eingestellt. Weitere Informationen finden Sie in den häufig gestellten Fragen zum Ende der Unterstützung für Mobile SDKs der Version 4 [Version 4.](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)
+Unterstützung für Mobile [SDKs der Version 4](https://github.com/Adobe-Marketing-Cloud/mobile-services) hat am 31. August 2021 beendet. Siehe [Häufig gestellte Fragen zum Ende der Unterstützung für Mobile SDKs Version 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
 ## Adobe Experience Platform-SDKs
 
-Die aktuelle Adobe-Lösung für mobiles Marketing sind die Adobe Experience Platform-SDKs. Siehe die [Adobe Experience Platform SDK-Dokumentation](https://aep-sdks.gitbook.io/docs/).
+Die aktuelle Adobe-Lösung für mobiles Marketing sind die Adobe Experience Platform-SDKs. Siehe [Dokumentation zum Adobe Experience Platform SDK](https://aep-sdks.gitbook.io/docs/).
 
 ## SDK-Dokumentation {#section_3A500233347C4305AB545E298A827CEA}
 

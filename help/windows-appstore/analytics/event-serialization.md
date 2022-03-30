@@ -1,11 +1,11 @@
 ---
 description: Die Ereignis-Serialisierung wird von Verarbeitungsregeln nicht unterstützt. Im mobilen SDK müssen Sie eine spezielle Syntax innerhalb des Kontextdatenparameters verwenden, um serialisierte Ereignisse direkt beim Server-Aufruf festzulegen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Ereignis-Serialisierung
 topic-fix: Developer and implementation
 uuid: a5966d05-e218-446f-9f19-8664a84b74cd
 exl-id: 42ea5e0f-a69e-44ab-aa4e-bbec27815cc8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 31%

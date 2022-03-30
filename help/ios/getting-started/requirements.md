@@ -1,14 +1,14 @@
 ---
 description: Führen Sie diese Schritte aus, um eine Report Suite zum Erfassen von iOS-App-Daten zu konfigurieren.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Vorbereitung
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Sie können sich auf eine der folgenden Arten bei Adobe Mobile Services anmelden
 
    Sie können sich mit Ihrer Adobe ID bei der [Experience Cloud](https://experience.adobe.com) anmelden.
 
-   Dies setzt voraus, dass Ihr Unternehmen bereitgestellt wurde und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen zur Bereitstellung finden Sie unter [Verwalten von Experience Cloud-Benutzern und -Produkten](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) im Handbuch zu den Komponenten der zentralen Experience Cloud-Benutzeroberfläche. Weitere Informationen zur Verknüpfung Ihres Kontos finden Sie unter [Organisationen im Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html).
+   Dies setzt voraus, dass Ihr Unternehmen bereitgestellt wurde und Sie Ihr Analytics-Konto verknüpft haben. Weitere Informationen zur Bereitstellung finden Sie unter [Verwalten von Experience Cloud-Benutzern und -produkten](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de) im Komponentenleitfaden für die zentrale Experience Cloud-Benutzeroberfläche. Weitere Informationen zur Verknüpfung Ihres Kontos finden Sie unter [Einrichtungen im Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de).
 
    >[!TIP]
    >

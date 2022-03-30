@@ -1,11 +1,11 @@
 ---
 description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App aus dem Apple App Store herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, sammelt der SDK die Akquise-Daten automatisch und sendet sie an Adobe Mobile Services.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: App-Akquise
 topic-fix: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
 exl-id: a90dcb2f-babb-4c97-b67a-8468925ee5c8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
@@ -59,12 +59,12 @@ Sobald diese Einstellungen aktiviert wurden, werden die Akquisedaten automatisch
 
 ## iOS-Apps für universelle Links aktivieren
 
-Wenn Sie universelle Links in Ihrer App verwenden, fügen Sie Ihre Domäne für Adobe-Marketinglinks der Liste der zugeordneten Domänen für Ihre App hinzu.
+Wenn Sie universelle Links in Ihrer App verwenden, fügen Sie Ihre Domain für Adobe-Marketinglinks der Liste der zugeordneten Domänen für Ihre App hinzu.
 
-Fügen Sie Ihre Domäne für Adobe-Marketinglinks der Liste der zugeordneten Domänen für Ihre App in Xcode hinzu:
+Fügen Sie Ihre Domain für Adobe-Marketinglinks der Liste der zugeordneten Domänen für Ihre App in Xcode hinzu:
 
 1. Gehen Sie zu Ihrem Projektziel und klicken Sie auf die Registerkarte **[!UICONTROL Funktionen]**.
 2. Scrollen Sie nach unten zum Abschnitt **[!UICONTROL Zugeordnete Domänen]** und aktivieren Sie ihn.
-3. Fügen Sie der Liste **[!UICONTROL Domänen]** einen Eintrag für Ihre Domäne für Marketinglinks von Ihrer Marketinglink-URL hinzu.
+3. Fügen Sie der Liste **[!UICONTROL Domänen]** einen Eintrag für Ihre Domain für Marketinglinks von Ihrer Marketinglink-URL hinzu.
 
 Ihr Eintrag wird ungefähr so aussehen: `applinks:5848561889a02a6996aea62b.c00.adobe.com`.

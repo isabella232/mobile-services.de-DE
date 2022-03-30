@@ -1,12 +1,12 @@
 ---
 description: Sie können Zielgruppenoptionen für Push-Nachrichten definieren und konfigurieren, einschließlich Datumsbereichsoptionen, Analytics-Segmenten und benutzerdefinierter Segmente.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Zielgruppe Zielgruppensegmente für Push-Nachrichten definieren und konfigurieren
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 98%
@@ -107,7 +107,7 @@ Im Folgenden finden Sie einige Beispiele, wie Sie Segmente korrekt definieren k�
 
    * **[!UICONTROL Analytics-Segmente]**
 
-      Wählen Sie ein vorhandenes Adobe Analytics-Segment aus der Dropdown-Liste aus. Weitere Informationen finden Sie im Abschnitt [Segment Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=de) in der Adobe Analytics-Dokumentation.
+      Wählen Sie ein vorhandenes Adobe Analytics-Segment aus der Dropdown-Liste aus. Weitere Informationen finden Sie unter [Segment Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=de) in der Adobe Analytics-Dokumentation.
 
    * **[!UICONTROL Benutzerdefinierte Segmente]**
 

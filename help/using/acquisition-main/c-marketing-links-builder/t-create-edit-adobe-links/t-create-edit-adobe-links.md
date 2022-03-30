@@ -1,12 +1,12 @@
 ---
 description: Sie können Marketinglinks erstellen oder bearbeiten, um Deep-Links zu Ihrer App oder Ihrer Website bereitzustellen.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Marketinglinks erstellen oder bearbeiten
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 96%
@@ -61,7 +61,7 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
 
       Weitere Informationen finden Sie in [Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md) oder in [Universelle Links (Apple) und App-Links (Android)](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
-   * **(Bedingt)** Wenn **[!UICONTROL Universelle bzw. App-Links]** unter **[!UICONTROL Benutzerdefinierter Pfad]** ausgewählt wurde, können Benutzer den URL-Pfad nach der Domäne mit beliebigen Abfrageparametern definieren. Weitere Informationen finden Sie in [Universelle Links (Apple) und App-Links (Android)](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
+   * **(Bedingt)** Wenn **[!UICONTROL Universelle bzw. App-Links]** unter **[!UICONTROL Benutzerdefinierter Pfad]** ausgewählt wurde, können Benutzer den URL-Pfad nach der Domain mit beliebigen Abfrageparametern definieren. Weitere Informationen finden Sie in [Universelle Links (Apple) und App-Links (Android)](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
 1. Klicken Sie auf **[!UICONTROL Deep-Link-Interstitial bearbeiten]** und konfigurieren Sie den Link.
 

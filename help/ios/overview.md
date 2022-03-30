@@ -1,11 +1,11 @@
 ---
 description: Mithilfe von iOS SDK 4.x für Experience Cloud-Lösungen können Sie native Apple iPhone- und iPad-Anwendungen messen, zielgruppenorientierte Inhalte in Ihren Apps bereitstellen und Zielgruppendaten über Audience Manager nutzen und erfassen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: iOS SDK 4.x für Experience Cloud-Lösungen
 topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 100%
@@ -24,9 +24,9 @@ Wenn Sie Version 4.21.0 oder höher verwenden, lesen Sie die Dokumentation und b
 
 * Jedes Mal, wenn eine Binärbibliotheksdatei erwähnt wird, sollte stattdessen deren XCFramework-Ersatz verwendet werden:
    * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
-   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
-   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
-   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
+   * `AdobeMobileLibrary_Extension.a` > `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` > `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` > `AdobeMobileTV.xcframework`
 * Wenn Sie die Adobe XCFrameworks manuell zu Ihrem Projekt hinzufügen, stellen Sie sicher, dass sie nicht eingebettet sind.
 
 >[!IMPORTANT]

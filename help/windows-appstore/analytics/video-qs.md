@@ -1,11 +1,11 @@
 ---
 description: Informationen, die Sie bei Video Analytics unterstützen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Video Analytics
 topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 71%
@@ -16,7 +16,7 @@ ht-degree: 71%
 
 Informationen, die Sie bei Video Analytics unterstützen.
 
-Die Videomessung wird ausführlich im Handbuch [Messen von Streaming-Medien in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de) beschrieben. Der allgemeine Prozess zur Videomessung ist für alle AppMeasurement-Plattformen sehr ähnlich. Dieser Schnellstartabschnitt bietet einen grundlegenden Überblick über die Entwickleraufgaben sowie Codebeispiele.
+Die Videomessung wird im Abschnitt [Messen von Streaming-Medien in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de) Handbuch. Der allgemeine Prozess zur Videomessung ist für alle AppMeasurement-Plattformen sehr ähnlich. Dieser Schnellstartabschnitt bietet einen grundlegenden Überblick über die Entwickleraufgaben sowie Codebeispiele.
 
 In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet werden. Verwenden Sie Verarbeitungsregeln, um die Kontextdaten einer Analytics-Variablen zuzuordnen.
 
@@ -40,7 +40,7 @@ In der folgenden Tabelle finden Sie die Mediendaten, die an Analytics gesendet w
 
 * **a.media.segment**
 
-   (Erforderlich) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. Wenn ein Besucher beispielsweise das erste Segment in einem Video anzeigt, kann SiteCatalyst Folgendes im Segment-eVar `1:M:0-25` erfassen.
+   (Erforderlich) Erfasst Videosegmentdaten, einschließlich Segmentname und Reihenfolge, in der das Segment im Video erscheint. Diese Variable wird gefüllt, indem Sie die Variable `segmentByMilestones` beim automatischen Verfolgen von Player-Ereignissen aktivieren oder indem Sie einen benutzerspezifischen Segmentnamen beim manuellen Verfolgen der Player-Ereignisse festlegen. Wenn beispielsweise ein Besucher das erste Segment in einem Video anzeigt, kann SiteCatalyst Folgendes in der `1:M:0-25` Segment-eVar.
 
    Die Standardmethode zur Videodatenerfassung erfasst Daten an folgenden Punkten:
 
@@ -162,7 +162,7 @@ property bool isMediaAd;
 
 * **Öffnen Sie (winJS: open)**
 
-   Verfolgt das Öffnen eines Mediums mithilfe der in `settings` definierten Einstellungen.
+   Verfolgt das Öffnen eines Mediums mithilfe der Einstellungen, die unter `settings`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -178,7 +178,7 @@ property bool isMediaAd;
 
 * **Close (winJS: close)**
 
-   Zeichnet ein Medienende für das Medienelement *name* auf.
+   Zeichnet ein Medienende für das Medienelement mit dem Namen *name*.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -194,7 +194,7 @@ property bool isMediaAd;
 
 * **Play (winJS: play)**
 
-   Verfolgt eine Medienwiedergabe für das Medienelement *`name`* am angegebenen *Offset* (in Sekunden).
+   Verfolgt eine Medienwiedergabe für das Medienelement mit dem Namen *`name`* nach *offset* (in Sekunden).
 
    * Hier finden Sie die Syntax für diese Methode:
 

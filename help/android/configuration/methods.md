@@ -1,17 +1,17 @@
 ---
 description: Im Folgenden finden Sie eine Liste von Methoden, die durch die Android-Bibliothek bereitgestellt werden.
 keywords: Android;Bibliothek;Mobile;SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Konfigurationsmethoden
 topic-fix: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+exl-id: f35b9d32-f967-42e9-bd00-ad85f3bd6bc4
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 100%
 
 ---
-
 
 # Konfigurationsmethoden{#configuration-methods}
 

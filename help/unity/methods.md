@@ -1,12 +1,11 @@
 ---
-description: ADBMobile.cs-Konfigurationsmethoden
+description: Konfigurationsmethoden für ADBMobile.cs
 keywords: Unity
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: ADBMobile.cs-Methoden
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 66%
@@ -86,9 +85,9 @@ ht-degree: 66%
    Gibt die Enum-Darstellung für den Datenschutzstatus des aktuellen Benutzers zurück.
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden umgehend gesendet.
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird.
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(anschließend werden die Treffer gesendet) oder &quot;opt-out&quot;(anschließend werden die Treffer verworfen) geändert wird.
 
-      Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. Der Standardwert wird in der Datei [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) festgelegt.
+      Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird. Der Standardwert wird im [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) -Datei.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -104,7 +103,7 @@ ht-degree: 66%
 
 * **GetUserIdentifier**
 
-   Gibt die benutzerdefinierte Benutzerkennung zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt null zurück, wenn kein benutzerdefinierter Bezeichner festgelegt ist. Der Standardwert lautet `null`.
+   Gibt die benutzerdefinierte Benutzer-ID zurück, wenn eine benutzerdefinierte ID festgelegt wurde. Gibt null zurück, wenn keine benutzerdefinierte ID festgelegt ist. Der Standardwert lautet `null`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -140,7 +139,7 @@ ht-degree: 66%
 
    >[!TIP]
    >
-   >Diese Methode soll für Apps verwendet werden, die sich für Benachrichtigungen im Hintergrund registrieren und nur aus dem Code heraus aufgerufen werden sollten, der ausgeführt wird, während die App im Hintergrund ausgeführt wird.
+   >Diese Methode ist für Apps vorgesehen, die sich für Benachrichtigungen während der Ausführung im Hintergrund registrieren und die nur aus dem Code heraus aufgerufen werden sollen, der aktiv ist, während die App im Hintergrund ausgeführt wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -156,7 +155,7 @@ ht-degree: 66%
 
 * **PauseCollectingLifecycleData (nur Android)**
 
-   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Beim Anhalten wird ein Zeitstempel erfasst, um die Länge der vorherigen Sitzung zu bestimmen. Dadurch wird auch ein Flag gesetzt, damit der Lebenszyklus richtig erkennt, dass die App nicht abstürzt. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
+   Gibt dem SDK gegenüber an, dass die App angehalten ist, sodass die Lebenszyklusmetriken ordnungsgemäß berechnet werden. Beispiel: Bei Pause erfasst einen Zeitstempel, mit dem die Dauer der vorherigen Sitzung bestimmt wird. Dadurch wird auch eine Markierung gesetzt, sodass der Lebenszyklus richtig erkennt, dass die App nicht abgestürzt ist. Weitere Informationen finden Sie unter [Lebenszyklusmetriken](/help/android/metrics.md).
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -172,7 +171,7 @@ ht-degree: 66%
 
 * **SetContext (nur Android)**
 
-   Gibt dem SDK gegenüber an, dass der Anwendungskontext aus der aktuellen Aktivität von UnityPlayer festgelegt werden soll.
+   Gibt dem SDK gegenüber an, dass der Anwendungskontext über die aktuelle Aktivität von UnityPlayer festgelegt werden soll.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -188,7 +187,7 @@ ht-degree: 66%
 
 * **SetDebugLogging**
 
-   Legt fest, dass die Voreinstellung für die Debug-Protokollierung aktiviert ist.
+   Legt die Debug-Protokollierungseinstellung auf &quot;Aktiviert&quot;fest.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -208,7 +207,7 @@ ht-degree: 66%
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: Treffer werden umgehend gesendet.
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Treffer werden verworfen.
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(Zugriffe werden gesendet) oder &quot;opt-out&quot;(Zugriffe werden dann verworfen) geändert wird. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Wenn die Offline-Verfolgung aktiviert ist, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(anschließend werden die Treffer gesendet) oder &quot;opt-out&quot;(anschließend werden die Treffer verworfen) geändert wird. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -216,7 +215,7 @@ ht-degree: 66%
       public static void SetPrivacyStatus(ADBPrivacyStatusstatus);
       ```
 
-   * Im Folgenden finden Sie das Codebeispiel für diese Syntax:
+   * Hier finden Sie ein Code-Beispiel für diese Syntax:
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -224,7 +223,7 @@ ht-degree: 66%
 
 * **SetUserIdentifier**
 
-   Legt die Benutzerkennung auf userId fest.
+   Legt die Benutzer-ID auf userId fest.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -258,9 +257,9 @@ ht-degree: 66%
 
 * **TrackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Statusangaben sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die in Ihrer App verfügbaren Ansichten, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot;. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten.
 
-   Wenn der Status leer ist, wird in Berichten *`app name app version (build)`* angezeigt. Wenn dieser Wert in Berichten angezeigt wird, stellen Sie sicher, dass Sie bei jedem `TrackState`-Aufruf den Status festlegen.
+   Wenn der Status leer ist, wird er als *`app name app version (build)`* in Berichten. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie in jedem `TrackState` aufrufen.
 
    >[!TIP]
    >
@@ -282,7 +281,7 @@ ht-degree: 66%
 
 * **TrackAction**
 
-   Verfolgt eine Aktion in der App. Aktionen sind die Vorgänge, die in Ihrer App stattfinden und die Sie messen möchten, z. B. &quot;Todesfälle&quot;, &quot;erzielte Werte&quot;, &quot;Feed-Abonnement&quot;und andere Metriken.
+   Verfolgt eine Aktion in der App. Bei Aktionen handelt es sich um die Dinge, die in Ihrer App vor sich gehen, die Sie messen möchten, z. B. &quot;Todesfälle&quot;, &quot;Erreichte Stufe&quot;, &quot;Feed-Abonnements&quot;und andere Metriken.
 
    >[!TIP]
    >
@@ -322,7 +321,7 @@ ht-degree: 66%
 
 * **TrackLocation**
 
-   Sendet die aktuellen Koordinaten (Längen- und Breitengrad). Ermittelt außerdem anhand der in der Datei `ADBMobileConfig.json` definierten Zielpunkte (POI), ob der als Parameter angegebene Standort in einem vorhandenen Zielpunkt liegt. Wenn sich die aktuellen Koordinaten innerhalb eines definierten POI befinden, wird eine Kontextdatenvariable ausgefüllt und mit dem TrackLocation-Aufruf gesendet.
+   Sendet die aktuellen Koordinaten (Längen- und Breitengrad). Ermittelt außerdem anhand der in der Datei `ADBMobileConfig.json` definierten Zielpunkte (POI), ob der als Parameter angegebene Standort in einem vorhandenen Zielpunkt liegt. Wenn die aktuellen Koordinaten auf einen definierten POI passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem TrackLocation -Aufruf gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -364,7 +363,7 @@ ht-degree: 66%
 
 * **TrackLifetimeValueIncrease**
 
-   Fügt dem Lebenszeitwert des Benutzers einen Wert hinzu.
+   Erhöht den Lebenszeitwert des Benutzers um einen Wert.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -400,7 +399,7 @@ ht-degree: 66%
 
 * **TrackTimedActionUpdate**
 
-   Übergeben Sie Daten, um die mit der jeweiligen Aktion verknüpften Kontextdaten zu aktualisieren. Die weitergeleiteten Daten werden an die vorhandenen Daten für die jeweilige Aktion angehängt und überschreiben die Daten, wenn derselbe Schlüssel bereits für die Aktion definiert ist.
+   Übergibt Daten, um die Kontextdaten zu aktualisieren, die mit der angegebenen Aktion verknüpft sind. Die übergebenen Daten werden an die vorhandenen Daten für die Aktion angehängt und überschreiben die Daten, wenn der Schlüssel bereits für die Aktion definiert ist.
 
    >[!TIP]
    >
@@ -520,7 +519,7 @@ ht-degree: 66%
 
 * **VisitorSyncIdentifiers**
 
-   Mit der Experience Cloud-ID können Sie weitere Kunden-IDs festlegen, die jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher zusammen mit einer Kundentypkennung, um den Umfang der verschiedenen Kunden-IDs zu trennen. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
+   Mit der Experience Cloud-ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht setCustomerIDs in der JavaScript-Bibliothek.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -538,9 +537,9 @@ ht-degree: 66%
 
 ## Akquisemethoden 
 
-* **ProcessGooglePlayInstallReferrerUrl** *(nur Android)*
+* **ProcessGooglePlayInstallReferrerUrl** *(Nur Android)*
 
-   Geben Sie die Werber-URL, die von einem Aufruf an die Google Play Install Werber API zurückgegeben wird, an diese Methode weiter.
+   Übergeben Sie die Referrer-URL, die von einem Aufruf an die Google Play Install Referrer API zurückgegeben wird, an diese Methode.
 
    * Hier finden Sie die Syntax für diese Methode:
 

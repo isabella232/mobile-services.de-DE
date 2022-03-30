@@ -1,12 +1,12 @@
 ---
 description: Listet die Metriken und Dimensionen auf, die automatisch von der Mobile-Bibliothek gemessen werden können.
 keywords: Android;Bibliothek;Mobile;SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Lebenszyklusmetriken
 topic-fix: Developer and implementation
 uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
 exl-id: a1e4eeca-8b8f-47ca-a489-acc338238c42
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 64%
@@ -263,14 +263,14 @@ Die folgenden Metriken und Dimensionen werden mithilfe der in der Beschreibung a
 
 * **Zielpunkt-Bezeichnung**
 
-   Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem definierten POI befindet.
+   Erfasst durch `trackLocation` Methoden, wenn sich das Gerät innerhalb eines definierten Zielpunkts befindet.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.loc.poi`
    * Audience Manager-Eigenschaft: `c_a_loc_poi`
 
 * **Entfernung zum Zentrum des Zielpunkts**
 
-   Erfasst durch `trackLocation`-Methoden, wenn sich das Gerät an einem definierten POI befindet.
+   Erfasst durch `trackLocation` Methoden, wenn sich das Gerät innerhalb eines definierten Zielpunkts befindet.
 
    * Analytics-Kontextdaten/Target-Parameter: `a.loc.dist`
    * Audience Manager-Eigenschaft: `c_a_loc_dist`

@@ -1,15 +1,15 @@
 ---
 description: Sie können die ID-Dienst-Optionen für Adobe Experience Platform beim Erstellen einer neuen App oder Bearbeiten einer bestehenden App auf der Seite „App-Einstellungen verwalten“ konfigurieren.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Optionen für SDK-ID-Dienst konfigurieren
 topic-fix: Metrics
 uuid: e69b57f7-153a-4a95-9c1e-c07fe29dea2d
 exl-id: e44ca332-9723-4ffc-ac24-52a620f32783
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 81%
+ht-degree: 85%
 
 ---
 
@@ -24,4 +24,4 @@ Wählen Sie diese Option aus, um den ID-Dienst zu verwenden. Weitere Information
 
    * **[!UICONTROL Organisation]**
 Wählen Sie Ihre Organisation aus der Dropdownliste aus.
-Eine [!UICONTROL Experience Cloud]-Organisation ist die Einheit, die es einem Administrator ermöglicht, Gruppen und Benutzer zu konfigurieren und das Single-Sign-on in der [!UICONTROL Experience Cloud] zu steuern. Die Organisation agiert als zentrale Anmeldestelle, die sämtliche Experience Cloud-Produkte und -Lösungen umfasst. In der Regel handelt es sich bei der Organisation um Ihren Unternehmensnamen, jedoch kann ein Unternehmen über mehrere Organisationen verfügen. Weitere Informationen finden Sie unter [Organisationen im Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) im Komponentenleitfaden für die zentrale Experience Cloud-Benutzeroberfläche.
+Eine [!UICONTROL Experience Cloud]-Organisation ist die Einheit, die es einem Administrator ermöglicht, Gruppen und Benutzer zu konfigurieren und das Single-Sign-on in der [!UICONTROL Experience Cloud] zu steuern. Die Organisation agiert als zentrale Anmeldestelle, die sämtliche Experience Cloud-Produkte und -Lösungen umfasst. In der Regel handelt es sich bei der Organisation um Ihren Unternehmensnamen, jedoch kann ein Unternehmen über mehrere Organisationen verfügen. Weitere Informationen finden Sie unter [Einrichtungen im Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de) im Komponentenleitfaden für die zentrale Experience Cloud-Benutzeroberfläche.

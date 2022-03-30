@@ -1,12 +1,12 @@
 ---
 description: Das Android-SDK 4.x für Experience Cloud-Lösungen ermöglicht Ihnen die Messung nativer Android-Anwendungen, die Bereitstellung gezielter Inhalte in Ihrer App und die Erfassung und Nutzung von Zielgruppendaten über Zielgruppen-Management.
 keywords: Android;Bibliothek;Mobile;SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Android-SDK 4.x für Experience Cloud-Lösungen
 topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 93%
@@ -59,4 +59,4 @@ Neueste Informationen zu Experience Cloud-Versionen finden Sie unter [Experience
 
 >[!IMPORTANT]
 >
->Ab **3. April 2017** ist Adobe Bloodhound nicht mehr verfügbar. Ab dem 1. Mai 2017 werden keine weiteren Verbesserungen vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
+>Als **30. April 2017**, Adobe Bloodhound ist Sonnenuntergang. Ab dem 1. Mai 2017 werden keine weiteren Verbesserungen vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.

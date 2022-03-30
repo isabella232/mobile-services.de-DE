@@ -1,12 +1,12 @@
 ---
 description: Zeigen Sie eine Liste Ihrer In-App- und Push-Nachrichten mit Informationen zum Zeitpunkt der letzten Aktualisierung sowie zum Status (live oder deaktiviert) jeder Nachricht an.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Nachrichten verwalten
 topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%

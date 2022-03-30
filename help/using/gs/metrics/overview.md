@@ -1,12 +1,12 @@
 ---
 description: Sie können die wichtigsten Leistungsmetriken der Apps anzeigen, die Sie zuletzt angezeigt haben. Standardmäßig können Sie bis zu 12 Apps anzeigen. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren und jede App auf der Übersichtsseite zu bearbeiten.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Mobile Metriken anzeigen
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%

@@ -1,9 +1,9 @@
 ---
 description: Die folgenden Informationen helfen Ihnen bei der Fehlerbehebung von Problemen beim Akquisetest.
 keywords: Android;Akquise;Test
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Fehlerbehebung beim Akquisetest
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 100%

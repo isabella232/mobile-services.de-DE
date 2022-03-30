@@ -1,11 +1,11 @@
 ---
 description: Die Verknüpfung innerhalb von Apps und Websites ist wichtig, um das Benutzererlebnis zu erhalten. Erfahren Sie, wie universelle und App-Links funktionieren und Unterschiede zwischen ihnen bestehen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Handbuch für universelle Links und App-Links
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 96%
@@ -74,7 +74,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
    e. Wenn die Option **[!UICONTROL Universelle Links oder App-Links verwenden]** aktiviert ist, wird das Feld **[!UICONTROL Benutzerdefinierter Pfad]** angezeigt.
 
-   Hierüber können Benutzer den URL-Pfad nach der Domäne sowie beliebige Abfrageparameter definieren. Wenn Sie beispielsweise  `my/universal/link?os=9.2` eingeben, lautet Ihre vollständige Marketinglink-URL `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
+   Hierüber können Benutzer den URL-Pfad nach der Domain sowie beliebige Abfrageparameter definieren. Wenn Sie beispielsweise  `my/universal/link?os=9.2` eingeben, lautet Ihre vollständige Marketinglink-URL `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
 
    f. Klicken Sie auf die Registerkarte **[!UICONTROL Entscheidungen]** und konfigurieren Sie Ihren Entscheidungsbaum.
 
@@ -133,7 +133,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
    e. Wenn die Option **[!UICONTROL Universelle Links oder App-Links verwenden]** aktiviert ist, wird das Feld **[!UICONTROL Benutzerdefinierter Pfad]** angezeigt.
 
-   Hierüber können Benutzer den URL-Pfad nach der Domäne sowie beliebige Abfrageparameter definieren. Wenn Sie beispielsweise  `my/app/link?os=6.0` eingeben, lautet Ihre vollständige Marketinglink-URL `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
+   Hierüber können Benutzer den URL-Pfad nach der Domain sowie beliebige Abfrageparameter definieren. Wenn Sie beispielsweise  `my/app/link?os=6.0` eingeben, lautet Ihre vollständige Marketinglink-URL `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
 
    f. Klicken Sie auf die Registerkarte **[!UICONTROL Entscheidungen]** und konfigurieren Sie Ihren Entscheidungsbaum.
 

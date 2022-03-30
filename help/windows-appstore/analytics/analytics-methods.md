@@ -1,11 +1,11 @@
 ---
-description: Informationen, die Sie bei der Verwendung des SDK für Windows 8.1 Universal App Store mit Adobe Analytics unterstützen.
-solution: Experience Cloud,Analytics
+description: Informationen, die Sie bei der Verwendung des Windows 8.1 Universal App Store SDK mit Adobe Analytics unterstützen.
+solution: Experience Cloud Services,Analytics
 title: Analytics-Methoden
 topic-fix: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 exl-id: 007bb801-55ef-4c5b-87fa-d0db42cde163
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 53%
@@ -14,7 +14,7 @@ ht-degree: 53%
 
 # Analytics-Methoden {#analytics-methods}
 
-Informationen, die Sie bei der Verwendung des SDK für Windows 8.1 Universal App Store mit Adobe Analytics unterstützen.
+Informationen, die Sie bei der Verwendung des Windows 8.1 Universal App Store SDK mit Adobe Analytics unterstützen.
 
 Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschließlich Analytics, Target und Audience Manager. Methoden erhalten je nach Lösung unterschiedliche Präfixe. Analytics-Methoden wird &quot;Analytics&quot;vorangestellt.
 
@@ -22,11 +22,11 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 >[!TIP]
 >
->Wenn Sie `winmd`-Methoden aus winJS (JavaScript) verwenden, wird für alle Methoden automatisch der erste Buchstabe kleingeschrieben.
+>Wann Sie konsumieren `winmd` -Methoden aus winJS (JavaScript), haben alle Methoden automatisch ihren ersten Buchstaben in Kleinbuchstaben.
 
 * **TrackState (winJS: trackState)**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Startseiten-Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn `state` leer ist, wird in Berichten als &quot;App Name App Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie `state` in jedem `TrackState` -Aufruf festlegen.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. Status sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Startseiten-Dashboard&quot;, &quot;App-Einstellungen&quot;, &quot;Warenkorb&quot;usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn `state` leer ist, wird in Berichten als &quot;App Name App Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie `state` in jedem `TrackState` aufrufen.
 
    >[!TIP]
    >
@@ -138,7 +138,7 @@ Jede dieser Methoden wird zum Senden von Daten in Ihre Adobe Analytics Report Su
 
 * **TrackTimed &#x200B; ActionUpdate (winJS: trackTimed &#x200B; ActionUpdate)**
 
-   Übergibt `contextData`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. Der übergebene `data` wird an die vorhandenen Daten für die Aktion angehängt und überschreibt die Daten, wenn derselbe Schlüssel bereits für `action` definiert ist.
+   Übergibt `contextData`, mit denen die Kontextdaten für die vorliegende `action` aktualisiert werden sollen. Die `data` übergeben wird an die vorhandenen Daten für die angegebene Aktion angehängt und überschreibt die Daten, wenn derselbe Schlüssel bereits für `action`.
 
    >[!TIP]
    >

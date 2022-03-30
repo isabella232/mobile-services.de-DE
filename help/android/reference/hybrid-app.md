@@ -1,11 +1,11 @@
 ---
 description: Wenn Ihre App mobile Webinhalte öffnet, stellen Sie sicher, dass Besucher zwischen App und mobilem Web nicht unterschiedlich identifiziert werden.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Besucher zwischen einer App und dem mobilen Internet verfolgen
 topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%

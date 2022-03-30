@@ -1,11 +1,11 @@
 ---
 description: Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SDK 4.x.
 keywords: Xamarin
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Android-Methoden
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 68%
@@ -58,7 +58,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
    * `ADBMobilePrivacyStatus.OptOut`: werden Treffer verworfen.
    * `ADBMobilePrivacyStatus.Unknown`: Bei aktivierter Offline-Verfolgung werden die Treffer so lange gespeichert, bis sich der Datenschutzstatus in „opt-in“ (anschließend werden die Treffer gesendet) oder „opt-out“ (anschließend werden die Treffer verworfen) ändert. Ist die Offline-Verfolgung nicht aktiviert, werden die Zugriffe verworfen, bis der Datenschutzstatus zu „opt-in“ geändert wird.
 
-   Der Standardwert wird in der Datei [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) festgelegt.
+   Der Standardwert wird im [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) -Datei.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -160,7 +160,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **OverrideConfigStream**
 
-   (4.2 oder höher) Ermöglicht das Laden einer anderen `ADBMobile JSON` Konfigurationsdatei beim Start der Anwendung. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
+   (4.2 oder höher) Hiermit können Sie eine andere `ADBMobile JSON` Konfigurationsdatei, wenn die Anwendung gestartet wird. Die andere Konfiguration wird verwendet, bis die Anwendung geschlossen wird.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -227,7 +227,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **TrackState**
 
-   Verfolgt einen App-Status mit optionalen Kontextdaten. `States` sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot; usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn der Status leer ist, wird in Berichten als &quot;App Name App Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie den Status in jedem `TrackState` -Aufruf festlegen.
+   Verfolgt einen App-Status mit optionalen Kontextdaten. `States` sind die Ansichten, die in Ihrer App verfügbar sind, z. B. &quot;Titelbildschirm&quot;, &quot;Level 1&quot;, &quot;Pause&quot; usw. Diese Statusangaben sind mit den Seiten in einer Website vergleichbar, und `TrackState`-Aufrufe inkrementieren die Seitenansichten. Wenn der Status leer ist, wird in Berichten als &quot;App Name App Version (Build)&quot;angezeigt. Wenn dieser Wert in Berichten auftritt, stellen Sie sicher, dass Sie in jedem `TrackState` aufrufen.
 
    >[!TIP]
    >
@@ -274,7 +274,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **TrackLocation**
 
-   Sendet die aktuellen Koordinaten (Längen- und Breitengrad). Ermittelt außerdem anhand der in der Datei `ADBMobileConfig.json` definierten Zielpunkte (POIs), ob der als Parameter angegebene Standort in einem vorhandenen Zielpunkt liegt. Falls die aktuellen Koordinaten auf einen definierten Zielpunkt passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `TrackLocation`-Aufruf gesendet.
+   Sendet die aktuellen Koordinaten (Längen- und Breitengrad). Verwendet außerdem die im `ADBMobileConfig.json` -Datei, um zu ermitteln, ob sich der als Parameter angegebene Speicherort in einem Ihrer POIs befindet. Falls die aktuellen Koordinaten auf einen definierten Zielpunkt passen, wird eine Kontextdatenvariable gefüllt und zusammen mit dem `TrackLocation`-Aufruf gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -511,7 +511,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **LoadRequest**
 
-   Sendet eine Anfrage an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des in einem `Action<NSDictionary>` -Rückruf generierten Angebots zurück.
+   Sendet eine Anfrage an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des in einer `Action<NSDictionary>` Callback.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -534,7 +534,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **CreateRequest**
 
-   Komfortabler Konstruktor zum Erstellen eines `ADBTargetLocationRequest`-Objekts mit den angegebenen Parametern.
+   Komfortabler Konstruktor zum Erstellen eines `ADBTargetLocationRequest` -Objekt mit den angegebenen Parametern.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -602,7 +602,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **Dpid**
 
-   Gibt die aktuelle `DPID` zurück.
+   Gibt die aktuelle `DPID`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -618,7 +618,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **Dpuuid**
 
-   Gibt die aktuelle `DPUUID` zurück.
+   Gibt die aktuelle `DPUUID`.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -634,7 +634,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **AudienceSetDpidAndDpuuid**
 
-   Legt die `dpid` und `dpuuid` fest. Wenn `dpid` und `dpuuid` festgelegt sind, werden sie mit jedem Signal gesendet.
+   Legt die `dpid` und `dpuuid`. Wenn `dpid` und `dpuuid` festgelegt sind, werden sie mit jedem Signal gesendet.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -650,7 +650,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **SignalWithData**
 
-   Sendet dem Zielgruppen-Management ein Signal mit Eigenschaften und ruft die passenden Segmente ab, die in einem `Action<NSDictionary>` -Rückruf zurückgegeben werden.
+   Sendet dem Zielgruppen-Management ein Signal mit Eigenschaften und ruft die passenden Segmente ab, die in einer `Action<NSDictionary>` Callback.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -676,7 +676,7 @@ Android-Methoden für Xamarin-Komponenten für Experience Cloud-Lösungen mit SD
 
 * **Zurücksetzen**
 
-   Setzt den Zielgruppen-Manager `UUID` zurück und löscht das aktuelle Besucherprofil.
+   Setzt den Zielgruppen-Manager zurück `UUID` und löscht das aktuelle Besucherprofil.
 
    * Hier finden Sie die Syntax für diese Methode:
 

@@ -1,11 +1,11 @@
 ---
 description: Informationen zur Verwendung der ADBMobile-JSON-Konfigurationsdatei.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ADBMobileConfig.json config
 topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 42%
@@ -20,7 +20,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **rsids**
 
-   (**Erforderlich für Analytics**) Eine oder mehrere Report Suites für den Empfang von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommata getrennt werden, wobei kein Leerzeichen dazwischen steht.
+   (**Für Analytics erforderlich**) Eine oder mehrere Report Suites zum Empfangen von Analytics-Daten. Mehrere Report Suite-IDs sollten durch Kommata getrennt werden, wobei kein Leerzeichen dazwischen steht.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -34,25 +34,25 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
 * **server**
 
-   (**Erforderlich für Analytics und Zielgruppen-Management**). Analytics- oder Zielgruppen-Management-Server, basierend auf dem übergeordneten Knoten. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `"https://"` oder `"https://"`. Das Protokollpräfix wird automatisch von der Bibliothek basierend auf der Variablen `ssl` verarbeitet.
+   (**Erforderlich für Analytics und Zielgruppen-Management**). Analytics- oder Zielgruppen-Management-Server, basierend auf dem übergeordneten Knoten. Diese Variable sollte mit der Serverdomäne aufgefüllt werden, und zwar ohne das Protokollpräfix `"https://"` oder `"https://"`. Das Protokollpräfix wird automatisch von der Bibliothek verarbeitet, die auf dem `ssl` -Variable.
 
    Wenn `ssl` auf `true` gesetzt ist, wird eine sichere Verbindung zu diesem Server hergestellt. Wenn `ssl` auf `false` gesetzt ist, wird eine nicht sichere Verbindung zu diesem Server hergestellt.
 
 * **charset**
 
-   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen finden Sie unter der Variablen [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=de) in der Adobe Analytics-Dokumentation.
+   Definiert den Zeichensatz, den Sie für die an Analytics gesendeten Daten verwenden. Der Zeichensatz wird verwendet, um eingehende Daten zum Speichern und Reporting in das UTF-8-Format umzuwandeln. Weitere Informationen finden Sie unter [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=de) in der Adobe Analytics-Dokumentation.
 
 * **ssl**
 
-   Aktiviert (`true`) oder deaktiviert (`false`) das Senden von Messungsdaten über SSL (`HTTPS`). Der Standardwert lautet `false`.
+   Aktiviert (`true`) oder deaktiviert (`false`) Senden von Messungsdaten über SSL (`HTTPS`). Der Standardwert lautet `false`.
 
 * **offlineEnabled**
 
-   Wenn aktiviert (`true`), werden Treffer in die Warteschlange gestellt, während das Gerät offline ist, und später gesendet, wenn das Gerät online ist. Für Ihre Report Suite müssen Zeitstempel aktiviert sein, um die Offline-Verfolgung zu nutzen.
+   Bei Aktivierung (`true`), werden Treffer in die Warteschlange gestellt, während das Gerät offline ist, und später gesendet, wenn das Gerät online ist. Für Ihre Report Suite müssen Zeitstempel aktiviert sein, um die Offline-Verfolgung zu nutzen.
 
-   Wenn Zeitstempel für Ihre Report Suite aktiviert sind, muss die Konfigurationseigenschaft *muss* `true` `offlineEnabled` sein. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, muss die Konfigurationseigenschaft *muss* `false` `offlineEnabled` sein.
+   Wenn Zeitstempel für Ihre Report Suite aktiviert sind, wird Ihre `offlineEnabled` Konfigurationseigenschaft *must* be `true`. Wenn Zeitstempel nicht für Ihre Report Suite aktiviert sind, wird Ihre `offlineEnabled` Konfigurationseigenschaft *must* be `false`.
 
-   Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie nicht sicher sind, ob Zeitstempel für eine Report Suite aktiviert sind, wenden Sie sich an die Kundenunterstützung. Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für alle JavaScript-Treffer einfügen, die die Variable `s.timestamp` verwenden.
+   Wenn dies nicht ordnungsgemäß konfiguriert ist, gehen Daten verloren. Wenn Sie nicht sicher sind, ob Zeitstempel für eine Report Suite aktiviert sind, wenden Sie sich an die Kundenunterstützung. Wenn Sie aktuell AppMeasurement-Daten in einer Report Suite erfassen, in der auch Daten aus JavaScript gesammelt werden, müssen Sie möglicherweise eine separate Report Suite für mobile Daten einrichten oder einen benutzerdefinierten Zeitstempel für alle JavaScript-Treffer einfügen, die die `s.timestamp` -Variable.
 
    Der Standardwert lautet `false`.
 
@@ -66,7 +66,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    Treffer in Batches senden.
 
-   Wenn beispielsweise auf `50` gesetzt, werden Treffer in die Warteschlange gestellt, bis 50 gespeichert sind, dann werden alle Treffer in der Warteschlange gesendet. Erfordert `offlineEnabled=true` und der Standardwert ist `0` (keine Stapelverarbeitung).
+   Wenn beispielsweise auf `50`, werden Treffer in die Warteschlange gestellt, bis 50 gespeichert sind, dann werden alle Treffer in der Warteschlange gesendet. Erfordert `offlineEnabled=true`und der Standardwert lautet `0` (Keine Stapelverarbeitung).
 
 * **privacyDefault**
 
@@ -101,7 +101,7 @@ Das SDK unterstützt derzeit mehrere Adobe Experience Cloud-Lösungen, einschlie
 
    Bestimmt, wie lange das Ziel auf eine Antwort wartet.
 
-Im Folgenden finden Sie ein Beispiel für eine `ADBMobileConfig.json` -Datei:
+Im Folgenden finden Sie ein Beispiel für eine `ADBMobileConfig.json` Datei:
 
 ```js
 { 

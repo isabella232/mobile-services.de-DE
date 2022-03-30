@@ -1,11 +1,11 @@
 ---
 description: Hier finden Sie die Liste der Adobe Target-Methoden, die von der iOS-Bibliothek bereitgestellt werden.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Target-Methoden für iOS
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 95%
@@ -79,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameprofileParameterssmboxParameter scallback:**
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
 
    Sendet eine Anforderung an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des Angebots zurück, der in einem Block-Callback generiert wird.
 
@@ -159,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **:defaultContent::orderParameters:targetLoadRequestWithNameprofileParameterssmboxParameters:callback**
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
 
    Sendet request an Ihren konfigurierten Target-Server und gibt den Zeichenfolgenwert des in einem Block-Callback generierten Angebots zurück.
 

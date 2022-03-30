@@ -1,12 +1,12 @@
 ---
 description: In Adobe Mobile Services können Akquise-Links mit eindeutigen Trackingcodes generiert werden. Wenn ein Benutzer eine App vom Appstore herunterlädt und ausführt, nachdem er auf den generierten Link geklickt hat, erfasst das SDK automatisch die Akquisedaten und sendet sie an Adobe Mobile Services.
 keywords: Android;Bibliothek;Mobile;SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: App-Akquise
 topic-fix: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 exl-id: 266f0266-38f5-410b-ae14-92874fb0e7ce
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Akquise-Links müssen in Adobe Mobile Services erstellt werden. Weitere Informat
 
 **In SDK-Versionen 4.18.0 und höher**:
 
-Ab dem 1. März 2020 stellt Google den Intent-Übertragungsmechanismus install_referrer ein. Weitere Informationen finden Sie unter [Still Using InstallBroadcast? Wechseln Sie bis zum 1. März 2020 zur Play Referrer-API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html). Um weiterhin Install-Referrer-Informationen in Bezug auf den Google Play Store zu erfassen, aktualisieren Sie Ihre Anwendung auf SDK Version 4.18.0 oder höher.
+Ab dem 1. März 2020 stellt Google den Intent-Übertragungsmechanismus install_referrer ein. Weitere Informationen finden Sie unter [Still Using InstallBroadcast? Switch to the Play Referrer API by March 1, 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html). Um weiterhin Install-Referrer-Informationen in Bezug auf den Google Play Store zu erfassen, aktualisieren Sie Ihre Anwendung auf SDK Version 4.18.0 oder höher.
 
 Nach der Einstellung müssen Sie anstatt `BroadcastReceiver` zu erstellen, die Install-Referrer-URL von einer neuen Google-API erfassen und die resultierende URL an das SDK übergeben.
 

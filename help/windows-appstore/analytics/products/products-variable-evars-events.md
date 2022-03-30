@@ -1,11 +1,11 @@
 ---
 description: Ein Beispiel für die Variable "products"mit Merchandising-eVars und produktspezifischen Ereignissen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen
 topic-fix: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 exl-id: 3a90f624-da13-4c26-9e4c-3a4af33bc5ee
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 24%
@@ -37,4 +37,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Wenn Sie ein produktspezifisches Ereignis mit der Variable *`&&products`* Trigger haben, müssen Sie dieses Ereignis auch in der Variable *`&&events`* festlegen. Andernfalls wird das Ereignis während der Verarbeitung herausgefiltert.
+>Wenn Sie ein produktspezifisches Ereignis mit der *`&&products`* müssen Sie dieses Ereignis auch in der Variablen *`&&events`* , andernfalls wird das Ereignis während der Verarbeitung herausgefiltert.

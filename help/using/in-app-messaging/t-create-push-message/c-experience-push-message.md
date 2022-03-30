@@ -1,12 +1,12 @@
 ---
 description: Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Namen, Nachrichtentext und Zieloptionen, konfigurieren. Sie können auch erweiterte Optionen konfigurieren, einschließlich Payload-Optionen und benutzerdefinierte Optionen für iOS-Geräte.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Erlebnis Push-Nachrichten
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%
@@ -126,7 +126,7 @@ Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
    Unten in der Vorschauansicht finden Sie eine Beschreibung der Zielgruppe, die Sie im vorigen Schritt ausgewählt haben.
 
 1. (**Optional**) Klicken Sie auf **[!UICONTROL Test]**, um die Nachricht zu Testzwecken per Push an die angegebenen Geräte zu senden.
-1. Wählen Sie den Dienst aus und geben Sie die Push-Token für mindestens ein Gerät ein, an das die Nachricht gesendet werden soll.
+1. Wählen Sie den Service aus und geben Sie die Push-Token für mindestens ein Gerät ein, an das die Nachricht gesendet werden soll.
 
    Geben Sie die Token in einer kommagetrennten Liste an, um die Nachricht an mehrere Geräte zu senden.
 

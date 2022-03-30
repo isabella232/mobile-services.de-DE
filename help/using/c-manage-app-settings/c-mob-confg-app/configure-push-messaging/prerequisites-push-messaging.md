@@ -1,15 +1,15 @@
 ---
 description: Sie müssen diese Voraussetzungen erfüllen, bevor Sie Push-Nachrichten in Apps konfigurieren.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Voraussetzungen für die Aktivierung der Push-Benachrichtigung
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -55,7 +55,7 @@ Wenn Benutzer keine Adobe IDs haben, führen Sie die folgenden Schritte aus:
 
 Jeder Benutzer muss das Analytics-Konto innerhalb der Experience Cloud-Organisation verknüpfen.
 
-1. Melden Sie sich mit einer Adobe ID bei [Adobe Experience Cloud](https://experience.adobe.com) an.
+1. Melden Sie sich bei der [Adobe Experience Cloud](https://experience.adobe.com) mit einer Adobe ID.
 
 1. Wählen Sie oben rechts den Namen des Analytics-Unternehmens aus.
 
@@ -65,7 +65,7 @@ Jeder Benutzer muss das Analytics-Konto innerhalb der Experience Cloud-Organisat
 
    Die Adobe ID ist jetzt mit Ihrem Analytics-Konto, -Unternehmen und den zugehörigen Anmeldedaten verknüpft.
 
-Weitere Informationen finden Sie unter [Organisationen im Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) im Komponentenleitfaden für die zentrale Experience Cloud-Benutzeroberfläche.
+Weitere Informationen finden Sie unter [Einrichtungen im Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de) im Komponentenleitfaden für die zentrale Experience Cloud-Benutzeroberfläche.
 
 ## Push-Dienste und den SDK-ID-Dienst in der Mobile-Benutzeroberfläche konfigurieren
 

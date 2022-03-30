@@ -1,12 +1,12 @@
 ---
 description: Aufgrund der vielfältigen Möglichkeiten beim Anpassen von Berichten stellt sich vielleicht die Frage, welcher Typ von Bericht am besten geeignet ist, um die gewünschten Daten zu erhalten.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Berichtstypen
 topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 100%
@@ -76,7 +76,7 @@ Starten des Tutorials:
 
 ### Pfadbericht {#section_AD400106BC684B50B27CCCD3F4497114}
 
-Ein Pfadbericht dient der Pfadanalyse. Er zeigt ein Pfadsetzungsdiagramm an, in dem die Pfade dargestellt werden, die von einem App-Status zu einem anderen führen.
+Ein Pfadbericht dient der Pfadanalyse. Er zeigt ein Pfaderstellungsdiagramm an, in dem die Pfade dargestellt werden, die von einem App-Status zu einem anderen führen.
 
 ![](assets/action_paths.png)
 

@@ -1,11 +1,11 @@
 ---
 description: Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek bereitgestellt werden.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: SDK-Methoden
 topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 51%
@@ -18,7 +18,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
 >[!TIP]
 >
->Wenn Sie `winmd`-Methoden aus winJS (JavaScript) verwenden, wird für alle Methoden automatisch der erste Buchstabe kleingeschrieben.
+>Wann Sie konsumieren `winmd` -Methoden aus winJS (JavaScript), haben alle Methoden automatisch ihren ersten Buchstaben in Kleinbuchstaben.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -44,7 +44,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
    * `ADBMobilePrivacyStatusOptOut`: werden Treffer verworfen.
    * `ADBMobilePrivacyStatusUnknown` - Wenn für Ihre Report Suite Zeitstempel aktiviert sind, werden die Treffer gespeichert, bis der Datenschutzstatus zu &quot;opt-in&quot;(anschließend werden die Treffer gesendet) oder &quot;opt-out&quot;(anschließend werden die Treffer verworfen) geändert wird. Wenn für Ihre Report Suite keine Zeitstempel aktiviert sind, werden die Treffer verworfen, bis der Datenschutzstatus zu „optedin“ geändert wird.
 
-      Der Standardwert wird in der Datei [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) festgelegt.
+      Der Standardwert wird im [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) -Datei.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -101,7 +101,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
 * **GetLifetimeValue (winJS: getLifetimeValue)**
 
-   Gibt den Lebenszeitwert für den aktuellen Benutzer zurück. Standard: 0.
+   Gibt den Lebenszeitwert für den aktuellen Benutzer zurück. Der Standardwert ist 0.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -122,7 +122,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
    >[!TIP]
    >
-   >Wenn für Ihre App ein Upgrade vom Experience Cloud-SDK 3.x auf 4.x vorgenommen wird, wird die vorherige (benutzerdefinierte oder automatisch generierte) ID abgerufen und als benutzerdefinierte Benutzer-ID gespeichert. So werden Besucherdaten auch bei Upgrades des SDK beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID `null` , bis sie festgelegt wird.
+   >Wenn für Ihre App ein Upgrade vom Experience Cloud-SDK 3.x auf 4.x vorgenommen wird, wird die vorherige (benutzerdefinierte oder automatisch generierte) ID abgerufen und als benutzerdefinierte Benutzer-ID gespeichert. So werden Besucherdaten auch bei Upgrades des SDK beibehalten. Für neue Installationen für das SDK der Version 4.x lautet die Benutzer-ID . `null` bis festgelegt.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -194,7 +194,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
    >[!TIP]
    >
-   >Rufen Sie diese Methode in der `onResume()`-Methode in jeder Aktivität in Ihrer Anwendung auf, wie im folgenden Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts weiterzugeben.
+   >Rufen Sie diese Methode im `onResume()` -Methode in jeder Aktivität innerhalb Ihrer Anwendung verwenden, wie im folgenden Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts weiterzugeben.
 
    * Hier finden Sie die Syntax für diese Methode:
 
@@ -215,7 +215,7 @@ Klassen und Methoden, die von der Windows 8.1 Universal App Store-Bibliothek ber
 
    >[!TIP]
    >
-   >Rufen Sie diese Methode in den `onPause()`-Methoden in jeder Aktivität in Ihrer Anwendung auf, wie im Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts weiterzugeben.
+   >Rufen Sie diese Methode im `onPause()` -Methoden in jeder Aktivität in Ihrer Anwendung verwenden, wie im Beispiel gezeigt. Es wird außerdem empfohlen, die Aktivität oder den Dienst als Kontextobjekt anstelle des globalen Anwendungskontexts weiterzugeben.
 
    * Hier finden Sie die Syntax für diese Methode:
 

@@ -1,11 +1,11 @@
 ---
 description: Nachdem Sie die Bibliothek zu Ihrem Projekt hinzugefügt haben, können Sie beliebige Analytics-Methodenaufrufe an einer beliebigen Stelle in Ihrer App durchführen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analysen
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 19%
@@ -18,25 +18,25 @@ Nachdem Sie die Bibliothek zu Ihrem Projekt hinzugefügt haben, können Sie beli
 
 >[!TIP]
 >
->Stellen Sie sicher, dass Sie `ADBMobile.h` in Ihre Klasse importieren.
+>Importieren Sie `ADBMobile.h` zu Ihrer Klasse.
 
 ## Mobile-App-Berichte in Analytics aktivieren {#section_F2F9234009184F20BA36B5CDE872B424}
 
-Bevor Sie Code hinzufügen, bitten Sie Ihren Analytics-Administrator, Folgendes auszuführen, um das Lebenszyklus-Tracking für mobile Apps zu aktivieren. Dadurch wird sichergestellt, dass Ihre Report Suite zu Beginn der Entwicklung Metriken erfassen kann.
+Bevor Sie Code hinzufügen, bitten Sie Ihren Analytics-Administrator, Folgendes auszuführen, um das Lebenszyklus-Tracking für die Mobile-App zu aktivieren. Dadurch wird sichergestellt, dass Ihre Report Suite zu Beginn der Entwicklung Metriken erfassen kann.
 
-1. Öffnen Sie **[!UICONTROL Admin Tools]** > **[!UICONTROL Report Suites]** und wählen Sie Ihre mobilen Report Suites aus.
+1. Öffnen **[!UICONTROL Admin Tools]** > **[!UICONTROL Report Suites]** und wählen Sie Ihre mobilen Report Suites aus.
 
-1. Klicken Sie auf **[!UICONTROL Einstellungen bearbeiten]** > **[!UICONTROL Mobile Management]** > **[!UICONTROL Mobilanwendungs-Berichterstellung]**.
+1. Klicken **[!UICONTROL Einstellungen bearbeiten]** > **[!UICONTROL Mobile-Verwaltung]** > **[!UICONTROL Mobile Application Reporting]**.
 
-   ![Mobile Einstellungen](assets/mobile-settings.png)
+   ![Mobile-Einstellungen](assets/mobile-settings.png)
 
-1. Klicken Sie auf **[!UICONTROL Aktuelle App-Berichte aktivieren]**.
+1. Klicken **[!UICONTROL Aktuelle App-Berichte aktivieren]**.
 
-   Optional können Sie auch auf **[!UICONTROL Mobile Standortverfolgung aktivieren]** oder **[!UICONTROL Ältere Berichterstellung und Zuordnung für Hintergrundtreffer aktivieren]** klicken.
+   Optional können Sie auch auf **[!UICONTROL Mobile-Standortverfolgung aktivieren]** oder **[!UICONTROL Ältere Berichterstellung und Attribution für Hintergrundtreffer aktivieren]**.
 
    ![Lebenszyklus aktivieren](assets/enable-lifecycle.png)
 
-Lebenszyklusmetriken können jetzt erfasst werden und Mobilanwendungsberichte werden im Menü **[!UICONTROL Berichte]** in der Benutzeroberfläche der Marketing-Berichte angezeigt.
+Lebenszyklusmetriken können jetzt erfasst werden und Mobile-Anwendungsberichte werden im **[!UICONTROL Berichte]** in der Benutzeroberfläche der Marketing-Berichte angezeigt.
 
 ### Neue Versionen
 
@@ -118,11 +118,11 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Wenn `CollectLifecycleData()` in derselben Sitzung zweimal aufgerufen wird, meldet Ihre Anwendung bei jedem Aufruf nach dem ersten einen Absturz. Das SDK legt eine Markierung fest, wenn die Anwendung heruntergefahren wird, die auf einen erfolgreichen Beenden hinweist. Wenn diese Markierung nicht gesetzt ist, meldet `CollectLifecyleData()` einen Absturz.
+Wenn `CollectLifecycleData()` zweimal in derselben Sitzung aufgerufen wird, meldet Ihre Anwendung bei jedem Aufruf nach dem ersten einen Absturz. Das SDK legt eine Markierung fest, wenn die Anwendung heruntergefahren wird, die auf einen erfolgreichen Beenden hinweist. Wenn dieses Flag nicht gesetzt ist, `CollectLifecyleData()` meldet einen Absturz.
 
 ## Events, Props und eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Wenn Sie sich die [SDK-Methoden](/help/universal-windows/c-configuration/methods.md) angesehen haben, fragen Sie sich wahrscheinlich, wo Sie Ereignisse, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
+Wenn du dich angesehen hast [SDK-Methoden](/help/universal-windows/c-configuration/methods.md), fragen Sie sich wahrscheinlich, wo Sie Ereignisse, eVars, Props, Erben und Listen festlegen können. In Version 4 können Sie diese Variablentypen nicht mehr direkt in Ihrer App zuweisen. Stattdessen verwendet das SDK Kontextdaten und Verarbeitungsregeln, um Ihre App-Daten Analytics-Variablen für die Berichterstellung zuzuordnen.
 
 Verarbeitungsregeln bieten Ihnen verschiedene Vorteile:
 
@@ -154,7 +154,7 @@ Wir haben auch gehört, dass einige von Ihnen Kontextdatenschlüssel mithilfe de
 "eVar1":"jimbo";
 ```
 
-Dies könnte *etwas* vereinfachen, wenn Sie die einmalige Zuordnung in Verarbeitungsregeln durchführen. Sie verlieren jedoch Lesbarkeit während des Debuggens und künftiger Code-Aktualisierungen. Stattdessen empfehlen wir dringend die Verwendung beschreibender Namen für Schlüssel und Werte:
+Dies könnte *leicht* einfacher, wenn Sie die einmalige Zuordnung in Verarbeitungsregeln durchführen. Sie verlieren jedoch Lesbarkeit während des Debuggens und bei zukünftigen Code-Aktualisierungen. Stattdessen empfehlen wir dringend die Verwendung beschreibender Namen für Schlüssel und Werte:
 
 ```js
 "username":"jimbo";
@@ -178,17 +178,17 @@ Kontextdatenvariablen, die Inkrementierungsereignisse definieren, können den zu
 
 ## Variable „products“ {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Um *`products`* im mobilen SDK festzulegen, müssen Sie eine spezielle Syntax verwenden. Weitere Informationen finden Sie unter [Variable &quot;Products&quot;](/help/universal-windows/analytics/products.md).
+Zum Festlegen *`products`* im mobilen SDK müssen Sie eine spezielle Syntax verwenden. Weitere Informationen finden Sie unter [Variable &quot;products&quot;](/help/universal-windows/analytics/products.md).
 
 ## (Optional) Offline-Verfolgung aktivieren {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-Um Treffer zu speichern, wenn das Gerät offline ist, können Sie die Offline-Verfolgung in der Datei [SDK methods](/help/universal-windows/c-configuration/methods.md) aktivieren. Beachten Sie die in der Referenz zur Konfigurationsdatei beschriebenen Zeitstempelanforderungen, bevor Sie die Offline-Verfolgung aktivieren.
+Um Treffer zu speichern, wenn das Gerät offline ist, können Sie die Offline-Verfolgung im [SDK-Methoden](/help/universal-windows/c-configuration/methods.md) -Datei. Beachten Sie die in der Referenz zur Konfigurationsdatei beschriebenen Zeitstempelanforderungen, bevor Sie die Offline-Verfolgung aktivieren.
 
 ## Geostandort und Zielpunkte {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-Mit der Geolokation können Sie Standortdaten (Längen- und Breitengrad) und vordefinierte Zielpunkte messen. Jeder `TrackLocation`-Aufruf sendet:
+Mit der Geolokation können Sie Standortdaten (Längen- und Breitengrad) und vordefinierte Zielpunkte messen. Jeder `TrackLocation` -Aufruf sendet:
 
-* Breitengrad/Längengrad und POI (wenn innerhalb eines in der Konfigurationsdatei `ADBMobileConfig.json` definierten Zielpunkts).
+* Breitengrad/Längengrad und POI (sofern innerhalb eines im `ADBMobileConfig.json` Konfigurationsdatei).
 
    Diese werden für die automatische Berichterstellung an Variablen für mobile Lösungen übergeben.
 
@@ -203,7 +203,7 @@ var ADB = ADBMobile;
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-Wenn der folgende POI in der Konfigurationsdatei `ADBMobileConfig.json` definiert ist:
+Wenn der folgende POI im `ADBMobileConfig.json` Konfigurationsdatei:
 
 ```js
 "poi" : [ 
@@ -211,7 +211,7 @@ Wenn der folgende POI in der Konfigurationsdatei `ADBMobileConfig.json` definier
         ]
 ```
 
-Wenn der Gerätestandort innerhalb eines Radius von 7000 Metern vom definierten Punkt bestimmt wird, wird eine `a.loc.poi`-Kontextdatenvariable mit dem Wert `San Francisco` mit dem Treffer `TrackLocation` gesendet. Eine `a.loc.dist`-Kontextvariable wird mit dem Abstand in Metern von den definierten Koordinaten gesendet.
+Wenn die Geräteposition innerhalb eines Radius von 7000 Metern vom definierten Punkt bestimmt wird, wird ein `a.loc.poi` Kontextdatenvariable mit dem Wert `San Francisco` wird mit der `TrackLocation` Treffer. Ein `a.loc.dist` -Kontextvariable mit dem Abstand in Metern von den definierten Koordinaten gesendet.
 
 ## Lebenszeitwert {#section_D2C6971545BA4D639FBE07F13EF08895}
 
