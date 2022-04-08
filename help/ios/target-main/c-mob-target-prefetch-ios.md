@@ -3,9 +3,9 @@ description: Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDK, um 
 title: Vorabruf-Angebotsinhalte in iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '707'
 ht-degree: 85%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 85%
 # Vorabruf-Angebotsinhalte in iOS {#prefetch-offer-content-in-ios}
 
 Die Vorabruffunktion von Adobe Target verwendet iOS Mobile SDK, um so Angebotsinhalte so selten wie möglich abzurufen, indem die Serverantworten im Cache abgelegt werden.
-
->[!IMPORTANT]
->
->Die Vorabruffunktion in den Mobile SDK für iOS wird für die Aktivitätstypen „Auto Target“, „Auto Allocate“ und „Automated Personalization“ in Adobe Target nicht unterstützt.
 
 Dadurch wird die Ladezeit verkürzt, es werden mehrere Netzwerkaufrufe verhindert und Adobe Target kann darüber informiert werden, welche Mbox vom Benutzer der mobilen App besucht wurde. Alle Inhalte werden während des Vorabrufs abgerufen und zwischengespeichert. Dieser Inhalt wird für alle zukünftigen Aufrufe abgerufen, die zwischengespeicherten Inhalt für den angegebenen Mbox-Namen enthalten.
 

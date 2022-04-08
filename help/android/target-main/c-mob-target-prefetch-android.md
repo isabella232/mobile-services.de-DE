@@ -3,9 +3,9 @@ description: Die Vorabruffunktion von Adobe Target verwendet Android Mobile-SDK,
 title: Vorabruf für Android-Angebotsinhalte
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 exl-id: 60fd9703-972b-4c2c-bf9c-86e1f59bfba5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '738'
 ht-degree: 92%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 92%
 # Vorabruf für Android-Angebotsinhalte {#prefetch-offer-content-in-android}
 
 Die Vorabruffunktion von Adobe Target verwendet Android Mobile-SDK, um so wenig wie möglich Angebotsinhalt abzurufen, indem die Serverantworten im Cache abgelegt werden.
-
->[!IMPORTANT]
->
->Die Vorabruffunktion in den Mobile SDK für Android wird für die Aktivitätstypen „Auto Target“, „Auto Allocate“ und „Automated Personalization“ in Adobe Target nicht unterstützt.
 
 Dadurch wird die Ladezeit verkürzt, es werden mehrere Netzwerkaufrufe verhindert und Adobe Target kann darüber informiert werden, welche Mbox vom Benutzer der mobilen App besucht wurde. Alle Inhalte werden während des Vorabrufs abgerufen und zwischengespeichert. Dieser Inhalt wird für alle zukünftigen Aufrufe abgerufen, die zwischengespeicherten Inhalt für den angegebenen Mbox-Namen enthalten.
 
