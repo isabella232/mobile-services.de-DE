@@ -1,38 +1,39 @@
 ---
-title: Adobe Mobile Services end-of-life FAQ
+title: Häufig gestellte Fragen zur Abschaffung der Adobe Mobile Services
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Ankündigung zum Ende des Lebenszyklus von Adobe Mobile Services.
-source-git-commit: a0f834247c328b40d0f47fdf515c239cf66b7566
+exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
+source-git-commit: a6dd74b8df771249e3c50de93f44639cfbfe7e13
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '433'
 ht-degree: 3%
 
 ---
 
 # Häufig gestellte Fragen zur Einstellung der Adobe Mobile Services
 
-Adobe Mobile Service&#39;s end-of-life date is **December 31, 2022**.
+Das Enddatum von Adobe Mobile Service ist **31. Dezember 2022**.
 
-## What is happening?
+## Was passiert?
 
 Mobile Services endet am 31. Dezember 2022. Mobile Services, die eine mobilzentrierte Benutzeroberfläche, Akquise, Deep-Linking, In-App-Nachrichten, Push-Benachrichtigungen und geografischen Standort unterstützen, werden nach diesem Datum nicht mehr unterstützt.
 
 ## Was ist enthalten und was ist nicht enthalten?
 
-Diese Einstellung umfasst nur die Adobe Mobile Services, die eigenständige Plattform unter [mobilemarketing.adobe.com](https://mobilemarketing.adobe.com). Die Mobile-SDKs der Version 4, die auf diese Benutzeroberfläche angewiesen sind, wurden am 31. August 2021 eingestellt.
+Diese Einstellung umfasst nur die Adobe Mobile Services, die eigenständige Plattform unter [mobilemarketing.adobe.com](https://mobilemarketing.adobe.com). Die Mobile Version 4 SDKs, die auf diese Schnittstelle angewiesen sind, wurden am 31. August 2021 eingestellt.
 
-This end-of-life does NOT include Adobe Analytics for mobile apps, part of the Adobe Experience Platform Mobile SDKs. Diese Funktionen, darunter das In-App-Verhalten, die Lebenszyklusanalyse, das Tracking von Interaktionen mit Nachrichten und Zielgruppenprofile, werden von Adobe weiterhin unterstützt.
+Dieses Ende der Lebensdauer umfasst NICHT Adobe Analytics für mobile Apps, Teil der Adobe Experience Platform Mobile SDKs. Diese Funktionen, darunter das In-App-Verhalten, die Lebenszyklusanalyse, das Tracking von Interaktionen mit Nachrichten und Zielgruppenprofile, werden von Adobe weiterhin unterstützt.
 
 ## Warum wird die Funktion eingestellt?
 
-Da Adobe seine mobilen Marketingfunktionen weiter ausbaut, werden Funktionen, die zuvor in Mobile Services verfügbar waren, in Adobe Experience Cloud-Lösungen veröffentlicht oder über Adobe Exchange Premier Partners angeboten. This transition provides you with more powerful and flexible mobile marketing capabilities.
+Da Adobe seine mobilen Marketingfunktionen weiter ausbaut, werden bereits in Mobile Services verfügbare Funktionen in Adobe Experience Cloud-Lösungen veröffentlicht oder über Adobe Exchange Premier Partners angeboten. Diese Transition bietet leistungsfähigere und flexiblere mobile Marketingfunktionen.
 
 ## Was passiert mit bestehenden, in Mobile Services erstellten Verarbeitungsregeln?
 
-[Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) , die in der Benutzeroberfläche von Mobile Services erstellt oder generiert wurden, werden in H2 2022 automatisch nach Adobe Analytics migriert, bevor das Enddatum für Mobile Services erreicht ist. Migrierte Verarbeitungsregeln verhalten sich ähnlich wie andere Verarbeitungsregeln in Adobe Analytics, wo Sie sie frei anzeigen oder bearbeiten können. No user action is required for this migration.
+[Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) die in der Mobile Services-Benutzeroberfläche erstellt oder generiert wurden, werden vor dem Ende des Lebenszyklus von Mobile Services automatisch zu Adobe Analytics migriert. Migrierte Verarbeitungsregeln verhalten sich ähnlich wie andere Verarbeitungsregeln in Adobe Analytics, wo Sie sie frei anzeigen oder bearbeiten können. Für diese Migration ist keine Benutzeraktion erforderlich.
 
 Nachdem der Mobile-Dienst eingestellt wurde, werden alle Verarbeitungsregellogiken ausschließlich innerhalb von Adobe Analytics verarbeitet, in der Regel einschließlich der Verwendung von [Kontextdatenvariablen](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=de).
 
-## What transition options are available?
+## Welche Übergangsoptionen sind verfügbar?
 
 Adobe bietet je nach Anwendungsfall Ihres Unternehmens drei Übergangspfade.
 
@@ -42,4 +43,4 @@ Adobe bietet je nach Anwendungsfall Ihres Unternehmens drei Übergangspfade.
 
 ## Wo kann ich hingehen, wenn ich Fragen habe?
 
-Siehe [Adobe Mobile Services - Spark-Seite zum Ende der Lebensdauer](https://spark.adobe.com/page/C6D30y09zaRpD/) für weitere Informationen. Wenden Sie sich bei weiteren Fragen an Ihren Kundenbetreuer.
+Siehe [Adobe Mobile Services - Spark-Seite zum Ende der Nutzungsdauer](https://spark.adobe.com/page/C6D30y09zaRpD/) für weitere Informationen. Wenden Sie sich bei weiteren Fragen an Ihren Kundenbetreuer.
