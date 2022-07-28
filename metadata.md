@@ -3,9 +3,8 @@ cloud: Experience Cloud
 product: experience cloud
 solution: Experience Cloud Services
 type: Documentation
-git-repo: https://git.corp.adobe.com/AdobeDocs/mobile-services.de-DE
+git-repo: https://github.com/AdobeDocs/mobile-services.de-DE
 index: true
-translation-type: tm+mt
 source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '157'
@@ -33,7 +32,7 @@ Die Datei metadata.md enthält Metadaten auf Repo-Ebene, die an die TOC.md-Datei
 
 In der Datei TOC.md
 
-| metadata | was es macht |
+| Metadaten | was es macht |
 |--- |--- |
 | user-guide-title | Wird in der Artikelkopfzeile als Link verwendet |
 | user-guide-url | Öffnet die helpx-Hub-Seite |
