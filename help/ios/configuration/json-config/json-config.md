@@ -5,9 +5,9 @@ title: ADBMobile JSON-Konfiguration
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1591'
 ht-degree: 99%
 
 ---
@@ -83,24 +83,6 @@ Sie können die Konfigurationsdatei für Ihre App über mehrere Plattformen hinw
    >Diese Variable ist für Target erforderlich.
 
    * Mindestens SDK-Version 4.0
-
-* **coopUnsafe**
-
-   Bei Mitgliedern mit Gerätekooperation, für die dieser Wert `true` sein muss, müssen Sie sich an das Kooperationsteam wenden, um eine Sperrlisten-Markierung auf Ihrem Gerätekooperationskonto zu verlangen. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
-
-   Beachten Sie die folgenden Informationen:
-
-   * Wenn `coopUnsafe` auf `true` festgelegt ist, wird `coop_unsafe=1` immer an Audience Manager und Besucher-ID-Treffer angehängt.
-   * Wenn Sie die serverseitige Weiterleitung von Analytics an Audience Manager aktivieren, sehen Sie auch `coop_unsafe=1` in den Analytics-Treffern.
-
-   Zusätzliche Informationen:
-
-   * Mindestens SDK-Version 4.16.1
-   * Die boolesche Eigenschaft des Objekts `marketingCloud`, das, wenn auf `true` festgelegt, dazu führt, dass das Gerät aus der Experience Cloud-Gerätekooperation ausgeschlossen wird.
-   * Der Standardwert ist `false`.
-   * Diese Einstellung wird **nur** für Kunden verwendet, die an der Gerätekooperation teilnehmen.
-
-
 
 * **environmentId**
 

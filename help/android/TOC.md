@@ -1,27 +1,26 @@
 ---
 audience: end-user
 user-guide-title: Handbuch für Mobile Services Android
-breadcrumb-title: Android-Handbuch
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+breadcrumb-title: Android-Anleitung
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 99%
 
 ---
 
 
-# Handbuch für Mobile Services Android {#android}
+# Handbuch für Mobile Services Android{#android}
 
-+ [Android-SDK 4.x für Experience Cloud-Lösungen](overview.md)
++ [Android-SDK 4.x für Experience Cloud-Lösungen](overview.md)
 + [Versionshinweise](rel-notes.md)
 + Erste Schritte {#getting-started-android}
    + [Erste Schritte](getting-started/getting-started.md)
    + [Vorbereitung](getting-started/requirements.md)
    + [Grundlegende Implementierung und Lebenszyklus](getting-started/dev-qs.md)
-   + [Verarbeitungsregeln und Kontextdaten](getting-started/proc-rules.md)
+   + [Verarbeitungsregeln und Kontextdaten ](getting-started/proc-rules.md)
    + [Migration zur Android 4.x-Bibliothek](getting-started/migration-v3.md)
-+ Konfiguration {#configuration-android}
++ Konfiguration{#configuration-android}
    + [Konfigurationsübersicht](configuration/configuration.md)
    + [ADBMobile JSON-Konfigurationsdatei](configuration/json-config/json-config.md)
    + [ADBMobile JSON-Konfigurationspfad überschreiben](configuration/json-config/json-config-remote.md)
@@ -39,7 +38,7 @@ ht-degree: 99%
       + [Variable „products“](analytics-main/products/products.md)
       + [Variable „products“ mit Merchandising-eVars und produktspezifischen Ereignissen](analytics-main/products/products-variable-evars-events.md)
    + [Ereignis-Serialisierung](analytics-main/event-serialization.md)
-   + [Video-Analytics](analytics-main/video-qs.md)
+   + [Video Analytics ](analytics-main/video-qs.md)
    + Postbacks {#postbacks}
       + [Übersicht über Postbacks](analytics-main/postbacks/postbacks.md)
       + [Postback-Beispiel](analytics-main/postbacks/postback-example.md)
@@ -48,19 +47,19 @@ ht-degree: 99%
 + Akquise {#acquisition-android}
    + [Übersicht über die Akquise](acquisition-main/acquisition-main-android.md)
    + [App-Akquise](acquisition-main/acquisition.md)
-   + [Akquisemethoden](acquisition-main/acquisition-methods.md)
+   + [Akquisemethoden ](acquisition-main/acquisition-methods.md)
    + Deep-Links verfolgen {#tracking-deep-links}
       + [Deep-Links verfolgen](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Verzögerte Drittanbieter-Deep-Links verfolgen](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deferred-deep-links.md)
-   + [Marketinglink-Akquise testen](acquisition-main/t-testing-marketing-link-acquisition.md)
-   + [V3-Akquise testen](acquisition-main/t-testing-version-3-acquisition.md)
+   + [Marketing-Link-Akquise testen](acquisition-main/t-testing-marketing-link-acquisition.md)
+   + [V3-Akquise testen ](acquisition-main/t-testing-version-3-acquisition.md)
    + [Testen der Legacy-Akquise](acquisition-main/t-testing-acquisition.md)
    + [Fehlerbehebung beim Akquisetest](acquisition-main/troubleshoot-acquisition-testing.md)
 + Messaging {#messaging-android}
    + [Übersicht über Messaging](messaging-main/messaging-main-android.md)
    + In-App-Nachrichten {#inapp-messaging}
-      + [In-App-Nachrichten](messaging-main/messaging/messaging.md)
-      + [Fehlerbehebung bei In-App-Nachrichten](messaging-main/messaging/in-apps-ts.md)
+      + [In-App-Nachrichten ](messaging-main/messaging/messaging.md)
+      + [Fehlerbehebung bei In-App-Nachrichten ](messaging-main/messaging/in-apps-ts.md)
    + Push-Nachrichten {#push-messaging}
       + [Push-Nachrichten](messaging-main/push-messaging/push-messaging.md)
       + [Push-Nachrichten mit Deep-Links implementieren](messaging-main/push-messaging/t-mob-impl-push-deeplinking-android-4x.md)
@@ -80,17 +79,16 @@ ht-degree: 99%
    + [Übersicht über Experience Cloud](c-marketing-cloud/c-marketing-cloud.md)
    + [Experience Cloud ID-Konfiguration](c-marketing-cloud/mcvid.md)
    + [Identity-Dienst-Methoden für Adobe Experience Platform](c-marketing-cloud/mc-methods.md)
-   + [Experience Cloud-Gerätekooperation](c-marketing-cloud/t-mob-mc-device-coop-android-.md)
 + Audience Manager {#audience-manager-android}
    + [Übersicht über Audience Manager](audience-manager/audience-manager.md)
    + [Audience Manager-Konfiguration](audience-manager/audiencemgmt.md)
    + [Audience Manager-Methoden](audience-manager/c-audience-manager-methods.md)
 + Wearables {#wearables-android}
    + [Übersicht über Wearables](wearables/wearables.md)
-   + [Android Wearables: Erste Schritte](wearables/android-wearable.md)
-   + [Android Wearables: Zusätzliche Hinweise](wearables/c-android-wearables--additional-notes.md)
+   + [Android Wearables: Erste Schritte ](wearables/android-wearable.md)
+   + [Android Wearables: Zusätzliche Hinweise ](wearables/c-android-wearables--additional-notes.md)
 + Android-SDK-Referenz {#sdk-reference-android}
-   + [Android-SDK-Referenzübersicht](/help/android/reference/reference.md)
+   + [Android SDK-Referenzübersicht](/help/android/reference/reference.md)
    + [App-IDs](/help/android/reference/app-ids.md)
    + [Besucher zwischen einer App und dem mobilen Internet verfolgen](/help/android/reference/hybrid-app.md)
    + [Android-Widgets](/help/android/reference/widgets.md)
