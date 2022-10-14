@@ -6,9 +6,9 @@ title: Referenz zu Mobile-Metriken und -Dimensionen
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '609'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ Hier finden Sie die Liste der standardmäßigen Mobile-Dimensionen:
 
 * **Gerätename**
 
-   Speichert den Gerätenamen. Unter iOS gibt eine kommagetrennte zweistellige Zeichenfolge das iOS-Gerät an. Die erste Ziffer steht für die Gerätegeneration, die zweite weist die Version der verschiedenen Mitglieder der Gerätefamilie aus. Eine vollständige Liste der allgemeinen Gerätenamen finden Sie unter [iOS-Geräteversionen](/help/ios/reference/device-versions.md).
+   Speichert den Gerätenamen. Unter iOS gibt eine kommagetrennte zweistellige Zeichenfolge das iOS-Gerät an. Die erste Ziffer steht für die Gerätegeneration, die zweite weist die Version der verschiedenen Mitglieder der Gerätefamilie aus.
 
 * **Betreibername**
 

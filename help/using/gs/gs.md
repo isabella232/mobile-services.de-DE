@@ -6,9 +6,9 @@ title: Erste Schritte
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1300'
 ht-degree: 97%
 
 ---
@@ -119,11 +119,7 @@ Bei einem Mobilgerät können Sie von Natur aus über die GPS-Ortung sehen, wo s
 
 Adobe Target für Apps nutzt jetzt die verbesserte Segmentierung und Berichterstellung, die über Adobe Analytics verfügbar sind. Das bedeutet, dass Adobe Target alle wichtigen App-Metriken in Analytics für die Zielgruppenbestimmung und Personalisierung nutzen kann. Außerdem wird eine detaillierte Berichterstellung hinsichtlich des Testerfolgs ermöglicht, so dass Marketing-Experten die „Was-wäre-wenn“-Fragen besser verstehen können. Die Antworten darauf könnten dem App-Marketing-Experten entgehen, der unter dem Druck steht, ROI der App-Investitionen aufzuzeigen. Die Integration von Analytics/Target für Apps stellt die robusteste im Markt erhältliche Lösung für die App-Interaktion dar.
 
-Weitere Informationen zum Standort finden Sie unter folgenden Themen:
-
-* [Standort im Mobile Services-Benutzerhandbuch](/help/using/location/c-location-overview.md)
-* [Standort im Android-SDK-Handbuch](/help/android/location/location.md)
-* [Standort im iOS-SDK-Handbuch](/help/ios/location/location.md)
+Weitere Informationen zum Standort finden Sie unter [Standort](/help/using/location/c-location-overview.md).
 
 ## Adobe Mobile SDK {#mobile-services-sdk}
 
@@ -157,5 +153,3 @@ Das Adobe Mobile SDK bietet die folgenden Funktionen:
 
    * Minimiert die Verarbeitungslast des Geräts für das Senden von Daten an Adobe-Server und Drittanbietersysteme.
    * Ein geringer Platzbedarf minimiert die Größe des App-Pakets, das an Appstores gesendet wird.
-
-Weitere Informationen zu den Adobe Mobile-SDK finden Sie unter [Android-SDK 4.x für Experience Cloud-Lösungen](/help/android/overview.md) und [iOS-SDK 4.x für Experience Cloud-Lösungen](/help/ios/overview.md).

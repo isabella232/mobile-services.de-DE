@@ -6,9 +6,9 @@ title: Fehlerbehebung von In-App-Nachrichten
 topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '603'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Haben Sie Ihre Manifestdatei aktualisiert, um die Aktivität im Vollbildmodus zu
 
 ## Meine lokale Benachrichtigung in Android funktioniert nicht.
 
-Stellen Sie sicher, dass der lokale Empfänger für übertragene Benachrichtigungen in Ihrer Manifestdatei deklariert ist. Weitere Informationen finden Sie in Schritt 1 unter [In-App-Nachrichten](/help/android/messaging-main/messaging/messaging.md).
+Stellen Sie sicher, dass der lokale Empfänger für übertragene Benachrichtigungen in Ihrer Manifestdatei deklariert ist.
 
 ## Ist die Nachricht „live“?
 
@@ -43,7 +43,7 @@ Stellen Sie sicher, dass die Einstellungen korrekt sind. Überprüfen Sie auf de
 
 ## Bei Verwendung eines Ereignisstarts als Auslöser …
 
-Ereignis wird nur bei einer neuen Sitzung ausgelöst. Informationen dazu, wann eine Sitzung beginnt, finden Sie unter  `lifecycleTimeout` in der [ADBMobile JSON-Konfigurationsdatei](/help/ios/configuration/json-config/json-config.md).
+Ereignis wird nur bei einer neuen Sitzung ausgelöst.
 
 ## Ich habe meine Nachricht remote aktualisiert in der Anwendung wird jedoch nach wie vor die alte Nachricht angezeigt.
 

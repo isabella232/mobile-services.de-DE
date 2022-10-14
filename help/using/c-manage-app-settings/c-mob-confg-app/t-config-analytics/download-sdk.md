@@ -6,9 +6,9 @@ title: Mobile SDK und Werkzeuge herunterladen
 topic-fix: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
 exl-id: 34ec76fa-3bcb-4b77-9d1e-7160941deb44
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '128'
 ht-degree: 100%
 
 ---
@@ -27,9 +27,4 @@ Sie können eine Datei mit dem Namen `ADBMobileConfig.json` herunterladen, die m
 
 ## Systemeigene Bibliotheken {#section_C2ADC3068D9F4EAEBE5B266852738C90}
 
-Konfigurieren Sie Ihre Anwendung in Adobe Mobile Services, damit Sie ein angepasstes Paket herunterladen können, das eine vorab ausgefüllte Version der Konfigurationsdatei enthält:
-
-* [iOS-Anweisungen](/help/ios/getting-started/requirements.md)
-* [Android-Anweisungen](/help/android/getting-started/requirements.md)
-
-Die Dokumentation zu systemeigenen Bibliotheken wie Windows Phone 8, Blackberry, Xamarin und anderen finden Sie im Abschnitt *SDK-Dokumentation* in [Adobe Mobile Services](/help/using/home.md).
+Konfigurieren Sie Ihre Anwendung in Adobe Mobile Services, damit Sie ein angepasstes Paket herunterladen können, das eine vorab ausgefüllte Version der Konfigurationsdatei enthält.

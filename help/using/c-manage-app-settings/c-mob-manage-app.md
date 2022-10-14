@@ -6,10 +6,10 @@ title: Verwalten Ihrer App
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 91%
+source-wordcount: '1001'
+ht-degree: 92%
 
 ---
 
@@ -22,11 +22,6 @@ Sie können die Daten, die Sie von der App erhalten, verfolgen und verwalten, in
 * **Standardvariablen und Metriken**
 
    Jede App enthält Variablen und Metriken zum Tracking der Warenkorb- und Kaufaktivitäten. Einige Kaufinformationen können nicht mit Verarbeitungsregeln verarbeitet werden. Deshalb stellt das SDK die speziellen `"&&products"`-Kontextdaten bereit. Sie können beispielsweise Variablen wie „Zusatz zum Warenkorb“, „Entnahme aus Warenkorb“, „Checkouts“, „Bestellungen“ usw. verwenden. Die Kontextdaten müssen den Daten in Adobe Analytics zugeordnet werden. Wenn diese Variable mittels einer einfachen Zuordnung aus Kontextdaten aufgefüllt wird, ist dies der Schlüssel für die Zuordnung. Wenn die Variable durch komplexere Regeln in Analytics Admin Tools aufgefüllt wird, lassen Sie dieses Feld leer.
-
-   Weitere Informationen zu diesen Variablen und Metriken finden Sie unter folgenden Themen:
-
-   * [Produktvariablen in Android](/help/android/analytics-main/products/products.md)
-   * [Produktvariablen in iOS](/help/ios/analytics-main/products/products.md)
 
 * **Benutzerdefinierte Variablen**
 
@@ -47,7 +42,7 @@ Im Folgenden finden Sie eine Liste der benutzerdefinierten Variablen, die Sie ko
    Wenn ein Wert für eine Eigenschaft in einem Tracking-Aufruf (oder Treffer) festgelegt wird, gilt er nur für diesen Aufruf.
 
 * Die **[!UICONTROL Benutzerdefinierte Variablen]** (oder eVars) auch die Frage &quot;Welcher/Welche/Welches?&quot; beantworten. Ein eVar kann jedoch nicht nur auf den Treffer angewendet werden, an den er gesendet wird, sondern auch auf Variablen und Metriken, die in nachfolgenden Treffern gesendet werden, bis der Wert abläuft oder ein neuer Wert festgelegt wird.
-* **[!UICONTROL Benutzerdefinierte Listenvariablen (oder mehrwertige Variablen)]** weisen das gleiche Verhalten wie Variablen auf, ermöglichen Ihnen jedoch auch, aus einem einzigen Treffer mehrere Variablen zu erfassen. Weitere Informationen finden Sie unter [Liste](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) Variablen in der Adobe Analytics-Dokumentation.
+* **[!UICONTROL Benutzerdefinierte Listenvariablen (oder mehrwertige Variablen)]** weisen das gleiche Verhalten wie Variablen auf, ermöglichen Ihnen jedoch auch, aus einem einzigen Treffer mehrere Variablen zu erfassen. Weitere Informationen finden Sie unter [Liste](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=de) Variablen in der Adobe Analytics-Dokumentation.
 
 Die folgenden Zuordnungen werden in Analytics als „in Mobile Services erstellt“ angezeigt.
 

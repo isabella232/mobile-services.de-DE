@@ -6,10 +6,10 @@ title: Erlebnis Push-Nachrichten
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 95%
 
 ---
 
@@ -60,6 +60,7 @@ Hier finden Sie die Anforderungen zum Senden von Rich-Push-Benachrichtigungen:
       >[!IMPORTANT]
       >
       >Berücksichtigen Sie folgende Informationen:
+      >
       >* Rich-Push-Nachrichten können zwar an niedrigere Versionen gesendet werden, jedoch wird hier nur der Text angezeigt.
       >* Derzeit steht keine Unterstützung für die Uhr zur Verfügung.
 
@@ -75,12 +76,7 @@ Hier finden Sie die Anforderungen zum Senden von Rich-Push-Benachrichtigungen:
    * Nur HTTPS
 
 * **Größe**
-   * Bilder müssen im 2:1-Format vorliegen, andernfalls werden die Seiten abgeschnitten.
-
-Weitere Informationen zur Konfiguration von Rich-Push-Benachrichtigungen finden Sie unter folgenden Themen:
-
-* [Push-Benachrichtigungen in Android empfangen](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [Rich-Push-Benachrichtigungen in iOS empfangen](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
+   * Bilder müssen im 2:1-Format vorliegen, andernfalls werden sie abgeschnitten.
 
 Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
 
@@ -88,7 +84,7 @@ Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
 
    * **[!UICONTROL Payload: Daten]**
 
-      Stellen Sie eine benutzerdefinierte Push-Nutzlast in JSON bereit, die per Push- oder lokale Benachrichtigung an die App gesendet wird. Der Grenzwert unter Android und iOS liegt bei 4 KB.
+      Stellen Sie eine benutzerdefinierte Push-Payload in JSON bereit, die über eine Push- oder eine lokale Benachrichtigung an die App gesendet wird. Der Grenzwert unter Android und iOS liegt bei 4 KB.
 
    * **[!UICONTROL Apple-Optionen: Kategorie]**
 
@@ -102,7 +98,7 @@ Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
 
       Wählen Sie diese Option, damit iOS beim Eintreffen der Nachricht Ihre im Hintergrund laufende App aktiviert und ihr auf der Grundlage der Payload der Nachricht das Ausführen von Code erlaubt. Weitere Informationen finden Sie unter [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) in der *iOS Developer Library*.
 
-1. (Optional) Zeigen Sie eine Vorschau des Layouts Ihrer Nachricht an, indem Sie auf folgende Symbole klicken:
+2. (Optional) Zeigen Sie eine Vorschau des Layouts Ihrer Nachricht an, indem Sie auf folgende Symbole klicken:
 
    * **[!UICONTROL x Zusammenfassung]**
 
@@ -125,11 +121,11 @@ Konfigurieren einer Push-Nachricht auf der Seite „Erlebnis“:
       Um eine Vorschau der Nachricht auf dem Tablet eines Benutzers anzuzeigen, klicken Sie auf ![Tablet-Symbol](assets/icon_tablet.png).
    Unten in der Vorschauansicht finden Sie eine Beschreibung der Zielgruppe, die Sie im vorigen Schritt ausgewählt haben.
 
-1. (**Optional**) Klicken Sie auf **[!UICONTROL Test]**, um die Nachricht zu Testzwecken per Push an die angegebenen Geräte zu senden.
-1. Wählen Sie den Service aus und geben Sie die Push-Token für mindestens ein Gerät ein, an das die Nachricht gesendet werden soll.
+3. (**Optional**) Klicken Sie auf **[!UICONTROL Test]**, um die Nachricht zu Testzwecken per Push an die angegebenen Geräte zu senden.
+4. Wählen Sie den Service aus und geben Sie die Push-Token für mindestens ein Gerät ein, an das die Nachricht gesendet werden soll.
 
    Geben Sie die Token in einer kommagetrennten Liste an, um die Nachricht an mehrere Geräte zu senden.
 
-1. Konfigurieren Sie die Planungsoptionen für die Nachricht.
+5. Konfigurieren Sie die Planungsoptionen für die Nachricht.
 
    Weitere Informationen finden Sie unter [Zeitplan: Push-Nachrichten](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).

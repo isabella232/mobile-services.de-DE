@@ -1,12 +1,12 @@
 ---
-description: 'Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen vornehmen '
+description: Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen vornehmen
 title: Konfigurieren Ihrer App
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 exl-id: 52fd58ad-87b8-499b-9c46-c3176bcda37c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 43%
+source-wordcount: '331'
+ht-degree: 45%
 
 ---
 
@@ -32,12 +32,8 @@ Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen
 
       * **Lebenszyklus**
 
-         Verfolgen Sie die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können. Weitere Informationen finden Sie in den folgenden Abschnitten:
+         Verfolgen Sie die Metriken und Dimensionen, die nach der Implementierung des Lebenszyklus automatisch von der mobilen Bibliothek gemessen werden können.
 
-         * [iOS-SDK-Lebenszyklusmetriken](/help/ios/metrics.md)
-         * [Android-Lebenszyklusmetriken](/help/android/metrics.md)
-         * [Windows-Lebenszyklusmetriken](/help/universal-windows/metrics.md)
-         * [BlackBerry-Lebenszyklusmetriken](/help/blackberry/metrics.md)
       * **App-Aktionen**
 
          Aktivieren Sie Berichte und Pfade basierend auf In-App-Aktionen.
@@ -49,7 +45,6 @@ Auf der Seite „App-Einstellungen verwalten“ können Sie folgende Änderungen
       * **Zeitgesteuerte Ereignisse**
 
          Messen Sie die Zeit (In-App- und Gesamtzeit) zwischen wichtigen App-Aktionen, z. B. Zeit vor dem ersten Kauf.
-
 
 * **Standort-Berichte**
 

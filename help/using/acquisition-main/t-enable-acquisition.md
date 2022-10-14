@@ -6,9 +6,9 @@ title: Akquise konfigurieren
 topic-fix: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
 exl-id: 3a12dfab-70d0-41e6-8d4e-5aba21bb8606
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
@@ -33,4 +33,4 @@ Das Akquise-Tracking muss in der SDK-Konfiguration aktiviert sein, damit Marketi
 1. Laden Sie die neue SDK-Konfigurationsdatei herunter und verwenden Sie sie in Ihrer App.
 
    Sie haben die Akquise für **iOS** erfolgreich konfiguriert. 
-Um die Akquise für **Android** zu aktivieren, führen Sie die Schritte unter [Mobile Akquise verfolgen](/help/android/acquisition-main/acquisition.md) aus.
+

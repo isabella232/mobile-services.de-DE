@@ -6,9 +6,9 @@ title: Push-Benachrichtigung konfigurieren
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '272'
 ht-degree: 100%
 
 ---
@@ -48,9 +48,4 @@ Führen Sie vor dem Konfigurieren von Push-Nachrichten die unter [Voraussetzunge
 
       Geben Sie einen gültigen API-Schlüssel an. Weitere Informationen zum Abrufen des API-Schlüssels finden Sie in [App für die Verwendung von APNS oder FCM konfigurieren](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
-      Weitere Informationen finden Sie in den folgenden Themen:
-
-      * [Push-Nachrichten in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-      * [Push-Nachrichten in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-
-1. Klicken Sie auf **[!UICONTROL Speichern]**.
+2. Klicken Sie auf **[!UICONTROL Speichern]**.

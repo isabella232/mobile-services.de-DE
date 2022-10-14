@@ -6,9 +6,9 @@ title: Zielgruppe Zielgruppensegmente f체r Push-Nachrichten definieren und konfi
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '958'
 ht-degree: 98%
 
 ---
@@ -85,11 +85,6 @@ Im Folgenden finden Sie einige Beispiele, wie Sie Segmente korrekt definieren k�
       Das bedeutet, dass das SDK f체r die Push-Teilnehmer-eVar den Wert `True` gesendet hat.
 
    * Obwohl das Ger채t 체ber ein g체ltiges Ger채tetoken verf체gt, wird die Nachricht nicht an das Ger채t gepusht, sofern Adobe Analytics nicht die Teilnehmer-Markierung festgelegt hat.
-
-   * Weitere Informationen zur Fehlerbehebung bei Push-Nachrichten finden Sie unter folgenden Themen:
-
-      * [Push-Nachrichten in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-      * [Push-Nachrichten in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
 2. Geben Sie Informationen in folgende Felder ein:
 

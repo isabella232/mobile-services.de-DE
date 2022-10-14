@@ -6,9 +6,9 @@ title: Häufig gestellte Fragen
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1013'
 ht-degree: 96%
 
 ---
@@ -41,7 +41,7 @@ Die Adobe Mobile SDK verwenden die standardmäßigen iOS- und Android-Netzwerkst
 
 ### Was sind Lebenszyklusmetriken?
 
-Lebenszyklusmetriken sind vorkonfigurierte Metriken, die automatisch erfasst werden, wenn das SDK zum ersten Mal in Ihrer App implementiert wird. Weitere Informationen finden Sie unter. [Lebenszyklusmetriken (Android)](/help/android/metrics.md) und [Lebenszyklusmetriken (iOS)](/help/ios/metrics.md).
+Lebenszyklusmetriken sind vorkonfigurierte Metriken, die automatisch erfasst werden, wenn das SDK zum ersten Mal in Ihrer App implementiert wird.
 
 ### Wie kann ich Fehler in Verarbeitungsregeln beheben?
 
@@ -49,7 +49,7 @@ Siehe [Verarbeitungsregeln - Tipps und Tricks](https://experienceleague.adobe.co
 
 ### Kann ich meine Analysedaten an mehrere Report Suites senden?
 
-Ja. Die SDK bieten die Möglichkeit, Daten an mehrere Adobe Analytics Report Suites zu senden. Um mithilfe einer Bildanfrage Daten in mehreren Report Suites zu erfassen, geben Sie im Feld **[!UICONTROL rsids]** unter dem Abschnitt **[!UICONTROL analytics]** der Datei `ADBMobileConfig.json` mehrere Report Suite-IDs ein, getrennt durch Kommas und ohne Leerzeichen. Weitere Informationen finden Sie unter [ADBMobile JSON-Konfiguration](/help/ios/configuration/json-config/json-config.md).
+Ja. Die SDK bieten die Möglichkeit, Daten an mehrere Adobe Analytics Report Suites zu senden. Um mithilfe einer Bildanfrage Daten in mehreren Report Suites zu erfassen, geben Sie im Feld **[!UICONTROL rsids]** unter dem Abschnitt **[!UICONTROL analytics]** der Datei `ADBMobileConfig.json` mehrere Report Suite-IDs ein, getrennt durch Kommas und ohne Leerzeichen.
 
 ### Inwiefern unterscheiden sich die Besuche auf Mobilgeräten von den Starts?
 
