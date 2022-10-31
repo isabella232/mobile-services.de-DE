@@ -6,7 +6,7 @@ title: Erlebnis Push-Nachrichten
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 95%
@@ -14,6 +14,8 @@ ht-degree: 95%
 ---
 
 # Erlebnis: Push-Nachrichten {#experience-push-message}
+
+{#eol}
 
 Sie können Erlebnisoptionen für Push-Nachrichten und Rich-Push-Nachrichten, einschließlich Namen, Nachrichtentext und Zieloptionen, konfigurieren. Sie können auch erweiterte Optionen konfigurieren, einschließlich Payload-Optionen und benutzerdefinierte Optionen für iOS-Geräte.
 

@@ -6,7 +6,7 @@ title: Bericht „Aktionspfade“
 topic-fix: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 exl-id: 4c97b07f-17df-49cb-b2f7-dcb682d9d3c6
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Bericht „Aktionspfade“{#action-paths}
+
+{#eol}
 
 Der Bericht „Aktionspfade“ dient der Pfadanalyse. Er zeigt ein Pfaderstellungsdiagramm an, in dem die Pfade dargestellt werden, die von einem App-Status zu einem anderen führen.
 

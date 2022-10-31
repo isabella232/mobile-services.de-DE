@@ -3,14 +3,16 @@ description: Bei einer Virtual Report Suite (VRS) handelt es sich um eine Report
 title: Virtual Report Suites
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
 exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 71%
+ht-degree: 73%
 
 ---
 
 # Virtual Report Suites {#virtual-report-suites}
+
+{#eol}
 
 Bei einer Virtual Report Suite (VRS) handelt es sich um eine Report Suite, die durch Anwenden einer oder mehrerer Segmentdefinitionen auf eine Report Suite erstellt wird. So können Benutzer ihre Daten in der Report Suite beibehalten und sie dennoch so verwalten, als befänden sie sich in separaten Report Suites.
 
@@ -20,7 +22,7 @@ Apps, die eine VRS verwenden, verhalten sich abgesehen von der Verwaltung folgen
 * eVars/props/listvars/events
 * Zeitstempel-aktivierte Option
 * Dimension-Flags (Lebenszyklus, Ort usw.)
-* Classifications
+* Klassifizierungen
 
 Diese Werte werden in der übergeordneten Report Suite verwaltet und für die VRSs freigegeben, die zur gleichen übergeordneten Report Suite gehören.
 
@@ -51,7 +53,7 @@ Mit einer VRS können Sie folgende Aufgaben ausführen:
 
 >[!IMPORTANT]
 >
->Nur Adobe Analytics-Administratoren können Virtual Report Suites in Adobe Analytics erstellen und ändern. Informationen zum Erstellen einer Virtual Report Suite finden Sie unter [Virtual Report Suites erstellen](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) in der Adobe Analytics-Dokumentation.
+>Nur Adobe Analytics-Administratoren können Virtual Report Suites in Adobe Analytics erstellen und ändern. Informationen zum Erstellen einer Virtual Report Suite finden Sie unter [Virtual Report Suites erstellen](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html?lang=de) in der Adobe Analytics-Dokumentation.
 
 Jede VRS verfügt über eine eindeutige ID. Um die übergeordnete Report Suite-ID in der Benutzeroberfläche von Adobe Mobile Services anzuzeigen, klicken Sie auf der Seite „App-Einstellungen verwalten“ im Abschnitt **[!UICONTROL App-Informationen]** auf **[!UICONTROL Mehr Details]**.
 
@@ -119,5 +121,5 @@ Im Folgenden finden Sie die VRS-Eigenschaften:
 
 Im Folgenden finden Sie einige zusätzliche Informationen zu Virtual Report Suites:
 
-* Weitere Informationen zu VRSs finden Sie unter [Übersicht über Virtual Report Suites](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
+* Weitere Informationen zu VRSs finden Sie unter [Virtual Report Suites - Übersicht](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=de).
 * Weitere Informationen zur Planung einer VRS-Implementierung finden Sie unter [Virtual Report Suite-Workflow](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).

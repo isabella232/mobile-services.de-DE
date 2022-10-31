@@ -6,14 +6,16 @@ title: Die 10 beliebtesten Artikel
 topic-fix: Metrics
 uuid: cf53cc0b-7c84-41c8-97d5-d9ee833a916b
 exl-id: 93b3d0aa-83a3-4ee8-bc7f-fa30736a7749
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 100%
 
 ---
 
-# Die 10 beliebtesten Artikel zur Verfügung{#top-articles}
+# Die 10 beliebtesten Artikel Bericht{#top-articles}
+
+{#eol}
 
 Der Bericht **[!UICONTROL Die 10 beliebtesten Artikel]** enthält eine Sunburst-Grafik Ihrer Daten. Dieser Bericht ist nur für DPS-Kunden verfügbar.
 

@@ -6,7 +6,7 @@ title: Mobile Metriken anzeigen
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Mobile Metriken anzeigen {#display-mobile-metrics}
+
+{#eol}
 
 Sie können die wichtigsten Leistungsmetriken der Apps anzeigen, die Sie zuletzt angezeigt haben. Standardmäßig können Sie bis zu 12 Apps anzeigen. Sie können den Datumsbereich ändern und Filter erstellen, um die Daten zu segmentieren und jede App auf der Übersichtsseite zu bearbeiten.
 
