@@ -13,7 +13,7 @@ ht-degree: 46%
 
 # Adobe Mobile Services {#adobe-mobile-services}
 
-In diesem Handbuch werden die technische Dokumentation und die Selbsthilfe für Adobe Mobile Services vorgestellt, die Mobile Marketingfunktionen für Adobe Experience Cloud-Apps zusammenfasst, sodass Sie die Benutzerinteraktion mit den Apps verstehen und verbessern können.
+In diesem Handbuch werden die technische Dokumentation und die Selbsthilfe für Adobe Mobile Services vorgestellt, die Mobile-Marketing-Funktionen für Adobe Experience Cloud-Apps zusammenfasst, sodass Sie die Benutzerinteraktion mit den Apps verstehen und verbessern können.
 
 ## Abschaffung der Mobile Services
 

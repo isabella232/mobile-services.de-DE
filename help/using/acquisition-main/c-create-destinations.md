@@ -1,5 +1,5 @@
 ---
-description: Marketingexperten können Link-Ziele, wie z. B. Web-, Deep- oder andere Links, erstellen, speichern und bearbeiten, die beim Erstellen verfolgbarer Marketinglinks verwendet werden können.
+description: Marketing-Experten können Link-Ziele, wie z. B. Web-, Deep- oder andere Links, erstellen, speichern und bearbeiten, die beim Erstellen verfolgbarer Marketing-Links verwendet werden können.
 keywords: mobile
 solution: Experience Cloud Services,Analytics
 title: Ziele

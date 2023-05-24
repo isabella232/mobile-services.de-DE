@@ -1,35 +1,35 @@
 ---
-description: Sie können Marketinglinks erstellen oder bearbeiten, um Deep-Links zu Ihrer App oder Ihrer Website bereitzustellen.
+description: Sie können Marketing-Links erstellen oder bearbeiten, um Deep-Links zu Ihrer App oder Ihrer Website bereitzustellen.
 keywords: mobile
 solution: Experience Cloud Services,Analytics
-title: Marketinglinks erstellen oder bearbeiten
+title: Marketing-Links erstellen oder bearbeiten
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
 source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
-# Marketinglinks erstellen oder bearbeiten {#create-or-edit-marketing-links}
+# Marketing-Links erstellen oder bearbeiten {#create-or-edit-marketing-links}
 
 {#eol}
 
-Sie können Marketinglinks erstellen oder bearbeiten, um Deep-Links zu Ihrer App oder Ihrer Website bereitzustellen. Weitere Informationen finden Sie in [Universelle Links (Apple) und App-Links (Android)](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
+Sie können Marketing-Links erstellen oder bearbeiten, um Deep-Links zu Ihrer App oder Ihrer Website bereitzustellen. Weitere Informationen finden Sie in [Universelle Links (Apple) und App-Links (Android)](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
 1. Erweitern Sie im linken Navigationsbereich Ihrer App den Bereich **[!UICONTROL Akquise]** und klicken Sie auf **[!UICONTROL Marketing Link Builder]**.
 1. Führen Sie eine der folgenden Aufgaben aus:
 
-   * Klicken Sie zum Erstellen eines Marketinglinks auf **[!UICONTROL Neu erstellen]**.
+   * Klicken Sie zum Erstellen eines Marketing-Links auf **[!UICONTROL Neu erstellen]**.
    * Klicken Sie zum Bearbeiten eines Links in der Spalte **[!UICONTROL Titel]** auf den Namen des entsprechenden Links.
 
 1. Geben Sie Informationen in folgende Felder ein:
 
-   * **[!UICONTROL Name des Marketinglinks]**:
+   * **[!UICONTROL Name des Marketing-Links]**:
 
-      (**Pflichtfeld**) Geben Sie einen beschreibenden Namen für den Marketinglink an. Der Name wird auf der Seite Marketing-Links der Benutzeroberfläche von Adobe Mobile Services angezeigt. Ein beschreibender Name hilft Ihnen und anderen in Ihrer Organisation schnell einen bestimmten Link zu finden und seinen Zweck nachzuvollziehen.
+      (**Pflichtfeld**) Geben Sie einen beschreibenden Namen für den Marketing-Link an. Der Name wird auf der Seite Marketing-Links der Benutzeroberfläche von Adobe Mobile Services angezeigt. Ein beschreibender Name hilft Ihnen und anderen in Ihrer Organisation schnell einen bestimmten Link zu finden und seinen Zweck nachzuvollziehen.
 
    * **[!UICONTROL Eindeutiger Trackingcode]**:
 
@@ -37,18 +37,18 @@ Sie können Marketinglinks erstellen oder bearbeiten, um Deep-Links zu Ihrer App
 
    * **[!UICONTROL Verfolgungskontextdaten hinzufügen]**:
 
-      (**Optional**) Klicken Sie auf das **[!UICONTROL +]**-Symbol und geben Sie relevante Informationen ein, um Ihre Kampagne mithilfe von Kontextdaten zu verfolgen. Wählen Sie in der Dropdown-Liste **[!UICONTROL Benutzerdefinierte Kontextdaten]** ein vorkonfiguriertes oder eines Ihrer eigenen Tags aus. Kontextdaten werden für Berichte verwendet, wenn der Marketinglink bereitgestellt wird.
+      (**Optional**) Klicken Sie auf das **[!UICONTROL +]**-Symbol und geben Sie relevante Informationen ein, um Ihre Kampagne mithilfe von Kontextdaten zu verfolgen. Wählen Sie in der Dropdown-Liste **[!UICONTROL Benutzerdefinierte Kontextdaten]** ein vorkonfiguriertes oder eines Ihrer eigenen Tags aus. Kontextdaten werden für Berichte verwendet, wenn der Marketing-Link bereitgestellt wird.
 
       Folgende vorgegebenen Tags sind verfügbar:
 
       * **Benutzerdefinierte Kontextdaten**
-Geben Sie den Schlüssel und den Wert an. Wenn Sie benutzerdefinierte Kontextdaten hinzufügen, müssen Sie eine Verarbeitungsregel erstellen. Weitere Informationen finden Sie unter [Übersicht über Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in der Adobe Analytics-Dokumentation.
+Geben Sie den Schlüssel und den Wert an. Wenn Sie benutzerdefinierte Kontextdaten hinzufügen, müssen Sie eine Verarbeitungsregel erstellen. Weitere Informationen finden Sie unter [Übersicht über Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=de) in der Adobe Analytics-Dokumentation.
 
       * **Quelle**
 Geben Sie die ursprünglich verweisende Stelle an, z. B. „Newsletter“ oder „Homepage“.
 
       * **Medium**
-Geben Sie das Marketingmedium an, z. B. „Banner“ oder „E-Mail“.
+Geben Sie das Marketing-Medium an, z. B. „Banner“ oder „E-Mail“.
 
       * **Inhalt**
 Geben Sie den Namen oder die ID der Anzeige mit dem Link an.
@@ -59,7 +59,7 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
 1. Geben Sie Informationen in folgende Felder ein:
 
    * **(Pflichtfeld)** Geben Sie in **[!UICONTROL Fallback-URL]** die URL an, zu der Benutzer weitergeleitet werden, wenn ein Ziel nicht gefunden wird (wenn sich der Benutzer z. B. an einem Desktop-PC oder auf einer anderen Plattform befindet, die mit keiner Zielregel übereinstimmt).
-   * Wählen Sie unter **[!UICONTROL Optionen für Marketinglinks]** die Option **[!UICONTROL Interstitials]** oder **[!UICONTROL Universelle bzw. Anwendungslinks]** aus.
+   * Wählen Sie unter **[!UICONTROL Optionen für Marketing-Links]** die Option **[!UICONTROL Interstitials]** oder **[!UICONTROL Universelle bzw. Anwendungslinks]** aus.
 
       Weitere Informationen finden Sie in [Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md) oder in [Universelle Links (Apple) und App-Links (Android)](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
@@ -103,4 +103,4 @@ Geben Sie bezahlte Begriffe oder andere Suchbegriffe für die Anzeige an.
 
 
 
-1. Klicken Sie zum Speichern des Marketinglinks auf die ![drei Punkte](assets/icon_elipses.png) und dann auf **[!UICONTROL Speichern]**.
+1. Klicken Sie zum Speichern des Marketing-Links auf die ![drei Punkte](assets/icon_elipses.png) und dann auf **[!UICONTROL Speichern]**.

@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Sie können Benutzer abhängig davon, ob sie eine App installiert (App-Deep-Link) oder nicht installiert haben (Website oder Appstore), zu einem Ziel weiterleiten. Die Wahl des Routings überlassen Sie am besten den Benutzern. Marketingexperten können Benutzeroptionen bereitstellen, indem sie eine Interstitial-Seite konfigurieren, auf der die Benutzer die verfügbaren Einstiegsziele sehen.
 
-So konfigurieren Sie einen Zwischenraum, während Sie  einen Marketinglink erstellen:
+So konfigurieren Sie einen Zwischenraum, während Sie  einen Marketing-Link erstellen:
 
 1. Klicken Sie auf **[!UICONTROL Deep-Link-Interstitial bearbeiten]**.
 

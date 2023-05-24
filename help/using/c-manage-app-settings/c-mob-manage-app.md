@@ -9,7 +9,7 @@ exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
 source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Sie können die Daten, die Sie von der App erhalten, verfolgen und verwalten, in
 
 Klicken Sie auf **[!UICONTROL App-Einstellungen verwalten]** > **[!UICONTROL Variablen und Metriken verwalten]** > **[!UICONTROL Benutzerdefinierte Variablen]**.
 
-Diese Zuordnungen rufen dieselbe API auf, die auch [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in Adobe Analytics verwenden.
+Diese Zuordnungen rufen dieselbe API auf, die auch [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=de) in Adobe Analytics verwenden.
 
 ![Kontextdatenzuordnung](assets/custom_data_content.png)
 
@@ -113,7 +113,7 @@ Mithilfe von Zielpunkten können Sie geografische Standorte definieren, die Sie 
 
 ## Link-Ziele verwalten {#section_F722A387E22A430187B063D358A87711}
 
-Sie können Link-Ziele erstellen, bearbeiten, archivieren, dearchivieren und löschen. Diese Ziele können Sie dann inline aufrufen, wenn Sie Marketinglinks, Push-Nachrichten oder In-App-Nachrichten erstellen. Weitere Informationen zu Link-Zielen finden Sie in [Link-Ziele verwalten](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md).
+Sie können Link-Ziele erstellen, bearbeiten, archivieren, dearchivieren und löschen. Diese Ziele können Sie dann inline aufrufen, wenn Sie Marketing-Links, Push-Nachrichten oder In-App-Nachrichten erstellen. Weitere Informationen zu Link-Zielen finden Sie in [Link-Ziele verwalten](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md).
 
 ## Postbacks verwalten {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 

@@ -29,7 +29,7 @@ Geben Sie den gewünschten Trackingcode an oder klicken Sie auf **[!UICONTROL Ge
    * (**Pflichtfeld**) **[!UICONTROL Quelle]**
 Geben Sie den ursprünglichen Referrer an, z. B. „Newsletter“ oder „Homepage“.
    * **[!UICONTROL Medium]**
-Geben Sie das Marketingmedium an, z. B. „Banner“ oder „E-Mail“.
+Geben Sie das Marketing-Medium an, z. B. „Banner“ oder „E-Mail“.
    * **[!UICONTROL Inhalt]**
 Geben Sie den Namen oder die ID der Anzeige mit dem Link an.
    * **[!UICONTROL Begriff]**

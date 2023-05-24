@@ -19,15 +19,15 @@ ht-degree: 100%
 
 Sie müssen folgende Voraussetzungen erfüllen, um Akquise-Links zu verwenden.
 
-Damit Sie Marketinglinks verfolgen können, müssen Sie sicherstellen, dass folgende Voraussetzungen erfüllt sind:
+Damit Sie Marketing-Links verfolgen können, müssen Sie sicherstellen, dass folgende Voraussetzungen erfüllt sind:
 
 1. Vergewissern Sie sich, dass Sie über eine App Report Suite verfügen.
 
-   Sie müssen eine neue App Report Suite erstellen oder eine vorhandene Report Suite nutzen, die Daten erfassen, verfolgen und an Berichte übergeben kann, die für Ihre Marketinglinks erfasst werden. Weitere Informationen zum Erstellen einer neuen App Report Suite finden Sie in [Neue App hinzufügen](/help/using/manage-apps/t-new-app.md).
+   Sie müssen eine neue App Report Suite erstellen oder eine vorhandene Report Suite nutzen, die Daten erfassen, verfolgen und an Berichte übergeben kann, die für Ihre Marketing-Links erfasst werden. Weitere Informationen zum Erstellen einer neuen App Report Suite finden Sie in [Neue App hinzufügen](/help/using/manage-apps/t-new-app.md).
 
 1. Überprüfen Sie Ihre SDK-Version.
 
-   Für die aktuellen Marketinglinktracking-Funktionen ist die SDK-Version 4.9 oder höher erforderlich.
+   Für die aktuellen Marketing-Linktracking-Funktionen ist die SDK-Version 4.9 oder höher erforderlich.
 
    **Unterstützte Funktionen**
 

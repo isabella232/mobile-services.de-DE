@@ -1,5 +1,5 @@
 ---
-description: Sie können Marketinglinks erstellen, um auf die Schnelle neue App-Benutzer zu gewinnen, indem Sie die URL-Parameter manuell konfigurieren.
+description: Sie können Marketing-Links erstellen, um auf die Schnelle neue App-Benutzer zu gewinnen, indem Sie die URL-Parameter manuell konfigurieren.
 keywords: mobile
 solution: Experience Cloud Services,Analytics
 title: Akquise-Links manuell erstellen
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 {#eol}
 
-Sie können Marketinglinks erstellen, um auf die Schnelle neue App-Benutzer zu gewinnen, indem Sie die URL-Parameter manuell konfigurieren.
+Sie können Marketing-Links erstellen, um auf die Schnelle neue App-Benutzer zu gewinnen, indem Sie die URL-Parameter manuell konfigurieren.
 
 >[!IMPORTANT]
 >

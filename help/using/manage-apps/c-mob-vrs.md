@@ -45,7 +45,7 @@ Mit einer VRS können Sie folgende Aufgaben ausführen:
 
 * Kontrolle von In-App-/Push-Nachrichten, Standort-Zielpunkten, Akquise und Postbacks, indem alle Daten nur an eine Report Suite gesendet werden.
 
-   Ein multinationales Unternehmen möchte sämtliche Daten für alle geografischen Standorte an nur eine Report Suite senden. Das Unternehmen möchte jedoch, dass die jeweiligen Marketingteams der verschiedenen Regionen ihre In-App-/Push-Nachrichten selbst verwalten. Der Administrator des Unternehmens erstellt regionale VRSs und jedes Team kann seine eigene App basierend auf dieser VRS verwalten.
+   Ein multinationales Unternehmen möchte sämtliche Daten für alle geografischen Standorte an nur eine Report Suite senden. Das Unternehmen möchte jedoch, dass die jeweiligen Marketing-Teams der verschiedenen Regionen ihre In-App-/Push-Nachrichten selbst verwalten. Der Administrator des Unternehmens erstellt regionale VRSs und jedes Team kann seine eigene App basierend auf dieser VRS verwalten.
 
    Das regionale Team erstellt dann seine App mithilfe der Konfigurationsdatei aus dem VRS. Die Daten werden an die übergeordnete Report Suite gesendet, aber In-App-/Push-Nachrichten, Standort-Zielpunkte, Akquise und Postbacks werden in der App gesteuert, die über die VRS erstellt wurde.
 
@@ -95,7 +95,7 @@ Im Folgenden finden Sie die VRS-Eigenschaften:
 >
 >Die schreibgeschützten Eigenschaften werden von der übergeordneten Report Suite übernommen.
 
-| Eigenschaft | Von der übergeordneten Report Suite übernommen | Bearbeitbar? | Hinweise |
+| Eigenschaft | Von der übergeordneten Report Suite übernommen | Kann bearbeitet werden? | Hinweise |
 |--- |--- |--- |--- |
 | `target.clientCode` | Nein | Ja |  |
 | `target.timeout` | Nein | Ja |  |

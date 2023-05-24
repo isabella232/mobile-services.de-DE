@@ -43,7 +43,7 @@ Mit Adobe Mobile Services können Sie die App-Interaktion in folgenden Bereichen
 
 In der Phase der *Akquise* verwenden Sie bezahlte, eigene und Earned Media, um die Benutzerakquise für App-Downloads in den führenden Appstores voranzutreiben. Mit Adobe Mobile Services können Sie den Prozess der App-Benutzerakquise beschleunigen.
 
-Adobe Mobile Services bieten Workflows zur Benutzerakquise, einschließlich Akquise-Tracking und Deep-Linking, mit denen die Effektivität Ihrer Kanäle bei der Akquise von App-Benutzern gemessen wird. Mit Marketinglinks, die verfolgen, welche Benutzer aus welchen Kanälen stammen, können Sie ermitteln, welche Akquisekanäle bei der Gewinnung aktiver und gewinnbringender Benutzer am effektivsten sind.
+Adobe Mobile Services bieten Workflows zur Benutzerakquise, einschließlich Akquise-Tracking und Deep-Linking, mit denen die Effektivität Ihrer Kanäle bei der Akquise von App-Benutzern gemessen wird. Mit Marketing-Links, die verfolgen, welche Benutzer aus welchen Kanälen stammen, können Sie ermitteln, welche Akquisekanäle bei der Gewinnung aktiver und gewinnbringender Benutzer am effektivsten sind.
 
 Darüber hinaus können Sie mit Deep-Linking Benutzer direkt zu den App-Inhalten führen, die sie sehen sollen, und sie dazu ermutigen, Ihre App bei Bedarf zu installieren.
 
@@ -113,7 +113,7 @@ Weitere Informationen zum Erstellen von In-App-Nachrichten finden Sie unter [In-
 
 In der Phase der *Optimierung* können Sie Konversionen (Abonnement, Handel, Anzeigenumsatz usw.) optimieren und die Kundenbindung verbessern. Die Optimierung des Benutzererlebnisses in Ihrer Anwendung kann Ihnen helfen, Ihre Inhalte zu personalisieren, um maximalen ROI und eine maximale Konversion zu erzielen.
 
-Weitere Informationen zu Tests und Adobe Target finden Sie unter [Adobe Target](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html) Dokumentation.
+Weitere Informationen zu Tests und Adobe Target finden Sie unter [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=de) Dokumentation.
 
 ### Geotargeting
 

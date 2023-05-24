@@ -5,7 +5,7 @@ exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
 source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ Da Adobe seine mobilen Marketingfunktionen weiter ausbaut, werden bereits in Mob
 
 ## Was passiert mit bestehenden, in Mobile Services erstellten Verarbeitungsregeln?
 
-[Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) die in der Mobile Services-Benutzeroberfläche erstellt oder generiert wurden, werden vor dem Ende des Lebenszyklus von Mobile Services automatisch zu Adobe Analytics migriert. Migrierte Verarbeitungsregeln verhalten sich ähnlich wie andere Verarbeitungsregeln in Adobe Analytics, wo Sie sie frei anzeigen oder bearbeiten können. Für diese Migration ist keine Benutzeraktion erforderlich.
+[Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=de) die in der Mobile Services-Benutzeroberfläche erstellt oder generiert wurden, werden vor dem Ende des Lebenszyklus von Mobile Services automatisch zu Adobe Analytics migriert. Migrierte Verarbeitungsregeln verhalten sich ähnlich wie andere Verarbeitungsregeln in Adobe Analytics, wo Sie sie frei anzeigen oder bearbeiten können. Für diese Migration ist keine Benutzeraktion erforderlich.
 
 Nachdem Mobile Services eingestellt wurde, werden alle Verarbeitungsregellogiken ausschließlich innerhalb von Adobe Analytics verarbeitet, in der Regel einschließlich der Verwendung von [Kontextdatenvariablen](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=de).
 

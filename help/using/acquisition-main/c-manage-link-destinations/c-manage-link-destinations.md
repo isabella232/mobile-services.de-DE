@@ -1,5 +1,5 @@
 ---
-description: Auf der Seite „Link-Ziele verwalten“ können Sie Link-Ziele erstellen, bearbeiten, archivieren/dearchivieren und löschen. Diese Ziele können Sie inline aufrufen, wenn Sie Marketinglinks, Push-Benachrichtigungen oder In-App-Nachrichten erstellen.
+description: Auf der Seite „Link-Ziele verwalten“ können Sie Link-Ziele erstellen, bearbeiten, archivieren/dearchivieren und löschen. Diese Ziele können Sie inline aufrufen, wenn Sie Marketing-Links, Push-Benachrichtigungen oder In-App-Nachrichten erstellen.
 keywords: mobile
 solution: Experience Cloud Services,Analytics
 title: Link-Ziele erstellen und verwalten
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 {#eol}
 
-Auf der Seite „Link-Ziele verwalten“ können Sie Link-Ziele erstellen, bearbeiten, archivieren/dearchivieren und löschen. Diese Ziele können Sie inline aufrufen, wenn Sie Marketinglinks, Push-Benachrichtigungen oder In-App-Nachrichten erstellen.
+Auf der Seite „Link-Ziele verwalten“ können Sie Link-Ziele erstellen, bearbeiten, archivieren/dearchivieren und löschen. Diese Ziele können Sie inline aufrufen, wenn Sie Marketing-Links, Push-Benachrichtigungen oder In-App-Nachrichten erstellen.
 
 So zeigen Sie die Seite Link-Ziele verwalten an:
 

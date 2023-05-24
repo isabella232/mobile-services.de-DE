@@ -91,7 +91,7 @@ Im Folgenden finden Sie die Rollen in der Mobile Services-Benutzeroberfläche, e
 Weitere Informationen zu Gruppen und Benutzern finden Sie in der Adobe Analytics-Dokumentation unter folgenden Themen:
 
 * [Benutzergruppeneinstellungen (alt)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=de)
-* [Einen Benutzer zu einer Gruppe hinzufügen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Einen Benutzer zu einer Gruppe hinzufügen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=de)
 
 ### Mobile Services-Benutzer
 
@@ -113,7 +113,7 @@ Diese Rolle verfügt über schreibgeschützte Berechtigungen und kann Feedback i
    * Link-Ziele anzeigen
 
 * Berichte anzeigen und ausführen
-* Marketinglinks anzeigen
+* Marketing-Links anzeigen
 * Legacy-Akquise-Links anzeigen und exportieren
 * Konfiguration &quot;Orte anzeigen und exportieren&quot;(POI)
 * Push-Nachrichten anzeigen

@@ -30,9 +30,9 @@ Universelle Links ermöglichen Ihnen, eine Verbindung zu Deep-Links in Ihrer iOS
 
 App-Links ermöglichen Ihnen, eine Verbindung zu Deep-Links in Ihrer Android-App herzustellen. Sie werden in Android 6.0 oder höher unterstützt. Beim Zugriff auf einen App-Link leitet Android den Link direkt an den Deep-Link in Ihrer App weiter. Wenn Ihre App nicht installiert ist, wird stattdessen eine URL für Ihre Website in einem Browser geöffnet. Weitere Informationen zu App-Links finden Sie in [Umgang mit Android-App-Links](https://developer.android.com/training/app-links/index.html).
 
-## Marketinglinks mithilfe eines universellen oder App-Links erstellen {#section_609ADEFFB9B441C4A8C45E936D0DC859}
+## Marketing-Links mithilfe eines universellen oder App-Links erstellen {#section_609ADEFFB9B441C4A8C45E936D0DC859}
 
-Sie können einen Marketinglink erstellen, der einen universellen Link oder einen App-Link verwendet.
+Sie können einen Marketing-Link erstellen, der einen universellen Link oder einen App-Link verwendet.
 
 ### Universelle Links konfigurieren
 
@@ -62,13 +62,13 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 ### Universelle Links verwenden
 
-1. Erstellen Sie in Adobe Mobile Services einen Marketinglink, der universelle Links verwendet:
+1. Erstellen Sie in Adobe Mobile Services einen Marketing-Link, der universelle Links verwendet:
 
    a. Wählen Sie die App auf der Mobile Services-Startseite aus. Klicken Sie auf **[!UICONTROL Akquise]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klicken Sie auf **[!UICONTROL Neu erstellen]**.
 
-   c. Wählen Sie unter **[!UICONTROL Optionen für Marketinglinks]** die Option **[!UICONTROL Universelle Links oder App-Links verwenden]** aus.
+   c. Wählen Sie unter **[!UICONTROL Optionen für Marketing-Links]** die Option **[!UICONTROL Universelle Links oder App-Links verwenden]** aus.
 
    d. Wenn Sie die Standortverknüpfungsdokumente im obigen Abschnitt *Standortverknüpfungsdokumente in Adobe Mobile Services einrichten* konfiguriert haben, ist diese Option standardmäßig aktiviert.
 
@@ -86,7 +86,7 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 >[!TIP]
 >
->Sobald ein Marketinglink gespeichert wurde, können die Optionen für Marketinglinks nicht mehr geändert werden. Dies wurde so festgelegt, damit sich das Verhalten bereits verbreiteter Marketinglinks nicht ändert.
+>Sobald ein Marketing-Link gespeichert wurde, können die Optionen für Marketing-Links nicht mehr geändert werden. Dies wurde so festgelegt, damit sich das Verhalten bereits verbreiteter Marketing-Links nicht ändert.
 
 
 ### App-Links konfigurieren
@@ -121,13 +121,13 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 ### App-Links verwenden
 
-1. Erstellen Sie in Adobe Mobile Services einen Marketinglink, der App-Links verwendet:
+1. Erstellen Sie in Adobe Mobile Services einen Marketing-Link, der App-Links verwendet:
 
    a. Wählen Sie die App auf der Mobile Services-Startseite aus. Klicken Sie auf **[!UICONTROL Akquise]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klicken Sie auf **[!UICONTROL Neu erstellen]**.
 
-   c. Wählen Sie im Abschnitt **[!UICONTROL Optionen für Marketinglinks]** die Option **[!UICONTROL Universelle Links oder App-Links verwenden]** aus.
+   c. Wählen Sie im Abschnitt **[!UICONTROL Optionen für Marketing-Links]** die Option **[!UICONTROL Universelle Links oder App-Links verwenden]** aus.
 
    d. Wenn Sie die Standortverknüpfungsdokumente aus Schritt 2 konfiguriert haben, ist diese Option standardmäßig ausgewählt.
 
@@ -147,11 +147,11 @@ Sie können einen Marketinglink erstellen, der einen universellen Link oder eine
 
 >[!TIP]
 >
->Nachdem ein Marketinglink gespeichert wurde, können die **[!UICONTROL Optionen für Marketinglinks]** nicht mehr geändert werden. Dies wurde so festgelegt, damit sich das Verhalten bereits verbreiteter Marketinglinks nicht ändert.
+>Nachdem ein Marketing-Link gespeichert wurde, können die **[!UICONTROL Optionen für Marketing-Links]** nicht mehr geändert werden. Dies wurde so festgelegt, damit sich das Verhalten bereits verbreiteter Marketing-Links nicht ändert.
 
-## Marketinglinks verwenden
+## Marketing-Links verwenden
 
-Sie können diese Marketinglinks jetzt in Messaging- und anderen Bereichen Ihrer App verwenden.
+Sie können diese Marketing-Links jetzt in Messaging- und anderen Bereichen Ihrer App verwenden.
 
 >[!IMPORTANT]
 >

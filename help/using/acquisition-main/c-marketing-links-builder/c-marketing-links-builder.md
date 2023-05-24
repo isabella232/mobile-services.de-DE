@@ -1,5 +1,5 @@
 ---
-description: Der Builder unterstützt Sie beim Erstellen von Marketinglinks, die Benutzer zu Appstores und App- oder Web-Link-Zielen weiterleiten. Marketingexperten können Ziele auf der Grundlage von Regeln auswählen, wie der Gerätetyp oder das Betriebssystem des Benutzergeräts.
+description: Der Builder unterstützt Sie beim Erstellen von Marketing-Links, die Benutzer zu Appstores und App- oder Web-Link-Zielen weiterleiten. Marketingexperten können Ziele auf der Grundlage von Regeln auswählen, wie der Gerätetyp oder das Betriebssystem des Benutzergeräts.
 keywords: mobile
 solution: Experience Cloud Services,Analytics
 title: Marketing Links Builder
@@ -17,6 +17,6 @@ ht-degree: 100%
 
 {#eol}
 
-Der Builder unterstützt Sie beim Erstellen von Marketinglinks, die Benutzer zu Appstores und App- oder Web-Link-Zielen weiterleiten. Marketingexperten können Ziele auf der Grundlage von Regeln auswählen, wie Gerätetyp oder Betriebssystem des Benutzergeräts.
+Der Builder unterstützt Sie beim Erstellen von Marketing-Links, die Benutzer zu Appstores und App- oder Web-Link-Zielen weiterleiten. Marketingexperten können Ziele auf der Grundlage von Regeln auswählen, wie Gerätetyp oder Betriebssystem des Benutzergeräts.
 
-Marketinglinks können verfolgt und in Berichten analysiert werden. So können Marketingexperten diesen Links Downloads, App-Neustarts und andere In-App-Ereignisse zuordnen.
+Marketing-Links können verfolgt und in Berichten analysiert werden. So können Marketing-Experten diesen Links Downloads, App-Neustarts und andere In-App-Ereignisse zuordnen.

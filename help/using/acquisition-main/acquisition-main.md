@@ -30,19 +30,19 @@ Seit September 2018 steht eine neue, bessere Version des SDK zur Verfügung. Die
 
 >[!IMPORTANT]
 >
-> Wenn Sie die Mobile SDK für Adobe Experience Platform mit Adobe Launch verwenden, **müssen** Sie außerdem die Adobe Analytics Mobile Services-Erweiterung installieren, um die Funktionen von Adobe Mobile Services wie Akquise-Links zu verwenden. Weitere Informationen finden Sie unter [Adobe Analytics – Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Weitere Informationen zur Verwendung von Akquise- und Marketinglinks mit Experience Cloud-SDK finden Sie unter [Akquise und Marketinglinks](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
+> Wenn Sie die Mobile SDK für Adobe Experience Platform mit Adobe Launch verwenden, **müssen** Sie außerdem die Adobe Analytics Mobile Services-Erweiterung installieren, um die Funktionen von Adobe Mobile Services wie Akquise-Links zu verwenden. Weitere Informationen finden Sie unter [Adobe Analytics – Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Weitere Informationen zur Verwendung von Akquise- und Marketing-Links mit Experience Cloud-SDK finden Sie unter [Akquise und Marketing-Links](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
 
 >[!IMPORTANT]
 >
 >Sie können zwar Funktionen in der Benutzeroberfläche konfigurieren, jedoch sind diese Funktionen nur verfügbar, wenn Sie die generierte Konfigurationsdatei herunterladen und zum SDK hinzufügen. Informationen zum Herunterladen und Konfigurieren der SDK finden Sie im Abschnitt *SDK-Dokumentation* auf dieser Seite.
 
-Sie können Berichte zu verfolgbaren Marketinglinks mobiler Apps erstellen, bearbeiten, verwalten und anzeigen.
+Sie können Berichte zu verfolgbaren Marketing-Links mobiler Apps erstellen, bearbeiten, verwalten und anzeigen.
 
 >[!TIP]
 >
 >Diese Funktion erfordert die Adobe Analytics – Mobile Apps- oder Adobe Analytics Premium-SKU.
 
-Folgende Akquiseberichte bieten Einblicke in die Performance Ihrer Marketinglinks:
+Folgende Akquiseberichte bieten Einblicke in die Performance Ihrer Marketing-Links:
 
 * **Übersicht**{#section_5B2BA47F22694919A472AB591101237E}
 
@@ -52,7 +52,7 @@ Folgende Akquiseberichte bieten Einblicke in die Performance Ihrer Marketinglink
 
 * **Link-Bericht** {#section_A23A640C363B43569D9D484CF49EA277}
 
-   Dieser Bericht enthält eine Rangansicht Ihrer Marketinglinks nach Performance. Er zeigt nicht nur die Namen Ihrer Links zusammen mit den wichtigsten Leistungsmetriken, er kann außerdem angepasst werden. Weitere Informationen finden Sie in [Berichte anpassen](/help/using/usage/reports-customize/t-reports-customize.md).
+   Dieser Bericht enthält eine Rangansicht Ihrer Marketing-Links nach Performance. Er zeigt nicht nur die Namen Ihrer Links zusammen mit den wichtigsten Leistungsmetriken, er kann außerdem angepasst werden. Weitere Informationen finden Sie in [Berichte anpassen](/help/using/usage/reports-customize/t-reports-customize.md).
 
    Beachten Sie die folgenden Informationen:
 

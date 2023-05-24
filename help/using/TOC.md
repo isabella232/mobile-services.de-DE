@@ -81,7 +81,7 @@ ht-degree: 100%
       + [Link-Ziele verwalten ](acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md)
       + Marketing Links Builder {#marketing-links-builder}
          + [Marketing Links Builder](acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)
-         + [Marketinglinks erstellen oder bearbeiten](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
+         + [Marketing-Links erstellen oder bearbeiten](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
          + [Interstitials](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)
       + Legacy-Akquise-Links {#legacy-acquisition-links}
          + [Legacy-Akquise-Links verwenden](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)
@@ -89,7 +89,7 @@ ht-degree: 100%
          + [Akquise-Links verwalten](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/c-manage-acquisition-links.md)
          + [Akquise-Links löschen](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/t-acquisition-del.md)
          + [Akquise-Links importieren oder exportieren](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/t-acquisition-import.md)
-         + [Marketinglinks verwalten](acquisition-main/c-marketing-links-builder/c-manage-adobe-links.md)
+         + [Marketing-Links verwalten](acquisition-main/c-marketing-links-builder/c-manage-adobe-links.md)
          + [Akquise-Links manuell erstellen](acquisition-main/c-marketing-links-builder/acquisition-link-manual.md)
 + Ort {#location-ug}
    + [Übersicht über die Funktion „Standort“](location/location-overview.md)

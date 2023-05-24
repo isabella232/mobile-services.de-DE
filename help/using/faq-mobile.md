@@ -81,9 +81,9 @@ Marketing-Experten können beliebige gesendete Analytics-Daten oder -Ereignisse 
 
 Push-Nachrichten werden unter Verwendung von bereits bestehenden Adobe Analytics-Segmenten oder von benutzerdefinierten Segmenten gesendet, die über bereits erfasste historische Analytics-Daten erstellt wurden. Weitere Informationen finden Sie unter [Erlebnis: Push-Nachricht](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
-### Warum erhalte ich eine Fehlermeldung mit dem eingegebenen In-App-, Push- oder Marketinglink-Namen?
+### Warum erhalte ich eine Fehlermeldung mit dem eingegebenen In-App-, Push- oder Marketing-Link-Namen?
 
-Sie können nicht ein und denselben Namen für In-App-Nachrichten, Push-Nachrichten oder Marketinglinks in verschiedenen Apps verwenden, die dieselbe übergeordnete Report Suite oder VRS verwenden. Um dieses Problem zu beheben, geben Sie einfach einen anderen Namen für Ihre In-App-Nachricht, Push-Nachricht oder Ihren Marketinglink ein.
+Sie können nicht ein und denselben Namen für In-App-Nachrichten, Push-Nachrichten oder Marketinglinks in verschiedenen Apps verwenden, die dieselbe übergeordnete Report Suite oder VRS verwenden. Um dieses Problem zu beheben, geben Sie einfach einen anderen Namen für Ihre In-App-Nachricht, Push-Nachricht oder Ihren Marketing-Link ein.
 
 ## Standort {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
 
@@ -99,4 +99,4 @@ Ja. Mit Adobe Mobile Services können Sie Marketing-Tricks entwickeln, mit denen
 
 ### Wie kann ich Links einrichten, um neue App-Benutzer zu erfassen und zu verfolgen?
 
-Sie können Marketinglinks erstellen, die Benutzer zum Download von Apps im Apple App Store und in Google Play weiterleiten. Mit diesen Links können Sie den Downloads Ihre Erfolgsereignisse zuordnen. Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
+Sie können Marketing-Links erstellen, die Benutzer zum Download von Apps im Apple App Store und in Google Play weiterleiten. Mit diesen Links können Sie den Downloads Ihre Erfolgsereignisse zuordnen. Weitere Informationen finden Sie unter [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
